@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Toolbar title text style -->
+    <style name="ToolbarTitleText">
+        <item name="android:textSize">18sp</item> <!-- Adjust the text size as needed -->
+        <item name="android:textColor">@android:color/white</item> <!-- Set text color -->
+        <item name="android:textStyle">bold</item> <!-- Set text style: normal, bold, italic, etc. -->
+        <!-- Add more style attributes as needed -->
+    </style>
+
+    <style name="CustomDialog" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:background">#F2F2F2</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:radius">20dp</item>
+        <!-- Add more style attributes if needed -->
+    </style>
+    <style name="BottomSheetAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">#004E92</item>
+    </style>
+</resources>

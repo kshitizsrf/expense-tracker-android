@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/round_back_for_tabs"
+    android:padding="40dp">
+
+    <EditText
+        android:id="@+id/txt_budget"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Set Budget"
+        android:textColor="@color/black"
+        android:inputType="number"
+        android:background="@drawable/input_text_round"
+        android:textSize="14sp"
+        android:drawableStart="@drawable/baseline_input_24"
+        android:drawablePadding="15dp"
+        android:padding="10dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/upperLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/tabs_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/round_back_for_tabs"
+            android:weightSum="2"
+            android:layout_margin="20dp">
+            <TextView
+                android:id="@+id/expenses_cat"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@drawable/round_shape_for_tabs"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="Expenses"
+                android:textColor="#80000000"/>
+            <TextView
+                android:id="@+id/income_cat"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="Income"
+                android:textColor="#80000000"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/upperLayout"
+        app:cardCornerRadius="28dp"
+        android:layout_marginBottom="-20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="28dp"
+            android:background="#F2F2F2">
+
+            <!-- Place your transaction content here -->
+
+        </LinearLayout>
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentcontainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/upperLayout"
+            android:layout_marginBottom="-20dp"
+            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"/>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

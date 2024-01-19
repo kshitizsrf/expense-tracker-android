@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroung_gradient">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:titleTextColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_margin="10dp"
+            android:backgroundTint="@android:color/transparent"
+            android:clickable="true"
+            android:contentDescription="@string/add_a_transaction"
+            android:focusable="true"
+            android:src="@drawable/baseline_arrow_back_ios_24"
+            android:stateListAnimator="@animator/button_state_list_animator"
+            app:borderWidth="0dp"
+            app:elevation="0dp"
+            app:tint="@color/white"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/add_expense"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F2F2F2"
+            android:orientation="vertical"
+            android:padding="28dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:text="@string/amount"
+                    android:textColor="@color/jet_black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_marginVertical="20dp"
+                    android:autofillHints="Enter amount"
+                    android:background="@drawable/edittext_design_addpage"
+                    android:hint="@string/rupees_0"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#B3292D32"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/category"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="20dp"
+                android:autofillHints="Select the category of the transaction"
+                android:background="@drawable/edittext_design_addpage"
+                android:drawableStart="@drawable/category_txt"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="@string/select_category"
+                android:inputType="none"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="#B3292D32" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:autofillHints="Set data"
+                    android:background="@drawable/edittext_design_addpage"
+                    android:drawableStart="@drawable/date"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="@string/date"
+                    android:inputType="date"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#B3292D32" />
+
+                <EditText
+                    android:id="@+id/time"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:autofillHints="Set time"
+                    android:background="@drawable/edittext_design_addpage"
+                    android:drawableStart="@drawable/time"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="@string/time"
+                    android:inputType="none"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#B3292D32" />
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="20dp"
+                android:autofillHints="Add your note"
+                android:background="@drawable/edittext_design_addpage"
+                android:drawableStart="@drawable/note_text_svgrepo_com"
+                android:drawablePadding="10dp"
+                android:hint="@string/notes"
+                android:inputType="textShortMessage"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="#B3292D32" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="@color/aqua"
+        android:padding="20dp"
+        android:text="@string/add_caps"
+        android:textColor="#08084B"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
