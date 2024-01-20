@@ -1,212 +1,186 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroung_gradient">
+    android:background="@drawable/backgroung_gradient"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:titleTextColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:titleTextColor="@color/white">
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/Back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="start|center_vertical"
-            android:layout_margin="10dp"
             android:backgroundTint="@android:color/transparent"
             android:clickable="true"
-            android:contentDescription="@string/add_a_transaction"
-            android:focusable="true"
             android:src="@drawable/baseline_arrow_back_ios_24"
             android:stateListAnimator="@animator/button_state_list_animator"
             app:borderWidth="0dp"
             app:elevation="0dp"
-            app:tint="@color/white"
-            tools:ignore="DuplicateSpeakableTextCheck,TouchTargetSizeCheck"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="10dp" />
+            app:tint="@color/white" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:text="@string/add_expense"
+            android:text="Add Transaction"
             android:textColor="@color/white"
-            android:textSize="22sp" />
+            android:textSize="22dp" />
     </androidx.appcompat.widget.Toolbar>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar" />
+
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/toolbar"
         android:layout_alignParentBottom="true"
+        android:layout_below="@id/toolbar"
         app:cardCornerRadius="28dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.5">
+        android:layout_marginBottom="-20dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#F2F2F2"
             android:orientation="vertical"
-            android:padding="28dp">
-
+            android:padding="28dp"
+            android:background="#EDEDED">
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:padding="5dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:padding="5dp"
-                    android:text="@string/amount"
-                    android:textColor="@color/jet_black"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
                 <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:layout_marginVertical="20dp"
-                    android:autofillHints="Enter amount"
-                    android:background="@drawable/edittext_design_addpage"
-                    android:hint="@string/rupees_0"
-                    android:inputType="number"
+                    android:layout_width="160dp"
+                    android:layout_height="50dp"
+                    android:hint="Budget Amount"
                     android:padding="10dp"
+                    android:background="@drawable/edittext_design_addpage"
+                    android:layout_marginVertical="20dp"
                     android:textColor="@color/black"
                     android:textColorHint="#B3292D32"
-                    android:textSize="32sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
-            <EditText
-                android:id="@+id/category"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_marginVertical="20dp"
-                android:autofillHints="Select the category of the transaction"
-                android:background="@drawable/edittext_design_addpage"
-                android:drawableStart="@drawable/category_txt"
-                android:drawablePadding="10dp"
-                android:ems="10"
-                android:focusable="false"
-                android:hint="@string/select_category"
-                android:inputType="none"
-                android:padding="10dp"
-                android:textColor="@color/black"
-                android:textColorHint="#B3292D32" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:weightSum="2">
-
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:inputType="number"
+                    android:layout_gravity="center"
+                    />
                 <EditText
-                    android:id="@+id/date"
+                    android:id="@+id/category"
+                    android:layout_marginVertical="20dp"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:layout_marginEnd="10dp"
-                    android:layout_weight="1"
-                    android:autofillHints="Set data"
+                    android:drawableStart="@drawable/category_txt"
+                    android:drawablePadding="12dp"
                     android:background="@drawable/edittext_design_addpage"
-                    android:drawableStart="@drawable/date"
-                    android:drawablePadding="10dp"
                     android:ems="10"
                     android:focusable="false"
-                    android:hint="@string/date"
-                    android:inputType="date"
-                    android:padding="10dp"
-                    android:textColor="@color/black"
-                    android:textColorHint="#B3292D32" />
-
-                <EditText
-                    android:id="@+id/time"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="10dp"
-                    android:layout_weight="1"
-                    android:autofillHints="Set time"
-                    android:background="@drawable/edittext_design_addpage"
-                    android:drawableStart="@drawable/time"
-                    android:drawablePadding="10dp"
-                    android:ems="10"
-                    android:focusable="false"
-                    android:hint="@string/time"
                     android:inputType="none"
-                    android:padding="10dp"
+                    android:textColorHint="#B3292D32"
+                    android:hint="Select Category"
                     android:textColor="@color/black"
-                    android:textColorHint="#B3292D32" />
+                    android:layout_gravity="center"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <EditText
+                        android:id="@+id/date"
+                        android:layout_marginEnd="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Date"
+                        android:ems="10"
+                        android:textColorHint="#B3292D32"
+                        android:drawableStart="@drawable/date"
+                        android:drawablePadding="12dp"
+                        android:background="@drawable/edittext_design_addpage"
+                        android:focusable="false"
+                        android:inputType="none"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        />
+                    <EditText
+                        android:id="@+id/time"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Time"
+                        android:textColorHint="#B3292D32"
+                        android:drawableStart="@drawable/time"
+                        android:drawablePadding="12dp"
+                        android:ems="10"
+                        android:background="@drawable/edittext_design_addpage"
+                        android:layout_weight="1"
+                        android:focusable="false"
+                        android:inputType="none"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"
+
+                        />
+                </LinearLayout>
+                <EditText
+                    android:layout_marginVertical="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Notes"
+                    android:drawableStart="@drawable/note_text_svgrepo_com"
+                    android:drawablePadding="12dp"
+                    android:textColorHint="#B3292D32"
+                    android:background="@drawable/edittext_design_addpage"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <Button
+                        android:id="@+id/cancel_button"
+                        android:layout_marginEnd="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textColor="#FF0000"
+                        android:text="Cancel"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        />
+                    <Button
+                        android:id="@+id/submit"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:text="Submit"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#13CA05"
+                        android:layout_gravity="center"
+
+                        />
+                </LinearLayout>
             </LinearLayout>
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_marginVertical="20dp"
-                android:autofillHints="Add your note"
-                android:background="@drawable/edittext_design_addpage"
-                android:drawableStart="@drawable/note_text_svgrepo_com"
-                android:drawablePadding="10dp"
-                android:hint="@string/notes"
-                android:inputType="textShortMessage"
-                android:padding="10dp"
-                android:textColor="@color/black"
-                android:textColorHint="#B3292D32" />
-
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
-    <Button
-        android:id="@+id/submit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginStart="10dp"
-        android:backgroundTint="@color/aqua"
-        android:padding="20dp"
-        android:text="@string/add_caps"
-        android:textColor="#08084B"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView"
-        app:layout_constraintVertical_bias="0.3" />
-
     <Space
         android:id="@+id/space"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="4dp"
-        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>
