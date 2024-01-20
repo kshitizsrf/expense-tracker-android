@@ -2,21 +2,4 @@
     <string name="app_name">Budget Planner</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="add_a_transaction">Add Transaction</string>
-    <string name="submit">Submit</string>
-    <string name="cancel">Cancel</string>
-    <string name="notes">Notes</string>
-    <string name="time">Time</string>
-    <string name="date">Date</string>
-    <string name="select_category">Select Category</string>
-    <string name="budget_amount">Budget Amount : </string>
-    <string name="rupees_0">₹ 0</string>
-    <string name="add_caps">ADD</string>
-    <string name="amount">Amount :</string>
-    <string name="add_expense">Add Expense</string>
-    <string name="settings">Settings</string>
-    <string name="budget">Budget : </string>
-    <string name="remaining">Remaining :</string>
-    <string name="recent_transactions">Recent Transactions</string>
-    <string name="see_all">See all</string>
 </resources>

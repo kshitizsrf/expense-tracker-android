@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Category_Fragment">
 
 
@@ -11,15 +11,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        app:cardCornerRadius="28dp"
         android:layout_marginBottom="-20dp"
-        app:cardCornerRadius="28dp">
+
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="570dp"
-            android:background="#BBD7FF"
             android:orientation="vertical"
-            android:padding="22dp">
+            android:padding="22dp"
+            android:background="#BBD7FF">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -30,56 +32,51 @@
                     android:id="@+id/clickableText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:text="@string/budget"
+                    android:text="Budget"
                     android:textColor="@color/black"
-                    android:textSize="16sp"
                     android:textStyle="bold"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    android:clickable="true"
+                    />
 
                 <TextView
                     android:id="@+id/budget"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:onClick="onTextClick"
                     android:textColor="#717171"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:clickable="true"
+                    android:onClick="onTextClick"
+                    android:layout_marginStart="15dp" />
             </LinearLayout>
 
 
             <ProgressBar
-                style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginVertical="5dp" />
-
+                android:layout_marginVertical="5dp"
+                style="?android:attr/progressBarStyleHorizontal" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="end"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:gravity="end">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/remaining"
+                    android:text="Remaining : "
                     android:textColor="@color/black"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    />
 
                 <TextView
                     android:id="@+id/Remaining_budget"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:text=""
+                    android:text="0000"
                     android:textColor="#717171"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:layout_marginStart="5dp" />
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -88,57 +85,54 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="-20dp"
-        app:cardCornerRadius="28dp">
+        app:cardCornerRadius="28dp"
+        android:layout_marginBottom="-20dp">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="450dp"
-            android:background="#EDEDED"
-            android:orientation="horizontal"
-            android:padding="22dp">
+            android:layout_height="470dp"
+            android:orientation="vertical"
+            android:padding="22dp"
+            android:background="#EDEDED">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Recent Transactions"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:layout_alignParentLeft="true"
+                    />
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="start"
-                android:padding="4dp"
-                android:text="@string/recent_transactions"
-                android:textColor="@color/black"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/seeAll"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="4dp"
-                android:gravity="end"
-                android:padding="4dp"
-                android:text="@string/see_all"
-                android:textColor="#004E92"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:id="@+id/seeAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:text="See all"
+                    android:textColor="#004E92"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
     </androidx.cardview.widget.CardView>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:src="@drawable/baseline_add_24"
         android:layout_above="@id/space"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="25dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="10dp"
+        app:tint="@color/white"
         android:backgroundTint="#004E92"
-        android:contentDescription="@string/add_a_transaction"
-        android:src="@drawable/baseline_add_24"
-        app:tint="@color/white" />
+
+        />
 
     <Space
         android:id="@+id/space"
