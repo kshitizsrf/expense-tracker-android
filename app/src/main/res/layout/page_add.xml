@@ -57,19 +57,22 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_marginTop="50dp"
+                >
                 <EditText
-                    android:layout_width="160dp"
-                    android:layout_height="50dp"
+                    android:layout_width="180dp"
+                    android:layout_height="70dp"
                     android:hint="Budget Amount"
                     android:padding="10dp"
-                    android:background="@drawable/edittext_design_addpage"
+                    android:background="@drawable/round_shape_for_tabs"
                     android:layout_marginVertical="20dp"
                     android:textColor="@color/black"
                     android:textColorHint="#B3292D32"
                     android:textStyle="bold"
                     android:textSize="20dp"
                     android:inputType="number"
+                    android:gravity="center"
                     android:layout_gravity="center"
                     />
                 <EditText
@@ -142,37 +145,26 @@
                     android:layout_gravity="center"
                     />
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:weightSum="2">
-                    <Button
-                        android:id="@+id/cancel_button"
-                        android:layout_marginEnd="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:textColor="#FF0000"
-                        android:text="Cancel"
-                        android:textSize="20dp"
-                        android:textStyle="bold"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        />
+                    android:layout_gravity="bottom"
+                    android:layout_above="@+id/space"
+                    >
                     <Button
                         android:id="@+id/submit"
-                        android:layout_marginStart="10dp"
                         android:layout_width="match_parent"
+                        android:backgroundTint="#004E92"
                         android:layout_height="50dp"
                         android:layout_weight="1"
                         android:text="Submit"
                         android:textSize="20dp"
                         android:textStyle="bold"
-                        android:textColor="#13CA05"
+                        android:textColor="#fff"
                         android:layout_gravity="center"
 
                         />
-                </LinearLayout>
+                </RelativeLayout>
             </LinearLayout>
         </LinearLayout>
 

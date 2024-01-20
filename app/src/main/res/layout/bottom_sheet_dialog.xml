@@ -51,7 +51,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:padding="28dp"
-            android:background="#F2F2F2">
+            android:background="#EDEDED">
 
             <!-- Place your transaction content here -->
 

@@ -94,7 +94,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="450dp"
-            android:background="#F2F2F2"
+            android:background="#EDEDED"
             android:orientation="horizontal"
             android:padding="22dp">
 

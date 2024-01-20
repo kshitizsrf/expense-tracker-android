@@ -14,7 +14,7 @@
         android:layout_marginHorizontal="10dp"
         android:layout_marginTop="20dp"
         app:cardCornerRadius="28dp"
-        app:cardBackgroundColor="#F2F2F2">
+        app:cardBackgroundColor="#EDEDED">
 <com.github.mikephil.charting.charts.PieChart
     android:id="@+id/expense_chart"
     android:layout_width="match_parent"
@@ -30,7 +30,7 @@
         android:layout_marginHorizontal="10dp"
         android:layout_marginTop="20dp"
         app:cardCornerRadius="28dp"
-        app:cardBackgroundColor="#F2F2F2">
+        app:cardBackgroundColor="#EDEDED">
         <com.github.mikephil.charting.charts.PieChart
             android:id="@+id/income_chart"
             android:layout_width="match_parent"
