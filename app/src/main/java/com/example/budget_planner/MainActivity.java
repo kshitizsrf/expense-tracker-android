@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private final int ID_HOME = 1;
     private final int ID_CHART = 2;
     public static final int ID_TRANSACTIONS = 3;
-    private final int ID_CATEGORY = 4;
+    public static final int ID_CATEGORY = 4;
 
     private Toolbar toolbar;
 

@@ -63,10 +63,8 @@ public class page_add extends AppCompatActivity {
     }
 
     private void showDialog() {
-        BottomSheetDialog bottomSheetDialog=new BottomSheetDialog(page_add.this);
-        bottomSheetDialog.setContentView(R.layout.bottom_sheet_dialog);
-        bottomSheetDialog.setCanceledOnTouchOutside(true);
-        bottomSheetDialog.show();
+       Bottom_Sheet_Dialog bottomSheetDialog=new Bottom_Sheet_Dialog();
+       bottomSheetDialog.show(getSupportFragmentManager(),bottomSheetDialog.getTag());
     }
     private void showDatePickerDialog() {
         Calendar calendar = Calendar.getInstance();

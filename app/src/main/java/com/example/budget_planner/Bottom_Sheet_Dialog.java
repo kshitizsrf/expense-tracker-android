@@ -1,32 +1,54 @@
-package com.example.budget_planner;// Bottom_Sheet_Dialog.java
+package com.example.budget_planner;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-public class Bottom_Sheet_Dialog extends AppCompatActivity {
+public class Bottom_Sheet_Dialog extends BottomSheetDialogFragment {
 
     private TextView expensesTab;
     private TextView incomeTab;
+    private Fragment selectedFragment; // Track the selected tab
 
+    @Nullable
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.bottom_sheet_dialog);
 
-        expensesTab = findViewById(R.id.expenses_cat);
-        incomeTab = findViewById(R.id.income_cat);
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.bottom_sheet_dialog, container, false);
 
+        expensesTab = view.findViewById(R.id.expenses_cat);
+        incomeTab = view.findViewById(R.id.income_cat);
+        FloatingActionButton setting_cat=view.findViewById(R.id.settings);
+
+        // Set initial background color for Expenses tab
+        expensesTab.setBackgroundResource(R.drawable.round_shape_for_tabs);
+        incomeTab.setBackgroundResource(R.drawable.round_back_for_tabs);
+        setting_cat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                MainActivity mainActivity = (MainActivity) requireActivity();
+                mainActivity.replaceFragment(new Category_Fragment());
+                mainActivity.updateTitle(MainActivity.ID_CATEGORY);
+                mainActivity.updateBottomNavigation(MainActivity.ID_CATEGORY);
+            }
+        });
         expensesTab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Switch to Expenses tab
-                switchTab(new Expense_Sheet_Fragment());
+                switchTab(new Expense_Sheet_Fragment(), expensesTab, incomeTab);
             }
         });
 
@@ -34,19 +56,29 @@ public class Bottom_Sheet_Dialog extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Switch to Income tab
-                switchTab(new Income_Sheet_Fragment());
+                switchTab(new Income_Sheet_Fragment(), incomeTab, expensesTab);
             }
         });
 
         // Initially, set the Expenses tab as selected
-        switchTab(new Expense_Sheet_Fragment());
+        switchTab(new Expense_Sheet_Fragment(), expensesTab, incomeTab);
+
+        return view;
     }
 
-    private void switchTab(Fragment fragment) {
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction transaction = fragmentManager.beginTransaction();
-        transaction.replace(R.id.fragmentcontainer, fragment);
-        transaction.addToBackStack(null); // Add this line to enable back navigation
-        transaction.commit();
+    private void switchTab(Fragment fragment, TextView selectedTab, TextView unselectedTab) {
+        FragmentManager fragmentManager = getChildFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left,
+                R.anim.enter_from_left, R.anim.exit_to_right);
+        fragmentTransaction.replace(R.id.fragmentcontainer, fragment);
+        fragmentTransaction.commit();
+
+        // Reset the background color for tabs
+        selectedTab.setBackgroundResource(R.drawable.round_shape_for_tabs);
+        unselectedTab.setBackgroundResource(R.drawable.round_back_for_tabs);
+
+        // Update the selected fragment
+        selectedFragment = fragment;
     }
 }
