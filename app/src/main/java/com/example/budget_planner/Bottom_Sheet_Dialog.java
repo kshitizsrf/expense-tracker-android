@@ -11,6 +11,7 @@ import androidx.annotation.Nullable;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -26,13 +27,15 @@ public class Bottom_Sheet_Dialog extends BottomSheetDialogFragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.bottom_sheet_dialog, container, false);
-
+        setStyle(DialogFragment.STYLE_NORMAL, R.style.RoundedBottomSheetDialog);
         expensesTab = view.findViewById(R.id.expenses_cat);
         incomeTab = view.findViewById(R.id.income_cat);
+
 
         // Set initial background color for Expenses tab
         expensesTab.setBackgroundResource(R.drawable.round_shape_for_tabs);
         incomeTab.setBackgroundResource(R.drawable.round_back_for_tabs);
+
         expensesTab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
