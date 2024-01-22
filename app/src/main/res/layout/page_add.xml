@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroung_gradient"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    >
+    android:background="@drawable/backgroung_gradient">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -20,6 +19,8 @@
             android:layout_gravity="start|center_vertical"
             android:backgroundTint="@android:color/transparent"
             android:clickable="true"
+            android:contentDescription="Back"
+            android:focusable="true"
             android:src="@drawable/baseline_arrow_back_ios_24"
             android:stateListAnimator="@animator/button_state_list_animator"
             app:borderWidth="0dp"
@@ -32,13 +33,8 @@
             android:layout_gravity="center"
             android:text="Add Transaction"
             android:textColor="@color/white"
-            android:textSize="22dp" />
+            android:textSize="22sp" />
     </androidx.appcompat.widget.Toolbar>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/toolbar" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -59,38 +55,39 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:layout_marginTop="50dp"
-                >
+                tools:ignore="UselessParent">
                 <EditText
                     android:layout_width="180dp"
                     android:layout_height="70dp"
-                    android:hint="Budget Amount"
-                    android:padding="10dp"
-                    android:background="@drawable/round_shape_for_tabs"
+                    android:layout_gravity="center"
                     android:layout_marginVertical="20dp"
+                    android:autofillHints="Enter Amount"
+                    android:background="@drawable/round_shape_for_tabs"
+                    android:gravity="center"
+                    android:hint="Budget Amount"
+                    android:inputType="number"
+                    android:padding="10dp"
                     android:textColor="@color/black"
                     android:textColorHint="#B3292D32"
-                    android:textStyle="bold"
-                    android:textSize="20dp"
-                    android:inputType="number"
-                    android:gravity="center"
-                    android:layout_gravity="center"
-                    />
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
                 <EditText
                     android:id="@+id/category"
-                    android:layout_marginVertical="20dp"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="20dp"
+                    android:autofillHints="Select category of transaction"
+                    android:background="@drawable/edittext_design_addpage"
                     android:drawableStart="@drawable/category_txt"
                     android:drawablePadding="12dp"
-                    android:background="@drawable/edittext_design_addpage"
                     android:ems="10"
                     android:focusable="false"
-                    android:inputType="none"
-                    android:textColorHint="#B3292D32"
                     android:hint="Select Category"
+                    android:inputType="none"
+                    android:padding="12sp"
                     android:textColor="@color/black"
-                    android:layout_gravity="center"
-                    />
+                    android:textColorHint="#B3292D32" />
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -98,70 +95,76 @@
                     android:weightSum="2">
                     <EditText
                         android:id="@+id/date"
-                        android:layout_marginEnd="10dp"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
-                        android:hint="Date"
-                        android:ems="10"
-                        android:textColorHint="#B3292D32"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:autofillHints="Select Data"
+                        android:background="@drawable/edittext_design_addpage"
                         android:drawableStart="@drawable/date"
                         android:drawablePadding="12dp"
-                        android:background="@drawable/edittext_design_addpage"
+                        android:ems="10"
                         android:focusable="false"
-                        android:inputType="none"
+                        android:hint="Date"
+                        android:inputType="date"
+                        android:padding="12sp"
                         android:textColor="@color/black"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        />
+                        android:textColorHint="#B3292D32" />
                     <EditText
                         android:id="@+id/time"
-                        android:layout_marginStart="10dp"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
-                        android:hint="Time"
-                        android:textColorHint="#B3292D32"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:autofillHints="Select Time"
+                        android:background="@drawable/edittext_design_addpage"
                         android:drawableStart="@drawable/time"
                         android:drawablePadding="12dp"
                         android:ems="10"
-                        android:background="@drawable/edittext_design_addpage"
-                        android:layout_weight="1"
                         android:focusable="false"
+                        android:hint="Time"
                         android:inputType="none"
+                        android:padding="12sp"
                         android:textColor="@color/black"
-                        android:layout_gravity="center"
-
-                        />
+                        android:textColorHint="#B3292D32" />
                 </LinearLayout>
                 <EditText
-                    android:layout_marginVertical="20dp"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:hint="Notes"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="20dp"
+                    android:autofillHints="Description"
+                    android:background="@drawable/edittext_design_addpage"
                     android:drawableStart="@drawable/note_text_svgrepo_com"
                     android:drawablePadding="12dp"
-                    android:textColorHint="#B3292D32"
-                    android:background="@drawable/edittext_design_addpage"
+                    android:hint="Notes"
+                    android:inputType="textShortMessage"
+                    android:padding="12sp"
                     android:textColor="@color/black"
-                    android:layout_gravity="center"
-                    />
+                    android:textColorHint="#B3292D32" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_above="@+id/space"
                     android:layout_gravity="bottom">
 
                     <Button
                         android:id="@+id/submit"
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:backgroundTint="#004E92"
-                        android:text="Submit"
-                        android:textSize="20dp"
-                        android:textStyle="bold"
-                        android:textColor="#fff" />
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="100dp"
+                        android:clickable="true"
+                        android:backgroundTint="@color/navy_blue"
+                        android:backgroundTintMode="screen"
+                        android:focusable="true"
+                        android:padding="20dp"
+                        android:text="Add"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
                 </RelativeLayout>
             </LinearLayout>
