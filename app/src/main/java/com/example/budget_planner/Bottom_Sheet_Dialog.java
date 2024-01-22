@@ -29,21 +29,10 @@ public class Bottom_Sheet_Dialog extends BottomSheetDialogFragment {
 
         expensesTab = view.findViewById(R.id.expenses_cat);
         incomeTab = view.findViewById(R.id.income_cat);
-        FloatingActionButton setting_cat=view.findViewById(R.id.settings);
 
         // Set initial background color for Expenses tab
         expensesTab.setBackgroundResource(R.drawable.round_shape_for_tabs);
         incomeTab.setBackgroundResource(R.drawable.round_back_for_tabs);
-        setting_cat.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                MainActivity mainActivity = (MainActivity) requireActivity();
-                mainActivity.replaceFragment(new Category_Fragment());
-                mainActivity.updateTitle(MainActivity.ID_CATEGORY);
-                mainActivity.updateBottomNavigation(MainActivity.ID_CATEGORY);
-            }
-        });
         expensesTab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
