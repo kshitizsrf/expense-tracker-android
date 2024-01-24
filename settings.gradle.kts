@@ -18,4 +18,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Budget_Planner"
 include(":app")
- 
+include(":app:iconlibrary")

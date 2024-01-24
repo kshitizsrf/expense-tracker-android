@@ -1,5 +1,6 @@
 package com.example.budget_planner;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -7,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
@@ -24,6 +26,14 @@ public class Category_Fragment extends Fragment {
 
         exp_cat = view.findViewById(R.id.expenses_cat);
         inc_cat = view.findViewById(R.id.income_cat);
+        Button add_cat=view.findViewById(R.id.add_cat);
+        add_cat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(),Category_Settings.class);
+                startActivity(intent);
+            }
+        });
 
         initializeFragments();
 

@@ -52,20 +52,32 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:padding="28dp"
             android:background="#EDEDED">
 
+            <androidx.fragment.app.FragmentContainerView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/fragmentcontainer"
+                android:layout_weight="1"/>
+
+            <!-- Move the Button here so that it is placed above the Space -->
+            <Button
+                android:id="@+id/add_cat"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_above="@id/space"
+                android:layout_centerInParent="true"
+                android:backgroundTint="#004E92"
+                android:text="Add Category"
+                android:textColor="@color/white"
+                android:layout_marginBottom="20dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:id="@+id/space"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"/>
         </LinearLayout>
-        <androidx.fragment.app.FragmentContainerView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/fragmentcontainer"/>
-
     </androidx.cardview.widget.CardView>
-
-    <Space
-        android:id="@+id/space"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_alignParentBottom="true" />
 </RelativeLayout>
