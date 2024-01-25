@@ -13,6 +13,8 @@ import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class Category_Fragment extends Fragment {
 
     private TextView exp_cat, inc_cat;
@@ -26,7 +28,7 @@ public class Category_Fragment extends Fragment {
 
         exp_cat = view.findViewById(R.id.expenses_cat);
         inc_cat = view.findViewById(R.id.income_cat);
-        Button add_cat=view.findViewById(R.id.add_cat);
+        FloatingActionButton add_cat=view.findViewById(R.id.add_cat);
         add_cat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

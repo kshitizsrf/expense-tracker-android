@@ -61,18 +61,20 @@
                 android:layout_weight="1"/>
 
             <!-- Move the Button here so that it is placed above the Space -->
-            <Button
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/add_cat"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_above="@id/space"
                 android:layout_centerInParent="true"
                 android:backgroundTint="#004E92"
-                android:text="Add Category"
                 android:textColor="@color/white"
-                android:layout_marginBottom="20dp"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:layout_gravity="right"
+                android:layout_marginBottom="35dp"
+                android:layout_marginRight="20dp"
+                app:tint="@color/white"
+                android:src="@drawable/baseline_add_24"
+                />
 
             <Space
                 android:id="@+id/space"

@@ -61,6 +61,7 @@
                     android:layout_height="68dp"
                     android:background="@drawable/circle_drawable"
                     android:src="@drawable/icon_1"
+                    android:scaleType="centerInside"
                     android:gravity="center"
                     android:layout_gravity="left|center"/>
                 <EditText
