@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroung_gradient">
+    android:background="?android:attr/windowBackground">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -23,6 +23,22 @@
             android:contentDescription="Back"
             android:focusable="true"
             android:src="@drawable/baseline_arrow_back_ios_24"
+            android:stateListAnimator="@animator/button_state_list_animator"
+            app:borderWidth="0dp"
+            app:elevation="0dp"
+            app:tint="@color/white" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/done_cat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            app:maxImageSize="35dp"
+            android:contentDescription="Back"
+            android:focusable="true"
+            android:src="@drawable/tick_svgrepo_com"
             android:stateListAnimator="@animator/button_state_list_animator"
             app:borderWidth="0dp"
             app:elevation="0dp"
@@ -50,7 +66,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:padding="15dp"
-            android:background="#EDEDED">
+            android:background="?attr/colorPrimary">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
@@ -65,12 +81,13 @@
                     android:gravity="center"
                     android:layout_gravity="left|center"/>
                 <EditText
+                    android:id="@+id/category_name"
                     android:layout_width="match_parent"
                     android:layout_height="65dp"
                     android:hint="Category name"
                     android:inputType="textShortMessage"
                     android:textSize="20dp"
-                    android:textColor="@color/black"
+                    android:textColor="?android:attr/textColor"
                     android:textColorHint="#757575"
                     />
             </LinearLayout>

@@ -1,8 +1,29 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.Budget_Planner" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!--for background-->
+        <item name="android:windowBackground">@drawable/backgroung_gradient</item>
+        <!--for main card view-->
+        <item name="colorPrimary">#EDEDED</item>
+        <!--for middle card-->
+        <item name="colorPrimaryVariant">#BBD7FF</item>
+        <!--for buttons-->
+        <item name="colorOnPrimary">#004E92</item>
+        <!--for text-->
+        <item name="android:textColor">@color/black</item>
+        <!--for text-->
+        <item name="colorOnSecondary">#004E92</item>
+        <!--for bottom navigation-->
+        <item name="colorSecondary">#EDEDED</item>
+        <!--for home cards-->
+        <item name="colorSecondaryVariant">#EDEDED</item>
+        <!--for numpad -->
+        <item name="colorTertiary">#E3E3E3</item>
+        <!--transaction listview-->
+        <item name="colorOnTertiary">#1A001F54</item>
+        <item name="android:drawableTint">#B3292D32</item>
+
+        <item name="android:statusBarColor">#004E92</item>
     </style>
 
     <style name="Theme.Budget_Planner" parent="Base.Theme.Budget_Planner" />

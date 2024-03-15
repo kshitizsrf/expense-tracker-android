@@ -21,8 +21,18 @@
     </style>
     <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
         <item name="colorAccent">#004E92</item>
+
     </style>
     <style name="RoundedBottomSheetDialog" parent="Theme.Design.BottomSheetDialog">
         <item name="android:background">@drawable/bottom_sheet_round_corners</item>
     </style>
+
+    <style name="CustomMaterialCalendar" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="materialCalendarStyle">@style/Widget.MaterialComponents.MaterialCalendar</item>
+        <item name="colorPrimary">#004E92</item> <!-- Set your accent color -->
+        <item name="colorOnPrimary">#FFF</item> <!-- Set color on your accent color -->
+    </style>
+
+    <dimen name="amount_size">30dp</dimen>
+    <dimen name="def_amount_size">60dp</dimen>
 </resources>

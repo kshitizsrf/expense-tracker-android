@@ -48,26 +48,26 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="500dp"
-        android:layout_below="@id/upperLayout"
-        app:cardCornerRadius="28dp"
-        android:layout_marginBottom="-20dp">
+    android:layout_below="@id/upperLayout"
+    app:cardCornerRadius="28dp"
+    android:layout_marginBottom="-20dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:padding="28dp"
-            android:background="#EDEDED">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="28dp"
+        android:background="?attr/colorPrimary">
 
-            <!-- Place your transaction content here -->
+        <!-- Place your transaction content here -->
 
-        </LinearLayout>
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/fragmentcontainer"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@id/upperLayout" />
+    </LinearLayout>
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/upperLayout" />
 
-    </androidx.cardview.widget.CardView>
+</androidx.cardview.widget.CardView>
 
-</RelativeLayout>
+    </RelativeLayout>

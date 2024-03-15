@@ -3,14 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Income_Sheet_Fragment">
+    tools:context=".Income_Category_Fragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ListView
+        android:id="@+id/income_lv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Income"
-        android:gravity="center"
-        android:textStyle="bold"/>
+        android:layout_height="match_parent"/>
+
 
 </FrameLayout>

@@ -10,6 +10,7 @@ import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 
@@ -19,6 +20,8 @@ public class Category_Fragment extends Fragment {
 
     private TextView exp_cat, inc_cat;
     private int selectedTabNum = 1;
+    public static String category="Expense";
+    FloatingActionButton add_cat;
     private static final int ANIMATION_DURATION = 500; // Set your desired duration here
 
     @Override
@@ -28,7 +31,7 @@ public class Category_Fragment extends Fragment {
 
         exp_cat = view.findViewById(R.id.expenses_cat);
         inc_cat = view.findViewById(R.id.income_cat);
-        FloatingActionButton add_cat=view.findViewById(R.id.add_cat);
+        add_cat=view.findViewById(R.id.add_cat);
         add_cat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -56,6 +59,21 @@ public class Category_Fragment extends Fragment {
         return view;
     }
 
+    public void setFabVisibility(boolean isVisible) {
+
+        if (isVisible) {
+            add_cat.show();
+        } else {
+            add_cat.hide();
+        }
+    }
+
+    // This method will be called from the child fragment to notify about list scroll
+    public void onListScroll(boolean isScrolled) {
+        setFabVisibility(!isScrolled);
+    }
+
+
     private void initializeFragments() {
         replaceFragment(new Expenses_Category_Fragment());
     }
@@ -63,12 +81,15 @@ public class Category_Fragment extends Fragment {
     private void selectTab(Fragment fragment) {
         TextView selectTextView, nonSelectTV;
 
+
         if (fragment instanceof Expenses_Category_Fragment) {
             selectTextView = exp_cat;
             nonSelectTV = inc_cat;
+            category = "Expense";
         } else {
             selectTextView = inc_cat;
             nonSelectTV = exp_cat;
+            category = "Income";
         }
 
         float slideTo = 0;
@@ -85,6 +106,7 @@ public class Category_Fragment extends Fragment {
         applyAnimation(selectTextView, nonSelectTV, translateAnimation);
 
         replaceFragment(fragment);
+        Toast.makeText(getActivity(), category, Toast.LENGTH_SHORT).show();
     }
 
 

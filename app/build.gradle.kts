@@ -41,4 +41,8 @@ dependencies {
 
     // pie chart dependency
     implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
+    //for keyboard calculations
+    implementation("com.faendir.rhino:rhino-android:1.5.2")
+    implementation("com.google.android.material:material:1.9.0")
+
 }

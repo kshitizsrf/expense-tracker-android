@@ -5,10 +5,9 @@
     android:layout_height="match_parent"
     tools:context=".Expenses_Category_Fragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+   <ListView
+       android:id="@+id/exp_lv"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
 
 </FrameLayout>

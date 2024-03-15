@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/windowBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:titleTextColor="@color/white">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:backgroundTint="@android:color/transparent"
+            android:clickable="true"
+            android:src="@drawable/baseline_arrow_back_ios_24"
+            android:stateListAnimator="@animator/button_state_list_animator"
+            app:borderWidth="0dp"
+            app:elevation="0dp"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Details"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:backgroundTint="@android:color/transparent"
+            android:clickable="true"
+            android:contentDescription="Back"
+            android:focusable="true"
+            android:src="@drawable/delete"
+            android:stateListAnimator="@animator/button_state_list_animator"
+            app:borderWidth="0dp"
+            app:elevation="0dp"
+            app:tint="@color/white"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/toolbar"
+        app:cardCornerRadius="28dp"
+        android:layout_marginBottom="-20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="?attr/colorPrimary">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mid_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:orientation="vertical"
+                    android:background="?attr/colorPrimaryVariant"
+                    android:gravity="center">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <ImageView
+                        android:id="@+id/icon"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/circle_drawable"
+                        android:layout_gravity="center_vertical"
+                        android:scaleType="centerInside"/>
+
+                <TextView
+                    android:id="@+id/cat_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:textSize="20dp"/>
+                    <TextView
+                        android:id="@+id/amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:gravity="center_vertical|center"
+                        android:textSize="25dp"/>
+                </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:drawableStart="@drawable/date"
+                        android:drawablePadding="25dp"
+                        android:paddingStart="7dp"
+                        android:drawableTint="?android:attr/drawableTint"
+                        android:layout_margin="10dp"
+                        android:gravity="center_vertical"
+
+                        android:textSize="25dp"/>
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:drawableStart="@drawable/time"
+                        android:drawablePadding="25dp"
+                        android:drawableTint="?android:attr/drawableTint"
+                        android:paddingStart="7dp"
+                        android:layout_margin="10dp"
+
+                        android:gravity="center_vertical"
+                        android:textSize="25dp"/>
+                    <TextView
+                        android:id="@+id/note"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:drawableStart="@drawable/note_text_svgrepo_com"
+                        android:drawablePadding="25dp"
+                        android:paddingStart="7dp"
+                        android:drawableTint="?android:attr/drawableTint"
+                        android:layout_margin="10dp"
+
+                        android:gravity="center_vertical"
+                        android:textSize="25dp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

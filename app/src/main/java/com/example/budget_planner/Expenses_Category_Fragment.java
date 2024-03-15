@@ -1,64 +1,82 @@
 package com.example.budget_planner;
 
+import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AbsListView;
+import android.widget.ListView;
+import android.widget.Toast;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link Expenses_Category_Fragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import androidx.fragment.app.Fragment;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
+import java.util.ArrayList;
+
 public class Expenses_Category_Fragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public Expenses_Category_Fragment() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment Expenses_Category_Fragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static Expenses_Category_Fragment newInstance(String param1, String param2) {
-        Expenses_Category_Fragment fragment = new Expenses_Category_Fragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
+    private DBHelper mydb;
+    private ArrayList<String> category_name;
+    private ArrayList<String> icon;
+    private CustomAdapter adapter;
+    private String query = "SELECT * FROM Category WHERE type = 'Expense'";
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_expenses__category_, container, false);
+        View view = inflater.inflate(R.layout.fragment_expenses__category_, container, false);
+        ListView listView = view.findViewById(R.id.exp_lv);
+        listView.setOnScrollListener(new AbsListView.OnScrollListener() {
+            @Override
+            public void onScrollStateChanged(AbsListView view, int scrollState) {
+
+            }
+
+            @Override
+            public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
+                if (getParentFragment() instanceof Category_Fragment) {
+                    // Notify the parent fragment about the scroll event
+                    ((Category_Fragment) getParentFragment()).onListScroll(firstVisibleItem > 0);
+                }
+            }
+        });
+        mydb = new DBHelper(getActivity());
+        category_name = new ArrayList<>();
+        icon = new ArrayList<>();
+
+        // Create adapter and set to ListView
+        adapter = new CustomAdapter(getActivity(), category_name, icon,false);
+        listView.setAdapter(adapter);
+
+        storeDataInArray();
+        return view;
     }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        // Fetch data from database
+        storeDataInArray();
+    }
+
+    public void storeDataInArray() {
+        category_name.clear();
+        icon.clear();
+        Cursor cursor = mydb.realAllData(query);
+        if (cursor.getCount() == 0) {
+            Toast.makeText(getActivity(), "No expense categories found", Toast.LENGTH_SHORT).show();
+        } else {
+            while (cursor.moveToNext()) {
+                int column_cat_name = cursor.getColumnIndex("category_name");
+                int column_icon = cursor.getColumnIndex("category_icon");
+                category_name.add(cursor.getString(column_cat_name));
+                icon.add(cursor.getString(column_icon));
+            }
+            adapter.notifyDataSetChanged(); // Notify adapter about the data change
+        }
+    }
+
 }

@@ -3,14 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Expense_Sheet_Fragment">
+    tools:context=".Expenses_Category_Fragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ListView
+        android:id="@+id/exp_lv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Expenses"
-        android:gravity="center"
-        android:textStyle="bold"/>
+        android:layout_height="match_parent"/>
 
 </FrameLayout>

@@ -2,11 +2,15 @@ package com.example.budget_planner;
 
 import android.graphics.Color;
 import android.graphics.PorterDuff;
+import android.opengl.GLDebugHelper;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.GridLayout;
 import android.widget.ImageView;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -15,9 +19,13 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class Category_Settings extends AppCompatActivity {
+    private String mode;
+    private String categoryToUpdate;
     private ImageView selectedImageView;
     private static final int ICON_SIZE_DP = 20;
     private static final int COLUMNS_IN_GRID = 5;
+    private String selectedImageName; // Variable to hold the name of the selected image
+    private String icontoupdate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +36,45 @@ public class Category_Settings extends AppCompatActivity {
         FloatingActionButton back=findViewById(R.id.Back);
         GridLayout gridLayout = findViewById(R.id.iconContainer);
         ImageView selectedIconImageView = findViewById(R.id.selected_icon);
+        EditText cat_name=findViewById(R.id.category_name);
+
+        mode = getIntent().getStringExtra("mode");
+        categoryToUpdate = getIntent().getStringExtra("category_name");
+        icontoupdate=getIntent().getStringExtra("category_icon");
+
+        // Check if it's in edit mode
+        if ("edit".equals(mode)) {
+            // Populate EditText with category name for editing
+            cat_name.setText(categoryToUpdate);
+            int resourceId = getResources().getIdentifier(icontoupdate, "drawable", getPackageName());
+            selectedIconImageView.setImageResource(resourceId);
+
+            selectedImageName = icontoupdate;
+        }
+
+        FloatingActionButton done_cat=findViewById(R.id.done_cat);
+        done_cat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String category_name=cat_name.getText().toString().trim();
+                if(category_name.isEmpty()){
+                    Toast.makeText(Category_Settings.this, "Category name cannot be empty", Toast.LENGTH_SHORT).show();
+                }else{
+                    Category_Fragment CF=new Category_Fragment();
+                    DBHelper mydb=new DBHelper(getApplicationContext());
+                    if ("edit".equals(mode)) {
+                        // Update existing category
+                        mydb.updateCategory(categoryToUpdate, category_name, selectedImageName.toString(),icontoupdate);
+                        Toast.makeText(getApplicationContext(), "Category updated successfully", Toast.LENGTH_SHORT).show();
+                    } else {
+                        // Add new category
+                        mydb.addCategory(getApplicationContext(), category_name, selectedImageName.toString(), CF.category);
+                        Toast.makeText(getApplicationContext(), "Category added successfully", Toast.LENGTH_SHORT).show();
+                    }
+                    finish();
+                }
+            }
+        });
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,6 +107,7 @@ public class Category_Settings extends AppCompatActivity {
         // Now, you can use the iconDrawables list in your loop to create ImageViews
         for (int j = 0; j < iconDrawables.size(); j++) {
             int drawableId = iconDrawables.get(j);
+            String iconName = "icon_" + (j + 1); // Generate icon name
             ImageView imageView = new ImageView(this);
             imageView.setImageResource(drawableId);
 
@@ -104,6 +152,9 @@ public class Category_Settings extends AppCompatActivity {
                     // Update the reference to the currently selected ImageView
                     selectedImageView = imageView;
 
+                    // Store the name of the selected image
+                    selectedImageName = iconName;
+
                     selectedIconImageView.setImageResource(drawableId);
                     selectedIconImageView.setColorFilter(Color.WHITE, PorterDuff.Mode.SRC_IN);
                     ViewGroup.LayoutParams layoutParams = selectedIconImageView.getLayoutParams();
@@ -115,13 +166,16 @@ public class Category_Settings extends AppCompatActivity {
             });
 
             // Set icon_1 as default selected
-            if (j == 0) {
+            if (!"edit".equals(mode) && j == 0) {
                 imageView.setSelected(true);
                 imageView.setBackgroundResource(R.drawable.circle_selected);
                 imageView.setColorFilter(Color.WHITE, PorterDuff.Mode.SRC_IN);
                 int randomColor = getRandomColor();
                 imageView.getBackground().setColorFilter(randomColor, PorterDuff.Mode.SRC_IN);
                 selectedImageView = imageView;
+
+                // Store the name of the initially selected image
+                selectedImageName = iconName;
             }
         }
     }
