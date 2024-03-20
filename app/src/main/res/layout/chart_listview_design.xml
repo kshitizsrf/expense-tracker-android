@@ -29,10 +29,9 @@
                 android:id="@+id/name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="7dp"
                 android:layout_marginStart="10dp"
                 android:layout_toRightOf="@+id/image"
-
+                android:textStyle="bold"
                 android:text="Name"
                 android:textColor="?android:attr/textColor"
                 android:textSize="17dp" />
@@ -51,9 +50,8 @@
                 android:id="@+id/amount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="7dp"
                 android:layout_marginEnd="10dp"
-                android:textStyle="bold"
+                android:textStyle="italic"
                 android:layout_toRightOf="@+id/image"
                 android:text="Name"
                 android:textColor="?android:attr/textColor"

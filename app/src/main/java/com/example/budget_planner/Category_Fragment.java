@@ -106,7 +106,6 @@ public class Category_Fragment extends Fragment {
         applyAnimation(selectTextView, nonSelectTV, translateAnimation);
 
         replaceFragment(fragment);
-        Toast.makeText(getActivity(), category, Toast.LENGTH_SHORT).show();
     }
 
 

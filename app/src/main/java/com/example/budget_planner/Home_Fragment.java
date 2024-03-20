@@ -311,10 +311,12 @@ public class Home_Fragment extends Fragment {
                 int remaining= (int) (Integer.parseInt(budget)-rangeSumExpense);
                 String remaining_String=String.valueOf(remaining);
                 remaining_budget.setText(remaining_String);
+
+                progress_budget.setMax(Integer.parseInt(budget));
+                progress_budget.setProgress((int) rangeSumExpense);
+                progress_budget.setProgressTintList(ColorStateList.valueOf(Color.parseColor("#2DC503")));
             }
-            progress_budget.setMax(Integer.parseInt(budget));
-            progress_budget.setProgress((int) rangeSumExpense);
-            progress_budget.setProgressTintList(ColorStateList.valueOf(Color.parseColor("#2DC503")));
+
             if ((int) rangeSumExpense>=Integer.parseInt(budget)){
                 progress_budget.setProgressTintList(ColorStateList.valueOf(Color.RED));
             }

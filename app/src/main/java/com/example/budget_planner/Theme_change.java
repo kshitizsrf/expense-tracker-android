@@ -19,11 +19,9 @@ public class Theme_change {
         } else {
             newTheme = AppCompatDelegate.MODE_NIGHT_YES;
         }
-
+        AppCompatDelegate.setDefaultNightMode(newTheme);
         // Save the new theme state
         preferences.edit().putInt(THEME_PREFERENCE_KEY, newTheme).apply();
 
-        // Apply the new theme
-        AppCompatDelegate.setDefaultNightMode(newTheme);
     }
 }
