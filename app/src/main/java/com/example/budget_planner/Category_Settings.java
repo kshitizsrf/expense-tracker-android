@@ -1,5 +1,6 @@
 package com.example.budget_planner;
 
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.opengl.GLDebugHelper;
@@ -18,7 +19,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class Category_Settings extends AppCompatActivity {
+public class Category_Settings extends BaseActivity {
     private String mode;
     private String categoryToUpdate;
     private ImageView selectedImageView;
@@ -29,6 +30,11 @@ public class Category_Settings extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        SharedPreferences prefs = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
+        selectedThemeId = prefs.getInt(SELECTED_THEME_PREF, R.style.Base_Theme_Budget_Planner); // Retrieve the selected theme
+
+        // Apply the fetched theme
+        setTheme(selectedThemeId);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.category_setting);
 

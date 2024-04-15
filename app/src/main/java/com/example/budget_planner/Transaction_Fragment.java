@@ -84,7 +84,7 @@ public class Transaction_Fragment extends Fragment {
         Category_id.clear();
         note.clear();
         date.clear();
-        Cursor cursor = mydb.realAllData(query);
+        Cursor cursor = mydb.readAllData(query);
         if (cursor.getCount() == 0) {
             empty_txt.setVisibility(View.VISIBLE);
             Toast.makeText(getActivity(), "No Transaction history found", Toast.LENGTH_SHORT).show();

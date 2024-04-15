@@ -62,7 +62,7 @@ public class Income_Category_Fragment extends Fragment {
     private void storeDataInArray() {
         category_name.clear();
         icon.clear();
-        Cursor cursor = mydb.realAllData(query);
+        Cursor cursor = mydb.readAllData(query);
         if (cursor.getCount() == 0) {
             Toast.makeText(getActivity(), "No income categories found", Toast.LENGTH_SHORT).show();
         } else {

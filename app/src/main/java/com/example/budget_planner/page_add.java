@@ -3,6 +3,7 @@ package com.example.budget_planner;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.app.TimePickerDialog;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -39,7 +40,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
-public class page_add extends AppCompatActivity {
+public class page_add extends BaseActivity {
     EditText date;
     private String mode;
     EditText category;
@@ -52,6 +53,11 @@ public class page_add extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
+        SharedPreferences prefs = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
+        selectedThemeId = prefs.getInt(SELECTED_THEME_PREF, R.style.Base_Theme_Budget_Planner); // Retrieve the selected theme
+
+        // Apply the fetched theme
+        setTheme(selectedThemeId);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.page_add);
         FloatingActionButton back = findViewById(R.id.Back);

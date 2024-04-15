@@ -9,6 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/back"
+        android:foreground="?attr/selectableItemBackground"
         android:src="@drawable/back_player_multimedia_svgrepo_com"
         android:backgroundTint="@android:color/transparent"
         app:elevation="0dp"
@@ -23,6 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/next"
+        android:foreground="?attr/selectableItemBackground"
         android:src="@drawable/next_player_multimedia_svgrepo_com"
         android:backgroundTint="@android:color/transparent"
         app:elevation="0dp"
@@ -40,7 +42,7 @@
         android:layout_centerHorizontal="true"
         android:textSize="15dp"
         android:layout_marginTop="2dp"
-        android:textColor="#BBD7FF"
+        android:textColor="?attr/colorSecondaryVariant"
         />
     <TextView
         android:id="@+id/balance_txt"
@@ -52,7 +54,7 @@
         android:layout_centerHorizontal="true"
         android:textSize="25dp"
         android:layout_marginTop="4dp"
-        android:textColor="#BBD7FF"
+        android:textColor="?attr/colorSecondaryVariant"
         />
     <TextView
         android:id="@+id/balance_amount"
@@ -63,7 +65,7 @@
         android:layout_centerHorizontal="true"
         android:textSize="25dp"
         android:layout_marginTop="4dp"
-        android:textColor="#BBD7FF"
+        android:textColor="?attr/colorSecondaryVariant"
         />
 
 <LinearLayout
@@ -107,7 +109,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_margin="5dp"
                     android:textSize="20dp"
-                    android:textColor="#BBD7FF"
+                    android:textColor="?attr/colorSecondaryVariant"
                     />
             </LinearLayout>
         </LinearLayout>
@@ -145,7 +147,7 @@
                 android:layout_margin="5dp"
                 android:layout_centerHorizontal="true"
                 android:textSize="20dp"
-                android:textColor="#BBD7FF"
+                android:textColor="?attr/colorSecondaryVariant"
                 />
         </LinearLayout>
     </LinearLayout>
@@ -178,6 +180,7 @@
                     android:id="@+id/clickableText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:foreground="?attr/selectableItemBackground"
                     android:text="Budget"
                     android:textColor="?android:attr/textColor"
                     android:textStyle="bold"
@@ -188,6 +191,7 @@
                     android:id="@+id/show_budget"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:foreground="?attr/selectableItemBackground"
                     android:layout_marginStart="15dp"
                     android:clickable="true"
                     android:onClick="openDialog"
@@ -245,7 +249,7 @@
             android:background="?attr/colorPrimary">
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="27dp"
                 >
                 <TextView
                     android:layout_width="wrap_content"
@@ -261,9 +265,10 @@
                     android:id="@+id/seeAll"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:foreground="?attr/selectableItemBackground"
                     android:layout_alignParentRight="true"
                     android:text="See all"
-                    android:textColor="?attr/colorOnPrimary"
+                    android:textColor="?attr/colorSecondaryVariant"
                     android:textSize="15dp"
                     android:textStyle="bold" />
             </RelativeLayout>

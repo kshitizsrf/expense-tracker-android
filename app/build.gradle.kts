@@ -6,6 +6,7 @@ android {
     namespace = "com.example.budget_planner"
     compileSdk = 34
 
+
     defaultConfig {
         applicationId = "com.example.budget_planner"
         minSdk = 24
@@ -35,6 +36,7 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("com.etebarian:meow-bottom-navigation:1.2.0")
     implementation(project(":app:iconlibrary"))
+    implementation("androidx.preference:preference:1.2.1")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
@@ -44,5 +46,12 @@ dependencies {
     //for keyboard calculations
     implementation("com.faendir.rhino:rhino-android:1.5.2")
     implementation("com.google.android.material:material:1.9.0")
+
+    implementation("androidx.work:work-runtime:2.7.0")
+
+
+    //animation for text view
+    implementation("com.daimajia.androidanimations:library:2.4@aar")
+
 
 }

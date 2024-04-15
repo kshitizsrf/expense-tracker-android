@@ -95,7 +95,7 @@ public class TransactionAdapter extends ArrayAdapter<Double> {
         DBHelper dbHelper = new DBHelper(context);
         String[] categoryInfo = new String[3]; // 0: category name, 1: category type
         String query = "SELECT category_name,category_icon, type FROM Category WHERE category_id = '" + categoryId + "'";
-        Cursor cursor = dbHelper.realAllData(query);
+        Cursor cursor = dbHelper.readAllData(query);
         if (cursor.moveToFirst()) {
             int column_cat_name = cursor.getColumnIndex("category_name");
             int column_cat_icon = cursor.getColumnIndex("category_icon");

@@ -9,7 +9,7 @@
         <item name="android:textColor">@color/white</item>
         <item name="colorOnSecondary">@color/white</item>
         <item name="colorSecondary">#001f54</item>
-        <item name="colorSecondaryVariant">#0a1128</item>
+        <item name="colorSecondaryVariant">#BBD7FF</item>
         <item name="colorTertiary">#101010</item>
         <item name="colorOnTertiary">#80001F54</item>
         <item name="android:drawableTint">#FFFFFF</item>

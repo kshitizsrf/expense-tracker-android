@@ -1,5 +1,6 @@
 package com.example.budget_planner;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,13 +9,12 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
 public class Bottom_Sheet_Dialog extends BottomSheetDialogFragment {
 
@@ -24,22 +24,27 @@ public class Bottom_Sheet_Dialog extends BottomSheetDialogFragment {
 
     @Nullable
     @Override
-
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.bottom_sheet_dialog, container, false);
-        setStyle(DialogFragment.STYLE_NORMAL, R.style.RoundedBottomSheetDialog);
+
+        // Apply theme
+        SharedPreferences prefs = requireContext().getSharedPreferences(BaseActivity.PREFS_NAME, requireContext().MODE_PRIVATE);
+        int selectedThemeId = prefs.getInt(BaseActivity.SELECTED_THEME_PREF, R.style.Base_Theme_Budget_Planner);
+        getContext().getTheme().applyStyle(selectedThemeId, true);
+
+        // Find views
         expensesTab = view.findViewById(R.id.expenses_cat);
         incomeTab = view.findViewById(R.id.income_cat);
 
-
-        // Set initial background color for Expenses tab
+        // Set initial background color for tabs
         expensesTab.setBackgroundResource(R.drawable.round_shape_for_tabs);
         incomeTab.setBackgroundResource(R.drawable.round_back_for_tabs);
 
+        // Set click listeners for tabs
         expensesTab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Switch to Expenses tab
                 switchTab(new Expense_Sheet_Fragment(), expensesTab, incomeTab);
             }
         });
@@ -47,7 +52,6 @@ public class Bottom_Sheet_Dialog extends BottomSheetDialogFragment {
         incomeTab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Switch to Income tab
                 switchTab(new Income_Sheet_Fragment(), incomeTab, expensesTab);
             }
         });

@@ -17,6 +17,7 @@
             android:id="@+id/expand_icon"
             android:layout_width="100dp"
             android:layout_height="30dp"
+            android:foreground="?attr/selectableItemBackground"
             android:layout_gravity="center|top"
             android:src="@drawable/minus_svgrepo_com__1_" />
 

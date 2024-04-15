@@ -13,6 +13,8 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.View;
+import android.view.animation.Animation;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
@@ -20,18 +22,26 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.appcompat.widget.Toolbar;
+import androidx.work.OneTimeWorkRequest;
+import androidx.work.PeriodicWorkRequest;
+import androidx.work.WorkManager;
 
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
-public class MainActivity extends AppCompatActivity {
+import java.util.Calendar;
+import java.util.concurrent.TimeUnit;
+
+public class MainActivity extends BaseActivity {
     private final int ID_HOME = 1;
     private final int ID_CHART = 2;
     public static final int ID_TRANSACTIONS = 3;
     public static final int ID_CATEGORY = 4;
 
+
     private Toolbar toolbar;
+    public static boolean isThemeChanged = false;
     private FloatingActionButton fab_theme; // Declare fab_theme at the class level
 
     public void replaceFragment(Fragment fragment) {
@@ -39,6 +49,12 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.setCustomAnimations(R.anim.fade_in, R.anim.fade_out,
                 R.anim.fade_in, R.anim.fade_out);
+
+        // Pass selectedthemeId to Home_Fragment
+        Bundle bundle = new Bundle();
+        bundle.putInt("selectedThemeId", selectedThemeId);
+        fragment.setArguments(bundle);
+
         fragmentTransaction.replace(R.id.frame_layout, fragment);
         fragmentTransaction.commit();
     }
@@ -64,6 +80,16 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // Fetch the theme preference from SharedPreferences
+        SharedPreferences prefs = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
+        isDarkMode = prefs.getBoolean(DARK_MODE_PREF, false);
+        selectedThemeId = prefs.getInt(SELECTED_THEME_PREF, R.style.Base_Theme_Budget_Planner); // Retrieve the selected theme
+
+        // Apply the fetched theme
+        setTheme(selectedThemeId);
+
+        // Apply the fetched theme
+        setThemeMode(isDarkMode);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         toolbar = findViewById(R.id.toolbar);
@@ -77,7 +103,29 @@ public class MainActivity extends AppCompatActivity {
         fab_theme.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Theme_change.toggleTheme(MainActivity.this);
+                // Toggle the theme
+                if (selectedThemeId == R.style.Base_Theme_Budget_Planner) {
+                    // Toggle the theme
+                    isDarkMode = !isDarkMode;
+
+                    // Save the theme state
+                    SharedPreferences.Editor editor = getSharedPreferences(PREFS_NAME, MODE_PRIVATE).edit();
+                    editor.putBoolean(DARK_MODE_PREF, isDarkMode);
+                    editor.apply();
+
+                    // Broadcast the theme change
+                    Intent intent = new Intent("Theme_Change");
+                    intent.putExtra("isDarkMode", isDarkMode);
+                    sendBroadcast(intent);
+
+                    // Apply the new theme
+                    setThemeMode(isDarkMode);
+
+
+                } else {
+                    // Show a toast message indicating inability to change theme
+                    Toast.makeText(MainActivity.this, "Dark mode is only available for Default Theme", Toast.LENGTH_SHORT).show();
+                }
 
             }
         });
@@ -120,7 +168,10 @@ public class MainActivity extends AppCompatActivity {
         });
 
         bottomNavigation.show(ID_HOME, true);
+
+        scheduleNotification();
     }
+
 
     private void setFabIconBasedOnTheme() {
         int currentNightMode = getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;
@@ -137,5 +188,28 @@ public class MainActivity extends AppCompatActivity {
     public void updateBottomNavigation(int itemId) {
         MeowBottomNavigation bottomNavigation = findViewById(R.id.bottomnavigation);
         bottomNavigation.show(itemId, true);
+    }
+    private void scheduleNotification() {
+        // Create a Calendar object for 6 PM
+        Calendar notificationTime = Calendar.getInstance();
+        notificationTime.set(Calendar.HOUR_OF_DAY, 187); // 6 PM
+        notificationTime.set(Calendar.MINUTE, 0);
+        notificationTime.set(Calendar.SECOND, 0);
+
+        // If the current time is after 6 PM, schedule the notification for tomorrow
+        if (Calendar.getInstance().after(notificationTime)) {
+            notificationTime.add(Calendar.DAY_OF_MONTH, 1);
+        }
+
+        // Calculate the delay until the notification time
+        long delay = notificationTime.getTimeInMillis() - Calendar.getInstance().getTimeInMillis();
+
+        // Create a PeriodicWorkRequest to send the notification daily
+        PeriodicWorkRequest notificationWork = new PeriodicWorkRequest.Builder(NotificationPublisher.class, 1, TimeUnit.DAYS)
+                .setInitialDelay(delay, TimeUnit.MILLISECONDS)
+                .build();
+
+        // Enqueue the work request
+        WorkManager.getInstance(this).enqueue(notificationWork);
     }
 }
