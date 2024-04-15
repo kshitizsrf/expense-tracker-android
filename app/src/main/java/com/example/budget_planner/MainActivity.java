@@ -192,7 +192,7 @@ public class MainActivity extends BaseActivity {
     private void scheduleNotification() {
         // Create a Calendar object for 6 PM
         Calendar notificationTime = Calendar.getInstance();
-        notificationTime.set(Calendar.HOUR_OF_DAY, 187); // 6 PM
+        notificationTime.set(Calendar.HOUR_OF_DAY, 18); // 6 PM
         notificationTime.set(Calendar.MINUTE, 0);
         notificationTime.set(Calendar.SECOND, 0);
 
