@@ -6,7 +6,7 @@
     android:insetBottom="7dp">
 
     <shape android:shape="oval">
-        <solid android:color="#F2F2F2"/> <!-- Replace with your hexadecimal color code -->
+        <solid android:color="?attr/colorSecondaryVariant"/> <!-- Replace with your hexadecimal color code -->
         <size android:width="40dp" android:height="40dp"/> <!-- Adjust dimensions as needed -->
     </shape>
 

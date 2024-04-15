@@ -20,7 +20,7 @@
         <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
     </style>
     <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
-        <item name="colorAccent">#004E92</item>
+        <item name="colorAccent">?attr/colorOnPrimary</item>
 
     </style>
     <style name="RoundedBottomSheetDialog" parent="Theme.Design.BottomSheetDialog">
@@ -35,4 +35,119 @@
 
     <dimen name="amount_size">30dp</dimen>
     <dimen name="def_amount_size">60dp</dimen>
+
+
+    <style name="AppTheme_theme2" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--for background-->
+        <item name="android:windowBackground">@drawable/theme2_background_gradient</item>
+        <!--for main card view-->
+        <item name="colorPrimary">#FCD4C5</item>
+        <!--for middle card-->
+        <item name="colorPrimaryVariant">#FD794D</item>
+        <!--for buttons-->
+        <item name="colorOnPrimary">#FD794D</item>
+        <!--for text-->
+        <item name="android:textColor">@color/black</item>
+        <!--for bottom navigation icon-->
+        <item name="colorOnSecondary">#202B5F</item>
+        <!--for bottom navigation-->
+        <item name="colorSecondary">#FCD4C5</item>
+        <!--for home  texts-->
+        <item name="colorSecondaryVariant">#FD794D</item>
+        <!--for numpad -->
+        <item name="colorTertiary">#FFC5AF</item>
+        <!--transaction listview-->
+        <item name="colorOnTertiary">#1A001F54</item>
+
+        <item name="android:drawableTint">#B3292D32</item>
+
+        <item name="android:statusBarColor">#131B42</item>
+    </style>
+
+
+    <style name="AppTheme_theme3" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--for background-->
+        <item name="android:windowBackground">@drawable/theme3_background_gradient</item>
+        <!--for main card view-->
+        <item name="colorPrimary">#CEC7BF</item>
+        <!--for middle card-->
+        <item name="colorPrimaryVariant">#3D737F</item>
+        <!--for buttons-->
+        <item name="colorOnPrimary">#3D737F</item>
+        <!--for text-->
+        <item name="android:textColor">@color/black</item>
+        <!--for bottom navigation icon-->
+        <item name="colorOnSecondary">#3D737F</item>
+        <!--for bottom navigation-->
+        <item name="colorSecondary">#CEC7BF</item>
+        <!--for home  texts-->
+        <item name="colorSecondaryVariant">#4F97A6</item>
+        <!--for numpad -->
+        <item name="colorTertiary">#C3BCB5</item>
+        <!--transaction listview-->
+        <item name="colorOnTertiary">#1A001F54</item>
+
+        <item name="android:drawableTint">#B3292D32</item>
+
+        <item name="android:statusBarColor">#07161B</item>
+    </style>
+
+
+    <style name="AppTheme_theme4" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--for background-->
+        <item name="android:windowBackground">@drawable/theme4_background_gradient</item>
+        <!--for main card view-->
+        <item name="colorPrimary">#FFE6EA</item>
+        <!--for middle card-->
+        <item name="colorPrimaryVariant">#ca9dd7</item>
+        <!--for buttons-->
+        <item name="colorOnPrimary">#8178C0</item>
+        <!--for text-->
+        <item name="android:textColor">@color/black</item>
+        <!--for bottom navigation icon-->
+        <item name="colorOnSecondary">#8178C0</item>
+        <!--for bottom navigation-->
+        <item name="colorSecondary">#FFE6EA</item>
+        <!--for home  texts-->
+        <item name="colorSecondaryVariant">#facbd3</item>
+        <!--for numpad -->
+        <item name="colorTertiary">#facbd3</item>
+        <!--transaction listview-->
+        <item name="colorOnTertiary">#80FACBD3</item>
+
+        <item name="android:drawableTint">#B3292D32</item>
+
+        <item name="android:statusBarColor">#8178C0</item>
+    </style>
+
+
+
+    <style name="AppTheme_theme5" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--for background-->
+        <item name="android:windowBackground">@drawable/theme5_background_gradient</item>
+        <!--for main card view-->
+        <item name="colorPrimary">#F8EACF</item>
+        <!--for middle card-->
+        <item name="colorPrimaryVariant">#f8a79b</item>
+        <!--for buttons-->
+        <item name="colorOnPrimary">#002c6a</item>
+        <!--for text-->
+        <item name="android:textColor">@color/black</item>
+        <!--for bottom navigation icon-->
+        <item name="colorOnSecondary">#002c6a</item>
+        <!--for bottom navigation-->
+        <item name="colorSecondary">#F8EACF</item>
+        <!--for home  texts-->
+        <item name="colorSecondaryVariant">#f8a79b</item>
+        <!--for numpad -->
+        <item name="colorTertiary">#FAE5BB</item>
+        <!--transaction listview-->
+        <item name="colorOnTertiary">#1A001F54</item>
+
+        <item name="android:drawableTint">#B3292D32</item>
+
+        <item name="android:statusBarColor">#e45171</item>
+    </style>
+
+
 </resources>

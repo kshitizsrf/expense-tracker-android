@@ -80,7 +80,7 @@ public class Expense_Sheet_Fragment extends Fragment {
     public void storeDataInArray() {
         category_name.clear();
         icon.clear();
-        Cursor cursor = mydb.realAllData(query);
+        Cursor cursor = mydb.readAllData(query);
         if (cursor.getCount() == 0) {
             Toast.makeText(getActivity(), "No expense categories found", Toast.LENGTH_SHORT).show();
         } else {

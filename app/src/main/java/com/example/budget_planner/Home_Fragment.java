@@ -26,6 +26,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
+
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.text.DateFormat;
@@ -100,6 +103,17 @@ public class Home_Fragment extends Fragment {
         progress_budget=view.findViewById(R.id.progress_budget);
         calendar = Calendar.getInstance();
         show_budget.setText("Not Set");
+        // Retrieve selectedthemeId from arguments
+        int selectedThemeId = getArguments().getInt("selectedThemeId", -1);
+
+        // Check if the theme is AppTheme_theme3
+        if (selectedThemeId == R.style.AppTheme_theme3) {
+            // Change text color for AppTheme_theme3
+            show_budget.setTextColor(Color.parseColor("#939393"));
+            remaining_budget.setTextColor(Color.parseColor("#939393"));
+        }
+
+
 
         listView.setOnScrollListener(new AbsListView.OnScrollListener() {
             @Override
@@ -123,16 +137,27 @@ public class Home_Fragment extends Fragment {
             @Override
             public void onClick(View v) {
                 calendar.add(Calendar.MONTH, 1); // Move to the next month
+                YoYo.with(Techniques.FadeInRight).duration(800).repeat(0).playOn(month_txt);
+                YoYo.with(Techniques.FadeInRight).duration(800).repeat(0).playOn(balance_amount);
+                YoYo.with(Techniques.FadeInRight).duration(800).repeat(0).playOn(exp_total);
+                YoYo.with(Techniques.FadeInRight).duration(800).repeat(0).playOn(income_total);
                 updateMonthAndYear();
                 updateBalanceAmount();
+
             }
         });
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 calendar.add(Calendar.MONTH, -1); // Move to the previous month
+                YoYo.with(Techniques.FadeInLeft).duration(800).repeat(0).playOn(month_txt);
+                YoYo.with(Techniques.FadeInLeft).duration(800).repeat(0).playOn(balance_amount);
+                YoYo.with(Techniques.FadeInLeft).duration(800).repeat(0).playOn(exp_total);
+                YoYo.with(Techniques.FadeInLeft).duration(800).repeat(0).playOn(income_total);
                 updateMonthAndYear();
                 updateBalanceAmount();
+
+                
             }
         });
 
@@ -235,7 +260,7 @@ public class Home_Fragment extends Fragment {
 
             // Construct the query to filter transactions for the displayed month
             String query = "SELECT * FROM Transactions WHERE date BETWEEN '" + startOfMonth + "' AND '" + endOfMonth + "'";
-            Cursor transactionCursor = mydb.realAllData(query);
+            Cursor transactionCursor = mydb.readAllData(query);
 
             double totalExpense = 0;
             double totalIncome = 0;
@@ -288,7 +313,7 @@ public class Home_Fragment extends Fragment {
 
             // Construct the query to filter transactions for the specified date range
             String query = "SELECT * FROM Transactions WHERE date BETWEEN '" + start + "' AND '" + end + "'";
-            Cursor transactionCursor = mydb.realAllData(query);
+            Cursor transactionCursor = mydb.readAllData(query);
             double rangeSumExpense = 0; // Variable to store sum of expense transactions within the specified date range
 
             while (transactionCursor.moveToNext()) {
@@ -439,7 +464,7 @@ public class Home_Fragment extends Fragment {
         Category_id.clear();
         note.clear();
         date.clear();
-        Cursor cursor = mydb.realAllData(query);
+        Cursor cursor = mydb.readAllData(query);
         if (cursor.getCount() == 0) {
             empty_txt.setVisibility(View.VISIBLE);
         } else {

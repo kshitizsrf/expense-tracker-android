@@ -9,7 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
+import androidx.core.util.Pair;
 import androidx.fragment.app.Fragment;
 
 import com.github.mikephil.charting.animation.Easing;
@@ -19,10 +21,15 @@ import com.github.mikephil.charting.data.PieData;
 import com.github.mikephil.charting.data.PieDataSet;
 import com.github.mikephil.charting.data.PieEntry;
 import com.github.mikephil.charting.utils.ColorTemplate;
+import com.google.android.material.datepicker.MaterialDatePicker;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Collections;
+import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 public class Chart_Fragment extends Fragment {
 
@@ -32,6 +39,7 @@ public class Chart_Fragment extends Fragment {
 
     List<PieEntry> expenseEntries;
     List<PieEntry> incomeEntries;
+    TextView selectedDate;
 
     DBHelper dbHelper;
 
@@ -45,10 +53,20 @@ public class Chart_Fragment extends Fragment {
         incomeChart = view.findViewById(R.id.income_chart);
         listView_Expense = view.findViewById(R.id.listview_Expense);
         listView_Income = view.findViewById(R.id.listview_income);
+        selectedDate=view.findViewById(R.id.selectedDate);
+        setDefaultDate();
         expenseEntries = new ArrayList<>();
         incomeEntries = new ArrayList<>();
 
         dbHelper = new DBHelper(getContext());
+
+
+        selectedDate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DatePickerdialog();
+            }
+        });
 
         // Fetch data from database and populate the entries
         populateExpenseEntries();
@@ -119,7 +137,14 @@ public class Chart_Fragment extends Fragment {
 
 
     private void populateExpenseEntries() {
-        Cursor cursor = dbHelper.realAllData("SELECT c.category_icon,c.category_name, SUM(t.amount) AS total_amount FROM Transactions t INNER JOIN Category c ON t.category_id = c.category_id WHERE c.type='Expense' GROUP BY c.category_name");
+        expenseEntries.clear();
+        String dateRange = selectedDate.getText().toString().trim();
+        String[] dates = dateRange.split(" - ");
+        String startDate = dates[0];
+        String endDate = dates[1];
+
+
+        Cursor cursor = dbHelper.readAllData("SELECT c.category_icon, c.category_name, SUM(t.amount) AS total_amount FROM Transactions t INNER JOIN Category c ON t.category_id = c.category_id WHERE c.type='Expense' AND t.date >= '"+startDate+"' AND t.date <= '"+endDate+"' GROUP BY c.category_icon, c.category_name;");
         List<String> categoryNames = new ArrayList<>();
         List<String> amount = new ArrayList<>();
         List<String> categoryicon = new ArrayList<>();
@@ -155,7 +180,12 @@ public class Chart_Fragment extends Fragment {
     }
 
     private void populateIncomeEntries() {
-        Cursor cursor = dbHelper.realAllData("SELECT c.category_icon, c.category_name, SUM(t.amount) AS total_amount FROM Transactions t INNER JOIN Category c ON t.category_id = c.category_id WHERE c.type='Income' GROUP BY c.category_icon, c.category_name");
+        incomeEntries.clear();
+        String dateRange = selectedDate.getText().toString().trim();
+        String[] dates = dateRange.split(" - ");
+        String startDate = dates[0];
+        String endDate = dates[1];
+        Cursor cursor = dbHelper.readAllData("SELECT c.category_icon, c.category_name, SUM(t.amount) AS total_amount FROM Transactions t INNER JOIN Category c ON t.category_id = c.category_id WHERE c.type='Income' AND t.date >= '"+startDate+"' AND t.date <= '"+endDate+"' GROUP BY c.category_icon, c.category_name;");
         List<String> categoryNames = new ArrayList<>();
         List<String> amount = new ArrayList<>();
         List<String> categoryIcon = new ArrayList<>();
@@ -188,5 +218,95 @@ public class Chart_Fragment extends Fragment {
         ChartAdapter adapter = new ChartAdapter(requireContext(), categoryIcon, categoryNames, amount);
         listView_Income.setAdapter(adapter);
     }
+
+
+    private void setDefaultDate() {
+        // Get the current date
+        long currentTime = System.currentTimeMillis();
+
+        // Calculate the start and end of the current month
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTimeInMillis(currentTime);
+        calendar.set(Calendar.DAY_OF_MONTH, 1); // Set to first day of the month
+        long startOfMonth = calendar.getTimeInMillis();
+
+        // Get the last day of the current month
+        calendar.add(Calendar.MONTH, 1);
+        calendar.add(Calendar.DATE, -1);
+        long endOfMonth = calendar.getTimeInMillis();
+
+        // Format the default dates as strings
+        SimpleDateFormat sdf = new SimpleDateFormat("MMM dd, yyyy", Locale.getDefault());
+        String startDateString = sdf.format(new Date(startOfMonth));
+        String endDateString = sdf.format(new Date(endOfMonth));
+
+        // Set the default date range in the selectedDate TextView
+        String defaultDateRange = startDateString + " - " + endDateString;
+        selectedDate.setText(defaultDateRange);
+    }
+
+    private void DatePickerdialog() {
+        // Set default date range
+        long[] defaultDateRange = getDefaultDateRange();
+
+        // Creating a MaterialDatePicker builder for selecting a date range
+        MaterialDatePicker.Builder<Pair<Long, Long>> builder = MaterialDatePicker.Builder.dateRangePicker();
+        builder.setTitleText("Select a date range");
+        builder.setTheme(R.style.CustomMaterialCalendar);
+        builder.setSelection(Pair.create(defaultDateRange[0], defaultDateRange[1])); // Set default selection
+        // Building the date picker dialog
+        MaterialDatePicker<Pair<Long, Long>> datePicker = builder.build();
+        datePicker.addOnPositiveButtonClickListener(selection -> {
+
+            // Retrieving the selected start and end dates
+            Long startDate = selection.first;
+            Long endDate = selection.second;
+
+            // Formatting the selected dates as strings
+            SimpleDateFormat sdf = new SimpleDateFormat("MMM dd, yyyy", Locale.getDefault());
+            String startDateString = sdf.format(new Date(startDate));
+            String endDateString = sdf.format(new Date(endDate));
+
+            // Creating the date range string
+            String selectedDateRange = startDateString + " - " + endDateString;
+
+            // Displaying the selected date range in the TextView
+            selectedDate.setText(selectedDateRange);
+// Update the graph data
+            populateExpenseEntries();
+            populateIncomeEntries();
+
+            // Refresh the charts
+            setUpChart(expenseChart, expenseEntries, "Expense");
+            setUpChart(incomeChart, incomeEntries, "Income");
+
+            animateCharts();
+        });
+
+        // Showing the date picker dialog
+        datePicker.show(getChildFragmentManager(), "DATE_PICKER");
+    }
+
+    private long[] getDefaultDateRange() {
+        long[] defaultDateRange = new long[2];
+
+        // Get the current date
+        long currentTime = System.currentTimeMillis();
+
+        // Calculate the start and end of the current month
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTimeInMillis(currentTime);
+        calendar.set(Calendar.DAY_OF_MONTH, 1); // Set to first day of the month
+        defaultDateRange[0] = calendar.getTimeInMillis();
+
+        // Get the last day of the current month
+        calendar.add(Calendar.MONTH, 1);
+        calendar.add(Calendar.DATE, -1);
+        defaultDateRange[1] = calendar.getTimeInMillis();
+
+        return defaultDateRange;
+    }
+
+
 
 }

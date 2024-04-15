@@ -183,7 +183,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
 
 
-    Cursor realAllData(String query) {
+    Cursor readAllData(String query) {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery(query, null);
         return cursor;

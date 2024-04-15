@@ -1,6 +1,7 @@
 package com.example.budget_planner;
 
 import android.content.DialogInterface;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -16,9 +17,14 @@ import androidx.core.content.ContextCompat;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class Detail_Transaction extends AppCompatActivity {
+public class Detail_Transaction extends BaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
+        SharedPreferences prefs = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
+        selectedThemeId = prefs.getInt(SELECTED_THEME_PREF, R.style.Base_Theme_Budget_Planner); // Retrieve the selected theme
+
+        // Apply the fetched theme
+        setTheme(selectedThemeId);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.detail_transaction);
         TextView category_name = findViewById(R.id.cat_name);
