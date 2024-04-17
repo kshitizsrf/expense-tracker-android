@@ -9,6 +9,7 @@ import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -16,8 +17,11 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -32,9 +36,11 @@ import com.google.android.material.snackbar.Snackbar;
 
 import java.util.Calendar;
 import java.util.concurrent.TimeUnit;
+import android.Manifest;
 
 public class MainActivity extends BaseActivity {
     private final int ID_HOME = 1;
+    private static final int PERMISSION_REQUEST_CODE = 1;
     private final int ID_CHART = 2;
     public static final int ID_TRANSACTIONS = 3;
     public static final int ID_CATEGORY = 4;
@@ -170,6 +176,9 @@ public class MainActivity extends BaseActivity {
         bottomNavigation.show(ID_HOME, true);
 
         scheduleNotification();
+        if (!checkNotificationPolicyPermission()) {
+            requestNotificationPolicyPermission();
+        }
     }
 
 
@@ -185,6 +194,27 @@ public class MainActivity extends BaseActivity {
         }
     }
 
+    private boolean checkNotificationPolicyPermission() {
+        return ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS)
+                == PackageManager.PERMISSION_GRANTED;
+    }
+
+    private void requestNotificationPolicyPermission() {
+        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.POST_NOTIFICATIONS}, PERMISSION_REQUEST_CODE);
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == PERMISSION_REQUEST_CODE) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                // Permission granted
+            } else {
+                // Permission denied
+                // Handle permission denied scenario
+            }
+        }
+    }
     public void updateBottomNavigation(int itemId) {
         MeowBottomNavigation bottomNavigation = findViewById(R.id.bottomnavigation);
         bottomNavigation.show(itemId, true);
@@ -192,7 +222,7 @@ public class MainActivity extends BaseActivity {
     private void scheduleNotification() {
         // Create a Calendar object for 6 PM
         Calendar notificationTime = Calendar.getInstance();
-        notificationTime.set(Calendar.HOUR_OF_DAY, 18); // 6 PM
+        notificationTime.set(Calendar.HOUR_OF_DAY, 18);
         notificationTime.set(Calendar.MINUTE, 0);
         notificationTime.set(Calendar.SECOND, 0);
 
