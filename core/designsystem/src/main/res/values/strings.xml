@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Hisab Kitab</string>
+    <string name="nav_transactions">Transactions</string>
+    <string name="nav_stats">Statistics</string>
+    <string name="nav_categories">Categories</string>
+    <string name="action_back">Back</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_close">Close</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_ok">OK</string>
+    <string name="income">Income</string>
+    <string name="expense">Expense</string>
+    <string name="expenses">Expenses</string>
+    <string name="select_time">Select time</string>
+    <string name="settings_title">Settings</string>
+    <string name="add_transaction">Add</string>
+    <string name="empty_transactions_title">No transactions yet</string>
+    <string name="empty_transactions_message">Tap Add to record your first income or expense.</string>
+    <string name="budget">Budget</string>
+    <string name="period_daily">Daily</string>
+    <string name="period_weekly">Weekly</string>
+    <string name="period_monthly">Monthly</string>
+    <string name="period_custom">Custom</string>
+    <string name="error_amount_required">Enter an amount greater than zero</string>
+</resources>

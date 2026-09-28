@@ -1,0 +1,6 @@
+<resources>
+    <string name="reminder_channel_name">Daily reminder</string>
+    <string name="reminder_channel_description">Reminds you to log transactions if you haven\'t added any today.</string>
+    <string name="reminder_title">Logged today\'s spending?</string>
+    <string name="reminder_text">It only takes a few seconds and keeps your budget accurate.</string>
+</resources>

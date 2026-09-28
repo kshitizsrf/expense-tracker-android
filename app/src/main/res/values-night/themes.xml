@@ -1,21 +1,5 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.Budget_Planner" parent="Theme.Material3.DayNight.NoActionBar">
-        <!--for background-->
-        <item name="android:windowBackground">@drawable/background_gradient_dark</item>
-        <item name="colorPrimary">#0a1128</item>
-        <item name="colorPrimaryVariant">#001f54</item>
-        <item name="colorOnPrimary">#001f54</item>
-        <item name="android:textColor">@color/white</item>
-        <item name="colorOnSecondary">@color/white</item>
-        <item name="colorSecondary">#001f54</item>
-        <item name="colorSecondaryVariant">#BBD7FF</item>
-        <item name="colorTertiary">#101010</item>
-        <item name="colorOnTertiary">#80001F54</item>
-        <item name="android:drawableTint">#FFFFFF</item>
-
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
-        <item name="android:statusBarColor">#042E60</item>
+<resources>
+    <style name="Theme.HisabKitab" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/window_background</item>
     </style>
 </resources>

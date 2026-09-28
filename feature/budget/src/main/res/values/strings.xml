@@ -1,0 +1,15 @@
+<resources>
+    <string name="action_change">Change</string>
+    <string name="budget_intro">Set a spending limit. Only expenses count towards it.</string>
+    <string name="budget_amount">Budget amount</string>
+    <string name="budget_period">Period</string>
+    <string name="budget_explain_daily">Resets every day.</string>
+    <string name="budget_explain_weekly">Resets at the start of every week.</string>
+    <string name="budget_explain_monthly">Resets on the 1st of every month.</string>
+    <string name="budget_explain_custom">Covers only the dates you choose.</string>
+    <string name="budget_current_period">Current period: %1$s</string>
+    <string name="choose_dates">Choose dates</string>
+    <string name="save_budget">Save budget</string>
+    <string name="remove_budget">Remove budget</string>
+    <string name="error_dates_required">Choose the dates for your budget</string>
+</resources>

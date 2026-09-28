@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_pressed="true">
-        <set>
-            <objectAnimator android:propertyName="elevation" android:valueTo="0dp" android:duration="0"/>
-            <objectAnimator android:propertyName="translationZ" android:valueTo="0dp" android:duration="0"/>
-        </set>
-    </item>
-</selector>

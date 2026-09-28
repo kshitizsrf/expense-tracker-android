@@ -1,0 +1,30 @@
+<resources>
+    <string name="action_edit">Edit</string>
+    <string name="category">Category</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="note">Note</string>
+    <string name="no_note">No note</string>
+    <string name="search">Search</string>
+    <string name="close_search">Close search</string>
+    <string name="clear_search">Clear search</string>
+    <string name="search_hint">Search notes or categories</string>
+    <string name="filter_all">All</string>
+    <string name="empty_filtered_title">No matching transactions</string>
+    <string name="empty_filtered_message">Try a different search or filter.</string>
+    <string name="transaction_details">Transaction</string>
+    <string name="transaction_not_found_title">Transaction not found</string>
+    <string name="transaction_not_found_message">It may have been deleted.</string>
+    <string name="delete_transaction_title">Delete transaction?</string>
+    <string name="delete_transaction_message">This transaction will be permanently removed.</string>
+    <string name="new_transaction">New transaction</string>
+    <string name="edit_transaction">Edit transaction</string>
+    <string name="note_optional">Note (optional)</string>
+    <string name="new_category_short">New</string>
+    <string name="save_transaction">Save transaction</string>
+    <string name="save_changes">Save changes</string>
+    <string name="keypad_backspace">Backspace. Long-press to clear</string>
+    <string name="keypad_decimal">Decimal point</string>
+    <string name="error_amount_too_large">That amount is too large</string>
+    <string name="error_category_required">Choose a category</string>
+</resources>

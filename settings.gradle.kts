@@ -1,21 +1,44 @@
 pluginManagement {
+    includeBuild("build-logic")
     repositories {
-        google()
+        google {
+            content {
+                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("com\\.google.*")
+                includeGroupByRegex("androidx.*")
+            }
+        }
         mavenCentral()
         gradlePluginPortal()
     }
 }
+
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositoriesMode = RepositoriesMode.FAIL_ON_PROJECT_REPOS
     repositories {
         google()
-        jcenter()
         mavenCentral()
-        maven { url =uri("https://jitpack.io") }
-
     }
 }
 
-rootProject.name = "Budget_Planner"
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+
+rootProject.name = "HisabKitab"
+
 include(":app")
-include(":app:iconlibrary")
+
+include(":core:common")
+include(":core:data")
+include(":core:database")
+include(":core:designsystem")
+include(":core:icons")
+include(":core:model")
+include(":core:notifications")
+include(":core:ui")
+
+include(":feature:budget")
+include(":feature:categories")
+include(":feature:home")
+include(":feature:settings")
+include(":feature:stats")
+include(":feature:transactions")

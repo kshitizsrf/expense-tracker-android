@@ -1,57 +1,56 @@
 plugins {
-    id("com.android.application")
+    alias(libs.plugins.hisabkitab.android.application)
+    alias(libs.plugins.hisabkitab.android.compose)
+    alias(libs.plugins.hisabkitab.hilt)
+    alias(libs.plugins.kotlin.serialization)
 }
 
 android {
-    namespace = "com.example.budget_planner"
-    compileSdk = 34
-
+    namespace = "com.hisabkitab"
 
     defaultConfig {
+        // Kept from the original app so existing installs upgrade in place and keep their data.
         applicationId = "com.example.budget_planner"
-        minSdk = 24
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
-
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        versionCode = 2
+        versionName = "2.0.0"
     }
 
     buildTypes {
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
+            isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+
+    buildFeatures {
+        buildConfig = true
     }
 }
 
 dependencies {
+    implementation(projects.feature.home)
+    implementation(projects.feature.transactions)
+    implementation(projects.feature.stats)
+    implementation(projects.feature.categories)
+    implementation(projects.feature.budget)
+    implementation(projects.feature.settings)
 
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.11.0")
-    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-    implementation("com.etebarian:meow-bottom-navigation:1.2.0")
-    implementation(project(":app:iconlibrary"))
-    implementation("androidx.preference:preference:1.2.1")
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.5")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    implementation(projects.core.common)
+    implementation(projects.core.data)
+    implementation(projects.core.database)
+    implementation(projects.core.designsystem)
+    implementation(projects.core.model)
+    implementation(projects.core.notifications)
+    implementation(projects.core.ui)
 
-    // pie chart dependency
-    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
-    //for keyboard calculations
-    implementation("com.faendir.rhino:rhino-android:1.5.2")
-    implementation("com.google.android.material:material:1.9.0")
-
-    implementation("androidx.work:work-runtime:2.7.0")
-
-
-    //animation for text view
-    implementation("com.daimajia.androidanimations:library:2.4@aar")
-
-
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.core.splashscreen)
+    implementation(libs.androidx.activity.compose)
+    implementation(libs.bundles.lifecycle)
+    implementation(libs.bundles.navigation3)
+    implementation(libs.androidx.work.runtime.ktx)
+    implementation(libs.androidx.hilt.lifecycle.viewmodel.compose)
+    implementation(libs.androidx.hilt.work)
+    implementation(libs.kotlinx.serialization.json)
 }

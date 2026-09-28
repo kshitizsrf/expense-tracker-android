@@ -1,121 +1,96 @@
 # Hisab Kitab
 
-Hisab Kitab is an Android expense and budget planner for recording daily transactions, organizing spending by category, and understanding income and expenses through charts and summaries.
+Hisab Kitab is an offline-first expense and budget tracker for Android. Record income and expenses in seconds with a built-in calculator keypad, set a daily, weekly, monthly or custom budget, and see where your money goes with category breakdowns.
 
 ## Features
 
-- Add income and expense transactions with amount, category, date, and time
-- View monthly income, expenses, balance, budget, and recent transactions
-- Filter and sort transactions by date
-- Visualize income and expenses with date-range charts
-- Create, edit, delete, and select custom income and expense categories
-- Choose from multiple category icons supplied by the icon library module
-- Set budgets for daily, weekly, monthly, or custom periods
-- Configure app themes from the settings screen
-- Export data and receive notification reminders
-- Use the built-in calculator while entering transaction amounts
+- **Fast entry**: add or edit transactions with a calculator keypad (`120 + 45 × 2`), a category picker, date, time and an optional note
+- **Home dashboard**: monthly balance, income and expenses, budget progress with a "safe to spend per day" figure, and recent activity
+- **History**: transactions grouped by day with daily totals, search across notes and categories, and income/expense filters
+- **Statistics**: an animated donut chart and per-category breakdown for this month, last month, last 3 months, this year or any custom range
+- **Categories**: 139 icons and 15 colors; create, edit and delete (deleting a category removes its transactions after confirmation)
+- **Budgets**: daily, weekly (respecting your locale's first day of week), monthly, or a custom date range
+- **Personalisation**: light, dark or system theme, 5 color palettes, Material You dynamic color (Android 12+), any currency
+- **Daily reminder**: an optional notification at a time you choose, sent only if nothing was logged that day
+- **CSV export**: transactions and categories, saved wherever you choose (no storage permission needed)
 
-## Tech Stack
+## Tech stack
 
-- Java
-- Android SDK 34
-- Minimum Android version: Android 7.0 (API 24)
-- Gradle 8.2
-- Android Gradle Plugin 8.2.0
-- AndroidX AppCompat, ConstraintLayout, Preference, and WorkManager
-- Material Components
-- MPAndroidChart
-- SQLite for local data storage
-- Rhino Android for calculator expressions
+| Area | Choice |
+|---|---|
+| Language | Kotlin 2.4 (AGP built-in Kotlin) |
+| UI | Jetpack Compose, Material 3, edge-to-edge, predictive back, SplashScreen API |
+| Architecture | MVVM with unidirectional data flow (`StateFlow` UI state and event callbacks) |
+| Navigation | Navigation 3, with type-safe `@Serializable` keys |
+| DI | Hilt (with assisted injection for screen arguments) |
+| Persistence | Room (money stored as integer minor units, time as epoch millis, cascading foreign keys) |
+| Preferences | Preferences DataStore |
+| Background work | WorkManager + Hilt workers |
+| Async | Kotlin Coroutines and Flow |
+| Build | Gradle 9.8, AGP 9.4, version catalog, KSP, configuration cache |
+| Tests | JUnit, kotlinx-coroutines-test, fakes; Room DAO instrumented tests |
 
-## Project Structure
+- `minSdk` 26 (Android 8.0), `targetSdk`/`compileSdk` 37
+
+## Project structure
+
+The app is split into Gradle modules. Features never depend on each other; `:app` wires them together through navigation.
 
 ```text
 .
-├── app/
-│   ├── src/main/java/com/example/budget_planner/
-│   │   ├── MainActivity.java
-│   │   ├── DBHelper.java
-│   │   ├── Home_Fragment.java
-│   │   ├── Chart_Fragment.java
-│   │   ├── Transaction_Fragment.java
-│   │   ├── Category_Settings.java
-│   │   └── ...
-│   └── src/main/res/
-└── app/iconlibrary/
-    └── src/main/res/drawable/
+├── app/                    # Application, MainActivity, Navigation 3 graph, bottom-bar scaffold
+├── build-logic/            # Convention plugins shared by all modules
+│   └── convention/         #   hisabkitab.android.{application,library,compose,feature}, hisabkitab.hilt
+├── core/
+│   ├── model/              # Domain models (Transaction, Category, Budget, ...), no Android code
+│   ├── common/             # Money formatting, calculator engine, date helpers, DI qualifiers
+│   ├── database/           # Room database, entities, DAOs, default categories, v1 importer
+│   ├── data/               # Repositories (single source of truth), DataStore preferences, CSV export
+│   ├── designsystem/       # Material 3 theme, palettes, reusable components, shared strings
+│   ├── ui/                 # Shared UI that knows domain models (transaction row, date labels)
+│   ├── icons/              # 139 category icons + typed lookup table
+│   └── notifications/      # Daily reminder worker, scheduler and notification
+├── feature/
+│   ├── home/               # Dashboard: month summary, budget progress, recent activity
+│   ├── transactions/       # History, detail and the add/edit editor with calculator keypad
+│   ├── stats/              # Donut chart and category breakdown
+│   ├── categories/         # Category list and editor
+│   ├── budget/             # Budget setup
+│   └── settings/           # Appearance, currency, reminders, export
+└── gradle/libs.versions.toml  # Version catalog
 ```
 
-The `app` module contains the application UI, activities, fragments, local database, notifications, and resources. The `iconlibrary` module contains the category icon resources used by the app.
+Dependency direction: `app → feature:* → core:ui → core:designsystem`, and `feature:* → core:data → core:database → core:model`.
 
-## Requirements
+Each feature follows the same pattern: a `…ViewModel` exposes one immutable `…UiState` as a `StateFlow`. A stateful `…Screen` collects it with `collectAsStateWithLifecycle()` and passes it to a stateless composable that can be previewed.
 
-- Android Studio with Android SDK 34 installed
-- JDK 8 or a compatible Android Studio Gradle JDK
-- A physical Android device or emulator running API 24 or newer
+## Getting started
 
-## Getting Started
+1. Open the project in the latest stable Android Studio.
+2. Let Gradle sync; install Android SDK 37 if prompted.
+3. Run the `app` configuration on a device or emulator running Android 8.0 or newer.
 
-1. Clone the repository:
-
-   ```bash
-   git clone <repository-url>
-   cd expense-tracker-android
-   ```
-
-2. Open the project in Android Studio.
-
-3. Allow Gradle to sync and install any requested Android SDK components.
-
-4. Select the `app` run configuration and launch it on an emulator or connected device.
-
-### Build From the Command Line
-
-On Windows:
-
-```powershell
-\.\gradlew.bat assembleDebug
-```
-
-On macOS or Linux:
+From the command line:
 
 ```bash
-./gradlew assembleDebug
+./gradlew assembleDebug          # build
+./gradlew testDebugUnitTest      # unit tests
+./gradlew connectedDebugAndroidTest  # Room DAO tests on a device/emulator
 ```
 
-The debug APK is generated under `app/build/outputs/apk/debug/`.
+## Upgrading from v1
 
-## Testing
+Version 1 kept data in `expense_tracker.db` with dates stored as text. On first launch, v2 imports every category and transaction into the new Room database (converting dates and amounts), then removes the old file. Budgets and theme choices from v1 are not carried over.
 
-Run local unit tests with:
+## Data and privacy
 
-```bash
-./gradlew test
-```
+Everything stays on the device. There are no accounts, no network access and no analytics. Android backup includes the database and preferences.
 
-Run instrumented tests on a connected device or emulator with:
+## Known limitations
 
-```bash
-./gradlew connectedAndroidTest
-```
-
-The repository currently includes basic template tests. Database behavior, transaction calculations, date filtering, budgets, notifications, exports, and the main UI flows still need dedicated coverage.
-
-## Permissions
-
-The app declares the Android 13+ notification permission so it can deliver reminder and export notifications. The permission may need to be granted at runtime on supported Android versions.
-
-## Data and Privacy
-
-Transaction and category data is stored locally in the app's SQLite database. No backend service or account system is currently configured in the project.
-
-## Known Limitations
-
-- Database upgrades currently require a migration strategy before the schema changes in a released app.
-- Date values are represented as formatted text in several parts of the application, which can affect sorting and filtering across locales.
-- The project contains some legacy or unused helper classes and duplicated theme-related logic.
-- Release signing and a production distribution workflow are not included yet.
+- The application ID is still `com.example.budget_planner`, so existing installs upgrade in place. Pick a unique ID before publishing to Google Play.
+- Release signing is not configured.
 
 ## License
 
-No license file is currently included. Add a license before distributing the project publicly.
+No license file is included yet. Add one before distributing the project publicly.

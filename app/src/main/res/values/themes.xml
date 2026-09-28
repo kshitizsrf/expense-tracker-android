@@ -1,36 +1,15 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.Budget_Planner" parent="Theme.Material3.DayNight.NoActionBar">
-        <!--for background-->
-        <item name="android:windowBackground">@drawable/backgroung_gradient</item>
-        <!--for main card view-->
-        <item name="colorPrimary">#EDEDED</item>
-        <!--for middle card-->
-        <item name="colorPrimaryVariant">#BBD7FF</item>
-        <!--for buttons-->
-        <item name="colorOnPrimary">#004E92</item>
-        <!--for text-->
-        <item name="android:textColor">@color/black</item>
-        <!--for bottom navigation icon-->
-        <item name="colorOnSecondary">#004E92</item>
-        <!--for bottom navigation-->
-        <item name="colorSecondary">#EDEDED</item>
-        <!--for home  texts-->
-        <item name="colorSecondaryVariant">#BBD7FF</item>
-        <!--for numpad -->
-        <item name="colorTertiary">#E3E3E3</item>
-        <!--transaction listview-->
-        <item name="colorOnTertiary">#1A001F54</item>
-
-        <item name="android:drawableTint">#B3292D32</item>
-
-        <item name="android:statusBarColor">#004E92</item>
+<resources>
+    <!--
+        The UI is 100% Jetpack Compose (see HisabKitabTheme); these window themes only
+        cover the splash screen and the brief moment before Compose draws.
+    -->
+    <style name="Theme.HisabKitab" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/window_background</item>
     </style>
 
-
-
-
-
-    <style name="Theme.Budget_Planner" parent="Base.Theme.Budget_Planner" />
+    <style name="Theme.HisabKitab.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/splash_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_foreground</item>
+        <item name="postSplashScreenTheme">@style/Theme.HisabKitab</item>
+    </style>
 </resources>
-

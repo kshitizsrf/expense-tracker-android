@@ -1,0 +1,18 @@
+<resources>
+    <string name="action_save">Save</string>
+    <string name="new_category">New category</string>
+    <string name="edit_category">Edit category</string>
+    <string name="category_name">Name</string>
+    <string name="color">Color</string>
+    <string name="icon">Icon</string>
+    <string name="categories_empty_title">No categories</string>
+    <string name="categories_empty_message">Tap + to create one.</string>
+    <string name="error_name_required">Enter a name</string>
+    <string name="error_name_taken">A category with this name already exists</string>
+    <string name="delete_category_title">Delete “%1$s”?</string>
+    <string name="delete_category_message_empty">This category will be permanently removed.</string>
+    <plurals name="delete_category_message">
+        <item quantity="one">This also deletes %d transaction in this category. This can\'t be undone.</item>
+        <item quantity="other">This also deletes %d transactions in this category. This can\'t be undone.</item>
+    </plurals>
+</resources>
