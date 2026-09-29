@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_change">மாற்று</string>
+    <string name="budget_intro">உங்கள் பணத்துக்கு ஒரு திட்டம் கொடுங்கள். பட்ஜெட்டில் செலவுகள் மட்டுமே கணக்கிடப்படும்.</string>
+    <string name="budget_amount">பட்ஜெட் தொகை</string>
+    <string name="budget_period">காலம்</string>
+    <string name="budget_explain_daily">ஒவ்வொரு நாளும் புதிதாகத் தொடங்கும்.</string>
+    <string name="budget_explain_weekly">ஒவ்வொரு வாரத் தொடக்கத்திலும் புதிதாகத் தொடங்கும்.</string>
+    <string name="budget_explain_monthly">ஒவ்வொரு மாதமும் 1-ஆம் தேதி புதிதாகத் தொடங்கும்.</string>
+    <string name="budget_explain_custom">நீங்கள் தேர்ந்தெடுக்கும் தேதிகளுக்கு மட்டும்.</string>
+    <string name="budget_current_period">தற்போதைய காலம்: %1$s</string>
+    <string name="choose_dates">தேதிகளைத் தேர்ந்தெடு</string>
+    <string name="save_budget">பட்ஜெட்டைச் சேமி</string>
+    <string name="remove_budget">பட்ஜெட்டை நீக்கு</string>
+    <string name="error_dates_required">உங்கள் பட்ஜெட்டுக்கான தேதிகளைத் தேர்ந்தெடுக்கவும்</string>
+</resources>

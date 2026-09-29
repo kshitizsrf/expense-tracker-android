@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="new_category">Nueva categoría</string>
+    <string name="edit_category">Editar categoría</string>
+    <string name="category_name">Nombre</string>
+    <string name="color">Color</string>
+    <string name="icon">Icono</string>
+    <string name="categories_empty_title">Sin categorías</string>
+    <string name="categories_empty_message">Toca + para crear una.</string>
+    <string name="error_name_required">Introduce un nombre</string>
+    <string name="error_name_taken">Ya existe una categoría con ese nombre</string>
+    <string name="delete_category_title">¿Eliminar “%1$s”?</string>
+    <string name="delete_category_message_empty">Esta categoría se eliminará para siempre.</string>
+    <string name="categories_title">Categorías</string>
+    <string name="categories_subtitle">Tu dinero, bien ordenado</string>
+    <string name="this_month_total">%1$s este mes</string>
+    <string name="nothing_this_month">Nada este mes</string>
+    <string name="preview">Vista previa</string>
+    <plurals name="delete_category_message">
+        <item quantity="one">También se eliminará %d movimiento de esta categoría. No se puede deshacer.</item>
+        <item quantity="many">También se eliminarán %d movimientos de esta categoría. No se puede deshacer.</item>
+        <item quantity="other">También se eliminarán %d movimientos de esta categoría. No se puede deshacer.</item>
+    </plurals>
+</resources>

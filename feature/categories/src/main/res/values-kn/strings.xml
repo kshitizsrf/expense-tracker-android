@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="new_category">ಹೊಸ ವರ್ಗ</string>
+    <string name="edit_category">ವರ್ಗ ತಿದ್ದಿ</string>
+    <string name="category_name">ಹೆಸರು</string>
+    <string name="color">ಬಣ್ಣ</string>
+    <string name="icon">ಐಕಾನ್</string>
+    <string name="categories_empty_title">ಯಾವುದೇ ವರ್ಗಗಳಿಲ್ಲ</string>
+    <string name="categories_empty_message">ಹೊಸದನ್ನು ರಚಿಸಲು + ಟ್ಯಾಪ್ ಮಾಡಿ.</string>
+    <string name="error_name_required">ಹೆಸರು ನಮೂದಿಸಿ</string>
+    <string name="error_name_taken">ಈ ಹೆಸರಿನ ವರ್ಗ ಈಗಾಗಲೇ ಇದೆ</string>
+    <string name="delete_category_title">“%1$s” ಅಳಿಸಬೇಕೇ?</string>
+    <string name="delete_category_message_empty">ಈ ವರ್ಗವನ್ನು ಶಾಶ್ವತವಾಗಿ ಅಳಿಸಲಾಗುತ್ತದೆ.</string>
+    <string name="categories_title">ವರ್ಗಗಳು</string>
+    <string name="categories_subtitle">ನಿಮ್ಮ ಹಣ, ಅಚ್ಚುಕಟ್ಟಾಗಿ</string>
+    <string name="this_month_total">ಈ ತಿಂಗಳು %1$s</string>
+    <string name="nothing_this_month">ಈ ತಿಂಗಳು ಏನೂ ಇಲ್ಲ</string>
+    <string name="preview">ಮುನ್ನೋಟ</string>
+    <plurals name="delete_category_message">
+        <item quantity="one">ಇದರಿಂದ ಈ ವರ್ಗದ %d ವಹಿವಾಟು ಕೂಡ ಅಳಿಸಲ್ಪಡುತ್ತದೆ. ಇದನ್ನು ರದ್ದುಗೊಳಿಸಲಾಗುವುದಿಲ್ಲ.</item>
+        <item quantity="other">ಇದರಿಂದ ಈ ವರ್ಗದ %d ವಹಿವಾಟುಗಳು ಕೂಡ ಅಳಿಸಲ್ಪಡುತ್ತವೆ. ಇದನ್ನು ರದ್ದುಗೊಳಿಸಲಾಗುವುದಿಲ್ಲ.</item>
+    </plurals>
+</resources>

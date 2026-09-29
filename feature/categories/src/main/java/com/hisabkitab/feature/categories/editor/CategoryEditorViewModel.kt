@@ -27,6 +27,8 @@ data class CategoryEditorUiState(
     val iconKey: String = CategoryIcons.all.first().key,
     val color: Int = CategoryColors.all.first(),
     val transactionCount: Int = 0,
+    /** Built-in category key; kept only while the user doesn't rename it. */
+    val defaultKey: String? = null,
     @StringRes val nameError: Int? = null,
     val isSaving: Boolean = false,
     val isFinished: Boolean = false,
@@ -69,10 +71,22 @@ class CategoryEditorViewModel @AssistedInject constructor(
                         iconKey = category.iconKey,
                         color = category.color,
                         transactionCount = count,
+                        defaultKey = category.defaultKey,
                     )
                 }
             }
         }
+    }
+
+    private var storedName: String? = null
+    private var localizedName: String? = null
+
+    /** Shows a built-in category's translated name; saving it unchanged keeps the translation. */
+    fun adoptLocalizedName(name: String) {
+        if (localizedName != null) return
+        localizedName = name
+        storedName = _uiState.value.name
+        _uiState.update { it.copy(name = name) }
     }
 
     fun onNameChange(name: String) = _uiState.update { it.copy(name = name.take(MAX_NAME_LENGTH), nameError = null) }
@@ -96,10 +110,12 @@ class CategoryEditorViewModel @AssistedInject constructor(
                 _uiState.update { it.copy(isSaving = false, nameError = R.string.error_name_taken) }
                 return@launch
             }
+            val unchanged = name == localizedName || name == storedName
             categoryRepository.save(
                 Category(
                     id = categoryId ?: 0,
-                    name = name,
+                    name = if (unchanged) storedName ?: name else name,
+                    defaultKey = if (unchanged) state.defaultKey else null,
                     iconKey = state.iconKey,
                     color = state.color,
                     type = state.type,

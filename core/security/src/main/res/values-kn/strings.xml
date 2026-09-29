@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lock_title">ಹಿಸಾಬ್ ಕಿತಾಬ್ ಲಾಕ್ ಆಗಿದೆ</string>
+    <string name="lock_message">ನಿಮ್ಮ ಹಣಕಾಸಿನ ಮಾಹಿತಿ ಖಾಸಗಿಯಾಗಿರುತ್ತದೆ. ಬೆರಳಚ್ಚು, ಮುಖ ಅಥವಾ ಸ್ಕ್ರೀನ್ ಲಾಕ್‌ನಿಂದ ತೆರೆಯಿರಿ.</string>
+    <string name="lock_unlock">ಅನ್‌ಲಾಕ್ ಮಾಡಿ</string>
+    <string name="lock_prompt_title">ಹಿಸಾಬ್ ಕಿತಾಬ್ ಅನ್‌ಲಾಕ್ ಮಾಡಿ</string>
+    <string name="lock_prompt_subtitle">ಇದು ನೀವೇ ಎಂದು ದೃಢೀಕರಿಸಿ</string>
+</resources>

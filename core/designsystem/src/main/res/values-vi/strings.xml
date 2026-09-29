@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_transactions">Hoạt động</string>
+    <string name="nav_stats">Phân tích</string>
+    <string name="nav_categories">Danh mục</string>
+    <string name="action_back">Quay lại</string>
+    <string name="action_cancel">Hủy</string>
+    <string name="action_close">Đóng</string>
+    <string name="action_delete">Xóa</string>
+    <string name="action_ok">OK</string>
+    <string name="income">Thu nhập</string>
+    <string name="expense">Chi tiêu</string>
+    <string name="expenses">Chi tiêu</string>
+    <string name="select_time">Chọn giờ</string>
+    <string name="settings_title">Cài đặt</string>
+    <string name="add_transaction">Thêm</string>
+    <string name="empty_transactions_title">Chưa có giao dịch nào</string>
+    <string name="empty_transactions_message">Nhấn Thêm để ghi khoản thu hoặc chi đầu tiên.</string>
+    <string name="budget">Ngân sách</string>
+    <string name="period_daily">Hằng ngày</string>
+    <string name="period_weekly">Hằng tuần</string>
+    <string name="period_monthly">Hằng tháng</string>
+    <string name="period_custom">Tùy chỉnh</string>
+    <string name="error_amount_required">Nhập số tiền lớn hơn 0</string>
+    <string name="action_save">Lưu</string>
+    <string name="action_edit">Sửa</string>
+    <string name="theme_skyline_tagline">Bình yên xanh trong</string>
+    <string name="theme_dawn_tagline">Bình minh sau nửa đêm</string>
+    <string name="theme_horizon_tagline">Ngọc lam biển sâu</string>
+    <string name="theme_pinkwalk_tagline">Dạo bước oải hương ngọt ngào</string>
+    <string name="theme_rosewood_tagline">Đêm chàm, ánh hồng</string>
+    <string name="theme_wallpaper_tagline">Theo màu hình nền của bạn</string>
+    <string name="theme_wallpaper">Hình nền</string>
+    <string name="spotlight_dismiss">Nhấn vào bất kỳ đâu để đóng</string>
+    <string name="select_date_range">Chọn khoảng ngày</string>
+</resources>

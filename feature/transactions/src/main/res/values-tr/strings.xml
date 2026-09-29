@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="category">Kategori</string>
+    <string name="date">Tarih</string>
+    <string name="time">Saat</string>
+    <string name="note">Not</string>
+    <string name="no_note">Not yok</string>
+    <string name="search">Ara</string>
+    <string name="close_search">Aramayı kapat</string>
+    <string name="clear_search">Aramayı temizle</string>
+    <string name="search_hint">Not veya kategori ara</string>
+    <string name="filter_all">Tümü</string>
+    <string name="empty_filtered_title">Eşleşen işlem yok</string>
+    <string name="empty_filtered_message">Başka bir arama veya filtre deneyin.</string>
+    <string name="transaction_details">İşlem</string>
+    <string name="transaction_not_found_title">İşlem bulunamadı</string>
+    <string name="transaction_not_found_message">Silinmiş olabilir.</string>
+    <string name="delete_transaction_title">İşlem silinsin mi?</string>
+    <string name="delete_transaction_message">Bu işlem kalıcı olarak silinecek.</string>
+    <string name="new_transaction">Yeni işlem</string>
+    <string name="edit_transaction">İşlemi düzenle</string>
+    <string name="note_optional">Not (isteğe bağlı)</string>
+    <string name="new_category_short">Yeni</string>
+    <string name="save_transaction">İşlemi kaydet</string>
+    <string name="save_changes">Değişiklikleri kaydet</string>
+    <string name="keypad_backspace">Geri sil. Tümünü silmek için basılı tutun</string>
+    <string name="keypad_decimal">Ondalık</string>
+    <string name="error_amount_too_large">Bu tutar çok büyük</string>
+    <string name="error_category_required">Bir kategori seçin</string>
+    <string name="activity_title">Hareketler</string>
+    <string name="activity_subtitle">Her kuruş kayıt altında</string>
+    <string name="deleted_transaction">İşlem silindi</string>
+    <string name="undo">Geri al</string>
+    <string name="swipe_hint">Silmek için kaydı sola kaydırın</string>
+    <string name="spent_label">Harcanan</string>
+    <string name="earned_label">Kazanılan</string>
+</resources>

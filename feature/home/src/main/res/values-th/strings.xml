@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="balance">ยอดคงเหลือเดือนนี้</string>
+    <string name="previous_month">เดือนก่อน</string>
+    <string name="next_month">เดือนถัดไป</string>
+    <string name="back_to_this_month">แตะเพื่อกลับไปเดือนนี้</string>
+    <string name="recent_transactions">กิจกรรมล่าสุด</string>
+    <string name="see_all">ดูทั้งหมด</string>
+    <string name="daily_spending">การใช้จ่ายรายวัน</string>
+    <string name="budget_set_title">ตั้งงบประมาณ</string>
+    <string name="budget_set_message">รู้แน่ชัดว่าใช้จ่ายได้เท่าไรในแต่ละวัน</string>
+    <string name="budget_title_daily">งบวันนี้</string>
+    <string name="budget_title_weekly">งบสัปดาห์นี้</string>
+    <string name="budget_title_monthly">งบเดือนนี้</string>
+    <string name="budget_title_custom">งบประมาณ</string>
+    <string name="budget_spent_of">ใช้ไป %1$s จาก %2$s</string>
+    <string name="budget_over_by">เกิน %1$s</string>
+    <string name="budget_safe_today">ใช้ได้วันนี้</string>
+    <string name="budget_ended">ช่วงงบประมาณนี้สิ้นสุดแล้ว แตะเพื่อตั้งใหม่</string>
+    <string name="budget_not_started">เริ่ม %1$s</string>
+    <string name="insight_top_category">ใช้จ่ายมากที่สุด</string>
+    <string name="insight_daily_average">เฉลี่ยต่อวัน</string>
+    <string name="insight_biggest">รายจ่ายก้อนใหญ่สุด</string>
+    <string name="insight_count">รายการ</string>
+    <string name="empty_home_title">เริ่มต้นใหม่</string>
+    <string name="empty_home_message">แตะปุ่ม + เพื่อบันทึกรายรับหรือรายจ่ายแรกของคุณ</string>
+    <string name="spotlight_saved">เงินออม</string>
+    <plurals name="budget_days_left">
+        <item quantity="other">เหลืออีก %d วัน</item>
+    </plurals>
+</resources>

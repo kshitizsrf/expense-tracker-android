@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_transactions">明细</string>
+    <string name="nav_stats">分析</string>
+    <string name="nav_categories">分类</string>
+    <string name="action_back">返回</string>
+    <string name="action_cancel">取消</string>
+    <string name="action_close">关闭</string>
+    <string name="action_delete">删除</string>
+    <string name="action_ok">确定</string>
+    <string name="income">收入</string>
+    <string name="expense">支出</string>
+    <string name="expenses">支出</string>
+    <string name="select_time">选择时间</string>
+    <string name="settings_title">设置</string>
+    <string name="add_transaction">记一笔</string>
+    <string name="empty_transactions_title">还没有记录</string>
+    <string name="empty_transactions_message">点按“记一笔”记录你的第一笔收入或支出。</string>
+    <string name="budget">预算</string>
+    <string name="period_daily">每日</string>
+    <string name="period_weekly">每周</string>
+    <string name="period_monthly">每月</string>
+    <string name="period_custom">自定义</string>
+    <string name="error_amount_required">请输入大于零的金额</string>
+    <string name="action_save">保存</string>
+    <string name="action_edit">编辑</string>
+    <string name="theme_skyline_tagline">澄澈的蓝色宁静</string>
+    <string name="theme_dawn_tagline">午夜之后的黎明</string>
+    <string name="theme_horizon_tagline">深海青绿</string>
+    <string name="theme_pinkwalk_tagline">薰衣草糖果漫步</string>
+    <string name="theme_rosewood_tagline">靛蓝之夜，玫瑰微光</string>
+    <string name="theme_wallpaper_tagline">取自你的壁纸配色</string>
+    <string name="theme_wallpaper">壁纸</string>
+    <string name="spotlight_dismiss">点按任意位置关闭</string>
+    <string name="select_date_range">选择日期范围</string>
+</resources>

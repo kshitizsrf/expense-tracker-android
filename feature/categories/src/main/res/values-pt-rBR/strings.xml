@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="new_category">Nova categoria</string>
+    <string name="edit_category">Editar categoria</string>
+    <string name="category_name">Nome</string>
+    <string name="color">Cor</string>
+    <string name="icon">Ícone</string>
+    <string name="categories_empty_title">Nenhuma categoria</string>
+    <string name="categories_empty_message">Toque em + para criar uma.</string>
+    <string name="error_name_required">Informe um nome</string>
+    <string name="error_name_taken">Já existe uma categoria com esse nome</string>
+    <string name="delete_category_title">Excluir “%1$s”?</string>
+    <string name="delete_category_message_empty">Esta categoria será excluída permanentemente.</string>
+    <string name="categories_title">Categorias</string>
+    <string name="categories_subtitle">Seu dinheiro, bem organizado</string>
+    <string name="this_month_total">%1$s este mês</string>
+    <string name="nothing_this_month">Nada este mês</string>
+    <string name="preview">Prévia</string>
+    <plurals name="delete_category_message">
+        <item quantity="one">Isso também excluirá %d transação desta categoria. Não é possível desfazer.</item>
+        <item quantity="many">Isso também excluirá %d transações desta categoria. Não é possível desfazer.</item>
+        <item quantity="other">Isso também excluirá %d transações desta categoria. Não é possível desfazer.</item>
+    </plurals>
+</resources>

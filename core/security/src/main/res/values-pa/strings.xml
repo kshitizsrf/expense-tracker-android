@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lock_title">ਹਿਸਾਬ ਕਿਤਾਬ ਲਾਕ ਹੈ</string>
+    <string name="lock_message">ਤੁਹਾਡੀ ਵਿੱਤੀ ਜਾਣਕਾਰੀ ਨਿੱਜੀ ਰਹਿੰਦੀ ਹੈ। ਫਿੰਗਰਪ੍ਰਿੰਟ, ਚਿਹਰੇ ਜਾਂ ਸਕ੍ਰੀਨ ਲਾਕ ਨਾਲ ਖੋਲ੍ਹੋ।</string>
+    <string name="lock_unlock">ਅਨਲਾਕ ਕਰੋ</string>
+    <string name="lock_prompt_title">ਹਿਸਾਬ ਕਿਤਾਬ ਅਨਲਾਕ ਕਰੋ</string>
+    <string name="lock_prompt_subtitle">ਪੁਸ਼ਟੀ ਕਰੋ ਕਿ ਇਹ ਤੁਸੀਂ ਹੋ</string>
+</resources>

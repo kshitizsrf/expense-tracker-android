@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lock_title">Hisab Kitab はロック中です</string>
+    <string name="lock_message">あなたの家計は非公開です。指紋、顔、または画面ロックで解除してください。</string>
+    <string name="lock_unlock">ロック解除</string>
+    <string name="lock_prompt_title">Hisab Kitab のロックを解除</string>
+    <string name="lock_prompt_subtitle">本人であることを確認してください</string>
+</resources>

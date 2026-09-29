@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_change">เปลี่ยน</string>
+    <string name="budget_intro">วางแผนการเงินของคุณ งบประมาณนับเฉพาะรายจ่าย</string>
+    <string name="budget_amount">จำนวนงบประมาณ</string>
+    <string name="budget_period">ช่วงเวลา</string>
+    <string name="budget_explain_daily">เริ่มใหม่ทุกวัน</string>
+    <string name="budget_explain_weekly">เริ่มใหม่ทุกต้นสัปดาห์</string>
+    <string name="budget_explain_monthly">เริ่มใหม่ทุกวันที่ 1 ของเดือน</string>
+    <string name="budget_explain_custom">เฉพาะวันที่คุณเลือกเท่านั้น</string>
+    <string name="budget_current_period">ช่วงปัจจุบัน: %1$s</string>
+    <string name="choose_dates">เลือกวันที่</string>
+    <string name="save_budget">บันทึกงบประมาณ</string>
+    <string name="remove_budget">ลบงบประมาณ</string>
+    <string name="error_dates_required">เลือกวันที่สำหรับงบประมาณ</string>
+</resources>

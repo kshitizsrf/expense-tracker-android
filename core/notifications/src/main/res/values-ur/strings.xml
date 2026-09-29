@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="reminder_channel_name">روزانہ یاد دہانی</string>
+    <string name="reminder_channel_description">اگر آج کوئی لین دین شامل نہیں کیا تو یاد دلاتا ہے۔</string>
+    <string name="reminder_title">آج کا خرچ لکھا؟</string>
+    <string name="reminder_text">بس چند سیکنڈ لگتے ہیں اور آپ کا بجٹ درست رہتا ہے۔</string>
+</resources>

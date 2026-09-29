@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="insights_title">تجزیہ</string>
+    <string name="insights_subtitle">آپ کا پیسہ کہاں جاتا ہے</string>
+    <string name="period_this_month">اس مہینے</string>
+    <string name="period_last_month">پچھلے مہینے</string>
+    <string name="period_last_3_months">3 مہینے</string>
+    <string name="period_this_year">اس سال</string>
+    <string name="chart_donut">ڈونٹ</string>
+    <string name="chart_bars">درجہ بندی</string>
+    <string name="chart_trend">رجحان</string>
+    <string name="chart_calendar">کیلنڈر</string>
+    <string name="chart_cash_flow">نقد بہاؤ</string>
+    <string name="chart_donut_title">زمرے کے لحاظ سے حصہ</string>
+    <string name="chart_bars_title">سرفہرست زمرے</string>
+    <string name="chart_trend_title_daily">دن بہ دن</string>
+    <string name="chart_trend_title_monthly">مہینہ بہ مہینہ</string>
+    <string name="chart_calendar_title">اخراجات کا کیلنڈر</string>
+    <string name="chart_calendar_title_income">آمدنی کا کیلنڈر</string>
+    <string name="chart_cash_flow_title">نقد بہاؤ · پچھلے 6 مہینے</string>
+    <string name="chart_hint_donut">کسی حصے پر توجہ کے لیے ٹیپ کریں</string>
+    <string name="chart_hint_trend">چھو کر کھینچیں اور دیکھیں</string>
+    <string name="chart_hint_calendar">کسی دن کا کل دیکھنے کے لیے ٹیپ کریں</string>
+    <string name="chart_hint_cash_flow">تفصیل کے لیے کسی مہینے پر ٹیپ کریں</string>
+    <string name="total_spent">کل خرچ</string>
+    <string name="total_earned">کل آمدنی</string>
+    <string name="stat_total">کل</string>
+    <string name="stat_daily_average">روزانہ اوسط</string>
+    <string name="stat_entries">اندراجات</string>
+    <string name="stat_vs_previous">پچھلے کے مقابلے</string>
+    <string name="stat_no_comparison">نیا</string>
+    <string name="percent_of_total">کل کا %1$d%%</string>
+    <string name="heatmap_less">کم</string>
+    <string name="heatmap_more">زیادہ</string>
+    <string name="nothing_on_day">کچھ درج نہیں</string>
+    <string name="net">خالص</string>
+    <string name="stats_empty_title">ابھی دکھانے کو کچھ نہیں</string>
+    <string name="stats_empty_message">اس مدت کے لین دین ان چارٹس کو روشن کریں گے۔</string>
+    <string name="stat_previous_period">پچھلی مدت</string>
+    <plurals name="transaction_count">
+        <item quantity="one">%d لین دین</item>
+        <item quantity="other">%d لین دین</item>
+    </plurals>
+</resources>

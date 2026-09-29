@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lock_title">हिसाब किताब लक छ</string>
+    <string name="lock_message">तपाईंको आर्थिक जानकारी निजी रहन्छ। औंलाछाप, अनुहार वा स्क्रिन लकले खोल्नुहोस्।</string>
+    <string name="lock_unlock">अनलक गर्नुहोस्</string>
+    <string name="lock_prompt_title">हिसाब किताब अनलक गर्नुहोस्</string>
+    <string name="lock_prompt_subtitle">यो तपाईं नै हो भनी पुष्टि गर्नुहोस्</string>
+</resources>

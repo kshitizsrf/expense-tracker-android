@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_change">변경</string>
+    <string name="budget_intro">돈을 계획하세요. 예산은 지출만 계산해요.</string>
+    <string name="budget_amount">예산 금액</string>
+    <string name="budget_period">기간</string>
+    <string name="budget_explain_daily">매일 새로 시작해요.</string>
+    <string name="budget_explain_weekly">매주 시작일에 새로 시작해요.</string>
+    <string name="budget_explain_monthly">매월 1일에 새로 시작해요.</string>
+    <string name="budget_explain_custom">선택한 날짜에만 적용돼요.</string>
+    <string name="budget_current_period">현재 기간: %1$s</string>
+    <string name="choose_dates">날짜 선택</string>
+    <string name="save_budget">예산 저장</string>
+    <string name="remove_budget">예산 삭제</string>
+    <string name="error_dates_required">예산 날짜를 선택하세요</string>
+</resources>

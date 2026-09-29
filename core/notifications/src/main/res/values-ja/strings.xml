@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="reminder_channel_name">毎日のリマインダー</string>
+    <string name="reminder_channel_description">今日まだ記録していない場合にお知らせします。</string>
+    <string name="reminder_title">今日の支出は記録しましたか？</string>
+    <string name="reminder_text">数秒で完了し、予算を正確に保てます。</string>
+</resources>

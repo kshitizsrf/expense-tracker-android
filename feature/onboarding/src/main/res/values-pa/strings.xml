@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_welcome_title">ਹਿਸਾਬ ਕਿਤਾਬ</string>
+    <string name="onboarding_welcome_message">ਤੁਹਾਡਾ ਪੈਸਾ, ਸੋਹਣੇ ਢੰਗ ਨਾਲ ਸੰਗਠਿਤ। ਸਕਿੰਟਾਂ ਵਿੱਚ ਲਿਖੋ, ਦੇਖੋ ਪੈਸਾ ਕਿੱਥੇ ਜਾਂਦਾ ਹੈ ਅਤੇ ਭਰੋਸੇ ਨਾਲ ਖ਼ਰਚੋ।</string>
+    <string name="onboarding_theme_title">ਆਪਣਾ ਅੰਦਾਜ਼ ਚੁਣੋ</string>
+    <string name="onboarding_theme_message">ਪੰਜ ਖ਼ਾਸ ਥੀਮ, ਹਰੇਕ ਵਿੱਚ ਲਾਈਟ ਅਤੇ ਡਾਰਕ ਮੂਡ। ਤੁਸੀਂ ਇਸਨੂੰ ਕਦੇ ਵੀ ਬਦਲ ਸਕਦੇ ਹੋ।</string>
+    <string name="onboarding_setup_title">ਆਖ਼ਰੀ ਛੋਹਾਂ</string>
+    <string name="onboarding_setup_message">ਆਪਣੀ ਮੁਦਰਾ ਚੁਣੋ ਅਤੇ ਦੱਸੋ ਕਿ ਕੀ ਤੁਸੀਂ ਦਿਨ ਲਿਖਣ ਲਈ ਹਲਕੀ ਯਾਦ-ਦਹਾਨੀ ਚਾਹੁੰਦੇ ਹੋ।</string>
+    <string name="onboarding_currency">ਮੁਦਰਾ</string>
+    <string name="onboarding_reminder">ਰੋਜ਼ਾਨਾ ਯਾਦ-ਦਹਾਨੀ</string>
+    <string name="onboarding_reminder_summary">ਸਿਰਫ਼ ਤਾਂ, ਜੇ ਉਸ ਦਿਨ ਕੁਝ ਨਾ ਲਿਖਿਆ ਹੋਵੇ</string>
+    <string name="onboarding_next">ਅੱਗੇ</string>
+    <string name="onboarding_start">ਚਲੋ ਸ਼ੁਰੂ ਕਰੀਏ</string>
+    <string name="onboarding_skip">ਛੱਡੋ</string>
+    <string name="onboarding_feature_fast">ਫਟਾਫਟ ਇੰਦਰਾਜ ਲਈ ਕੈਲਕੁਲੇਟਰ ਕੀਪੈਡ</string>
+    <string name="onboarding_feature_insights">ਖ਼ਰਚਾ ਦੇਖਣ ਦੇ ਪੰਜ ਤਰੀਕੇ</string>
+    <string name="onboarding_feature_private">ਪੂਰੀ ਤਰ੍ਹਾਂ ਨਿੱਜੀ · ਸਭ ਕੁਝ ਤੁਹਾਡੇ ਫ਼ੋਨ ਵਿੱਚ ਹੀ</string>
+    <string name="mode_auto">ਆਟੋ</string>
+    <string name="mode_light">☀  ਲਾਈਟ</string>
+    <string name="mode_dark">☾  ਡਾਰਕ</string>
+    <string name="onboarding_language_title">ਆਪਣੀ ਭਾਸ਼ਾ ਚੁਣੋ</string>
+    <string name="onboarding_language_message">ਹਿਸਾਬ ਕਿਤਾਬ ਤੁਹਾਡੀ ਭਾਸ਼ਾ ਬੋਲਦਾ ਹੈ। ਤੁਸੀਂ ਇਸਨੂੰ ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਕਦੇ ਵੀ ਬਦਲ ਸਕਦੇ ਹੋ।</string>
+    <string name="onboarding_lock">ਐਪ ਲਾਕ</string>
+    <string name="onboarding_lock_summary">ਫਿੰਗਰਪ੍ਰਿੰਟ ਜਾਂ ਸਕ੍ਰੀਨ ਲਾਕ ਨਾਲ ਆਪਣੀ ਜਾਣਕਾਰੀ ਨਿੱਜੀ ਰੱਖੋ</string>
+    <string name="onboarding_lock_prompt">ਐਪ ਲਾਕ ਚਾਲੂ ਕਰੋ</string>
+    <string name="onboarding_lock_prompt_subtitle">ਪੁਸ਼ਟੀ ਕਰੋ ਕਿ ਇਹ ਤੁਸੀਂ ਹੋ</string>
+</resources>

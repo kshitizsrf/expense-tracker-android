@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="new_category">หมวดหมู่ใหม่</string>
+    <string name="edit_category">แก้ไขหมวดหมู่</string>
+    <string name="category_name">ชื่อ</string>
+    <string name="color">สี</string>
+    <string name="icon">ไอคอน</string>
+    <string name="categories_empty_title">ไม่มีหมวดหมู่</string>
+    <string name="categories_empty_message">แตะ + เพื่อสร้างใหม่</string>
+    <string name="error_name_required">ใส่ชื่อ</string>
+    <string name="error_name_taken">มีหมวดหมู่ชื่อนี้อยู่แล้ว</string>
+    <string name="delete_category_title">ลบ “%1$s” หรือไม่?</string>
+    <string name="delete_category_message_empty">หมวดหมู่นี้จะถูกลบถาวร</string>
+    <string name="categories_title">หมวดหมู่</string>
+    <string name="categories_subtitle">เงินของคุณ จัดเป็นระเบียบ</string>
+    <string name="this_month_total">%1$s เดือนนี้</string>
+    <string name="nothing_this_month">เดือนนี้ยังไม่มี</string>
+    <string name="preview">ตัวอย่าง</string>
+    <plurals name="delete_category_message">
+        <item quantity="other">จะลบ %d รายการในหมวดหมู่นี้ด้วย ไม่สามารถย้อนกลับได้</item>
+    </plurals>
+</resources>

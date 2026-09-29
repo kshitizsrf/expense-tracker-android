@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="category">ವರ್ಗ</string>
+    <string name="date">ದಿನಾಂಕ</string>
+    <string name="time">ಸಮಯ</string>
+    <string name="note">ಟಿಪ್ಪಣಿ</string>
+    <string name="no_note">ಟಿಪ್ಪಣಿ ಇಲ್ಲ</string>
+    <string name="search">ಹುಡುಕಿ</string>
+    <string name="close_search">ಹುಡುಕಾಟ ಮುಚ್ಚಿ</string>
+    <string name="clear_search">ಹುಡುಕಾಟ ತೆರವುಗೊಳಿಸಿ</string>
+    <string name="search_hint">ಟಿಪ್ಪಣಿ ಅಥವಾ ವರ್ಗಗಳನ್ನು ಹುಡುಕಿ</string>
+    <string name="filter_all">ಎಲ್ಲಾ</string>
+    <string name="empty_filtered_title">ಹೊಂದುವ ವಹಿವಾಟುಗಳಿಲ್ಲ</string>
+    <string name="empty_filtered_message">ಬೇರೆ ಹುಡುಕಾಟ ಅಥವಾ ಫಿಲ್ಟರ್ ಪ್ರಯತ್ನಿಸಿ.</string>
+    <string name="transaction_details">ವಹಿವಾಟು</string>
+    <string name="transaction_not_found_title">ವಹಿವಾಟು ಕಂಡುಬಂದಿಲ್ಲ</string>
+    <string name="transaction_not_found_message">ಬಹುಶಃ ಅದನ್ನು ಅಳಿಸಲಾಗಿದೆ.</string>
+    <string name="delete_transaction_title">ವಹಿವಾಟು ಅಳಿಸಬೇಕೇ?</string>
+    <string name="delete_transaction_message">ಈ ವಹಿವಾಟನ್ನು ಶಾಶ್ವತವಾಗಿ ಅಳಿಸಲಾಗುತ್ತದೆ.</string>
+    <string name="new_transaction">ಹೊಸ ವಹಿವಾಟು</string>
+    <string name="edit_transaction">ವಹಿವಾಟು ತಿದ್ದಿ</string>
+    <string name="note_optional">ಟಿಪ್ಪಣಿ (ಐಚ್ಛಿಕ)</string>
+    <string name="new_category_short">ಹೊಸದು</string>
+    <string name="save_transaction">ವಹಿವಾಟು ಉಳಿಸಿ</string>
+    <string name="save_changes">ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸಿ</string>
+    <string name="keypad_backspace">ಬ್ಯಾಕ್‌ಸ್ಪೇಸ್. ಎಲ್ಲಾ ಅಳಿಸಲು ಒತ್ತಿ ಹಿಡಿಯಿರಿ</string>
+    <string name="keypad_decimal">ದಶಮಾಂಶ</string>
+    <string name="error_amount_too_large">ಈ ಮೊತ್ತ ತುಂಬಾ ದೊಡ್ಡದು</string>
+    <string name="error_category_required">ಒಂದು ವರ್ಗ ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="activity_title">ಚಟುವಟಿಕೆ</string>
+    <string name="activity_subtitle">ಪ್ರತಿ ನಾಣ್ಯಕ್ಕೂ ಲೆಕ್ಕ</string>
+    <string name="deleted_transaction">ವಹಿವಾಟು ಅಳಿಸಲಾಗಿದೆ</string>
+    <string name="undo">ರದ್ದುಗೊಳಿಸಿ</string>
+    <string name="swipe_hint">ಅಳಿಸಲು ನಮೂದನ್ನು ಎಡಕ್ಕೆ ಸ್ವೈಪ್ ಮಾಡಿ</string>
+    <string name="spent_label">ಖರ್ಚು</string>
+    <string name="earned_label">ಗಳಿಕೆ</string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="balance">Saldo dieses Monats</string>
+    <string name="previous_month">Vorheriger Monat</string>
+    <string name="next_month">Nächster Monat</string>
+    <string name="back_to_this_month">Tippen, um zu diesem Monat zurückzukehren</string>
+    <string name="recent_transactions">Letzte Aktivität</string>
+    <string name="see_all">Alle ansehen</string>
+    <string name="daily_spending">Tägliche Ausgaben</string>
+    <string name="budget_set_title">Budget festlegen</string>
+    <string name="budget_set_message">Wisse genau, wie viel du jeden Tag ausgeben kannst.</string>
+    <string name="budget_title_daily">Heutiges Budget</string>
+    <string name="budget_title_weekly">Wochenbudget</string>
+    <string name="budget_title_monthly">Monatsbudget</string>
+    <string name="budget_title_custom">Budget</string>
+    <string name="budget_spent_of">%1$s von %2$s ausgegeben</string>
+    <string name="budget_over_by">%1$s drüber</string>
+    <string name="budget_safe_today">Heute verfügbar</string>
+    <string name="budget_ended">Dieser Budgetzeitraum ist vorbei. Tippe, um einen neuen festzulegen.</string>
+    <string name="budget_not_started">Beginnt am %1$s</string>
+    <string name="insight_top_category">Größter Posten</string>
+    <string name="insight_daily_average">Tagesdurchschnitt</string>
+    <string name="insight_biggest">Größte Ausgabe</string>
+    <string name="insight_count">Einträge</string>
+    <string name="empty_home_title">Ein frischer Start</string>
+    <string name="empty_home_message">Tippe auf die Schaltfläche +, um deine erste Einnahme oder Ausgabe zu erfassen.</string>
+    <string name="spotlight_saved">Gespart</string>
+    <plurals name="budget_days_left">
+        <item quantity="one">Noch %d Tag</item>
+        <item quantity="other">Noch %d Tage</item>
+    </plurals>
+</resources>

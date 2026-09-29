@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lock_title">Hisab Kitab terkunci</string>
+    <string name="lock_message">Keuangan Anda tetap pribadi. Buka dengan sidik jari, wajah, atau kunci layar.</string>
+    <string name="lock_unlock">Buka kunci</string>
+    <string name="lock_prompt_title">Buka kunci Hisab Kitab</string>
+    <string name="lock_prompt_subtitle">Konfirmasi bahwa ini Anda</string>
+</resources>

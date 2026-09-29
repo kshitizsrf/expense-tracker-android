@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_welcome_title">ಹಿಸಾಬ್ ಕಿತಾಬ್</string>
+    <string name="onboarding_welcome_message">ನಿಮ್ಮ ಹಣ, ಸುಂದರವಾಗಿ ಜೋಡಿಸಲಾಗಿದೆ. ಸೆಕೆಂಡುಗಳಲ್ಲಿ ದಾಖಲಿಸಿ, ಹಣ ಎಲ್ಲಿ ಹೋಗುತ್ತದೆ ನೋಡಿ, ವಿಶ್ವಾಸದಿಂದ ಖರ್ಚು ಮಾಡಿ.</string>
+    <string name="onboarding_theme_title">ನಿಮ್ಮ ಶೈಲಿ ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="onboarding_theme_message">ಐದು ವಿಶೇಷ ಥೀಮ್‌ಗಳು, ಪ್ರತಿಯೊಂದರಲ್ಲೂ ಲೈಟ್ ಮತ್ತು ಡಾರ್ಕ್ ಮೂಡ್. ಯಾವಾಗ ಬೇಕಾದರೂ ಬದಲಿಸಬಹುದು.</string>
+    <string name="onboarding_setup_title">ಕೊನೆಯ ಹಂತ</string>
+    <string name="onboarding_setup_message">ನಿಮ್ಮ ಕರೆನ್ಸಿ ಆಯ್ಕೆಮಾಡಿ ಮತ್ತು ದಿನವನ್ನು ದಾಖಲಿಸಲು ಸಣ್ಣ ಜ್ಞಾಪನೆ ಬೇಕೇ ಎಂದು ತಿಳಿಸಿ.</string>
+    <string name="onboarding_currency">ಕರೆನ್ಸಿ</string>
+    <string name="onboarding_reminder">ದೈನಂದಿನ ಜ್ಞಾಪನೆ</string>
+    <string name="onboarding_reminder_summary">ಆ ದಿನ ಏನೂ ದಾಖಲಿಸದಿದ್ದರೆ ಮಾತ್ರ</string>
+    <string name="onboarding_next">ಮುಂದೆ</string>
+    <string name="onboarding_start">ಶುರು ಮಾಡೋಣ</string>
+    <string name="onboarding_skip">ಬಿಟ್ಟುಬಿಡಿ</string>
+    <string name="onboarding_feature_fast">ತ್ವರಿತ ನಮೂದಿಗೆ ಕ್ಯಾಲ್ಕುಲೇಟರ್ ಕೀಪ್ಯಾಡ್</string>
+    <string name="onboarding_feature_insights">ಖರ್ಚನ್ನು ನೋಡುವ ಐದು ವಿಧಾನಗಳು</string>
+    <string name="onboarding_feature_private">ಸಂಪೂರ್ಣ ಖಾಸಗಿ · ಎಲ್ಲವೂ ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲೇ</string>
+    <string name="mode_auto">ಸ್ವಯಂ</string>
+    <string name="mode_light">☀  ಲೈಟ್</string>
+    <string name="mode_dark">☾  ಡಾರ್ಕ್</string>
+    <string name="onboarding_language_title">ನಿಮ್ಮ ಭಾಷೆ ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="onboarding_language_message">ಹಿಸಾಬ್ ಕಿತಾಬ್ ನಿಮ್ಮ ಭಾಷೆಯಲ್ಲಿ ಮಾತನಾಡುತ್ತದೆ. ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಯಾವಾಗ ಬೇಕಾದರೂ ಬದಲಿಸಬಹುದು.</string>
+    <string name="onboarding_lock">ಆ್ಯಪ್ ಲಾಕ್</string>
+    <string name="onboarding_lock_summary">ಬೆರಳಚ್ಚು ಅಥವಾ ಸ್ಕ್ರೀನ್ ಲಾಕ್‌ನಿಂದ ನಿಮ್ಮ ಮಾಹಿತಿ ಖಾಸಗಿಯಾಗಿಡಿ</string>
+    <string name="onboarding_lock_prompt">ಆ್ಯಪ್ ಲಾಕ್ ಆನ್ ಮಾಡಿ</string>
+    <string name="onboarding_lock_prompt_subtitle">ಇದು ನೀವೇ ಎಂದು ದೃಢೀಕರಿಸಿ</string>
+</resources>

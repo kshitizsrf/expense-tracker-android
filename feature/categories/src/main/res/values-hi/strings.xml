@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="new_category">नई श्रेणी</string>
+    <string name="edit_category">श्रेणी बदलें</string>
+    <string name="category_name">नाम</string>
+    <string name="color">रंग</string>
+    <string name="icon">आइकन</string>
+    <string name="categories_empty_title">कोई श्रेणी नहीं</string>
+    <string name="categories_empty_message">नई बनाने के लिए + पर टैप करें।</string>
+    <string name="error_name_required">नाम दर्ज करें</string>
+    <string name="error_name_taken">इस नाम की श्रेणी पहले से है</string>
+    <string name="delete_category_title">“%1$s” हटाएँ?</string>
+    <string name="delete_category_message_empty">यह श्रेणी हमेशा के लिए हट जाएगी।</string>
+    <string name="categories_title">श्रेणियाँ</string>
+    <string name="categories_subtitle">आपका पैसा, सलीके से</string>
+    <string name="this_month_total">इस महीने %1$s</string>
+    <string name="nothing_this_month">इस महीने कुछ नहीं</string>
+    <string name="preview">झलक</string>
+    <plurals name="delete_category_message">
+        <item quantity="one">इससे इस श्रेणी का %d लेन-देन भी हट जाएगा। इसे वापस नहीं लाया जा सकता।</item>
+        <item quantity="other">इससे इस श्रेणी के %d लेन-देन भी हट जाएँगे। इसे वापस नहीं लाया जा सकता।</item>
+    </plurals>
+</resources>

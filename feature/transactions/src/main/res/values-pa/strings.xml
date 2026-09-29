@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="category">ਸ਼੍ਰੇਣੀ</string>
+    <string name="date">ਤਾਰੀਖ਼</string>
+    <string name="time">ਸਮਾਂ</string>
+    <string name="note">ਨੋਟ</string>
+    <string name="no_note">ਕੋਈ ਨੋਟ ਨਹੀਂ</string>
+    <string name="search">ਖੋਜੋ</string>
+    <string name="close_search">ਖੋਜ ਬੰਦ ਕਰੋ</string>
+    <string name="clear_search">ਖੋਜ ਸਾਫ਼ ਕਰੋ</string>
+    <string name="search_hint">ਨੋਟ ਜਾਂ ਸ਼੍ਰੇਣੀਆਂ ਖੋਜੋ</string>
+    <string name="filter_all">ਸਭ</string>
+    <string name="empty_filtered_title">ਕੋਈ ਮੇਲ ਖਾਂਦਾ ਲੈਣ-ਦੇਣ ਨਹੀਂ</string>
+    <string name="empty_filtered_message">ਕੋਈ ਹੋਰ ਖੋਜ ਜਾਂ ਫਿਲਟਰ ਅਜ਼ਮਾਓ।</string>
+    <string name="transaction_details">ਲੈਣ-ਦੇਣ</string>
+    <string name="transaction_not_found_title">ਲੈਣ-ਦੇਣ ਨਹੀਂ ਮਿਲਿਆ</string>
+    <string name="transaction_not_found_message">ਸ਼ਾਇਦ ਇਸਨੂੰ ਮਿਟਾ ਦਿੱਤਾ ਗਿਆ ਹੈ।</string>
+    <string name="delete_transaction_title">ਲੈਣ-ਦੇਣ ਮਿਟਾਉਣਾ ਹੈ?</string>
+    <string name="delete_transaction_message">ਇਹ ਲੈਣ-ਦੇਣ ਹਮੇਸ਼ਾ ਲਈ ਮਿਟ ਜਾਵੇਗਾ।</string>
+    <string name="new_transaction">ਨਵਾਂ ਲੈਣ-ਦੇਣ</string>
+    <string name="edit_transaction">ਲੈਣ-ਦੇਣ ਸੋਧੋ</string>
+    <string name="note_optional">ਨੋਟ (ਵਿਕਲਪਿਕ)</string>
+    <string name="new_category_short">ਨਵੀਂ</string>
+    <string name="save_transaction">ਲੈਣ-ਦੇਣ ਸੇਵ ਕਰੋ</string>
+    <string name="save_changes">ਬਦਲਾਅ ਸੇਵ ਕਰੋ</string>
+    <string name="keypad_backspace">ਬੈਕਸਪੇਸ। ਸਭ ਮਿਟਾਉਣ ਲਈ ਦਬਾਈ ਰੱਖੋ</string>
+    <string name="keypad_decimal">ਦਸ਼ਮਲਵ</string>
+    <string name="error_amount_too_large">ਇਹ ਰਕਮ ਬਹੁਤ ਵੱਡੀ ਹੈ</string>
+    <string name="error_category_required">ਇੱਕ ਸ਼੍ਰੇਣੀ ਚੁਣੋ</string>
+    <string name="activity_title">ਗਤੀਵਿਧੀ</string>
+    <string name="activity_subtitle">ਹਰ ਪੈਸੇ ਦਾ ਹਿਸਾਬ</string>
+    <string name="deleted_transaction">ਲੈਣ-ਦੇਣ ਮਿਟਾਇਆ ਗਿਆ</string>
+    <string name="undo">ਵਾਪਸ ਲਓ</string>
+    <string name="swipe_hint">ਮਿਟਾਉਣ ਲਈ ਇੰਦਰਾਜ ਨੂੰ ਖੱਬੇ ਪਾਸੇ ਸਵਾਈਪ ਕਰੋ</string>
+    <string name="spent_label">ਖ਼ਰਚਾ</string>
+    <string name="earned_label">ਕਮਾਈ</string>
+</resources>

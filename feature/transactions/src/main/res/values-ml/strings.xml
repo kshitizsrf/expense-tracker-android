@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="category">വിഭാഗം</string>
+    <string name="date">തീയതി</string>
+    <string name="time">സമയം</string>
+    <string name="note">കുറിപ്പ്</string>
+    <string name="no_note">കുറിപ്പില്ല</string>
+    <string name="search">തിരയുക</string>
+    <string name="close_search">തിരയൽ അടയ്ക്കുക</string>
+    <string name="clear_search">തിരയൽ മായ്ക്കുക</string>
+    <string name="search_hint">കുറിപ്പുകളോ വിഭാഗങ്ങളോ തിരയുക</string>
+    <string name="filter_all">എല്ലാം</string>
+    <string name="empty_filtered_title">പൊരുത്തപ്പെടുന്ന ഇടപാടുകളില്ല</string>
+    <string name="empty_filtered_message">മറ്റൊരു തിരയലോ ഫിൽട്ടറോ പരീക്ഷിക്കുക.</string>
+    <string name="transaction_details">ഇടപാട്</string>
+    <string name="transaction_not_found_title">ഇടപാട് കണ്ടെത്തിയില്ല</string>
+    <string name="transaction_not_found_message">ഇത് ഇല്ലാതാക്കിയിരിക്കാം.</string>
+    <string name="delete_transaction_title">ഇടപാട് ഇല്ലാതാക്കണോ?</string>
+    <string name="delete_transaction_message">ഈ ഇടപാട് ശാശ്വതമായി ഇല്ലാതാക്കപ്പെടും.</string>
+    <string name="new_transaction">പുതിയ ഇടപാട്</string>
+    <string name="edit_transaction">ഇടപാട് തിരുത്തുക</string>
+    <string name="note_optional">കുറിപ്പ് (ഓപ്ഷണൽ)</string>
+    <string name="new_category_short">പുതിയത്</string>
+    <string name="save_transaction">ഇടപാട് സംരക്ഷിക്കുക</string>
+    <string name="save_changes">മാറ്റങ്ങൾ സംരക്ഷിക്കുക</string>
+    <string name="keypad_backspace">ബാക്ക്സ്പേസ്. എല്ലാം മായ്ക്കാൻ അമർത്തിപ്പിടിക്കുക</string>
+    <string name="keypad_decimal">ദശാംശം</string>
+    <string name="error_amount_too_large">ഈ തുക വളരെ വലുതാണ്</string>
+    <string name="error_category_required">ഒരു വിഭാഗം തിരഞ്ഞെടുക്കുക</string>
+    <string name="activity_title">പ്രവർത്തനം</string>
+    <string name="activity_subtitle">ഓരോ നാണയത്തിനും കണക്ക്</string>
+    <string name="deleted_transaction">ഇടപാട് ഇല്ലാതാക്കി</string>
+    <string name="undo">പഴയപടിയാക്കുക</string>
+    <string name="swipe_hint">ഇല്ലാതാക്കാൻ എൻട്രി ഇടത്തേക്ക് സ്വൈപ്പ് ചെയ്യുക</string>
+    <string name="spent_label">ചെലവ്</string>
+    <string name="earned_label">വരുമാനം</string>
+</resources>

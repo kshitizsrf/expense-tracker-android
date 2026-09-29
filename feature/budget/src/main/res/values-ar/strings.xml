@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_change">تغيير</string>
+    <string name="budget_intro">خطط لأموالك. الميزانيات تحسب المصروفات فقط.</string>
+    <string name="budget_amount">مبلغ الميزانية</string>
+    <string name="budget_period">الفترة</string>
+    <string name="budget_explain_daily">تبدأ من جديد كل يوم.</string>
+    <string name="budget_explain_weekly">تبدأ من جديد في بداية كل أسبوع.</string>
+    <string name="budget_explain_monthly">تبدأ من جديد في اليوم الأول من كل شهر.</string>
+    <string name="budget_explain_custom">للتواريخ التي تختارها فقط.</string>
+    <string name="budget_current_period">الفترة الحالية: %1$s</string>
+    <string name="choose_dates">اختر التواريخ</string>
+    <string name="save_budget">حفظ الميزانية</string>
+    <string name="remove_budget">إزالة الميزانية</string>
+    <string name="error_dates_required">اختر تواريخ ميزانيتك</string>
+</resources>

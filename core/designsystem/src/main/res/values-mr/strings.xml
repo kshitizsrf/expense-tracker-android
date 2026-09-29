@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">हिशोब किताब</string>
+    <string name="nav_transactions">व्यवहार</string>
+    <string name="nav_stats">आढावा</string>
+    <string name="nav_categories">श्रेणी</string>
+    <string name="action_back">मागे</string>
+    <string name="action_cancel">रद्द करा</string>
+    <string name="action_close">बंद करा</string>
+    <string name="action_delete">हटवा</string>
+    <string name="action_ok">ठीक आहे</string>
+    <string name="income">उत्पन्न</string>
+    <string name="expense">खर्च</string>
+    <string name="expenses">खर्च</string>
+    <string name="select_time">वेळ निवडा</string>
+    <string name="settings_title">सेटिंग्ज</string>
+    <string name="add_transaction">जोडा</string>
+    <string name="empty_transactions_title">अजून एकही व्यवहार नाही</string>
+    <string name="empty_transactions_message">तुमचे पहिले उत्पन्न किंवा खर्च नोंदवण्यासाठी जोडा वर टॅप करा.</string>
+    <string name="budget">बजेट</string>
+    <string name="period_daily">दैनिक</string>
+    <string name="period_weekly">साप्ताहिक</string>
+    <string name="period_monthly">मासिक</string>
+    <string name="period_custom">कस्टम</string>
+    <string name="error_amount_required">शून्यापेक्षा जास्त रक्कम टाका</string>
+    <string name="action_save">सेव्ह करा</string>
+    <string name="action_edit">संपादित करा</string>
+    <string name="theme_skyline_tagline">स्वच्छ निळी शांतता</string>
+    <string name="theme_dawn_tagline">मध्यरात्रीनंतरची पहाट</string>
+    <string name="theme_horizon_tagline">खोल समुद्री निळसर हिरवा</string>
+    <string name="theme_pinkwalk_tagline">लॅव्हेंडर कँडीची सफर</string>
+    <string name="theme_rosewood_tagline">निळ्या रात्री, गुलाबी तेज</string>
+    <string name="theme_wallpaper_tagline">तुमच्या वॉलपेपरच्या रंगांत</string>
+    <string name="theme_wallpaper">वॉलपेपर</string>
+    <string name="spotlight_dismiss">बंद करण्यासाठी कुठेही टॅप करा</string>
+    <string name="select_date_range">तारखांचा कालावधी निवडा</string>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="budget_not_set">طے نہیں</string>
+    <string name="settings_appearance">ظاہری شکل</string>
+    <string name="settings_money">پیسہ</string>
+    <string name="settings_reminders">یاد دہانیاں</string>
+    <string name="settings_data">آپ کا ڈیٹا</string>
+    <string name="settings_about">متعلق</string>
+    <string name="theme">موڈ</string>
+    <string name="theme_system">سسٹم</string>
+    <string name="theme_light">لائٹ</string>
+    <string name="theme_dark">ڈارک</string>
+    <string name="daily_reminder">روزانہ یاد دہانی</string>
+    <string name="daily_reminder_summary">اگر اس دن کچھ نہیں لکھا تو ایک ہلکی یاد</string>
+    <string name="reminder_time">یاد دہانی کا وقت</string>
+    <string name="notification_settings">اطلاع کی ترتیبات</string>
+    <string name="notification_settings_summary">طے کریں کہ حساب کتاب آپ کو کیسے مطلع کرے</string>
+    <string name="export_transactions">لین دین ایکسپورٹ کریں</string>
+    <string name="export_categories">زمرے ایکسپورٹ کریں</string>
+    <string name="export_summary">کسی بھی اسپریڈشیٹ ایپ میں کھلنے والی CSV فائل کے طور پر محفوظ کریں</string>
+    <string name="export_failed">ایکسپورٹ ناکام۔ دوبارہ کوشش کریں۔</string>
+    <string name="version">ورژن %1$s</string>
+    <string name="settings_title_big">ترتیبات</string>
+    <string name="settings_subtitle">اسے اپنا بنائیں</string>
+    <string name="settings_theme_gallery">تھیم</string>
+    <string name="currency_setting">کرنسی</string>
+    <string name="made_with_love">سوچ سمجھ کر خرچ کے لیے ♥ سے بنایا گیا</string>
+    <string name="settings_motion">حرکت اور انداز</string>
+    <string name="settings_privacy">رازداری اور تحفظ</string>
+    <string name="nav_style">نیویگیشن بار</string>
+    <string name="nav_style_hint">نیچے دیے بار پر ہر انداز آزمائیں</string>
+    <string name="nav_style_liquid">لیکوئڈ</string>
+    <string name="nav_style_bubble">ببل</string>
+    <string name="nav_style_glow">گلو</string>
+    <string name="nav_style_expand">ایکسپینڈ</string>
+    <string name="chart_animation">چارٹ اینیمیشن</string>
+    <string name="chart_animation_hint">تجزیے میں چارٹ کیسے بدلتے ہیں</string>
+    <string name="chart_fade">فیڈ</string>
+    <string name="chart_slide">سلائیڈ</string>
+    <string name="chart_flip">3D فلپ</string>
+    <string name="chart_zoom">زوم</string>
+    <string name="preview_home">ہوم</string>
+    <string name="app_lock">ایپ لاک</string>
+    <string name="app_lock_summary">کھولنے کے لیے فنگر پرنٹ، چہرہ یا اسکرین لاک ضروری</string>
+    <string name="app_lock_unavailable">اسے استعمال کرنے کے لیے فون پر اسکرین لاک لگائیں</string>
+    <string name="app_lock_confirm_title">ایپ لاک آن کریں</string>
+    <string name="app_lock_confirm_subtitle">تصدیق کریں کہ یہ آپ ہیں</string>
+    <string name="language_setting">زبان</string>
+    <plurals name="exported_transactions">
+        <item quantity="one">%d لین دین ایکسپورٹ ہوا</item>
+        <item quantity="other">%d لین دین ایکسپورٹ ہوئے</item>
+    </plurals>
+    <plurals name="exported_categories">
+        <item quantity="one">%d زمرہ ایکسپورٹ ہوا</item>
+        <item quantity="other">%d زمرے ایکسپورٹ ہوئے</item>
+    </plurals>
+</resources>

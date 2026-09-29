@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="reminder_channel_name">Nhắc nhở hằng ngày</string>
+    <string name="reminder_channel_description">Nhắc bạn ghi chi tiêu nếu hôm nay chưa thêm giao dịch nào.</string>
+    <string name="reminder_title">Đã ghi chi tiêu hôm nay chưa?</string>
+    <string name="reminder_text">Chỉ mất vài giây và giúp ngân sách luôn chính xác.</string>
+</resources>

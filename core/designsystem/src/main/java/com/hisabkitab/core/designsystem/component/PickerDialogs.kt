@@ -25,6 +25,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.hisabkitab.core.designsystem.R
 import com.hisabkitab.core.common.time.toUtcEpochMillis
@@ -41,6 +42,7 @@ fun DatePickerModal(
     onDismiss: () -> Unit,
 ) {
     val state = rememberDatePickerState(initialSelectedDateMillis = initialDate.toUtcEpochMillis())
+    CompactPickerTypography {
     DatePickerDialog(
         onDismissRequest = onDismiss,
         confirmButton = {
@@ -58,6 +60,7 @@ fun DatePickerModal(
     ) {
         DatePicker(state = state)
     }
+    }
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -71,6 +74,7 @@ fun DateRangePickerModal(
         initialSelectedStartDateMillis = initialRange?.start?.toUtcEpochMillis(),
         initialSelectedEndDateMillis = initialRange?.endInclusive?.toUtcEpochMillis(),
     )
+    CompactPickerTypography {
     DatePickerDialog(
         onDismissRequest = onDismiss,
         confirmButton = {
@@ -90,8 +94,37 @@ fun DateRangePickerModal(
             TextButton(onClick = onDismiss) { Text(stringResource(R.string.action_cancel)) }
         },
     ) {
-        DateRangePicker(state = state, modifier = Modifier.weight(1f))
+        DateRangePicker(
+            state = state,
+            modifier = Modifier.weight(1f),
+            title = {
+                Text(
+                    text = stringResource(R.string.select_date_range),
+                    style = MaterialTheme.typography.labelLarge,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    modifier = Modifier.padding(start = 24.dp, end = 12.dp, top = 16.dp),
+                )
+            },
+        )
     }
+    }
+}
+
+/**
+ * Material's pickers show the selection in `headlineLarge`, which in our bold display font
+ * overflows narrow dialogs (especially for ranges like "12 Dec 2025 – 3 Jan 2026").
+ * Scale it down to a title size just for pickers.
+ */
+@Composable
+private fun CompactPickerTypography(content: @Composable () -> Unit) {
+    val typography = MaterialTheme.typography
+    MaterialTheme(
+        typography = typography.copy(
+            headlineLarge = typography.titleLarge.copy(fontWeight = FontWeight.Bold),
+            headlineMedium = typography.titleMedium,
+        ),
+        content = content,
+    )
 }
 
 @OptIn(ExperimentalMaterial3Api::class)

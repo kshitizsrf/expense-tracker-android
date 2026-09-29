@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="balance">رصيد هذا الشهر</string>
+    <string name="previous_month">الشهر السابق</string>
+    <string name="next_month">الشهر التالي</string>
+    <string name="back_to_this_month">اضغط للعودة إلى هذا الشهر</string>
+    <string name="recent_transactions">النشاط الأخير</string>
+    <string name="see_all">عرض الكل</string>
+    <string name="daily_spending">الإنفاق اليومي</string>
+    <string name="budget_set_title">حدد ميزانية</string>
+    <string name="budget_set_message">اعرف بالضبط كم يمكنك أن تنفق كل يوم.</string>
+    <string name="budget_title_daily">ميزانية اليوم</string>
+    <string name="budget_title_weekly">ميزانية الأسبوع</string>
+    <string name="budget_title_monthly">ميزانية الشهر</string>
+    <string name="budget_title_custom">الميزانية</string>
+    <string name="budget_spent_of">أُنفق %1$s من %2$s</string>
+    <string name="budget_over_by">تجاوز بمقدار %1$s</string>
+    <string name="budget_safe_today">يمكنك إنفاقه اليوم</string>
+    <string name="budget_ended">انتهت فترة هذه الميزانية. اضغط لتحديد ميزانية جديدة.</string>
+    <string name="budget_not_started">تبدأ في %1$s</string>
+    <string name="insight_top_category">الأعلى إنفاقًا</string>
+    <string name="insight_daily_average">المتوسط اليومي</string>
+    <string name="insight_biggest">أكبر مصروف</string>
+    <string name="insight_count">السجلات</string>
+    <string name="empty_home_title">بداية جديدة</string>
+    <string name="empty_home_message">اضغط زر + لتسجيل أول دخل أو مصروف.</string>
+    <string name="spotlight_saved">المُدّخر</string>
+    <plurals name="budget_days_left">
+        <item quantity="zero">لم يتبقَّ أي يوم (%d)</item>
+        <item quantity="one">يتبقى يوم واحد (%d)</item>
+        <item quantity="two">يتبقى يومان (%d)</item>
+        <item quantity="few">يتبقى %d أيام</item>
+        <item quantity="many">يتبقى %d يومًا</item>
+        <item quantity="other">يتبقى %d يوم</item>
+    </plurals>
+</resources>

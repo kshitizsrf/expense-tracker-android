@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="reminder_channel_name">การเตือนรายวัน</string>
+    <string name="reminder_channel_description">เตือนให้บันทึกการใช้จ่ายหากวันนี้ยังไม่ได้เพิ่มรายการ</string>
+    <string name="reminder_title">บันทึกค่าใช้จ่ายวันนี้หรือยัง?</string>
+    <string name="reminder_text">ใช้เวลาเพียงไม่กี่วินาทีและช่วยให้งบประมาณแม่นยำ</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lock_title">ஹிசாப் கிதாப் பூட்டப்பட்டுள்ளது</string>
+    <string name="lock_message">உங்கள் நிதித் தகவல் தனிப்பட்டதாக இருக்கும். கைரேகை, முகம் அல்லது திரைப் பூட்டால் திறக்கவும்.</string>
+    <string name="lock_unlock">திற</string>
+    <string name="lock_prompt_title">ஹிசாப் கிதாப்பைத் திற</string>
+    <string name="lock_prompt_subtitle">இது நீங்கள்தான் என்பதை உறுதிப்படுத்தவும்</string>
+</resources>

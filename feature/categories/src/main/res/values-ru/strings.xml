@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="new_category">Новая категория</string>
+    <string name="edit_category">Изменить категорию</string>
+    <string name="category_name">Название</string>
+    <string name="color">Цвет</string>
+    <string name="icon">Значок</string>
+    <string name="categories_empty_title">Нет категорий</string>
+    <string name="categories_empty_message">Нажмите +, чтобы создать.</string>
+    <string name="error_name_required">Введите название</string>
+    <string name="error_name_taken">Категория с таким названием уже есть</string>
+    <string name="delete_category_title">Удалить «%1$s»?</string>
+    <string name="delete_category_message_empty">Категория будет удалена навсегда.</string>
+    <string name="categories_title">Категории</string>
+    <string name="categories_subtitle">Ваши деньги по полочкам</string>
+    <string name="this_month_total">%1$s в этом месяце</string>
+    <string name="nothing_this_month">В этом месяце пусто</string>
+    <string name="preview">Предпросмотр</string>
+    <plurals name="delete_category_message">
+        <item quantity="one">Также будет удалена %d операция этой категории. Это нельзя отменить.</item>
+        <item quantity="few">Также будут удалены %d операции этой категории. Это нельзя отменить.</item>
+        <item quantity="many">Также будут удалены %d операций этой категории. Это нельзя отменить.</item>
+        <item quantity="other">Также будут удалены %d операции этой категории. Это нельзя отменить.</item>
+    </plurals>
+</resources>

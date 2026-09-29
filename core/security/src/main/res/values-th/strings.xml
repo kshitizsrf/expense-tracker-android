@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lock_title">Hisab Kitab ถูกล็อก</string>
+    <string name="lock_message">ข้อมูลการเงินของคุณเป็นส่วนตัว ปลดล็อกด้วยลายนิ้วมือ ใบหน้า หรือการล็อกหน้าจอ</string>
+    <string name="lock_unlock">ปลดล็อก</string>
+    <string name="lock_prompt_title">ปลดล็อก Hisab Kitab</string>
+    <string name="lock_prompt_subtitle">ยืนยันว่าเป็นคุณ</string>
+</resources>

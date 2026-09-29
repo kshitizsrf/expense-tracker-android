@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_transactions">Atividade</string>
+    <string name="nav_stats">Análises</string>
+    <string name="nav_categories">Categorias</string>
+    <string name="action_back">Voltar</string>
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_close">Fechar</string>
+    <string name="action_delete">Excluir</string>
+    <string name="action_ok">OK</string>
+    <string name="income">Receita</string>
+    <string name="expense">Despesa</string>
+    <string name="expenses">Despesas</string>
+    <string name="select_time">Escolher horário</string>
+    <string name="settings_title">Configurações</string>
+    <string name="add_transaction">Adicionar</string>
+    <string name="empty_transactions_title">Nenhuma transação ainda</string>
+    <string name="empty_transactions_message">Toque em Adicionar para registrar sua primeira receita ou despesa.</string>
+    <string name="budget">Orçamento</string>
+    <string name="period_daily">Diário</string>
+    <string name="period_weekly">Semanal</string>
+    <string name="period_monthly">Mensal</string>
+    <string name="period_custom">Personalizado</string>
+    <string name="error_amount_required">Informe um valor maior que zero</string>
+    <string name="action_save">Salvar</string>
+    <string name="action_edit">Editar</string>
+    <string name="theme_skyline_tagline">Calma azul cristalina</string>
+    <string name="theme_dawn_tagline">O amanhecer depois da meia-noite</string>
+    <string name="theme_horizon_tagline">Turquesa do fundo do mar</string>
+    <string name="theme_pinkwalk_tagline">Um passeio de lavanda e algodão-doce</string>
+    <string name="theme_rosewood_tagline">Noites índigo, brilho rosado</string>
+    <string name="theme_wallpaper_tagline">Com as cores do seu papel de parede</string>
+    <string name="theme_wallpaper">Papel de parede</string>
+    <string name="spotlight_dismiss">Toque em qualquer lugar para fechar</string>
+    <string name="select_date_range">Escolha um período</string>
+</resources>

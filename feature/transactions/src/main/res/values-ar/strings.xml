@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="category">الفئة</string>
+    <string name="date">التاريخ</string>
+    <string name="time">الوقت</string>
+    <string name="note">ملاحظة</string>
+    <string name="no_note">بلا ملاحظة</string>
+    <string name="search">بحث</string>
+    <string name="close_search">إغلاق البحث</string>
+    <string name="clear_search">مسح البحث</string>
+    <string name="search_hint">ابحث في الملاحظات أو الفئات</string>
+    <string name="filter_all">الكل</string>
+    <string name="empty_filtered_title">لا توجد معاملات مطابقة</string>
+    <string name="empty_filtered_message">جرّب بحثًا أو عامل تصفية آخر.</string>
+    <string name="transaction_details">المعاملة</string>
+    <string name="transaction_not_found_title">المعاملة غير موجودة</string>
+    <string name="transaction_not_found_message">ربما تم حذفها.</string>
+    <string name="delete_transaction_title">حذف المعاملة؟</string>
+    <string name="delete_transaction_message">سيتم حذف هذه المعاملة نهائيًا.</string>
+    <string name="new_transaction">معاملة جديدة</string>
+    <string name="edit_transaction">تعديل المعاملة</string>
+    <string name="note_optional">ملاحظة (اختيارية)</string>
+    <string name="new_category_short">جديدة</string>
+    <string name="save_transaction">حفظ المعاملة</string>
+    <string name="save_changes">حفظ التغييرات</string>
+    <string name="keypad_backspace">حذف. اضغط مطولًا لمسح الكل</string>
+    <string name="keypad_decimal">فاصلة عشرية</string>
+    <string name="error_amount_too_large">هذا المبلغ كبير جدًا</string>
+    <string name="error_category_required">اختر فئة</string>
+    <string name="activity_title">النشاط</string>
+    <string name="activity_subtitle">كل قرش محسوب</string>
+    <string name="deleted_transaction">تم حذف المعاملة</string>
+    <string name="undo">تراجع</string>
+    <string name="swipe_hint">اسحب السجل لليسار لحذفه</string>
+    <string name="spent_label">المنفَق</string>
+    <string name="earned_label">المكتسَب</string>
+</resources>

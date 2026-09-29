@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lock_title">Hisab Kitab 已锁定</string>
+    <string name="lock_message">你的财务信息保持私密。使用指纹、面容或屏幕锁解锁。</string>
+    <string name="lock_unlock">解锁</string>
+    <string name="lock_prompt_title">解锁 Hisab Kitab</string>
+    <string name="lock_prompt_subtitle">请确认是你本人</string>
+</resources>

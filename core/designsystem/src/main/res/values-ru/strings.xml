@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_transactions">Операции</string>
+    <string name="nav_stats">Аналитика</string>
+    <string name="nav_categories">Категории</string>
+    <string name="action_back">Назад</string>
+    <string name="action_cancel">Отмена</string>
+    <string name="action_close">Закрыть</string>
+    <string name="action_delete">Удалить</string>
+    <string name="action_ok">ОК</string>
+    <string name="income">Доход</string>
+    <string name="expense">Расход</string>
+    <string name="expenses">Расходы</string>
+    <string name="select_time">Выберите время</string>
+    <string name="settings_title">Настройки</string>
+    <string name="add_transaction">Добавить</string>
+    <string name="empty_transactions_title">Операций пока нет</string>
+    <string name="empty_transactions_message">Нажмите «Добавить», чтобы записать первый доход или расход.</string>
+    <string name="budget">Бюджет</string>
+    <string name="period_daily">День</string>
+    <string name="period_weekly">Неделя</string>
+    <string name="period_monthly">Месяц</string>
+    <string name="period_custom">Свой период</string>
+    <string name="error_amount_required">Введите сумму больше нуля</string>
+    <string name="action_save">Сохранить</string>
+    <string name="action_edit">Изменить</string>
+    <string name="theme_skyline_tagline">Кристально-голубое спокойствие</string>
+    <string name="theme_dawn_tagline">Рассвет после полуночи</string>
+    <string name="theme_horizon_tagline">Бирюза морских глубин</string>
+    <string name="theme_pinkwalk_tagline">Прогулка в лавандовых тонах</string>
+    <string name="theme_rosewood_tagline">Индиговые ночи, розовое сияние</string>
+    <string name="theme_wallpaper_tagline">В цветах ваших обоев</string>
+    <string name="theme_wallpaper">Обои</string>
+    <string name="spotlight_dismiss">Нажмите в любом месте, чтобы закрыть</string>
+    <string name="select_date_range">Выберите период</string>
+</resources>

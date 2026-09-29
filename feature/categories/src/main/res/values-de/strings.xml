@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="new_category">Neue Kategorie</string>
+    <string name="edit_category">Kategorie bearbeiten</string>
+    <string name="category_name">Name</string>
+    <string name="color">Farbe</string>
+    <string name="icon">Symbol</string>
+    <string name="categories_empty_title">Keine Kategorien</string>
+    <string name="categories_empty_message">Tippe auf +, um eine zu erstellen.</string>
+    <string name="error_name_required">Gib einen Namen ein</string>
+    <string name="error_name_taken">Es gibt bereits eine Kategorie mit diesem Namen</string>
+    <string name="delete_category_title">„%1$s“ löschen?</string>
+    <string name="delete_category_message_empty">Diese Kategorie wird dauerhaft gelöscht.</string>
+    <string name="categories_title">Kategorien</string>
+    <string name="categories_subtitle">Dein Geld, schön sortiert</string>
+    <string name="this_month_total">%1$s diesen Monat</string>
+    <string name="nothing_this_month">Nichts diesen Monat</string>
+    <string name="preview">Vorschau</string>
+    <plurals name="delete_category_message">
+        <item quantity="one">Dabei wird auch %d Buchung dieser Kategorie gelöscht. Das kann nicht rückgängig gemacht werden.</item>
+        <item quantity="other">Dabei werden auch %d Buchungen dieser Kategorie gelöscht. Das kann nicht rückgängig gemacht werden.</item>
+    </plurals>
+</resources>

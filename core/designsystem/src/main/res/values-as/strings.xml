@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_transactions">কাৰ্যকলাপ</string>
+    <string name="nav_stats">বিশ্লেষণ</string>
+    <string name="nav_categories">শ্ৰেণী</string>
+    <string name="action_back">উভতি যাওক</string>
+    <string name="action_cancel">বাতিল কৰক</string>
+    <string name="action_close">বন্ধ কৰক</string>
+    <string name="action_delete">মচক</string>
+    <string name="action_ok">ঠিক আছে</string>
+    <string name="income">আয়</string>
+    <string name="expense">খৰচ</string>
+    <string name="expenses">খৰচ</string>
+    <string name="select_time">সময় বাছক</string>
+    <string name="settings_title">ছেটিংছ</string>
+    <string name="add_transaction">যোগ কৰক</string>
+    <string name="empty_transactions_title">এতিয়ালৈকে কোনো লেনদেন নাই</string>
+    <string name="empty_transactions_message">আপোনাৰ প্ৰথম আয় বা খৰচ লিখিবলৈ যোগ কৰক টিপক।</string>
+    <string name="budget">বাজেট</string>
+    <string name="period_daily">দৈনিক</string>
+    <string name="period_weekly">সাপ্তাহিক</string>
+    <string name="period_monthly">মাহেকীয়া</string>
+    <string name="period_custom">নিজৰ মতে</string>
+    <string name="error_amount_required">শূন্যতকৈ অধিক পৰিমাণ দিয়ক</string>
+    <string name="action_save">ছেভ কৰক</string>
+    <string name="action_edit">সম্পাদনা</string>
+    <string name="theme_skyline_tagline">স্বচ্ছ নীলা শান্তি</string>
+    <string name="theme_dawn_tagline">মাজনিশাৰ পিছৰ ৰাতিপুৱা</string>
+    <string name="theme_horizon_tagline">গভীৰ সাগৰৰ নীলা-সেউজীয়া</string>
+    <string name="theme_pinkwalk_tagline">লেভেণ্ডাৰ কেণ্ডিৰ খোজ</string>
+    <string name="theme_rosewood_tagline">নীলা ৰাতি, গোলাপী আভা</string>
+    <string name="theme_wallpaper_tagline">আপোনাৰ ৱালপেপাৰৰ ৰঙেৰে</string>
+    <string name="theme_wallpaper">ৱালপেপাৰ</string>
+    <string name="spotlight_dismiss">বন্ধ কৰিবলৈ যিকোনো ঠাইত টিপক</string>
+    <string name="select_date_range">তাৰিখৰ পৰিসৰ বাছক</string>
+</resources>

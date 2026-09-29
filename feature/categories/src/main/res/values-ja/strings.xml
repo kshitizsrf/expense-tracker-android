@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="new_category">新しいカテゴリ</string>
+    <string name="edit_category">カテゴリを編集</string>
+    <string name="category_name">名前</string>
+    <string name="color">色</string>
+    <string name="icon">アイコン</string>
+    <string name="categories_empty_title">カテゴリがありません</string>
+    <string name="categories_empty_message">+ をタップして作成します。</string>
+    <string name="error_name_required">名前を入力してください</string>
+    <string name="error_name_taken">同じ名前のカテゴリがすでにあります</string>
+    <string name="delete_category_title">「%1$s」を削除しますか？</string>
+    <string name="delete_category_message_empty">このカテゴリは完全に削除されます。</string>
+    <string name="categories_title">カテゴリ</string>
+    <string name="categories_subtitle">お金をすっきり整理</string>
+    <string name="this_month_total">今月 %1$s</string>
+    <string name="nothing_this_month">今月はなし</string>
+    <string name="preview">プレビュー</string>
+    <plurals name="delete_category_message">
+        <item quantity="other">このカテゴリの %d 件の記録も削除されます。元に戻せません。</item>
+    </plurals>
+</resources>

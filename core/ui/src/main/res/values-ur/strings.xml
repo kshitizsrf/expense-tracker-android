@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="today">آج</string>
+    <string name="yesterday">کل</string>
+    <string name="greeting_morning">صبح بخیر</string>
+    <string name="greeting_afternoon">سہ پہر بخیر</string>
+    <string name="greeting_evening">شام بخیر</string>
+    <string name="greeting_night">رات گئے تک جاگ رہے ہیں؟</string>
+    <string name="currency">کرنسی</string>
+    <string name="language">زبان</string>
+    <string name="language_system">سسٹم ڈیفالٹ</string>
+    <string name="language_system_summary">فون کی زبان استعمال کریں</string>
+    <string name="language_search">زبانیں تلاش کریں</string>
+    <string name="category_food">کھانا</string>
+    <string name="category_shopping">خریداری</string>
+    <string name="category_transportation">آمد و رفت</string>
+    <string name="category_bills">بل</string>
+    <string name="category_home">گھر</string>
+    <string name="category_health">صحت</string>
+    <string name="category_entertainment">تفریح</string>
+    <string name="category_education">تعلیم</string>
+    <string name="category_travel">سفر</string>
+    <string name="category_clothing">کپڑے</string>
+    <string name="category_fruits">پھل</string>
+    <string name="category_vegetables">سبزیاں</string>
+    <string name="category_car">گاڑی</string>
+    <string name="category_insurance">انشورنس</string>
+    <string name="category_gift">تحفہ</string>
+    <string name="category_sport">کھیل</string>
+    <string name="category_book">کتابیں</string>
+    <string name="category_pet">پالتو جانور</string>
+    <string name="category_wine">مشروبات</string>
+    <string name="category_salary">تنخواہ</string>
+    <string name="category_rental">کرایہ</string>
+    <string name="category_sale">فروخت</string>
+    <string name="category_awards">انعامات</string>
+    <string name="category_investment">سرمایہ کاری</string>
+    <string name="category_other">دیگر</string>
+</resources>

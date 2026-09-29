@@ -1,6 +1,8 @@
 package com.hisabkitab.core.designsystem.theme
 
+import androidx.annotation.ChecksSdkIntAtLeast
 import android.os.Build
+import android.provider.Settings
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
@@ -10,72 +12,102 @@ import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.Immutable
+import androidx.compose.runtime.remember
 import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.lerp
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.hisabkitab.core.model.ColorPalette
+import com.hisabkitab.core.model.AppTheme
+import com.hisabkitab.core.model.ChartTransition
 
-/** Semantic colors Material 3 has no role for: money in (income) and money out (expense). */
+/** App-specific colors that Material 3 has no role for. */
 @Immutable
-data class FinanceColors(
+data class HisabColors(
+    /** Backdrop gradient, top to bottom. */
+    val backdrop: List<Color>,
+    val aurora: List<Color>,
+    /** Text and icons drawn directly on the backdrop (headers, hero numbers). */
+    val onBackdrop: Color,
+    val onBackdropMuted: Color,
+    /** Translucent glass surfaces and their light-catching edge. */
+    val glass: Color,
+    val glassStrong: Color,
+    val glassEdge: Color,
+    /** Accent pair used for gradient buttons and highlights. */
+    val accentGradient: List<Color>,
     val income: Color,
-    val incomeContainer: Color,
-    val onIncomeContainer: Color,
     val expense: Color,
-    val expenseContainer: Color,
-    val onExpenseContainer: Color,
     val warning: Color,
+    val isDark: Boolean,
 )
 
-private val LightFinanceColors = FinanceColors(
-    income = Color(0xFF1B7F3B),
-    incomeContainer = Color(0xFFC9F0D2),
-    onIncomeContainer = Color(0xFF00210B),
-    expense = Color(0xFFC4302B),
-    expenseContainer = Color(0xFFFFDAD6),
-    onExpenseContainer = Color(0xFF410002),
-    warning = Color(0xFFB26A00),
-)
+val LocalHisabColors = staticCompositionLocalOf {
+    HisabColors(
+        backdrop = listOf(Color(0xFF004E92), Color(0xFFAEDFF7)),
+        aurora = emptyList(),
+        onBackdrop = Color.White,
+        onBackdropMuted = Color.White.copy(alpha = 0.75f),
+        glass = Color.White.copy(alpha = 0.8f),
+        glassStrong = Color.White.copy(alpha = 0.92f),
+        glassEdge = Color.White.copy(alpha = 0.7f),
+        accentGradient = listOf(Color(0xFF004E92), Color(0xFF3F8FD8)),
+        income = Color(0xFF138A4B),
+        expense = Color(0xFFD6344A),
+        warning = Color(0xFFB26A00),
+        isDark = false,
+    )
+}
 
-private val DarkFinanceColors = FinanceColors(
-    income = Color(0xFF7FDA93),
-    incomeContainer = Color(0xFF005226),
-    onIncomeContainer = Color(0xFFC9F0D2),
-    expense = Color(0xFFFFB4AB),
-    expenseContainer = Color(0xFF93000A),
-    onExpenseContainer = Color(0xFFFFDAD6),
-    warning = Color(0xFFFFB951),
-)
+/** Space the floating navigation bar occupies, so scrolling content can clear it. */
+val LocalNavBarClearance = staticCompositionLocalOf<Dp> { 0.dp }
 
-val LocalFinanceColors = staticCompositionLocalOf { LightFinanceColors }
+/** How Insights animates between chart types (chosen in Settings). */
+val LocalChartTransition = staticCompositionLocalOf { ChartTransition.FADE }
+
+/** True when the user turned animations off in system settings. */
+val LocalReducedMotion = staticCompositionLocalOf { false }
 
 private val AppShapes = Shapes(
-    extraSmall = RoundedCornerShape(8.dp),
-    small = RoundedCornerShape(12.dp),
-    medium = RoundedCornerShape(16.dp),
-    large = RoundedCornerShape(24.dp),
-    extraLarge = RoundedCornerShape(32.dp),
+    extraSmall = RoundedCornerShape(10.dp),
+    small = RoundedCornerShape(14.dp),
+    medium = RoundedCornerShape(20.dp),
+    large = RoundedCornerShape(28.dp),
+    extraLarge = RoundedCornerShape(36.dp),
 )
 
+@ChecksSdkIntAtLeast(api = Build.VERSION_CODES.S)
 fun supportsDynamicColor(): Boolean = Build.VERSION.SDK_INT >= Build.VERSION_CODES.S
 
 @Composable
 fun HisabKitabTheme(
+    theme: AppTheme = AppTheme.SKYLINE,
     darkTheme: Boolean = isSystemInDarkTheme(),
-    palette: ColorPalette = ColorPalette.OCEAN,
-    useDynamicColor: Boolean = false,
     content: @Composable () -> Unit,
 ) {
-    val colorScheme = if (useDynamicColor && supportsDynamicColor()) {
-        val context = LocalContext.current
-        if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
+    val context = LocalContext.current
+    val useWallpaper = theme == AppTheme.WALLPAPER && supportsDynamicColor()
+
+    val spec: ThemeSpec
+    val colorScheme = if (useWallpaper) {
+        val dynamic = if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
+        spec = dynamic.toThemeSpec(darkTheme)
+        dynamic
     } else {
-        palette.colorScheme(darkTheme)
+        val variants = theme.variants()
+        spec = if (darkTheme) variants.dark else variants.light
+        spec.toColorScheme(darkTheme)
+    }
+
+    val hisabColors = remember(spec, darkTheme) { spec.toHisabColors(darkTheme) }
+    val reducedMotion = remember(context) {
+        Settings.Global.getFloat(context.contentResolver, Settings.Global.ANIMATOR_DURATION_SCALE, 1f) == 0f
     }
 
     CompositionLocalProvider(
-        LocalFinanceColors provides if (darkTheme) DarkFinanceColors else LightFinanceColors,
+        LocalHisabColors provides hisabColors,
+        LocalReducedMotion provides reducedMotion,
     ) {
         MaterialTheme(
             colorScheme = colorScheme,
@@ -86,8 +118,23 @@ fun HisabKitabTheme(
     }
 }
 
+private fun ThemeSpec.toHisabColors(dark: Boolean) = HisabColors(
+    backdrop = listOf(deep, lerp(deep, glow, 0.55f), glow),
+    aurora = aurora,
+    onBackdrop = Color.White,
+    onBackdropMuted = Color.White.copy(alpha = 0.74f),
+    glass = if (dark) lerp(card, Color.Black, 0.25f).copy(alpha = 0.62f) else lerp(card, Color.White, 0.5f).copy(alpha = 0.82f),
+    glassStrong = if (dark) lerp(card, Color.Black, 0.1f).copy(alpha = 0.86f) else lerp(card, Color.White, 0.65f).copy(alpha = 0.94f),
+    glassEdge = if (dark) Color.White.copy(alpha = 0.12f) else Color.White.copy(alpha = 0.75f),
+    accentGradient = if (dark) listOf(accent, lerp(accent, glow, 0.5f)) else listOf(accent, lerp(accent, glow, 0.6f)),
+    income = if (dark) Color(0xFF6EE7A0) else Color(0xFF138A4B),
+    expense = if (dark) Color(0xFFFF8A9B) else Color(0xFFD6344A),
+    warning = if (dark) Color(0xFFFFC266) else Color(0xFFB26A00),
+    isDark = dark,
+)
+
 /** Accessors for app-specific theme values, mirroring `MaterialTheme`. */
 object HisabKitabTheme {
-    val financeColors: FinanceColors
-        @Composable get() = LocalFinanceColors.current
+    val colors: HisabColors
+        @Composable get() = LocalHisabColors.current
 }

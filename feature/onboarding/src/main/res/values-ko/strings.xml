@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_welcome_title">Hisab Kitab</string>
+    <string name="onboarding_welcome_message">아름답게 정리된 내 돈. 몇 초 만에 기록하고, 돈이 어디로 가는지 보고, 자신 있게 쓰세요.</string>
+    <string name="onboarding_theme_title">스타일 선택</string>
+    <string name="onboarding_theme_message">라이트·다크 모드를 갖춘 5가지 시그니처 테마. 언제든 바꿀 수 있어요.</string>
+    <string name="onboarding_setup_title">마무리</string>
+    <string name="onboarding_setup_message">통화를 선택하고 하루 기록을 위한 부드러운 알림을 원하는지 알려 주세요.</string>
+    <string name="onboarding_currency">통화</string>
+    <string name="onboarding_reminder">매일 알림</string>
+    <string name="onboarding_reminder_summary">그날 아무것도 기록하지 않았을 때만</string>
+    <string name="onboarding_next">다음</string>
+    <string name="onboarding_start">시작하기</string>
+    <string name="onboarding_skip">건너뛰기</string>
+    <string name="onboarding_feature_fast">빠른 입력을 위한 계산기 키패드</string>
+    <string name="onboarding_feature_insights">지출을 보는 5가지 방법</string>
+    <string name="onboarding_feature_private">완벽한 개인 정보 보호 · 모든 데이터는 휴대전화에</string>
+    <string name="mode_auto">자동</string>
+    <string name="mode_light">☀  라이트</string>
+    <string name="mode_dark">☾  다크</string>
+    <string name="onboarding_language_title">언어 선택</string>
+    <string name="onboarding_language_message">Hisab Kitab이 당신의 언어로 말해요. 설정에서 언제든 바꿀 수 있어요.</string>
+    <string name="onboarding_lock">앱 잠금</string>
+    <string name="onboarding_lock_summary">지문이나 화면 잠금으로 데이터를 보호하세요</string>
+    <string name="onboarding_lock_prompt">앱 잠금 켜기</string>
+    <string name="onboarding_lock_prompt_subtitle">본인인지 확인하세요</string>
+</resources>

@@ -1,5 +1,4 @@
 <resources>
-    <string name="action_edit">Edit</string>
     <string name="category">Category</string>
     <string name="date">Date</string>
     <string name="time">Time</string>
@@ -27,4 +26,12 @@
     <string name="keypad_decimal">Decimal point</string>
     <string name="error_amount_too_large">That amount is too large</string>
     <string name="error_category_required">Choose a category</string>
+    <string name="activity_title">Activity</string>
+    <string name="activity_subtitle">Every coin, accounted for</string>
+    <string name="deleted_transaction">Transaction deleted</string>
+    <string name="undo">Undo</string>
+    <string name="swipe_hint">Swipe left on an entry to delete it</string>
+    <string name="spent_label">Spent</string>
+    <string name="earned_label">Earned</string>
+    <string name="calculated_as" translatable="false">= %1$s</string>
 </resources>

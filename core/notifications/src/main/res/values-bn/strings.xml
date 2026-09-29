@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="reminder_channel_name">দৈনিক রিমাইন্ডার</string>
+    <string name="reminder_channel_description">আজ কোনো লেনদেন না যোগ করলে মনে করিয়ে দেয়।</string>
+    <string name="reminder_title">আজকের খরচ লিখেছেন?</string>
+    <string name="reminder_text">মাত্র কয়েক সেকেন্ড লাগে আর আপনার বাজেট ঠিক থাকে।</string>
+</resources>

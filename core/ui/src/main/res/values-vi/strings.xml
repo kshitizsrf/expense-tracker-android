@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="today">Hôm nay</string>
+    <string name="yesterday">Hôm qua</string>
+    <string name="greeting_morning">Chào buổi sáng</string>
+    <string name="greeting_afternoon">Chào buổi chiều</string>
+    <string name="greeting_evening">Chào buổi tối</string>
+    <string name="greeting_night">Vẫn còn thức à?</string>
+    <string name="currency">Tiền tệ</string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="language_system">Mặc định hệ thống</string>
+    <string name="language_system_summary">Dùng ngôn ngữ của điện thoại</string>
+    <string name="language_search">Tìm ngôn ngữ</string>
+    <string name="category_food">Ăn uống</string>
+    <string name="category_shopping">Mua sắm</string>
+    <string name="category_transportation">Đi lại</string>
+    <string name="category_bills">Hóa đơn</string>
+    <string name="category_home">Nhà cửa</string>
+    <string name="category_health">Sức khỏe</string>
+    <string name="category_entertainment">Giải trí</string>
+    <string name="category_education">Giáo dục</string>
+    <string name="category_travel">Du lịch</string>
+    <string name="category_clothing">Quần áo</string>
+    <string name="category_fruits">Trái cây</string>
+    <string name="category_vegetables">Rau củ</string>
+    <string name="category_car">Xe hơi</string>
+    <string name="category_insurance">Bảo hiểm</string>
+    <string name="category_gift">Quà tặng</string>
+    <string name="category_sport">Thể thao</string>
+    <string name="category_book">Sách</string>
+    <string name="category_pet">Thú cưng</string>
+    <string name="category_wine">Đồ uống</string>
+    <string name="category_salary">Lương</string>
+    <string name="category_rental">Thuê nhà</string>
+    <string name="category_sale">Bán hàng</string>
+    <string name="category_awards">Giải thưởng</string>
+    <string name="category_investment">Đầu tư</string>
+    <string name="category_other">Khác</string>
+</resources>

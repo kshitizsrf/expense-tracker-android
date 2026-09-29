@@ -7,58 +7,60 @@ import android.os.Build
 import android.provider.Settings
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.compose.foundation.border
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowRow
+import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.WindowInsets
+import androidx.compose.foundation.layout.asPaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.systemBars
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.selection.selectable
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ReceiptLong
+import androidx.compose.material.icons.automirrored.outlined.ReceiptLong
+import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.filled.Category
+import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.Insights
+import androidx.compose.material.icons.outlined.Home
+import androidx.compose.material.icons.outlined.Insights
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
-import androidx.compose.material.icons.filled.Check
+import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
+import androidx.compose.material.icons.outlined.Category
 import androidx.compose.material.icons.outlined.Info
+import androidx.compose.material.icons.outlined.Language
+import androidx.compose.material.icons.outlined.Lock
 import androidx.compose.material.icons.outlined.Notifications
 import androidx.compose.material.icons.outlined.NotificationsActive
-import androidx.compose.material.icons.outlined.Palette
 import androidx.compose.material.icons.outlined.Payments
 import androidx.compose.material.icons.outlined.Savings
 import androidx.compose.material.icons.outlined.Schedule
 import androidx.compose.material.icons.outlined.TableChart
-import androidx.compose.material.icons.outlined.Wallpaper
-import androidx.compose.material.icons.outlined.Category
-import androidx.compose.material3.AlertDialog
-import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
-import androidx.compose.material3.IconButton
-import androidx.compose.material3.ListItem
-import androidx.compose.material3.ListItemDefaults
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.RadioButton
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.SegmentedButton
-import androidx.compose.material3.SegmentedButtonDefaults
-import androidx.compose.material3.SingleChoiceSegmentedButtonRow
 import androidx.compose.material3.SnackbarHost
 import androidx.compose.material3.SnackbarHostState
 import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextButton
-import androidx.compose.material3.TopAppBar
-import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
@@ -66,34 +68,45 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
-import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.vector.ImageVector
-import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.hisabkitab.feature.settings.R
 import com.hisabkitab.core.designsystem.R as DesignR
-import com.hisabkitab.core.common.money.MoneyFormatter
+import com.hisabkitab.core.designsystem.component.BackdropHeader
+import com.hisabkitab.core.designsystem.component.GlassCard
+import com.hisabkitab.core.designsystem.component.GlassChip
+import com.hisabkitab.core.designsystem.component.GlassIconButton
+import com.hisabkitab.core.designsystem.component.LiquidNavItem
+import com.hisabkitab.core.designsystem.component.LiquidNavigationBar
+import com.hisabkitab.core.designsystem.component.SlidingSegmentedControl
 import com.hisabkitab.core.designsystem.component.TimePickerModal
-import com.hisabkitab.core.designsystem.theme.supportsDynamicColor
-import com.hisabkitab.core.designsystem.theme.swatch
+import com.hisabkitab.core.designsystem.component.ThemeGallery
+import com.hisabkitab.core.designsystem.theme.HisabKitabTheme
 import com.hisabkitab.core.model.BudgetPeriod
-import com.hisabkitab.core.model.ColorPalette
+import com.hisabkitab.core.model.ChartTransition
+import com.hisabkitab.core.model.NavBarStyle
+import com.hisabkitab.core.security.authenticate
+import com.hisabkitab.core.security.canUseAppLock
+import com.hisabkitab.core.security.findFragmentActivity
+import com.hisabkitab.core.ui.AppLanguages
+import com.hisabkitab.core.ui.LanguageDialog
 import com.hisabkitab.core.model.ThemeMode
 import com.hisabkitab.core.model.UserPreferences
+import com.hisabkitab.core.ui.CurrencyDialog
 import com.hisabkitab.core.ui.DateFormats
 import com.hisabkitab.core.ui.LocalMoneyFormatter
+import com.hisabkitab.core.ui.label
 import java.time.LocalDate
-import java.util.Currency
-import java.util.Locale
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SettingsScreen(
     versionName: String,
@@ -104,9 +117,14 @@ fun SettingsScreen(
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
     val context = LocalContext.current
     val snackbarHostState = remember { SnackbarHostState() }
-    val scrollBehavior = TopAppBarDefaults.pinnedScrollBehavior()
     var showCurrencyDialog by rememberSaveable { mutableStateOf(false) }
     var showTimePicker by rememberSaveable { mutableStateOf(false) }
+    var showLanguageDialog by rememberSaveable { mutableStateOf(false) }
+    val lockAvailable = remember { canUseAppLock(context) }
+    val lockPromptTitle = stringResource(R.string.app_lock_confirm_title)
+    val lockPromptSubtitle = stringResource(R.string.app_lock_confirm_subtitle)
+    val systemBars = WindowInsets.systemBars.asPaddingValues()
+    val colors = HisabKitabTheme.colors
 
     val exportTransactionsLauncher = rememberLauncherForActivityResult(
         ActivityResultContracts.CreateDocument(CSV_MIME_TYPE),
@@ -134,143 +152,186 @@ fun SettingsScreen(
         }
     }
 
-    Scaffold(
-        modifier = Modifier.nestedScroll(scrollBehavior.nestedScrollConnection),
-        topBar = {
-            TopAppBar(
-                title = { Text(stringResource(DesignR.string.settings_title)) },
-                navigationIcon = {
-                    IconButton(onClick = onBack) {
-                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = stringResource(DesignR.string.action_back))
-                    }
-                },
-                scrollBehavior = scrollBehavior,
-            )
-        },
-        snackbarHost = { SnackbarHost(snackbarHostState) },
-    ) { padding ->
-        val preferences = uiState.preferences ?: return@Scaffold
+    Box(Modifier.fillMaxSize()) {
+        val preferences = uiState.preferences
         LazyColumn(
             modifier = Modifier.fillMaxSize(),
-            contentPadding = PaddingValues(top = padding.calculateTopPadding(), bottom = padding.calculateBottomPadding() + 16.dp),
+            contentPadding = PaddingValues(top = systemBars.calculateTopPadding(), bottom = systemBars.calculateBottomPadding() + 24.dp),
+            verticalArrangement = Arrangement.spacedBy(16.dp),
         ) {
-            item { SettingsSection(stringResource(R.string.settings_appearance)) }
             item {
-                ThemeModeSelector(
-                    selected = preferences.themeMode,
-                    onSelect = viewModel::setThemeMode,
+                BackdropHeader(
+                    title = stringResource(R.string.settings_title_big),
+                    subtitle = stringResource(R.string.settings_subtitle),
+                    navigationIcon = { GlassIconButton(Icons.AutoMirrored.Filled.ArrowBack, stringResource(DesignR.string.action_back), onBack) },
                 )
             }
-            if (supportsDynamicColor()) {
-                item {
-                    SettingsSwitchItem(
-                        icon = Icons.Outlined.Wallpaper,
-                        title = stringResource(R.string.dynamic_color),
-                        summary = stringResource(R.string.dynamic_color_summary),
-                        checked = preferences.useDynamicColor,
-                        onCheckedChange = viewModel::setUseDynamicColor,
+            if (preferences == null) return@LazyColumn
+
+            item {
+                Text(
+                    stringResource(R.string.settings_theme_gallery),
+                    style = MaterialTheme.typography.titleMedium,
+                    color = colors.onBackdrop,
+                    modifier = Modifier.padding(horizontal = 20.dp),
+                )
+            }
+            item { ThemeGallery(selected = preferences.theme, onSelect = viewModel::setTheme) }
+            item {
+                SlidingSegmentedControl(
+                    options = listOf(
+                        ThemeMode.SYSTEM to stringResource(R.string.theme_system),
+                        ThemeMode.LIGHT to stringResource(R.string.theme_light),
+                        ThemeMode.DARK to stringResource(R.string.theme_dark),
+                    ),
+                    selected = preferences.themeMode,
+                    onSelect = viewModel::setThemeMode,
+                    modifier = Modifier.padding(horizontal = 16.dp),
+                )
+            }
+
+            item {
+                SettingsGroup(stringResource(R.string.settings_motion)) {
+                    Column(Modifier.padding(horizontal = 16.dp, vertical = 12.dp)) {
+                        Text(stringResource(R.string.nav_style), style = MaterialTheme.typography.bodyLarge)
+                        Text(stringResource(R.string.nav_style_hint), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        Spacer(Modifier.height(12.dp))
+                        ChoiceChips(
+                            options = NavBarStyle.entries.map { it to stringResource(it.labelRes()) },
+                            selected = preferences.navBarStyle,
+                            onSelect = viewModel::setNavBarStyle,
+                        )
+                        NavBarPreview(preferences.navBarStyle)
+                    }
+                    GroupDivider()
+                    Column(Modifier.padding(horizontal = 16.dp, vertical = 12.dp)) {
+                        Text(stringResource(R.string.chart_animation), style = MaterialTheme.typography.bodyLarge)
+                        Text(stringResource(R.string.chart_animation_hint), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        Spacer(Modifier.height(12.dp))
+                        ChoiceChips(
+                            options = ChartTransition.entries.map { it to stringResource(it.labelRes()) },
+                            selected = preferences.chartTransition,
+                            onSelect = viewModel::setChartTransition,
+                        )
+                    }
+                }
+            }
+
+            item {
+                SettingsGroup(stringResource(R.string.settings_privacy)) {
+                    SettingsSwitchRow(
+                        icon = Icons.Outlined.Lock,
+                        title = stringResource(R.string.app_lock),
+                        summary = stringResource(if (lockAvailable) R.string.app_lock_summary else R.string.app_lock_unavailable),
+                        checked = preferences.appLockEnabled,
+                        enabled = lockAvailable,
+                        onCheckedChange = { enable ->
+                            if (!enable) {
+                                viewModel.setAppLockEnabled(false)
+                            } else {
+                                // Confirm the user can unlock before turning the lock on.
+                                context.findFragmentActivity()?.let { activity ->
+                                    authenticate(activity, lockPromptTitle, lockPromptSubtitle, onSuccess = { viewModel.setAppLockEnabled(true) })
+                                }
+                            }
+                        },
                     )
                 }
             }
+
             item {
-                PaletteSelector(
-                    selected = preferences.palette,
-                    enabled = !(preferences.useDynamicColor && supportsDynamicColor()),
-                    onSelect = viewModel::setPalette,
-                )
+                SettingsGroup(stringResource(R.string.settings_money)) {
+                    val language = remember { AppLanguages.current() }
+                    SettingsRow(Icons.Outlined.Language, stringResource(R.string.language_setting), "${language.flag}  ${language.nativeName}") {
+                        showLanguageDialog = true
+                    }
+                    GroupDivider()
+                    val currency = LocalMoneyFormatter.current.currency
+                    SettingsRow(Icons.Outlined.Payments, stringResource(R.string.currency_setting), currency.label()) {
+                        showCurrencyDialog = true
+                    }
+                    GroupDivider()
+                    SettingsRow(Icons.Outlined.Savings, stringResource(DesignR.string.budget), budgetSummary(preferences), onClick = onOpenBudget)
+                }
             }
 
-            item { SettingsSection(stringResource(R.string.settings_money)) }
             item {
-                val formatter = LocalMoneyFormatter.current
-                SettingsItem(
-                    icon = Icons.Outlined.Payments,
-                    title = stringResource(R.string.currency),
-                    summary = "${formatter.currency.currencyCode} · ${formatter.currency.getDisplayName(Locale.getDefault())} (${formatter.symbol})",
-                    onClick = { showCurrencyDialog = true },
-                )
-            }
-            item {
-                SettingsItem(
-                    icon = Icons.Outlined.Savings,
-                    title = stringResource(DesignR.string.budget),
-                    summary = budgetSummary(preferences),
-                    onClick = onOpenBudget,
-                )
-            }
-
-            item { SettingsSection(stringResource(R.string.settings_reminders)) }
-            item {
-                SettingsSwitchItem(
-                    icon = Icons.Outlined.NotificationsActive,
-                    title = stringResource(R.string.daily_reminder),
-                    summary = stringResource(R.string.daily_reminder_summary),
-                    checked = preferences.reminder.enabled,
-                    onCheckedChange = { enabled ->
-                        val needsPermission = enabled &&
-                            Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU &&
-                            ContextCompat.checkSelfPermission(context, Manifest.permission.POST_NOTIFICATIONS) !=
-                            PackageManager.PERMISSION_GRANTED
-                        if (needsPermission) {
-                            notificationPermissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS)
-                        } else {
-                            viewModel.setReminderEnabled(enabled)
-                        }
-                    },
-                )
-            }
-            item {
-                SettingsItem(
-                    icon = Icons.Outlined.Schedule,
-                    title = stringResource(R.string.reminder_time),
-                    summary = DateFormats.time(preferences.reminder.time),
-                    enabled = preferences.reminder.enabled,
-                    onClick = { showTimePicker = true },
-                )
-            }
-            item {
-                SettingsItem(
-                    icon = Icons.Outlined.Notifications,
-                    title = stringResource(R.string.notification_settings),
-                    summary = stringResource(R.string.notification_settings_summary),
-                    onClick = {
-                        context.startActivity(
-                            Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS)
-                                .putExtra(Settings.EXTRA_APP_PACKAGE, context.packageName),
-                        )
-                    },
-                )
+                SettingsGroup(stringResource(R.string.settings_reminders)) {
+                    SettingsSwitchRow(
+                        icon = Icons.Outlined.NotificationsActive,
+                        title = stringResource(R.string.daily_reminder),
+                        summary = stringResource(R.string.daily_reminder_summary),
+                        checked = preferences.reminder.enabled,
+                        onCheckedChange = { enabled ->
+                            val needsPermission = enabled &&
+                                Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU &&
+                                ContextCompat.checkSelfPermission(context, Manifest.permission.POST_NOTIFICATIONS) !=
+                                PackageManager.PERMISSION_GRANTED
+                            if (needsPermission) {
+                                notificationPermissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS)
+                            } else {
+                                viewModel.setReminderEnabled(enabled)
+                            }
+                        },
+                    )
+                    GroupDivider()
+                    SettingsRow(
+                        icon = Icons.Outlined.Schedule,
+                        title = stringResource(R.string.reminder_time),
+                        summary = DateFormats.time(preferences.reminder.time),
+                        enabled = preferences.reminder.enabled,
+                        onClick = { showTimePicker = true },
+                    )
+                    GroupDivider()
+                    SettingsRow(
+                        icon = Icons.Outlined.Notifications,
+                        title = stringResource(R.string.notification_settings),
+                        summary = stringResource(R.string.notification_settings_summary),
+                        onClick = {
+                            context.startActivity(
+                                Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS).putExtra(Settings.EXTRA_APP_PACKAGE, context.packageName),
+                            )
+                        },
+                    )
+                }
             }
 
-            item { SettingsSection(stringResource(R.string.settings_data)) }
             item {
-                SettingsItem(
-                    icon = Icons.Outlined.TableChart,
-                    title = stringResource(R.string.export_transactions),
-                    summary = stringResource(R.string.export_summary),
-                    enabled = !uiState.isExporting,
-                    onClick = { exportTransactionsLauncher.launch(exportFileName("transactions")) },
-                )
-            }
-            item {
-                SettingsItem(
-                    icon = Icons.Outlined.Category,
-                    title = stringResource(R.string.export_categories),
-                    summary = stringResource(R.string.export_summary),
-                    enabled = !uiState.isExporting,
-                    onClick = { exportCategoriesLauncher.launch(exportFileName("categories")) },
-                )
+                SettingsGroup(stringResource(R.string.settings_data)) {
+                    SettingsRow(
+                        icon = Icons.Outlined.TableChart,
+                        title = stringResource(R.string.export_transactions),
+                        summary = stringResource(R.string.export_summary),
+                        enabled = !uiState.isExporting,
+                        onClick = { exportTransactionsLauncher.launch(exportFileName("transactions")) },
+                    )
+                    GroupDivider()
+                    SettingsRow(
+                        icon = Icons.Outlined.Category,
+                        title = stringResource(R.string.export_categories),
+                        summary = stringResource(R.string.export_summary),
+                        enabled = !uiState.isExporting,
+                        onClick = { exportCategoriesLauncher.launch(exportFileName("categories")) },
+                    )
+                }
             }
 
-            item { SettingsSection(stringResource(R.string.settings_about)) }
             item {
-                SettingsItem(
-                    icon = Icons.Outlined.Info,
-                    title = stringResource(DesignR.string.app_name),
-                    summary = stringResource(R.string.version, versionName),
+                SettingsGroup(stringResource(R.string.settings_about)) {
+                    SettingsRow(Icons.Outlined.Info, stringResource(DesignR.string.app_name), stringResource(R.string.version, versionName))
+                }
+            }
+            item {
+                Text(
+                    stringResource(R.string.made_with_love),
+                    style = MaterialTheme.typography.labelMedium,
+                    color = colors.onBackdropMuted,
+                    textAlign = TextAlign.Center,
+                    modifier = Modifier.fillMaxWidth(),
                 )
             }
         }
+        SnackbarHost(snackbarHostState, Modifier.align(Alignment.BottomCenter).padding(bottom = systemBars.calculateBottomPadding()))
     }
 
     if (showCurrencyDialog) {
@@ -283,13 +344,19 @@ fun SettingsScreen(
             onDismiss = { showCurrencyDialog = false },
         )
     }
+    if (showLanguageDialog) {
+        LanguageDialog(
+            selectedTag = AppLanguages.current().tag,
+            onSelect = {
+                showLanguageDialog = false
+                AppLanguages.apply(it)
+            },
+            onDismiss = { showLanguageDialog = false },
+        )
+    }
     val reminderTime = uiState.preferences?.reminder?.time
     if (showTimePicker && reminderTime != null) {
-        TimePickerModal(
-            initialTime = reminderTime,
-            onTimeSelected = viewModel::setReminderTime,
-            onDismiss = { showTimePicker = false },
-        )
+        TimePickerModal(initialTime = reminderTime, onTimeSelected = viewModel::setReminderTime, onDismiss = { showTimePicker = false })
     }
 }
 
@@ -311,171 +378,135 @@ private fun budgetSummary(preferences: UserPreferences): String {
 private fun exportFileName(kind: String) = "hisab-kitab-$kind-${LocalDate.now()}.csv"
 
 @Composable
-private fun SettingsSection(title: String) {
-    Text(
-        text = title,
-        style = MaterialTheme.typography.labelLarge,
-        color = MaterialTheme.colorScheme.primary,
-        modifier = Modifier.padding(start = 16.dp, end = 16.dp, top = 24.dp, bottom = 8.dp),
-    )
+private fun SettingsGroup(title: String, content: @Composable ColumnScope.() -> Unit) {
+    Column(Modifier.padding(horizontal = 16.dp)) {
+        Text(
+            title,
+            style = MaterialTheme.typography.titleSmall,
+            color = HisabKitabTheme.colors.onBackdrop,
+            modifier = Modifier.padding(start = 4.dp, bottom = 8.dp),
+        )
+        GlassCard(Modifier.fillMaxWidth(), contentPadding = PaddingValues(vertical = 4.dp), content = content)
+    }
 }
 
 @Composable
-private fun SettingsItem(
+private fun GroupDivider() {
+    HorizontalDivider(Modifier.padding(start = 72.dp, end = 16.dp), color = MaterialTheme.colorScheme.outlineVariant)
+}
+
+@Composable
+private fun RowIcon(icon: ImageVector) {
+    Box(
+        Modifier.size(40.dp).clip(CircleShape).background(Brush.linearGradient(HisabKitabTheme.colors.accentGradient)),
+        contentAlignment = Alignment.Center,
+    ) {
+        Icon(icon, contentDescription = null, tint = MaterialTheme.colorScheme.onPrimary, modifier = Modifier.size(20.dp))
+    }
+}
+
+@Composable
+private fun SettingsRow(
     icon: ImageVector,
     title: String,
     summary: String,
     enabled: Boolean = true,
     onClick: (() -> Unit)? = null,
 ) {
-    ListItem(
+    Row(
         modifier = Modifier
+            .fillMaxWidth()
             .then(if (onClick != null) Modifier.clickable(enabled = enabled, onClick = onClick) else Modifier)
-            .alpha(if (enabled) 1f else DISABLED_ALPHA),
-        colors = ListItemDefaults.colors(containerColor = Color.Transparent),
-        leadingContent = { Icon(icon, contentDescription = null) },
-        headlineContent = { Text(title) },
-        supportingContent = { Text(summary) },
-    )
+            .alpha(if (enabled) 1f else DISABLED_ALPHA)
+            .padding(horizontal = 16.dp, vertical = 12.dp),
+        verticalAlignment = Alignment.CenterVertically,
+    ) {
+        RowIcon(icon)
+        Spacer(Modifier.width(16.dp))
+        Column(Modifier.weight(1f)) {
+            Text(title, style = MaterialTheme.typography.bodyLarge)
+            Text(summary, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+        }
+        if (onClick != null) {
+            Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, contentDescription = null, tint = MaterialTheme.colorScheme.onSurfaceVariant)
+        }
+    }
 }
 
 @Composable
-private fun SettingsSwitchItem(
+private fun SettingsSwitchRow(
     icon: ImageVector,
     title: String,
     summary: String,
     checked: Boolean,
     onCheckedChange: (Boolean) -> Unit,
+    enabled: Boolean = true,
 ) {
-    ListItem(
-        modifier = Modifier.clickable(role = Role.Switch) { onCheckedChange(!checked) },
-        colors = ListItemDefaults.colors(containerColor = Color.Transparent),
-        leadingContent = { Icon(icon, contentDescription = null) },
-        headlineContent = { Text(title) },
-        supportingContent = { Text(summary) },
-        trailingContent = { Switch(checked = checked, onCheckedChange = null) },
-    )
-}
-
-@Composable
-private fun ThemeModeSelector(selected: ThemeMode, onSelect: (ThemeMode) -> Unit) {
-    val options = listOf(
-        ThemeMode.SYSTEM to R.string.theme_system,
-        ThemeMode.LIGHT to R.string.theme_light,
-        ThemeMode.DARK to R.string.theme_dark,
-    )
-    Column(Modifier.padding(horizontal = 16.dp, vertical = 8.dp)) {
-        Text(stringResource(R.string.theme), style = MaterialTheme.typography.bodyLarge)
-        SingleChoiceSegmentedButtonRow(
-            Modifier
-                .fillMaxWidth()
-                .padding(top = 8.dp),
-        ) {
-            options.forEachIndexed { index, (mode, label) ->
-                SegmentedButton(
-                    selected = mode == selected,
-                    onClick = { onSelect(mode) },
-                    shape = SegmentedButtonDefaults.itemShape(index, options.size),
-                ) { Text(stringResource(label)) }
-            }
-        }
-    }
-}
-
-@Composable
-private fun PaletteSelector(selected: ColorPalette, enabled: Boolean, onSelect: (ColorPalette) -> Unit) {
-    Column(
-        Modifier
-            .padding(horizontal = 16.dp, vertical = 12.dp)
-            .alpha(if (enabled) 1f else DISABLED_ALPHA),
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .clickable(enabled = enabled, role = Role.Switch) { onCheckedChange(!checked) }
+            .alpha(if (enabled) 1f else DISABLED_ALPHA)
+            .padding(horizontal = 16.dp, vertical = 12.dp),
+        verticalAlignment = Alignment.CenterVertically,
     ) {
-        Row(verticalAlignment = Alignment.CenterVertically) {
-            Icon(Icons.Outlined.Palette, contentDescription = null, tint = MaterialTheme.colorScheme.onSurfaceVariant)
-            Text(
-                text = stringResource(R.string.color_theme),
-                style = MaterialTheme.typography.bodyLarge,
-                modifier = Modifier.padding(start = 16.dp),
-            )
+        RowIcon(icon)
+        Spacer(Modifier.width(16.dp))
+        Column(Modifier.weight(1f)) {
+            Text(title, style = MaterialTheme.typography.bodyLarge)
+            Text(summary, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
         }
-        Row(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(top = 12.dp),
-            horizontalArrangement = Arrangement.SpaceEvenly,
-        ) {
-            ColorPalette.entries.forEach { palette ->
-                val isSelected = palette == selected
-                Box(
-                    modifier = Modifier
-                        .size(44.dp)
-                        .background(palette.swatch, CircleShape)
-                        .then(
-                            if (isSelected) {
-                                Modifier.border(3.dp, MaterialTheme.colorScheme.onSurface, CircleShape)
-                            } else {
-                                Modifier
-                            },
-                        )
-                        .selectable(
-                            selected = isSelected,
-                            enabled = enabled,
-                            role = Role.RadioButton,
-                            onClick = { onSelect(palette) },
-                        ),
-                    contentAlignment = Alignment.Center,
-                ) {
-                    if (isSelected) Icon(Icons.Filled.Check, contentDescription = null, tint = Color.White)
-                }
-            }
-        }
+        Switch(checked = checked, onCheckedChange = null)
     }
-}
-
-@Composable
-private fun CurrencyDialog(selectedCode: String?, onSelect: (String) -> Unit, onDismiss: () -> Unit) {
-    val locale = Locale.getDefault()
-    val currencies = remember {
-        (listOf(MoneyFormatter.defaultCurrencyCode()) + POPULAR_CURRENCIES)
-            .distinct()
-            .mapNotNull { code -> runCatching { Currency.getInstance(code) }.getOrNull() }
-    }
-    AlertDialog(
-        onDismissRequest = onDismiss,
-        title = { Text(stringResource(R.string.currency)) },
-        text = {
-            LazyColumn {
-                items(currencies, key = { it.currencyCode }) { currency ->
-                    val isSelected = currency.currencyCode == selectedCode
-                    Row(
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .selectable(selected = isSelected, role = Role.RadioButton) { onSelect(currency.currencyCode) }
-                            .padding(vertical = 8.dp),
-                        verticalAlignment = Alignment.CenterVertically,
-                    ) {
-                        RadioButton(selected = isSelected, onClick = null)
-                        Column(Modifier.padding(start = 16.dp)) {
-                            Text("${currency.currencyCode} · ${currency.getSymbol(locale)}", style = MaterialTheme.typography.bodyLarge)
-                            Text(
-                                currency.getDisplayName(locale),
-                                style = MaterialTheme.typography.bodySmall,
-                                color = MaterialTheme.colorScheme.onSurfaceVariant,
-                            )
-                        }
-                    }
-                    HorizontalDivider(color = MaterialTheme.colorScheme.outlineVariant.copy(alpha = 0.5f))
-                }
-            }
-        },
-        confirmButton = {
-            TextButton(onClick = onDismiss) { Text(stringResource(DesignR.string.action_close)) }
-        },
-    )
 }
 
 private const val CSV_MIME_TYPE = "text/csv"
 private const val DISABLED_ALPHA = 0.38f
-private val POPULAR_CURRENCIES = listOf(
-    "INR", "USD", "EUR", "GBP", "JPY", "CNY", "AED", "SAR", "AUD", "CAD",
-    "SGD", "CHF", "NPR", "BDT", "PKR", "LKR", "ZAR", "BRL", "KRW", "RUB",
-)
+
+private fun NavBarStyle.labelRes() = when (this) {
+    NavBarStyle.LIQUID -> R.string.nav_style_liquid
+    NavBarStyle.BUBBLE -> R.string.nav_style_bubble
+    NavBarStyle.GLOW -> R.string.nav_style_glow
+    NavBarStyle.EXPAND -> R.string.nav_style_expand
+}
+
+private fun ChartTransition.labelRes() = when (this) {
+    ChartTransition.FADE -> R.string.chart_fade
+    ChartTransition.SLIDE -> R.string.chart_slide
+    ChartTransition.FLIP -> R.string.chart_flip
+    ChartTransition.ZOOM -> R.string.chart_zoom
+}
+
+@OptIn(ExperimentalLayoutApi::class)
+@Composable
+private fun <T> ChoiceChips(options: List<Pair<T, String>>, selected: T, onSelect: (T) -> Unit) {
+    FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+        options.forEach { (value, label) ->
+            GlassChip(label = label, selected = value == selected, onClick = { onSelect(value) }, onBackdrop = false)
+        }
+    }
+}
+
+/** A working miniature of the navigation bar so styles can be tried right here. */
+@Composable
+private fun NavBarPreview(style: NavBarStyle) {
+    var selected by rememberSaveable { mutableIntStateOf(0) }
+    val items = listOf(
+        LiquidNavItem(stringResource(R.string.preview_home), Icons.Filled.Home, Icons.Outlined.Home),
+        LiquidNavItem(stringResource(DesignR.string.nav_transactions), Icons.AutoMirrored.Filled.ReceiptLong, Icons.AutoMirrored.Outlined.ReceiptLong),
+        LiquidNavItem(stringResource(DesignR.string.nav_stats), Icons.Filled.Insights, Icons.Outlined.Insights),
+        LiquidNavItem(stringResource(DesignR.string.nav_categories), Icons.Filled.Category, Icons.Outlined.Category),
+    )
+    Box(Modifier.fillMaxWidth().padding(top = 24.dp)) {
+        LiquidNavigationBar(
+            items = items,
+            selectedIndex = selected,
+            onSelect = { selected = it },
+            centerIcon = Icons.Filled.Add,
+            centerContentDescription = stringResource(DesignR.string.add_transaction),
+            onCenterClick = {},
+            style = style,
+            applySystemInsets = false,
+        )
+    }
+}

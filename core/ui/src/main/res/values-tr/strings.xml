@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="today">Bugün</string>
+    <string name="yesterday">Dün</string>
+    <string name="greeting_morning">Günaydın</string>
+    <string name="greeting_afternoon">İyi günler</string>
+    <string name="greeting_evening">İyi akşamlar</string>
+    <string name="greeting_night">Hâlâ uyanık mısınız?</string>
+    <string name="currency">Para birimi</string>
+    <string name="language">Dil</string>
+    <string name="language_system">Sistem varsayılanı</string>
+    <string name="language_system_summary">Telefonun dilini kullan</string>
+    <string name="language_search">Dil ara</string>
+    <string name="category_food">Yemek</string>
+    <string name="category_shopping">Alışveriş</string>
+    <string name="category_transportation">Ulaşım</string>
+    <string name="category_bills">Faturalar</string>
+    <string name="category_home">Ev</string>
+    <string name="category_health">Sağlık</string>
+    <string name="category_entertainment">Eğlence</string>
+    <string name="category_education">Eğitim</string>
+    <string name="category_travel">Seyahat</string>
+    <string name="category_clothing">Giyim</string>
+    <string name="category_fruits">Meyve</string>
+    <string name="category_vegetables">Sebze</string>
+    <string name="category_car">Araba</string>
+    <string name="category_insurance">Sigorta</string>
+    <string name="category_gift">Hediye</string>
+    <string name="category_sport">Spor</string>
+    <string name="category_book">Kitap</string>
+    <string name="category_pet">Evcil hayvan</string>
+    <string name="category_wine">İçecek</string>
+    <string name="category_salary">Maaş</string>
+    <string name="category_rental">Kira</string>
+    <string name="category_sale">Satış</string>
+    <string name="category_awards">Ödüller</string>
+    <string name="category_investment">Yatırım</string>
+    <string name="category_other">Diğer</string>
+</resources>

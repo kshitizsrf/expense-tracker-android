@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="balance">इस महीने का बैलेंस</string>
+    <string name="previous_month">पिछला महीना</string>
+    <string name="next_month">अगला महीना</string>
+    <string name="back_to_this_month">इस महीने पर लौटने के लिए टैप करें</string>
+    <string name="recent_transactions">हाल की गतिविधि</string>
+    <string name="see_all">सभी देखें</string>
+    <string name="daily_spending">रोज़ का ख़र्च</string>
+    <string name="budget_set_title">बजट तय करें</string>
+    <string name="budget_set_message">जानिए कि आप हर दिन ठीक कितना ख़र्च कर सकते हैं।</string>
+    <string name="budget_title_daily">आज का बजट</string>
+    <string name="budget_title_weekly">इस हफ़्ते का बजट</string>
+    <string name="budget_title_monthly">इस महीने का बजट</string>
+    <string name="budget_title_custom">बजट</string>
+    <string name="budget_spent_of">%2$s में से %1$s ख़र्च</string>
+    <string name="budget_over_by">%1$s ज़्यादा</string>
+    <string name="budget_safe_today">आज बेफ़िक्र ख़र्च करें</string>
+    <string name="budget_ended">यह बजट अवधि ख़त्म हो गई। नया तय करने के लिए टैप करें।</string>
+    <string name="budget_not_started">%1$s से शुरू</string>
+    <string name="insight_top_category">सबसे ज़्यादा ख़र्च</string>
+    <string name="insight_daily_average">रोज़ का औसत</string>
+    <string name="insight_biggest">सबसे बड़ा ख़र्च</string>
+    <string name="insight_count">प्रविष्टियाँ</string>
+    <string name="empty_home_title">नई शुरुआत</string>
+    <string name="empty_home_message">अपनी पहली आय या ख़र्च लिखने के लिए + बटन दबाएँ।</string>
+    <string name="spotlight_saved">बचत</string>
+    <plurals name="budget_days_left">
+        <item quantity="one">%d दिन बाक़ी</item>
+        <item quantity="other">%d दिन बाक़ी</item>
+    </plurals>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_welcome_title">Hisab Kitab</string>
+    <string name="onboarding_welcome_message">Seu dinheiro, lindamente organizado. Registre em segundos, veja para onde ele vai e gaste com confiança.</string>
+    <string name="onboarding_theme_title">Escolha seu estilo</string>
+    <string name="onboarding_theme_message">Cinco temas exclusivos, cada um com modo claro e escuro. Mude quando quiser.</string>
+    <string name="onboarding_setup_title">Toques finais</string>
+    <string name="onboarding_setup_message">Escolha sua moeda e diga se quer um lembrete gentil para anotar o seu dia.</string>
+    <string name="onboarding_currency">Moeda</string>
+    <string name="onboarding_reminder">Lembrete diário</string>
+    <string name="onboarding_reminder_summary">Só se você não anotou nada naquele dia</string>
+    <string name="onboarding_next">Próximo</string>
+    <string name="onboarding_start">Vamos começar</string>
+    <string name="onboarding_skip">Pular</string>
+    <string name="onboarding_feature_fast">Teclado de calculadora para registros rápidos</string>
+    <string name="onboarding_feature_insights">Cinco formas de ver seus gastos</string>
+    <string name="onboarding_feature_private">Totalmente privado · tudo fica no seu celular</string>
+    <string name="mode_auto">Auto</string>
+    <string name="mode_light">☀  Claro</string>
+    <string name="mode_dark">☾  Escuro</string>
+    <string name="onboarding_language_title">Escolha seu idioma</string>
+    <string name="onboarding_language_message">O Hisab Kitab fala a sua língua. Você pode mudar a qualquer momento nas Configurações.</string>
+    <string name="onboarding_lock">Bloqueio do app</string>
+    <string name="onboarding_lock_summary">Proteja seus dados com digital ou bloqueio de tela</string>
+    <string name="onboarding_lock_prompt">Ativar bloqueio</string>
+    <string name="onboarding_lock_prompt_subtitle">Confirme que é você</string>
+</resources>

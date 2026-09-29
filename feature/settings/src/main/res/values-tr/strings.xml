@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="budget_not_set">Belirlenmedi</string>
+    <string name="settings_appearance">Görünüm</string>
+    <string name="settings_money">Para</string>
+    <string name="settings_reminders">Hatırlatmalar</string>
+    <string name="settings_data">Verileriniz</string>
+    <string name="settings_about">Hakkında</string>
+    <string name="theme">Mod</string>
+    <string name="theme_system">Sistem</string>
+    <string name="theme_light">Açık</string>
+    <string name="theme_dark">Koyu</string>
+    <string name="daily_reminder">Günlük hatırlatma</string>
+    <string name="daily_reminder_summary">O gün hiçbir şey kaydetmediyseniz nazik bir hatırlatma</string>
+    <string name="reminder_time">Hatırlatma saati</string>
+    <string name="notification_settings">Bildirim ayarları</string>
+    <string name="notification_settings_summary">Hisab Kitab\'ın sizi nasıl bilgilendireceğini yönetin</string>
+    <string name="export_transactions">İşlemleri dışa aktar</string>
+    <string name="export_categories">Kategorileri dışa aktar</string>
+    <string name="export_summary">Her tablo uygulamasında açılabilen CSV dosyası olarak kaydet</string>
+    <string name="export_failed">Dışa aktarma başarısız. Tekrar deneyin.</string>
+    <string name="version">Sürüm %1$s</string>
+    <string name="settings_title_big">Ayarlar</string>
+    <string name="settings_subtitle">Kendinize göre ayarlayın</string>
+    <string name="settings_theme_gallery">Tema</string>
+    <string name="currency_setting">Para birimi</string>
+    <string name="made_with_love">Bilinçli harcama için ♥ ile yapıldı</string>
+    <string name="settings_motion">Hareket ve stil</string>
+    <string name="settings_privacy">Gizlilik ve güvenlik</string>
+    <string name="nav_style">Gezinme çubuğu</string>
+    <string name="nav_style_hint">Her stili alttaki çubukta deneyin</string>
+    <string name="nav_style_liquid">Sıvı</string>
+    <string name="nav_style_bubble">Baloncuk</string>
+    <string name="nav_style_glow">Işıltı</string>
+    <string name="nav_style_expand">Genişleyen</string>
+    <string name="chart_animation">Grafik animasyonu</string>
+    <string name="chart_animation_hint">Analiz\'de grafiklerin nasıl değiştiği</string>
+    <string name="chart_fade">Solma</string>
+    <string name="chart_slide">Kaydırma</string>
+    <string name="chart_flip">3D çevirme</string>
+    <string name="chart_zoom">Yakınlaştırma</string>
+    <string name="preview_home">Ana Sayfa</string>
+    <string name="app_lock">Uygulama kilidi</string>
+    <string name="app_lock_summary">Açarken parmak izi, yüz veya ekran kilidi iste</string>
+    <string name="app_lock_unavailable">Bunu kullanmak için telefonunuzda ekran kilidi ayarlayın</string>
+    <string name="app_lock_confirm_title">Uygulama kilidini aç</string>
+    <string name="app_lock_confirm_subtitle">Siz olduğunuzu doğrulayın</string>
+    <string name="language_setting">Dil</string>
+    <plurals name="exported_transactions">
+        <item quantity="one">%d işlem dışa aktarıldı</item>
+        <item quantity="other">%d işlem dışa aktarıldı</item>
+    </plurals>
+    <plurals name="exported_categories">
+        <item quantity="one">%d kategori dışa aktarıldı</item>
+        <item quantity="other">%d kategori dışa aktarıldı</item>
+    </plurals>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="budget_not_set">Non défini</string>
+    <string name="settings_appearance">Apparence</string>
+    <string name="settings_money">Argent</string>
+    <string name="settings_reminders">Rappels</string>
+    <string name="settings_data">Vos données</string>
+    <string name="settings_about">À propos</string>
+    <string name="theme">Mode</string>
+    <string name="theme_system">Système</string>
+    <string name="theme_light">Clair</string>
+    <string name="theme_dark">Sombre</string>
+    <string name="daily_reminder">Rappel quotidien</string>
+    <string name="daily_reminder_summary">Un petit rappel si vous n\'avez rien noté ce jour-là</string>
+    <string name="reminder_time">Heure du rappel</string>
+    <string name="notification_settings">Paramètres des notifications</string>
+    <string name="notification_settings_summary">Gérez la façon dont Hisab Kitab vous prévient</string>
+    <string name="export_transactions">Exporter les opérations</string>
+    <string name="export_categories">Exporter les catégories</string>
+    <string name="export_summary">Enregistrer en fichier CSV lisible par n\'importe quel tableur</string>
+    <string name="export_failed">Échec de l\'export. Réessayez.</string>
+    <string name="version">Version %1$s</string>
+    <string name="settings_title_big">Paramètres</string>
+    <string name="settings_subtitle">Faites-la vôtre</string>
+    <string name="settings_theme_gallery">Thème</string>
+    <string name="currency_setting">Devise</string>
+    <string name="made_with_love">Fait avec ♥ pour dépenser en conscience</string>
+    <string name="settings_motion">Animations et style</string>
+    <string name="settings_privacy">Confidentialité et sécurité</string>
+    <string name="nav_style">Barre de navigation</string>
+    <string name="nav_style_hint">Essayez chaque style sur la barre du bas</string>
+    <string name="nav_style_liquid">Liquide</string>
+    <string name="nav_style_bubble">Bulle</string>
+    <string name="nav_style_glow">Lueur</string>
+    <string name="nav_style_expand">Déployé</string>
+    <string name="chart_animation">Animation des graphiques</string>
+    <string name="chart_animation_hint">Comment les graphiques changent dans Analyses</string>
+    <string name="chart_fade">Fondu</string>
+    <string name="chart_slide">Glissement</string>
+    <string name="chart_flip">Rotation 3D</string>
+    <string name="chart_zoom">Zoom</string>
+    <string name="preview_home">Accueil</string>
+    <string name="app_lock">Verrouillage de l\'app</string>
+    <string name="app_lock_summary">Exiger empreinte, visage ou verrouillage de l\'écran à l\'ouverture</string>
+    <string name="app_lock_unavailable">Configurez un verrouillage d\'écran sur votre téléphone pour l\'utiliser</string>
+    <string name="app_lock_confirm_title">Activer le verrouillage</string>
+    <string name="app_lock_confirm_subtitle">Confirmez que c\'est bien vous</string>
+    <string name="language_setting">Langue</string>
+    <plurals name="exported_transactions">
+        <item quantity="one">%d opération exportée</item>
+        <item quantity="many">%d opérations exportées</item>
+        <item quantity="other">%d opérations exportées</item>
+    </plurals>
+    <plurals name="exported_categories">
+        <item quantity="one">%d catégorie exportée</item>
+        <item quantity="many">%d catégories exportées</item>
+        <item quantity="other">%d catégories exportées</item>
+    </plurals>
+</resources>

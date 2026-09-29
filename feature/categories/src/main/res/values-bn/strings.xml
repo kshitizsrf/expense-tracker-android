@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="new_category">নতুন বিভাগ</string>
+    <string name="edit_category">বিভাগ সম্পাদনা</string>
+    <string name="category_name">নাম</string>
+    <string name="color">রং</string>
+    <string name="icon">আইকন</string>
+    <string name="categories_empty_title">কোনো বিভাগ নেই</string>
+    <string name="categories_empty_message">নতুন তৈরি করতে + ট্যাপ করুন।</string>
+    <string name="error_name_required">একটি নাম লিখুন</string>
+    <string name="error_name_taken">এই নামে একটি বিভাগ আগেই আছে</string>
+    <string name="delete_category_title">“%1$s” মুছবেন?</string>
+    <string name="delete_category_message_empty">এই বিভাগটি স্থায়ীভাবে মুছে যাবে।</string>
+    <string name="categories_title">বিভাগ</string>
+    <string name="categories_subtitle">আপনার টাকা, গুছিয়ে সাজানো</string>
+    <string name="this_month_total">এই মাসে %1$s</string>
+    <string name="nothing_this_month">এই মাসে কিছু নেই</string>
+    <string name="preview">প্রিভিউ</string>
+    <plurals name="delete_category_message">
+        <item quantity="one">এতে এই বিভাগের %dটি লেনদেনও মুছে যাবে। এটি ফেরানো যাবে না।</item>
+        <item quantity="other">এতে এই বিভাগের %dটি লেনদেনও মুছে যাবে। এটি ফেরানো যাবে না।</item>
+    </plurals>
+</resources>

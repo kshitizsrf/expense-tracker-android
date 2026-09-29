@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_transactions">Actividad</string>
+    <string name="nav_stats">Análisis</string>
+    <string name="nav_categories">Categorías</string>
+    <string name="action_back">Atrás</string>
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_close">Cerrar</string>
+    <string name="action_delete">Eliminar</string>
+    <string name="action_ok">Aceptar</string>
+    <string name="income">Ingreso</string>
+    <string name="expense">Gasto</string>
+    <string name="expenses">Gastos</string>
+    <string name="select_time">Elegir hora</string>
+    <string name="settings_title">Ajustes</string>
+    <string name="add_transaction">Añadir</string>
+    <string name="empty_transactions_title">Aún no hay movimientos</string>
+    <string name="empty_transactions_message">Toca Añadir para registrar tu primer ingreso o gasto.</string>
+    <string name="budget">Presupuesto</string>
+    <string name="period_daily">Diario</string>
+    <string name="period_weekly">Semanal</string>
+    <string name="period_monthly">Mensual</string>
+    <string name="period_custom">Personalizado</string>
+    <string name="error_amount_required">Introduce un importe mayor que cero</string>
+    <string name="action_save">Guardar</string>
+    <string name="action_edit">Editar</string>
+    <string name="theme_skyline_tagline">Calma azul cristalina</string>
+    <string name="theme_dawn_tagline">El amanecer tras la medianoche</string>
+    <string name="theme_horizon_tagline">Turquesa de mar profundo</string>
+    <string name="theme_pinkwalk_tagline">Un paseo de lavanda y caramelo</string>
+    <string name="theme_rosewood_tagline">Noches índigo, brillo rosa</string>
+    <string name="theme_wallpaper_tagline">Con los colores de tu fondo</string>
+    <string name="theme_wallpaper">Fondo de pantalla</string>
+    <string name="spotlight_dismiss">Toca en cualquier lugar para cerrar</string>
+    <string name="select_date_range">Elige un rango de fechas</string>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_transactions">କାର୍ଯ୍ୟକଳାପ</string>
+    <string name="nav_stats">ବିଶ୍ଳେଷଣ</string>
+    <string name="nav_categories">ବର୍ଗ</string>
+    <string name="action_back">ପଛକୁ</string>
+    <string name="action_cancel">ବାତିଲ୍</string>
+    <string name="action_close">ବନ୍ଦ କରନ୍ତୁ</string>
+    <string name="action_delete">ଡିଲିଟ୍</string>
+    <string name="action_ok">ଠିକ୍ ଅଛି</string>
+    <string name="income">ଆୟ</string>
+    <string name="expense">ଖର୍ଚ୍ଚ</string>
+    <string name="expenses">ଖର୍ଚ୍ଚ</string>
+    <string name="select_time">ସମୟ ବାଛନ୍ତୁ</string>
+    <string name="settings_title">ସେଟିଂସ୍</string>
+    <string name="add_transaction">ଯୋଡ଼ନ୍ତୁ</string>
+    <string name="empty_transactions_title">ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି କାରବାର ନାହିଁ</string>
+    <string name="empty_transactions_message">ଆପଣଙ୍କ ପ୍ରଥମ ଆୟ କିମ୍ବା ଖର୍ଚ୍ଚ ଲେଖିବାକୁ ଯୋଡ଼ନ୍ତୁ ଟାପ୍ କରନ୍ତୁ।</string>
+    <string name="budget">ବଜେଟ୍</string>
+    <string name="period_daily">ଦୈନିକ</string>
+    <string name="period_weekly">ସାପ୍ତାହିକ</string>
+    <string name="period_monthly">ମାସିକ</string>
+    <string name="period_custom">କଷ୍ଟମ୍</string>
+    <string name="error_amount_required">ଶୂନ୍ୟରୁ ଅଧିକ ରାଶି ଦିଅନ୍ତୁ</string>
+    <string name="action_save">ସେଭ୍ କରନ୍ତୁ</string>
+    <string name="action_edit">ସମ୍ପାଦନା</string>
+    <string name="theme_skyline_tagline">ସ୍ୱଚ୍ଛ ନୀଳ ଶାନ୍ତି</string>
+    <string name="theme_dawn_tagline">ମଧ୍ୟରାତ୍ରି ପରର ସକାଳ</string>
+    <string name="theme_horizon_tagline">ଗଭୀର ସମୁଦ୍ରର ନୀଳ-ସବୁଜ</string>
+    <string name="theme_pinkwalk_tagline">ଲାଭେଣ୍ଡର କ୍ୟାଣ୍ଡିର ବୁଲା</string>
+    <string name="theme_rosewood_tagline">ନୀଳ ରାତି, ଗୋଲାପୀ ଆଭା</string>
+    <string name="theme_wallpaper_tagline">ଆପଣଙ୍କ ୱାଲପେପରର ରଙ୍ଗରେ</string>
+    <string name="theme_wallpaper">ୱାଲପେପର</string>
+    <string name="spotlight_dismiss">ବନ୍ଦ କରିବାକୁ ଯେକୌଣସି ସ୍ଥାନରେ ଟାପ୍ କରନ୍ତୁ</string>
+    <string name="select_date_range">ତାରିଖ ପରିସର ବାଛନ୍ତୁ</string>
+</resources>

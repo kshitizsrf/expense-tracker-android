@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="today">ಇಂದು</string>
+    <string name="yesterday">ನಿನ್ನೆ</string>
+    <string name="greeting_morning">ಶುಭೋದಯ</string>
+    <string name="greeting_afternoon">ಶುಭ ಮಧ್ಯಾಹ್ನ</string>
+    <string name="greeting_evening">ಶುಭ ಸಂಜೆ</string>
+    <string name="greeting_night">ತಡರಾತ್ರಿಯವರೆಗೂ ಎಚ್ಚರವಾಗಿದ್ದೀರಾ?</string>
+    <string name="currency">ಕರೆನ್ಸಿ</string>
+    <string name="language">ಭಾಷೆ</string>
+    <string name="language_system">ಸಿಸ್ಟಮ್ ಡೀಫಾಲ್ಟ್</string>
+    <string name="language_system_summary">ಫೋನ್‌ನ ಭಾಷೆ ಬಳಸಿ</string>
+    <string name="language_search">ಭಾಷೆಗಳನ್ನು ಹುಡುಕಿ</string>
+    <string name="category_food">ಆಹಾರ</string>
+    <string name="category_shopping">ಶಾಪಿಂಗ್</string>
+    <string name="category_transportation">ಸಾರಿಗೆ</string>
+    <string name="category_bills">ಬಿಲ್‌ಗಳು</string>
+    <string name="category_home">ಮನೆ</string>
+    <string name="category_health">ಆರೋಗ್ಯ</string>
+    <string name="category_entertainment">ಮನರಂಜನೆ</string>
+    <string name="category_education">ಶಿಕ್ಷಣ</string>
+    <string name="category_travel">ಪ್ರಯಾಣ</string>
+    <string name="category_clothing">ಬಟ್ಟೆಗಳು</string>
+    <string name="category_fruits">ಹಣ್ಣುಗಳು</string>
+    <string name="category_vegetables">ತರಕಾರಿಗಳು</string>
+    <string name="category_car">ಕಾರು</string>
+    <string name="category_insurance">ವಿಮೆ</string>
+    <string name="category_gift">ಉಡುಗೊರೆ</string>
+    <string name="category_sport">ಕ್ರೀಡೆ</string>
+    <string name="category_book">ಪುಸ್ತಕಗಳು</string>
+    <string name="category_pet">ಸಾಕುಪ್ರಾಣಿ</string>
+    <string name="category_wine">ಪಾನೀಯಗಳು</string>
+    <string name="category_salary">ಸಂಬಳ</string>
+    <string name="category_rental">ಬಾಡಿಗೆ</string>
+    <string name="category_sale">ಮಾರಾಟ</string>
+    <string name="category_awards">ಪ್ರಶಸ್ತಿಗಳು</string>
+    <string name="category_investment">ಹೂಡಿಕೆ</string>
+    <string name="category_other">ಇತರೆ</string>
+</resources>

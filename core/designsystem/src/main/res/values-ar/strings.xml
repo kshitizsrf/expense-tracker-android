@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_transactions">النشاط</string>
+    <string name="nav_stats">التحليلات</string>
+    <string name="nav_categories">الفئات</string>
+    <string name="action_back">رجوع</string>
+    <string name="action_cancel">إلغاء</string>
+    <string name="action_close">إغلاق</string>
+    <string name="action_delete">حذف</string>
+    <string name="action_ok">حسنًا</string>
+    <string name="income">دخل</string>
+    <string name="expense">مصروف</string>
+    <string name="expenses">المصروفات</string>
+    <string name="select_time">اختر الوقت</string>
+    <string name="settings_title">الإعدادات</string>
+    <string name="add_transaction">إضافة</string>
+    <string name="empty_transactions_title">لا توجد معاملات بعد</string>
+    <string name="empty_transactions_message">اضغط إضافة لتسجيل أول دخل أو مصروف.</string>
+    <string name="budget">الميزانية</string>
+    <string name="period_daily">يومي</string>
+    <string name="period_weekly">أسبوعي</string>
+    <string name="period_monthly">شهري</string>
+    <string name="period_custom">مخصص</string>
+    <string name="error_amount_required">أدخل مبلغًا أكبر من صفر</string>
+    <string name="action_save">حفظ</string>
+    <string name="action_edit">تعديل</string>
+    <string name="theme_skyline_tagline">هدوء أزرق صافٍ</string>
+    <string name="theme_dawn_tagline">الفجر بعد منتصف الليل</string>
+    <string name="theme_horizon_tagline">فيروز أعماق البحر</string>
+    <string name="theme_pinkwalk_tagline">نزهة بلون الخزامى والحلوى</string>
+    <string name="theme_rosewood_tagline">ليالٍ نيلية وتوهج وردي</string>
+    <string name="theme_wallpaper_tagline">بألوان خلفيتك</string>
+    <string name="theme_wallpaper">الخلفية</string>
+    <string name="spotlight_dismiss">اضغط في أي مكان للإغلاق</string>
+    <string name="select_date_range">اختر نطاق التاريخ</string>
+</resources>

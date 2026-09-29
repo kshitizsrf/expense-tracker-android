@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_transactions">Aktivität</string>
+    <string name="nav_stats">Analyse</string>
+    <string name="nav_categories">Kategorien</string>
+    <string name="action_back">Zurück</string>
+    <string name="action_cancel">Abbrechen</string>
+    <string name="action_close">Schließen</string>
+    <string name="action_delete">Löschen</string>
+    <string name="action_ok">OK</string>
+    <string name="income">Einnahme</string>
+    <string name="expense">Ausgabe</string>
+    <string name="expenses">Ausgaben</string>
+    <string name="select_time">Uhrzeit wählen</string>
+    <string name="settings_title">Einstellungen</string>
+    <string name="add_transaction">Hinzufügen</string>
+    <string name="empty_transactions_title">Noch keine Buchungen</string>
+    <string name="empty_transactions_message">Tippe auf Hinzufügen, um deine erste Einnahme oder Ausgabe zu erfassen.</string>
+    <string name="budget">Budget</string>
+    <string name="period_daily">Täglich</string>
+    <string name="period_weekly">Wöchentlich</string>
+    <string name="period_monthly">Monatlich</string>
+    <string name="period_custom">Eigener Zeitraum</string>
+    <string name="error_amount_required">Gib einen Betrag über null ein</string>
+    <string name="action_save">Speichern</string>
+    <string name="action_edit">Bearbeiten</string>
+    <string name="theme_skyline_tagline">Kristallklare blaue Ruhe</string>
+    <string name="theme_dawn_tagline">Die Dämmerung nach Mitternacht</string>
+    <string name="theme_horizon_tagline">Tiefseetürkis</string>
+    <string name="theme_pinkwalk_tagline">Ein Spaziergang in Lavendel und Zuckerwatte</string>
+    <string name="theme_rosewood_tagline">Indigo-Nächte, rosa Schimmer</string>
+    <string name="theme_wallpaper_tagline">In den Farben deines Hintergrunds</string>
+    <string name="theme_wallpaper">Hintergrundbild</string>
+    <string name="spotlight_dismiss">Zum Schließen irgendwo tippen</string>
+    <string name="select_date_range">Zeitraum auswählen</string>
+</resources>

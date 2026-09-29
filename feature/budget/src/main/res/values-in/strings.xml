@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_change">Ubah</string>
+    <string name="budget_intro">Rencanakan uang Anda. Anggaran hanya menghitung pengeluaran.</string>
+    <string name="budget_amount">Jumlah anggaran</string>
+    <string name="budget_period">Periode</string>
+    <string name="budget_explain_daily">Dimulai ulang setiap hari.</string>
+    <string name="budget_explain_weekly">Dimulai ulang di awal setiap minggu.</string>
+    <string name="budget_explain_monthly">Dimulai ulang tanggal 1 setiap bulan.</string>
+    <string name="budget_explain_custom">Hanya untuk tanggal yang Anda pilih.</string>
+    <string name="budget_current_period">Periode saat ini: %1$s</string>
+    <string name="choose_dates">Pilih tanggal</string>
+    <string name="save_budget">Simpan anggaran</string>
+    <string name="remove_budget">Hapus anggaran</string>
+    <string name="error_dates_required">Pilih tanggal anggaran Anda</string>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="balance">Saldo deste mês</string>
+    <string name="previous_month">Mês anterior</string>
+    <string name="next_month">Próximo mês</string>
+    <string name="back_to_this_month">Toque para voltar a este mês</string>
+    <string name="recent_transactions">Atividade recente</string>
+    <string name="see_all">Ver tudo</string>
+    <string name="daily_spending">Gastos diários</string>
+    <string name="budget_set_title">Defina um orçamento</string>
+    <string name="budget_set_message">Saiba exatamente quanto você pode gastar por dia.</string>
+    <string name="budget_title_daily">Orçamento de hoje</string>
+    <string name="budget_title_weekly">Orçamento da semana</string>
+    <string name="budget_title_monthly">Orçamento do mês</string>
+    <string name="budget_title_custom">Orçamento</string>
+    <string name="budget_spent_of">%1$s gastos de %2$s</string>
+    <string name="budget_over_by">%1$s acima</string>
+    <string name="budget_safe_today">Pode gastar hoje</string>
+    <string name="budget_ended">Este orçamento terminou. Toque para definir um novo.</string>
+    <string name="budget_not_started">Começa em %1$s</string>
+    <string name="insight_top_category">Maior gasto</string>
+    <string name="insight_daily_average">Média diária</string>
+    <string name="insight_biggest">Maior despesa</string>
+    <string name="insight_count">Registros</string>
+    <string name="empty_home_title">Um novo começo</string>
+    <string name="empty_home_message">Toque no botão + para registrar sua primeira receita ou despesa.</string>
+    <string name="spotlight_saved">Economizado</string>
+    <plurals name="budget_days_left">
+        <item quantity="one">Falta %d dia</item>
+        <item quantity="many">Faltam %d dias</item>
+        <item quantity="other">Faltam %d dias</item>
+    </plurals>
+</resources>

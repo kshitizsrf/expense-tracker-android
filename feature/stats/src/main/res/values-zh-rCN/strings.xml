@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="insights_title">分析</string>
+    <string name="insights_subtitle">你的钱去哪儿了</string>
+    <string name="period_this_month">本月</string>
+    <string name="period_last_month">上月</string>
+    <string name="period_last_3_months">3 个月</string>
+    <string name="period_this_year">今年</string>
+    <string name="chart_donut">环形</string>
+    <string name="chart_bars">排行</string>
+    <string name="chart_trend">趋势</string>
+    <string name="chart_calendar">日历</string>
+    <string name="chart_cash_flow">现金流</string>
+    <string name="chart_donut_title">分类占比</string>
+    <string name="chart_bars_title">热门分类</string>
+    <string name="chart_trend_title_daily">每日走势</string>
+    <string name="chart_trend_title_monthly">每月走势</string>
+    <string name="chart_calendar_title">支出日历</string>
+    <string name="chart_calendar_title_income">收入日历</string>
+    <string name="chart_cash_flow_title">现金流 · 近 6 个月</string>
+    <string name="chart_hint_donut">点按扇区以突出显示</string>
+    <string name="chart_hint_trend">按住并拖动来查看</string>
+    <string name="chart_hint_calendar">点按某天查看合计</string>
+    <string name="chart_hint_cash_flow">点按月份查看详情</string>
+    <string name="total_spent">总支出</string>
+    <string name="total_earned">总收入</string>
+    <string name="stat_total">合计</string>
+    <string name="stat_daily_average">日均</string>
+    <string name="stat_entries">笔数</string>
+    <string name="stat_vs_previous">较上期</string>
+    <string name="stat_no_comparison">新</string>
+    <string name="percent_of_total">占总额 %1$d%%</string>
+    <string name="heatmap_less">少</string>
+    <string name="heatmap_more">多</string>
+    <string name="nothing_on_day">无记录</string>
+    <string name="net">净额</string>
+    <string name="stats_empty_title">暂无可显示内容</string>
+    <string name="stats_empty_message">此期间的记录会让这些图表生动起来。</string>
+    <string name="stat_previous_period">上一周期</string>
+    <plurals name="transaction_count">
+        <item quantity="other">%d 笔记录</item>
+    </plurals>
+</resources>

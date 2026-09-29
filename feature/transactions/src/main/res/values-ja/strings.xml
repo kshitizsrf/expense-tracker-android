@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="category">カテゴリ</string>
+    <string name="date">日付</string>
+    <string name="time">時刻</string>
+    <string name="note">メモ</string>
+    <string name="no_note">メモなし</string>
+    <string name="search">検索</string>
+    <string name="close_search">検索を閉じる</string>
+    <string name="clear_search">検索をクリア</string>
+    <string name="search_hint">メモやカテゴリを検索</string>
+    <string name="filter_all">すべて</string>
+    <string name="empty_filtered_title">一致する記録がありません</string>
+    <string name="empty_filtered_message">別の検索語やフィルタをお試しください。</string>
+    <string name="transaction_details">記録</string>
+    <string name="transaction_not_found_title">記録が見つかりません</string>
+    <string name="transaction_not_found_message">削除された可能性があります。</string>
+    <string name="delete_transaction_title">記録を削除しますか？</string>
+    <string name="delete_transaction_message">この記録は完全に削除されます。</string>
+    <string name="new_transaction">新しい記録</string>
+    <string name="edit_transaction">記録を編集</string>
+    <string name="note_optional">メモ（任意）</string>
+    <string name="new_category_short">新規</string>
+    <string name="save_transaction">記録を保存</string>
+    <string name="save_changes">変更を保存</string>
+    <string name="keypad_backspace">バックスペース。長押しですべて消去</string>
+    <string name="keypad_decimal">小数点</string>
+    <string name="error_amount_too_large">金額が大きすぎます</string>
+    <string name="error_category_required">カテゴリを選択してください</string>
+    <string name="activity_title">履歴</string>
+    <string name="activity_subtitle">1 円まできっちり記録</string>
+    <string name="deleted_transaction">記録を削除しました</string>
+    <string name="undo">元に戻す</string>
+    <string name="swipe_hint">記録を左にスワイプして削除</string>
+    <string name="spent_label">支出</string>
+    <string name="earned_label">収入</string>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="category">श्रेणी</string>
+    <string name="date">तारीख</string>
+    <string name="time">वेळ</string>
+    <string name="note">टीप</string>
+    <string name="no_note">टीप नाही</string>
+    <string name="search">शोधा</string>
+    <string name="close_search">शोध बंद करा</string>
+    <string name="clear_search">शोध साफ करा</string>
+    <string name="search_hint">टीप किंवा श्रेणी शोधा</string>
+    <string name="filter_all">सर्व</string>
+    <string name="empty_filtered_title">जुळणारे व्यवहार नाहीत</string>
+    <string name="empty_filtered_message">वेगळा शोध किंवा फिल्टर वापरून पहा.</string>
+    <string name="transaction_details">व्यवहार</string>
+    <string name="transaction_not_found_title">व्यवहार सापडला नाही</string>
+    <string name="transaction_not_found_message">कदाचित तो हटवला गेला असेल.</string>
+    <string name="delete_transaction_title">व्यवहार हटवायचा?</string>
+    <string name="delete_transaction_message">हा व्यवहार कायमचा हटवला जाईल.</string>
+    <string name="new_transaction">नवीन व्यवहार</string>
+    <string name="edit_transaction">व्यवहार संपादित करा</string>
+    <string name="note_optional">टीप (पर्यायी)</string>
+    <string name="new_category_short">नवीन</string>
+    <string name="save_transaction">व्यवहार सेव्ह करा</string>
+    <string name="save_changes">बदल सेव्ह करा</string>
+    <string name="keypad_backspace">बॅकस्पेस. सर्व पुसण्यासाठी दाबून ठेवा</string>
+    <string name="keypad_decimal">दशांश</string>
+    <string name="error_amount_too_large">ही रक्कम खूप मोठी आहे</string>
+    <string name="error_category_required">एक श्रेणी निवडा</string>
+    <string name="activity_title">व्यवहार</string>
+    <string name="activity_subtitle">प्रत्येक पैशाचा हिशोब</string>
+    <string name="deleted_transaction">व्यवहार हटवला</string>
+    <string name="undo">पूर्ववत करा</string>
+    <string name="swipe_hint">हटवण्यासाठी नोंद डावीकडे स्वाइप करा</string>
+    <string name="spent_label">खर्च</string>
+    <string name="earned_label">कमाई</string>
+</resources>

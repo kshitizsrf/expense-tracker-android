@@ -5,3 +5,7 @@ plugins {
 android {
     namespace = "com.hisabkitab.feature.settings"
 }
+
+dependencies {
+    implementation(projects.core.security)
+}

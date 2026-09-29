@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_welcome_title">Hisab Kitab</string>
+    <string name="onboarding_welcome_message">เงินของคุณ จัดระเบียบอย่างสวยงาม บันทึกได้ในไม่กี่วินาที รู้ว่าเงินไปไหน และใช้จ่ายอย่างมั่นใจ</string>
+    <string name="onboarding_theme_title">เลือกสไตล์ของคุณ</string>
+    <string name="onboarding_theme_message">ห้าธีมเอกลักษณ์ แต่ละธีมมีโหมดสว่างและมืด เปลี่ยนได้ทุกเมื่อ</string>
+    <string name="onboarding_setup_title">ขั้นตอนสุดท้าย</string>
+    <string name="onboarding_setup_message">เลือกสกุลเงินและบอกเราว่าต้องการการเตือนเบา ๆ ให้บันทึกแต่ละวันหรือไม่</string>
+    <string name="onboarding_currency">สกุลเงิน</string>
+    <string name="onboarding_reminder">การเตือนรายวัน</string>
+    <string name="onboarding_reminder_summary">เฉพาะเมื่อวันนั้นยังไม่ได้บันทึก</string>
+    <string name="onboarding_next">ถัดไป</string>
+    <string name="onboarding_start">เริ่มกันเลย</string>
+    <string name="onboarding_skip">ข้าม</string>
+    <string name="onboarding_feature_fast">แป้นเครื่องคิดเลขสำหรับบันทึกรวดเร็ว</string>
+    <string name="onboarding_feature_insights">ห้าวิธีดูการใช้จ่าย</string>
+    <string name="onboarding_feature_private">เป็นส่วนตัวทั้งหมด · ทุกอย่างอยู่ในโทรศัพท์ของคุณ</string>
+    <string name="mode_auto">อัตโนมัติ</string>
+    <string name="mode_light">☀  สว่าง</string>
+    <string name="mode_dark">☾  มืด</string>
+    <string name="onboarding_language_title">เลือกภาษาของคุณ</string>
+    <string name="onboarding_language_message">Hisab Kitab พูดภาษาของคุณ เปลี่ยนได้ทุกเมื่อในการตั้งค่า</string>
+    <string name="onboarding_lock">ล็อกแอป</string>
+    <string name="onboarding_lock_summary">ปกป้องข้อมูลด้วยลายนิ้วมือหรือการล็อกหน้าจอ</string>
+    <string name="onboarding_lock_prompt">เปิดล็อกแอป</string>
+    <string name="onboarding_lock_prompt_subtitle">ยืนยันว่าเป็นคุณ</string>
+</resources>

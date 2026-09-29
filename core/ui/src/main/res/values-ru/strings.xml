@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="today">Сегодня</string>
+    <string name="yesterday">Вчера</string>
+    <string name="greeting_morning">Доброе утро</string>
+    <string name="greeting_afternoon">Добрый день</string>
+    <string name="greeting_evening">Добрый вечер</string>
+    <string name="greeting_night">Не спится?</string>
+    <string name="currency">Валюта</string>
+    <string name="language">Язык</string>
+    <string name="language_system">Как в системе</string>
+    <string name="language_system_summary">Использовать язык телефона</string>
+    <string name="language_search">Поиск языка</string>
+    <string name="category_food">Еда</string>
+    <string name="category_shopping">Покупки</string>
+    <string name="category_transportation">Транспорт</string>
+    <string name="category_bills">Счета</string>
+    <string name="category_home">Дом</string>
+    <string name="category_health">Здоровье</string>
+    <string name="category_entertainment">Развлечения</string>
+    <string name="category_education">Образование</string>
+    <string name="category_travel">Путешествия</string>
+    <string name="category_clothing">Одежда</string>
+    <string name="category_fruits">Фрукты</string>
+    <string name="category_vegetables">Овощи</string>
+    <string name="category_car">Автомобиль</string>
+    <string name="category_insurance">Страховка</string>
+    <string name="category_gift">Подарки</string>
+    <string name="category_sport">Спорт</string>
+    <string name="category_book">Книги</string>
+    <string name="category_pet">Питомцы</string>
+    <string name="category_wine">Напитки</string>
+    <string name="category_salary">Зарплата</string>
+    <string name="category_rental">Аренда</string>
+    <string name="category_sale">Продажи</string>
+    <string name="category_awards">Премии</string>
+    <string name="category_investment">Инвестиции</string>
+    <string name="category_other">Другое</string>
+</resources>

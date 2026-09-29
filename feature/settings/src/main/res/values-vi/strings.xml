@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="budget_not_set">Chưa đặt</string>
+    <string name="settings_appearance">Giao diện</string>
+    <string name="settings_money">Tiền</string>
+    <string name="settings_reminders">Nhắc nhở</string>
+    <string name="settings_data">Dữ liệu của bạn</string>
+    <string name="settings_about">Giới thiệu</string>
+    <string name="theme">Chế độ</string>
+    <string name="theme_system">Hệ thống</string>
+    <string name="theme_light">Sáng</string>
+    <string name="theme_dark">Tối</string>
+    <string name="daily_reminder">Nhắc nhở hằng ngày</string>
+    <string name="daily_reminder_summary">Lời nhắc nhẹ nếu hôm đó bạn chưa ghi gì</string>
+    <string name="reminder_time">Giờ nhắc</string>
+    <string name="notification_settings">Cài đặt thông báo</string>
+    <string name="notification_settings_summary">Quản lý cách Hisab Kitab thông báo cho bạn</string>
+    <string name="export_transactions">Xuất giao dịch</string>
+    <string name="export_categories">Xuất danh mục</string>
+    <string name="export_summary">Lưu thành tệp CSV mở được bằng mọi ứng dụng bảng tính</string>
+    <string name="export_failed">Xuất thất bại. Hãy thử lại.</string>
+    <string name="version">Phiên bản %1$s</string>
+    <string name="settings_title_big">Cài đặt</string>
+    <string name="settings_subtitle">Theo cách của bạn</string>
+    <string name="settings_theme_gallery">Chủ đề</string>
+    <string name="currency_setting">Tiền tệ</string>
+    <string name="made_with_love">Tạo ra bằng ♥ để chi tiêu có ý thức</string>
+    <string name="settings_motion">Chuyển động &amp; phong cách</string>
+    <string name="settings_privacy">Quyền riêng tư &amp; bảo mật</string>
+    <string name="nav_style">Thanh điều hướng</string>
+    <string name="nav_style_hint">Thử từng kiểu trên thanh dưới cùng</string>
+    <string name="nav_style_liquid">Chất lỏng</string>
+    <string name="nav_style_bubble">Bong bóng</string>
+    <string name="nav_style_glow">Phát sáng</string>
+    <string name="nav_style_expand">Mở rộng</string>
+    <string name="chart_animation">Hiệu ứng biểu đồ</string>
+    <string name="chart_animation_hint">Cách biểu đồ chuyển đổi trong Phân tích</string>
+    <string name="chart_fade">Mờ dần</string>
+    <string name="chart_slide">Trượt</string>
+    <string name="chart_flip">Lật 3D</string>
+    <string name="chart_zoom">Phóng to</string>
+    <string name="preview_home">Trang chủ</string>
+    <string name="app_lock">Khóa ứng dụng</string>
+    <string name="app_lock_summary">Yêu cầu vân tay, khuôn mặt hoặc khóa màn hình khi mở</string>
+    <string name="app_lock_unavailable">Hãy đặt khóa màn hình trên điện thoại để dùng tính năng này</string>
+    <string name="app_lock_confirm_title">Bật khóa ứng dụng</string>
+    <string name="app_lock_confirm_subtitle">Xác nhận đây là bạn</string>
+    <string name="language_setting">Ngôn ngữ</string>
+    <plurals name="exported_transactions">
+        <item quantity="other">Đã xuất %d giao dịch</item>
+    </plurals>
+    <plurals name="exported_categories">
+        <item quantity="other">Đã xuất %d danh mục</item>
+    </plurals>
+</resources>

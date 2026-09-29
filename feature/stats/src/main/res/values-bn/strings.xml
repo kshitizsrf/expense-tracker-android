@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="insights_title">অন্তর্দৃষ্টি</string>
+    <string name="insights_subtitle">আপনার টাকা কোথায় যায়</string>
+    <string name="period_this_month">এই মাস</string>
+    <string name="period_last_month">গত মাস</string>
+    <string name="period_last_3_months">৩ মাস</string>
+    <string name="period_this_year">এই বছর</string>
+    <string name="chart_donut">ডোনাট</string>
+    <string name="chart_bars">র‍্যাঙ্কিং</string>
+    <string name="chart_trend">ট্রেন্ড</string>
+    <string name="chart_calendar">ক্যালেন্ডার</string>
+    <string name="chart_cash_flow">ক্যাশ ফ্লো</string>
+    <string name="chart_donut_title">বিভাগ অনুযায়ী ভাগ</string>
+    <string name="chart_bars_title">শীর্ষ বিভাগ</string>
+    <string name="chart_trend_title_daily">দিনে দিনে</string>
+    <string name="chart_trend_title_monthly">মাসে মাসে</string>
+    <string name="chart_calendar_title">খরচের ক্যালেন্ডার</string>
+    <string name="chart_calendar_title_income">আয়ের ক্যালেন্ডার</string>
+    <string name="chart_cash_flow_title">ক্যাশ ফ্লো · গত ৬ মাস</string>
+    <string name="chart_hint_donut">একটি অংশে মনোযোগ দিতে ট্যাপ করুন</string>
+    <string name="chart_hint_trend">ছুঁয়ে টেনে দেখুন</string>
+    <string name="chart_hint_calendar">একটি দিনের মোট দেখতে ট্যাপ করুন</string>
+    <string name="chart_hint_cash_flow">বিস্তারিত দেখতে একটি মাসে ট্যাপ করুন</string>
+    <string name="total_spent">মোট খরচ</string>
+    <string name="total_earned">মোট আয়</string>
+    <string name="stat_total">মোট</string>
+    <string name="stat_daily_average">দৈনিক গড়</string>
+    <string name="stat_entries">এন্ট্রি</string>
+    <string name="stat_vs_previous">আগের তুলনায়</string>
+    <string name="stat_no_comparison">নতুন</string>
+    <string name="percent_of_total">মোটের %1$d%%</string>
+    <string name="heatmap_less">কম</string>
+    <string name="heatmap_more">বেশি</string>
+    <string name="nothing_on_day">কিছু লেখা নেই</string>
+    <string name="net">নিট</string>
+    <string name="stats_empty_title">এখনও দেখানোর কিছু নেই</string>
+    <string name="stats_empty_message">এই সময়ের লেনদেন এই চার্টগুলো জ্বালিয়ে তুলবে।</string>
+    <string name="stat_previous_period">আগের সময়কাল</string>
+    <plurals name="transaction_count">
+        <item quantity="one">%dটি লেনদেন</item>
+        <item quantity="other">%dটি লেনদেন</item>
+    </plurals>
+</resources>

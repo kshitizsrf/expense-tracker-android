@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="reminder_channel_name">દૈનિક રિમાઇન્ડર</string>
+    <string name="reminder_channel_description">આજે કોઈ વ્યવહાર ઉમેર્યો ન હોય તો યાદ અપાવે છે.</string>
+    <string name="reminder_title">આજનો ખર્ચ લખ્યો?</string>
+    <string name="reminder_text">ફક્ત થોડી સેકન્ડ લાગે છે અને તમારું બજેટ સચોટ રહે છે.</string>
+</resources>

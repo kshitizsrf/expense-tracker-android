@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="budget_not_set">ಹೊಂದಿಸಿಲ್ಲ</string>
+    <string name="settings_appearance">ನೋಟ</string>
+    <string name="settings_money">ಹಣ</string>
+    <string name="settings_reminders">ಜ್ಞಾಪನೆಗಳು</string>
+    <string name="settings_data">ನಿಮ್ಮ ಡೇಟಾ</string>
+    <string name="settings_about">ಕುರಿತು</string>
+    <string name="theme">ಮೋಡ್</string>
+    <string name="theme_system">ಸಿಸ್ಟಮ್</string>
+    <string name="theme_light">ಲೈಟ್</string>
+    <string name="theme_dark">ಡಾರ್ಕ್</string>
+    <string name="daily_reminder">ದೈನಂದಿನ ಜ್ಞಾಪನೆ</string>
+    <string name="daily_reminder_summary">ಆ ದಿನ ಏನೂ ದಾಖಲಿಸದಿದ್ದರೆ ಸಣ್ಣ ನೆನಪು</string>
+    <string name="reminder_time">ಜ್ಞಾಪನೆ ಸಮಯ</string>
+    <string name="notification_settings">ಅಧಿಸೂಚನೆ ಸೆಟ್ಟಿಂಗ್‌ಗಳು</string>
+    <string name="notification_settings_summary">ಹಿಸಾಬ್ ಕಿತಾಬ್ ನಿಮಗೆ ಹೇಗೆ ತಿಳಿಸಬೇಕು ಎಂದು ನಿರ್ವಹಿಸಿ</string>
+    <string name="export_transactions">ವಹಿವಾಟುಗಳನ್ನು ರಫ್ತು ಮಾಡಿ</string>
+    <string name="export_categories">ವರ್ಗಗಳನ್ನು ರಫ್ತು ಮಾಡಿ</string>
+    <string name="export_summary">ಯಾವುದೇ ಸ್ಪ್ರೆಡ್‌ಶೀಟ್ ಆ್ಯಪ್‌ನಲ್ಲಿ ತೆರೆಯಬಹುದಾದ CSV ಫೈಲ್ ಆಗಿ ಉಳಿಸಿ</string>
+    <string name="export_failed">ರಫ್ತು ವಿಫಲವಾಯಿತು. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</string>
+    <string name="version">ಆವೃತ್ತಿ %1$s</string>
+    <string name="settings_title_big">ಸೆಟ್ಟಿಂಗ್‌ಗಳು</string>
+    <string name="settings_subtitle">ನಿಮ್ಮದಾಗಿಸಿಕೊಳ್ಳಿ</string>
+    <string name="settings_theme_gallery">ಥೀಮ್</string>
+    <string name="currency_setting">ಕರೆನ್ಸಿ</string>
+    <string name="made_with_love">ಜಾಗರೂಕ ಖರ್ಚಿಗಾಗಿ ♥ ನಿಂದ ತಯಾರಿಸಲಾಗಿದೆ</string>
+    <string name="settings_motion">ಅನಿಮೇಷನ್ ಮತ್ತು ಶೈಲಿ</string>
+    <string name="settings_privacy">ಗೌಪ್ಯತೆ ಮತ್ತು ಭದ್ರತೆ</string>
+    <string name="nav_style">ನ್ಯಾವಿಗೇಷನ್ ಬಾರ್</string>
+    <string name="nav_style_hint">ಕೆಳಗಿನ ಬಾರ್‌ನಲ್ಲಿ ಪ್ರತಿ ಶೈಲಿ ಪ್ರಯತ್ನಿಸಿ</string>
+    <string name="nav_style_liquid">ಲಿಕ್ವಿಡ್</string>
+    <string name="nav_style_bubble">ಬಬಲ್</string>
+    <string name="nav_style_glow">ಗ್ಲೋ</string>
+    <string name="nav_style_expand">ಎಕ್ಸ್‌ಪ್ಯಾಂಡ್</string>
+    <string name="chart_animation">ಚಾರ್ಟ್ ಅನಿಮೇಷನ್</string>
+    <string name="chart_animation_hint">ವಿಶ್ಲೇಷಣೆಯಲ್ಲಿ ಚಾರ್ಟ್‌ಗಳು ಹೇಗೆ ಬದಲಾಗುತ್ತವೆ</string>
+    <string name="chart_fade">ಫೇಡ್</string>
+    <string name="chart_slide">ಸ್ಲೈಡ್</string>
+    <string name="chart_flip">3D ಫ್ಲಿಪ್</string>
+    <string name="chart_zoom">ಜೂಮ್</string>
+    <string name="preview_home">ಮುಖಪುಟ</string>
+    <string name="app_lock">ಆ್ಯಪ್ ಲಾಕ್</string>
+    <string name="app_lock_summary">ತೆರೆಯಲು ಬೆರಳಚ್ಚು, ಮುಖ ಅಥವಾ ಸ್ಕ್ರೀನ್ ಲಾಕ್ ಅಗತ್ಯ</string>
+    <string name="app_lock_unavailable">ಇದನ್ನು ಬಳಸಲು ಫೋನ್‌ನಲ್ಲಿ ಸ್ಕ್ರೀನ್ ಲಾಕ್ ಹೊಂದಿಸಿ</string>
+    <string name="app_lock_confirm_title">ಆ್ಯಪ್ ಲಾಕ್ ಆನ್ ಮಾಡಿ</string>
+    <string name="app_lock_confirm_subtitle">ಇದು ನೀವೇ ಎಂದು ದೃಢೀಕರಿಸಿ</string>
+    <string name="language_setting">ಭಾಷೆ</string>
+    <plurals name="exported_transactions">
+        <item quantity="one">%d ವಹಿವಾಟು ರಫ್ತಾಗಿದೆ</item>
+        <item quantity="other">%d ವಹಿವಾಟುಗಳು ರಫ್ತಾಗಿವೆ</item>
+    </plurals>
+    <plurals name="exported_categories">
+        <item quantity="one">%d ವರ್ಗ ರಫ್ತಾಗಿದೆ</item>
+        <item quantity="other">%d ವರ್ಗಗಳು ರಫ್ತಾಗಿವೆ</item>
+    </plurals>
+</resources>

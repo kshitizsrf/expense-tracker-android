@@ -3,7 +3,7 @@
         The UI is 100% Jetpack Compose (see HisabKitabTheme); these window themes only
         cover the splash screen and the brief moment before Compose draws.
     -->
-    <style name="Theme.HisabKitab" parent="android:Theme.Material.Light.NoActionBar">
+    <style name="Theme.HisabKitab" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowBackground">@color/window_background</item>
     </style>
 

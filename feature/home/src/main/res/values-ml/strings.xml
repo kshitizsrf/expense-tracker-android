@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="balance">ഈ മാസത്തെ ബാലൻസ്</string>
+    <string name="previous_month">മുൻ മാസം</string>
+    <string name="next_month">അടുത്ത മാസം</string>
+    <string name="back_to_this_month">ഈ മാസത്തിലേക്ക് മടങ്ങാൻ ടാപ്പ് ചെയ്യുക</string>
+    <string name="recent_transactions">സമീപകാല പ്രവർത്തനം</string>
+    <string name="see_all">എല്ലാം കാണുക</string>
+    <string name="daily_spending">ദൈനംദിന ചെലവ്</string>
+    <string name="budget_set_title">ബജറ്റ് സജ്ജമാക്കുക</string>
+    <string name="budget_set_message">ഓരോ ദിവസവും എത്ര ചെലവാക്കാമെന്ന് കൃത്യമായി അറിയുക.</string>
+    <string name="budget_title_daily">ഇന്നത്തെ ബജറ്റ്</string>
+    <string name="budget_title_weekly">ഈ ആഴ്ചത്തെ ബജറ്റ്</string>
+    <string name="budget_title_monthly">ഈ മാസത്തെ ബജറ്റ്</string>
+    <string name="budget_title_custom">ബജറ്റ്</string>
+    <string name="budget_spent_of">%2$s ൽ %1$s ചെലവായി</string>
+    <string name="budget_over_by">%1$s കൂടുതൽ</string>
+    <string name="budget_safe_today">ഇന്ന് ധൈര്യമായി ചെലവാക്കാം</string>
+    <string name="budget_ended">ഈ ബജറ്റ് കാലയളവ് അവസാനിച്ചു. പുതിയത് സജ്ജമാക്കാൻ ടാപ്പ് ചെയ്യുക.</string>
+    <string name="budget_not_started">%1$s മുതൽ ആരംഭിക്കും</string>
+    <string name="insight_top_category">ഏറ്റവും കൂടുതൽ ചെലവ്</string>
+    <string name="insight_daily_average">ദൈനംദിന ശരാശരി</string>
+    <string name="insight_biggest">ഏറ്റവും വലിയ ചെലവ്</string>
+    <string name="insight_count">എൻട്രികൾ</string>
+    <string name="empty_home_title">പുതിയ തുടക്കം</string>
+    <string name="empty_home_message">നിങ്ങളുടെ ആദ്യ വരുമാനമോ ചെലവോ രേഖപ്പെടുത്താൻ + ബട്ടൺ ടാപ്പ് ചെയ്യുക.</string>
+    <string name="spotlight_saved">സമ്പാദ്യം</string>
+    <plurals name="budget_days_left">
+        <item quantity="one">%d ദിവസം ബാക്കി</item>
+        <item quantity="other">%d ദിവസം ബാക്കി</item>
+    </plurals>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="category">Categoria</string>
+    <string name="date">Data</string>
+    <string name="time">Horário</string>
+    <string name="note">Nota</string>
+    <string name="no_note">Sem nota</string>
+    <string name="search">Buscar</string>
+    <string name="close_search">Fechar busca</string>
+    <string name="clear_search">Limpar busca</string>
+    <string name="search_hint">Buscar notas ou categorias</string>
+    <string name="filter_all">Tudo</string>
+    <string name="empty_filtered_title">Nenhuma transação encontrada</string>
+    <string name="empty_filtered_message">Tente outra busca ou filtro.</string>
+    <string name="transaction_details">Transação</string>
+    <string name="transaction_not_found_title">Transação não encontrada</string>
+    <string name="transaction_not_found_message">Talvez ela tenha sido excluída.</string>
+    <string name="delete_transaction_title">Excluir transação?</string>
+    <string name="delete_transaction_message">Esta transação será excluída permanentemente.</string>
+    <string name="new_transaction">Nova transação</string>
+    <string name="edit_transaction">Editar transação</string>
+    <string name="note_optional">Nota (opcional)</string>
+    <string name="new_category_short">Nova</string>
+    <string name="save_transaction">Salvar transação</string>
+    <string name="save_changes">Salvar alterações</string>
+    <string name="keypad_backspace">Apagar. Mantenha pressionado para limpar tudo</string>
+    <string name="keypad_decimal">Decimal</string>
+    <string name="error_amount_too_large">Esse valor é alto demais</string>
+    <string name="error_category_required">Escolha uma categoria</string>
+    <string name="activity_title">Atividade</string>
+    <string name="activity_subtitle">Cada centavo registrado</string>
+    <string name="deleted_transaction">Transação excluída</string>
+    <string name="undo">Desfazer</string>
+    <string name="swipe_hint">Deslize um registro para a esquerda para excluir</string>
+    <string name="spent_label">Gasto</string>
+    <string name="earned_label">Recebido</string>
+</resources>

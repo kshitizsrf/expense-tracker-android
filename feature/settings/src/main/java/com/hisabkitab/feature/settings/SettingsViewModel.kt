@@ -6,7 +6,9 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.hisabkitab.core.data.export.CsvExporter
 import com.hisabkitab.core.data.repository.UserPreferencesRepository
-import com.hisabkitab.core.model.ColorPalette
+import com.hisabkitab.core.model.AppTheme
+import com.hisabkitab.core.model.ChartTransition
+import com.hisabkitab.core.model.NavBarStyle
 import com.hisabkitab.core.model.ThemeMode
 import com.hisabkitab.core.model.UserPreferences
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -52,9 +54,13 @@ class SettingsViewModel @Inject constructor(
 
     fun setThemeMode(mode: ThemeMode) = launchUpdate { userPreferencesRepository.setThemeMode(mode) }
 
-    fun setPalette(palette: ColorPalette) = launchUpdate { userPreferencesRepository.setPalette(palette) }
+    fun setTheme(theme: AppTheme) = launchUpdate { userPreferencesRepository.setTheme(theme) }
 
-    fun setUseDynamicColor(enabled: Boolean) = launchUpdate { userPreferencesRepository.setUseDynamicColor(enabled) }
+    fun setAppLockEnabled(enabled: Boolean) = launchUpdate { userPreferencesRepository.setAppLockEnabled(enabled) }
+
+    fun setNavBarStyle(style: NavBarStyle) = launchUpdate { userPreferencesRepository.setNavBarStyle(style) }
+
+    fun setChartTransition(transition: ChartTransition) = launchUpdate { userPreferencesRepository.setChartTransition(transition) }
 
     fun setCurrency(code: String) = launchUpdate { userPreferencesRepository.setCurrencyCode(code) }
 

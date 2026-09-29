@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="today">Oggi</string>
+    <string name="yesterday">Ieri</string>
+    <string name="greeting_morning">Buongiorno</string>
+    <string name="greeting_afternoon">Buon pomeriggio</string>
+    <string name="greeting_evening">Buonasera</string>
+    <string name="greeting_night">Ancora sveglio?</string>
+    <string name="currency">Valuta</string>
+    <string name="language">Lingua</string>
+    <string name="language_system">Predefinita di sistema</string>
+    <string name="language_system_summary">Usa la lingua del telefono</string>
+    <string name="language_search">Cerca lingue</string>
+    <string name="category_food">Cibo</string>
+    <string name="category_shopping">Shopping</string>
+    <string name="category_transportation">Trasporti</string>
+    <string name="category_bills">Bollette</string>
+    <string name="category_home">Casa</string>
+    <string name="category_health">Salute</string>
+    <string name="category_entertainment">Svago</string>
+    <string name="category_education">Istruzione</string>
+    <string name="category_travel">Viaggi</string>
+    <string name="category_clothing">Abbigliamento</string>
+    <string name="category_fruits">Frutta</string>
+    <string name="category_vegetables">Verdura</string>
+    <string name="category_car">Auto</string>
+    <string name="category_insurance">Assicurazioni</string>
+    <string name="category_gift">Regali</string>
+    <string name="category_sport">Sport</string>
+    <string name="category_book">Libri</string>
+    <string name="category_pet">Animali</string>
+    <string name="category_wine">Bevande</string>
+    <string name="category_salary">Stipendio</string>
+    <string name="category_rental">Affitto</string>
+    <string name="category_sale">Vendite</string>
+    <string name="category_awards">Premi</string>
+    <string name="category_investment">Investimenti</string>
+    <string name="category_other">Altro</string>
+</resources>

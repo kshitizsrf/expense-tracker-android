@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_transactions">പ്രവർത്തനം</string>
+    <string name="nav_stats">വിശകലനം</string>
+    <string name="nav_categories">വിഭാഗങ്ങൾ</string>
+    <string name="action_back">തിരികെ</string>
+    <string name="action_cancel">റദ്ദാക്കുക</string>
+    <string name="action_close">അടയ്ക്കുക</string>
+    <string name="action_delete">ഇല്ലാതാക്കുക</string>
+    <string name="action_ok">ശരി</string>
+    <string name="income">വരുമാനം</string>
+    <string name="expense">ചെലവ്</string>
+    <string name="expenses">ചെലവുകൾ</string>
+    <string name="select_time">സമയം തിരഞ്ഞെടുക്കുക</string>
+    <string name="settings_title">ക്രമീകരണങ്ങൾ</string>
+    <string name="add_transaction">ചേർക്കുക</string>
+    <string name="empty_transactions_title">ഇതുവരെ ഇടപാടുകളൊന്നുമില്ല</string>
+    <string name="empty_transactions_message">നിങ്ങളുടെ ആദ്യ വരുമാനമോ ചെലവോ രേഖപ്പെടുത്താൻ ചേർക്കുക ടാപ്പ് ചെയ്യുക.</string>
+    <string name="budget">ബജറ്റ്</string>
+    <string name="period_daily">പ്രതിദിനം</string>
+    <string name="period_weekly">പ്രതിവാരം</string>
+    <string name="period_monthly">പ്രതിമാസം</string>
+    <string name="period_custom">ഇഷ്ടാനുസൃതം</string>
+    <string name="error_amount_required">പൂജ്യത്തേക്കാൾ കൂടിയ തുക നൽകുക</string>
+    <string name="action_save">സംരക്ഷിക്കുക</string>
+    <string name="action_edit">തിരുത്തുക</string>
+    <string name="theme_skyline_tagline">തെളിഞ്ഞ നീല ശാന്തത</string>
+    <string name="theme_dawn_tagline">അർധരാത്രിക്കുശേഷമുള്ള പുലരി</string>
+    <string name="theme_horizon_tagline">ആഴക്കടലിന്റെ നീലപ്പച്ച</string>
+    <string name="theme_pinkwalk_tagline">ലാവെൻഡർ മിഠായി നടത്തം</string>
+    <string name="theme_rosewood_tagline">നീല രാത്രികൾ, റോസ് തിളക്കം</string>
+    <string name="theme_wallpaper_tagline">നിങ്ങളുടെ വാൾപേപ്പറിലെ നിറങ്ങളിൽ</string>
+    <string name="theme_wallpaper">വാൾപേപ്പർ</string>
+    <string name="spotlight_dismiss">അടയ്ക്കാൻ എവിടെയും ടാപ്പ് ചെയ്യുക</string>
+    <string name="select_date_range">തീയതി പരിധി തിരഞ്ഞെടുക്കുക</string>
+</resources>

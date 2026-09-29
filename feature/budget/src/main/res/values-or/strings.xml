@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_change">ବଦଳାନ୍ତୁ</string>
+    <string name="budget_intro">ଆପଣଙ୍କ ଟଙ୍କାର ଯୋଜନା କରନ୍ତୁ। ବଜେଟ୍‌ରେ କେବଳ ଖର୍ଚ୍ଚ ଗଣାଯାଏ।</string>
+    <string name="budget_amount">ବଜେଟ୍ ରାଶି</string>
+    <string name="budget_period">ଅବଧି</string>
+    <string name="budget_explain_daily">ପ୍ରତିଦିନ ନୂଆ କରି ଆରମ୍ଭ ହୁଏ।</string>
+    <string name="budget_explain_weekly">ପ୍ରତି ସପ୍ତାହ ଆରମ୍ଭରେ ନୂଆ କରି ଆରମ୍ଭ ହୁଏ।</string>
+    <string name="budget_explain_monthly">ପ୍ରତି ମାସ ୧ ତାରିଖରେ ନୂଆ କରି ଆରମ୍ଭ ହୁଏ।</string>
+    <string name="budget_explain_custom">କେବଳ ଆପଣ ବାଛିଥିବା ତାରିଖ ପାଇଁ।</string>
+    <string name="budget_current_period">ବର୍ତ୍ତମାନ ଅବଧି: %1$s</string>
+    <string name="choose_dates">ତାରିଖ ବାଛନ୍ତୁ</string>
+    <string name="save_budget">ବଜେଟ୍ ସେଭ୍ କରନ୍ତୁ</string>
+    <string name="remove_budget">ବଜେଟ୍ ହଟାନ୍ତୁ</string>
+    <string name="error_dates_required">ଆପଣଙ୍କ ବଜେଟ୍‌ର ତାରିଖ ବାଛନ୍ତୁ</string>
+</resources>

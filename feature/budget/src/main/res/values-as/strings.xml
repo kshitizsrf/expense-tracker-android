@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_change">সলনি কৰক</string>
+    <string name="budget_intro">আপোনাৰ টকাৰ পৰিকল্পনা কৰক। বাজেটত কেৱল খৰচহে গণনা কৰা হয়।</string>
+    <string name="budget_amount">বাজেটৰ পৰিমাণ</string>
+    <string name="budget_period">সময়সীমা</string>
+    <string name="budget_explain_daily">প্ৰতিদিনে নতুনকৈ আৰম্ভ হয়।</string>
+    <string name="budget_explain_weekly">প্ৰতি সপ্তাহৰ আৰম্ভণিতে নতুনকৈ আৰম্ভ হয়।</string>
+    <string name="budget_explain_monthly">প্ৰতি মাহৰ ১ তাৰিখে নতুনকৈ আৰম্ভ হয়।</string>
+    <string name="budget_explain_custom">কেৱল আপুনি বাছি লোৱা তাৰিখৰ বাবে।</string>
+    <string name="budget_current_period">বৰ্তমানৰ সময়সীমা: %1$s</string>
+    <string name="choose_dates">তাৰিখ বাছক</string>
+    <string name="save_budget">বাজেট ছেভ কৰক</string>
+    <string name="remove_budget">বাজেট আঁতৰাওক</string>
+    <string name="error_dates_required">আপোনাৰ বাজেটৰ তাৰিখ বাছক</string>
+</resources>

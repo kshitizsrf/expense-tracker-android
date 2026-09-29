@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="budget_not_set">未设置</string>
+    <string name="settings_appearance">外观</string>
+    <string name="settings_money">资金</string>
+    <string name="settings_reminders">提醒</string>
+    <string name="settings_data">你的数据</string>
+    <string name="settings_about">关于</string>
+    <string name="theme">模式</string>
+    <string name="theme_system">跟随系统</string>
+    <string name="theme_light">浅色</string>
+    <string name="theme_dark">深色</string>
+    <string name="daily_reminder">每日提醒</string>
+    <string name="daily_reminder_summary">当天未记账时温和提醒</string>
+    <string name="reminder_time">提醒时间</string>
+    <string name="notification_settings">通知设置</string>
+    <string name="notification_settings_summary">管理 Hisab Kitab 的通知方式</string>
+    <string name="export_transactions">导出记录</string>
+    <string name="export_categories">导出分类</string>
+    <string name="export_summary">保存为可在任何表格应用中打开的 CSV 文件</string>
+    <string name="export_failed">导出失败，请重试。</string>
+    <string name="version">版本 %1$s</string>
+    <string name="settings_title_big">设置</string>
+    <string name="settings_subtitle">打造专属于你</string>
+    <string name="settings_theme_gallery">主题</string>
+    <string name="currency_setting">货币</string>
+    <string name="made_with_love">用 ♥ 打造，助你理性消费</string>
+    <string name="settings_motion">动效与风格</string>
+    <string name="settings_privacy">隐私与安全</string>
+    <string name="nav_style">导航栏</string>
+    <string name="nav_style_hint">在底部导航栏上试试每种风格</string>
+    <string name="nav_style_liquid">流体</string>
+    <string name="nav_style_bubble">气泡</string>
+    <string name="nav_style_glow">光晕</string>
+    <string name="nav_style_expand">展开</string>
+    <string name="chart_animation">图表动画</string>
+    <string name="chart_animation_hint">分析页中图表的切换方式</string>
+    <string name="chart_fade">淡入淡出</string>
+    <string name="chart_slide">滑动</string>
+    <string name="chart_flip">3D 翻转</string>
+    <string name="chart_zoom">缩放</string>
+    <string name="preview_home">首页</string>
+    <string name="app_lock">应用锁</string>
+    <string name="app_lock_summary">打开时需要指纹、面容或屏幕锁</string>
+    <string name="app_lock_unavailable">请先在手机上设置屏幕锁</string>
+    <string name="app_lock_confirm_title">开启应用锁</string>
+    <string name="app_lock_confirm_subtitle">请确认是你本人</string>
+    <string name="language_setting">语言</string>
+    <plurals name="exported_transactions">
+        <item quantity="other">已导出 %d 笔记录</item>
+    </plurals>
+    <plurals name="exported_categories">
+        <item quantity="other">已导出 %d 个分类</item>
+    </plurals>
+</resources>

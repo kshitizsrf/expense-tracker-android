@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="today">ଆଜି</string>
+    <string name="yesterday">ଗତକାଲି</string>
+    <string name="greeting_morning">ସୁପ୍ରଭାତ</string>
+    <string name="greeting_afternoon">ଶୁଭ ଅପରାହ୍ନ</string>
+    <string name="greeting_evening">ଶୁଭ ସନ୍ଧ୍ୟା</string>
+    <string name="greeting_night">ରାତି ଅଧିଆ ଯାଏଁ ଜାଗିଛନ୍ତି କି?</string>
+    <string name="currency">ମୁଦ୍ରା</string>
+    <string name="language">ଭାଷା</string>
+    <string name="language_system">ସିଷ୍ଟମ୍ ଡିଫଲ୍ଟ</string>
+    <string name="language_system_summary">ଫୋନର ଭାଷା ବ୍ୟବହାର କରନ୍ତୁ</string>
+    <string name="language_search">ଭାଷା ଖୋଜନ୍ତୁ</string>
+    <string name="category_food">ଖାଦ୍ୟ</string>
+    <string name="category_shopping">କିଣାକିଣି</string>
+    <string name="category_transportation">ଯାତାୟାତ</string>
+    <string name="category_bills">ବିଲ୍</string>
+    <string name="category_home">ଘର</string>
+    <string name="category_health">ସ୍ୱାସ୍ଥ୍ୟ</string>
+    <string name="category_entertainment">ମନୋରଞ୍ଜନ</string>
+    <string name="category_education">ଶିକ୍ଷା</string>
+    <string name="category_travel">ଭ୍ରମଣ</string>
+    <string name="category_clothing">ପୋଷାକ</string>
+    <string name="category_fruits">ଫଳ</string>
+    <string name="category_vegetables">ପନିପରିବା</string>
+    <string name="category_car">ଗାଡ଼ି</string>
+    <string name="category_insurance">ବୀମା</string>
+    <string name="category_gift">ଉପହାର</string>
+    <string name="category_sport">ଖେଳ</string>
+    <string name="category_book">ବହି</string>
+    <string name="category_pet">ପୋଷା ପ୍ରାଣୀ</string>
+    <string name="category_wine">ପାନୀୟ</string>
+    <string name="category_salary">ଦରମା</string>
+    <string name="category_rental">ଭଡ଼ା</string>
+    <string name="category_sale">ବିକ୍ରି</string>
+    <string name="category_awards">ପୁରସ୍କାର</string>
+    <string name="category_investment">ନିବେଶ</string>
+    <string name="category_other">ଅନ୍ୟାନ୍ୟ</string>
+</resources>

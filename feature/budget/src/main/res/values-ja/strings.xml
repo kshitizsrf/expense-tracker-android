@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_change">変更</string>
+    <string name="budget_intro">お金の計画を立てましょう。予算は支出のみを計算します。</string>
+    <string name="budget_amount">予算額</string>
+    <string name="budget_period">期間</string>
+    <string name="budget_explain_daily">毎日リセットされます。</string>
+    <string name="budget_explain_weekly">毎週の始まりにリセットされます。</string>
+    <string name="budget_explain_monthly">毎月 1 日にリセットされます。</string>
+    <string name="budget_explain_custom">選んだ日付のみ有効です。</string>
+    <string name="budget_current_period">現在の期間：%1$s</string>
+    <string name="choose_dates">日付を選択</string>
+    <string name="save_budget">予算を保存</string>
+    <string name="remove_budget">予算を削除</string>
+    <string name="error_dates_required">予算の日付を選択してください</string>
+</resources>

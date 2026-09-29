@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="reminder_channel_name">تذكير يومي</string>
+    <string name="reminder_channel_description">يذكّرك بتسجيل إنفاقك إذا لم تضف أي معاملة اليوم.</string>
+    <string name="reminder_title">هل سجّلت مصروفات اليوم؟</string>
+    <string name="reminder_text">يستغرق الأمر ثوانٍ فقط ويحافظ على دقة ميزانيتك.</string>
+</resources>

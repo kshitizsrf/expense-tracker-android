@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="insights_title">Analiz</string>
+    <string name="insights_subtitle">Paranız nereye gidiyor</string>
+    <string name="period_this_month">Bu ay</string>
+    <string name="period_last_month">Geçen ay</string>
+    <string name="period_last_3_months">3 ay</string>
+    <string name="period_this_year">Bu yıl</string>
+    <string name="chart_donut">Halka</string>
+    <string name="chart_bars">Sıralama</string>
+    <string name="chart_trend">Eğilim</string>
+    <string name="chart_calendar">Takvim</string>
+    <string name="chart_cash_flow">Nakit akışı</string>
+    <string name="chart_donut_title">Kategoriye göre pay</string>
+    <string name="chart_bars_title">En çok harcanan kategoriler</string>
+    <string name="chart_trend_title_daily">Günden güne</string>
+    <string name="chart_trend_title_monthly">Aydan aya</string>
+    <string name="chart_calendar_title">Harcama takvimi</string>
+    <string name="chart_calendar_title_income">Gelir takvimi</string>
+    <string name="chart_cash_flow_title">Nakit akışı · son 6 ay</string>
+    <string name="chart_hint_donut">Öne çıkarmak için bir dilime dokunun</string>
+    <string name="chart_hint_trend">Keşfetmek için basılı tutup sürükleyin</string>
+    <string name="chart_hint_calendar">Toplamı görmek için bir güne dokunun</string>
+    <string name="chart_hint_cash_flow">Ayrıntılar için bir aya dokunun</string>
+    <string name="total_spent">Toplam harcama</string>
+    <string name="total_earned">Toplam kazanç</string>
+    <string name="stat_total">Toplam</string>
+    <string name="stat_daily_average">Günlük ortalama</string>
+    <string name="stat_entries">Kayıt</string>
+    <string name="stat_vs_previous">öncekine göre</string>
+    <string name="stat_no_comparison">Yeni</string>
+    <string name="percent_of_total">Toplamın %%%1$d kadarı</string>
+    <string name="heatmap_less">Az</string>
+    <string name="heatmap_more">Çok</string>
+    <string name="nothing_on_day">Kayıt yok</string>
+    <string name="net">Net</string>
+    <string name="stats_empty_title">Henüz gösterilecek bir şey yok</string>
+    <string name="stats_empty_message">Bu dönemdeki işlemler bu grafikleri canlandıracak.</string>
+    <string name="stat_previous_period">Önceki dönem</string>
+    <plurals name="transaction_count">
+        <item quantity="one">%d işlem</item>
+        <item quantity="other">%d işlem</item>
+    </plurals>
+</resources>

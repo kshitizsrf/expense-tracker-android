@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lock_title">Hisab Kitab đã khóa</string>
+    <string name="lock_message">Tài chính của bạn luôn riêng tư. Mở khóa bằng vân tay, khuôn mặt hoặc khóa màn hình.</string>
+    <string name="lock_unlock">Mở khóa</string>
+    <string name="lock_prompt_title">Mở khóa Hisab Kitab</string>
+    <string name="lock_prompt_subtitle">Xác nhận đây là bạn</string>
+</resources>

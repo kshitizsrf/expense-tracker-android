@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="new_category">പുതിയ വിഭാഗം</string>
+    <string name="edit_category">വിഭാഗം തിരുത്തുക</string>
+    <string name="category_name">പേര്</string>
+    <string name="color">നിറം</string>
+    <string name="icon">ഐക്കൺ</string>
+    <string name="categories_empty_title">വിഭാഗങ്ങളൊന്നുമില്ല</string>
+    <string name="categories_empty_message">പുതിയത് സൃഷ്ടിക്കാൻ + ടാപ്പ് ചെയ്യുക.</string>
+    <string name="error_name_required">ഒരു പേര് നൽകുക</string>
+    <string name="error_name_taken">ഈ പേരിൽ ഒരു വിഭാഗം ഇതിനകം ഉണ്ട്</string>
+    <string name="delete_category_title">“%1$s” ഇല്ലാതാക്കണോ?</string>
+    <string name="delete_category_message_empty">ഈ വിഭാഗം ശാശ്വതമായി ഇല്ലാതാക്കപ്പെടും.</string>
+    <string name="categories_title">വിഭാഗങ്ങൾ</string>
+    <string name="categories_subtitle">നിങ്ങളുടെ പണം, ചിട്ടയായി</string>
+    <string name="this_month_total">ഈ മാസം %1$s</string>
+    <string name="nothing_this_month">ഈ മാസം ഒന്നുമില്ല</string>
+    <string name="preview">പ്രിവ്യൂ</string>
+    <plurals name="delete_category_message">
+        <item quantity="one">ഇതോടെ ഈ വിഭാഗത്തിലെ %d ഇടപാടും ഇല്ലാതാകും. ഇത് പഴയപടിയാക്കാനാകില്ല.</item>
+        <item quantity="other">ഇതോടെ ഈ വിഭാഗത്തിലെ %d ഇടപാടുകളും ഇല്ലാതാകും. ഇത് പഴയപടിയാക്കാനാകില്ല.</item>
+    </plurals>
+</resources>

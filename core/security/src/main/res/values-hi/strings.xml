@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lock_title">हिसाब किताब लॉक है</string>
+    <string name="lock_message">आपकी जानकारी निजी रहती है। फ़िंगरप्रिंट, चेहरे या स्क्रीन लॉक से खोलें।</string>
+    <string name="lock_unlock">अनलॉक करें</string>
+    <string name="lock_prompt_title">हिसाब किताब अनलॉक करें</string>
+    <string name="lock_prompt_subtitle">पुष्टि करें कि यह आप हैं</string>
+</resources>

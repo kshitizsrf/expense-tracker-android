@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="new_category">Kategori baru</string>
+    <string name="edit_category">Edit kategori</string>
+    <string name="category_name">Nama</string>
+    <string name="color">Warna</string>
+    <string name="icon">Ikon</string>
+    <string name="categories_empty_title">Tidak ada kategori</string>
+    <string name="categories_empty_message">Ketuk + untuk membuat.</string>
+    <string name="error_name_required">Masukkan nama</string>
+    <string name="error_name_taken">Kategori dengan nama ini sudah ada</string>
+    <string name="delete_category_title">Hapus “%1$s”?</string>
+    <string name="delete_category_message_empty">Kategori ini akan dihapus permanen.</string>
+    <string name="categories_title">Kategori</string>
+    <string name="categories_subtitle">Uang Anda, tertata rapi</string>
+    <string name="this_month_total">%1$s bulan ini</string>
+    <string name="nothing_this_month">Tidak ada bulan ini</string>
+    <string name="preview">Pratinjau</string>
+    <plurals name="delete_category_message">
+        <item quantity="other">Ini juga akan menghapus %d transaksi di kategori ini. Tidak dapat dibatalkan.</item>
+    </plurals>
+</resources>

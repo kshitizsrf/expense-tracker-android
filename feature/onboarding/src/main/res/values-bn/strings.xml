@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_welcome_title">হিসাব কিতাব</string>
+    <string name="onboarding_welcome_message">আপনার টাকা, সুন্দরভাবে সাজানো। সেকেন্ডে লিখুন, দেখুন টাকা কোথায় যায়, আর আত্মবিশ্বাসে খরচ করুন।</string>
+    <string name="onboarding_theme_title">আপনার স্টাইল বেছে নিন</string>
+    <string name="onboarding_theme_message">পাঁচটি বিশেষ থিম, প্রতিটিতে লাইট ও ডার্ক মুড। যেকোনো সময় বদলাতে পারবেন।</string>
+    <string name="onboarding_setup_title">শেষ ধাপ</string>
+    <string name="onboarding_setup_message">আপনার মুদ্রা বেছে নিন আর দিনের হিসাব লেখার হালকা রিমাইন্ডার চান কি না জানান।</string>
+    <string name="onboarding_currency">মুদ্রা</string>
+    <string name="onboarding_reminder">দৈনিক রিমাইন্ডার</string>
+    <string name="onboarding_reminder_summary">শুধু সেদিন কিছু না লিখলে</string>
+    <string name="onboarding_next">পরবর্তী</string>
+    <string name="onboarding_start">চলুন শুরু করি</string>
+    <string name="onboarding_skip">এড়িয়ে যান</string>
+    <string name="onboarding_feature_fast">দ্রুত এন্ট্রির জন্য ক্যালকুলেটর কীপ্যাড</string>
+    <string name="onboarding_feature_insights">খরচ দেখার পাঁচটি উপায়</string>
+    <string name="onboarding_feature_private">সম্পূর্ণ গোপন · সবকিছু আপনার ফোনেই থাকে</string>
+    <string name="mode_auto">অটো</string>
+    <string name="mode_light">☀  লাইট</string>
+    <string name="mode_dark">☾  ডার্ক</string>
+    <string name="onboarding_language_title">আপনার ভাষা বেছে নিন</string>
+    <string name="onboarding_language_message">হিসাব কিতাব আপনার ভাষায় কথা বলে। সেটিংসে যেকোনো সময় বদলাতে পারবেন।</string>
+    <string name="onboarding_lock">অ্যাপ লক</string>
+    <string name="onboarding_lock_summary">আঙুলের ছাপ বা স্ক্রিন লক দিয়ে আপনার তথ্য গোপন রাখুন</string>
+    <string name="onboarding_lock_prompt">অ্যাপ লক চালু করুন</string>
+    <string name="onboarding_lock_prompt_subtitle">নিশ্চিত করুন যে এটি আপনি</string>
+</resources>

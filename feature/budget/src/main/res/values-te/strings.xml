@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_change">మార్చు</string>
+    <string name="budget_intro">మీ డబ్బుకు ఒక ప్రణాళిక ఇవ్వండి. బడ్జెట్‌లో ఖర్చులు మాత్రమే లెక్కించబడతాయి.</string>
+    <string name="budget_amount">బడ్జెట్ మొత్తం</string>
+    <string name="budget_period">కాలవ్యవధి</string>
+    <string name="budget_explain_daily">ప్రతిరోజూ కొత్తగా మొదలవుతుంది.</string>
+    <string name="budget_explain_weekly">ప్రతి వారం ప్రారంభంలో కొత్తగా మొదలవుతుంది.</string>
+    <string name="budget_explain_monthly">ప్రతి నెల 1వ తేదీన కొత్తగా మొదలవుతుంది.</string>
+    <string name="budget_explain_custom">మీరు ఎంచుకున్న తేదీలకు మాత్రమే.</string>
+    <string name="budget_current_period">ప్రస్తుత కాలవ్యవధి: %1$s</string>
+    <string name="choose_dates">తేదీలను ఎంచుకోండి</string>
+    <string name="save_budget">బడ్జెట్ సేవ్ చేయి</string>
+    <string name="remove_budget">బడ్జెట్ తొలగించు</string>
+    <string name="error_dates_required">మీ బడ్జెట్ తేదీలను ఎంచుకోండి</string>
+</resources>

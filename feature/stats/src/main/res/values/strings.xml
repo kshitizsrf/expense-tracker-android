@@ -1,15 +1,50 @@
 <resources>
+    <string name="insights_title">Insights</string>
+    <string name="insights_subtitle">Where your money goes</string>
+
+    <string name="period_this_month">This month</string>
+    <string name="period_last_month">Last month</string>
+    <string name="period_last_3_months">3 months</string>
+    <string name="period_this_year">This year</string>
+
+    <string name="chart_donut">Donut</string>
+    <string name="chart_bars">Ranking</string>
+    <string name="chart_trend">Trend</string>
+    <string name="chart_calendar">Calendar</string>
+    <string name="chart_cash_flow">Cash flow</string>
+
+    <string name="chart_donut_title">Share by category</string>
+    <string name="chart_bars_title">Top categories</string>
+    <string name="chart_trend_title_daily">Day by day</string>
+    <string name="chart_trend_title_monthly">Month by month</string>
+    <string name="chart_calendar_title">Spending calendar</string>
+    <string name="chart_calendar_title_income">Earning calendar</string>
+    <string name="chart_cash_flow_title">Cash flow · last 6 months</string>
+    <string name="chart_hint_donut">Tap a slice to focus on it</string>
+    <string name="chart_hint_trend">Touch and drag to explore</string>
+    <string name="chart_hint_calendar">Tap a day to see its total</string>
+    <string name="chart_hint_cash_flow">Tap a month for details</string>
+
+    <string name="total_spent">Total spent</string>
+    <string name="total_earned">Total earned</string>
+    <string name="stat_total">Total</string>
+    <string name="stat_daily_average">Daily avg</string>
+    <string name="stat_entries">Entries</string>
+    <string name="stat_vs_previous">vs previous</string>
+    <string name="stat_no_comparison">New</string>
     <string name="percent_of_total">%1$d%% of total</string>
     <plurals name="transaction_count">
         <item quantity="one">%d transaction</item>
         <item quantity="other">%d transactions</item>
     </plurals>
-    <string name="period_this_month">This month</string>
-    <string name="period_last_month">Last month</string>
-    <string name="period_last_3_months">Last 3 months</string>
-    <string name="period_this_year">This year</string>
-    <string name="total_spent">Total spent</string>
-    <string name="total_earned">Total earned</string>
-    <string name="stats_empty_title">Nothing to show</string>
-    <string name="stats_empty_message">No transactions in this period.</string>
+
+    <string name="heatmap_less">Less</string>
+    <string name="heatmap_more">More</string>
+    <string name="day_total" translatable="false">%1$s · %2$s</string>
+    <string name="nothing_on_day">Nothing recorded</string>
+    <string name="net">Net</string>
+
+    <string name="stats_empty_title">Nothing to show yet</string>
+    <string name="stats_empty_message">Transactions in this period will light up these charts.</string>
+    <string name="stat_previous_period">Previous period</string>
 </resources>

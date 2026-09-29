@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="today">Aujourd\'hui</string>
+    <string name="yesterday">Hier</string>
+    <string name="greeting_morning">Bonjour</string>
+    <string name="greeting_afternoon">Bon après-midi</string>
+    <string name="greeting_evening">Bonsoir</string>
+    <string name="greeting_night">Encore debout ?</string>
+    <string name="currency">Devise</string>
+    <string name="language">Langue</string>
+    <string name="language_system">Langue du système</string>
+    <string name="language_system_summary">Utiliser la langue du téléphone</string>
+    <string name="language_search">Rechercher une langue</string>
+    <string name="category_food">Alimentation</string>
+    <string name="category_shopping">Shopping</string>
+    <string name="category_transportation">Transport</string>
+    <string name="category_bills">Factures</string>
+    <string name="category_home">Maison</string>
+    <string name="category_health">Santé</string>
+    <string name="category_entertainment">Loisirs</string>
+    <string name="category_education">Éducation</string>
+    <string name="category_travel">Voyages</string>
+    <string name="category_clothing">Vêtements</string>
+    <string name="category_fruits">Fruits</string>
+    <string name="category_vegetables">Légumes</string>
+    <string name="category_car">Voiture</string>
+    <string name="category_insurance">Assurance</string>
+    <string name="category_gift">Cadeaux</string>
+    <string name="category_sport">Sport</string>
+    <string name="category_book">Livres</string>
+    <string name="category_pet">Animaux</string>
+    <string name="category_wine">Boissons</string>
+    <string name="category_salary">Salaire</string>
+    <string name="category_rental">Location</string>
+    <string name="category_sale">Ventes</string>
+    <string name="category_awards">Récompenses</string>
+    <string name="category_investment">Investissements</string>
+    <string name="category_other">Autre</string>
+</resources>

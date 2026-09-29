@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="reminder_channel_name">दैनिक सम्झना</string>
+    <string name="reminder_channel_description">आज कुनै कारोबार नथपेको भए सम्झाउँछ।</string>
+    <string name="reminder_title">आजको खर्च लेख्नुभयो?</string>
+    <string name="reminder_text">केही सेकेन्ड मात्र लाग्छ र तपाईंको बजेट सही रहन्छ।</string>
+</resources>

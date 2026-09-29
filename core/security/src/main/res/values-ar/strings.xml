@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lock_title">Hisab Kitab مقفل</string>
+    <string name="lock_message">تبقى أموالك خاصة. افتح القفل بالبصمة أو الوجه أو قفل الشاشة.</string>
+    <string name="lock_unlock">فتح القفل</string>
+    <string name="lock_prompt_title">فتح قفل Hisab Kitab</string>
+    <string name="lock_prompt_subtitle">أكّد أنك أنت</string>
+</resources>

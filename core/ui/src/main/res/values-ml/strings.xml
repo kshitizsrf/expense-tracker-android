@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="today">ഇന്ന്</string>
+    <string name="yesterday">ഇന്നലെ</string>
+    <string name="greeting_morning">സുപ്രഭാതം</string>
+    <string name="greeting_afternoon">ശുഭ ഉച്ച</string>
+    <string name="greeting_evening">ശുഭ സായാഹ്നം</string>
+    <string name="greeting_night">രാത്രി വൈകിയും ഉണർന്നിരിക്കുകയാണോ?</string>
+    <string name="currency">കറൻസി</string>
+    <string name="language">ഭാഷ</string>
+    <string name="language_system">സിസ്റ്റം ഡിഫോൾട്ട്</string>
+    <string name="language_system_summary">ഫോണിന്റെ ഭാഷ ഉപയോഗിക്കുക</string>
+    <string name="language_search">ഭാഷകൾ തിരയുക</string>
+    <string name="category_food">ഭക്ഷണം</string>
+    <string name="category_shopping">ഷോപ്പിംഗ്</string>
+    <string name="category_transportation">യാത്രാച്ചെലവ്</string>
+    <string name="category_bills">ബില്ലുകൾ</string>
+    <string name="category_home">വീട്</string>
+    <string name="category_health">ആരോഗ്യം</string>
+    <string name="category_entertainment">വിനോദം</string>
+    <string name="category_education">വിദ്യാഭ്യാസം</string>
+    <string name="category_travel">യാത്ര</string>
+    <string name="category_clothing">വസ്ത്രങ്ങൾ</string>
+    <string name="category_fruits">പഴങ്ങൾ</string>
+    <string name="category_vegetables">പച്ചക്കറികൾ</string>
+    <string name="category_car">കാർ</string>
+    <string name="category_insurance">ഇൻഷുറൻസ്</string>
+    <string name="category_gift">സമ്മാനം</string>
+    <string name="category_sport">കായികം</string>
+    <string name="category_book">പുസ്തകങ്ങൾ</string>
+    <string name="category_pet">വളർത്തുമൃഗം</string>
+    <string name="category_wine">പാനീയങ്ങൾ</string>
+    <string name="category_salary">ശമ്പളം</string>
+    <string name="category_rental">വാടക</string>
+    <string name="category_sale">വിൽപ്പന</string>
+    <string name="category_awards">പുരസ്കാരങ്ങൾ</string>
+    <string name="category_investment">നിക്ഷേപം</string>
+    <string name="category_other">മറ്റുള്ളവ</string>
+</resources>

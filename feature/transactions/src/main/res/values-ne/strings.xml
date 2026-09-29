@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="category">श्रेणी</string>
+    <string name="date">मिति</string>
+    <string name="time">समय</string>
+    <string name="note">टिप्पणी</string>
+    <string name="no_note">कुनै टिप्पणी छैन</string>
+    <string name="search">खोज्नुहोस्</string>
+    <string name="close_search">खोज बन्द गर्नुहोस्</string>
+    <string name="clear_search">खोज हटाउनुहोस्</string>
+    <string name="search_hint">टिप्पणी वा श्रेणी खोज्नुहोस्</string>
+    <string name="filter_all">सबै</string>
+    <string name="empty_filtered_title">मिल्दो कारोबार छैन</string>
+    <string name="empty_filtered_message">अर्को खोज वा फिल्टर प्रयास गर्नुहोस्।</string>
+    <string name="transaction_details">कारोबार</string>
+    <string name="transaction_not_found_title">कारोबार भेटिएन</string>
+    <string name="transaction_not_found_message">सायद यो मेटाइएको छ।</string>
+    <string name="delete_transaction_title">कारोबार मेटाउने?</string>
+    <string name="delete_transaction_message">यो कारोबार स्थायी रूपमा मेटिनेछ।</string>
+    <string name="new_transaction">नयाँ कारोबार</string>
+    <string name="edit_transaction">कारोबार सम्पादन</string>
+    <string name="note_optional">टिप्पणी (ऐच्छिक)</string>
+    <string name="new_category_short">नयाँ</string>
+    <string name="save_transaction">कारोबार सेभ गर्नुहोस्</string>
+    <string name="save_changes">परिवर्तन सेभ गर्नुहोस्</string>
+    <string name="keypad_backspace">ब्याकस्पेस। सबै मेटाउन थिचिराख्नुहोस्</string>
+    <string name="keypad_decimal">दशमलव</string>
+    <string name="error_amount_too_large">यो रकम धेरै ठूलो छ</string>
+    <string name="error_category_required">एउटा श्रेणी छान्नुहोस्</string>
+    <string name="activity_title">गतिविधि</string>
+    <string name="activity_subtitle">हरेक पैसाको हिसाब</string>
+    <string name="deleted_transaction">कारोबार मेटियो</string>
+    <string name="undo">पूर्ववत्</string>
+    <string name="swipe_hint">मेटाउन प्रविष्टिलाई बायाँ स्वाइप गर्नुहोस्</string>
+    <string name="spent_label">खर्च</string>
+    <string name="earned_label">आम्दानी</string>
+</resources>

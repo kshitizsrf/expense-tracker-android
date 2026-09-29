@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lock_title">حساب کتاب لاک ہے</string>
+    <string name="lock_message">آپ کی مالی معلومات نجی رہتی ہیں۔ فنگر پرنٹ، چہرے یا اسکرین لاک سے کھولیں۔</string>
+    <string name="lock_unlock">ان لاک کریں</string>
+    <string name="lock_prompt_title">حساب کتاب ان لاک کریں</string>
+    <string name="lock_prompt_subtitle">تصدیق کریں کہ یہ آپ ہیں</string>
+</resources>

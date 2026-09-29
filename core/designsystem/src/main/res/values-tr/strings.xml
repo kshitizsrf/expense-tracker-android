@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_transactions">Hareketler</string>
+    <string name="nav_stats">Analiz</string>
+    <string name="nav_categories">Kategoriler</string>
+    <string name="action_back">Geri</string>
+    <string name="action_cancel">İptal</string>
+    <string name="action_close">Kapat</string>
+    <string name="action_delete">Sil</string>
+    <string name="action_ok">Tamam</string>
+    <string name="income">Gelir</string>
+    <string name="expense">Gider</string>
+    <string name="expenses">Giderler</string>
+    <string name="select_time">Saat seçin</string>
+    <string name="settings_title">Ayarlar</string>
+    <string name="add_transaction">Ekle</string>
+    <string name="empty_transactions_title">Henüz işlem yok</string>
+    <string name="empty_transactions_message">İlk gelirinizi veya giderinizi kaydetmek için Ekle\'ye dokunun.</string>
+    <string name="budget">Bütçe</string>
+    <string name="period_daily">Günlük</string>
+    <string name="period_weekly">Haftalık</string>
+    <string name="period_monthly">Aylık</string>
+    <string name="period_custom">Özel</string>
+    <string name="error_amount_required">Sıfırdan büyük bir tutar girin</string>
+    <string name="action_save">Kaydet</string>
+    <string name="action_edit">Düzenle</string>
+    <string name="theme_skyline_tagline">Kristal mavisi huzur</string>
+    <string name="theme_dawn_tagline">Gece yarısından sonraki şafak</string>
+    <string name="theme_horizon_tagline">Derin deniz turkuazı</string>
+    <string name="theme_pinkwalk_tagline">Lavanta şekeri yürüyüşü</string>
+    <string name="theme_rosewood_tagline">Çivit geceler, pembe ışıltı</string>
+    <string name="theme_wallpaper_tagline">Duvar kağıdınızın renkleriyle</string>
+    <string name="theme_wallpaper">Duvar kağıdı</string>
+    <string name="spotlight_dismiss">Kapatmak için herhangi bir yere dokunun</string>
+    <string name="select_date_range">Tarih aralığı seçin</string>
+</resources>

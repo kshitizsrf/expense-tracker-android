@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_welcome_title">Hisab Kitab</string>
+    <string name="onboarding_welcome_message">I tuoi soldi, organizzati con stile. Registra in pochi secondi, scopri dove vanno e spendi con fiducia.</string>
+    <string name="onboarding_theme_title">Scegli il tuo stile</string>
+    <string name="onboarding_theme_message">Cinque temi esclusivi, ognuno con modalità chiara e scura. Puoi cambiarlo quando vuoi.</string>
+    <string name="onboarding_setup_title">Ultimi ritocchi</string>
+    <string name="onboarding_setup_message">Scegli la valuta e dicci se vuoi un promemoria gentile per annotare la giornata.</string>
+    <string name="onboarding_currency">Valuta</string>
+    <string name="onboarding_reminder">Promemoria giornaliero</string>
+    <string name="onboarding_reminder_summary">Solo se quel giorno non hai registrato nulla</string>
+    <string name="onboarding_next">Avanti</string>
+    <string name="onboarding_start">Iniziamo</string>
+    <string name="onboarding_skip">Salta</string>
+    <string name="onboarding_feature_fast">Tastierino calcolatrice per inserimenti rapidi</string>
+    <string name="onboarding_feature_insights">Cinque modi per vedere le tue spese</string>
+    <string name="onboarding_feature_private">Totalmente privato · tutto resta sul tuo telefono</string>
+    <string name="mode_auto">Auto</string>
+    <string name="mode_light">☀  Chiaro</string>
+    <string name="mode_dark">☾  Scuro</string>
+    <string name="onboarding_language_title">Scegli la tua lingua</string>
+    <string name="onboarding_language_message">Hisab Kitab parla la tua lingua. Puoi cambiarla in qualsiasi momento nelle Impostazioni.</string>
+    <string name="onboarding_lock">Blocco app</string>
+    <string name="onboarding_lock_summary">Proteggi i tuoi dati con impronta o blocco schermo</string>
+    <string name="onboarding_lock_prompt">Attiva blocco app</string>
+    <string name="onboarding_lock_prompt_subtitle">Conferma che sei tu</string>
+</resources>

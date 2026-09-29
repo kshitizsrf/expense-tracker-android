@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="reminder_channel_name">Recordatorio diario</string>
+    <string name="reminder_channel_description">Te avisa si hoy no has añadido ningún movimiento.</string>
+    <string name="reminder_title">¿Anotaste tus gastos de hoy?</string>
+    <string name="reminder_text">Solo lleva unos segundos y mantiene tu presupuesto al día.</string>
+</resources>

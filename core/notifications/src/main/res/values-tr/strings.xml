@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="reminder_channel_name">Günlük hatırlatma</string>
+    <string name="reminder_channel_description">Bugün hiç işlem eklemediyseniz size hatırlatır.</string>
+    <string name="reminder_title">Bugünkü harcamalarınızı yazdınız mı?</string>
+    <string name="reminder_text">Sadece birkaç saniye sürer ve bütçenizi doğru tutar.</string>
+</resources>

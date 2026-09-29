@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="today">Hari ini</string>
+    <string name="yesterday">Kemarin</string>
+    <string name="greeting_morning">Selamat pagi</string>
+    <string name="greeting_afternoon">Selamat siang</string>
+    <string name="greeting_evening">Selamat malam</string>
+    <string name="greeting_night">Masih begadang?</string>
+    <string name="currency">Mata uang</string>
+    <string name="language">Bahasa</string>
+    <string name="language_system">Default sistem</string>
+    <string name="language_system_summary">Gunakan bahasa ponsel</string>
+    <string name="language_search">Cari bahasa</string>
+    <string name="category_food">Makanan</string>
+    <string name="category_shopping">Belanja</string>
+    <string name="category_transportation">Transportasi</string>
+    <string name="category_bills">Tagihan</string>
+    <string name="category_home">Rumah</string>
+    <string name="category_health">Kesehatan</string>
+    <string name="category_entertainment">Hiburan</string>
+    <string name="category_education">Pendidikan</string>
+    <string name="category_travel">Perjalanan</string>
+    <string name="category_clothing">Pakaian</string>
+    <string name="category_fruits">Buah</string>
+    <string name="category_vegetables">Sayur</string>
+    <string name="category_car">Mobil</string>
+    <string name="category_insurance">Asuransi</string>
+    <string name="category_gift">Hadiah</string>
+    <string name="category_sport">Olahraga</string>
+    <string name="category_book">Buku</string>
+    <string name="category_pet">Hewan peliharaan</string>
+    <string name="category_wine">Minuman</string>
+    <string name="category_salary">Gaji</string>
+    <string name="category_rental">Sewa</string>
+    <string name="category_sale">Penjualan</string>
+    <string name="category_awards">Penghargaan</string>
+    <string name="category_investment">Investasi</string>
+    <string name="category_other">Lainnya</string>
+</resources>

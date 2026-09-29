@@ -23,6 +23,9 @@ interface TransactionRepository {
     fun observeRecent(limit: Int): Flow<List<Transaction>>
     fun observeTransactions(filter: TransactionFilter): Flow<List<Transaction>>
     fun observeTransaction(id: Long): Flow<Transaction?>
+
+    /** Every transaction in [range], newest first. Used for charts and summaries. */
+    fun observeTransactionsIn(range: DateRange): Flow<List<Transaction>>
     suspend fun getTransaction(id: Long): Transaction?
     suspend fun getAll(): List<Transaction>
     fun observeTotals(range: DateRange): Flow<PeriodTotals>
@@ -51,6 +54,10 @@ class RoomTransactionRepository @Inject constructor(
 
     override fun observeTransaction(id: Long): Flow<Transaction?> =
         transactionDao.observeById(id).map { it?.asModel() }
+
+    override fun observeTransactionsIn(range: DateRange): Flow<List<Transaction>> =
+        transactionDao.observeBetween(range.startEpochMillis(zone), range.endExclusiveEpochMillis(zone))
+            .map { rows -> rows.map { it.asModel() } }
 
     override suspend fun getTransaction(id: Long): Transaction? = observeTransaction(id).first()
 

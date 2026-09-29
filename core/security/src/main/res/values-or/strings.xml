@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lock_title">ହିସାବ କିତାବ ଲକ୍ ଅଛି</string>
+    <string name="lock_message">ଆପଣଙ୍କ ଆର୍ଥିକ ତଥ୍ୟ ଗୋପନୀୟ ରହେ। ଆଙ୍ଗୁଠି ଚିହ୍ନ, ମୁହଁ କିମ୍ବା ସ୍କ୍ରିନ୍ ଲକ୍‌ରେ ଖୋଲନ୍ତୁ।</string>
+    <string name="lock_unlock">ଅନଲକ୍ କରନ୍ତୁ</string>
+    <string name="lock_prompt_title">ହିସାବ କିତାବ ଅନଲକ୍ କରନ୍ତୁ</string>
+    <string name="lock_prompt_subtitle">ନିଶ୍ଚିତ କରନ୍ତୁ ଯେ ଏହା ଆପଣ</string>
+</resources>

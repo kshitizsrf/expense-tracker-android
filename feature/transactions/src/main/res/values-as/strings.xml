@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="category">শ্ৰেণী</string>
+    <string name="date">তাৰিখ</string>
+    <string name="time">সময়</string>
+    <string name="note">টোকা</string>
+    <string name="no_note">কোনো টোকা নাই</string>
+    <string name="search">বিচাৰক</string>
+    <string name="close_search">সন্ধান বন্ধ কৰক</string>
+    <string name="clear_search">সন্ধান মচক</string>
+    <string name="search_hint">টোকা বা শ্ৰেণী বিচাৰক</string>
+    <string name="filter_all">সকলো</string>
+    <string name="empty_filtered_title">মিল খোৱা কোনো লেনদেন নাই</string>
+    <string name="empty_filtered_message">বেলেগ সন্ধান বা ফিল্টাৰ চেষ্টা কৰক।</string>
+    <string name="transaction_details">লেনদেন</string>
+    <string name="transaction_not_found_title">লেনদেন পোৱা নগ\'ল</string>
+    <string name="transaction_not_found_message">হয়তো ইয়াক মচি পেলোৱা হৈছে।</string>
+    <string name="delete_transaction_title">লেনদেন মচিব নেকি?</string>
+    <string name="delete_transaction_message">এই লেনদেনটো স্থায়ীভাৱে মচি পেলোৱা হ\'ব।</string>
+    <string name="new_transaction">নতুন লেনদেন</string>
+    <string name="edit_transaction">লেনদেন সম্পাদনা</string>
+    <string name="note_optional">টোকা (ঐচ্ছিক)</string>
+    <string name="new_category_short">নতুন</string>
+    <string name="save_transaction">লেনদেন ছেভ কৰক</string>
+    <string name="save_changes">সলনিবোৰ ছেভ কৰক</string>
+    <string name="keypad_backspace">বেকস্পেচ। সকলো মচিবলৈ হেঁচি ধৰি ৰাখক</string>
+    <string name="keypad_decimal">দশমিক</string>
+    <string name="error_amount_too_large">এই পৰিমাণ বহুত বেছি</string>
+    <string name="error_category_required">এটা শ্ৰেণী বাছক</string>
+    <string name="activity_title">কাৰ্যকলাপ</string>
+    <string name="activity_subtitle">প্ৰতিটো পইচাৰ হিচাব</string>
+    <string name="deleted_transaction">লেনদেন মচা হ\'ল</string>
+    <string name="undo">পূৰ্বাৱস্থা</string>
+    <string name="swipe_hint">মচিবলৈ এণ্ট্ৰিটো বাওঁফালে ছোৱাইপ কৰক</string>
+    <string name="spent_label">খৰচ</string>
+    <string name="earned_label">উপাৰ্জন</string>
+</resources>

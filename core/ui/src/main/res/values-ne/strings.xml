@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="today">आज</string>
+    <string name="yesterday">हिजो</string>
+    <string name="greeting_morning">शुभ प्रभात</string>
+    <string name="greeting_afternoon">शुभ दिउँसो</string>
+    <string name="greeting_evening">शुभ साँझ</string>
+    <string name="greeting_night">राति अबेरसम्म जाग्दै हुनुहुन्छ?</string>
+    <string name="currency">मुद्रा</string>
+    <string name="language">भाषा</string>
+    <string name="language_system">सिस्टम पूर्वनिर्धारित</string>
+    <string name="language_system_summary">फोनको भाषा प्रयोग गर्नुहोस्</string>
+    <string name="language_search">भाषा खोज्नुहोस्</string>
+    <string name="category_food">खाना</string>
+    <string name="category_shopping">किनमेल</string>
+    <string name="category_transportation">यातायात</string>
+    <string name="category_bills">बिलहरू</string>
+    <string name="category_home">घर</string>
+    <string name="category_health">स्वास्थ्य</string>
+    <string name="category_entertainment">मनोरञ्जन</string>
+    <string name="category_education">शिक्षा</string>
+    <string name="category_travel">यात्रा</string>
+    <string name="category_clothing">लुगा</string>
+    <string name="category_fruits">फलफूल</string>
+    <string name="category_vegetables">तरकारी</string>
+    <string name="category_car">गाडी</string>
+    <string name="category_insurance">बीमा</string>
+    <string name="category_gift">उपहार</string>
+    <string name="category_sport">खेलकुद</string>
+    <string name="category_book">किताब</string>
+    <string name="category_pet">घरपालुवा</string>
+    <string name="category_wine">पेय</string>
+    <string name="category_salary">तलब</string>
+    <string name="category_rental">भाडा</string>
+    <string name="category_sale">बिक्री</string>
+    <string name="category_awards">पुरस्कार</string>
+    <string name="category_investment">लगानी</string>
+    <string name="category_other">अन्य</string>
+</resources>

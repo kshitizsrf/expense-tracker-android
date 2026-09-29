@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_welcome_title">Hisab Kitab</string>
+    <string name="onboarding_welcome_message">Dein Geld, schön organisiert. In Sekunden erfassen, sehen wohin es geht und entspannt ausgeben.</string>
+    <string name="onboarding_theme_title">Wähle deinen Stil</string>
+    <string name="onboarding_theme_message">Fünf Signature-Designs, jeweils mit hellem und dunklem Modus. Jederzeit änderbar.</string>
+    <string name="onboarding_setup_title">Letzter Schliff</string>
+    <string name="onboarding_setup_message">Wähle deine Währung und sag uns, ob du eine sanfte Erinnerung zum Eintragen möchtest.</string>
+    <string name="onboarding_currency">Währung</string>
+    <string name="onboarding_reminder">Tägliche Erinnerung</string>
+    <string name="onboarding_reminder_summary">Nur wenn du an dem Tag nichts eingetragen hast</string>
+    <string name="onboarding_next">Weiter</string>
+    <string name="onboarding_start">Los geht\'s</string>
+    <string name="onboarding_skip">Überspringen</string>
+    <string name="onboarding_feature_fast">Rechner-Tastatur für schnelle Einträge</string>
+    <string name="onboarding_feature_insights">Fünf Ansichten auf deine Ausgaben</string>
+    <string name="onboarding_feature_private">Komplett privat · alles bleibt auf deinem Telefon</string>
+    <string name="mode_auto">Auto</string>
+    <string name="mode_light">☀  Hell</string>
+    <string name="mode_dark">☾  Dunkel</string>
+    <string name="onboarding_language_title">Wähle deine Sprache</string>
+    <string name="onboarding_language_message">Hisab Kitab spricht deine Sprache. Du kannst sie jederzeit in den Einstellungen ändern.</string>
+    <string name="onboarding_lock">App-Sperre</string>
+    <string name="onboarding_lock_summary">Schütze deine Daten mit Fingerabdruck oder Displaysperre</string>
+    <string name="onboarding_lock_prompt">App-Sperre aktivieren</string>
+    <string name="onboarding_lock_prompt_subtitle">Bestätige, dass du es bist</string>
+</resources>

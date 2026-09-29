@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="new_category">নতুন শ্ৰেণী</string>
+    <string name="edit_category">শ্ৰেণী সম্পাদনা</string>
+    <string name="category_name">নাম</string>
+    <string name="color">ৰং</string>
+    <string name="icon">আইকন</string>
+    <string name="categories_empty_title">কোনো শ্ৰেণী নাই</string>
+    <string name="categories_empty_message">নতুন সৃষ্টি কৰিবলৈ + টিপক।</string>
+    <string name="error_name_required">এটা নাম দিয়ক</string>
+    <string name="error_name_taken">এই নামৰ শ্ৰেণী ইতিমধ্যে আছে</string>
+    <string name="delete_category_title">“%1$s” মচিব নেকি?</string>
+    <string name="delete_category_message_empty">এই শ্ৰেণীটো স্থায়ীভাৱে মচি পেলোৱা হ\'ব।</string>
+    <string name="categories_title">শ্ৰেণী</string>
+    <string name="categories_subtitle">আপোনাৰ টকা, সুন্দৰকৈ সজোৱা</string>
+    <string name="this_month_total">এই মাহত %1$s</string>
+    <string name="nothing_this_month">এই মাহত একো নাই</string>
+    <string name="preview">পূৰ্বদৰ্শন</string>
+    <plurals name="delete_category_message">
+        <item quantity="one">ইয়াৰ ফলত এই শ্ৰেণীৰ %dটা লেনদেনো মচি পেলোৱা হ\'ব। ইয়াক ঘূৰাই অনা নাযাব।</item>
+        <item quantity="other">ইয়াৰ ফলত এই শ্ৰেণীৰ %dটা লেনদেনো মচি পেলোৱা হ\'ব। ইয়াক ঘূৰাই অনা নাযাব।</item>
+    </plurals>
+</resources>

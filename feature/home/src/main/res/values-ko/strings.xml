@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="balance">이번 달 잔액</string>
+    <string name="previous_month">이전 달</string>
+    <string name="next_month">다음 달</string>
+    <string name="back_to_this_month">탭하여 이번 달로 돌아가기</string>
+    <string name="recent_transactions">최근 내역</string>
+    <string name="see_all">전체 보기</string>
+    <string name="daily_spending">일별 지출</string>
+    <string name="budget_set_title">예산 설정</string>
+    <string name="budget_set_message">매일 얼마를 쓸 수 있는지 정확히 알아보세요.</string>
+    <string name="budget_title_daily">오늘 예산</string>
+    <string name="budget_title_weekly">이번 주 예산</string>
+    <string name="budget_title_monthly">이번 달 예산</string>
+    <string name="budget_title_custom">예산</string>
+    <string name="budget_spent_of">%2$s 중 %1$s 사용</string>
+    <string name="budget_over_by">%1$s 초과</string>
+    <string name="budget_safe_today">오늘 쓸 수 있는 금액</string>
+    <string name="budget_ended">예산 기간이 끝났어요. 탭하여 새로 설정하세요.</string>
+    <string name="budget_not_started">%1$s 시작</string>
+    <string name="insight_top_category">최다 지출</string>
+    <string name="insight_daily_average">일평균</string>
+    <string name="insight_biggest">최대 지출</string>
+    <string name="insight_count">건수</string>
+    <string name="empty_home_title">새로운 시작</string>
+    <string name="empty_home_message">+ 버튼을 눌러 첫 수입이나 지출을 기록하세요.</string>
+    <string name="spotlight_saved">저축</string>
+    <plurals name="budget_days_left">
+        <item quantity="other">%d일 남음</item>
+    </plurals>
+</resources>

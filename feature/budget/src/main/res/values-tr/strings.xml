@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_change">Değiştir</string>
+    <string name="budget_intro">Paranızı planlayın. Bütçeler yalnızca giderleri sayar.</string>
+    <string name="budget_amount">Bütçe tutarı</string>
+    <string name="budget_period">Dönem</string>
+    <string name="budget_explain_daily">Her gün yeniden başlar.</string>
+    <string name="budget_explain_weekly">Her haftanın başında yeniden başlar.</string>
+    <string name="budget_explain_monthly">Her ayın 1\'inde yeniden başlar.</string>
+    <string name="budget_explain_custom">Yalnızca seçtiğiniz tarihler için.</string>
+    <string name="budget_current_period">Geçerli dönem: %1$s</string>
+    <string name="choose_dates">Tarih seçin</string>
+    <string name="save_budget">Bütçeyi kaydet</string>
+    <string name="remove_budget">Bütçeyi kaldır</string>
+    <string name="error_dates_required">Bütçenizin tarihlerini seçin</string>
+</resources>

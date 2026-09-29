@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="category">Kategorie</string>
+    <string name="date">Datum</string>
+    <string name="time">Uhrzeit</string>
+    <string name="note">Notiz</string>
+    <string name="no_note">Keine Notiz</string>
+    <string name="search">Suchen</string>
+    <string name="close_search">Suche schließen</string>
+    <string name="clear_search">Suche löschen</string>
+    <string name="search_hint">Notizen oder Kategorien suchen</string>
+    <string name="filter_all">Alle</string>
+    <string name="empty_filtered_title">Keine passenden Buchungen</string>
+    <string name="empty_filtered_message">Versuche eine andere Suche oder einen anderen Filter.</string>
+    <string name="transaction_details">Buchung</string>
+    <string name="transaction_not_found_title">Buchung nicht gefunden</string>
+    <string name="transaction_not_found_message">Sie wurde möglicherweise gelöscht.</string>
+    <string name="delete_transaction_title">Buchung löschen?</string>
+    <string name="delete_transaction_message">Diese Buchung wird dauerhaft gelöscht.</string>
+    <string name="new_transaction">Neue Buchung</string>
+    <string name="edit_transaction">Buchung bearbeiten</string>
+    <string name="note_optional">Notiz (optional)</string>
+    <string name="new_category_short">Neu</string>
+    <string name="save_transaction">Buchung speichern</string>
+    <string name="save_changes">Änderungen speichern</string>
+    <string name="keypad_backspace">Rücktaste. Gedrückt halten, um alles zu löschen</string>
+    <string name="keypad_decimal">Komma</string>
+    <string name="error_amount_too_large">Dieser Betrag ist zu groß</string>
+    <string name="error_category_required">Wähle eine Kategorie</string>
+    <string name="activity_title">Aktivität</string>
+    <string name="activity_subtitle">Jeder Cent im Blick</string>
+    <string name="deleted_transaction">Buchung gelöscht</string>
+    <string name="undo">Rückgängig</string>
+    <string name="swipe_hint">Eintrag nach links wischen zum Löschen</string>
+    <string name="spent_label">Ausgegeben</string>
+    <string name="earned_label">Eingenommen</string>
+</resources>

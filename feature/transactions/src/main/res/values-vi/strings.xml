@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="category">Danh mục</string>
+    <string name="date">Ngày</string>
+    <string name="time">Giờ</string>
+    <string name="note">Ghi chú</string>
+    <string name="no_note">Không có ghi chú</string>
+    <string name="search">Tìm kiếm</string>
+    <string name="close_search">Đóng tìm kiếm</string>
+    <string name="clear_search">Xóa tìm kiếm</string>
+    <string name="search_hint">Tìm ghi chú hoặc danh mục</string>
+    <string name="filter_all">Tất cả</string>
+    <string name="empty_filtered_title">Không có giao dịch phù hợp</string>
+    <string name="empty_filtered_message">Thử tìm kiếm hoặc bộ lọc khác.</string>
+    <string name="transaction_details">Giao dịch</string>
+    <string name="transaction_not_found_title">Không tìm thấy giao dịch</string>
+    <string name="transaction_not_found_message">Có thể nó đã bị xóa.</string>
+    <string name="delete_transaction_title">Xóa giao dịch?</string>
+    <string name="delete_transaction_message">Giao dịch này sẽ bị xóa vĩnh viễn.</string>
+    <string name="new_transaction">Giao dịch mới</string>
+    <string name="edit_transaction">Sửa giao dịch</string>
+    <string name="note_optional">Ghi chú (tùy chọn)</string>
+    <string name="new_category_short">Mới</string>
+    <string name="save_transaction">Lưu giao dịch</string>
+    <string name="save_changes">Lưu thay đổi</string>
+    <string name="keypad_backspace">Xóa lùi. Nhấn giữ để xóa hết</string>
+    <string name="keypad_decimal">Thập phân</string>
+    <string name="error_amount_too_large">Số tiền quá lớn</string>
+    <string name="error_category_required">Chọn một danh mục</string>
+    <string name="activity_title">Hoạt động</string>
+    <string name="activity_subtitle">Từng đồng đều được ghi lại</string>
+    <string name="deleted_transaction">Đã xóa giao dịch</string>
+    <string name="undo">Hoàn tác</string>
+    <string name="swipe_hint">Vuốt sang trái để xóa mục</string>
+    <string name="spent_label">Đã chi</string>
+    <string name="earned_label">Đã thu</string>
+</resources>

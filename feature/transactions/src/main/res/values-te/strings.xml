@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="category">వర్గం</string>
+    <string name="date">తేదీ</string>
+    <string name="time">సమయం</string>
+    <string name="note">గమనిక</string>
+    <string name="no_note">గమనిక లేదు</string>
+    <string name="search">వెతకండి</string>
+    <string name="close_search">వెతకడం మూసివేయి</string>
+    <string name="clear_search">వెతకడం క్లియర్ చేయి</string>
+    <string name="search_hint">గమనికలు లేదా వర్గాలను వెతకండి</string>
+    <string name="filter_all">అన్నీ</string>
+    <string name="empty_filtered_title">సరిపోలే లావాదేవీలు లేవు</string>
+    <string name="empty_filtered_message">వేరే శోధన లేదా ఫిల్టర్ ప్రయత్నించండి.</string>
+    <string name="transaction_details">లావాదేవీ</string>
+    <string name="transaction_not_found_title">లావాదేవీ కనుగొనబడలేదు</string>
+    <string name="transaction_not_found_message">బహుశా ఇది తొలగించబడి ఉండవచ్చు.</string>
+    <string name="delete_transaction_title">లావాదేవీని తొలగించాలా?</string>
+    <string name="delete_transaction_message">ఈ లావాదేవీ శాశ్వతంగా తొలగించబడుతుంది.</string>
+    <string name="new_transaction">కొత్త లావాదేవీ</string>
+    <string name="edit_transaction">లావాదేవీని సవరించు</string>
+    <string name="note_optional">గమనిక (ఐచ్ఛికం)</string>
+    <string name="new_category_short">కొత్తది</string>
+    <string name="save_transaction">లావాదేవీ సేవ్ చేయి</string>
+    <string name="save_changes">మార్పులు సేవ్ చేయి</string>
+    <string name="keypad_backspace">బ్యాక్‌స్పేస్. అన్నీ తుడిచేందుకు నొక్కి పట్టుకోండి</string>
+    <string name="keypad_decimal">దశాంశం</string>
+    <string name="error_amount_too_large">ఈ మొత్తం చాలా ఎక్కువ</string>
+    <string name="error_category_required">ఒక వర్గాన్ని ఎంచుకోండి</string>
+    <string name="activity_title">కార్యకలాపాలు</string>
+    <string name="activity_subtitle">ప్రతి నాణేనికీ లెక్క</string>
+    <string name="deleted_transaction">లావాదేవీ తొలగించబడింది</string>
+    <string name="undo">రద్దు చేయి</string>
+    <string name="swipe_hint">తొలగించడానికి నమోదును ఎడమవైపు స్వైప్ చేయండి</string>
+    <string name="spent_label">ఖర్చు</string>
+    <string name="earned_label">ఆదాయం</string>
+</resources>

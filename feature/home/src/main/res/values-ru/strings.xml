@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="balance">Баланс за месяц</string>
+    <string name="previous_month">Предыдущий месяц</string>
+    <string name="next_month">Следующий месяц</string>
+    <string name="back_to_this_month">Нажмите, чтобы вернуться к текущему месяцу</string>
+    <string name="recent_transactions">Последние операции</string>
+    <string name="see_all">Все</string>
+    <string name="daily_spending">Траты по дням</string>
+    <string name="budget_set_title">Задайте бюджет</string>
+    <string name="budget_set_message">Знайте точно, сколько можно тратить каждый день.</string>
+    <string name="budget_title_daily">Бюджет на сегодня</string>
+    <string name="budget_title_weekly">Бюджет на неделю</string>
+    <string name="budget_title_monthly">Бюджет на месяц</string>
+    <string name="budget_title_custom">Бюджет</string>
+    <string name="budget_spent_of">Потрачено %1$s из %2$s</string>
+    <string name="budget_over_by">Перерасход %1$s</string>
+    <string name="budget_safe_today">Можно потратить сегодня</string>
+    <string name="budget_ended">Период бюджета завершён. Нажмите, чтобы задать новый.</string>
+    <string name="budget_not_started">Начнётся %1$s</string>
+    <string name="insight_top_category">Больше всего</string>
+    <string name="insight_daily_average">В среднем за день</string>
+    <string name="insight_biggest">Крупнейшая трата</string>
+    <string name="insight_count">Записей</string>
+    <string name="empty_home_title">С чистого листа</string>
+    <string name="empty_home_message">Нажмите кнопку +, чтобы записать первый доход или расход.</string>
+    <string name="spotlight_saved">Сэкономлено</string>
+    <plurals name="budget_days_left">
+        <item quantity="one">Остался %d день</item>
+        <item quantity="few">Осталось %d дня</item>
+        <item quantity="many">Осталось %d дней</item>
+        <item quantity="other">Осталось %d дня</item>
+    </plurals>
+</resources>

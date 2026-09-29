@@ -39,6 +39,16 @@ interface TransactionDao {
     fun observeFiltered(type: TransactionType?, query: String): Flow<List<TransactionWithCategory>>
 
     @Transaction
+    @Query(
+        """
+        SELECT * FROM transactions
+        WHERE occurred_at >= :start AND occurred_at < :end
+        ORDER BY occurred_at DESC, id DESC
+        """,
+    )
+    fun observeBetween(start: Long, end: Long): Flow<List<TransactionWithCategory>>
+
+    @Transaction
     @Query("SELECT * FROM transactions WHERE id = :id")
     fun observeById(id: Long): Flow<TransactionWithCategory?>
 

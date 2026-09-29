@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="category">ବର୍ଗ</string>
+    <string name="date">ତାରିଖ</string>
+    <string name="time">ସମୟ</string>
+    <string name="note">ନୋଟ୍</string>
+    <string name="no_note">କୌଣସି ନୋଟ୍ ନାହିଁ</string>
+    <string name="search">ଖୋଜନ୍ତୁ</string>
+    <string name="close_search">ଖୋଜା ବନ୍ଦ କରନ୍ତୁ</string>
+    <string name="clear_search">ଖୋଜା ସଫା କରନ୍ତୁ</string>
+    <string name="search_hint">ନୋଟ୍ କିମ୍ବା ବର୍ଗ ଖୋଜନ୍ତୁ</string>
+    <string name="filter_all">ସବୁ</string>
+    <string name="empty_filtered_title">କୌଣସି ମେଳ ଖାଉଥିବା କାରବାର ନାହିଁ</string>
+    <string name="empty_filtered_message">ଅନ୍ୟ ଖୋଜା କିମ୍ବା ଫିଲ୍ଟର ଚେଷ୍ଟା କରନ୍ତୁ।</string>
+    <string name="transaction_details">କାରବାର</string>
+    <string name="transaction_not_found_title">କାରବାର ମିଳିଲା ନାହିଁ</string>
+    <string name="transaction_not_found_message">ହୁଏତ ଏହାକୁ ଡିଲିଟ୍ କରାଯାଇଛି।</string>
+    <string name="delete_transaction_title">କାରବାର ଡିଲିଟ୍ କରିବେ?</string>
+    <string name="delete_transaction_message">ଏହି କାରବାର ସ୍ଥାୟୀ ଭାବେ ଡିଲିଟ୍ ହେବ।</string>
+    <string name="new_transaction">ନୂଆ କାରବାର</string>
+    <string name="edit_transaction">କାରବାର ସମ୍ପାଦନା</string>
+    <string name="note_optional">ନୋଟ୍ (ଇଚ୍ଛାଧୀନ)</string>
+    <string name="new_category_short">ନୂଆ</string>
+    <string name="save_transaction">କାରବାର ସେଭ୍ କରନ୍ତୁ</string>
+    <string name="save_changes">ପରିବର୍ତ୍ତନ ସେଭ୍ କରନ୍ତୁ</string>
+    <string name="keypad_backspace">ବ୍ୟାକସ୍ପେସ୍। ସବୁ ମିଟାଇବାକୁ ଦବାଇ ରଖନ୍ତୁ</string>
+    <string name="keypad_decimal">ଦଶମିକ</string>
+    <string name="error_amount_too_large">ଏହି ରାଶି ବହୁତ ବଡ଼</string>
+    <string name="error_category_required">ଏକ ବର୍ଗ ବାଛନ୍ତୁ</string>
+    <string name="activity_title">କାର୍ଯ୍ୟକଳାପ</string>
+    <string name="activity_subtitle">ପ୍ରତିଟି ପଇସାର ହିସାବ</string>
+    <string name="deleted_transaction">କାରବାର ଡିଲିଟ୍ ହେଲା</string>
+    <string name="undo">ଫେରାନ୍ତୁ</string>
+    <string name="swipe_hint">ଡିଲିଟ୍ କରିବାକୁ ଏଣ୍ଟ୍ରିକୁ ବାମକୁ ସ୍ୱାଇପ୍ କରନ୍ତୁ</string>
+    <string name="spent_label">ଖର୍ଚ୍ଚ</string>
+    <string name="earned_label">ଆୟ</string>
+</resources>

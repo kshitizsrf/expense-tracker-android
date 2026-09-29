@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="insights_title">Análisis</string>
+    <string name="insights_subtitle">A dónde va tu dinero</string>
+    <string name="period_this_month">Este mes</string>
+    <string name="period_last_month">Mes pasado</string>
+    <string name="period_last_3_months">3 meses</string>
+    <string name="period_this_year">Este año</string>
+    <string name="chart_donut">Anillo</string>
+    <string name="chart_bars">Ranking</string>
+    <string name="chart_trend">Tendencia</string>
+    <string name="chart_calendar">Calendario</string>
+    <string name="chart_cash_flow">Flujo</string>
+    <string name="chart_donut_title">Reparto por categoría</string>
+    <string name="chart_bars_title">Categorías principales</string>
+    <string name="chart_trend_title_daily">Día a día</string>
+    <string name="chart_trend_title_monthly">Mes a mes</string>
+    <string name="chart_calendar_title">Calendario de gastos</string>
+    <string name="chart_calendar_title_income">Calendario de ingresos</string>
+    <string name="chart_cash_flow_title">Flujo de caja · últimos 6 meses</string>
+    <string name="chart_hint_donut">Toca un sector para enfocarlo</string>
+    <string name="chart_hint_trend">Mantén pulsado y arrastra para explorar</string>
+    <string name="chart_hint_calendar">Toca un día para ver su total</string>
+    <string name="chart_hint_cash_flow">Toca un mes para ver detalles</string>
+    <string name="total_spent">Total gastado</string>
+    <string name="total_earned">Total ingresado</string>
+    <string name="stat_total">Total</string>
+    <string name="stat_daily_average">Media diaria</string>
+    <string name="stat_entries">Registros</string>
+    <string name="stat_vs_previous">vs. anterior</string>
+    <string name="stat_no_comparison">Nuevo</string>
+    <string name="percent_of_total">%1$d%% del total</string>
+    <string name="heatmap_less">Menos</string>
+    <string name="heatmap_more">Más</string>
+    <string name="nothing_on_day">Nada registrado</string>
+    <string name="net">Neto</string>
+    <string name="stats_empty_title">Aún no hay nada que mostrar</string>
+    <string name="stats_empty_message">Los movimientos de este periodo darán vida a estos gráficos.</string>
+    <string name="stat_previous_period">Periodo anterior</string>
+    <plurals name="transaction_count">
+        <item quantity="one">%d movimiento</item>
+        <item quantity="many">%d movimientos</item>
+        <item quantity="other">%d movimientos</item>
+    </plurals>
+</resources>

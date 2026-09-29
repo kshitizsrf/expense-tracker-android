@@ -1,0 +1,7 @@
+<resources>
+    <string name="lock_title">Hisab Kitab is locked</string>
+    <string name="lock_message">Your finances stay private. Unlock with your fingerprint, face or screen lock.</string>
+    <string name="lock_unlock">Unlock</string>
+    <string name="lock_prompt_title">Unlock Hisab Kitab</string>
+    <string name="lock_prompt_subtitle">Confirm it\'s you</string>
+</resources>

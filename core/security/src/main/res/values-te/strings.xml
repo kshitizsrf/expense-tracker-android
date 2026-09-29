@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lock_title">హిసాబ్ కితాబ్ లాక్ అయింది</string>
+    <string name="lock_message">మీ ఆర్థిక వివరాలు గోప్యంగా ఉంటాయి. వేలిముద్ర, ముఖం లేదా స్క్రీన్ లాక్‌తో తెరవండి.</string>
+    <string name="lock_unlock">అన్‌లాక్ చేయి</string>
+    <string name="lock_prompt_title">హిసాబ్ కితాబ్‌ను అన్‌లాక్ చేయండి</string>
+    <string name="lock_prompt_subtitle">ఇది మీరేనని నిర్ధారించండి</string>
+</resources>

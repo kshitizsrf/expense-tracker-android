@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="insights_title">విశ్లేషణ</string>
+    <string name="insights_subtitle">మీ డబ్బు ఎక్కడికి వెళ్తుంది</string>
+    <string name="period_this_month">ఈ నెల</string>
+    <string name="period_last_month">గత నెల</string>
+    <string name="period_last_3_months">3 నెలలు</string>
+    <string name="period_this_year">ఈ సంవత్సరం</string>
+    <string name="chart_donut">డోనట్</string>
+    <string name="chart_bars">ర్యాంకింగ్</string>
+    <string name="chart_trend">ట్రెండ్</string>
+    <string name="chart_calendar">క్యాలెండర్</string>
+    <string name="chart_cash_flow">నగదు ప్రవాహం</string>
+    <string name="chart_donut_title">వర్గాల వారీగా వాటా</string>
+    <string name="chart_bars_title">అగ్ర వర్గాలు</string>
+    <string name="chart_trend_title_daily">రోజు వారీగా</string>
+    <string name="chart_trend_title_monthly">నెల వారీగా</string>
+    <string name="chart_calendar_title">ఖర్చుల క్యాలెండర్</string>
+    <string name="chart_calendar_title_income">ఆదాయ క్యాలెండర్</string>
+    <string name="chart_cash_flow_title">నగదు ప్రవాహం · గత 6 నెలలు</string>
+    <string name="chart_hint_donut">ఒక భాగంపై దృష్టి పెట్టడానికి నొక్కండి</string>
+    <string name="chart_hint_trend">తాకి లాగి చూడండి</string>
+    <string name="chart_hint_calendar">ఒక రోజు మొత్తం చూడటానికి నొక్కండి</string>
+    <string name="chart_hint_cash_flow">వివరాల కోసం ఒక నెలను నొక్కండి</string>
+    <string name="total_spent">మొత్తం ఖర్చు</string>
+    <string name="total_earned">మొత్తం ఆదాయం</string>
+    <string name="stat_total">మొత్తం</string>
+    <string name="stat_daily_average">రోజువారీ సగటు</string>
+    <string name="stat_entries">నమోదులు</string>
+    <string name="stat_vs_previous">గతంతో పోలిస్తే</string>
+    <string name="stat_no_comparison">కొత్తది</string>
+    <string name="percent_of_total">మొత్తంలో %1$d%%</string>
+    <string name="heatmap_less">తక్కువ</string>
+    <string name="heatmap_more">ఎక్కువ</string>
+    <string name="nothing_on_day">ఏమీ నమోదు కాలేదు</string>
+    <string name="net">నికరం</string>
+    <string name="stats_empty_title">ఇంకా చూపించడానికి ఏమీ లేదు</string>
+    <string name="stats_empty_message">ఈ కాలంలోని లావాదేవీలు ఈ చార్ట్‌లను ప్రకాశింపజేస్తాయి.</string>
+    <string name="stat_previous_period">గత కాలవ్యవధి</string>
+    <plurals name="transaction_count">
+        <item quantity="one">%d లావాదేవీ</item>
+        <item quantity="other">%d లావాదేవీలు</item>
+    </plurals>
+</resources>

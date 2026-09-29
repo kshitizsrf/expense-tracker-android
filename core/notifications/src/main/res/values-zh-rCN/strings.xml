@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="reminder_channel_name">每日提醒</string>
+    <string name="reminder_channel_description">如果今天还没记账，会提醒你记录。</string>
+    <string name="reminder_title">今天记账了吗？</string>
+    <string name="reminder_text">只需几秒钟，让预算保持准确。</string>
+</resources>

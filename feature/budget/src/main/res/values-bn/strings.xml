@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_change">বদলান</string>
+    <string name="budget_intro">আপনার টাকার পরিকল্পনা করুন। বাজেটে শুধু খরচ গোনা হয়।</string>
+    <string name="budget_amount">বাজেটের পরিমাণ</string>
+    <string name="budget_period">সময়কাল</string>
+    <string name="budget_explain_daily">প্রতিদিন নতুন করে শুরু হয়।</string>
+    <string name="budget_explain_weekly">প্রতি সপ্তাহের শুরুতে নতুন করে শুরু হয়।</string>
+    <string name="budget_explain_monthly">প্রতি মাসের ১ তারিখে নতুন করে শুরু হয়।</string>
+    <string name="budget_explain_custom">শুধু আপনার বেছে নেওয়া তারিখগুলোর জন্য।</string>
+    <string name="budget_current_period">বর্তমান সময়কাল: %1$s</string>
+    <string name="choose_dates">তারিখ বেছে নিন</string>
+    <string name="save_budget">বাজেট সেভ করুন</string>
+    <string name="remove_budget">বাজেট মুছুন</string>
+    <string name="error_dates_required">আপনার বাজেটের তারিখ বেছে নিন</string>
+</resources>

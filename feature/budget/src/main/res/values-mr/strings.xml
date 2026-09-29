@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_change">बदला</string>
+    <string name="budget_intro">तुमच्या पैशांचे नियोजन करा. बजेटमध्ये फक्त खर्च मोजला जातो.</string>
+    <string name="budget_amount">बजेटची रक्कम</string>
+    <string name="budget_period">कालावधी</string>
+    <string name="budget_explain_daily">दररोज नव्याने सुरू होते.</string>
+    <string name="budget_explain_weekly">प्रत्येक आठवड्याच्या सुरुवातीला नव्याने सुरू होते.</string>
+    <string name="budget_explain_monthly">प्रत्येक महिन्याच्या १ तारखेला नव्याने सुरू होते.</string>
+    <string name="budget_explain_custom">फक्त तुम्ही निवडलेल्या तारखांसाठी.</string>
+    <string name="budget_current_period">सध्याचा कालावधी: %1$s</string>
+    <string name="choose_dates">तारखा निवडा</string>
+    <string name="save_budget">बजेट सेव्ह करा</string>
+    <string name="remove_budget">बजेट काढा</string>
+    <string name="error_dates_required">तुमच्या बजेटच्या तारखा निवडा</string>
+</resources>

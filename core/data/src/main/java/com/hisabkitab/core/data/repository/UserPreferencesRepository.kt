@@ -1,6 +1,7 @@
 package com.hisabkitab.core.data.repository
 
 import androidx.datastore.core.DataStore
+import androidx.datastore.preferences.core.MutablePreferences
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
@@ -11,8 +12,10 @@ import androidx.datastore.preferences.core.stringPreferencesKey
 import com.hisabkitab.core.common.money.MoneyFormatter
 import com.hisabkitab.core.model.Budget
 import com.hisabkitab.core.model.BudgetPeriod
-import com.hisabkitab.core.model.ColorPalette
+import com.hisabkitab.core.model.ChartTransition
+import com.hisabkitab.core.model.AppTheme
 import com.hisabkitab.core.model.DateRange
+import com.hisabkitab.core.model.NavBarStyle
 import com.hisabkitab.core.model.ReminderSettings
 import com.hisabkitab.core.model.ThemeMode
 import com.hisabkitab.core.model.UserPreferences
@@ -27,13 +30,16 @@ import javax.inject.Inject
 interface UserPreferencesRepository {
     val userPreferences: Flow<UserPreferences>
     suspend fun setThemeMode(mode: ThemeMode)
-    suspend fun setPalette(palette: ColorPalette)
-    suspend fun setUseDynamicColor(enabled: Boolean)
+    suspend fun setTheme(theme: AppTheme)
     suspend fun setCurrencyCode(code: String)
     suspend fun setReminderEnabled(enabled: Boolean)
     suspend fun setReminderTime(time: LocalTime)
     suspend fun setBudget(budget: Budget?)
     suspend fun setNotificationPermissionRequested()
+    suspend fun setOnboardingCompleted()
+    suspend fun setAppLockEnabled(enabled: Boolean)
+    suspend fun setNavBarStyle(style: NavBarStyle)
+    suspend fun setChartTransition(transition: ChartTransition)
 }
 
 class DataStoreUserPreferencesRepository @Inject constructor(
@@ -46,9 +52,7 @@ class DataStoreUserPreferencesRepository @Inject constructor(
 
     override suspend fun setThemeMode(mode: ThemeMode) = edit { it[Keys.THEME_MODE] = mode.name }
 
-    override suspend fun setPalette(palette: ColorPalette) = edit { it[Keys.PALETTE] = palette.name }
-
-    override suspend fun setUseDynamicColor(enabled: Boolean) = edit { it[Keys.DYNAMIC_COLOR] = enabled }
+    override suspend fun setTheme(theme: AppTheme) = edit { it[Keys.THEME] = theme.name }
 
     override suspend fun setCurrencyCode(code: String) = edit { it[Keys.CURRENCY_CODE] = code }
 
@@ -80,14 +84,21 @@ class DataStoreUserPreferencesRepository @Inject constructor(
     override suspend fun setNotificationPermissionRequested() =
         edit { it[Keys.NOTIFICATION_PERMISSION_REQUESTED] = true }
 
-    private suspend fun edit(block: (androidx.datastore.preferences.core.MutablePreferences) -> Unit) {
+    override suspend fun setOnboardingCompleted() = edit { it[Keys.ONBOARDING_COMPLETED] = true }
+
+    override suspend fun setAppLockEnabled(enabled: Boolean) = edit { it[Keys.APP_LOCK] = enabled }
+
+    override suspend fun setNavBarStyle(style: NavBarStyle) = edit { it[Keys.NAV_BAR_STYLE] = style.name }
+
+    override suspend fun setChartTransition(transition: ChartTransition) = edit { it[Keys.CHART_TRANSITION] = transition.name }
+
+    private suspend fun edit(block: (MutablePreferences) -> Unit) {
         dataStore.edit { block(it) }
     }
 
     private fun Preferences.toUserPreferences(): UserPreferences = UserPreferences(
         themeMode = this[Keys.THEME_MODE].toEnumOrNull<ThemeMode>() ?: ThemeMode.SYSTEM,
-        palette = this[Keys.PALETTE].toEnumOrNull<ColorPalette>() ?: ColorPalette.OCEAN,
-        useDynamicColor = this[Keys.DYNAMIC_COLOR] ?: false,
+        theme = this[Keys.THEME].toEnumOrNull<AppTheme>() ?: AppTheme.SKYLINE,
         currencyCode = this[Keys.CURRENCY_CODE] ?: MoneyFormatter.defaultCurrencyCode(),
         reminder = ReminderSettings(
             enabled = this[Keys.REMINDER_ENABLED] ?: true,
@@ -97,6 +108,10 @@ class DataStoreUserPreferencesRepository @Inject constructor(
         ),
         budget = toBudget(),
         hasRequestedNotificationPermission = this[Keys.NOTIFICATION_PERMISSION_REQUESTED] ?: false,
+        hasCompletedOnboarding = this[Keys.ONBOARDING_COMPLETED] ?: false,
+        appLockEnabled = this[Keys.APP_LOCK] ?: false,
+        navBarStyle = this[Keys.NAV_BAR_STYLE].toEnumOrNull<NavBarStyle>() ?: NavBarStyle.LIQUID,
+        chartTransition = this[Keys.CHART_TRANSITION].toEnumOrNull<ChartTransition>() ?: ChartTransition.FADE,
     )
 
     private fun Preferences.toBudget(): Budget? {
@@ -117,8 +132,7 @@ class DataStoreUserPreferencesRepository @Inject constructor(
 
     private object Keys {
         val THEME_MODE = stringPreferencesKey("theme_mode")
-        val PALETTE = stringPreferencesKey("color_palette")
-        val DYNAMIC_COLOR = booleanPreferencesKey("dynamic_color")
+        val THEME = stringPreferencesKey("app_theme")
         val CURRENCY_CODE = stringPreferencesKey("currency_code")
         val REMINDER_ENABLED = booleanPreferencesKey("reminder_enabled")
         val REMINDER_MINUTE_OF_DAY = intPreferencesKey("reminder_minute_of_day")
@@ -127,6 +141,10 @@ class DataStoreUserPreferencesRepository @Inject constructor(
         val BUDGET_CUSTOM_START = longPreferencesKey("budget_custom_start_epoch_day")
         val BUDGET_CUSTOM_END = longPreferencesKey("budget_custom_end_epoch_day")
         val NOTIFICATION_PERMISSION_REQUESTED = booleanPreferencesKey("notification_permission_requested")
+        val ONBOARDING_COMPLETED = booleanPreferencesKey("onboarding_completed")
+        val APP_LOCK = booleanPreferencesKey("app_lock_enabled")
+        val NAV_BAR_STYLE = stringPreferencesKey("nav_bar_style")
+        val CHART_TRANSITION = stringPreferencesKey("chart_transition")
     }
 
     private companion object {

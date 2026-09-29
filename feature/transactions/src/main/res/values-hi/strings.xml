@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="category">श्रेणी</string>
+    <string name="date">तारीख़</string>
+    <string name="time">समय</string>
+    <string name="note">नोट</string>
+    <string name="no_note">कोई नोट नहीं</string>
+    <string name="search">खोजें</string>
+    <string name="close_search">खोज बंद करें</string>
+    <string name="clear_search">खोज साफ़ करें</string>
+    <string name="search_hint">नोट या श्रेणियाँ खोजें</string>
+    <string name="filter_all">सभी</string>
+    <string name="empty_filtered_title">कोई मेल खाता लेन-देन नहीं</string>
+    <string name="empty_filtered_message">कोई दूसरी खोज या फ़िल्टर आज़माएँ।</string>
+    <string name="transaction_details">लेन-देन</string>
+    <string name="transaction_not_found_title">लेन-देन नहीं मिला</string>
+    <string name="transaction_not_found_message">शायद इसे हटा दिया गया है।</string>
+    <string name="delete_transaction_title">लेन-देन हटाएँ?</string>
+    <string name="delete_transaction_message">यह लेन-देन हमेशा के लिए हट जाएगा।</string>
+    <string name="new_transaction">नया लेन-देन</string>
+    <string name="edit_transaction">लेन-देन बदलें</string>
+    <string name="note_optional">नोट (वैकल्पिक)</string>
+    <string name="new_category_short">नई</string>
+    <string name="save_transaction">लेन-देन सेव करें</string>
+    <string name="save_changes">बदलाव सेव करें</string>
+    <string name="keypad_backspace">बैकस्पेस। सब मिटाने के लिए देर तक दबाएँ</string>
+    <string name="keypad_decimal">दशमलव</string>
+    <string name="error_amount_too_large">यह राशि बहुत बड़ी है</string>
+    <string name="error_category_required">एक श्रेणी चुनें</string>
+    <string name="activity_title">गतिविधि</string>
+    <string name="activity_subtitle">हर पैसे का हिसाब</string>
+    <string name="deleted_transaction">लेन-देन हटाया गया</string>
+    <string name="undo">वापस लें</string>
+    <string name="swipe_hint">हटाने के लिए प्रविष्टि को बाईं ओर स्वाइप करें</string>
+    <string name="spent_label">ख़र्च</string>
+    <string name="earned_label">कमाई</string>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_welcome_title">ହିସାବ କିତାବ</string>
+    <string name="onboarding_welcome_message">ଆପଣଙ୍କ ଟଙ୍କା, ସୁନ୍ଦର ଭାବେ ସଜାଡ଼ା। ସେକେଣ୍ଡରେ ଲେଖନ୍ତୁ, ଟଙ୍କା କେଉଁଠି ଯାଏ ଦେଖନ୍ତୁ, ଆତ୍ମବିଶ୍ୱାସରେ ଖର୍ଚ୍ଚ କରନ୍ତୁ।</string>
+    <string name="onboarding_theme_title">ଆପଣଙ୍କ ଶୈଳୀ ବାଛନ୍ତୁ</string>
+    <string name="onboarding_theme_message">ପାଞ୍ଚଟି ବିଶେଷ ଥିମ୍, ପ୍ରତ୍ୟେକରେ ଲାଇଟ୍ ଓ ଡାର୍କ ମୁଡ୍। ଯେକୌଣସି ସମୟରେ ବଦଳାଇପାରିବେ।</string>
+    <string name="onboarding_setup_title">ଶେଷ ଛୁଆଁ</string>
+    <string name="onboarding_setup_message">ଆପଣଙ୍କ ମୁଦ୍ରା ବାଛନ୍ତୁ ଏବଂ ଦିନ ଲେଖିବାକୁ ହାଲୁକା ସ୍ମାରକ ଚାହାନ୍ତି କି ନାହିଁ କୁହନ୍ତୁ।</string>
+    <string name="onboarding_currency">ମୁଦ୍ରା</string>
+    <string name="onboarding_reminder">ଦୈନିକ ସ୍ମାରକ</string>
+    <string name="onboarding_reminder_summary">କେବଳ ସେହିଦିନ କିଛି ନ ଲେଖିଲେ</string>
+    <string name="onboarding_next">ପରବର୍ତ୍ତୀ</string>
+    <string name="onboarding_start">ଚାଲନ୍ତୁ ଆରମ୍ଭ କରିବା</string>
+    <string name="onboarding_skip">ଛାଡ଼ନ୍ତୁ</string>
+    <string name="onboarding_feature_fast">ଦ୍ରୁତ ଏଣ୍ଟ୍ରି ପାଇଁ କ୍ୟାଲକୁଲେଟର କୀପ୍ୟାଡ୍</string>
+    <string name="onboarding_feature_insights">ଖର୍ଚ୍ଚ ଦେଖିବାର ପାଞ୍ଚଟି ଉପାୟ</string>
+    <string name="onboarding_feature_private">ସମ୍ପୂର୍ଣ୍ଣ ଗୋପନୀୟ · ସବୁକିଛି ଆପଣଙ୍କ ଫୋନରେ ହିଁ</string>
+    <string name="mode_auto">ଅଟୋ</string>
+    <string name="mode_light">☀  ଲାଇଟ୍</string>
+    <string name="mode_dark">☾  ଡାର୍କ</string>
+    <string name="onboarding_language_title">ଆପଣଙ୍କ ଭାଷା ବାଛନ୍ତୁ</string>
+    <string name="onboarding_language_message">ହିସାବ କିତାବ ଆପଣଙ୍କ ଭାଷାରେ କଥା କୁହେ। ସେଟିଂସ୍‌ରେ ଯେକୌଣସି ସମୟରେ ବଦଳାଇପାରିବେ।</string>
+    <string name="onboarding_lock">ଆପ୍ ଲକ୍</string>
+    <string name="onboarding_lock_summary">ଆଙ୍ଗୁଠି ଚିହ୍ନ କିମ୍ବା ସ୍କ୍ରିନ୍ ଲକ୍‌ରେ ତଥ୍ୟ ଗୋପନୀୟ ରଖନ୍ତୁ</string>
+    <string name="onboarding_lock_prompt">ଆପ୍ ଲକ୍ ଚାଲୁ କରନ୍ତୁ</string>
+    <string name="onboarding_lock_prompt_subtitle">ନିଶ୍ଚିତ କରନ୍ତୁ ଯେ ଏହା ଆପଣ</string>
+</resources>

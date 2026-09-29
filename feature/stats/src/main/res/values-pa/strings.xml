@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="insights_title">ਵਿਸ਼ਲੇਸ਼ਣ</string>
+    <string name="insights_subtitle">ਤੁਹਾਡਾ ਪੈਸਾ ਕਿੱਥੇ ਜਾਂਦਾ ਹੈ</string>
+    <string name="period_this_month">ਇਸ ਮਹੀਨੇ</string>
+    <string name="period_last_month">ਪਿਛਲੇ ਮਹੀਨੇ</string>
+    <string name="period_last_3_months">3 ਮਹੀਨੇ</string>
+    <string name="period_this_year">ਇਸ ਸਾਲ</string>
+    <string name="chart_donut">ਡੋਨਟ</string>
+    <string name="chart_bars">ਦਰਜਾਬੰਦੀ</string>
+    <string name="chart_trend">ਰੁਝਾਨ</string>
+    <string name="chart_calendar">ਕੈਲੰਡਰ</string>
+    <string name="chart_cash_flow">ਨਕਦ ਪ੍ਰਵਾਹ</string>
+    <string name="chart_donut_title">ਸ਼੍ਰੇਣੀ ਅਨੁਸਾਰ ਹਿੱਸਾ</string>
+    <string name="chart_bars_title">ਸਿਖਰਲੀਆਂ ਸ਼੍ਰੇਣੀਆਂ</string>
+    <string name="chart_trend_title_daily">ਦਿਨੋ-ਦਿਨ</string>
+    <string name="chart_trend_title_monthly">ਮਹੀਨਾ-ਦਰ-ਮਹੀਨਾ</string>
+    <string name="chart_calendar_title">ਖ਼ਰਚਾ ਕੈਲੰਡਰ</string>
+    <string name="chart_calendar_title_income">ਕਮਾਈ ਕੈਲੰਡਰ</string>
+    <string name="chart_cash_flow_title">ਨਕਦ ਪ੍ਰਵਾਹ · ਪਿਛਲੇ 6 ਮਹੀਨੇ</string>
+    <string name="chart_hint_donut">ਕਿਸੇ ਹਿੱਸੇ ’ਤੇ ਧਿਆਨ ਦੇਣ ਲਈ ਟੈਪ ਕਰੋ</string>
+    <string name="chart_hint_trend">ਛੂਹ ਕੇ ਖਿੱਚੋ ਅਤੇ ਦੇਖੋ</string>
+    <string name="chart_hint_calendar">ਕਿਸੇ ਦਿਨ ਦਾ ਕੁੱਲ ਦੇਖਣ ਲਈ ਟੈਪ ਕਰੋ</string>
+    <string name="chart_hint_cash_flow">ਵੇਰਵੇ ਲਈ ਕਿਸੇ ਮਹੀਨੇ ’ਤੇ ਟੈਪ ਕਰੋ</string>
+    <string name="total_spent">ਕੁੱਲ ਖ਼ਰਚਾ</string>
+    <string name="total_earned">ਕੁੱਲ ਕਮਾਈ</string>
+    <string name="stat_total">ਕੁੱਲ</string>
+    <string name="stat_daily_average">ਰੋਜ਼ਾਨਾ ਔਸਤ</string>
+    <string name="stat_entries">ਇੰਦਰਾਜ</string>
+    <string name="stat_vs_previous">ਪਿਛਲੇ ਨਾਲੋਂ</string>
+    <string name="stat_no_comparison">ਨਵਾਂ</string>
+    <string name="percent_of_total">ਕੁੱਲ ਦਾ %1$d%%</string>
+    <string name="heatmap_less">ਘੱਟ</string>
+    <string name="heatmap_more">ਵੱਧ</string>
+    <string name="nothing_on_day">ਕੁਝ ਦਰਜ ਨਹੀਂ</string>
+    <string name="net">ਸ਼ੁੱਧ</string>
+    <string name="stats_empty_title">ਹਾਲੇ ਦਿਖਾਉਣ ਲਈ ਕੁਝ ਨਹੀਂ</string>
+    <string name="stats_empty_message">ਇਸ ਮਿਆਦ ਦੇ ਲੈਣ-ਦੇਣ ਇਨ੍ਹਾਂ ਚਾਰਟਾਂ ਨੂੰ ਰੋਸ਼ਨ ਕਰਨਗੇ।</string>
+    <string name="stat_previous_period">ਪਿਛਲੀ ਮਿਆਦ</string>
+    <plurals name="transaction_count">
+        <item quantity="one">%d ਲੈਣ-ਦੇਣ</item>
+        <item quantity="other">%d ਲੈਣ-ਦੇਣ</item>
+    </plurals>
+</resources>

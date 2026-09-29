@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lock_title">Hisab Kitab est verrouillée</string>
+    <string name="lock_message">Vos finances restent privées. Déverrouillez avec votre empreinte, votre visage ou le verrouillage de l\'écran.</string>
+    <string name="lock_unlock">Déverrouiller</string>
+    <string name="lock_prompt_title">Déverrouiller Hisab Kitab</string>
+    <string name="lock_prompt_subtitle">Confirmez que c\'est bien vous</string>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_welcome_title">ഹിസാബ് കിതാബ്</string>
+    <string name="onboarding_welcome_message">നിങ്ങളുടെ പണം, മനോഹരമായി ക്രമീകരിച്ചത്. സെക്കൻഡുകളിൽ രേഖപ്പെടുത്തുക, പണം എവിടെ പോകുന്നുവെന്ന് കാണുക, ആത്മവിശ്വാസത്തോടെ ചെലവാക്കുക.</string>
+    <string name="onboarding_theme_title">നിങ്ങളുടെ ശൈലി തിരഞ്ഞെടുക്കുക</string>
+    <string name="onboarding_theme_message">അഞ്ച് പ്രത്യേക തീമുകൾ, ഓരോന്നിലും ലൈറ്റ്, ഡാർക്ക് മൂഡുകൾ. എപ്പോൾ വേണമെങ്കിലും മാറ്റാം.</string>
+    <string name="onboarding_setup_title">അവസാന മിനുക്കുപണികൾ</string>
+    <string name="onboarding_setup_message">നിങ്ങളുടെ കറൻസി തിരഞ്ഞെടുക്കുക, ദിവസം രേഖപ്പെടുത്താൻ ഒരു ചെറിയ ഓർമ്മപ്പെടുത്തൽ വേണോ എന്ന് പറയുക.</string>
+    <string name="onboarding_currency">കറൻസി</string>
+    <string name="onboarding_reminder">ദിവസേനയുള്ള ഓർമ്മപ്പെടുത്തൽ</string>
+    <string name="onboarding_reminder_summary">അന്ന് ഒന്നും രേഖപ്പെടുത്തിയില്ലെങ്കിൽ മാത്രം</string>
+    <string name="onboarding_next">അടുത്തത്</string>
+    <string name="onboarding_start">നമുക്ക് തുടങ്ങാം</string>
+    <string name="onboarding_skip">ഒഴിവാക്കുക</string>
+    <string name="onboarding_feature_fast">വേഗത്തിലുള്ള എൻട്രിക്ക് കാൽക്കുലേറ്റർ കീപാഡ്</string>
+    <string name="onboarding_feature_insights">ചെലവ് കാണാൻ അഞ്ച് വഴികൾ</string>
+    <string name="onboarding_feature_private">പൂർണ്ണമായും സ്വകാര്യം · എല്ലാം നിങ്ങളുടെ ഫോണിൽ തന്നെ</string>
+    <string name="mode_auto">ഓട്ടോ</string>
+    <string name="mode_light">☀  ലൈറ്റ്</string>
+    <string name="mode_dark">☾  ഡാർക്ക്</string>
+    <string name="onboarding_language_title">നിങ്ങളുടെ ഭാഷ തിരഞ്ഞെടുക്കുക</string>
+    <string name="onboarding_language_message">ഹിസാബ് കിതാബ് നിങ്ങളുടെ ഭാഷ സംസാരിക്കുന്നു. ക്രമീകരണങ്ങളിൽ എപ്പോൾ വേണമെങ്കിലും മാറ്റാം.</string>
+    <string name="onboarding_lock">ആപ്പ് ലോക്ക്</string>
+    <string name="onboarding_lock_summary">വിരലടയാളം അല്ലെങ്കിൽ സ്ക്രീൻ ലോക്ക് ഉപയോഗിച്ച് വിവരങ്ങൾ സ്വകാര്യമാക്കുക</string>
+    <string name="onboarding_lock_prompt">ആപ്പ് ലോക്ക് ഓണാക്കുക</string>
+    <string name="onboarding_lock_prompt_subtitle">ഇത് നിങ്ങളാണെന്ന് ഉറപ്പാക്കുക</string>
+</resources>

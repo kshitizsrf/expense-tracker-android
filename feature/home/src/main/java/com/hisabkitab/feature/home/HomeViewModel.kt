@@ -3,9 +3,11 @@ package com.hisabkitab.feature.home
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.hisabkitab.core.common.time.localeFirstDayOfWeek
+import com.hisabkitab.core.common.time.toLocalDate
 import com.hisabkitab.core.data.repository.TransactionRepository
 import com.hisabkitab.core.data.repository.UserPreferencesRepository
 import com.hisabkitab.core.model.BudgetStatus
+import com.hisabkitab.core.model.CategoryTotal
 import com.hisabkitab.core.model.DateRange
 import com.hisabkitab.core.model.PeriodTotals
 import com.hisabkitab.core.model.Transaction
@@ -27,10 +29,21 @@ import java.time.LocalDate
 import java.time.YearMonth
 import javax.inject.Inject
 
+/** Quick facts about the selected month shown as tiles on the dashboard. */
+data class MonthInsights(
+    val topCategory: CategoryTotal? = null,
+    val averageDailySpendMinor: Long = 0,
+    val biggestExpense: Transaction? = null,
+    val transactionCount: Int = 0,
+)
+
 data class HomeUiState(
     val month: YearMonth,
     val isCurrentMonth: Boolean,
     val totals: PeriodTotals = PeriodTotals(),
+    /** Expense per day of the month (up to today for the current month), for the sparkline. */
+    val dailySpending: List<Long> = emptyList(),
+    val insights: MonthInsights = MonthInsights(),
     val budgetStatus: BudgetStatus? = null,
     val recentTransactions: List<Transaction> = emptyList(),
     val isLoading: Boolean = true,
@@ -46,8 +59,8 @@ class HomeViewModel @Inject constructor(
 
     private val selectedMonth = MutableStateFlow(YearMonth.now(clock))
 
-    private val monthTotals = selectedMonth.flatMapLatest { month ->
-        transactionRepository.observeTotals(DateRange.ofMonth(month))
+    private val monthTransactions = selectedMonth.flatMapLatest { month ->
+        transactionRepository.observeTransactionsIn(DateRange.ofMonth(month)).map { month to it }
     }
 
     private val budgetStatus = userPreferencesRepository.userPreferences
@@ -65,15 +78,35 @@ class HomeViewModel @Inject constructor(
         }
 
     val uiState: StateFlow<HomeUiState> = combine(
-        selectedMonth,
-        monthTotals,
+        monthTransactions,
         budgetStatus,
         transactionRepository.observeRecent(RECENT_LIMIT),
-    ) { month, totals, budget, recent ->
+    ) { (month, transactions), budget, recent ->
+        val today = LocalDate.now(clock)
+        val expenses = transactions.filter { it.type == TransactionType.EXPENSE }
+        val lastDay = if (month == YearMonth.from(today)) today.dayOfMonth else month.lengthOfMonth()
+        val perDay = LongArray(lastDay)
+        expenses.forEach { t ->
+            val day = t.occurredAt.toLocalDate(clock.zone).dayOfMonth
+            if (day <= lastDay) perDay[day - 1] += t.amountMinor
+        }
+        val expenseTotal = expenses.sumOf { it.amountMinor }
         HomeUiState(
             month = month,
-            isCurrentMonth = month == YearMonth.now(clock),
-            totals = totals,
+            isCurrentMonth = month == YearMonth.from(today),
+            totals = PeriodTotals(
+                incomeMinor = transactions.filter { it.type == TransactionType.INCOME }.sumOf { it.amountMinor },
+                expenseMinor = expenseTotal,
+            ),
+            dailySpending = perDay.toList(),
+            insights = MonthInsights(
+                topCategory = expenses.groupBy { it.category }
+                    .map { (category, items) -> CategoryTotal(category, items.sumOf { it.amountMinor }, items.size) }
+                    .maxByOrNull { it.totalMinor },
+                averageDailySpendMinor = if (lastDay > 0) expenseTotal / lastDay else 0,
+                biggestExpense = expenses.maxByOrNull { it.amountMinor },
+                transactionCount = transactions.size,
+            ),
             budgetStatus = budget,
             recentTransactions = recent,
             isLoading = false,

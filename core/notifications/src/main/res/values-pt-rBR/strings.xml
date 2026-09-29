@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="reminder_channel_name">Lembrete diário</string>
+    <string name="reminder_channel_description">Avisa caso você não tenha adicionado nenhuma transação hoje.</string>
+    <string name="reminder_title">Anotou os gastos de hoje?</string>
+    <string name="reminder_text">Leva só alguns segundos e mantém seu orçamento em dia.</string>
+</resources>

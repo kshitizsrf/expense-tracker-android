@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_welcome_title">Hisab Kitab</string>
+    <string name="onboarding_welcome_message">あなたのお金を美しく整理。数秒で記録し、行き先を把握して、安心して使いましょう。</string>
+    <string name="onboarding_theme_title">スタイルを選ぶ</string>
+    <string name="onboarding_theme_message">5 つのオリジナルテーマ、それぞれにライトとダークモード。いつでも変更できます。</string>
+    <string name="onboarding_setup_title">仕上げ</string>
+    <string name="onboarding_setup_message">通貨を選び、1 日の記録を促すやさしいリマインダーが必要か教えてください。</string>
+    <string name="onboarding_currency">通貨</string>
+    <string name="onboarding_reminder">毎日のリマインダー</string>
+    <string name="onboarding_reminder_summary">その日に何も記録していない場合のみ</string>
+    <string name="onboarding_next">次へ</string>
+    <string name="onboarding_start">はじめる</string>
+    <string name="onboarding_skip">スキップ</string>
+    <string name="onboarding_feature_fast">電卓キーパッドですばやく入力</string>
+    <string name="onboarding_feature_insights">支出を見る 5 つの方法</string>
+    <string name="onboarding_feature_private">完全プライベート · すべてスマートフォン内に保存</string>
+    <string name="mode_auto">自動</string>
+    <string name="mode_light">☀  ライト</string>
+    <string name="mode_dark">☾  ダーク</string>
+    <string name="onboarding_language_title">言語を選ぶ</string>
+    <string name="onboarding_language_message">Hisab Kitab はあなたの言語で話します。設定からいつでも変更できます。</string>
+    <string name="onboarding_lock">アプリロック</string>
+    <string name="onboarding_lock_summary">指紋や画面ロックでデータを守ります</string>
+    <string name="onboarding_lock_prompt">アプリロックをオン</string>
+    <string name="onboarding_lock_prompt_subtitle">本人であることを確認してください</string>
+</resources>

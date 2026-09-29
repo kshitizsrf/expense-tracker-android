@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="today">ఈ రోజు</string>
+    <string name="yesterday">నిన్న</string>
+    <string name="greeting_morning">శుభోదయం</string>
+    <string name="greeting_afternoon">శుభ మధ్యాహ్నం</string>
+    <string name="greeting_evening">శుభ సాయంత్రం</string>
+    <string name="greeting_night">రాత్రి పొద్దుపోయే వరకు మేలుకున్నారా?</string>
+    <string name="currency">కరెన్సీ</string>
+    <string name="language">భాష</string>
+    <string name="language_system">సిస్టమ్ డిఫాల్ట్</string>
+    <string name="language_system_summary">ఫోన్ భాషను ఉపయోగించండి</string>
+    <string name="language_search">భాషలను వెతకండి</string>
+    <string name="category_food">ఆహారం</string>
+    <string name="category_shopping">షాపింగ్</string>
+    <string name="category_transportation">ప్రయాణ ఖర్చు</string>
+    <string name="category_bills">బిల్లులు</string>
+    <string name="category_home">ఇల్లు</string>
+    <string name="category_health">ఆరోగ్యం</string>
+    <string name="category_entertainment">వినోదం</string>
+    <string name="category_education">విద్య</string>
+    <string name="category_travel">యాత్ర</string>
+    <string name="category_clothing">దుస్తులు</string>
+    <string name="category_fruits">పండ్లు</string>
+    <string name="category_vegetables">కూరగాయలు</string>
+    <string name="category_car">కారు</string>
+    <string name="category_insurance">బీమా</string>
+    <string name="category_gift">బహుమతి</string>
+    <string name="category_sport">క్రీడలు</string>
+    <string name="category_book">పుస్తకాలు</string>
+    <string name="category_pet">పెంపుడు జంతువు</string>
+    <string name="category_wine">పానీయాలు</string>
+    <string name="category_salary">జీతం</string>
+    <string name="category_rental">అద్దె</string>
+    <string name="category_sale">అమ్మకం</string>
+    <string name="category_awards">పురస్కారాలు</string>
+    <string name="category_investment">పెట్టుబడి</string>
+    <string name="category_other">ఇతర</string>
+</resources>

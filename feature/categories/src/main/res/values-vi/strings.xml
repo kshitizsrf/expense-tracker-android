@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="new_category">Danh mục mới</string>
+    <string name="edit_category">Sửa danh mục</string>
+    <string name="category_name">Tên</string>
+    <string name="color">Màu</string>
+    <string name="icon">Biểu tượng</string>
+    <string name="categories_empty_title">Không có danh mục</string>
+    <string name="categories_empty_message">Nhấn + để tạo mới.</string>
+    <string name="error_name_required">Nhập tên</string>
+    <string name="error_name_taken">Đã có danh mục với tên này</string>
+    <string name="delete_category_title">Xóa “%1$s”?</string>
+    <string name="delete_category_message_empty">Danh mục này sẽ bị xóa vĩnh viễn.</string>
+    <string name="categories_title">Danh mục</string>
+    <string name="categories_subtitle">Tiền của bạn, gọn gàng</string>
+    <string name="this_month_total">%1$s tháng này</string>
+    <string name="nothing_this_month">Tháng này chưa có gì</string>
+    <string name="preview">Xem trước</string>
+    <plurals name="delete_category_message">
+        <item quantity="other">Thao tác này cũng xóa %d giao dịch trong danh mục. Không thể hoàn tác.</item>
+    </plurals>
+</resources>

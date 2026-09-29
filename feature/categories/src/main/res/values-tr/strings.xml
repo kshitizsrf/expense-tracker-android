@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="new_category">Yeni kategori</string>
+    <string name="edit_category">Kategoriyi düzenle</string>
+    <string name="category_name">Ad</string>
+    <string name="color">Renk</string>
+    <string name="icon">Simge</string>
+    <string name="categories_empty_title">Kategori yok</string>
+    <string name="categories_empty_message">Oluşturmak için + simgesine dokunun.</string>
+    <string name="error_name_required">Bir ad girin</string>
+    <string name="error_name_taken">Bu adda bir kategori zaten var</string>
+    <string name="delete_category_title">“%1$s” silinsin mi?</string>
+    <string name="delete_category_message_empty">Bu kategori kalıcı olarak silinecek.</string>
+    <string name="categories_title">Kategoriler</string>
+    <string name="categories_subtitle">Paranız, düzenli</string>
+    <string name="this_month_total">Bu ay %1$s</string>
+    <string name="nothing_this_month">Bu ay bir şey yok</string>
+    <string name="preview">Önizleme</string>
+    <plurals name="delete_category_message">
+        <item quantity="one">Bu, bu kategorideki %d işlemi de silecek. Geri alınamaz.</item>
+        <item quantity="other">Bu, bu kategorideki %d işlemi de silecek. Geri alınamaz.</item>
+    </plurals>
+</resources>

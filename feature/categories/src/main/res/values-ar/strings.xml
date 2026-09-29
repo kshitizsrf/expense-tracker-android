@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="new_category">فئة جديدة</string>
+    <string name="edit_category">تعديل الفئة</string>
+    <string name="category_name">الاسم</string>
+    <string name="color">اللون</string>
+    <string name="icon">الرمز</string>
+    <string name="categories_empty_title">لا توجد فئات</string>
+    <string name="categories_empty_message">اضغط + لإنشاء فئة.</string>
+    <string name="error_name_required">أدخل اسمًا</string>
+    <string name="error_name_taken">توجد فئة بهذا الاسم بالفعل</string>
+    <string name="delete_category_title">حذف “%1$s”؟</string>
+    <string name="delete_category_message_empty">سيتم حذف هذه الفئة نهائيًا.</string>
+    <string name="categories_title">الفئات</string>
+    <string name="categories_subtitle">أموالك مرتبة بعناية</string>
+    <string name="this_month_total">%1$s هذا الشهر</string>
+    <string name="nothing_this_month">لا شيء هذا الشهر</string>
+    <string name="preview">معاينة</string>
+    <plurals name="delete_category_message">
+        <item quantity="zero">سيؤدي هذا أيضًا إلى حذف %d معاملة في هذه الفئة. لا يمكن التراجع.</item>
+        <item quantity="one">سيؤدي هذا أيضًا إلى حذف معاملة واحدة (%d) في هذه الفئة. لا يمكن التراجع.</item>
+        <item quantity="two">سيؤدي هذا أيضًا إلى حذف معاملتين (%d) في هذه الفئة. لا يمكن التراجع.</item>
+        <item quantity="few">سيؤدي هذا أيضًا إلى حذف %d معاملات في هذه الفئة. لا يمكن التراجع.</item>
+        <item quantity="many">سيؤدي هذا أيضًا إلى حذف %d معاملة في هذه الفئة. لا يمكن التراجع.</item>
+        <item quantity="other">سيؤدي هذا أيضًا إلى حذف %d معاملة في هذه الفئة. لا يمكن التراجع.</item>
+    </plurals>
+</resources>

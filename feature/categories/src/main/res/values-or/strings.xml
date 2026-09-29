@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="new_category">ନୂଆ ବର୍ଗ</string>
+    <string name="edit_category">ବର୍ଗ ସମ୍ପାଦନା</string>
+    <string name="category_name">ନାମ</string>
+    <string name="color">ରଙ୍ଗ</string>
+    <string name="icon">ଆଇକନ୍</string>
+    <string name="categories_empty_title">କୌଣସି ବର୍ଗ ନାହିଁ</string>
+    <string name="categories_empty_message">ନୂଆ ତିଆରି କରିବାକୁ + ଟାପ୍ କରନ୍ତୁ।</string>
+    <string name="error_name_required">ଏକ ନାମ ଦିଅନ୍ତୁ</string>
+    <string name="error_name_taken">ଏହି ନାମରେ ଏକ ବର୍ଗ ପୂର୍ବରୁ ଅଛି</string>
+    <string name="delete_category_title">“%1$s” ଡିଲିଟ୍ କରିବେ?</string>
+    <string name="delete_category_message_empty">ଏହି ବର୍ଗଟି ସ୍ଥାୟୀ ଭାବେ ଡିଲିଟ୍ ହେବ।</string>
+    <string name="categories_title">ବର୍ଗ</string>
+    <string name="categories_subtitle">ଆପଣଙ୍କ ଟଙ୍କା, ସଜାଡ଼ି ରଖାଯାଇଛି</string>
+    <string name="this_month_total">ଏହି ମାସ %1$s</string>
+    <string name="nothing_this_month">ଏହି ମାସ କିଛି ନାହିଁ</string>
+    <string name="preview">ପୂର୍ବାବଲୋକନ</string>
+    <plurals name="delete_category_message">
+        <item quantity="one">ଏହାଦ୍ୱାରା ଏହି ବର୍ଗର %d କାରବାର ମଧ୍ୟ ଡିଲିଟ୍ ହେବ। ଏହାକୁ ଫେରାଇ ହେବ ନାହିଁ।</item>
+        <item quantity="other">ଏହାଦ୍ୱାରା ଏହି ବର୍ଗର %d କାରବାର ମଧ୍ୟ ଡିଲିଟ୍ ହେବ। ଏହାକୁ ଫେରାଇ ହେବ ନାହିଁ।</item>
+    </plurals>
+</resources>

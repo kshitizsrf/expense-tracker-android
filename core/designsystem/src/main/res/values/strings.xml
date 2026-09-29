@@ -1,7 +1,7 @@
-<resources>
-    <string name="app_name">Hisab Kitab</string>
-    <string name="nav_transactions">Transactions</string>
-    <string name="nav_stats">Statistics</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" tools:ignore="MissingTranslation">Hisab Kitab</string>
+    <string name="nav_transactions">Activity</string>
+    <string name="nav_stats">Insights</string>
     <string name="nav_categories">Categories</string>
     <string name="action_back">Back</string>
     <string name="action_cancel">Cancel</string>
@@ -22,4 +22,22 @@
     <string name="period_monthly">Monthly</string>
     <string name="period_custom">Custom</string>
     <string name="error_amount_required">Enter an amount greater than zero</string>
+    <string name="action_save">Save</string>
+    <string name="action_edit">Edit</string>
+
+    <!-- The original Hisab Kitab theme names -->
+    <string name="theme_skyline" translatable="false">Skyline</string>
+    <string name="theme_dawn" translatable="false">Dawn</string>
+    <string name="theme_horizon" translatable="false">Horizon</string>
+    <string name="theme_pinkwalk" translatable="false">Pinkwalk</string>
+    <string name="theme_rosewood" translatable="false">Rosewood</string>
+    <string name="theme_wallpaper">Wallpaper</string>
+    <string name="theme_skyline_tagline">Clear blue calm</string>
+    <string name="theme_dawn_tagline">Sunrise over midnight</string>
+    <string name="theme_horizon_tagline">Deep sea teal</string>
+    <string name="theme_pinkwalk_tagline">Lavender candy stroll</string>
+    <string name="theme_rosewood_tagline">Navy nights, rose glow</string>
+    <string name="theme_wallpaper_tagline">Painted from your wallpaper</string>
+    <string name="spotlight_dismiss">Tap anywhere to close</string>
+    <string name="select_date_range">Select a date range</string>
 </resources>

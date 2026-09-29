@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="category">வகை</string>
+    <string name="date">தேதி</string>
+    <string name="time">நேரம்</string>
+    <string name="note">குறிப்பு</string>
+    <string name="no_note">குறிப்பு இல்லை</string>
+    <string name="search">தேடு</string>
+    <string name="close_search">தேடலை மூடு</string>
+    <string name="clear_search">தேடலை அழி</string>
+    <string name="search_hint">குறிப்புகள் அல்லது வகைகளைத் தேடு</string>
+    <string name="filter_all">அனைத்தும்</string>
+    <string name="empty_filtered_title">பொருந்தும் பரிவர்த்தனைகள் இல்லை</string>
+    <string name="empty_filtered_message">வேறு தேடல் அல்லது வடிப்பானை முயலவும்.</string>
+    <string name="transaction_details">பரிவர்த்தனை</string>
+    <string name="transaction_not_found_title">பரிவர்த்தனை கிடைக்கவில்லை</string>
+    <string name="transaction_not_found_message">இது நீக்கப்பட்டிருக்கலாம்.</string>
+    <string name="delete_transaction_title">பரிவர்த்தனையை நீக்கவா?</string>
+    <string name="delete_transaction_message">இந்தப் பரிவர்த்தனை நிரந்தரமாக நீக்கப்படும்.</string>
+    <string name="new_transaction">புதிய பரிவர்த்தனை</string>
+    <string name="edit_transaction">பரிவர்த்தனையைத் திருத்து</string>
+    <string name="note_optional">குறிப்பு (விருப்பத்தேர்வு)</string>
+    <string name="new_category_short">புதியது</string>
+    <string name="save_transaction">பரிவர்த்தனையைச் சேமி</string>
+    <string name="save_changes">மாற்றங்களைச் சேமி</string>
+    <string name="keypad_backspace">பேக்ஸ்பேஸ். அனைத்தையும் அழிக்க அழுத்திப் பிடிக்கவும்</string>
+    <string name="keypad_decimal">தசமப் புள்ளி</string>
+    <string name="error_amount_too_large">இந்தத் தொகை மிகப் பெரியது</string>
+    <string name="error_category_required">ஒரு வகையைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="activity_title">செயல்பாடு</string>
+    <string name="activity_subtitle">ஒவ்வொரு காசுக்கும் கணக்கு</string>
+    <string name="deleted_transaction">பரிவர்த்தனை நீக்கப்பட்டது</string>
+    <string name="undo">செயல்தவிர்</string>
+    <string name="swipe_hint">நீக்கப் பதிவை இடதுபுறம் ஸ்வைப் செய்யவும்</string>
+    <string name="spent_label">செலவு</string>
+    <string name="earned_label">வருமானம்</string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="balance">Bu ayın bakiyesi</string>
+    <string name="previous_month">Önceki ay</string>
+    <string name="next_month">Sonraki ay</string>
+    <string name="back_to_this_month">Bu aya dönmek için dokunun</string>
+    <string name="recent_transactions">Son hareketler</string>
+    <string name="see_all">Tümünü gör</string>
+    <string name="daily_spending">Günlük harcama</string>
+    <string name="budget_set_title">Bütçe belirleyin</string>
+    <string name="budget_set_message">Her gün tam olarak ne kadar harcayabileceğinizi bilin.</string>
+    <string name="budget_title_daily">Bugünün bütçesi</string>
+    <string name="budget_title_weekly">Bu haftanın bütçesi</string>
+    <string name="budget_title_monthly">Bu ayın bütçesi</string>
+    <string name="budget_title_custom">Bütçe</string>
+    <string name="budget_spent_of">%2$s bütçenin %1$s kadarı harcandı</string>
+    <string name="budget_over_by">%1$s aşıldı</string>
+    <string name="budget_safe_today">Bugün harcanabilir</string>
+    <string name="budget_ended">Bu bütçe dönemi bitti. Yenisini belirlemek için dokunun.</string>
+    <string name="budget_not_started">%1$s tarihinde başlar</string>
+    <string name="insight_top_category">En çok harcanan</string>
+    <string name="insight_daily_average">Günlük ortalama</string>
+    <string name="insight_biggest">En büyük harcama</string>
+    <string name="insight_count">Kayıt</string>
+    <string name="empty_home_title">Yeni bir başlangıç</string>
+    <string name="empty_home_message">İlk gelirinizi veya giderinizi kaydetmek için + düğmesine dokunun.</string>
+    <string name="spotlight_saved">Biriken</string>
+    <plurals name="budget_days_left">
+        <item quantity="one">%d gün kaldı</item>
+        <item quantity="other">%d gün kaldı</item>
+    </plurals>
+</resources>

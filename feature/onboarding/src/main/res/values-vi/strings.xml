@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_welcome_title">Hisab Kitab</string>
+    <string name="onboarding_welcome_message">Tiền của bạn, sắp xếp đẹp mắt. Ghi chép trong vài giây, biết tiền đi đâu và chi tiêu tự tin.</string>
+    <string name="onboarding_theme_title">Chọn phong cách</string>
+    <string name="onboarding_theme_message">Năm chủ đề đặc trưng, mỗi chủ đề có chế độ sáng và tối. Đổi bất cứ lúc nào.</string>
+    <string name="onboarding_setup_title">Hoàn thiện</string>
+    <string name="onboarding_setup_message">Chọn tiền tệ và cho biết bạn có muốn lời nhắc nhẹ nhàng để ghi lại ngày của mình không.</string>
+    <string name="onboarding_currency">Tiền tệ</string>
+    <string name="onboarding_reminder">Nhắc nhở hằng ngày</string>
+    <string name="onboarding_reminder_summary">Chỉ khi hôm đó bạn chưa ghi gì</string>
+    <string name="onboarding_next">Tiếp</string>
+    <string name="onboarding_start">Bắt đầu thôi</string>
+    <string name="onboarding_skip">Bỏ qua</string>
+    <string name="onboarding_feature_fast">Bàn phím máy tính để nhập nhanh</string>
+    <string name="onboarding_feature_insights">Năm cách xem chi tiêu</string>
+    <string name="onboarding_feature_private">Hoàn toàn riêng tư · mọi thứ ở trên điện thoại của bạn</string>
+    <string name="mode_auto">Tự động</string>
+    <string name="mode_light">☀  Sáng</string>
+    <string name="mode_dark">☾  Tối</string>
+    <string name="onboarding_language_title">Chọn ngôn ngữ</string>
+    <string name="onboarding_language_message">Hisab Kitab nói ngôn ngữ của bạn. Bạn có thể đổi bất cứ lúc nào trong Cài đặt.</string>
+    <string name="onboarding_lock">Khóa ứng dụng</string>
+    <string name="onboarding_lock_summary">Bảo vệ dữ liệu bằng vân tay hoặc khóa màn hình</string>
+    <string name="onboarding_lock_prompt">Bật khóa ứng dụng</string>
+    <string name="onboarding_lock_prompt_subtitle">Xác nhận đây là bạn</string>
+</resources>

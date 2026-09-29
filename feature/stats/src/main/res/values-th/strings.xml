@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="insights_title">วิเคราะห์</string>
+    <string name="insights_subtitle">เงินของคุณไปไหน</string>
+    <string name="period_this_month">เดือนนี้</string>
+    <string name="period_last_month">เดือนที่แล้ว</string>
+    <string name="period_last_3_months">3 เดือน</string>
+    <string name="period_this_year">ปีนี้</string>
+    <string name="chart_donut">โดนัท</string>
+    <string name="chart_bars">อันดับ</string>
+    <string name="chart_trend">แนวโน้ม</string>
+    <string name="chart_calendar">ปฏิทิน</string>
+    <string name="chart_cash_flow">กระแสเงิน</string>
+    <string name="chart_donut_title">สัดส่วนตามหมวดหมู่</string>
+    <string name="chart_bars_title">หมวดหมู่สูงสุด</string>
+    <string name="chart_trend_title_daily">รายวัน</string>
+    <string name="chart_trend_title_monthly">รายเดือน</string>
+    <string name="chart_calendar_title">ปฏิทินรายจ่าย</string>
+    <string name="chart_calendar_title_income">ปฏิทินรายรับ</string>
+    <string name="chart_cash_flow_title">กระแสเงินสด · 6 เดือนล่าสุด</string>
+    <string name="chart_hint_donut">แตะชิ้นส่วนเพื่อเน้น</string>
+    <string name="chart_hint_trend">กดค้างแล้วลากเพื่อสำรวจ</string>
+    <string name="chart_hint_calendar">แตะวันเพื่อดูยอดรวม</string>
+    <string name="chart_hint_cash_flow">แตะเดือนเพื่อดูรายละเอียด</string>
+    <string name="total_spent">ใช้จ่ายรวม</string>
+    <string name="total_earned">รายรับรวม</string>
+    <string name="stat_total">รวม</string>
+    <string name="stat_daily_average">เฉลี่ยต่อวัน</string>
+    <string name="stat_entries">รายการ</string>
+    <string name="stat_vs_previous">เทียบกับก่อนหน้า</string>
+    <string name="stat_no_comparison">ใหม่</string>
+    <string name="percent_of_total">%1$d%% ของทั้งหมด</string>
+    <string name="heatmap_less">น้อย</string>
+    <string name="heatmap_more">มาก</string>
+    <string name="nothing_on_day">ไม่มีการบันทึก</string>
+    <string name="net">สุทธิ</string>
+    <string name="stats_empty_title">ยังไม่มีอะไรแสดง</string>
+    <string name="stats_empty_message">รายการในช่วงนี้จะทำให้กราฟเหล่านี้มีชีวิตชีวา</string>
+    <string name="stat_previous_period">ช่วงก่อนหน้า</string>
+    <plurals name="transaction_count">
+        <item quantity="other">%d รายการ</item>
+    </plurals>
+</resources>

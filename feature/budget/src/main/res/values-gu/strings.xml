@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_change">બદલો</string>
+    <string name="budget_intro">તમારા પૈસાનું આયોજન કરો. બજેટમાં ફક્ત ખર્ચ ગણાય છે.</string>
+    <string name="budget_amount">બજેટની રકમ</string>
+    <string name="budget_period">સમયગાળો</string>
+    <string name="budget_explain_daily">દરરોજ ફરીથી શરૂ થાય છે.</string>
+    <string name="budget_explain_weekly">દર અઠવાડિયાની શરૂઆતમાં ફરીથી શરૂ થાય છે.</string>
+    <string name="budget_explain_monthly">દર મહિનાની 1 તારીખે ફરીથી શરૂ થાય છે.</string>
+    <string name="budget_explain_custom">ફક્ત તમે પસંદ કરેલી તારીખો માટે.</string>
+    <string name="budget_current_period">હાલનો સમયગાળો: %1$s</string>
+    <string name="choose_dates">તારીખો પસંદ કરો</string>
+    <string name="save_budget">બજેટ સાચવો</string>
+    <string name="remove_budget">બજેટ દૂર કરો</string>
+    <string name="error_dates_required">તમારા બજેટની તારીખો પસંદ કરો</string>
+</resources>

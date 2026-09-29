@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_change">Изменить</string>
+    <string name="budget_intro">Планируйте деньги. В бюджете учитываются только расходы.</string>
+    <string name="budget_amount">Сумма бюджета</string>
+    <string name="budget_period">Период</string>
+    <string name="budget_explain_daily">Начинается заново каждый день.</string>
+    <string name="budget_explain_weekly">Начинается заново в начале каждой недели.</string>
+    <string name="budget_explain_monthly">Начинается заново 1-го числа каждого месяца.</string>
+    <string name="budget_explain_custom">Только для выбранных дат.</string>
+    <string name="budget_current_period">Текущий период: %1$s</string>
+    <string name="choose_dates">Выбрать даты</string>
+    <string name="save_budget">Сохранить бюджет</string>
+    <string name="remove_budget">Удалить бюджет</string>
+    <string name="error_dates_required">Выберите даты бюджета</string>
+</resources>

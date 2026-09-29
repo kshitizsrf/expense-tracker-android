@@ -6,10 +6,10 @@ import androidx.compose.material.icons.automirrored.filled.ReceiptLong
 import androidx.compose.material.icons.automirrored.outlined.ReceiptLong
 import androidx.compose.material.icons.filled.Category
 import androidx.compose.material.icons.filled.Home
-import androidx.compose.material.icons.filled.PieChart
+import androidx.compose.material.icons.filled.Insights
 import androidx.compose.material.icons.outlined.Category
 import androidx.compose.material.icons.outlined.Home
-import androidx.compose.material.icons.outlined.PieChart
+import androidx.compose.material.icons.outlined.Insights
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.navigation3.runtime.NavKey
 import com.hisabkitab.R
@@ -68,6 +68,6 @@ enum class TopLevelDestination(
         Icons.AutoMirrored.Outlined.ReceiptLong,
         DesignR.string.nav_transactions,
     ),
-    STATS(StatsKey, Icons.Filled.PieChart, Icons.Outlined.PieChart, DesignR.string.nav_stats),
+    STATS(StatsKey, Icons.Filled.Insights, Icons.Outlined.Insights, DesignR.string.nav_stats),
     CATEGORIES(CategoriesKey, Icons.Filled.Category, Icons.Outlined.Category, DesignR.string.nav_categories),
 }

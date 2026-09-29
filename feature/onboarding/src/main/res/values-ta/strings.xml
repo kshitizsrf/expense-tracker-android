@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_welcome_title">ஹிசாப் கிதாப்</string>
+    <string name="onboarding_welcome_message">உங்கள் பணம், அழகாக ஒழுங்கமைக்கப்பட்டது. வினாடிகளில் பதிவுசெய்யுங்கள், பணம் எங்கே போகிறது என்று பாருங்கள், நம்பிக்கையுடன் செலவிடுங்கள்.</string>
+    <string name="onboarding_theme_title">உங்கள் பாணியைத் தேர்ந்தெடுங்கள்</string>
+    <string name="onboarding_theme_message">ஐந்து தனித்துவமான தீம்கள், ஒவ்வொன்றிலும் லைட் மற்றும் டார்க் மனநிலை. எப்போது வேண்டுமானாலும் மாற்றலாம்.</string>
+    <string name="onboarding_setup_title">இறுதித் தொடுதல்கள்</string>
+    <string name="onboarding_setup_message">உங்கள் நாணயத்தைத் தேர்ந்தெடுத்து, நாளைப் பதிவுசெய்ய மென்மையான நினைவூட்டல் வேண்டுமா என்று சொல்லுங்கள்.</string>
+    <string name="onboarding_currency">நாணயம்</string>
+    <string name="onboarding_reminder">தினசரி நினைவூட்டல்</string>
+    <string name="onboarding_reminder_summary">அன்று எதையும் பதிவுசெய்யவில்லை என்றால் மட்டும்</string>
+    <string name="onboarding_next">அடுத்து</string>
+    <string name="onboarding_start">தொடங்குவோம்</string>
+    <string name="onboarding_skip">தவிர்</string>
+    <string name="onboarding_feature_fast">விரைவான பதிவுக்குக் கால்குலேட்டர் கீபேட்</string>
+    <string name="onboarding_feature_insights">செலவைக் காண ஐந்து வழிகள்</string>
+    <string name="onboarding_feature_private">முழுமையாகத் தனிப்பட்டது · அனைத்தும் உங்கள் ஃபோனிலேயே</string>
+    <string name="mode_auto">தானியங்கு</string>
+    <string name="mode_light">☀  லைட்</string>
+    <string name="mode_dark">☾  டார்க்</string>
+    <string name="onboarding_language_title">உங்கள் மொழியைத் தேர்ந்தெடுங்கள்</string>
+    <string name="onboarding_language_message">ஹிசாப் கிதாப் உங்கள் மொழியில் பேசுகிறது. அமைப்புகளில் எப்போது வேண்டுமானாலும் மாற்றலாம்.</string>
+    <string name="onboarding_lock">ஆப் பூட்டு</string>
+    <string name="onboarding_lock_summary">கைரேகை அல்லது திரைப் பூட்டால் உங்கள் தகவலைத் தனிப்பட்டதாக வைத்திருங்கள்</string>
+    <string name="onboarding_lock_prompt">ஆப் பூட்டை இயக்கு</string>
+    <string name="onboarding_lock_prompt_subtitle">இது நீங்கள்தான் என்பதை உறுதிப்படுத்தவும்</string>
+</resources>

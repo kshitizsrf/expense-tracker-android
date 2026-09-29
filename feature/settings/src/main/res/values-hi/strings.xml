@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="budget_not_set">तय नहीं</string>
+    <string name="settings_appearance">रूप-रंग</string>
+    <string name="settings_money">पैसा</string>
+    <string name="settings_reminders">रिमाइंडर</string>
+    <string name="settings_data">आपका डेटा</string>
+    <string name="settings_about">जानकारी</string>
+    <string name="theme">मोड</string>
+    <string name="theme_system">सिस्टम</string>
+    <string name="theme_light">लाइट</string>
+    <string name="theme_dark">डार्क</string>
+    <string name="daily_reminder">दैनिक रिमाइंडर</string>
+    <string name="daily_reminder_summary">अगर उस दिन कुछ नहीं लिखा, तो एक हल्की याद</string>
+    <string name="reminder_time">रिमाइंडर का समय</string>
+    <string name="notification_settings">सूचना सेटिंग्स</string>
+    <string name="notification_settings_summary">तय करें कि हिसाब किताब आपको कैसे सूचित करे</string>
+    <string name="export_transactions">लेन-देन एक्सपोर्ट करें</string>
+    <string name="export_categories">श्रेणियाँ एक्सपोर्ट करें</string>
+    <string name="export_summary">CSV फ़ाइल के रूप में सेव करें, जिसे किसी भी स्प्रेडशीट ऐप में खोला जा सके</string>
+    <string name="export_failed">एक्सपोर्ट नहीं हो सका। फिर से कोशिश करें।</string>
+    <string name="version">संस्करण %1$s</string>
+    <string name="settings_title_big">सेटिंग्स</string>
+    <string name="settings_subtitle">इसे अपना बनाएँ</string>
+    <string name="settings_theme_gallery">थीम</string>
+    <string name="currency_setting">मुद्रा</string>
+    <string name="made_with_love">सोच-समझकर ख़र्च के लिए ♥ से बनाया गया</string>
+    <string name="settings_motion">एनिमेशन और स्टाइल</string>
+    <string name="settings_privacy">निजता और सुरक्षा</string>
+    <string name="nav_style">नेविगेशन बार</string>
+    <string name="nav_style_hint">नीचे दिए बार पर हर स्टाइल आज़माएँ</string>
+    <string name="nav_style_liquid">लिक्विड</string>
+    <string name="nav_style_bubble">बबल</string>
+    <string name="nav_style_glow">ग्लो</string>
+    <string name="nav_style_expand">एक्सपैंड</string>
+    <string name="chart_animation">चार्ट एनिमेशन</string>
+    <string name="chart_animation_hint">इनसाइट्स में चार्ट कैसे बदलें</string>
+    <string name="chart_fade">फ़ेड</string>
+    <string name="chart_slide">स्लाइड</string>
+    <string name="chart_flip">3D फ़्लिप</string>
+    <string name="chart_zoom">ज़ूम</string>
+    <string name="preview_home">होम</string>
+    <string name="app_lock">ऐप लॉक</string>
+    <string name="app_lock_summary">खोलने के लिए फ़िंगरप्रिंट, चेहरा या स्क्रीन लॉक ज़रूरी</string>
+    <string name="app_lock_unavailable">इसके लिए पहले फ़ोन में स्क्रीन लॉक लगाएँ</string>
+    <string name="app_lock_confirm_title">ऐप लॉक चालू करें</string>
+    <string name="app_lock_confirm_subtitle">पुष्टि करें कि यह आप हैं</string>
+    <string name="language_setting">भाषा</string>
+    <plurals name="exported_transactions">
+        <item quantity="one">%d लेन-देन एक्सपोर्ट हुआ</item>
+        <item quantity="other">%d लेन-देन एक्सपोर्ट हुए</item>
+    </plurals>
+    <plurals name="exported_categories">
+        <item quantity="one">%d श्रेणी एक्सपोर्ट हुई</item>
+        <item quantity="other">%d श्रेणियाँ एक्सपोर्ट हुईं</item>
+    </plurals>
+</resources>

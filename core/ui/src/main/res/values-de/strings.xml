@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="today">Heute</string>
+    <string name="yesterday">Gestern</string>
+    <string name="greeting_morning">Guten Morgen</string>
+    <string name="greeting_afternoon">Guten Tag</string>
+    <string name="greeting_evening">Guten Abend</string>
+    <string name="greeting_night">Noch wach?</string>
+    <string name="currency">Währung</string>
+    <string name="language">Sprache</string>
+    <string name="language_system">Systemstandard</string>
+    <string name="language_system_summary">Sprache des Telefons verwenden</string>
+    <string name="language_search">Sprachen suchen</string>
+    <string name="category_food">Essen</string>
+    <string name="category_shopping">Einkaufen</string>
+    <string name="category_transportation">Verkehr</string>
+    <string name="category_bills">Rechnungen</string>
+    <string name="category_home">Zuhause</string>
+    <string name="category_health">Gesundheit</string>
+    <string name="category_entertainment">Unterhaltung</string>
+    <string name="category_education">Bildung</string>
+    <string name="category_travel">Reisen</string>
+    <string name="category_clothing">Kleidung</string>
+    <string name="category_fruits">Obst</string>
+    <string name="category_vegetables">Gemüse</string>
+    <string name="category_car">Auto</string>
+    <string name="category_insurance">Versicherung</string>
+    <string name="category_gift">Geschenke</string>
+    <string name="category_sport">Sport</string>
+    <string name="category_book">Bücher</string>
+    <string name="category_pet">Haustiere</string>
+    <string name="category_wine">Getränke</string>
+    <string name="category_salary">Gehalt</string>
+    <string name="category_rental">Miete</string>
+    <string name="category_sale">Verkäufe</string>
+    <string name="category_awards">Prämien</string>
+    <string name="category_investment">Investitionen</string>
+    <string name="category_other">Sonstiges</string>
+</resources>

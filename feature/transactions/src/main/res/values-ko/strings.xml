@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="category">카테고리</string>
+    <string name="date">날짜</string>
+    <string name="time">시간</string>
+    <string name="note">메모</string>
+    <string name="no_note">메모 없음</string>
+    <string name="search">검색</string>
+    <string name="close_search">검색 닫기</string>
+    <string name="clear_search">검색어 지우기</string>
+    <string name="search_hint">메모나 카테고리 검색</string>
+    <string name="filter_all">전체</string>
+    <string name="empty_filtered_title">일치하는 내역이 없어요</string>
+    <string name="empty_filtered_message">다른 검색어나 필터를 사용해 보세요.</string>
+    <string name="transaction_details">내역</string>
+    <string name="transaction_not_found_title">내역을 찾을 수 없어요</string>
+    <string name="transaction_not_found_message">삭제되었을 수 있어요.</string>
+    <string name="delete_transaction_title">내역을 삭제할까요?</string>
+    <string name="delete_transaction_message">이 내역이 영구적으로 삭제돼요.</string>
+    <string name="new_transaction">새 내역</string>
+    <string name="edit_transaction">내역 수정</string>
+    <string name="note_optional">메모 (선택)</string>
+    <string name="new_category_short">새로 만들기</string>
+    <string name="save_transaction">내역 저장</string>
+    <string name="save_changes">변경사항 저장</string>
+    <string name="keypad_backspace">백스페이스. 길게 눌러 모두 지우기</string>
+    <string name="keypad_decimal">소수점</string>
+    <string name="error_amount_too_large">금액이 너무 커요</string>
+    <string name="error_category_required">카테고리를 선택하세요</string>
+    <string name="activity_title">내역</string>
+    <string name="activity_subtitle">한 푼도 빠짐없이</string>
+    <string name="deleted_transaction">내역을 삭제했어요</string>
+    <string name="undo">실행 취소</string>
+    <string name="swipe_hint">항목을 왼쪽으로 밀어 삭제</string>
+    <string name="spent_label">지출</string>
+    <string name="earned_label">수입</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="new_category">కొత్త వర్గం</string>
+    <string name="edit_category">వర్గాన్ని సవరించు</string>
+    <string name="category_name">పేరు</string>
+    <string name="color">రంగు</string>
+    <string name="icon">చిహ్నం</string>
+    <string name="categories_empty_title">వర్గాలు లేవు</string>
+    <string name="categories_empty_message">కొత్తది సృష్టించడానికి + నొక్కండి.</string>
+    <string name="error_name_required">పేరు నమోదు చేయండి</string>
+    <string name="error_name_taken">ఈ పేరుతో వర్గం ఇప్పటికే ఉంది</string>
+    <string name="delete_category_title">“%1$s” తొలగించాలా?</string>
+    <string name="delete_category_message_empty">ఈ వర్గం శాశ్వతంగా తొలగించబడుతుంది.</string>
+    <string name="categories_title">వర్గాలు</string>
+    <string name="categories_subtitle">మీ డబ్బు, చక్కగా అమర్చబడింది</string>
+    <string name="this_month_total">ఈ నెల %1$s</string>
+    <string name="nothing_this_month">ఈ నెల ఏమీ లేదు</string>
+    <string name="preview">ప్రివ్యూ</string>
+    <plurals name="delete_category_message">
+        <item quantity="one">దీనితో ఈ వర్గంలోని %d లావాదేవీ కూడా తొలగించబడుతుంది. దీన్ని రద్దు చేయలేరు.</item>
+        <item quantity="other">దీనితో ఈ వర్గంలోని %d లావాదేవీలు కూడా తొలగించబడతాయి. దీన్ని రద్దు చేయలేరు.</item>
+    </plurals>
+</resources>

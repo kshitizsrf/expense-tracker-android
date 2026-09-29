@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_transactions">પ્રવૃત્તિ</string>
+    <string name="nav_stats">વિશ્લેષણ</string>
+    <string name="nav_categories">શ્રેણીઓ</string>
+    <string name="action_back">પાછળ</string>
+    <string name="action_cancel">રદ કરો</string>
+    <string name="action_close">બંધ કરો</string>
+    <string name="action_delete">કાઢી નાખો</string>
+    <string name="action_ok">ઠીક છે</string>
+    <string name="income">આવક</string>
+    <string name="expense">ખર્ચ</string>
+    <string name="expenses">ખર્ચ</string>
+    <string name="select_time">સમય પસંદ કરો</string>
+    <string name="settings_title">સેટિંગ્સ</string>
+    <string name="add_transaction">ઉમેરો</string>
+    <string name="empty_transactions_title">હજી કોઈ વ્યવહાર નથી</string>
+    <string name="empty_transactions_message">તમારી પહેલી આવક કે ખર્ચ નોંધવા માટે ઉમેરો પર ટૅપ કરો.</string>
+    <string name="budget">બજેટ</string>
+    <string name="period_daily">દૈનિક</string>
+    <string name="period_weekly">સાપ્તાહિક</string>
+    <string name="period_monthly">માસિક</string>
+    <string name="period_custom">કસ્ટમ</string>
+    <string name="error_amount_required">શૂન્યથી વધુ રકમ દાખલ કરો</string>
+    <string name="action_save">સાચવો</string>
+    <string name="action_edit">ફેરફાર કરો</string>
+    <string name="theme_skyline_tagline">સ્વચ્છ વાદળી શાંતિ</string>
+    <string name="theme_dawn_tagline">મધ્યરાત્રિ પછીની સવાર</string>
+    <string name="theme_horizon_tagline">ઊંડો દરિયાઈ વાદળી-લીલો</string>
+    <string name="theme_pinkwalk_tagline">લવંડર કૅન્ડીની લટાર</string>
+    <string name="theme_rosewood_tagline">વાદળી રાતો, ગુલાબી ચમક</string>
+    <string name="theme_wallpaper_tagline">તમારા વૉલપેપરના રંગોથી</string>
+    <string name="theme_wallpaper">વૉલપેપર</string>
+    <string name="spotlight_dismiss">બંધ કરવા ક્યાંય પણ ટૅપ કરો</string>
+    <string name="select_date_range">તારીખોની શ્રેણી પસંદ કરો</string>
+</resources>

@@ -23,6 +23,7 @@ data class CategoryEntity(
     @ColumnInfo(name = "icon_key") val iconKey: String,
     val color: Int,
     val type: TransactionType,
+    @ColumnInfo(name = "default_key") val defaultKey: String? = null,
 )
 
 /**
@@ -67,9 +68,9 @@ data class CategoryTotalRow(
     @ColumnInfo(name = "transaction_count") val transactionCount: Int,
 )
 
-fun CategoryEntity.asModel() = Category(id = id, name = name, iconKey = iconKey, color = color, type = type)
+fun CategoryEntity.asModel() = Category(id = id, name = name, iconKey = iconKey, color = color, type = type, defaultKey = defaultKey)
 
-fun Category.asEntity() = CategoryEntity(id = id, name = name, iconKey = iconKey, color = color, type = type)
+fun Category.asEntity() = CategoryEntity(id = id, name = name, iconKey = iconKey, color = color, type = type, defaultKey = defaultKey)
 
 fun TransactionWithCategory.asModel() = Transaction(
     id = transaction.id,

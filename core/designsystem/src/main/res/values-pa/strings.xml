@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_transactions">ਗਤੀਵਿਧੀ</string>
+    <string name="nav_stats">ਵਿਸ਼ਲੇਸ਼ਣ</string>
+    <string name="nav_categories">ਸ਼੍ਰੇਣੀਆਂ</string>
+    <string name="action_back">ਪਿੱਛੇ</string>
+    <string name="action_cancel">ਰੱਦ ਕਰੋ</string>
+    <string name="action_close">ਬੰਦ ਕਰੋ</string>
+    <string name="action_delete">ਮਿਟਾਓ</string>
+    <string name="action_ok">ਠੀਕ ਹੈ</string>
+    <string name="income">ਆਮਦਨ</string>
+    <string name="expense">ਖ਼ਰਚਾ</string>
+    <string name="expenses">ਖ਼ਰਚੇ</string>
+    <string name="select_time">ਸਮਾਂ ਚੁਣੋ</string>
+    <string name="settings_title">ਸੈਟਿੰਗਾਂ</string>
+    <string name="add_transaction">ਜੋੜੋ</string>
+    <string name="empty_transactions_title">ਹਾਲੇ ਕੋਈ ਲੈਣ-ਦੇਣ ਨਹੀਂ</string>
+    <string name="empty_transactions_message">ਆਪਣੀ ਪਹਿਲੀ ਆਮਦਨ ਜਾਂ ਖ਼ਰਚਾ ਦਰਜ ਕਰਨ ਲਈ ਜੋੜੋ ’ਤੇ ਟੈਪ ਕਰੋ।</string>
+    <string name="budget">ਬਜਟ</string>
+    <string name="period_daily">ਰੋਜ਼ਾਨਾ</string>
+    <string name="period_weekly">ਹਫ਼ਤਾਵਾਰੀ</string>
+    <string name="period_monthly">ਮਾਸਿਕ</string>
+    <string name="period_custom">ਕਸਟਮ</string>
+    <string name="error_amount_required">ਸਿਫ਼ਰ ਤੋਂ ਵੱਧ ਰਕਮ ਦਰਜ ਕਰੋ</string>
+    <string name="action_save">ਸੇਵ ਕਰੋ</string>
+    <string name="action_edit">ਸੋਧੋ</string>
+    <string name="theme_skyline_tagline">ਸਾਫ਼ ਨੀਲਾ ਸਕੂਨ</string>
+    <string name="theme_dawn_tagline">ਅੱਧੀ ਰਾਤ ਤੋਂ ਬਾਅਦ ਦੀ ਸਵੇਰ</string>
+    <string name="theme_horizon_tagline">ਡੂੰਘਾ ਸਮੁੰਦਰੀ ਨੀਲਾ-ਹਰਾ</string>
+    <string name="theme_pinkwalk_tagline">ਲੈਵੈਂਡਰ ਕੈਂਡੀ ਦੀ ਸੈਰ</string>
+    <string name="theme_rosewood_tagline">ਨੀਲੀਆਂ ਰਾਤਾਂ, ਗੁਲਾਬੀ ਚਮਕ</string>
+    <string name="theme_wallpaper_tagline">ਤੁਹਾਡੇ ਵਾਲਪੇਪਰ ਦੇ ਰੰਗਾਂ ਤੋਂ</string>
+    <string name="theme_wallpaper">ਵਾਲਪੇਪਰ</string>
+    <string name="spotlight_dismiss">ਬੰਦ ਕਰਨ ਲਈ ਕਿਤੇ ਵੀ ਟੈਪ ਕਰੋ</string>
+    <string name="select_date_range">ਤਾਰੀਖ਼ਾਂ ਦੀ ਸੀਮਾ ਚੁਣੋ</string>
+</resources>

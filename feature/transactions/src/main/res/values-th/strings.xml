@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="category">หมวดหมู่</string>
+    <string name="date">วันที่</string>
+    <string name="time">เวลา</string>
+    <string name="note">บันทึก</string>
+    <string name="no_note">ไม่มีบันทึก</string>
+    <string name="search">ค้นหา</string>
+    <string name="close_search">ปิดการค้นหา</string>
+    <string name="clear_search">ล้างการค้นหา</string>
+    <string name="search_hint">ค้นหาบันทึกหรือหมวดหมู่</string>
+    <string name="filter_all">ทั้งหมด</string>
+    <string name="empty_filtered_title">ไม่มีรายการที่ตรงกัน</string>
+    <string name="empty_filtered_message">ลองค้นหาหรือใช้ตัวกรองอื่น</string>
+    <string name="transaction_details">รายการ</string>
+    <string name="transaction_not_found_title">ไม่พบรายการ</string>
+    <string name="transaction_not_found_message">อาจถูกลบไปแล้ว</string>
+    <string name="delete_transaction_title">ลบรายการหรือไม่?</string>
+    <string name="delete_transaction_message">รายการนี้จะถูกลบถาวร</string>
+    <string name="new_transaction">รายการใหม่</string>
+    <string name="edit_transaction">แก้ไขรายการ</string>
+    <string name="note_optional">บันทึก (ไม่บังคับ)</string>
+    <string name="new_category_short">ใหม่</string>
+    <string name="save_transaction">บันทึกรายการ</string>
+    <string name="save_changes">บันทึกการเปลี่ยนแปลง</string>
+    <string name="keypad_backspace">ลบถอยหลัง กดค้างเพื่อล้างทั้งหมด</string>
+    <string name="keypad_decimal">ทศนิยม</string>
+    <string name="error_amount_too_large">จำนวนเงินมากเกินไป</string>
+    <string name="error_category_required">เลือกหมวดหมู่</string>
+    <string name="activity_title">กิจกรรม</string>
+    <string name="activity_subtitle">ทุกบาทถูกบันทึก</string>
+    <string name="deleted_transaction">ลบรายการแล้ว</string>
+    <string name="undo">เลิกทำ</string>
+    <string name="swipe_hint">ปัดรายการไปทางซ้ายเพื่อลบ</string>
+    <string name="spent_label">ใช้ไป</string>
+    <string name="earned_label">ได้รับ</string>
+</resources>

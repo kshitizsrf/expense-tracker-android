@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="category">Categoría</string>
+    <string name="date">Fecha</string>
+    <string name="time">Hora</string>
+    <string name="note">Nota</string>
+    <string name="no_note">Sin nota</string>
+    <string name="search">Buscar</string>
+    <string name="close_search">Cerrar búsqueda</string>
+    <string name="clear_search">Borrar búsqueda</string>
+    <string name="search_hint">Buscar notas o categorías</string>
+    <string name="filter_all">Todo</string>
+    <string name="empty_filtered_title">No hay movimientos que coincidan</string>
+    <string name="empty_filtered_message">Prueba otra búsqueda o filtro.</string>
+    <string name="transaction_details">Movimiento</string>
+    <string name="transaction_not_found_title">Movimiento no encontrado</string>
+    <string name="transaction_not_found_message">Puede que se haya eliminado.</string>
+    <string name="delete_transaction_title">¿Eliminar movimiento?</string>
+    <string name="delete_transaction_message">Este movimiento se eliminará para siempre.</string>
+    <string name="new_transaction">Nuevo movimiento</string>
+    <string name="edit_transaction">Editar movimiento</string>
+    <string name="note_optional">Nota (opcional)</string>
+    <string name="new_category_short">Nueva</string>
+    <string name="save_transaction">Guardar movimiento</string>
+    <string name="save_changes">Guardar cambios</string>
+    <string name="keypad_backspace">Retroceso. Mantén pulsado para borrar todo</string>
+    <string name="keypad_decimal">Decimal</string>
+    <string name="error_amount_too_large">Ese importe es demasiado grande</string>
+    <string name="error_category_required">Elige una categoría</string>
+    <string name="activity_title">Actividad</string>
+    <string name="activity_subtitle">Cada céntimo, registrado</string>
+    <string name="deleted_transaction">Movimiento eliminado</string>
+    <string name="undo">Deshacer</string>
+    <string name="swipe_hint">Desliza un registro a la izquierda para eliminarlo</string>
+    <string name="spent_label">Gastado</string>
+    <string name="earned_label">Ingresado</string>
+</resources>

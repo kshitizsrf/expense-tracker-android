@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="category">Catégorie</string>
+    <string name="date">Date</string>
+    <string name="time">Heure</string>
+    <string name="note">Note</string>
+    <string name="no_note">Pas de note</string>
+    <string name="search">Rechercher</string>
+    <string name="close_search">Fermer la recherche</string>
+    <string name="clear_search">Effacer la recherche</string>
+    <string name="search_hint">Rechercher des notes ou catégories</string>
+    <string name="filter_all">Tout</string>
+    <string name="empty_filtered_title">Aucune opération correspondante</string>
+    <string name="empty_filtered_message">Essayez une autre recherche ou un autre filtre.</string>
+    <string name="transaction_details">Opération</string>
+    <string name="transaction_not_found_title">Opération introuvable</string>
+    <string name="transaction_not_found_message">Elle a peut-être été supprimée.</string>
+    <string name="delete_transaction_title">Supprimer l\'opération ?</string>
+    <string name="delete_transaction_message">Cette opération sera définitivement supprimée.</string>
+    <string name="new_transaction">Nouvelle opération</string>
+    <string name="edit_transaction">Modifier l\'opération</string>
+    <string name="note_optional">Note (facultatif)</string>
+    <string name="new_category_short">Nouvelle</string>
+    <string name="save_transaction">Enregistrer l\'opération</string>
+    <string name="save_changes">Enregistrer les modifications</string>
+    <string name="keypad_backspace">Retour arrière. Maintenez pour tout effacer</string>
+    <string name="keypad_decimal">Virgule</string>
+    <string name="error_amount_too_large">Ce montant est trop élevé</string>
+    <string name="error_category_required">Choisissez une catégorie</string>
+    <string name="activity_title">Activité</string>
+    <string name="activity_subtitle">Chaque centime compte</string>
+    <string name="deleted_transaction">Opération supprimée</string>
+    <string name="undo">Annuler</string>
+    <string name="swipe_hint">Balayez une opération vers la gauche pour la supprimer</string>
+    <string name="spent_label">Dépensé</string>
+    <string name="earned_label">Gagné</string>
+</resources>

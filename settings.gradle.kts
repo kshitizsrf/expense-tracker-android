@@ -26,6 +26,7 @@ enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 rootProject.name = "HisabKitab"
 
 include(":app")
+include(":baselineprofile")
 
 include(":core:common")
 include(":core:data")
@@ -34,11 +35,13 @@ include(":core:designsystem")
 include(":core:icons")
 include(":core:model")
 include(":core:notifications")
+include(":core:security")
 include(":core:ui")
 
 include(":feature:budget")
 include(":feature:categories")
 include(":feature:home")
+include(":feature:onboarding")
 include(":feature:settings")
 include(":feature:stats")
 include(":feature:transactions")

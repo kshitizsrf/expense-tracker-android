@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="budget_not_set">ঠিক করা হয়নি</string>
+    <string name="settings_appearance">চেহারা</string>
+    <string name="settings_money">টাকা</string>
+    <string name="settings_reminders">রিমাইন্ডার</string>
+    <string name="settings_data">আপনার ডেটা</string>
+    <string name="settings_about">সম্পর্কে</string>
+    <string name="theme">মোড</string>
+    <string name="theme_system">সিস্টেম</string>
+    <string name="theme_light">লাইট</string>
+    <string name="theme_dark">ডার্ক</string>
+    <string name="daily_reminder">দৈনিক রিমাইন্ডার</string>
+    <string name="daily_reminder_summary">সেদিন কিছু না লিখলে একটি হালকা খোঁচা</string>
+    <string name="reminder_time">রিমাইন্ডারের সময়</string>
+    <string name="notification_settings">বিজ্ঞপ্তি সেটিংস</string>
+    <string name="notification_settings_summary">হিসাব কিতাব কীভাবে আপনাকে জানাবে তা ঠিক করুন</string>
+    <string name="export_transactions">লেনদেন এক্সপোর্ট</string>
+    <string name="export_categories">বিভাগ এক্সপোর্ট</string>
+    <string name="export_summary">CSV ফাইল হিসেবে সেভ করুন, যেকোনো স্প্রেডশিট অ্যাপে খোলা যায়</string>
+    <string name="export_failed">এক্সপোর্ট ব্যর্থ হয়েছে। আবার চেষ্টা করুন।</string>
+    <string name="version">সংস্করণ %1$s</string>
+    <string name="settings_title_big">সেটিংস</string>
+    <string name="settings_subtitle">নিজের মতো করে নিন</string>
+    <string name="settings_theme_gallery">থিম</string>
+    <string name="currency_setting">মুদ্রা</string>
+    <string name="made_with_love">সচেতন খরচের জন্য ♥ দিয়ে তৈরি</string>
+    <string name="settings_motion">অ্যানিমেশন ও স্টাইল</string>
+    <string name="settings_privacy">গোপনীয়তা ও নিরাপত্তা</string>
+    <string name="nav_style">নেভিগেশন বার</string>
+    <string name="nav_style_hint">নিচের বারে প্রতিটি স্টাইল চেষ্টা করুন</string>
+    <string name="nav_style_liquid">লিকুইড</string>
+    <string name="nav_style_bubble">বাবল</string>
+    <string name="nav_style_glow">গ্লো</string>
+    <string name="nav_style_expand">এক্সপ্যান্ড</string>
+    <string name="chart_animation">চার্ট অ্যানিমেশন</string>
+    <string name="chart_animation_hint">অন্তর্দৃষ্টিতে চার্ট কীভাবে বদলায়</string>
+    <string name="chart_fade">ফেড</string>
+    <string name="chart_slide">স্লাইড</string>
+    <string name="chart_flip">3D ফ্লিপ</string>
+    <string name="chart_zoom">জুম</string>
+    <string name="preview_home">হোম</string>
+    <string name="app_lock">অ্যাপ লক</string>
+    <string name="app_lock_summary">খুলতে আঙুলের ছাপ, মুখ বা স্ক্রিন লক লাগবে</string>
+    <string name="app_lock_unavailable">এটি ব্যবহার করতে ফোনে স্ক্রিন লক চালু করুন</string>
+    <string name="app_lock_confirm_title">অ্যাপ লক চালু করুন</string>
+    <string name="app_lock_confirm_subtitle">নিশ্চিত করুন যে এটি আপনি</string>
+    <string name="language_setting">ভাষা</string>
+    <plurals name="exported_transactions">
+        <item quantity="one">%dটি লেনদেন এক্সপোর্ট হয়েছে</item>
+        <item quantity="other">%dটি লেনদেন এক্সপোর্ট হয়েছে</item>
+    </plurals>
+    <plurals name="exported_categories">
+        <item quantity="one">%dটি বিভাগ এক্সপোর্ট হয়েছে</item>
+        <item quantity="other">%dটি বিভাগ এক্সপোর্ট হয়েছে</item>
+    </plurals>
+</resources>

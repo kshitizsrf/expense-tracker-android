@@ -5,14 +5,10 @@
     <string name="settings_reminders">Reminders</string>
     <string name="settings_data">Your data</string>
     <string name="settings_about">About</string>
-    <string name="theme">Theme</string>
+    <string name="theme">Mode</string>
     <string name="theme_system">System</string>
     <string name="theme_light">Light</string>
     <string name="theme_dark">Dark</string>
-    <string name="dynamic_color">Dynamic color</string>
-    <string name="dynamic_color_summary">Use colors from your wallpaper</string>
-    <string name="color_theme">Color theme</string>
-    <string name="currency">Currency</string>
     <string name="daily_reminder">Daily reminder</string>
     <string name="daily_reminder_summary">A nudge if you haven\'t logged anything that day</string>
     <string name="reminder_time">Reminder time</string>
@@ -31,4 +27,30 @@
         <item quantity="other">Exported %d categories</item>
     </plurals>
     <string name="version">Version %1$s</string>
+    <string name="settings_title_big">Settings</string>
+    <string name="settings_subtitle">Make it yours</string>
+    <string name="settings_theme_gallery">Theme</string>
+    <string name="currency_setting">Currency</string>
+    <string name="made_with_love">Made with ♥ for mindful spending</string>
+    <string name="settings_motion">Motion &amp; style</string>
+    <string name="settings_privacy">Privacy &amp; security</string>
+    <string name="nav_style">Navigation bar</string>
+    <string name="nav_style_hint">Try each style on the bar below</string>
+    <string name="nav_style_liquid">Liquid</string>
+    <string name="nav_style_bubble">Bubble</string>
+    <string name="nav_style_glow">Glow</string>
+    <string name="nav_style_expand">Expand</string>
+    <string name="chart_animation">Chart animation</string>
+    <string name="chart_animation_hint">How Insights switches between charts</string>
+    <string name="chart_fade">Fade</string>
+    <string name="chart_slide">Slide</string>
+    <string name="chart_flip">3D flip</string>
+    <string name="chart_zoom">Zoom</string>
+    <string name="preview_home">Home</string>
+    <string name="app_lock">App lock</string>
+    <string name="app_lock_summary">Require fingerprint, face or screen lock to open</string>
+    <string name="app_lock_unavailable">Set up a screen lock on your phone to use this</string>
+    <string name="app_lock_confirm_title">Turn on app lock</string>
+    <string name="app_lock_confirm_subtitle">Confirm it\'s you</string>
+    <string name="language_setting">Language</string>
 </resources>

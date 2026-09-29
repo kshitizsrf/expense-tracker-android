@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="category">Категория</string>
+    <string name="date">Дата</string>
+    <string name="time">Время</string>
+    <string name="note">Заметка</string>
+    <string name="no_note">Без заметки</string>
+    <string name="search">Поиск</string>
+    <string name="close_search">Закрыть поиск</string>
+    <string name="clear_search">Очистить поиск</string>
+    <string name="search_hint">Поиск по заметкам и категориям</string>
+    <string name="filter_all">Все</string>
+    <string name="empty_filtered_title">Ничего не найдено</string>
+    <string name="empty_filtered_message">Попробуйте другой запрос или фильтр.</string>
+    <string name="transaction_details">Операция</string>
+    <string name="transaction_not_found_title">Операция не найдена</string>
+    <string name="transaction_not_found_message">Возможно, она была удалена.</string>
+    <string name="delete_transaction_title">Удалить операцию?</string>
+    <string name="delete_transaction_message">Операция будет удалена навсегда.</string>
+    <string name="new_transaction">Новая операция</string>
+    <string name="edit_transaction">Изменить операцию</string>
+    <string name="note_optional">Заметка (необязательно)</string>
+    <string name="new_category_short">Новая</string>
+    <string name="save_transaction">Сохранить операцию</string>
+    <string name="save_changes">Сохранить изменения</string>
+    <string name="keypad_backspace">Стереть. Удерживайте, чтобы очистить всё</string>
+    <string name="keypad_decimal">Дробная часть</string>
+    <string name="error_amount_too_large">Слишком большая сумма</string>
+    <string name="error_category_required">Выберите категорию</string>
+    <string name="activity_title">Операции</string>
+    <string name="activity_subtitle">Каждая копейка на счету</string>
+    <string name="deleted_transaction">Операция удалена</string>
+    <string name="undo">Отменить</string>
+    <string name="swipe_hint">Смахните запись влево, чтобы удалить</string>
+    <string name="spent_label">Потрачено</string>
+    <string name="earned_label">Получено</string>
+</resources>

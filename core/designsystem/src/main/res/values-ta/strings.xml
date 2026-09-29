@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_transactions">செயல்பாடு</string>
+    <string name="nav_stats">பகுப்பாய்வு</string>
+    <string name="nav_categories">வகைகள்</string>
+    <string name="action_back">பின்செல்</string>
+    <string name="action_cancel">ரத்துசெய்</string>
+    <string name="action_close">மூடு</string>
+    <string name="action_delete">நீக்கு</string>
+    <string name="action_ok">சரி</string>
+    <string name="income">வருமானம்</string>
+    <string name="expense">செலவு</string>
+    <string name="expenses">செலவுகள்</string>
+    <string name="select_time">நேரத்தைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="settings_title">அமைப்புகள்</string>
+    <string name="add_transaction">சேர்</string>
+    <string name="empty_transactions_title">இன்னும் பரிவர்த்தனைகள் இல்லை</string>
+    <string name="empty_transactions_message">உங்கள் முதல் வருமானம் அல்லது செலவைப் பதிவுசெய்ய சேர் என்பதைத் தட்டவும்.</string>
+    <string name="budget">பட்ஜெட்</string>
+    <string name="period_daily">தினசரி</string>
+    <string name="period_weekly">வாராந்திர</string>
+    <string name="period_monthly">மாதாந்திர</string>
+    <string name="period_custom">தனிப்பயன்</string>
+    <string name="error_amount_required">பூஜ்ஜியத்தை விட அதிகமான தொகையை உள்ளிடவும்</string>
+    <string name="action_save">சேமி</string>
+    <string name="action_edit">திருத்து</string>
+    <string name="theme_skyline_tagline">தெளிவான நீல அமைதி</string>
+    <string name="theme_dawn_tagline">நள்ளிரவுக்குப் பின் விடியல்</string>
+    <string name="theme_horizon_tagline">ஆழ்கடல் நீலப்பச்சை</string>
+    <string name="theme_pinkwalk_tagline">லாவெண்டர் மிட்டாய் நடை</string>
+    <string name="theme_rosewood_tagline">நீல இரவுகள், ரோஜா ஒளி</string>
+    <string name="theme_wallpaper_tagline">உங்கள் வால்பேப்பர் வண்ணங்களில்</string>
+    <string name="theme_wallpaper">வால்பேப்பர்</string>
+    <string name="spotlight_dismiss">மூட எங்கேனும் தட்டவும்</string>
+    <string name="select_date_range">தேதி வரம்பைத் தேர்ந்தெடுக்கவும்</string>
+</resources>

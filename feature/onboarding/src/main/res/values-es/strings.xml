@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_welcome_title">Hisab Kitab</string>
+    <string name="onboarding_welcome_message">Tu dinero, bellamente organizado. Registra en segundos, mira a dónde va y gasta con confianza.</string>
+    <string name="onboarding_theme_title">Elige tu estilo</string>
+    <string name="onboarding_theme_message">Cinco temas exclusivos, cada uno con modo claro y oscuro. Puedes cambiarlo cuando quieras.</string>
+    <string name="onboarding_setup_title">Últimos detalles</string>
+    <string name="onboarding_setup_message">Elige tu moneda y dinos si quieres un recordatorio suave para anotar tu día.</string>
+    <string name="onboarding_currency">Moneda</string>
+    <string name="onboarding_reminder">Recordatorio diario</string>
+    <string name="onboarding_reminder_summary">Solo si no has anotado nada ese día</string>
+    <string name="onboarding_next">Siguiente</string>
+    <string name="onboarding_start">Empecemos</string>
+    <string name="onboarding_skip">Omitir</string>
+    <string name="onboarding_feature_fast">Teclado de calculadora para registrar rápido</string>
+    <string name="onboarding_feature_insights">Cinco formas de ver tus gastos</string>
+    <string name="onboarding_feature_private">Totalmente privado · todo se queda en tu teléfono</string>
+    <string name="mode_auto">Auto</string>
+    <string name="mode_light">☀  Claro</string>
+    <string name="mode_dark">☾  Oscuro</string>
+    <string name="onboarding_language_title">Elige tu idioma</string>
+    <string name="onboarding_language_message">Hisab Kitab habla tu idioma. Puedes cambiarlo en cualquier momento en Ajustes.</string>
+    <string name="onboarding_lock">Bloqueo de la app</string>
+    <string name="onboarding_lock_summary">Protege tus datos con huella o bloqueo de pantalla</string>
+    <string name="onboarding_lock_prompt">Activar bloqueo</string>
+    <string name="onboarding_lock_prompt_subtitle">Confirma que eres tú</string>
+</resources>

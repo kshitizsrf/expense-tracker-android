@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="budget_not_set">Belum ditetapkan</string>
+    <string name="settings_appearance">Tampilan</string>
+    <string name="settings_money">Uang</string>
+    <string name="settings_reminders">Pengingat</string>
+    <string name="settings_data">Data Anda</string>
+    <string name="settings_about">Tentang</string>
+    <string name="theme">Mode</string>
+    <string name="theme_system">Sistem</string>
+    <string name="theme_light">Terang</string>
+    <string name="theme_dark">Gelap</string>
+    <string name="daily_reminder">Pengingat harian</string>
+    <string name="daily_reminder_summary">Pengingat lembut jika Anda belum mencatat apa pun hari itu</string>
+    <string name="reminder_time">Waktu pengingat</string>
+    <string name="notification_settings">Setelan notifikasi</string>
+    <string name="notification_settings_summary">Atur cara Hisab Kitab memberi tahu Anda</string>
+    <string name="export_transactions">Ekspor transaksi</string>
+    <string name="export_categories">Ekspor kategori</string>
+    <string name="export_summary">Simpan sebagai file CSV yang bisa dibuka di aplikasi spreadsheet apa pun</string>
+    <string name="export_failed">Ekspor gagal. Coba lagi.</string>
+    <string name="version">Versi %1$s</string>
+    <string name="settings_title_big">Setelan</string>
+    <string name="settings_subtitle">Jadikan milik Anda</string>
+    <string name="settings_theme_gallery">Tema</string>
+    <string name="currency_setting">Mata uang</string>
+    <string name="made_with_love">Dibuat dengan ♥ untuk belanja yang bijak</string>
+    <string name="settings_motion">Gerakan &amp; gaya</string>
+    <string name="settings_privacy">Privasi &amp; keamanan</string>
+    <string name="nav_style">Bilah navigasi</string>
+    <string name="nav_style_hint">Coba setiap gaya di bilah bawah</string>
+    <string name="nav_style_liquid">Cair</string>
+    <string name="nav_style_bubble">Gelembung</string>
+    <string name="nav_style_glow">Berpendar</string>
+    <string name="nav_style_expand">Melebar</string>
+    <string name="chart_animation">Animasi grafik</string>
+    <string name="chart_animation_hint">Cara grafik berganti di Analisis</string>
+    <string name="chart_fade">Memudar</string>
+    <string name="chart_slide">Geser</string>
+    <string name="chart_flip">Putar 3D</string>
+    <string name="chart_zoom">Zoom</string>
+    <string name="preview_home">Beranda</string>
+    <string name="app_lock">Kunci aplikasi</string>
+    <string name="app_lock_summary">Minta sidik jari, wajah, atau kunci layar saat membuka</string>
+    <string name="app_lock_unavailable">Atur kunci layar di ponsel Anda untuk menggunakannya</string>
+    <string name="app_lock_confirm_title">Aktifkan kunci aplikasi</string>
+    <string name="app_lock_confirm_subtitle">Konfirmasi bahwa ini Anda</string>
+    <string name="language_setting">Bahasa</string>
+    <plurals name="exported_transactions">
+        <item quantity="other">%d transaksi diekspor</item>
+    </plurals>
+    <plurals name="exported_categories">
+        <item quantity="other">%d kategori diekspor</item>
+    </plurals>
+</resources>

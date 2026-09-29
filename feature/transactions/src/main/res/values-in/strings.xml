@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="category">Kategori</string>
+    <string name="date">Tanggal</string>
+    <string name="time">Waktu</string>
+    <string name="note">Catatan</string>
+    <string name="no_note">Tanpa catatan</string>
+    <string name="search">Cari</string>
+    <string name="close_search">Tutup pencarian</string>
+    <string name="clear_search">Hapus pencarian</string>
+    <string name="search_hint">Cari catatan atau kategori</string>
+    <string name="filter_all">Semua</string>
+    <string name="empty_filtered_title">Tidak ada transaksi yang cocok</string>
+    <string name="empty_filtered_message">Coba pencarian atau filter lain.</string>
+    <string name="transaction_details">Transaksi</string>
+    <string name="transaction_not_found_title">Transaksi tidak ditemukan</string>
+    <string name="transaction_not_found_message">Mungkin sudah dihapus.</string>
+    <string name="delete_transaction_title">Hapus transaksi?</string>
+    <string name="delete_transaction_message">Transaksi ini akan dihapus permanen.</string>
+    <string name="new_transaction">Transaksi baru</string>
+    <string name="edit_transaction">Edit transaksi</string>
+    <string name="note_optional">Catatan (opsional)</string>
+    <string name="new_category_short">Baru</string>
+    <string name="save_transaction">Simpan transaksi</string>
+    <string name="save_changes">Simpan perubahan</string>
+    <string name="keypad_backspace">Hapus mundur. Tahan untuk menghapus semua</string>
+    <string name="keypad_decimal">Desimal</string>
+    <string name="error_amount_too_large">Jumlah ini terlalu besar</string>
+    <string name="error_category_required">Pilih kategori</string>
+    <string name="activity_title">Aktivitas</string>
+    <string name="activity_subtitle">Setiap rupiah tercatat</string>
+    <string name="deleted_transaction">Transaksi dihapus</string>
+    <string name="undo">Urungkan</string>
+    <string name="swipe_hint">Geser entri ke kiri untuk menghapus</string>
+    <string name="spent_label">Keluar</string>
+    <string name="earned_label">Masuk</string>
+</resources>

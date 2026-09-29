@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_change">Đổi</string>
+    <string name="budget_intro">Lên kế hoạch tiền bạc. Ngân sách chỉ tính chi tiêu.</string>
+    <string name="budget_amount">Số tiền ngân sách</string>
+    <string name="budget_period">Chu kỳ</string>
+    <string name="budget_explain_daily">Bắt đầu lại mỗi ngày.</string>
+    <string name="budget_explain_weekly">Bắt đầu lại vào đầu mỗi tuần.</string>
+    <string name="budget_explain_monthly">Bắt đầu lại vào ngày 1 mỗi tháng.</string>
+    <string name="budget_explain_custom">Chỉ cho những ngày bạn chọn.</string>
+    <string name="budget_current_period">Chu kỳ hiện tại: %1$s</string>
+    <string name="choose_dates">Chọn ngày</string>
+    <string name="save_budget">Lưu ngân sách</string>
+    <string name="remove_budget">Xóa ngân sách</string>
+    <string name="error_dates_required">Chọn ngày cho ngân sách</string>
+</resources>

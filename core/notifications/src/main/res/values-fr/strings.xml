@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="reminder_channel_name">Rappel quotidien</string>
+    <string name="reminder_channel_description">Vous rappelle d\'enregistrer vos dépenses si vous n\'avez rien ajouté aujourd\'hui.</string>
+    <string name="reminder_title">Avez-vous noté vos dépenses du jour ?</string>
+    <string name="reminder_text">Cela ne prend que quelques secondes et garde votre budget à jour.</string>
+</resources>

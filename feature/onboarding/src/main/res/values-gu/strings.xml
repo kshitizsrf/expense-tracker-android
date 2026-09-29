@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_welcome_title">હિસાબ કિતાબ</string>
+    <string name="onboarding_welcome_message">તમારા પૈસા, સુંદર રીતે ગોઠવેલા. સેકન્ડોમાં નોંધો, પૈસા ક્યાં જાય છે તે જુઓ અને વિશ્વાસથી ખર્ચ કરો.</string>
+    <string name="onboarding_theme_title">તમારી સ્ટાઇલ પસંદ કરો</string>
+    <string name="onboarding_theme_message">પાંચ ખાસ થીમ, દરેકમાં લાઇટ અને ડાર્ક મૂડ. ગમે ત્યારે બદલી શકો છો.</string>
+    <string name="onboarding_setup_title">છેલ્લા સ્પર્શ</string>
+    <string name="onboarding_setup_message">તમારું ચલણ પસંદ કરો અને દિવસ નોંધવા માટે હળવું રિમાઇન્ડર જોઈએ છે કે નહીં તે જણાવો.</string>
+    <string name="onboarding_currency">ચલણ</string>
+    <string name="onboarding_reminder">દૈનિક રિમાઇન્ડર</string>
+    <string name="onboarding_reminder_summary">ફક્ત તે દિવસે કંઈ ન નોંધ્યું હોય તો</string>
+    <string name="onboarding_next">આગળ</string>
+    <string name="onboarding_start">ચાલો શરૂ કરીએ</string>
+    <string name="onboarding_skip">છોડો</string>
+    <string name="onboarding_feature_fast">ઝડપી એન્ટ્રી માટે કેલ્ક્યુલેટર કીપેડ</string>
+    <string name="onboarding_feature_insights">ખર્ચ જોવાની પાંચ રીતો</string>
+    <string name="onboarding_feature_private">સંપૂર્ણ ખાનગી · બધું તમારા ફોનમાં જ રહે છે</string>
+    <string name="mode_auto">ઑટો</string>
+    <string name="mode_light">☀  લાઇટ</string>
+    <string name="mode_dark">☾  ડાર્ક</string>
+    <string name="onboarding_language_title">તમારી ભાષા પસંદ કરો</string>
+    <string name="onboarding_language_message">હિસાબ કિતાબ તમારી ભાષા બોલે છે. સેટિંગ્સમાં ગમે ત્યારે બદલી શકો છો.</string>
+    <string name="onboarding_lock">ઍપ લૉક</string>
+    <string name="onboarding_lock_summary">ફિંગરપ્રિન્ટ કે સ્ક્રીન લૉકથી તમારી માહિતી ખાનગી રાખો</string>
+    <string name="onboarding_lock_prompt">ઍપ લૉક ચાલુ કરો</string>
+    <string name="onboarding_lock_prompt_subtitle">ખાતરી કરો કે આ તમે જ છો</string>
+</resources>

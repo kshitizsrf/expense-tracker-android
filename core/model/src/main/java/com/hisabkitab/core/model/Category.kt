@@ -12,6 +12,8 @@ data class Category(
     val iconKey: String,
     val color: Int,
     val type: TransactionType,
+    /** Set for the built-in categories so their names can be shown in the user's language. */
+    val defaultKey: String? = null,
 )
 
 /** Colors offered in the category editor; mid-tones that read well on light and dark surfaces. */

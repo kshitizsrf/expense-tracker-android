@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="reminder_channel_name">দৈনিক সোঁৱৰণী</string>
+    <string name="reminder_channel_description">আজি কোনো লেনদেন যোগ কৰা নাই যদি মনত পেলাই দিয়ে।</string>
+    <string name="reminder_title">আজিৰ খৰচ লিখিলে নে?</string>
+    <string name="reminder_text">মাত্ৰ কেইছেকেণ্ডমান লাগে আৰু আপোনাৰ বাজেট সঠিক থাকে।</string>
+</resources>

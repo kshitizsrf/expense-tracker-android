@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_transactions">Activité</string>
+    <string name="nav_stats">Analyses</string>
+    <string name="nav_categories">Catégories</string>
+    <string name="action_back">Retour</string>
+    <string name="action_cancel">Annuler</string>
+    <string name="action_close">Fermer</string>
+    <string name="action_delete">Supprimer</string>
+    <string name="action_ok">OK</string>
+    <string name="income">Revenu</string>
+    <string name="expense">Dépense</string>
+    <string name="expenses">Dépenses</string>
+    <string name="select_time">Choisir l\'heure</string>
+    <string name="settings_title">Paramètres</string>
+    <string name="add_transaction">Ajouter</string>
+    <string name="empty_transactions_title">Aucune opération pour l\'instant</string>
+    <string name="empty_transactions_message">Touchez Ajouter pour enregistrer votre premier revenu ou votre première dépense.</string>
+    <string name="budget">Budget</string>
+    <string name="period_daily">Quotidien</string>
+    <string name="period_weekly">Hebdomadaire</string>
+    <string name="period_monthly">Mensuel</string>
+    <string name="period_custom">Personnalisé</string>
+    <string name="error_amount_required">Saisissez un montant supérieur à zéro</string>
+    <string name="action_save">Enregistrer</string>
+    <string name="action_edit">Modifier</string>
+    <string name="theme_skyline_tagline">Calme bleu cristallin</string>
+    <string name="theme_dawn_tagline">L\'aube après minuit</string>
+    <string name="theme_horizon_tagline">Turquoise des grands fonds</string>
+    <string name="theme_pinkwalk_tagline">Balade lavande et bonbon</string>
+    <string name="theme_rosewood_tagline">Nuits indigo, lueur rose</string>
+    <string name="theme_wallpaper_tagline">Aux couleurs de votre fond d\'écran</string>
+    <string name="theme_wallpaper">Fond d\'écran</string>
+    <string name="spotlight_dismiss">Touchez n\'importe où pour fermer</string>
+    <string name="select_date_range">Choisissez une période</string>
+</resources>

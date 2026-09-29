@@ -54,6 +54,8 @@ class FakeTransactionRepository(
 
     override fun observeTransaction(id: Long) = transactions.map { list -> list.firstOrNull { it.id == id } }
 
+    override fun observeTransactionsIn(range: DateRange) = transactions
+
     override suspend fun getTransaction(id: Long) = transactions.value.firstOrNull { it.id == id }
 
     override suspend fun getAll() = transactions.value

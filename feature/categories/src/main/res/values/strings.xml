@@ -1,5 +1,4 @@
 <resources>
-    <string name="action_save">Save</string>
     <string name="new_category">New category</string>
     <string name="edit_category">Edit category</string>
     <string name="category_name">Name</string>
@@ -15,4 +14,9 @@
         <item quantity="one">This also deletes %d transaction in this category. This can\'t be undone.</item>
         <item quantity="other">This also deletes %d transactions in this category. This can\'t be undone.</item>
     </plurals>
+    <string name="categories_title">Categories</string>
+    <string name="categories_subtitle">Your money, neatly sorted</string>
+    <string name="this_month_total">%1$s this month</string>
+    <string name="nothing_this_month">Nothing this month</string>
+    <string name="preview">Preview</string>
 </resources>

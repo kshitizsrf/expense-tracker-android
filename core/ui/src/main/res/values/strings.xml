@@ -1,4 +1,39 @@
 <resources>
     <string name="today">Today</string>
     <string name="yesterday">Yesterday</string>
+    <string name="greeting_morning">Good morning</string>
+    <string name="greeting_afternoon">Good afternoon</string>
+    <string name="greeting_evening">Good evening</string>
+    <string name="greeting_night">Burning the midnight oil?</string>
+    <string name="currency">Currency</string>
+    <string name="language">Language</string>
+    <string name="language_system">System default</string>
+    <string name="language_system_summary">Use the phone\'s language</string>
+    <string name="language_search">Search languages</string>
+    <!-- Built-in category names -->
+    <string name="category_food">Food</string>
+    <string name="category_shopping">Shopping</string>
+    <string name="category_transportation">Transportation</string>
+    <string name="category_bills">Bills</string>
+    <string name="category_home">Home</string>
+    <string name="category_health">Health</string>
+    <string name="category_entertainment">Entertainment</string>
+    <string name="category_education">Education</string>
+    <string name="category_travel">Travel</string>
+    <string name="category_clothing">Clothing</string>
+    <string name="category_fruits">Fruits</string>
+    <string name="category_vegetables">Vegetables</string>
+    <string name="category_car">Car</string>
+    <string name="category_insurance">Insurance</string>
+    <string name="category_gift">Gift</string>
+    <string name="category_sport">Sport</string>
+    <string name="category_book">Book</string>
+    <string name="category_pet">Pet</string>
+    <string name="category_wine">Wine</string>
+    <string name="category_salary">Salary</string>
+    <string name="category_rental">Rental</string>
+    <string name="category_sale">Sale</string>
+    <string name="category_awards">Awards</string>
+    <string name="category_investment">Investment</string>
+    <string name="category_other">Other</string>
 </resources>

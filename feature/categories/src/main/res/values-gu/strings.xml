@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="new_category">નવી શ્રેણી</string>
+    <string name="edit_category">શ્રેણીમાં ફેરફાર કરો</string>
+    <string name="category_name">નામ</string>
+    <string name="color">રંગ</string>
+    <string name="icon">આઇકન</string>
+    <string name="categories_empty_title">કોઈ શ્રેણી નથી</string>
+    <string name="categories_empty_message">નવી બનાવવા + પર ટૅપ કરો.</string>
+    <string name="error_name_required">નામ દાખલ કરો</string>
+    <string name="error_name_taken">આ નામની શ્રેણી પહેલેથી છે</string>
+    <string name="delete_category_title">“%1$s” કાઢી નાખવી?</string>
+    <string name="delete_category_message_empty">આ શ્રેણી કાયમ માટે કાઢી નખાશે.</string>
+    <string name="categories_title">શ્રેણીઓ</string>
+    <string name="categories_subtitle">તમારા પૈસા, વ્યવસ્થિત રીતે</string>
+    <string name="this_month_total">આ મહિને %1$s</string>
+    <string name="nothing_this_month">આ મહિને કંઈ નથી</string>
+    <string name="preview">પૂર્વાવલોકન</string>
+    <plurals name="delete_category_message">
+        <item quantity="one">આથી આ શ્રેણીનો %d વ્યવહાર પણ કાઢી નખાશે. આ પાછું લાવી શકાશે નહીં.</item>
+        <item quantity="other">આથી આ શ્રેણીના %d વ્યવહારો પણ કાઢી નખાશે. આ પાછું લાવી શકાશે નહીં.</item>
+    </plurals>
+</resources>

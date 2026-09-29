@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_welcome_title">Hisab Kitab</string>
+    <string name="onboarding_welcome_message">Votre argent, joliment organisé. Notez en quelques secondes, voyez où il va et dépensez sereinement.</string>
+    <string name="onboarding_theme_title">Choisissez votre style</string>
+    <string name="onboarding_theme_message">Cinq thèmes signature, chacun en mode clair et sombre. Modifiable à tout moment.</string>
+    <string name="onboarding_setup_title">Touches finales</string>
+    <string name="onboarding_setup_message">Choisissez votre devise et dites-nous si vous voulez un petit rappel pour noter votre journée.</string>
+    <string name="onboarding_currency">Devise</string>
+    <string name="onboarding_reminder">Rappel quotidien</string>
+    <string name="onboarding_reminder_summary">Seulement si vous n\'avez rien noté ce jour-là</string>
+    <string name="onboarding_next">Suivant</string>
+    <string name="onboarding_start">C\'est parti</string>
+    <string name="onboarding_skip">Passer</string>
+    <string name="onboarding_feature_fast">Pavé calculatrice pour une saisie rapide</string>
+    <string name="onboarding_feature_insights">Cinq façons de voir vos dépenses</string>
+    <string name="onboarding_feature_private">Totalement privé · tout reste sur votre téléphone</string>
+    <string name="mode_auto">Auto</string>
+    <string name="mode_light">☀  Clair</string>
+    <string name="mode_dark">☾  Sombre</string>
+    <string name="onboarding_language_title">Choisissez votre langue</string>
+    <string name="onboarding_language_message">Hisab Kitab parle votre langue. Vous pouvez la changer à tout moment dans les Paramètres.</string>
+    <string name="onboarding_lock">Verrouillage de l\'app</string>
+    <string name="onboarding_lock_summary">Protégez vos données par empreinte ou verrouillage de l\'écran</string>
+    <string name="onboarding_lock_prompt">Activer le verrouillage</string>
+    <string name="onboarding_lock_prompt_subtitle">Confirmez que c\'est bien vous</string>
+</resources>

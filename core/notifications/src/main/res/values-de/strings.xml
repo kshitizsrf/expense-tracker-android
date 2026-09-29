@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="reminder_channel_name">Tägliche Erinnerung</string>
+    <string name="reminder_channel_description">Erinnert dich, falls du heute noch nichts eingetragen hast.</string>
+    <string name="reminder_title">Heutige Ausgaben notiert?</string>
+    <string name="reminder_text">Dauert nur ein paar Sekunden und hält dein Budget aktuell.</string>
+</resources>

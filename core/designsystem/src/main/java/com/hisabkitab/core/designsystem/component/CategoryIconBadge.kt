@@ -8,7 +8,9 @@ import androidx.compose.material3.Icon
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.lerp
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
@@ -31,7 +33,14 @@ fun CategoryIconBadge(
     Box(
         modifier = modifier
             .size(size)
-            .background(color = if (filled) tint else tint.copy(alpha = 0.16f), shape = CircleShape),
+            .background(
+                brush = if (filled) {
+                    Brush.linearGradient(listOf(lerp(tint, Color.White, 0.18f), lerp(tint, Color.Black, 0.18f)))
+                } else {
+                    Brush.linearGradient(listOf(tint.copy(alpha = 0.22f), tint.copy(alpha = 0.10f)))
+                },
+                shape = CircleShape,
+            ),
         contentAlignment = Alignment.Center,
     ) {
         Icon(

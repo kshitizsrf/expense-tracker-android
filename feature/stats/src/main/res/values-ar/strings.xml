@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="insights_title">التحليلات</string>
+    <string name="insights_subtitle">أين تذهب أموالك</string>
+    <string name="period_this_month">هذا الشهر</string>
+    <string name="period_last_month">الشهر الماضي</string>
+    <string name="period_last_3_months">3 أشهر</string>
+    <string name="period_this_year">هذا العام</string>
+    <string name="chart_donut">حلقة</string>
+    <string name="chart_bars">الترتيب</string>
+    <string name="chart_trend">الاتجاه</string>
+    <string name="chart_calendar">التقويم</string>
+    <string name="chart_cash_flow">التدفق</string>
+    <string name="chart_donut_title">الحصة حسب الفئة</string>
+    <string name="chart_bars_title">أعلى الفئات</string>
+    <string name="chart_trend_title_daily">يومًا بيوم</string>
+    <string name="chart_trend_title_monthly">شهرًا بشهر</string>
+    <string name="chart_calendar_title">تقويم الإنفاق</string>
+    <string name="chart_calendar_title_income">تقويم الدخل</string>
+    <string name="chart_cash_flow_title">التدفق النقدي · آخر 6 أشهر</string>
+    <string name="chart_hint_donut">اضغط على جزء للتركيز عليه</string>
+    <string name="chart_hint_trend">اضغط مطولًا واسحب للاستكشاف</string>
+    <string name="chart_hint_calendar">اضغط على يوم لرؤية إجماليه</string>
+    <string name="chart_hint_cash_flow">اضغط على شهر للتفاصيل</string>
+    <string name="total_spent">إجمالي الإنفاق</string>
+    <string name="total_earned">إجمالي الدخل</string>
+    <string name="stat_total">الإجمالي</string>
+    <string name="stat_daily_average">المتوسط اليومي</string>
+    <string name="stat_entries">السجلات</string>
+    <string name="stat_vs_previous">مقارنة بالسابق</string>
+    <string name="stat_no_comparison">جديد</string>
+    <string name="percent_of_total">%1$d%% من الإجمالي</string>
+    <string name="heatmap_less">أقل</string>
+    <string name="heatmap_more">أكثر</string>
+    <string name="nothing_on_day">لا شيء مسجّل</string>
+    <string name="net">الصافي</string>
+    <string name="stats_empty_title">لا شيء لعرضه بعد</string>
+    <string name="stats_empty_message">ستُحيي معاملات هذه الفترة هذه الرسوم البيانية.</string>
+    <string name="stat_previous_period">الفترة السابقة</string>
+    <plurals name="transaction_count">
+        <item quantity="zero">%d معاملة</item>
+        <item quantity="one">معاملة واحدة (%d)</item>
+        <item quantity="two">معاملتان (%d)</item>
+        <item quantity="few">%d معاملات</item>
+        <item quantity="many">%d معاملة</item>
+        <item quantity="other">%d معاملة</item>
+    </plurals>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="reminder_channel_name">Pengingat harian</string>
+    <string name="reminder_channel_description">Mengingatkan Anda jika hari ini belum menambahkan transaksi.</string>
+    <string name="reminder_title">Sudah catat pengeluaran hari ini?</string>
+    <string name="reminder_text">Hanya butuh beberapa detik dan menjaga anggaran Anda tetap akurat.</string>
+</resources>

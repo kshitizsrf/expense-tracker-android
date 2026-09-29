@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="reminder_channel_name">రోజువారీ రిమైండర్</string>
+    <string name="reminder_channel_description">ఈ రోజు ఏ లావాదేవీ జోడించకపోతే గుర్తు చేస్తుంది.</string>
+    <string name="reminder_title">ఈ రోజు ఖర్చు రాశారా?</string>
+    <string name="reminder_text">కొన్ని సెకన్లే పడుతుంది, మీ బడ్జెట్ ఖచ్చితంగా ఉంటుంది.</string>
+</resources>

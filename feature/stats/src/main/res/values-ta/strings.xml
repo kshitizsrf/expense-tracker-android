@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="insights_title">பகுப்பாய்வு</string>
+    <string name="insights_subtitle">உங்கள் பணம் எங்கே போகிறது</string>
+    <string name="period_this_month">இந்த மாதம்</string>
+    <string name="period_last_month">கடந்த மாதம்</string>
+    <string name="period_last_3_months">3 மாதங்கள்</string>
+    <string name="period_this_year">இந்த ஆண்டு</string>
+    <string name="chart_donut">டோனட்</string>
+    <string name="chart_bars">தரவரிசை</string>
+    <string name="chart_trend">போக்கு</string>
+    <string name="chart_calendar">நாட்காட்டி</string>
+    <string name="chart_cash_flow">பணப்புழக்கம்</string>
+    <string name="chart_donut_title">வகை வாரியான பங்கு</string>
+    <string name="chart_bars_title">முன்னணி வகைகள்</string>
+    <string name="chart_trend_title_daily">நாள்தோறும்</string>
+    <string name="chart_trend_title_monthly">மாதந்தோறும்</string>
+    <string name="chart_calendar_title">செலவு நாட்காட்டி</string>
+    <string name="chart_calendar_title_income">வருமான நாட்காட்டி</string>
+    <string name="chart_cash_flow_title">பணப்புழக்கம் · கடந்த 6 மாதங்கள்</string>
+    <string name="chart_hint_donut">ஒரு பகுதியில் கவனம் செலுத்தத் தட்டவும்</string>
+    <string name="chart_hint_trend">தொட்டு இழுத்துப் பாருங்கள்</string>
+    <string name="chart_hint_calendar">ஒரு நாளின் மொத்தத்தைக் காணத் தட்டவும்</string>
+    <string name="chart_hint_cash_flow">விவரங்களுக்கு ஒரு மாதத்தைத் தட்டவும்</string>
+    <string name="total_spent">மொத்தச் செலவு</string>
+    <string name="total_earned">மொத்த வருமானம்</string>
+    <string name="stat_total">மொத்தம்</string>
+    <string name="stat_daily_average">தினசரி சராசரி</string>
+    <string name="stat_entries">பதிவுகள்</string>
+    <string name="stat_vs_previous">முந்தையதுடன் ஒப்பிட</string>
+    <string name="stat_no_comparison">புதியது</string>
+    <string name="percent_of_total">மொத்தத்தில் %1$d%%</string>
+    <string name="heatmap_less">குறைவு</string>
+    <string name="heatmap_more">அதிகம்</string>
+    <string name="nothing_on_day">எதுவும் பதிவாகவில்லை</string>
+    <string name="net">நிகரம்</string>
+    <string name="stats_empty_title">இன்னும் காட்ட எதுவும் இல்லை</string>
+    <string name="stats_empty_message">இந்தக் காலத்தின் பரிவர்த்தனைகள் இந்த விளக்கப்படங்களை ஒளிரச் செய்யும்.</string>
+    <string name="stat_previous_period">முந்தைய காலம்</string>
+    <plurals name="transaction_count">
+        <item quantity="one">%d பரிவர்த்தனை</item>
+        <item quantity="other">%d பரிவர்த்தனைகள்</item>
+    </plurals>
+</resources>

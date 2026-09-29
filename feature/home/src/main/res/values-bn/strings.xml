@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="balance">এই মাসের ব্যালান্স</string>
+    <string name="previous_month">আগের মাস</string>
+    <string name="next_month">পরের মাস</string>
+    <string name="back_to_this_month">এই মাসে ফিরতে ট্যাপ করুন</string>
+    <string name="recent_transactions">সাম্প্রতিক কার্যকলাপ</string>
+    <string name="see_all">সব দেখুন</string>
+    <string name="daily_spending">দৈনিক খরচ</string>
+    <string name="budget_set_title">বাজেট ঠিক করুন</string>
+    <string name="budget_set_message">জানুন প্রতিদিন ঠিক কত খরচ করতে পারেন।</string>
+    <string name="budget_title_daily">আজকের বাজেট</string>
+    <string name="budget_title_weekly">এই সপ্তাহের বাজেট</string>
+    <string name="budget_title_monthly">এই মাসের বাজেট</string>
+    <string name="budget_title_custom">বাজেট</string>
+    <string name="budget_spent_of">%2$s-এর মধ্যে %1$s খরচ</string>
+    <string name="budget_over_by">%1$s বেশি</string>
+    <string name="budget_safe_today">আজ নিশ্চিন্তে খরচ করুন</string>
+    <string name="budget_ended">এই বাজেটের সময়কাল শেষ। নতুন ঠিক করতে ট্যাপ করুন।</string>
+    <string name="budget_not_started">%1$s থেকে শুরু</string>
+    <string name="insight_top_category">সবচেয়ে বেশি খরচ</string>
+    <string name="insight_daily_average">দৈনিক গড়</string>
+    <string name="insight_biggest">সবচেয়ে বড় খরচ</string>
+    <string name="insight_count">এন্ট্রি</string>
+    <string name="empty_home_title">নতুন শুরু</string>
+    <string name="empty_home_message">আপনার প্রথম আয় বা খরচ লিখতে + বোতামে ট্যাপ করুন।</string>
+    <string name="spotlight_saved">সঞ্চয়</string>
+    <plurals name="budget_days_left">
+        <item quantity="one">%d দিন বাকি</item>
+        <item quantity="other">%d দিন বাকি</item>
+    </plurals>
+</resources>

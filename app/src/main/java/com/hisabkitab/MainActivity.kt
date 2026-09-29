@@ -5,13 +5,14 @@ import android.content.pm.PackageManager
 import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
-import androidx.activity.ComponentActivity
+import android.view.WindowManager
 import androidx.activity.SystemBarStyle
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
@@ -26,19 +27,24 @@ import androidx.core.content.ContextCompat
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.repeatOnLifecycle
 import com.hisabkitab.core.common.money.MoneyFormatter
 import com.hisabkitab.core.designsystem.theme.HisabKitabTheme
 import com.hisabkitab.core.model.ThemeMode
+import com.hisabkitab.core.security.AppLockManager
 import com.hisabkitab.core.ui.LocalMoneyFormatter
 import com.hisabkitab.ui.HisabKitabApp
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
 @AndroidEntryPoint
-class MainActivity : ComponentActivity() {
+class MainActivity : AppCompatActivity() {
 
     private val viewModel: MainActivityViewModel by viewModels()
+
+    @Inject lateinit var appLockManager: AppLockManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         val splashScreen = installSplashScreen()
@@ -65,39 +71,48 @@ class MainActivity : ComponentActivity() {
                     ThemeMode.DARK -> true
                 }
 
-                // Match status/navigation bar icon colors to the app theme, not just the system's.
+                // The top of every theme's backdrop is deep, so status bar icons are always light;
+                // navigation bar icons follow the app's light/dark mode.
                 DisposableEffect(darkTheme) {
                     enableEdgeToEdge(
-                        statusBarStyle = SystemBarStyle.auto(Color.TRANSPARENT, Color.TRANSPARENT) { darkTheme },
-                        navigationBarStyle = SystemBarStyle.auto(LIGHT_SCRIM, DARK_SCRIM) { darkTheme },
+                        statusBarStyle = SystemBarStyle.dark(Color.TRANSPARENT),
+                        navigationBarStyle = SystemBarStyle.auto(Color.TRANSPARENT, Color.TRANSPARENT) { darkTheme },
                     )
                     onDispose {}
                 }
 
                 val moneyFormatter = remember(preferences.currencyCode) { MoneyFormatter(preferences.currencyCode) }
 
-                HisabKitabTheme(
-                    darkTheme = darkTheme,
-                    palette = preferences.palette,
-                    useDynamicColor = preferences.useDynamicColor,
-                ) {
+                // With app lock on, hide the app's contents in Recents and screenshots.
+                DisposableEffect(preferences.appLockEnabled) {
+                    if (preferences.appLockEnabled) {
+                        window.addFlags(WindowManager.LayoutParams.FLAG_SECURE)
+                    } else {
+                        window.clearFlags(WindowManager.LayoutParams.FLAG_SECURE)
+                    }
+                    onDispose {}
+                }
+
+                val isLocked by appLockManager.isLocked.collectAsStateWithLifecycle()
+
+                HisabKitabTheme(theme = preferences.theme, darkTheme = darkTheme) {
                     CompositionLocalProvider(LocalMoneyFormatter provides moneyFormatter) {
-                        HisabKitabApp()
+                        HisabKitabApp(
+                            preferences = preferences,
+                            isLocked = isLocked && preferences.hasCompletedOnboarding,
+                            onUnlocked = appLockManager::unlock,
+                        )
                     }
                 }
 
                 NotificationPermissionRequest(
-                    shouldRequest = preferences.reminder.enabled && !preferences.hasRequestedNotificationPermission,
+                    shouldRequest = preferences.hasCompletedOnboarding &&
+                        preferences.reminder.enabled &&
+                        !preferences.hasRequestedNotificationPermission,
                     onRequested = viewModel::onNotificationPermissionRequested,
                 )
             }
         }
-    }
-
-    private companion object {
-        // Default scrims used by enableEdgeToEdge for 3-button navigation.
-        val LIGHT_SCRIM = Color.argb(0xe6, 0xFF, 0xFF, 0xFF)
-        val DARK_SCRIM = Color.argb(0x80, 0x1b, 0x1b, 0x1b)
     }
 }
 

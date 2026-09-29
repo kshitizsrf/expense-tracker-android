@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_welcome_title">हिसाब किताब</string>
+    <string name="onboarding_welcome_message">आपका पैसा, ख़ूबसूरती से व्यवस्थित। सेकंडों में लिखें, देखें पैसा कहाँ जाता है, और भरोसे से ख़र्च करें।</string>
+    <string name="onboarding_theme_title">अपना अंदाज़ चुनें</string>
+    <string name="onboarding_theme_message">पाँच ख़ास थीम, हर एक में लाइट और डार्क मूड। आप इसे कभी भी बदल सकते हैं।</string>
+    <string name="onboarding_setup_title">आख़िरी बातें</string>
+    <string name="onboarding_setup_message">अपनी मुद्रा चुनें और बताएँ कि क्या आप रोज़ाना हल्का-सा रिमाइंडर चाहते हैं।</string>
+    <string name="onboarding_currency">मुद्रा</string>
+    <string name="onboarding_reminder">दैनिक रिमाइंडर</string>
+    <string name="onboarding_reminder_summary">तभी, जब उस दिन कुछ न लिखा हो</string>
+    <string name="onboarding_next">आगे</string>
+    <string name="onboarding_start">चलिए शुरू करें</string>
+    <string name="onboarding_skip">छोड़ें</string>
+    <string name="onboarding_feature_fast">झटपट एंट्री के लिए कैलकुलेटर कीपैड</string>
+    <string name="onboarding_feature_insights">ख़र्च देखने के पाँच तरीक़े</string>
+    <string name="onboarding_feature_private">पूरी तरह निजी · सब कुछ आपके फ़ोन में ही रहता है</string>
+    <string name="mode_auto">ऑटो</string>
+    <string name="mode_light">☀  लाइट</string>
+    <string name="mode_dark">☾  डार्क</string>
+    <string name="onboarding_language_title">अपनी भाषा चुनें</string>
+    <string name="onboarding_language_message">हिसाब किताब आपकी भाषा बोलता है। आप इसे सेटिंग्स में कभी भी बदल सकते हैं।</string>
+    <string name="onboarding_lock">ऐप लॉक</string>
+    <string name="onboarding_lock_summary">फ़िंगरप्रिंट या स्क्रीन लॉक से अपनी जानकारी निजी रखें</string>
+    <string name="onboarding_lock_prompt">ऐप लॉक चालू करें</string>
+    <string name="onboarding_lock_prompt_subtitle">पुष्टि करें कि यह आप हैं</string>
+</resources>

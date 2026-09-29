@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">हिसाब किताब</string>
+    <string name="nav_transactions">गतिविधि</string>
+    <string name="nav_stats">इनसाइट्स</string>
+    <string name="nav_categories">श्रेणियाँ</string>
+    <string name="action_back">वापस</string>
+    <string name="action_cancel">रद्द करें</string>
+    <string name="action_close">बंद करें</string>
+    <string name="action_delete">हटाएँ</string>
+    <string name="action_ok">ठीक है</string>
+    <string name="income">आय</string>
+    <string name="expense">ख़र्च</string>
+    <string name="expenses">ख़र्च</string>
+    <string name="select_time">समय चुनें</string>
+    <string name="settings_title">सेटिंग्स</string>
+    <string name="add_transaction">जोड़ें</string>
+    <string name="empty_transactions_title">अभी कोई लेन-देन नहीं</string>
+    <string name="empty_transactions_message">अपनी पहली आय या ख़र्च दर्ज करने के लिए जोड़ें पर टैप करें।</string>
+    <string name="budget">बजट</string>
+    <string name="period_daily">रोज़ाना</string>
+    <string name="period_weekly">साप्ताहिक</string>
+    <string name="period_monthly">मासिक</string>
+    <string name="period_custom">कस्टम</string>
+    <string name="error_amount_required">शून्य से अधिक राशि दर्ज करें</string>
+    <string name="action_save">सेव करें</string>
+    <string name="action_edit">बदलें</string>
+    <string name="theme_skyline_tagline">साफ़ नीला सुकून</string>
+    <string name="theme_dawn_tagline">आधी रात के बाद की सुबह</string>
+    <string name="theme_horizon_tagline">गहरा समुद्री हरा-नीला</string>
+    <string name="theme_pinkwalk_tagline">लैवेंडर कैंडी की सैर</string>
+    <string name="theme_rosewood_tagline">नीली रातें, गुलाबी चमक</string>
+    <string name="theme_wallpaper_tagline">आपके वॉलपेपर के रंगों से</string>
+    <string name="theme_wallpaper">वॉलपेपर</string>
+    <string name="spotlight_dismiss">बंद करने के लिए कहीं भी टैप करें</string>
+    <string name="select_date_range">तारीख़ों की सीमा चुनें</string>
+</resources>

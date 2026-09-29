@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="today">ਅੱਜ</string>
+    <string name="yesterday">ਕੱਲ੍ਹ</string>
+    <string name="greeting_morning">ਸ਼ੁਭ ਸਵੇਰ</string>
+    <string name="greeting_afternoon">ਸ਼ੁਭ ਦੁਪਹਿਰ</string>
+    <string name="greeting_evening">ਸ਼ੁਭ ਸ਼ਾਮ</string>
+    <string name="greeting_night">ਦੇਰ ਰਾਤ ਤੱਕ ਜਾਗ ਰਹੇ ਹੋ?</string>
+    <string name="currency">ਮੁਦਰਾ</string>
+    <string name="language">ਭਾਸ਼ਾ</string>
+    <string name="language_system">ਸਿਸਟਮ ਡਿਫ਼ੌਲਟ</string>
+    <string name="language_system_summary">ਫ਼ੋਨ ਦੀ ਭਾਸ਼ਾ ਵਰਤੋ</string>
+    <string name="language_search">ਭਾਸ਼ਾਵਾਂ ਖੋਜੋ</string>
+    <string name="category_food">ਖਾਣਾ</string>
+    <string name="category_shopping">ਖ਼ਰੀਦਦਾਰੀ</string>
+    <string name="category_transportation">ਆਵਾਜਾਈ</string>
+    <string name="category_bills">ਬਿੱਲ</string>
+    <string name="category_home">ਘਰ</string>
+    <string name="category_health">ਸਿਹਤ</string>
+    <string name="category_entertainment">ਮਨੋਰੰਜਨ</string>
+    <string name="category_education">ਸਿੱਖਿਆ</string>
+    <string name="category_travel">ਯਾਤਰਾ</string>
+    <string name="category_clothing">ਕੱਪੜੇ</string>
+    <string name="category_fruits">ਫਲ</string>
+    <string name="category_vegetables">ਸਬਜ਼ੀਆਂ</string>
+    <string name="category_car">ਗੱਡੀ</string>
+    <string name="category_insurance">ਬੀਮਾ</string>
+    <string name="category_gift">ਤੋਹਫ਼ਾ</string>
+    <string name="category_sport">ਖੇਡਾਂ</string>
+    <string name="category_book">ਕਿਤਾਬਾਂ</string>
+    <string name="category_pet">ਪਾਲਤੂ ਜਾਨਵਰ</string>
+    <string name="category_wine">ਪੀਣ ਵਾਲੇ ਪਦਾਰਥ</string>
+    <string name="category_salary">ਤਨਖ਼ਾਹ</string>
+    <string name="category_rental">ਕਿਰਾਇਆ</string>
+    <string name="category_sale">ਵਿਕਰੀ</string>
+    <string name="category_awards">ਇਨਾਮ</string>
+    <string name="category_investment">ਨਿਵੇਸ਼</string>
+    <string name="category_other">ਹੋਰ</string>
+</resources>

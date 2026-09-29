@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_welcome_title">Hisab Kitab</string>
+    <string name="onboarding_welcome_message">أموالك منظمة بشكل جميل. سجّل في ثوانٍ، واعرف أين تذهب، وأنفق بثقة.</string>
+    <string name="onboarding_theme_title">اختر أسلوبك</string>
+    <string name="onboarding_theme_message">خمسة سمات مميزة، لكل منها وضع فاتح وداكن. يمكنك التغيير في أي وقت.</string>
+    <string name="onboarding_setup_title">اللمسات الأخيرة</string>
+    <string name="onboarding_setup_message">اختر عملتك وأخبرنا إن كنت تريد تذكيرًا لطيفًا لتسجيل يومك.</string>
+    <string name="onboarding_currency">العملة</string>
+    <string name="onboarding_reminder">تذكير يومي</string>
+    <string name="onboarding_reminder_summary">فقط إذا لم تسجّل شيئًا في ذلك اليوم</string>
+    <string name="onboarding_next">التالي</string>
+    <string name="onboarding_start">لنبدأ</string>
+    <string name="onboarding_skip">تخطٍّ</string>
+    <string name="onboarding_feature_fast">لوحة حاسبة لإدخال سريع</string>
+    <string name="onboarding_feature_insights">خمس طرق لرؤية إنفاقك</string>
+    <string name="onboarding_feature_private">خصوصية تامة · كل شيء يبقى على هاتفك</string>
+    <string name="mode_auto">تلقائي</string>
+    <string name="mode_light">☀  فاتح</string>
+    <string name="mode_dark">☾  داكن</string>
+    <string name="onboarding_language_title">اختر لغتك</string>
+    <string name="onboarding_language_message">يتحدث Hisab Kitab بلغتك. يمكنك تغييرها في أي وقت من الإعدادات.</string>
+    <string name="onboarding_lock">قفل التطبيق</string>
+    <string name="onboarding_lock_summary">احمِ بياناتك بالبصمة أو قفل الشاشة</string>
+    <string name="onboarding_lock_prompt">تفعيل قفل التطبيق</string>
+    <string name="onboarding_lock_prompt_subtitle">أكّد أنك أنت</string>
+</resources>

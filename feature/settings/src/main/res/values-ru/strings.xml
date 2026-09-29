@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="budget_not_set">Не задан</string>
+    <string name="settings_appearance">Оформление</string>
+    <string name="settings_money">Деньги</string>
+    <string name="settings_reminders">Напоминания</string>
+    <string name="settings_data">Ваши данные</string>
+    <string name="settings_about">О приложении</string>
+    <string name="theme">Режим</string>
+    <string name="theme_system">Системный</string>
+    <string name="theme_light">Светлый</string>
+    <string name="theme_dark">Тёмный</string>
+    <string name="daily_reminder">Ежедневное напоминание</string>
+    <string name="daily_reminder_summary">Мягкое напоминание, если в этот день ничего не записано</string>
+    <string name="reminder_time">Время напоминания</string>
+    <string name="notification_settings">Настройки уведомлений</string>
+    <string name="notification_settings_summary">Как Hisab Kitab будет вас уведомлять</string>
+    <string name="export_transactions">Экспорт операций</string>
+    <string name="export_categories">Экспорт категорий</string>
+    <string name="export_summary">Сохранить в CSV-файл, который откроется в любой таблице</string>
+    <string name="export_failed">Не удалось экспортировать. Попробуйте ещё раз.</string>
+    <string name="version">Версия %1$s</string>
+    <string name="settings_title_big">Настройки</string>
+    <string name="settings_subtitle">Сделайте под себя</string>
+    <string name="settings_theme_gallery">Тема</string>
+    <string name="currency_setting">Валюта</string>
+    <string name="made_with_love">Сделано с ♥ для осознанных трат</string>
+    <string name="settings_motion">Анимация и стиль</string>
+    <string name="settings_privacy">Конфиденциальность и безопасность</string>
+    <string name="nav_style">Панель навигации</string>
+    <string name="nav_style_hint">Попробуйте каждый стиль на нижней панели</string>
+    <string name="nav_style_liquid">Жидкость</string>
+    <string name="nav_style_bubble">Пузырь</string>
+    <string name="nav_style_glow">Свечение</string>
+    <string name="nav_style_expand">Раскрытие</string>
+    <string name="chart_animation">Анимация графиков</string>
+    <string name="chart_animation_hint">Как сменяются графики в Аналитике</string>
+    <string name="chart_fade">Затухание</string>
+    <string name="chart_slide">Сдвиг</string>
+    <string name="chart_flip">3D-поворот</string>
+    <string name="chart_zoom">Масштаб</string>
+    <string name="preview_home">Главная</string>
+    <string name="app_lock">Блокировка приложения</string>
+    <string name="app_lock_summary">Запрашивать отпечаток, лицо или блокировку экрана при открытии</string>
+    <string name="app_lock_unavailable">Чтобы использовать, настройте блокировку экрана на телефоне</string>
+    <string name="app_lock_confirm_title">Включить блокировку</string>
+    <string name="app_lock_confirm_subtitle">Подтвердите, что это вы</string>
+    <string name="language_setting">Язык</string>
+    <plurals name="exported_transactions">
+        <item quantity="one">Экспортирована %d операция</item>
+        <item quantity="few">Экспортировано %d операции</item>
+        <item quantity="many">Экспортировано %d операций</item>
+        <item quantity="other">Экспортировано %d операции</item>
+    </plurals>
+    <plurals name="exported_categories">
+        <item quantity="one">Экспортирована %d категория</item>
+        <item quantity="few">Экспортировано %d категории</item>
+        <item quantity="many">Экспортировано %d категорий</item>
+        <item quantity="other">Экспортировано %d категории</item>
+    </plurals>
+</resources>

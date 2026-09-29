@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_change">Cambiar</string>
+    <string name="budget_intro">Planifica tu dinero. Los presupuestos solo cuentan gastos.</string>
+    <string name="budget_amount">Importe del presupuesto</string>
+    <string name="budget_period">Periodo</string>
+    <string name="budget_explain_daily">Se reinicia cada día.</string>
+    <string name="budget_explain_weekly">Se reinicia al comienzo de cada semana.</string>
+    <string name="budget_explain_monthly">Se reinicia el día 1 de cada mes.</string>
+    <string name="budget_explain_custom">Solo para las fechas que elijas.</string>
+    <string name="budget_current_period">Periodo actual: %1$s</string>
+    <string name="choose_dates">Elegir fechas</string>
+    <string name="save_budget">Guardar presupuesto</string>
+    <string name="remove_budget">Quitar presupuesto</string>
+    <string name="error_dates_required">Elige las fechas de tu presupuesto</string>
+</resources>

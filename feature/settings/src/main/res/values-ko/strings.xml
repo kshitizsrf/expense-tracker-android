@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="budget_not_set">설정 안 됨</string>
+    <string name="settings_appearance">화면</string>
+    <string name="settings_money">돈</string>
+    <string name="settings_reminders">알림</string>
+    <string name="settings_data">내 데이터</string>
+    <string name="settings_about">정보</string>
+    <string name="theme">모드</string>
+    <string name="theme_system">시스템</string>
+    <string name="theme_light">라이트</string>
+    <string name="theme_dark">다크</string>
+    <string name="daily_reminder">매일 알림</string>
+    <string name="daily_reminder_summary">그날 기록이 없으면 부드럽게 알려 드려요</string>
+    <string name="reminder_time">알림 시간</string>
+    <string name="notification_settings">알림 설정</string>
+    <string name="notification_settings_summary">Hisab Kitab의 알림 방식을 관리하세요</string>
+    <string name="export_transactions">내역 내보내기</string>
+    <string name="export_categories">카테고리 내보내기</string>
+    <string name="export_summary">모든 스프레드시트 앱에서 열 수 있는 CSV 파일로 저장</string>
+    <string name="export_failed">내보내기에 실패했어요. 다시 시도하세요.</string>
+    <string name="version">버전 %1$s</string>
+    <string name="settings_title_big">설정</string>
+    <string name="settings_subtitle">나만의 스타일로</string>
+    <string name="settings_theme_gallery">테마</string>
+    <string name="currency_setting">통화</string>
+    <string name="made_with_love">현명한 소비를 위해 ♥을 담아 만들었어요</string>
+    <string name="settings_motion">모션 및 스타일</string>
+    <string name="settings_privacy">개인 정보 및 보안</string>
+    <string name="nav_style">내비게이션 바</string>
+    <string name="nav_style_hint">아래 바에서 각 스타일을 사용해 보세요</string>
+    <string name="nav_style_liquid">리퀴드</string>
+    <string name="nav_style_bubble">버블</string>
+    <string name="nav_style_glow">글로우</string>
+    <string name="nav_style_expand">확장</string>
+    <string name="chart_animation">차트 애니메이션</string>
+    <string name="chart_animation_hint">분석 화면에서 차트가 바뀌는 방식</string>
+    <string name="chart_fade">페이드</string>
+    <string name="chart_slide">슬라이드</string>
+    <string name="chart_flip">3D 플립</string>
+    <string name="chart_zoom">줌</string>
+    <string name="preview_home">홈</string>
+    <string name="app_lock">앱 잠금</string>
+    <string name="app_lock_summary">열 때 지문, 얼굴 또는 화면 잠금 필요</string>
+    <string name="app_lock_unavailable">사용하려면 휴대전화에 화면 잠금을 설정하세요</string>
+    <string name="app_lock_confirm_title">앱 잠금 켜기</string>
+    <string name="app_lock_confirm_subtitle">본인인지 확인하세요</string>
+    <string name="language_setting">언어</string>
+    <plurals name="exported_transactions">
+        <item quantity="other">내역 %d건을 내보냈어요</item>
+    </plurals>
+    <plurals name="exported_categories">
+        <item quantity="other">카테고리 %d개를 내보냈어요</item>
+    </plurals>
+</resources>

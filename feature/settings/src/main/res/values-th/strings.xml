@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="budget_not_set">ยังไม่ตั้ง</string>
+    <string name="settings_appearance">รูปลักษณ์</string>
+    <string name="settings_money">เงิน</string>
+    <string name="settings_reminders">การเตือน</string>
+    <string name="settings_data">ข้อมูลของคุณ</string>
+    <string name="settings_about">เกี่ยวกับ</string>
+    <string name="theme">โหมด</string>
+    <string name="theme_system">ระบบ</string>
+    <string name="theme_light">สว่าง</string>
+    <string name="theme_dark">มืด</string>
+    <string name="daily_reminder">การเตือนรายวัน</string>
+    <string name="daily_reminder_summary">เตือนเบา ๆ หากวันนั้นยังไม่ได้บันทึก</string>
+    <string name="reminder_time">เวลาเตือน</string>
+    <string name="notification_settings">การตั้งค่าการแจ้งเตือน</string>
+    <string name="notification_settings_summary">จัดการวิธีที่ Hisab Kitab แจ้งเตือนคุณ</string>
+    <string name="export_transactions">ส่งออกรายการ</string>
+    <string name="export_categories">ส่งออกหมวดหมู่</string>
+    <string name="export_summary">บันทึกเป็นไฟล์ CSV ที่เปิดได้ในทุกแอปสเปรดชีต</string>
+    <string name="export_failed">ส่งออกไม่สำเร็จ ลองอีกครั้ง</string>
+    <string name="version">เวอร์ชัน %1$s</string>
+    <string name="settings_title_big">การตั้งค่า</string>
+    <string name="settings_subtitle">ปรับให้เป็นแบบคุณ</string>
+    <string name="settings_theme_gallery">ธีม</string>
+    <string name="currency_setting">สกุลเงิน</string>
+    <string name="made_with_love">สร้างด้วย ♥ เพื่อการใช้จ่ายอย่างมีสติ</string>
+    <string name="settings_motion">การเคลื่อนไหวและสไตล์</string>
+    <string name="settings_privacy">ความเป็นส่วนตัวและความปลอดภัย</string>
+    <string name="nav_style">แถบนำทาง</string>
+    <string name="nav_style_hint">ลองแต่ละสไตล์บนแถบด้านล่าง</string>
+    <string name="nav_style_liquid">ลิควิด</string>
+    <string name="nav_style_bubble">ฟองอากาศ</string>
+    <string name="nav_style_glow">เรืองแสง</string>
+    <string name="nav_style_expand">ขยาย</string>
+    <string name="chart_animation">แอนิเมชันกราฟ</string>
+    <string name="chart_animation_hint">วิธีที่กราฟเปลี่ยนในหน้าวิเคราะห์</string>
+    <string name="chart_fade">จางหาย</string>
+    <string name="chart_slide">เลื่อน</string>
+    <string name="chart_flip">พลิก 3D</string>
+    <string name="chart_zoom">ซูม</string>
+    <string name="preview_home">หน้าหลัก</string>
+    <string name="app_lock">ล็อกแอป</string>
+    <string name="app_lock_summary">ต้องใช้ลายนิ้วมือ ใบหน้า หรือการล็อกหน้าจอเมื่อเปิด</string>
+    <string name="app_lock_unavailable">ตั้งค่าการล็อกหน้าจอในโทรศัพท์เพื่อใช้ฟีเจอร์นี้</string>
+    <string name="app_lock_confirm_title">เปิดล็อกแอป</string>
+    <string name="app_lock_confirm_subtitle">ยืนยันว่าเป็นคุณ</string>
+    <string name="language_setting">ภาษา</string>
+    <plurals name="exported_transactions">
+        <item quantity="other">ส่งออก %d รายการแล้ว</item>
+    </plurals>
+    <plurals name="exported_categories">
+        <item quantity="other">ส่งออก %d หมวดหมู่แล้ว</item>
+    </plurals>
+</resources>

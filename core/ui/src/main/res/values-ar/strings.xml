@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="today">اليوم</string>
+    <string name="yesterday">أمس</string>
+    <string name="greeting_morning">صباح الخير</string>
+    <string name="greeting_afternoon">طاب يومك</string>
+    <string name="greeting_evening">مساء الخير</string>
+    <string name="greeting_night">ما زلت مستيقظًا؟</string>
+    <string name="currency">العملة</string>
+    <string name="language">اللغة</string>
+    <string name="language_system">لغة النظام</string>
+    <string name="language_system_summary">استخدام لغة الهاتف</string>
+    <string name="language_search">ابحث عن لغة</string>
+    <string name="category_food">طعام</string>
+    <string name="category_shopping">تسوق</string>
+    <string name="category_transportation">مواصلات</string>
+    <string name="category_bills">فواتير</string>
+    <string name="category_home">المنزل</string>
+    <string name="category_health">صحة</string>
+    <string name="category_entertainment">ترفيه</string>
+    <string name="category_education">تعليم</string>
+    <string name="category_travel">سفر</string>
+    <string name="category_clothing">ملابس</string>
+    <string name="category_fruits">فواكه</string>
+    <string name="category_vegetables">خضروات</string>
+    <string name="category_car">سيارة</string>
+    <string name="category_insurance">تأمين</string>
+    <string name="category_gift">هدايا</string>
+    <string name="category_sport">رياضة</string>
+    <string name="category_book">كتب</string>
+    <string name="category_pet">حيوانات أليفة</string>
+    <string name="category_wine">مشروبات</string>
+    <string name="category_salary">راتب</string>
+    <string name="category_rental">إيجار</string>
+    <string name="category_sale">مبيعات</string>
+    <string name="category_awards">مكافآت</string>
+    <string name="category_investment">استثمار</string>
+    <string name="category_other">أخرى</string>
+</resources>

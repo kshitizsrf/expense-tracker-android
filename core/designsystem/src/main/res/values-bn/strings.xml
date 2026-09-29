@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_transactions">কার্যকলাপ</string>
+    <string name="nav_stats">অন্তর্দৃষ্টি</string>
+    <string name="nav_categories">বিভাগ</string>
+    <string name="action_back">ফিরে যান</string>
+    <string name="action_cancel">বাতিল</string>
+    <string name="action_close">বন্ধ করুন</string>
+    <string name="action_delete">মুছুন</string>
+    <string name="action_ok">ঠিক আছে</string>
+    <string name="income">আয়</string>
+    <string name="expense">খরচ</string>
+    <string name="expenses">খরচ</string>
+    <string name="select_time">সময় বেছে নিন</string>
+    <string name="settings_title">সেটিংস</string>
+    <string name="add_transaction">যোগ করুন</string>
+    <string name="empty_transactions_title">এখনও কোনো লেনদেন নেই</string>
+    <string name="empty_transactions_message">আপনার প্রথম আয় বা খরচ লিখতে যোগ করুন-এ ট্যাপ করুন।</string>
+    <string name="budget">বাজেট</string>
+    <string name="period_daily">দৈনিক</string>
+    <string name="period_weekly">সাপ্তাহিক</string>
+    <string name="period_monthly">মাসিক</string>
+    <string name="period_custom">কাস্টম</string>
+    <string name="error_amount_required">শূন্যের বেশি পরিমাণ লিখুন</string>
+    <string name="action_save">সেভ করুন</string>
+    <string name="action_edit">সম্পাদনা</string>
+    <string name="theme_skyline_tagline">পরিষ্কার নীল প্রশান্তি</string>
+    <string name="theme_dawn_tagline">মধ্যরাতের পরে ভোর</string>
+    <string name="theme_horizon_tagline">গভীর সমুদ্রের সবুজাভ নীল</string>
+    <string name="theme_pinkwalk_tagline">ল্যাভেন্ডার ক্যান্ডির পথচলা</string>
+    <string name="theme_rosewood_tagline">নীল রাত, গোলাপি আভা</string>
+    <string name="theme_wallpaper_tagline">আপনার ওয়ালপেপারের রঙে</string>
+    <string name="theme_wallpaper">ওয়ালপেপার</string>
+    <string name="spotlight_dismiss">বন্ধ করতে যেকোনো জায়গায় ট্যাপ করুন</string>
+    <string name="select_date_range">তারিখের পরিসর বেছে নিন</string>
+</resources>

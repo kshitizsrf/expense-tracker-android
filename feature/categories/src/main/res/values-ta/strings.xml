@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="new_category">புதிய வகை</string>
+    <string name="edit_category">வகையைத் திருத்து</string>
+    <string name="category_name">பெயர்</string>
+    <string name="color">நிறம்</string>
+    <string name="icon">ஐகான்</string>
+    <string name="categories_empty_title">வகைகள் இல்லை</string>
+    <string name="categories_empty_message">புதியதை உருவாக்க + தட்டவும்.</string>
+    <string name="error_name_required">பெயரை உள்ளிடவும்</string>
+    <string name="error_name_taken">இந்தப் பெயரில் ஏற்கனவே ஒரு வகை உள்ளது</string>
+    <string name="delete_category_title">“%1$s” நீக்கவா?</string>
+    <string name="delete_category_message_empty">இந்த வகை நிரந்தரமாக நீக்கப்படும்.</string>
+    <string name="categories_title">வகைகள்</string>
+    <string name="categories_subtitle">உங்கள் பணம், நேர்த்தியாக</string>
+    <string name="this_month_total">இந்த மாதம் %1$s</string>
+    <string name="nothing_this_month">இந்த மாதம் எதுவும் இல்லை</string>
+    <string name="preview">முன்னோட்டம்</string>
+    <plurals name="delete_category_message">
+        <item quantity="one">இதனால் இந்த வகையின் %d பரிவர்த்தனையும் நீக்கப்படும். இதைச் செயல்தவிர்க்க முடியாது.</item>
+        <item quantity="other">இதனால் இந்த வகையின் %d பரிவர்த்தனைகளும் நீக்கப்படும். இதைச் செயல்தவிர்க்க முடியாது.</item>
+    </plurals>
+</resources>

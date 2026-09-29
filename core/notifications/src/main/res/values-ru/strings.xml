@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="reminder_channel_name">Ежедневное напоминание</string>
+    <string name="reminder_channel_description">Напоминает, если сегодня вы ещё ничего не добавили.</string>
+    <string name="reminder_title">Записали сегодняшние траты?</string>
+    <string name="reminder_text">Это займёт пару секунд и сохранит бюджет точным.</string>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="budget_not_set">Non impostato</string>
+    <string name="settings_appearance">Aspetto</string>
+    <string name="settings_money">Denaro</string>
+    <string name="settings_reminders">Promemoria</string>
+    <string name="settings_data">I tuoi dati</string>
+    <string name="settings_about">Informazioni</string>
+    <string name="theme">Modalità</string>
+    <string name="theme_system">Sistema</string>
+    <string name="theme_light">Chiaro</string>
+    <string name="theme_dark">Scuro</string>
+    <string name="daily_reminder">Promemoria giornaliero</string>
+    <string name="daily_reminder_summary">Un piccolo avviso se quel giorno non hai registrato nulla</string>
+    <string name="reminder_time">Ora del promemoria</string>
+    <string name="notification_settings">Impostazioni notifiche</string>
+    <string name="notification_settings_summary">Gestisci come Hisab Kitab ti avvisa</string>
+    <string name="export_transactions">Esporta movimenti</string>
+    <string name="export_categories">Esporta categorie</string>
+    <string name="export_summary">Salva come file CSV apribile con qualsiasi foglio di calcolo</string>
+    <string name="export_failed">Esportazione non riuscita. Riprova.</string>
+    <string name="version">Versione %1$s</string>
+    <string name="settings_title_big">Impostazioni</string>
+    <string name="settings_subtitle">Rendila tua</string>
+    <string name="settings_theme_gallery">Tema</string>
+    <string name="currency_setting">Valuta</string>
+    <string name="made_with_love">Fatto con ♥ per spendere con consapevolezza</string>
+    <string name="settings_motion">Movimento e stile</string>
+    <string name="settings_privacy">Privacy e sicurezza</string>
+    <string name="nav_style">Barra di navigazione</string>
+    <string name="nav_style_hint">Prova ogni stile sulla barra in basso</string>
+    <string name="nav_style_liquid">Liquido</string>
+    <string name="nav_style_bubble">Bolla</string>
+    <string name="nav_style_glow">Bagliore</string>
+    <string name="nav_style_expand">Espandi</string>
+    <string name="chart_animation">Animazione grafici</string>
+    <string name="chart_animation_hint">Come cambiano i grafici in Analisi</string>
+    <string name="chart_fade">Dissolvenza</string>
+    <string name="chart_slide">Scorrimento</string>
+    <string name="chart_flip">Rotazione 3D</string>
+    <string name="chart_zoom">Zoom</string>
+    <string name="preview_home">Home</string>
+    <string name="app_lock">Blocco app</string>
+    <string name="app_lock_summary">Richiedi impronta, volto o blocco schermo all\'apertura</string>
+    <string name="app_lock_unavailable">Imposta un blocco schermo sul telefono per usarlo</string>
+    <string name="app_lock_confirm_title">Attiva blocco app</string>
+    <string name="app_lock_confirm_subtitle">Conferma che sei tu</string>
+    <string name="language_setting">Lingua</string>
+    <plurals name="exported_transactions">
+        <item quantity="one">%d movimento esportato</item>
+        <item quantity="many">%d movimenti esportati</item>
+        <item quantity="other">%d movimenti esportati</item>
+    </plurals>
+    <plurals name="exported_categories">
+        <item quantity="one">%d categoria esportata</item>
+        <item quantity="many">%d categorie esportate</item>
+        <item quantity="other">%d categorie esportate</item>
+    </plurals>
+</resources>

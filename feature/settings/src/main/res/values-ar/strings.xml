@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="budget_not_set">غير محددة</string>
+    <string name="settings_appearance">المظهر</string>
+    <string name="settings_money">المال</string>
+    <string name="settings_reminders">التذكيرات</string>
+    <string name="settings_data">بياناتك</string>
+    <string name="settings_about">حول</string>
+    <string name="theme">الوضع</string>
+    <string name="theme_system">النظام</string>
+    <string name="theme_light">فاتح</string>
+    <string name="theme_dark">داكن</string>
+    <string name="daily_reminder">تذكير يومي</string>
+    <string name="daily_reminder_summary">تنبيه لطيف إذا لم تسجّل شيئًا في ذلك اليوم</string>
+    <string name="reminder_time">وقت التذكير</string>
+    <string name="notification_settings">إعدادات الإشعارات</string>
+    <string name="notification_settings_summary">تحكم في طريقة تنبيه Hisab Kitab لك</string>
+    <string name="export_transactions">تصدير المعاملات</string>
+    <string name="export_categories">تصدير الفئات</string>
+    <string name="export_summary">حفظ كملف CSV يفتح في أي تطبيق جداول بيانات</string>
+    <string name="export_failed">فشل التصدير. حاول مرة أخرى.</string>
+    <string name="version">الإصدار %1$s</string>
+    <string name="settings_title_big">الإعدادات</string>
+    <string name="settings_subtitle">اجعله على ذوقك</string>
+    <string name="settings_theme_gallery">السمة</string>
+    <string name="currency_setting">العملة</string>
+    <string name="made_with_love">صُنع بـ ♥ لإنفاق واعٍ</string>
+    <string name="settings_motion">الحركة والأسلوب</string>
+    <string name="settings_privacy">الخصوصية والأمان</string>
+    <string name="nav_style">شريط التنقل</string>
+    <string name="nav_style_hint">جرّب كل نمط على الشريط السفلي</string>
+    <string name="nav_style_liquid">سائل</string>
+    <string name="nav_style_bubble">فقاعة</string>
+    <string name="nav_style_glow">توهج</string>
+    <string name="nav_style_expand">توسّع</string>
+    <string name="chart_animation">حركة الرسوم البيانية</string>
+    <string name="chart_animation_hint">كيف تتبدل الرسوم في التحليلات</string>
+    <string name="chart_fade">تلاشٍ</string>
+    <string name="chart_slide">انزلاق</string>
+    <string name="chart_flip">قلب ثلاثي الأبعاد</string>
+    <string name="chart_zoom">تكبير</string>
+    <string name="preview_home">الرئيسية</string>
+    <string name="app_lock">قفل التطبيق</string>
+    <string name="app_lock_summary">طلب البصمة أو الوجه أو قفل الشاشة عند الفتح</string>
+    <string name="app_lock_unavailable">اضبط قفل شاشة على هاتفك لاستخدام هذه الميزة</string>
+    <string name="app_lock_confirm_title">تفعيل قفل التطبيق</string>
+    <string name="app_lock_confirm_subtitle">أكّد أنك أنت</string>
+    <string name="language_setting">اللغة</string>
+    <plurals name="exported_transactions">
+        <item quantity="zero">تم تصدير %d معاملة</item>
+        <item quantity="one">تم تصدير معاملة واحدة (%d)</item>
+        <item quantity="two">تم تصدير معاملتين (%d)</item>
+        <item quantity="few">تم تصدير %d معاملات</item>
+        <item quantity="many">تم تصدير %d معاملة</item>
+        <item quantity="other">تم تصدير %d معاملة</item>
+    </plurals>
+    <plurals name="exported_categories">
+        <item quantity="zero">تم تصدير %d فئة</item>
+        <item quantity="one">تم تصدير فئة واحدة (%d)</item>
+        <item quantity="two">تم تصدير فئتين (%d)</item>
+        <item quantity="few">تم تصدير %d فئات</item>
+        <item quantity="many">تم تصدير %d فئة</item>
+        <item quantity="other">تم تصدير %d فئة</item>
+    </plurals>
+</resources>

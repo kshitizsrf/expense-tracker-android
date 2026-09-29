@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lock_title">Hisab Kitab이 잠겨 있어요</string>
+    <string name="lock_message">재정 정보는 비공개로 유지돼요. 지문, 얼굴 또는 화면 잠금으로 여세요.</string>
+    <string name="lock_unlock">잠금 해제</string>
+    <string name="lock_prompt_title">Hisab Kitab 잠금 해제</string>
+    <string name="lock_prompt_subtitle">본인인지 확인하세요</string>
+</resources>

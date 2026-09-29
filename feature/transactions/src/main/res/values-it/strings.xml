@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="category">Categoria</string>
+    <string name="date">Data</string>
+    <string name="time">Ora</string>
+    <string name="note">Nota</string>
+    <string name="no_note">Nessuna nota</string>
+    <string name="search">Cerca</string>
+    <string name="close_search">Chiudi ricerca</string>
+    <string name="clear_search">Cancella ricerca</string>
+    <string name="search_hint">Cerca note o categorie</string>
+    <string name="filter_all">Tutti</string>
+    <string name="empty_filtered_title">Nessun movimento corrispondente</string>
+    <string name="empty_filtered_message">Prova un\'altra ricerca o un altro filtro.</string>
+    <string name="transaction_details">Movimento</string>
+    <string name="transaction_not_found_title">Movimento non trovato</string>
+    <string name="transaction_not_found_message">Potrebbe essere stato eliminato.</string>
+    <string name="delete_transaction_title">Eliminare il movimento?</string>
+    <string name="delete_transaction_message">Questo movimento verrà eliminato definitivamente.</string>
+    <string name="new_transaction">Nuovo movimento</string>
+    <string name="edit_transaction">Modifica movimento</string>
+    <string name="note_optional">Nota (facoltativa)</string>
+    <string name="new_category_short">Nuova</string>
+    <string name="save_transaction">Salva movimento</string>
+    <string name="save_changes">Salva modifiche</string>
+    <string name="keypad_backspace">Cancella. Tieni premuto per cancellare tutto</string>
+    <string name="keypad_decimal">Decimale</string>
+    <string name="error_amount_too_large">Questo importo è troppo alto</string>
+    <string name="error_category_required">Scegli una categoria</string>
+    <string name="activity_title">Attività</string>
+    <string name="activity_subtitle">Ogni centesimo registrato</string>
+    <string name="deleted_transaction">Movimento eliminato</string>
+    <string name="undo">Annulla</string>
+    <string name="swipe_hint">Scorri una voce verso sinistra per eliminarla</string>
+    <string name="spent_label">Speso</string>
+    <string name="earned_label">Guadagnato</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="reminder_channel_name">दैनिक रिमाइंडर</string>
+    <string name="reminder_channel_description">अगर आज कोई लेन-देन नहीं जोड़ा, तो याद दिलाता है।</string>
+    <string name="reminder_title">आज का ख़र्च लिखा?</string>
+    <string name="reminder_text">बस कुछ सेकंड लगते हैं और आपका बजट सटीक रहता है।</string>
+</resources>

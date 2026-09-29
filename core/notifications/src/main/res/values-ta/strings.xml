@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="reminder_channel_name">தினசரி நினைவூட்டல்</string>
+    <string name="reminder_channel_description">இன்று எந்தப் பரிவர்த்தனையும் சேர்க்கவில்லை என்றால் நினைவூட்டும்.</string>
+    <string name="reminder_title">இன்றைய செலவைப் பதிவுசெய்தீர்களா?</string>
+    <string name="reminder_text">சில வினாடிகளே ஆகும், உங்கள் பட்ஜெட் துல்லியமாக இருக்கும்.</string>
+</resources>

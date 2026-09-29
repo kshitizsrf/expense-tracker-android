@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="reminder_channel_name">ଦୈନିକ ସ୍ମାରକ</string>
+    <string name="reminder_channel_description">ଆଜି କୌଣସି କାରବାର ଯୋଡ଼ି ନଥିଲେ ମନେ ପକାଇଦିଏ।</string>
+    <string name="reminder_title">ଆଜିର ଖର୍ଚ୍ଚ ଲେଖିଲେ କି?</string>
+    <string name="reminder_text">କେବଳ କିଛି ସେକେଣ୍ଡ ଲାଗେ ଏବଂ ଆପଣଙ୍କ ବଜେଟ୍ ସଠିକ୍ ରହେ।</string>
+</resources>

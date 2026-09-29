@@ -1,23 +1,35 @@
 <resources>
-    <string name="balance">Balance</string>
+    <string name="balance">Balance this month</string>
     <string name="previous_month">Previous month</string>
     <string name="next_month">Next month</string>
-    <string name="back_to_this_month">Back to this month</string>
-    <string name="recent_transactions">Recent transactions</string>
+    <string name="back_to_this_month">Tap to return to this month</string>
+    <string name="recent_transactions">Recent activity</string>
     <string name="see_all">See all</string>
+    <string name="daily_spending">Daily spending</string>
+
     <string name="budget_set_title">Set a budget</string>
-    <string name="budget_set_message">Get a spending limit and see how much you can spend each day.</string>
+    <string name="budget_set_message">Know exactly how much you can spend each day.</string>
     <string name="budget_title_daily">Today\'s budget</string>
     <string name="budget_title_weekly">This week\'s budget</string>
     <string name="budget_title_monthly">This month\'s budget</string>
     <string name="budget_title_custom">Budget</string>
-    <string name="budget_spent_of">%1$s spent of %2$s</string>
-    <string name="budget_over_by">Over budget by %1$s</string>
-    <string name="budget_left_today">%1$s left for today</string>
+    <string name="budget_spent_of">%1$s of %2$s spent</string>
+    <string name="budget_over_by">Over by %1$s</string>
+    <string name="budget_safe_today">Safe to spend today</string>
     <string name="budget_ended">This budget period has ended. Tap to set a new one.</string>
-    <string name="budget_not_started">This budget starts on %1$s.</string>
-    <plurals name="budget_left_per_day">
-        <item quantity="one">%1$s left · %2$s a day for %3$d day</item>
-        <item quantity="other">%1$s left · %2$s a day for %3$d days</item>
+    <string name="budget_not_started">Starts on %1$s</string>
+    <plurals name="budget_days_left">
+        <item quantity="one">%d day left</item>
+        <item quantity="other">%d days left</item>
     </plurals>
+
+    <string name="insight_top_category">Top spend</string>
+    <string name="insight_daily_average">Daily average</string>
+    <string name="insight_biggest">Biggest expense</string>
+    <string name="insight_count">Entries</string>
+    <string name="insight_none" translatable="false">—</string>
+
+    <string name="empty_home_title">A fresh start</string>
+    <string name="empty_home_message">Tap the + button to log your first income or expense.</string>
+    <string name="spotlight_saved">Saved</string>
 </resources>

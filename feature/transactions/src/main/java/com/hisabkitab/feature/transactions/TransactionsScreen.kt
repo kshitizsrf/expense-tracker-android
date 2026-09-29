@@ -1,63 +1,77 @@
 package com.hisabkitab.feature.transactions
 
-import androidx.compose.animation.AnimatedVisibility
-import androidx.compose.foundation.ExperimentalFoundationApi
+import androidx.compose.ui.platform.LocalResources
+import androidx.compose.animation.animateColorAsState
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.WindowInsets
+import androidx.compose.foundation.layout.asPaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.systemBars
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.lazy.rememberLazyListState
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.outlined.ReceiptLong
-import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Close
 import androidx.compose.material.icons.filled.Search
+import androidx.compose.material.icons.outlined.Delete
 import androidx.compose.material.icons.outlined.SearchOff
-import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.FilterChip
-import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.OutlinedTextField
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Surface
+import androidx.compose.material3.SnackbarDuration
+import androidx.compose.material3.SnackbarHost
+import androidx.compose.material3.SnackbarHostState
+import androidx.compose.material3.SnackbarResult
+import androidx.compose.material3.SwipeToDismissBox
+import androidx.compose.material3.SwipeToDismissBoxValue
 import androidx.compose.material3.Text
-import androidx.compose.material3.TopAppBar
-import androidx.compose.material3.TopAppBarDefaults
+import androidx.compose.material3.rememberSwipeToDismissBoxState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
-import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import androidx.compose.runtime.saveable.rememberSaveable
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.focus.FocusRequester
-import androidx.compose.ui.focus.focusRequester
-import androidx.compose.ui.input.nestedscroll.nestedScroll
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.hisabkitab.feature.transactions.R
 import com.hisabkitab.core.designsystem.R as DesignR
+import com.hisabkitab.core.designsystem.component.BackdropHeader
 import com.hisabkitab.core.designsystem.component.EmptyState
+import com.hisabkitab.core.designsystem.component.GlassCard
+import com.hisabkitab.core.designsystem.component.GlassChip
+import com.hisabkitab.core.designsystem.component.SpotlightItem
+import com.hisabkitab.core.designsystem.component.spotlightOnClick
+import com.hisabkitab.core.designsystem.component.glass
+import com.hisabkitab.core.designsystem.theme.HisabKitabTheme
+import com.hisabkitab.core.designsystem.theme.LocalNavBarClearance
+import com.hisabkitab.core.model.Transaction
 import com.hisabkitab.core.model.TransactionType
 import com.hisabkitab.core.ui.LocalMoneyFormatter
 import com.hisabkitab.core.ui.TransactionListItem
 import com.hisabkitab.core.ui.relativeDayLabel
+import java.time.LocalDate
 
 @Composable
 fun TransactionsScreen(
@@ -70,176 +84,238 @@ fun TransactionsScreen(
         uiState = uiState,
         onTypeFilterChange = viewModel::onTypeFilterChange,
         onQueryChange = viewModel::onQueryChange,
-        onAddTransaction = onAddTransaction,
         onOpenTransaction = onOpenTransaction,
+        onDelete = viewModel::delete,
+        onUndo = viewModel::undoDelete,
+        onUndoExpired = viewModel::onUndoExpired,
     )
 }
 
-@OptIn(ExperimentalMaterial3Api::class, ExperimentalFoundationApi::class)
 @Composable
 internal fun TransactionsScreen(
     uiState: TransactionsUiState,
     onTypeFilterChange: (TransactionType?) -> Unit,
     onQueryChange: (String) -> Unit,
-    onAddTransaction: () -> Unit,
     onOpenTransaction: (Long) -> Unit,
+    onDelete: (Transaction) -> Unit,
+    onUndo: () -> Unit,
+    onUndoExpired: () -> Unit,
 ) {
-    val scrollBehavior = TopAppBarDefaults.pinnedScrollBehavior()
-    var searchVisible by rememberSaveable { mutableStateOf(uiState.query.isNotEmpty()) }
-    val listState = rememberLazyListState()
-    val showFab by remember { derivedStateOf { !listState.canScrollBackward || !listState.isScrollInProgress } }
+    val snackbarHostState = remember { SnackbarHostState() }
+    val resources = LocalResources.current
+    val systemBars = WindowInsets.systemBars.asPaddingValues()
+    val clearance = LocalNavBarClearance.current
 
-    Scaffold(
-        modifier = Modifier.nestedScroll(scrollBehavior.nestedScrollConnection),
-        topBar = {
-            TopAppBar(
-                title = { Text(stringResource(DesignR.string.nav_transactions)) },
-                actions = {
-                    IconButton(
-                        onClick = {
-                            if (searchVisible) onQueryChange("")
-                            searchVisible = !searchVisible
-                        },
-                    ) {
-                        Icon(
-                            imageVector = if (searchVisible) Icons.Filled.Close else Icons.Filled.Search,
-                            contentDescription = stringResource(if (searchVisible) R.string.close_search else R.string.search),
-                        )
-                    }
-                },
-                scrollBehavior = scrollBehavior,
-            )
-        },
-        floatingActionButton = {
-            AnimatedVisibility(visible = showFab) {
-                FloatingActionButton(onClick = onAddTransaction) {
-                    Icon(Icons.Filled.Add, contentDescription = stringResource(DesignR.string.add_transaction))
+    LaunchedEffect(uiState.recentlyDeleted) {
+        if (uiState.recentlyDeleted == null) return@LaunchedEffect
+        val result = snackbarHostState.showSnackbar(
+            message = resources.getString(R.string.deleted_transaction),
+            actionLabel = resources.getString(R.string.undo),
+            duration = SnackbarDuration.Short,
+        )
+        if (result == SnackbarResult.ActionPerformed) onUndo() else onUndoExpired()
+    }
+
+    Box(Modifier.fillMaxSize()) {
+        LazyColumn(
+            modifier = Modifier.fillMaxSize(),
+            contentPadding = PaddingValues(
+                top = systemBars.calculateTopPadding(),
+                bottom = systemBars.calculateBottomPadding() + clearance + 8.dp,
+            ),
+            verticalArrangement = Arrangement.spacedBy(12.dp),
+        ) {
+            item(key = "header") {
+                BackdropHeader(title = stringResource(R.string.activity_title), subtitle = stringResource(R.string.activity_subtitle))
+            }
+            item(key = "search") {
+                SearchBar(query = uiState.query, onQueryChange = onQueryChange, modifier = Modifier.padding(horizontal = 16.dp))
+            }
+            item(key = "filters") {
+                Row(
+                    modifier = Modifier.padding(horizontal = 16.dp),
+                    horizontalArrangement = Arrangement.spacedBy(8.dp),
+                ) {
+                    GlassChip(stringResource(R.string.filter_all), uiState.typeFilter == null, { onTypeFilterChange(null) })
+                    GlassChip(stringResource(DesignR.string.expenses), uiState.typeFilter == TransactionType.EXPENSE, {
+                        onTypeFilterChange(TransactionType.EXPENSE)
+                    })
+                    GlassChip(stringResource(DesignR.string.income), uiState.typeFilter == TransactionType.INCOME, {
+                        onTypeFilterChange(TransactionType.INCOME)
+                    })
                 }
             }
-        },
-    ) { padding ->
-        Column(
-            Modifier
-                .fillMaxSize()
-                .padding(top = padding.calculateTopPadding()),
-        ) {
-            AnimatedVisibility(visible = searchVisible) {
-                SearchField(query = uiState.query, onQueryChange = onQueryChange)
+            if (uiState.groups.isNotEmpty()) {
+                item(key = "totals") { TotalsStrip(uiState) }
             }
-            TypeFilterRow(selected = uiState.typeFilter, onSelect = onTypeFilterChange)
 
             when {
                 uiState.isLoading -> Unit
-                uiState.groups.isEmpty() -> EmptyState(
-                    icon = if (uiState.isFiltering) Icons.Outlined.SearchOff else Icons.AutoMirrored.Outlined.ReceiptLong,
-                    title = stringResource(
-                        if (uiState.isFiltering) R.string.empty_filtered_title else DesignR.string.empty_transactions_title,
-                    ),
-                    message = stringResource(
-                        if (uiState.isFiltering) R.string.empty_filtered_message else DesignR.string.empty_transactions_message,
-                    ),
-                )
-                else -> LazyColumn(
-                    state = listState,
-                    modifier = Modifier.fillMaxSize(),
-                    contentPadding = PaddingValues(bottom = padding.calculateBottomPadding() + 88.dp),
-                ) {
-                    uiState.groups.forEach { group ->
-                        stickyHeader(key = "header-${group.date}") {
-                            DayHeader(
-                                label = relativeDayLabel(group.date, uiState.today),
-                                netMinor = group.netMinor,
-                            )
-                        }
-                        items(group.transactions, key = { it.id }) { transaction ->
-                            TransactionListItem(
-                                transaction = transaction,
-                                onClick = { onOpenTransaction(transaction.id) },
-                                modifier = Modifier.animateItem(),
-                            )
-                        }
+                uiState.groups.isEmpty() -> item(key = "empty") {
+                    GlassCard(Modifier.padding(horizontal = 16.dp).fillMaxWidth()) {
+                        EmptyState(
+                            icon = if (uiState.isFiltering) Icons.Outlined.SearchOff else Icons.AutoMirrored.Outlined.ReceiptLong,
+                            title = stringResource(if (uiState.isFiltering) R.string.empty_filtered_title else DesignR.string.empty_transactions_title),
+                            message = stringResource(if (uiState.isFiltering) R.string.empty_filtered_message else DesignR.string.empty_transactions_message),
+                        )
                     }
                 }
+                else -> items(uiState.groups, key = { "day-${it.date}" }) { group ->
+                    DayCard(
+                        group = group,
+                        today = uiState.today,
+                        onOpenTransaction = onOpenTransaction,
+                        onDelete = onDelete,
+                        modifier = Modifier.padding(horizontal = 16.dp).animateItem(),
+                    )
+                }
+            }
+        }
+
+        SnackbarHost(
+            hostState = snackbarHostState,
+            modifier = Modifier
+                .align(Alignment.BottomCenter)
+                .padding(bottom = systemBars.calculateBottomPadding() + clearance),
+        )
+    }
+}
+
+@Composable
+private fun SearchBar(query: String, onQueryChange: (String) -> Unit, modifier: Modifier = Modifier) {
+    val focusManager = LocalFocusManager.current
+    val scheme = MaterialTheme.colorScheme
+    Row(
+        modifier = modifier
+            .fillMaxWidth()
+            .height(52.dp)
+            .glass(CircleShape)
+            .padding(start = 16.dp, end = 4.dp),
+        verticalAlignment = Alignment.CenterVertically,
+    ) {
+        Icon(Icons.Filled.Search, contentDescription = null, tint = scheme.onSurfaceVariant)
+        Spacer(Modifier.width(12.dp))
+        Box(Modifier.weight(1f)) {
+            if (query.isEmpty()) {
+                Text(stringResource(R.string.search_hint), style = MaterialTheme.typography.bodyLarge, color = scheme.onSurfaceVariant)
+            }
+            BasicTextField(
+                value = query,
+                onValueChange = onQueryChange,
+                singleLine = true,
+                textStyle = MaterialTheme.typography.bodyLarge.copy(color = scheme.onSurface),
+                cursorBrush = SolidColor(scheme.primary),
+                keyboardOptions = KeyboardOptions(imeAction = ImeAction.Search),
+                keyboardActions = KeyboardActions(onSearch = { focusManager.clearFocus() }),
+                modifier = Modifier.fillMaxWidth(),
+            )
+        }
+        if (query.isNotEmpty()) {
+            IconButton(onClick = { onQueryChange("") }) {
+                Icon(Icons.Filled.Close, contentDescription = stringResource(R.string.clear_search))
             }
         }
     }
 }
 
 @Composable
-private fun SearchField(query: String, onQueryChange: (String) -> Unit) {
-    val focusRequester = remember { FocusRequester() }
-    val focusManager = LocalFocusManager.current
-    LaunchedEffect(Unit) { focusRequester.requestFocus() }
-    OutlinedTextField(
-        value = query,
-        onValueChange = onQueryChange,
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(horizontal = 16.dp, vertical = 4.dp)
-            .focusRequester(focusRequester),
-        placeholder = { Text(stringResource(R.string.search_hint)) },
-        leadingIcon = { Icon(Icons.Filled.Search, contentDescription = null) },
-        trailingIcon = if (query.isNotEmpty()) {
-            {
-                IconButton(onClick = { onQueryChange("") }) {
-                    Icon(Icons.Filled.Close, contentDescription = stringResource(R.string.clear_search))
-                }
-            }
-        } else {
-            null
-        },
-        singleLine = true,
-        shape = MaterialTheme.shapes.extraLarge,
-        keyboardOptions = KeyboardOptions(imeAction = ImeAction.Search),
-        keyboardActions = KeyboardActions(onSearch = { focusManager.clearFocus() }),
-    )
-}
-
-@Composable
-private fun TypeFilterRow(selected: TransactionType?, onSelect: (TransactionType?) -> Unit) {
+private fun TotalsStrip(uiState: TransactionsUiState) {
+    val formatter = LocalMoneyFormatter.current
+    val colors = HisabKitabTheme.colors
     Row(
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(horizontal = 16.dp, vertical = 8.dp),
-        horizontalArrangement = Arrangement.spacedBy(8.dp),
+        modifier = Modifier.padding(horizontal = 20.dp),
+        horizontalArrangement = Arrangement.spacedBy(20.dp),
     ) {
-        FilterChip(
-            selected = selected == null,
-            onClick = { onSelect(null) },
-            label = { Text(stringResource(R.string.filter_all)) },
-        )
-        FilterChip(
-            selected = selected == TransactionType.EXPENSE,
-            onClick = { onSelect(TransactionType.EXPENSE) },
-            label = { Text(stringResource(DesignR.string.expenses)) },
-        )
-        FilterChip(
-            selected = selected == TransactionType.INCOME,
-            onClick = { onSelect(TransactionType.INCOME) },
-            label = { Text(stringResource(DesignR.string.income)) },
-        )
+        if (uiState.typeFilter != TransactionType.INCOME) {
+            val spent = stringResource(R.string.spent_label)
+            Column(Modifier.clip(MaterialTheme.shapes.small).spotlightOnClick {
+                SpotlightItem(spent, formatter.format(uiState.totalSpentMinor), valueColor = colors.expense)
+            }) {
+                Text(spent, style = MaterialTheme.typography.labelMedium, color = colors.onBackdropMuted)
+                Text(formatter.format(uiState.totalSpentMinor), style = MaterialTheme.typography.titleLarge, color = colors.onBackdrop, fontWeight = FontWeight.Bold)
+            }
+        }
+        if (uiState.typeFilter != TransactionType.EXPENSE) {
+            val earned = stringResource(R.string.earned_label)
+            Column(Modifier.clip(MaterialTheme.shapes.small).spotlightOnClick {
+                SpotlightItem(earned, formatter.format(uiState.totalEarnedMinor), valueColor = colors.income)
+            }) {
+                Text(earned, style = MaterialTheme.typography.labelMedium, color = colors.onBackdropMuted)
+                Text(formatter.format(uiState.totalEarnedMinor), style = MaterialTheme.typography.titleLarge, color = colors.onBackdrop, fontWeight = FontWeight.Bold)
+            }
+        }
     }
 }
 
 @Composable
-private fun DayHeader(label: String, netMinor: Long) {
+private fun DayCard(
+    group: TransactionDayGroup,
+    today: LocalDate,
+    onOpenTransaction: (Long) -> Unit,
+    onDelete: (Transaction) -> Unit,
+    modifier: Modifier = Modifier,
+) {
     val formatter = LocalMoneyFormatter.current
-    Surface(color = MaterialTheme.colorScheme.surface, modifier = Modifier.fillMaxWidth()) {
+    val colors = HisabKitabTheme.colors
+    GlassCard(modifier = modifier.fillMaxWidth(), contentPadding = PaddingValues(vertical = 6.dp)) {
         Row(
-            modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
+            modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 8.dp),
             verticalAlignment = Alignment.CenterVertically,
         ) {
             Text(
-                text = label,
-                style = MaterialTheme.typography.labelLarge,
-                color = MaterialTheme.colorScheme.primary,
+                relativeDayLabel(group.date, today),
+                style = MaterialTheme.typography.titleSmall,
+                fontWeight = FontWeight.Bold,
                 modifier = Modifier.weight(1f),
             )
             Text(
-                text = formatter.formatNet(netMinor),
+                formatter.formatNet(group.netMinor),
                 style = MaterialTheme.typography.labelLarge,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                color = if (group.netMinor >= 0) colors.income else colors.expense,
+                modifier = Modifier
+                    .clip(CircleShape)
+                    .background((if (group.netMinor >= 0) colors.income else colors.expense).copy(alpha = 0.12f))
+                    .padding(horizontal = 10.dp, vertical = 4.dp),
             )
+        }
+        group.transactions.forEach { transaction ->
+            SwipeToDelete(onDelete = { onDelete(transaction) }) {
+                TransactionListItem(transaction = transaction, onClick = { onOpenTransaction(transaction.id) })
+            }
         }
     }
 }
+
+@Composable
+private fun SwipeToDelete(onDelete: () -> Unit, content: @Composable () -> Unit) {
+    val state = rememberSwipeToDismissBoxState()
+    LaunchedEffect(state.currentValue) {
+        if (state.currentValue == SwipeToDismissBoxValue.EndToStart) {
+            onDelete()
+            state.snapTo(SwipeToDismissBoxValue.Settled)
+        }
+    }
+    SwipeToDismissBox(
+        state = state,
+        enableDismissFromStartToEnd = false,
+        backgroundContent = {
+            if (state.dismissDirection != SwipeToDismissBoxValue.EndToStart) return@SwipeToDismissBox
+            val active = state.targetValue == SwipeToDismissBoxValue.EndToStart
+            val background by animateColorAsState(
+                if (active) HisabKitabTheme.colors.expense else HisabKitabTheme.colors.expense.copy(alpha = 0.45f),
+                label = "swipeBg",
+            )
+            Box(
+                Modifier.fillMaxSize().background(background).padding(horizontal = 24.dp),
+                contentAlignment = Alignment.CenterEnd,
+            ) {
+                Icon(Icons.Outlined.Delete, contentDescription = stringResource(DesignR.string.action_delete), tint = Color.White)
+            }
+        },
+    ) {
+        // Opaque only while swiping, so the red backdrop never shows through the row.
+        val swiping = state.dismissDirection == SwipeToDismissBoxValue.EndToStart
+        Box(Modifier.background(if (swiping) MaterialTheme.colorScheme.surfaceContainerLow else Color.Transparent)) { content() }
+    }
+}
+

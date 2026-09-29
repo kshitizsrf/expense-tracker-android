@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="budget_not_set">സജ്ജമാക്കിയിട്ടില്ല</string>
+    <string name="settings_appearance">രൂപം</string>
+    <string name="settings_money">പണം</string>
+    <string name="settings_reminders">ഓർമ്മപ്പെടുത്തലുകൾ</string>
+    <string name="settings_data">നിങ്ങളുടെ ഡാറ്റ</string>
+    <string name="settings_about">കുറിച്ച്</string>
+    <string name="theme">മോഡ്</string>
+    <string name="theme_system">സിസ്റ്റം</string>
+    <string name="theme_light">ലൈറ്റ്</string>
+    <string name="theme_dark">ഡാർക്ക്</string>
+    <string name="daily_reminder">ദിവസേനയുള്ള ഓർമ്മപ്പെടുത്തൽ</string>
+    <string name="daily_reminder_summary">അന്ന് ഒന്നും രേഖപ്പെടുത്തിയില്ലെങ്കിൽ ഒരു ചെറിയ ഓർമ്മ</string>
+    <string name="reminder_time">ഓർമ്മപ്പെടുത്തൽ സമയം</string>
+    <string name="notification_settings">അറിയിപ്പ് ക്രമീകരണങ്ങൾ</string>
+    <string name="notification_settings_summary">ഹിസാബ് കിതാബ് നിങ്ങളെ എങ്ങനെ അറിയിക്കണമെന്ന് നിയന്ത്രിക്കുക</string>
+    <string name="export_transactions">ഇടപാടുകൾ എക്സ്പോർട്ട് ചെയ്യുക</string>
+    <string name="export_categories">വിഭാഗങ്ങൾ എക്സ്പോർട്ട് ചെയ്യുക</string>
+    <string name="export_summary">ഏത് സ്പ്രെഡ്ഷീറ്റ് ആപ്പിലും തുറക്കാവുന്ന CSV ഫയലായി സംരക്ഷിക്കുക</string>
+    <string name="export_failed">എക്സ്പോർട്ട് പരാജയപ്പെട്ടു. വീണ്ടും ശ്രമിക്കുക.</string>
+    <string name="version">പതിപ്പ് %1$s</string>
+    <string name="settings_title_big">ക്രമീകരണങ്ങൾ</string>
+    <string name="settings_subtitle">നിങ്ങളുടേതാക്കുക</string>
+    <string name="settings_theme_gallery">തീം</string>
+    <string name="currency_setting">കറൻസി</string>
+    <string name="made_with_love">ശ്രദ്ധയോടെയുള്ള ചെലവിനായി ♥ ഓടെ നിർമ്മിച്ചത്</string>
+    <string name="settings_motion">ആനിമേഷനും ശൈലിയും</string>
+    <string name="settings_privacy">സ്വകാര്യതയും സുരക്ഷയും</string>
+    <string name="nav_style">നാവിഗേഷൻ ബാർ</string>
+    <string name="nav_style_hint">താഴെയുള്ള ബാറിൽ ഓരോ ശൈലിയും പരീക്ഷിക്കുക</string>
+    <string name="nav_style_liquid">ലിക്വിഡ്</string>
+    <string name="nav_style_bubble">ബബിൾ</string>
+    <string name="nav_style_glow">ഗ്ലോ</string>
+    <string name="nav_style_expand">എക്സ്പാൻഡ്</string>
+    <string name="chart_animation">ചാർട്ട് ആനിമേഷൻ</string>
+    <string name="chart_animation_hint">വിശകലനത്തിൽ ചാർട്ടുകൾ എങ്ങനെ മാറുന്നു</string>
+    <string name="chart_fade">ഫേഡ്</string>
+    <string name="chart_slide">സ്ലൈഡ്</string>
+    <string name="chart_flip">3D ഫ്ലിപ്പ്</string>
+    <string name="chart_zoom">സൂം</string>
+    <string name="preview_home">ഹോം</string>
+    <string name="app_lock">ആപ്പ് ലോക്ക്</string>
+    <string name="app_lock_summary">തുറക്കാൻ വിരലടയാളം, മുഖം അല്ലെങ്കിൽ സ്ക്രീൻ ലോക്ക് ആവശ്യം</string>
+    <string name="app_lock_unavailable">ഇത് ഉപയോഗിക്കാൻ ഫോണിൽ സ്ക്രീൻ ലോക്ക് സജ്ജമാക്കുക</string>
+    <string name="app_lock_confirm_title">ആപ്പ് ലോക്ക് ഓണാക്കുക</string>
+    <string name="app_lock_confirm_subtitle">ഇത് നിങ്ങളാണെന്ന് ഉറപ്പാക്കുക</string>
+    <string name="language_setting">ഭാഷ</string>
+    <plurals name="exported_transactions">
+        <item quantity="one">%d ഇടപാട് എക്സ്പോർട്ട് ചെയ്തു</item>
+        <item quantity="other">%d ഇടപാടുകൾ എക്സ്പോർട്ട് ചെയ്തു</item>
+    </plurals>
+    <plurals name="exported_categories">
+        <item quantity="one">%d വിഭാഗം എക്സ്പോർട്ട് ചെയ്തു</item>
+        <item quantity="other">%d വിഭാഗങ്ങൾ എക്സ്പോർട്ട് ചെയ്തു</item>
+    </plurals>
+</resources>

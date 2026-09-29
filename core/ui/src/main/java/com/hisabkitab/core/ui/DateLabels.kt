@@ -21,11 +21,28 @@ object DateFormats {
 
     fun weekdayDayMonth(date: LocalDate): String = date.format(DateTimeFormatter.ofPattern("EEE, d MMM", locale))
 
+    fun weekdayLong(date: LocalDate): String = date.format(DateTimeFormatter.ofPattern("EEEE, d MMMM", locale))
+
+    fun shortMonth(month: YearMonth): String = month.format(DateTimeFormatter.ofPattern("MMM", locale))
+
     fun medium(date: LocalDate): String = date.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM).withLocale(locale))
 
     fun full(date: LocalDate): String = date.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL).withLocale(locale))
 
     fun time(time: LocalTime): String = time.format(DateTimeFormatter.ofLocalizedTime(FormatStyle.SHORT).withLocale(locale))
+
+    /** Short form for chips: "1–30 Sep", "1 Sep – 3 Oct", or "Dec 2025 – Jan 2026". */
+    fun compactRange(range: DateRange): String {
+        val start = range.start
+        val end = range.endInclusive
+        return when {
+            start == end -> dayMonth(start)
+            start.year == end.year && start.month == end.month ->
+                "${start.dayOfMonth}–${end.dayOfMonth} ${end.format(DateTimeFormatter.ofPattern("MMM", locale))}"
+            start.year == end.year -> "${dayMonth(start)} – ${dayMonth(end)}"
+            else -> "${monthYear(YearMonth.from(start))} – ${monthYear(YearMonth.from(end))}"
+        }
+    }
 
     /** "1 Sep – 30 Sep" within one year, otherwise "28 Dec 2025 – 3 Jan 2026". */
     fun range(range: DateRange): String = if (range.start.year == range.endInclusive.year) {
@@ -34,6 +51,17 @@ object DateFormats {
         "${medium(range.start)} – ${medium(range.endInclusive)}"
     }
 }
+
+/** Time-of-day greeting for the home header. */
+@Composable
+fun greeting(time: LocalTime = LocalTime.now()): String = stringResource(
+    when (time.hour) {
+        in 5..11 -> R.string.greeting_morning
+        in 12..16 -> R.string.greeting_afternoon
+        in 17..21 -> R.string.greeting_evening
+        else -> R.string.greeting_night
+    },
+)
 
 /** "Today", "Yesterday", or a short date (with the year when it differs from this year). */
 @Composable

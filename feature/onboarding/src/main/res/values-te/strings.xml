@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_welcome_title">హిసాబ్ కితాబ్</string>
+    <string name="onboarding_welcome_message">మీ డబ్బు, అందంగా అమర్చబడింది. సెకన్లలో నమోదు చేయండి, డబ్బు ఎక్కడికి వెళ్తుందో చూడండి, నమ్మకంతో ఖర్చు చేయండి.</string>
+    <string name="onboarding_theme_title">మీ శైలిని ఎంచుకోండి</string>
+    <string name="onboarding_theme_message">ఐదు ప్రత్యేక థీమ్‌లు, ఒక్కోదానిలో లైట్ మరియు డార్క్ మూడ్. ఎప్పుడైనా మార్చుకోవచ్చు.</string>
+    <string name="onboarding_setup_title">చివరి మెరుగులు</string>
+    <string name="onboarding_setup_message">మీ కరెన్సీని ఎంచుకోండి, రోజును నమోదు చేయడానికి చిన్న రిమైండర్ కావాలో చెప్పండి.</string>
+    <string name="onboarding_currency">కరెన్సీ</string>
+    <string name="onboarding_reminder">రోజువారీ రిమైండర్</string>
+    <string name="onboarding_reminder_summary">ఆ రోజు ఏమీ నమోదు చేయకపోతే మాత్రమే</string>
+    <string name="onboarding_next">తదుపరి</string>
+    <string name="onboarding_start">మొదలుపెడదాం</string>
+    <string name="onboarding_skip">దాటవేయి</string>
+    <string name="onboarding_feature_fast">వేగవంతమైన నమోదు కోసం కాలిక్యులేటర్ కీప్యాడ్</string>
+    <string name="onboarding_feature_insights">మీ ఖర్చును చూసే ఐదు మార్గాలు</string>
+    <string name="onboarding_feature_private">పూర్తిగా గోప్యం · అన్నీ మీ ఫోన్‌లోనే ఉంటాయి</string>
+    <string name="mode_auto">ఆటో</string>
+    <string name="mode_light">☀  లైట్</string>
+    <string name="mode_dark">☾  డార్క్</string>
+    <string name="onboarding_language_title">మీ భాషను ఎంచుకోండి</string>
+    <string name="onboarding_language_message">హిసాబ్ కితాబ్ మీ భాషలో మాట్లాడుతుంది. సెట్టింగ్‌లలో ఎప్పుడైనా మార్చుకోవచ్చు.</string>
+    <string name="onboarding_lock">యాప్ లాక్</string>
+    <string name="onboarding_lock_summary">వేలిముద్ర లేదా స్క్రీన్ లాక్‌తో మీ వివరాలను గోప్యంగా ఉంచండి</string>
+    <string name="onboarding_lock_prompt">యాప్ లాక్ ఆన్ చేయండి</string>
+    <string name="onboarding_lock_prompt_subtitle">ఇది మీరేనని నిర్ధారించండి</string>
+</resources>

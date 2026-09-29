@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_change">تبدیل کریں</string>
+    <string name="budget_intro">اپنے پیسوں کا منصوبہ بنائیں۔ بجٹ میں صرف اخراجات شمار ہوتے ہیں۔</string>
+    <string name="budget_amount">بجٹ کی رقم</string>
+    <string name="budget_period">مدت</string>
+    <string name="budget_explain_daily">ہر روز نئے سرے سے شروع ہوتا ہے۔</string>
+    <string name="budget_explain_weekly">ہر ہفتے کے آغاز پر نئے سرے سے شروع ہوتا ہے۔</string>
+    <string name="budget_explain_monthly">ہر مہینے کی 1 تاریخ کو نئے سرے سے شروع ہوتا ہے۔</string>
+    <string name="budget_explain_custom">صرف آپ کی منتخب کردہ تاریخوں کے لیے۔</string>
+    <string name="budget_current_period">موجودہ مدت: %1$s</string>
+    <string name="choose_dates">تاریخیں منتخب کریں</string>
+    <string name="save_budget">بجٹ محفوظ کریں</string>
+    <string name="remove_budget">بجٹ ہٹائیں</string>
+    <string name="error_dates_required">اپنے بجٹ کی تاریخیں منتخب کریں</string>
+</resources>

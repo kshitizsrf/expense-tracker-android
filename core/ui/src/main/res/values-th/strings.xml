@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="today">วันนี้</string>
+    <string name="yesterday">เมื่อวาน</string>
+    <string name="greeting_morning">สวัสดีตอนเช้า</string>
+    <string name="greeting_afternoon">สวัสดีตอนบ่าย</string>
+    <string name="greeting_evening">สวัสดีตอนเย็น</string>
+    <string name="greeting_night">ยังไม่นอนอีกเหรอ?</string>
+    <string name="currency">สกุลเงิน</string>
+    <string name="language">ภาษา</string>
+    <string name="language_system">ค่าเริ่มต้นของระบบ</string>
+    <string name="language_system_summary">ใช้ภาษาของโทรศัพท์</string>
+    <string name="language_search">ค้นหาภาษา</string>
+    <string name="category_food">อาหาร</string>
+    <string name="category_shopping">ช้อปปิ้ง</string>
+    <string name="category_transportation">การเดินทาง</string>
+    <string name="category_bills">ค่าบิล</string>
+    <string name="category_home">บ้าน</string>
+    <string name="category_health">สุขภาพ</string>
+    <string name="category_entertainment">บันเทิง</string>
+    <string name="category_education">การศึกษา</string>
+    <string name="category_travel">ท่องเที่ยว</string>
+    <string name="category_clothing">เสื้อผ้า</string>
+    <string name="category_fruits">ผลไม้</string>
+    <string name="category_vegetables">ผัก</string>
+    <string name="category_car">รถยนต์</string>
+    <string name="category_insurance">ประกัน</string>
+    <string name="category_gift">ของขวัญ</string>
+    <string name="category_sport">กีฬา</string>
+    <string name="category_book">หนังสือ</string>
+    <string name="category_pet">สัตว์เลี้ยง</string>
+    <string name="category_wine">เครื่องดื่ม</string>
+    <string name="category_salary">เงินเดือน</string>
+    <string name="category_rental">ค่าเช่า</string>
+    <string name="category_sale">การขาย</string>
+    <string name="category_awards">รางวัล</string>
+    <string name="category_investment">การลงทุน</string>
+    <string name="category_other">อื่น ๆ</string>
+</resources>

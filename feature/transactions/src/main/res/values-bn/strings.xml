@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="category">বিভাগ</string>
+    <string name="date">তারিখ</string>
+    <string name="time">সময়</string>
+    <string name="note">নোট</string>
+    <string name="no_note">কোনো নোট নেই</string>
+    <string name="search">খুঁজুন</string>
+    <string name="close_search">খোঁজা বন্ধ করুন</string>
+    <string name="clear_search">খোঁজা মুছুন</string>
+    <string name="search_hint">নোট বা বিভাগ খুঁজুন</string>
+    <string name="filter_all">সব</string>
+    <string name="empty_filtered_title">মিলে যাওয়া কোনো লেনদেন নেই</string>
+    <string name="empty_filtered_message">অন্য খোঁজ বা ফিল্টার চেষ্টা করুন।</string>
+    <string name="transaction_details">লেনদেন</string>
+    <string name="transaction_not_found_title">লেনদেন পাওয়া যায়নি</string>
+    <string name="transaction_not_found_message">হয়তো এটি মুছে ফেলা হয়েছে।</string>
+    <string name="delete_transaction_title">লেনদেন মুছবেন?</string>
+    <string name="delete_transaction_message">এই লেনদেনটি স্থায়ীভাবে মুছে যাবে।</string>
+    <string name="new_transaction">নতুন লেনদেন</string>
+    <string name="edit_transaction">লেনদেন সম্পাদনা</string>
+    <string name="note_optional">নোট (ঐচ্ছিক)</string>
+    <string name="new_category_short">নতুন</string>
+    <string name="save_transaction">লেনদেন সেভ করুন</string>
+    <string name="save_changes">পরিবর্তন সেভ করুন</string>
+    <string name="keypad_backspace">ব্যাকস্পেস। সব মুছতে চেপে ধরুন</string>
+    <string name="keypad_decimal">দশমিক</string>
+    <string name="error_amount_too_large">এই পরিমাণ খুব বড়</string>
+    <string name="error_category_required">একটি বিভাগ বেছে নিন</string>
+    <string name="activity_title">কার্যকলাপ</string>
+    <string name="activity_subtitle">প্রতিটি পয়সার হিসাব</string>
+    <string name="deleted_transaction">লেনদেন মুছে ফেলা হয়েছে</string>
+    <string name="undo">ফিরিয়ে আনুন</string>
+    <string name="swipe_hint">মুছতে এন্ট্রিটি বাঁদিকে সোয়াইপ করুন</string>
+    <string name="spent_label">খরচ</string>
+    <string name="earned_label">আয়</string>
+</resources>

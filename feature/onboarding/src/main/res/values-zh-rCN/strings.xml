@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_welcome_title">Hisab Kitab</string>
+    <string name="onboarding_welcome_message">你的钱，井然有序。几秒完成记账，看清钱的去向，花得安心。</string>
+    <string name="onboarding_theme_title">选择你的风格</string>
+    <string name="onboarding_theme_message">五款特色主题，每款都有浅色和深色模式。随时可以更改。</string>
+    <string name="onboarding_setup_title">最后一步</string>
+    <string name="onboarding_setup_message">选择你的货币，并告诉我们是否需要温和的每日记账提醒。</string>
+    <string name="onboarding_currency">货币</string>
+    <string name="onboarding_reminder">每日提醒</string>
+    <string name="onboarding_reminder_summary">仅在当天未记账时提醒</string>
+    <string name="onboarding_next">下一步</string>
+    <string name="onboarding_start">开始使用</string>
+    <string name="onboarding_skip">跳过</string>
+    <string name="onboarding_feature_fast">计算器键盘，快速记账</string>
+    <string name="onboarding_feature_insights">五种方式查看支出</string>
+    <string name="onboarding_feature_private">完全私密 · 所有数据都留在你的手机上</string>
+    <string name="mode_auto">自动</string>
+    <string name="mode_light">☀  浅色</string>
+    <string name="mode_dark">☾  深色</string>
+    <string name="onboarding_language_title">选择你的语言</string>
+    <string name="onboarding_language_message">Hisab Kitab 说你的语言。你可以随时在设置中更改。</string>
+    <string name="onboarding_lock">应用锁</string>
+    <string name="onboarding_lock_summary">使用指纹或屏幕锁保护你的数据</string>
+    <string name="onboarding_lock_prompt">开启应用锁</string>
+    <string name="onboarding_lock_prompt_subtitle">请确认是你本人</string>
+</resources>

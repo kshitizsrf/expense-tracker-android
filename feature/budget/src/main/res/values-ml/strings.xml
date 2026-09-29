@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_change">മാറ്റുക</string>
+    <string name="budget_intro">നിങ്ങളുടെ പണത്തിന് ഒരു പദ്ധതി നൽകുക. ബജറ്റിൽ ചെലവുകൾ മാത്രമേ കണക്കാക്കൂ.</string>
+    <string name="budget_amount">ബജറ്റ് തുക</string>
+    <string name="budget_period">കാലയളവ്</string>
+    <string name="budget_explain_daily">എല്ലാ ദിവസവും പുതുതായി തുടങ്ങും.</string>
+    <string name="budget_explain_weekly">ഓരോ ആഴ്ചയുടെയും തുടക്കത്തിൽ പുതുതായി തുടങ്ങും.</string>
+    <string name="budget_explain_monthly">ഓരോ മാസവും 1-ാം തീയതി പുതുതായി തുടങ്ങും.</string>
+    <string name="budget_explain_custom">നിങ്ങൾ തിരഞ്ഞെടുത്ത തീയതികൾക്ക് മാത്രം.</string>
+    <string name="budget_current_period">നിലവിലെ കാലയളവ്: %1$s</string>
+    <string name="choose_dates">തീയതികൾ തിരഞ്ഞെടുക്കുക</string>
+    <string name="save_budget">ബജറ്റ് സംരക്ഷിക്കുക</string>
+    <string name="remove_budget">ബജറ്റ് നീക്കുക</string>
+    <string name="error_dates_required">നിങ്ങളുടെ ബജറ്റിന്റെ തീയതികൾ തിരഞ്ഞെടുക്കുക</string>
+</resources>

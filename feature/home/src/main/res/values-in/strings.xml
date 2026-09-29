@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="balance">Saldo bulan ini</string>
+    <string name="previous_month">Bulan sebelumnya</string>
+    <string name="next_month">Bulan berikutnya</string>
+    <string name="back_to_this_month">Ketuk untuk kembali ke bulan ini</string>
+    <string name="recent_transactions">Aktivitas terbaru</string>
+    <string name="see_all">Lihat semua</string>
+    <string name="daily_spending">Pengeluaran harian</string>
+    <string name="budget_set_title">Tetapkan anggaran</string>
+    <string name="budget_set_message">Ketahui persis berapa yang bisa Anda belanjakan setiap hari.</string>
+    <string name="budget_title_daily">Anggaran hari ini</string>
+    <string name="budget_title_weekly">Anggaran minggu ini</string>
+    <string name="budget_title_monthly">Anggaran bulan ini</string>
+    <string name="budget_title_custom">Anggaran</string>
+    <string name="budget_spent_of">%1$s terpakai dari %2$s</string>
+    <string name="budget_over_by">Lebih %1$s</string>
+    <string name="budget_safe_today">Aman dibelanjakan hari ini</string>
+    <string name="budget_ended">Periode anggaran ini telah berakhir. Ketuk untuk menetapkan yang baru.</string>
+    <string name="budget_not_started">Mulai %1$s</string>
+    <string name="insight_top_category">Pengeluaran terbesar</string>
+    <string name="insight_daily_average">Rata-rata harian</string>
+    <string name="insight_biggest">Pengeluaran tertinggi</string>
+    <string name="insight_count">Entri</string>
+    <string name="empty_home_title">Awal yang baru</string>
+    <string name="empty_home_message">Ketuk tombol + untuk mencatat pemasukan atau pengeluaran pertama Anda.</string>
+    <string name="spotlight_saved">Tersimpan</string>
+    <plurals name="budget_days_left">
+        <item quantity="other">%d hari lagi</item>
+    </plurals>
+</resources>

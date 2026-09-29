@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="reminder_channel_name">ದೈನಂದಿನ ಜ್ಞಾಪನೆ</string>
+    <string name="reminder_channel_description">ಇಂದು ಯಾವುದೇ ವಹಿವಾಟು ಸೇರಿಸದಿದ್ದರೆ ನೆನಪಿಸುತ್ತದೆ.</string>
+    <string name="reminder_title">ಇಂದಿನ ಖರ್ಚು ಬರೆದಿರಾ?</string>
+    <string name="reminder_text">ಕೆಲವೇ ಸೆಕೆಂಡುಗಳು ಸಾಕು, ನಿಮ್ಮ ಬಜೆಟ್ ನಿಖರವಾಗಿರುತ್ತದೆ.</string>
+</resources>

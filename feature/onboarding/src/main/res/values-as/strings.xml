@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_welcome_title">হিচাব কিতাব</string>
+    <string name="onboarding_welcome_message">আপোনাৰ টকা, ধুনীয়াকৈ সজোৱা। ছেকেণ্ডতে লিখক, টকা ক\'ত যায় চাওক, আৰু আত্মবিশ্বাসেৰে খৰচ কৰক।</string>
+    <string name="onboarding_theme_title">আপোনাৰ শৈলী বাছক</string>
+    <string name="onboarding_theme_message">পাঁচটা বিশেষ থীম, প্ৰতিটোতে লাইট আৰু ডাৰ্ক মুড। যিকোনো সময়ত সলনি কৰিব পাৰে।</string>
+    <string name="onboarding_setup_title">শেষ পৰশ</string>
+    <string name="onboarding_setup_message">আপোনাৰ মুদ্ৰা বাছক আৰু দিনটো লিখিবলৈ এটা পাতল সোঁৱৰণী বিচাৰে নেকি জনাওক।</string>
+    <string name="onboarding_currency">মুদ্ৰা</string>
+    <string name="onboarding_reminder">দৈনিক সোঁৱৰণী</string>
+    <string name="onboarding_reminder_summary">কেৱল সেইদিনা একো নিলিখিলেহে</string>
+    <string name="onboarding_next">পৰৱৰ্তী</string>
+    <string name="onboarding_start">আহক আৰম্ভ কৰোঁ</string>
+    <string name="onboarding_skip">এৰি দিয়ক</string>
+    <string name="onboarding_feature_fast">দ্ৰুত এণ্ট্ৰিৰ বাবে কেলকুলেটৰ কীপেড</string>
+    <string name="onboarding_feature_insights">খৰচ চোৱাৰ পাঁচটা উপায়</string>
+    <string name="onboarding_feature_private">সম্পূৰ্ণ গোপন · সকলো আপোনাৰ ফোনতে থাকে</string>
+    <string name="mode_auto">অটো</string>
+    <string name="mode_light">☀  লাইট</string>
+    <string name="mode_dark">☾  ডাৰ্ক</string>
+    <string name="onboarding_language_title">আপোনাৰ ভাষা বাছক</string>
+    <string name="onboarding_language_message">হিচাব কিতাবে আপোনাৰ ভাষাত কথা কয়। ছেটিংছত যিকোনো সময়ত সলনি কৰিব পাৰে।</string>
+    <string name="onboarding_lock">এপ লক</string>
+    <string name="onboarding_lock_summary">আঙুলিৰ ছাপ বা স্ক্ৰীণ লকেৰে তথ্য গোপনে ৰাখক</string>
+    <string name="onboarding_lock_prompt">এপ লক অন কৰক</string>
+    <string name="onboarding_lock_prompt_subtitle">নিশ্চিত কৰক যে এয়া আপুনি</string>
+</resources>

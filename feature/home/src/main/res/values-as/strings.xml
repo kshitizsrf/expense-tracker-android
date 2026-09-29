@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="balance">এই মাহৰ বেলেঞ্চ</string>
+    <string name="previous_month">আগৰ মাহ</string>
+    <string name="next_month">পিছৰ মাহ</string>
+    <string name="back_to_this_month">এই মাহলৈ ঘূৰি আহিবলৈ টিপক</string>
+    <string name="recent_transactions">শেহতীয়া কাৰ্যকলাপ</string>
+    <string name="see_all">সকলো চাওক</string>
+    <string name="daily_spending">দৈনিক খৰচ</string>
+    <string name="budget_set_title">বাজেট ঠিক কৰক</string>
+    <string name="budget_set_message">প্ৰতিদিনে ঠিক কিমান খৰচ কৰিব পাৰে জানক।</string>
+    <string name="budget_title_daily">আজিৰ বাজেট</string>
+    <string name="budget_title_weekly">এই সপ্তাহৰ বাজেট</string>
+    <string name="budget_title_monthly">এই মাহৰ বাজেট</string>
+    <string name="budget_title_custom">বাজেট</string>
+    <string name="budget_spent_of">%2$sৰ ভিতৰত %1$s খৰচ</string>
+    <string name="budget_over_by">%1$s বেছি</string>
+    <string name="budget_safe_today">আজি নিশ্চিন্তে খৰচ কৰক</string>
+    <string name="budget_ended">এই বাজেটৰ সময়সীমা শেষ হ\'ল। নতুন ঠিক কৰিবলৈ টিপক।</string>
+    <string name="budget_not_started">%1$sৰ পৰা আৰম্ভ</string>
+    <string name="insight_top_category">সৰ্বাধিক খৰচ</string>
+    <string name="insight_daily_average">দৈনিক গড়</string>
+    <string name="insight_biggest">আটাইতকৈ ডাঙৰ খৰচ</string>
+    <string name="insight_count">এণ্ট্ৰি</string>
+    <string name="empty_home_title">নতুন আৰম্ভণি</string>
+    <string name="empty_home_message">আপোনাৰ প্ৰথম আয় বা খৰচ লিখিবলৈ + বুটামটো টিপক।</string>
+    <string name="spotlight_saved">সঞ্চয়</string>
+    <plurals name="budget_days_left">
+        <item quantity="one">%d দিন বাকী</item>
+        <item quantity="other">%d দিন বাকী</item>
+    </plurals>
+</resources>

@@ -1,5 +1,13 @@
 package com.hisabkitab.navigation
 
+import androidx.compose.animation.core.tween
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.fadeOut
+import androidx.compose.animation.scaleIn
+import androidx.compose.animation.scaleOut
+import androidx.compose.animation.slideInHorizontally
+import androidx.compose.animation.slideOutHorizontally
+import androidx.compose.animation.togetherWith
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
@@ -39,6 +47,18 @@ fun HisabKitabNavDisplay(
             rememberSaveableStateHolderNavEntryDecorator(),
             rememberViewModelStoreNavEntryDecorator(),
         ),
+        transitionSpec = {
+            (slideInHorizontally(tween(DURATION)) { it / 5 } + fadeIn(tween(DURATION)))
+                .togetherWith(scaleOut(tween(DURATION), targetScale = 0.94f) + fadeOut(tween(DURATION)))
+        },
+        popTransitionSpec = {
+            (scaleIn(tween(DURATION), initialScale = 0.94f) + fadeIn(tween(DURATION)))
+                .togetherWith(slideOutHorizontally(tween(DURATION)) { it / 5 } + fadeOut(tween(DURATION)))
+        },
+        predictivePopTransitionSpec = {
+            (scaleIn(tween(DURATION), initialScale = 0.94f) + fadeIn(tween(DURATION)))
+                .togetherWith(slideOutHorizontally(tween(DURATION)) { it / 5 } + fadeOut(tween(DURATION)))
+        },
         entryProvider = entryProvider {
             entry<HomeKey> {
                 HomeScreen(
@@ -113,3 +133,5 @@ fun MutableList<NavKey>.navigateToTopLevel(destination: TopLevelDestination) {
     while (size > 1) removeAt(lastIndex)
     if (destination.key != HomeKey) add(destination.key)
 }
+
+private const val DURATION = 320

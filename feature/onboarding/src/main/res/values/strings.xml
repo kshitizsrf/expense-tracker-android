@@ -1,0 +1,26 @@
+<resources>
+    <string name="onboarding_welcome_title">Hisab Kitab</string>
+    <string name="onboarding_welcome_message">Your money, beautifully organised. Log in seconds, see where it goes, and spend with confidence.</string>
+    <string name="onboarding_theme_title">Pick your vibe</string>
+    <string name="onboarding_theme_message">Five hand-named themes, each with light and dark moods. You can change it any time.</string>
+    <string name="onboarding_setup_title">Final touches</string>
+    <string name="onboarding_setup_message">Choose your currency and whether you\'d like a gentle nudge to log your day.</string>
+    <string name="onboarding_currency">Currency</string>
+    <string name="onboarding_reminder">Daily reminder</string>
+    <string name="onboarding_reminder_summary">Only if you haven\'t logged anything that day</string>
+    <string name="onboarding_next">Next</string>
+    <string name="onboarding_start">Let\'s go</string>
+    <string name="onboarding_skip">Skip</string>
+    <string name="onboarding_feature_fast">Calculator keypad for lightning-fast entry</string>
+    <string name="onboarding_feature_insights">Five ways to visualise your spending</string>
+    <string name="onboarding_feature_private">Private by design · everything stays on your phone</string>
+    <string name="mode_auto">Auto</string>
+    <string name="mode_light">☀  Light</string>
+    <string name="mode_dark">☾  Dark</string>
+    <string name="onboarding_language_title">Choose your language</string>
+    <string name="onboarding_language_message">Hisab Kitab speaks your language. You can change it any time in Settings.</string>
+    <string name="onboarding_lock">App lock</string>
+    <string name="onboarding_lock_summary">Keep your finances private with fingerprint or screen lock</string>
+    <string name="onboarding_lock_prompt">Turn on app lock</string>
+    <string name="onboarding_lock_prompt_subtitle">Confirm it\'s you</string>
+</resources>

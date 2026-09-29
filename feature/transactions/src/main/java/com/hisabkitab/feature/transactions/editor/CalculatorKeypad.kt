@@ -92,9 +92,9 @@ private fun RowScope.KeypadButton(
     val view = LocalView.current
     val colors = MaterialTheme.colorScheme
     val (container, content) = when (key) {
-        is Key.Operator -> colors.secondaryContainer to colors.onSecondaryContainer
+        is Key.Operator -> colors.primary.copy(alpha = 0.16f) to colors.primary
         Key.Backspace -> colors.surfaceContainerHighest to colors.onSurface
-        else -> colors.surfaceContainerHigh to colors.onSurface
+        else -> colors.surface.copy(alpha = 0.75f) to colors.onSurface
     }
     val description = when (key) {
         Key.Backspace -> stringResource(R.string.keypad_backspace)
@@ -109,7 +109,7 @@ private fun RowScope.KeypadButton(
         shape = MaterialTheme.shapes.medium,
         modifier = Modifier
             .weight(1f)
-            .height(56.dp)
+            .height(54.dp)
             .clip(MaterialTheme.shapes.medium)
             .combinedClickable(
                 role = Role.Button,

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_welcome_title">Hisab Kitab</string>
+    <string name="onboarding_welcome_message">Uang Anda, tertata dengan indah. Catat dalam hitungan detik, lihat ke mana perginya, dan belanja dengan percaya diri.</string>
+    <string name="onboarding_theme_title">Pilih gaya Anda</string>
+    <string name="onboarding_theme_message">Lima tema khas, masing-masing dengan mode terang dan gelap. Bisa diubah kapan saja.</string>
+    <string name="onboarding_setup_title">Sentuhan akhir</string>
+    <string name="onboarding_setup_message">Pilih mata uang Anda dan beri tahu kami apakah Anda ingin pengingat lembut untuk mencatat hari Anda.</string>
+    <string name="onboarding_currency">Mata uang</string>
+    <string name="onboarding_reminder">Pengingat harian</string>
+    <string name="onboarding_reminder_summary">Hanya jika Anda belum mencatat apa pun hari itu</string>
+    <string name="onboarding_next">Lanjut</string>
+    <string name="onboarding_start">Ayo mulai</string>
+    <string name="onboarding_skip">Lewati</string>
+    <string name="onboarding_feature_fast">Keypad kalkulator untuk entri cepat</string>
+    <string name="onboarding_feature_insights">Lima cara melihat pengeluaran</string>
+    <string name="onboarding_feature_private">Sepenuhnya pribadi · semuanya tetap di ponsel Anda</string>
+    <string name="mode_auto">Otomatis</string>
+    <string name="mode_light">☀  Terang</string>
+    <string name="mode_dark">☾  Gelap</string>
+    <string name="onboarding_language_title">Pilih bahasa Anda</string>
+    <string name="onboarding_language_message">Hisab Kitab berbicara dalam bahasa Anda. Anda bisa mengubahnya kapan saja di Setelan.</string>
+    <string name="onboarding_lock">Kunci aplikasi</string>
+    <string name="onboarding_lock_summary">Lindungi data dengan sidik jari atau kunci layar</string>
+    <string name="onboarding_lock_prompt">Aktifkan kunci aplikasi</string>
+    <string name="onboarding_lock_prompt_subtitle">Konfirmasi bahwa ini Anda</string>
+</resources>

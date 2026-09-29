@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_transactions">ಚಟುವಟಿಕೆ</string>
+    <string name="nav_stats">ವಿಶ್ಲೇಷಣೆ</string>
+    <string name="nav_categories">ವರ್ಗಗಳು</string>
+    <string name="action_back">ಹಿಂದೆ</string>
+    <string name="action_cancel">ರದ್ದುಮಾಡಿ</string>
+    <string name="action_close">ಮುಚ್ಚಿ</string>
+    <string name="action_delete">ಅಳಿಸಿ</string>
+    <string name="action_ok">ಸರಿ</string>
+    <string name="income">ಆದಾಯ</string>
+    <string name="expense">ಖರ್ಚು</string>
+    <string name="expenses">ಖರ್ಚುಗಳು</string>
+    <string name="select_time">ಸಮಯ ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="settings_title">ಸೆಟ್ಟಿಂಗ್‌ಗಳು</string>
+    <string name="add_transaction">ಸೇರಿಸಿ</string>
+    <string name="empty_transactions_title">ಇನ್ನೂ ಯಾವುದೇ ವಹಿವಾಟುಗಳಿಲ್ಲ</string>
+    <string name="empty_transactions_message">ನಿಮ್ಮ ಮೊದಲ ಆದಾಯ ಅಥವಾ ಖರ್ಚನ್ನು ದಾಖಲಿಸಲು ಸೇರಿಸಿ ಟ್ಯಾಪ್ ಮಾಡಿ.</string>
+    <string name="budget">ಬಜೆಟ್</string>
+    <string name="period_daily">ದೈನಂದಿನ</string>
+    <string name="period_weekly">ವಾರದ</string>
+    <string name="period_monthly">ಮಾಸಿಕ</string>
+    <string name="period_custom">ಕಸ್ಟಮ್</string>
+    <string name="error_amount_required">ಸೊನ್ನೆಗಿಂತ ಹೆಚ್ಚಿನ ಮೊತ್ತ ನಮೂದಿಸಿ</string>
+    <string name="action_save">ಉಳಿಸಿ</string>
+    <string name="action_edit">ತಿದ್ದಿ</string>
+    <string name="theme_skyline_tagline">ಸ್ಪಷ್ಟ ನೀಲಿ ಶಾಂತಿ</string>
+    <string name="theme_dawn_tagline">ಮಧ್ಯರಾತ್ರಿಯ ನಂತರದ ಮುಂಜಾನೆ</string>
+    <string name="theme_horizon_tagline">ಆಳ ಸಮುದ್ರದ ನೀಲಿಹಸಿರು</string>
+    <string name="theme_pinkwalk_tagline">ಲ್ಯಾವೆಂಡರ್ ಕ್ಯಾಂಡಿ ನಡಿಗೆ</string>
+    <string name="theme_rosewood_tagline">ನೀಲಿ ರಾತ್ರಿ, ಗುಲಾಬಿ ಹೊಳಪು</string>
+    <string name="theme_wallpaper_tagline">ನಿಮ್ಮ ವಾಲ್‌ಪೇಪರ್ ಬಣ್ಣಗಳಿಂದ</string>
+    <string name="theme_wallpaper">ವಾಲ್‌ಪೇಪರ್</string>
+    <string name="spotlight_dismiss">ಮುಚ್ಚಲು ಎಲ್ಲಾದರೂ ಟ್ಯಾಪ್ ಮಾಡಿ</string>
+    <string name="select_date_range">ದಿನಾಂಕಗಳ ಅವಧಿ ಆಯ್ಕೆಮಾಡಿ</string>
+</resources>

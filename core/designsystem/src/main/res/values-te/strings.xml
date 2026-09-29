@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_transactions">కార్యకలాపాలు</string>
+    <string name="nav_stats">విశ్లేషణ</string>
+    <string name="nav_categories">వర్గాలు</string>
+    <string name="action_back">వెనుకకు</string>
+    <string name="action_cancel">రద్దు చేయి</string>
+    <string name="action_close">మూసివేయి</string>
+    <string name="action_delete">తొలగించు</string>
+    <string name="action_ok">సరే</string>
+    <string name="income">ఆదాయం</string>
+    <string name="expense">ఖర్చు</string>
+    <string name="expenses">ఖర్చులు</string>
+    <string name="select_time">సమయాన్ని ఎంచుకోండి</string>
+    <string name="settings_title">సెట్టింగ్‌లు</string>
+    <string name="add_transaction">జోడించు</string>
+    <string name="empty_transactions_title">ఇంకా లావాదేవీలు లేవు</string>
+    <string name="empty_transactions_message">మీ మొదటి ఆదాయం లేదా ఖర్చు నమోదు చేయడానికి జోడించు నొక్కండి.</string>
+    <string name="budget">బడ్జెట్</string>
+    <string name="period_daily">రోజువారీ</string>
+    <string name="period_weekly">వారానికి</string>
+    <string name="period_monthly">నెలకు</string>
+    <string name="period_custom">అనుకూలం</string>
+    <string name="error_amount_required">సున్నా కంటే ఎక్కువ మొత్తం నమోదు చేయండి</string>
+    <string name="action_save">సేవ్ చేయి</string>
+    <string name="action_edit">సవరించు</string>
+    <string name="theme_skyline_tagline">స్పష్టమైన నీలి ప్రశాంతత</string>
+    <string name="theme_dawn_tagline">అర్ధరాత్రి తర్వాత ఉదయం</string>
+    <string name="theme_horizon_tagline">లోతైన సముద్ర నీలి ఆకుపచ్చ</string>
+    <string name="theme_pinkwalk_tagline">లావెండర్ క్యాండీ నడక</string>
+    <string name="theme_rosewood_tagline">నీలి రాత్రులు, గులాబీ కాంతి</string>
+    <string name="theme_wallpaper_tagline">మీ వాల్‌పేపర్ రంగుల నుండి</string>
+    <string name="theme_wallpaper">వాల్‌పేపర్</string>
+    <string name="spotlight_dismiss">మూసివేయడానికి ఎక్కడైనా నొక్కండి</string>
+    <string name="select_date_range">తేదీల పరిధిని ఎంచుకోండి</string>
+</resources>

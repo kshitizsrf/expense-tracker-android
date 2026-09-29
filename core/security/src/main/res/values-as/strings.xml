@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lock_title">হিচাব কিতাব লক কৰা আছে</string>
+    <string name="lock_message">আপোনাৰ বিত্তীয় তথ্য গোপনে থাকে। আঙুলিৰ ছাপ, মুখ বা স্ক্ৰীণ লকেৰে খোলক।</string>
+    <string name="lock_unlock">আনলক কৰক</string>
+    <string name="lock_prompt_title">হিচাব কিতাব আনলক কৰক</string>
+    <string name="lock_prompt_subtitle">নিশ্চিত কৰক যে এয়া আপুনি</string>
+</resources>

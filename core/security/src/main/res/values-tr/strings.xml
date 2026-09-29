@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lock_title">Hisab Kitab kilitli</string>
+    <string name="lock_message">Finansal bilgileriniz gizli kalır. Parmak izi, yüz veya ekran kilidiyle açın.</string>
+    <string name="lock_unlock">Kilidi aç</string>
+    <string name="lock_prompt_title">Hisab Kitab kilidini aç</string>
+    <string name="lock_prompt_subtitle">Siz olduğunuzu doğrulayın</string>
+</resources>

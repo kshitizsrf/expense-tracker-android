@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="balance">Solde du mois</string>
+    <string name="previous_month">Mois précédent</string>
+    <string name="next_month">Mois suivant</string>
+    <string name="back_to_this_month">Touchez pour revenir à ce mois</string>
+    <string name="recent_transactions">Activité récente</string>
+    <string name="see_all">Tout voir</string>
+    <string name="daily_spending">Dépenses quotidiennes</string>
+    <string name="budget_set_title">Définir un budget</string>
+    <string name="budget_set_message">Sachez exactement combien vous pouvez dépenser chaque jour.</string>
+    <string name="budget_title_daily">Budget du jour</string>
+    <string name="budget_title_weekly">Budget de la semaine</string>
+    <string name="budget_title_monthly">Budget du mois</string>
+    <string name="budget_title_custom">Budget</string>
+    <string name="budget_spent_of">%1$s dépensés sur %2$s</string>
+    <string name="budget_over_by">%1$s de dépassement</string>
+    <string name="budget_safe_today">Dépensable aujourd\'hui</string>
+    <string name="budget_ended">Ce budget est terminé. Touchez pour en définir un nouveau.</string>
+    <string name="budget_not_started">Commence le %1$s</string>
+    <string name="insight_top_category">Poste principal</string>
+    <string name="insight_daily_average">Moyenne quotidienne</string>
+    <string name="insight_biggest">Plus grosse dépense</string>
+    <string name="insight_count">Opérations</string>
+    <string name="empty_home_title">Un nouveau départ</string>
+    <string name="empty_home_message">Touchez le bouton + pour enregistrer votre premier revenu ou votre première dépense.</string>
+    <string name="spotlight_saved">Épargné</string>
+    <plurals name="budget_days_left">
+        <item quantity="one">%d jour restant</item>
+        <item quantity="many">%d jours restants</item>
+        <item quantity="other">%d jours restants</item>
+    </plurals>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">हिसाब किताब</string>
+    <string name="nav_transactions">गतिविधि</string>
+    <string name="nav_stats">विश्लेषण</string>
+    <string name="nav_categories">श्रेणीहरू</string>
+    <string name="action_back">पछाडि</string>
+    <string name="action_cancel">रद्द गर्नुहोस्</string>
+    <string name="action_close">बन्द गर्नुहोस्</string>
+    <string name="action_delete">मेटाउनुहोस्</string>
+    <string name="action_ok">ठीक छ</string>
+    <string name="income">आम्दानी</string>
+    <string name="expense">खर्च</string>
+    <string name="expenses">खर्चहरू</string>
+    <string name="select_time">समय छान्नुहोस्</string>
+    <string name="settings_title">सेटिङहरू</string>
+    <string name="add_transaction">थप्नुहोस्</string>
+    <string name="empty_transactions_title">अहिलेसम्म कुनै कारोबार छैन</string>
+    <string name="empty_transactions_message">तपाईंको पहिलो आम्दानी वा खर्च लेख्न थप्नुहोस् थिच्नुहोस्।</string>
+    <string name="budget">बजेट</string>
+    <string name="period_daily">दैनिक</string>
+    <string name="period_weekly">साप्ताहिक</string>
+    <string name="period_monthly">मासिक</string>
+    <string name="period_custom">आफ्नै</string>
+    <string name="error_amount_required">शून्यभन्दा बढी रकम लेख्नुहोस्</string>
+    <string name="action_save">सेभ गर्नुहोस्</string>
+    <string name="action_edit">सम्पादन</string>
+    <string name="theme_skyline_tagline">सफा नीलो शान्ति</string>
+    <string name="theme_dawn_tagline">मध्यरातपछिको बिहान</string>
+    <string name="theme_horizon_tagline">गहिरो समुद्री नीलो-हरियो</string>
+    <string name="theme_pinkwalk_tagline">ल्याभेन्डर क्यान्डीको डुलाइ</string>
+    <string name="theme_rosewood_tagline">नीला रातहरू, गुलाबी चमक</string>
+    <string name="theme_wallpaper_tagline">तपाईंको वालपेपरको रङबाट</string>
+    <string name="theme_wallpaper">वालपेपर</string>
+    <string name="spotlight_dismiss">बन्द गर्न जहाँसुकै थिच्नुहोस्</string>
+    <string name="select_date_range">मितिको दायरा छान्नुहोस्</string>
+</resources>

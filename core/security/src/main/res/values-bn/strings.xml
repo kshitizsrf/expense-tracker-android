@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lock_title">হিসাব কিতাব লক করা আছে</string>
+    <string name="lock_message">আপনার আর্থিক তথ্য গোপন থাকে। আঙুলের ছাপ, মুখ বা স্ক্রিন লক দিয়ে খুলুন।</string>
+    <string name="lock_unlock">আনলক করুন</string>
+    <string name="lock_prompt_title">হিসাব কিতাব আনলক করুন</string>
+    <string name="lock_prompt_subtitle">নিশ্চিত করুন যে এটি আপনি</string>
+</resources>

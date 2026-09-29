@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="today">இன்று</string>
+    <string name="yesterday">நேற்று</string>
+    <string name="greeting_morning">காலை வணக்கம்</string>
+    <string name="greeting_afternoon">மதிய வணக்கம்</string>
+    <string name="greeting_evening">மாலை வணக்கம்</string>
+    <string name="greeting_night">நள்ளிரவு வரை விழித்திருக்கிறீர்களா?</string>
+    <string name="currency">நாணயம்</string>
+    <string name="language">மொழி</string>
+    <string name="language_system">சிஸ்டம் இயல்புநிலை</string>
+    <string name="language_system_summary">ஃபோனின் மொழியைப் பயன்படுத்து</string>
+    <string name="language_search">மொழிகளைத் தேடு</string>
+    <string name="category_food">உணவு</string>
+    <string name="category_shopping">ஷாப்பிங்</string>
+    <string name="category_transportation">போக்குவரத்து</string>
+    <string name="category_bills">கட்டணங்கள்</string>
+    <string name="category_home">வீடு</string>
+    <string name="category_health">ஆரோக்கியம்</string>
+    <string name="category_entertainment">பொழுதுபோக்கு</string>
+    <string name="category_education">கல்வி</string>
+    <string name="category_travel">பயணம்</string>
+    <string name="category_clothing">ஆடைகள்</string>
+    <string name="category_fruits">பழங்கள்</string>
+    <string name="category_vegetables">காய்கறிகள்</string>
+    <string name="category_car">கார்</string>
+    <string name="category_insurance">காப்பீடு</string>
+    <string name="category_gift">பரிசு</string>
+    <string name="category_sport">விளையாட்டு</string>
+    <string name="category_book">புத்தகங்கள்</string>
+    <string name="category_pet">செல்லப்பிராணி</string>
+    <string name="category_wine">பானங்கள்</string>
+    <string name="category_salary">சம்பளம்</string>
+    <string name="category_rental">வாடகை</string>
+    <string name="category_sale">விற்பனை</string>
+    <string name="category_awards">விருதுகள்</string>
+    <string name="category_investment">முதலீடு</string>
+    <string name="category_other">மற்றவை</string>
+</resources>

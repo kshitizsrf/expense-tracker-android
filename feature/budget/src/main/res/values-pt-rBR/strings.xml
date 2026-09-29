@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_change">Alterar</string>
+    <string name="budget_intro">Planeje seu dinheiro. Orçamentos contam apenas despesas.</string>
+    <string name="budget_amount">Valor do orçamento</string>
+    <string name="budget_period">Período</string>
+    <string name="budget_explain_daily">Recomeça todo dia.</string>
+    <string name="budget_explain_weekly">Recomeça no início de cada semana.</string>
+    <string name="budget_explain_monthly">Recomeça no dia 1 de cada mês.</string>
+    <string name="budget_explain_custom">Somente para as datas escolhidas.</string>
+    <string name="budget_current_period">Período atual: %1$s</string>
+    <string name="choose_dates">Escolher datas</string>
+    <string name="save_budget">Salvar orçamento</string>
+    <string name="remove_budget">Remover orçamento</string>
+    <string name="error_dates_required">Escolha as datas do seu orçamento</string>
+</resources>

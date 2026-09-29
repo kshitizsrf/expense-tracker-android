@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lock_title">Hisab Kitab заблокирован</string>
+    <string name="lock_message">Ваши финансы остаются в тайне. Разблокируйте отпечатком, лицом или блокировкой экрана.</string>
+    <string name="lock_unlock">Разблокировать</string>
+    <string name="lock_prompt_title">Разблокировать Hisab Kitab</string>
+    <string name="lock_prompt_subtitle">Подтвердите, что это вы</string>
+</resources>

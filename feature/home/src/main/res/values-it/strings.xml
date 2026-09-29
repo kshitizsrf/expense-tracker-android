@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="balance">Saldo del mese</string>
+    <string name="previous_month">Mese precedente</string>
+    <string name="next_month">Mese successivo</string>
+    <string name="back_to_this_month">Tocca per tornare a questo mese</string>
+    <string name="recent_transactions">Attività recente</string>
+    <string name="see_all">Vedi tutto</string>
+    <string name="daily_spending">Spesa giornaliera</string>
+    <string name="budget_set_title">Imposta un budget</string>
+    <string name="budget_set_message">Scopri esattamente quanto puoi spendere ogni giorno.</string>
+    <string name="budget_title_daily">Budget di oggi</string>
+    <string name="budget_title_weekly">Budget della settimana</string>
+    <string name="budget_title_monthly">Budget del mese</string>
+    <string name="budget_title_custom">Budget</string>
+    <string name="budget_spent_of">%1$s spesi su %2$s</string>
+    <string name="budget_over_by">%1$s oltre</string>
+    <string name="budget_safe_today">Spendibile oggi</string>
+    <string name="budget_ended">Questo budget è terminato. Tocca per impostarne uno nuovo.</string>
+    <string name="budget_not_started">Inizia il %1$s</string>
+    <string name="insight_top_category">Spesa principale</string>
+    <string name="insight_daily_average">Media giornaliera</string>
+    <string name="insight_biggest">Spesa più grande</string>
+    <string name="insight_count">Voci</string>
+    <string name="empty_home_title">Un nuovo inizio</string>
+    <string name="empty_home_message">Tocca il pulsante + per registrare la tua prima entrata o uscita.</string>
+    <string name="spotlight_saved">Risparmiato</string>
+    <plurals name="budget_days_left">
+        <item quantity="one">Manca %d giorno</item>
+        <item quantity="many">Mancano %d giorni</item>
+        <item quantity="other">Mancano %d giorni</item>
+    </plurals>
+</resources>

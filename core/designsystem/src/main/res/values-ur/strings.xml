@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">حساب کتاب</string>
+    <string name="nav_transactions">سرگرمی</string>
+    <string name="nav_stats">تجزیہ</string>
+    <string name="nav_categories">زمرے</string>
+    <string name="action_back">واپس</string>
+    <string name="action_cancel">منسوخ کریں</string>
+    <string name="action_close">بند کریں</string>
+    <string name="action_delete">حذف کریں</string>
+    <string name="action_ok">ٹھیک ہے</string>
+    <string name="income">آمدنی</string>
+    <string name="expense">خرچ</string>
+    <string name="expenses">اخراجات</string>
+    <string name="select_time">وقت منتخب کریں</string>
+    <string name="settings_title">ترتیبات</string>
+    <string name="add_transaction">شامل کریں</string>
+    <string name="empty_transactions_title">ابھی کوئی لین دین نہیں</string>
+    <string name="empty_transactions_message">اپنی پہلی آمدنی یا خرچ درج کرنے کے لیے شامل کریں پر ٹیپ کریں۔</string>
+    <string name="budget">بجٹ</string>
+    <string name="period_daily">روزانہ</string>
+    <string name="period_weekly">ہفتہ وار</string>
+    <string name="period_monthly">ماہانہ</string>
+    <string name="period_custom">حسب منشا</string>
+    <string name="error_amount_required">صفر سے زیادہ رقم درج کریں</string>
+    <string name="action_save">محفوظ کریں</string>
+    <string name="action_edit">ترمیم کریں</string>
+    <string name="theme_skyline_tagline">صاف نیلا سکون</string>
+    <string name="theme_dawn_tagline">آدھی رات کے بعد کی صبح</string>
+    <string name="theme_horizon_tagline">گہرا سمندری نیلا سبز</string>
+    <string name="theme_pinkwalk_tagline">لیونڈر کینڈی کی سیر</string>
+    <string name="theme_rosewood_tagline">نیلی راتیں، گلابی چمک</string>
+    <string name="theme_wallpaper_tagline">آپ کے وال پیپر کے رنگوں سے</string>
+    <string name="theme_wallpaper">وال پیپر</string>
+    <string name="spotlight_dismiss">بند کرنے کے لیے کہیں بھی ٹیپ کریں</string>
+    <string name="select_date_range">تاریخوں کی حد منتخب کریں</string>
+</resources>

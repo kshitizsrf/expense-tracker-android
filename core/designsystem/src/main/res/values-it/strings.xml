@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_transactions">Attività</string>
+    <string name="nav_stats">Analisi</string>
+    <string name="nav_categories">Categorie</string>
+    <string name="action_back">Indietro</string>
+    <string name="action_cancel">Annulla</string>
+    <string name="action_close">Chiudi</string>
+    <string name="action_delete">Elimina</string>
+    <string name="action_ok">OK</string>
+    <string name="income">Entrata</string>
+    <string name="expense">Uscita</string>
+    <string name="expenses">Uscite</string>
+    <string name="select_time">Scegli l\'ora</string>
+    <string name="settings_title">Impostazioni</string>
+    <string name="add_transaction">Aggiungi</string>
+    <string name="empty_transactions_title">Ancora nessun movimento</string>
+    <string name="empty_transactions_message">Tocca Aggiungi per registrare la tua prima entrata o uscita.</string>
+    <string name="budget">Budget</string>
+    <string name="period_daily">Giornaliero</string>
+    <string name="period_weekly">Settimanale</string>
+    <string name="period_monthly">Mensile</string>
+    <string name="period_custom">Personalizzato</string>
+    <string name="error_amount_required">Inserisci un importo maggiore di zero</string>
+    <string name="action_save">Salva</string>
+    <string name="action_edit">Modifica</string>
+    <string name="theme_skyline_tagline">Calma blu cristallina</string>
+    <string name="theme_dawn_tagline">L\'alba dopo mezzanotte</string>
+    <string name="theme_horizon_tagline">Turchese degli abissi</string>
+    <string name="theme_pinkwalk_tagline">Una passeggiata lavanda e zucchero</string>
+    <string name="theme_rosewood_tagline">Notti indaco, bagliore rosa</string>
+    <string name="theme_wallpaper_tagline">Con i colori del tuo sfondo</string>
+    <string name="theme_wallpaper">Sfondo</string>
+    <string name="spotlight_dismiss">Tocca ovunque per chiudere</string>
+    <string name="select_date_range">Scegli un intervallo di date</string>
+</resources>

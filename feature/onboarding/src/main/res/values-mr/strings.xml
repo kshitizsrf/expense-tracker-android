@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_welcome_title">हिशोब किताब</string>
+    <string name="onboarding_welcome_message">तुमचे पैसे, सुंदरपणे मांडलेले. काही सेकंदात नोंदवा, पैसा कुठे जातो ते पहा आणि आत्मविश्वासाने खर्च करा.</string>
+    <string name="onboarding_theme_title">तुमची शैली निवडा</string>
+    <string name="onboarding_theme_message">पाच खास थीम, प्रत्येकात लाइट आणि डार्क मूड. तुम्ही कधीही बदलू शकता.</string>
+    <string name="onboarding_setup_title">शेवटचे टप्पे</string>
+    <string name="onboarding_setup_message">तुमचे चलन निवडा आणि दिवसाची नोंद करण्यासाठी हलकी आठवण हवी का ते सांगा.</string>
+    <string name="onboarding_currency">चलन</string>
+    <string name="onboarding_reminder">दैनिक स्मरणपत्र</string>
+    <string name="onboarding_reminder_summary">फक्त त्या दिवशी काहीही नोंदवले नसेल तर</string>
+    <string name="onboarding_next">पुढे</string>
+    <string name="onboarding_start">चला सुरू करूया</string>
+    <string name="onboarding_skip">वगळा</string>
+    <string name="onboarding_feature_fast">झटपट नोंदीसाठी कॅल्क्युलेटर कीपॅड</string>
+    <string name="onboarding_feature_insights">खर्च पाहण्याचे पाच मार्ग</string>
+    <string name="onboarding_feature_private">पूर्णपणे खाजगी · सर्व काही तुमच्या फोनवरच राहते</string>
+    <string name="mode_auto">ऑटो</string>
+    <string name="mode_light">☀  लाइट</string>
+    <string name="mode_dark">☾  डार्क</string>
+    <string name="onboarding_language_title">तुमची भाषा निवडा</string>
+    <string name="onboarding_language_message">हिशोब किताब तुमची भाषा बोलतो. सेटिंग्जमध्ये कधीही बदलू शकता.</string>
+    <string name="onboarding_lock">ॲप लॉक</string>
+    <string name="onboarding_lock_summary">बोटाचा ठसा किंवा स्क्रीन लॉकने माहिती खाजगी ठेवा</string>
+    <string name="onboarding_lock_prompt">ॲप लॉक सुरू करा</string>
+    <string name="onboarding_lock_prompt_subtitle">हे तुम्हीच आहात याची खात्री करा</string>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_change">更改</string>
+    <string name="budget_intro">规划你的钱。预算只计算支出。</string>
+    <string name="budget_amount">预算金额</string>
+    <string name="budget_period">周期</string>
+    <string name="budget_explain_daily">每天重新开始。</string>
+    <string name="budget_explain_weekly">每周开始时重新开始。</string>
+    <string name="budget_explain_monthly">每月 1 日重新开始。</string>
+    <string name="budget_explain_custom">仅适用于你选择的日期。</string>
+    <string name="budget_current_period">当前周期：%1$s</string>
+    <string name="choose_dates">选择日期</string>
+    <string name="save_budget">保存预算</string>
+    <string name="remove_budget">移除预算</string>
+    <string name="error_dates_required">请选择预算日期</string>
+</resources>

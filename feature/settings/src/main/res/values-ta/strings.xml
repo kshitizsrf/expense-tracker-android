@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="budget_not_set">அமைக்கப்படவில்லை</string>
+    <string name="settings_appearance">தோற்றம்</string>
+    <string name="settings_money">பணம்</string>
+    <string name="settings_reminders">நினைவூட்டல்கள்</string>
+    <string name="settings_data">உங்கள் தரவு</string>
+    <string name="settings_about">பற்றி</string>
+    <string name="theme">பயன்முறை</string>
+    <string name="theme_system">சிஸ்டம்</string>
+    <string name="theme_light">லைட்</string>
+    <string name="theme_dark">டார்க்</string>
+    <string name="daily_reminder">தினசரி நினைவூட்டல்</string>
+    <string name="daily_reminder_summary">அன்று எதையும் பதிவுசெய்யவில்லை என்றால் ஒரு சிறு நினைவூட்டல்</string>
+    <string name="reminder_time">நினைவூட்டல் நேரம்</string>
+    <string name="notification_settings">அறிவிப்பு அமைப்புகள்</string>
+    <string name="notification_settings_summary">ஹிசாப் கிதாப் உங்களுக்கு எப்படி அறிவிக்க வேண்டும் என்பதை நிர்வகிக்கவும்</string>
+    <string name="export_transactions">பரிவர்த்தனைகளை ஏற்றுமதி செய்</string>
+    <string name="export_categories">வகைகளை ஏற்றுமதி செய்</string>
+    <string name="export_summary">எந்த ஸ்ப்ரெட்ஷீட் ஆப்பிலும் திறக்கக்கூடிய CSV கோப்பாகச் சேமிக்கவும்</string>
+    <string name="export_failed">ஏற்றுமதி தோல்வியடைந்தது. மீண்டும் முயலவும்.</string>
+    <string name="version">பதிப்பு %1$s</string>
+    <string name="settings_title_big">அமைப்புகள்</string>
+    <string name="settings_subtitle">உங்களுக்கு ஏற்றபடி</string>
+    <string name="settings_theme_gallery">தீம்</string>
+    <string name="currency_setting">நாணயம்</string>
+    <string name="made_with_love">கவனமான செலவுக்காக ♥ உடன் உருவாக்கப்பட்டது</string>
+    <string name="settings_motion">அசைவூட்டம் &amp; பாணி</string>
+    <string name="settings_privacy">தனியுரிமை &amp; பாதுகாப்பு</string>
+    <string name="nav_style">வழிசெலுத்தல் பட்டி</string>
+    <string name="nav_style_hint">கீழே உள்ள பட்டியில் ஒவ்வொரு பாணியையும் முயலுங்கள்</string>
+    <string name="nav_style_liquid">லிக்விட்</string>
+    <string name="nav_style_bubble">பபிள்</string>
+    <string name="nav_style_glow">க்ளோ</string>
+    <string name="nav_style_expand">எக்ஸ்பாண்ட்</string>
+    <string name="chart_animation">விளக்கப்பட அசைவூட்டம்</string>
+    <string name="chart_animation_hint">பகுப்பாய்வில் விளக்கப்படங்கள் எப்படி மாறுகின்றன</string>
+    <string name="chart_fade">மங்கல்</string>
+    <string name="chart_slide">சறுக்கல்</string>
+    <string name="chart_flip">3D புரட்டல்</string>
+    <string name="chart_zoom">பெரிதாக்கல்</string>
+    <string name="preview_home">முகப்பு</string>
+    <string name="app_lock">ஆப் பூட்டு</string>
+    <string name="app_lock_summary">திறக்கக் கைரேகை, முகம் அல்லது திரைப் பூட்டு தேவை</string>
+    <string name="app_lock_unavailable">இதைப் பயன்படுத்த ஃபோனில் திரைப் பூட்டை அமைக்கவும்</string>
+    <string name="app_lock_confirm_title">ஆப் பூட்டை இயக்கு</string>
+    <string name="app_lock_confirm_subtitle">இது நீங்கள்தான் என்பதை உறுதிப்படுத்தவும்</string>
+    <string name="language_setting">மொழி</string>
+    <plurals name="exported_transactions">
+        <item quantity="one">%d பரிவர்த்தனை ஏற்றுமதி செய்யப்பட்டது</item>
+        <item quantity="other">%d பரிவர்த்தனைகள் ஏற்றுமதி செய்யப்பட்டன</item>
+    </plurals>
+    <plurals name="exported_categories">
+        <item quantity="one">%d வகை ஏற்றுமதி செய்யப்பட்டது</item>
+        <item quantity="other">%d வகைகள் ஏற்றுமதி செய்யப்பட்டன</item>
+    </plurals>
+</resources>

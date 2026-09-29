@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lock_title">हिशोब किताब लॉक आहे</string>
+    <string name="lock_message">तुमची आर्थिक माहिती खाजगी राहते. बोटाचा ठसा, चेहरा किंवा स्क्रीन लॉकने उघडा.</string>
+    <string name="lock_unlock">अनलॉक करा</string>
+    <string name="lock_prompt_title">हिशोब किताब अनलॉक करा</string>
+    <string name="lock_prompt_subtitle">हे तुम्हीच आहात याची खात्री करा</string>
+</resources>

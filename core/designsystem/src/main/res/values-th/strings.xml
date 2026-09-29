@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_transactions">กิจกรรม</string>
+    <string name="nav_stats">วิเคราะห์</string>
+    <string name="nav_categories">หมวดหมู่</string>
+    <string name="action_back">กลับ</string>
+    <string name="action_cancel">ยกเลิก</string>
+    <string name="action_close">ปิด</string>
+    <string name="action_delete">ลบ</string>
+    <string name="action_ok">ตกลง</string>
+    <string name="income">รายรับ</string>
+    <string name="expense">รายจ่าย</string>
+    <string name="expenses">รายจ่าย</string>
+    <string name="select_time">เลือกเวลา</string>
+    <string name="settings_title">การตั้งค่า</string>
+    <string name="add_transaction">เพิ่ม</string>
+    <string name="empty_transactions_title">ยังไม่มีรายการ</string>
+    <string name="empty_transactions_message">แตะเพิ่มเพื่อบันทึกรายรับหรือรายจ่ายแรกของคุณ</string>
+    <string name="budget">งบประมาณ</string>
+    <string name="period_daily">รายวัน</string>
+    <string name="period_weekly">รายสัปดาห์</string>
+    <string name="period_monthly">รายเดือน</string>
+    <string name="period_custom">กำหนดเอง</string>
+    <string name="error_amount_required">ใส่จำนวนเงินที่มากกว่าศูนย์</string>
+    <string name="action_save">บันทึก</string>
+    <string name="action_edit">แก้ไข</string>
+    <string name="theme_skyline_tagline">ความสงบสีฟ้าใส</string>
+    <string name="theme_dawn_tagline">รุ่งอรุณหลังเที่ยงคืน</string>
+    <string name="theme_horizon_tagline">สีฟ้าอมเขียวแห่งทะเลลึก</string>
+    <string name="theme_pinkwalk_tagline">เดินเล่นในโทนลาเวนเดอร์หวาน</string>
+    <string name="theme_rosewood_tagline">ค่ำคืนสีคราม แสงสีชมพู</string>
+    <string name="theme_wallpaper_tagline">ตามสีวอลเปเปอร์ของคุณ</string>
+    <string name="theme_wallpaper">วอลเปเปอร์</string>
+    <string name="spotlight_dismiss">แตะที่ใดก็ได้เพื่อปิด</string>
+    <string name="select_date_range">เลือกช่วงวันที่</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lock_title">હિસાબ કિતાબ લૉક છે</string>
+    <string name="lock_message">તમારી નાણાકીય માહિતી ખાનગી રહે છે. ફિંગરપ્રિન્ટ, ચહેરો કે સ્ક્રીન લૉકથી ખોલો.</string>
+    <string name="lock_unlock">અનલૉક કરો</string>
+    <string name="lock_prompt_title">હિસાબ કિતાબ અનલૉક કરો</string>
+    <string name="lock_prompt_subtitle">ખાતરી કરો કે આ તમે જ છો</string>
+</resources>

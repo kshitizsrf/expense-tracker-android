@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="insights_title">বিশ্লেষণ</string>
+    <string name="insights_subtitle">আপোনাৰ টকা ক\'লৈ যায়</string>
+    <string name="period_this_month">এই মাহ</string>
+    <string name="period_last_month">যোৱা মাহ</string>
+    <string name="period_last_3_months">৩ মাহ</string>
+    <string name="period_this_year">এই বছৰ</string>
+    <string name="chart_donut">ডোনাট</string>
+    <string name="chart_bars">ৰেংকিং</string>
+    <string name="chart_trend">প্ৰৱণতা</string>
+    <string name="chart_calendar">কেলেণ্ডাৰ</string>
+    <string name="chart_cash_flow">নগদ প্ৰবাহ</string>
+    <string name="chart_donut_title">শ্ৰেণী অনুসৰি অংশ</string>
+    <string name="chart_bars_title">শীৰ্ষ শ্ৰেণী</string>
+    <string name="chart_trend_title_daily">দিনে দিনে</string>
+    <string name="chart_trend_title_monthly">মাহে মাহে</string>
+    <string name="chart_calendar_title">খৰচৰ কেলেণ্ডাৰ</string>
+    <string name="chart_calendar_title_income">উপাৰ্জনৰ কেলেণ্ডাৰ</string>
+    <string name="chart_cash_flow_title">নগদ প্ৰবাহ · যোৱা ৬ মাহ</string>
+    <string name="chart_hint_donut">এটা অংশত মনোযোগ দিবলৈ টিপক</string>
+    <string name="chart_hint_trend">স্পৰ্শ কৰি টানি চাওক</string>
+    <string name="chart_hint_calendar">এটা দিনৰ মুঠ চাবলৈ টিপক</string>
+    <string name="chart_hint_cash_flow">সবিশেষৰ বাবে এটা মাহ টিপক</string>
+    <string name="total_spent">মুঠ খৰচ</string>
+    <string name="total_earned">মুঠ উপাৰ্জন</string>
+    <string name="stat_total">মুঠ</string>
+    <string name="stat_daily_average">দৈনিক গড়</string>
+    <string name="stat_entries">এণ্ট্ৰি</string>
+    <string name="stat_vs_previous">আগৰ তুলনাত</string>
+    <string name="stat_no_comparison">নতুন</string>
+    <string name="percent_of_total">মুঠৰ %1$d%%</string>
+    <string name="heatmap_less">কম</string>
+    <string name="heatmap_more">বেছি</string>
+    <string name="nothing_on_day">একো লিখা নাই</string>
+    <string name="net">নিট</string>
+    <string name="stats_empty_title">এতিয়ালৈকে দেখুৱাবলৈ একো নাই</string>
+    <string name="stats_empty_message">এই সময়সীমাৰ লেনদেনে এই চাৰ্টবোৰ উজলাই তুলিব।</string>
+    <string name="stat_previous_period">আগৰ সময়সীমা</string>
+    <plurals name="transaction_count">
+        <item quantity="one">%dটা লেনদেন</item>
+        <item quantity="other">%dটা লেনদেন</item>
+    </plurals>
+</resources>

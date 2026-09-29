@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="reminder_channel_name">ਰੋਜ਼ਾਨਾ ਯਾਦ-ਦਹਾਨੀ</string>
+    <string name="reminder_channel_description">ਜੇ ਅੱਜ ਕੋਈ ਲੈਣ-ਦੇਣ ਨਹੀਂ ਜੋੜਿਆ ਤਾਂ ਯਾਦ ਕਰਾਉਂਦਾ ਹੈ।</string>
+    <string name="reminder_title">ਅੱਜ ਦਾ ਖ਼ਰਚਾ ਲਿਖਿਆ?</string>
+    <string name="reminder_text">ਬਸ ਕੁਝ ਸਕਿੰਟ ਲੱਗਦੇ ਹਨ ਅਤੇ ਤੁਹਾਡਾ ਬਜਟ ਸਹੀ ਰਹਿੰਦਾ ਹੈ।</string>
+</resources>

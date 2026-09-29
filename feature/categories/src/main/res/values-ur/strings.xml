@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="new_category">نیا زمرہ</string>
+    <string name="edit_category">زمرے میں ترمیم</string>
+    <string name="category_name">نام</string>
+    <string name="color">رنگ</string>
+    <string name="icon">آئیکن</string>
+    <string name="categories_empty_title">کوئی زمرہ نہیں</string>
+    <string name="categories_empty_message">نیا بنانے کے لیے + پر ٹیپ کریں۔</string>
+    <string name="error_name_required">نام درج کریں</string>
+    <string name="error_name_taken">اس نام کا زمرہ پہلے سے موجود ہے</string>
+    <string name="delete_category_title">“%1$s” حذف کریں؟</string>
+    <string name="delete_category_message_empty">یہ زمرہ ہمیشہ کے لیے حذف ہو جائے گا۔</string>
+    <string name="categories_title">زمرے</string>
+    <string name="categories_subtitle">آپ کا پیسہ، سلیقے سے</string>
+    <string name="this_month_total">اس مہینے %1$s</string>
+    <string name="nothing_this_month">اس مہینے کچھ نہیں</string>
+    <string name="preview">پیش منظر</string>
+    <plurals name="delete_category_message">
+        <item quantity="one">اس سے اس زمرے کا %d لین دین بھی حذف ہو جائے گا۔ اسے واپس نہیں لایا جا سکتا۔</item>
+        <item quantity="other">اس سے اس زمرے کے %d لین دین بھی حذف ہو جائیں گے۔ اسے واپس نہیں لایا جا سکتا۔</item>
+    </plurals>
+</resources>

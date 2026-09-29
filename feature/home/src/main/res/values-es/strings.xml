@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="balance">Saldo de este mes</string>
+    <string name="previous_month">Mes anterior</string>
+    <string name="next_month">Mes siguiente</string>
+    <string name="back_to_this_month">Toca para volver a este mes</string>
+    <string name="recent_transactions">Actividad reciente</string>
+    <string name="see_all">Ver todo</string>
+    <string name="daily_spending">Gasto diario</string>
+    <string name="budget_set_title">Define un presupuesto</string>
+    <string name="budget_set_message">Descubre exactamente cuánto puedes gastar cada día.</string>
+    <string name="budget_title_daily">Presupuesto de hoy</string>
+    <string name="budget_title_weekly">Presupuesto semanal</string>
+    <string name="budget_title_monthly">Presupuesto mensual</string>
+    <string name="budget_title_custom">Presupuesto</string>
+    <string name="budget_spent_of">%1$s gastado de %2$s</string>
+    <string name="budget_over_by">%1$s por encima</string>
+    <string name="budget_safe_today">Puedes gastar hoy</string>
+    <string name="budget_ended">Este presupuesto terminó. Toca para crear uno nuevo.</string>
+    <string name="budget_not_started">Empieza el %1$s</string>
+    <string name="insight_top_category">Mayor gasto</string>
+    <string name="insight_daily_average">Media diaria</string>
+    <string name="insight_biggest">Gasto más grande</string>
+    <string name="insight_count">Registros</string>
+    <string name="empty_home_title">Un nuevo comienzo</string>
+    <string name="empty_home_message">Toca el botón + para registrar tu primer ingreso o gasto.</string>
+    <string name="spotlight_saved">Ahorrado</string>
+    <plurals name="budget_days_left">
+        <item quantity="one">Queda %d día</item>
+        <item quantity="many">Quedan %d días</item>
+        <item quantity="other">Quedan %d días</item>
+    </plurals>
+</resources>

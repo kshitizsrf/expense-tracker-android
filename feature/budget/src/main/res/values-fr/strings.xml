@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_change">Modifier</string>
+    <string name="budget_intro">Planifiez votre argent. Les budgets ne comptent que les dépenses.</string>
+    <string name="budget_amount">Montant du budget</string>
+    <string name="budget_period">Période</string>
+    <string name="budget_explain_daily">Repart de zéro chaque jour.</string>
+    <string name="budget_explain_weekly">Repart de zéro au début de chaque semaine.</string>
+    <string name="budget_explain_monthly">Repart de zéro le 1er de chaque mois.</string>
+    <string name="budget_explain_custom">Uniquement pour les dates choisies.</string>
+    <string name="budget_current_period">Période en cours : %1$s</string>
+    <string name="choose_dates">Choisir les dates</string>
+    <string name="save_budget">Enregistrer le budget</string>
+    <string name="remove_budget">Supprimer le budget</string>
+    <string name="error_dates_required">Choisissez les dates de votre budget</string>
+</resources>

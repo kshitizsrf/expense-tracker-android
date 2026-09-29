@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="today">Hoje</string>
+    <string name="yesterday">Ontem</string>
+    <string name="greeting_morning">Bom dia</string>
+    <string name="greeting_afternoon">Boa tarde</string>
+    <string name="greeting_evening">Boa noite</string>
+    <string name="greeting_night">Acordado até tarde?</string>
+    <string name="currency">Moeda</string>
+    <string name="language">Idioma</string>
+    <string name="language_system">Padrão do sistema</string>
+    <string name="language_system_summary">Usar o idioma do celular</string>
+    <string name="language_search">Buscar idiomas</string>
+    <string name="category_food">Alimentação</string>
+    <string name="category_shopping">Compras</string>
+    <string name="category_transportation">Transporte</string>
+    <string name="category_bills">Contas</string>
+    <string name="category_home">Casa</string>
+    <string name="category_health">Saúde</string>
+    <string name="category_entertainment">Lazer</string>
+    <string name="category_education">Educação</string>
+    <string name="category_travel">Viagens</string>
+    <string name="category_clothing">Roupas</string>
+    <string name="category_fruits">Frutas</string>
+    <string name="category_vegetables">Verduras</string>
+    <string name="category_car">Carro</string>
+    <string name="category_insurance">Seguros</string>
+    <string name="category_gift">Presentes</string>
+    <string name="category_sport">Esportes</string>
+    <string name="category_book">Livros</string>
+    <string name="category_pet">Pets</string>
+    <string name="category_wine">Bebidas</string>
+    <string name="category_salary">Salário</string>
+    <string name="category_rental">Aluguel</string>
+    <string name="category_sale">Vendas</string>
+    <string name="category_awards">Prêmios</string>
+    <string name="category_investment">Investimentos</string>
+    <string name="category_other">Outros</string>
+</resources>

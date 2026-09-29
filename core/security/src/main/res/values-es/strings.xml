@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lock_title">Hisab Kitab está bloqueada</string>
+    <string name="lock_message">Tus finanzas se mantienen privadas. Desbloquea con huella, rostro o bloqueo de pantalla.</string>
+    <string name="lock_unlock">Desbloquear</string>
+    <string name="lock_prompt_title">Desbloquear Hisab Kitab</string>
+    <string name="lock_prompt_subtitle">Confirma que eres tú</string>
+</resources>

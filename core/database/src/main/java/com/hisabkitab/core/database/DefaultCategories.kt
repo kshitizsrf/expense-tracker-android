@@ -8,7 +8,10 @@ import com.hisabkitab.core.model.TransactionType
 /** Categories every new install starts with (same set as the original app). */
 internal object DefaultCategories {
 
-    private data class Seed(val name: String, val iconKey: String, val type: TransactionType)
+    private data class Seed(val name: String, val iconKey: String, val type: TransactionType) {
+        /** Stable key used to show the name in the user's language. */
+        val key: String get() = name.lowercase()
+    }
 
     private val seeds = listOf(
         Seed("Food", "icon_55", TransactionType.EXPENSE),
@@ -43,8 +46,8 @@ internal object DefaultCategories {
         override fun onCreate(db: SupportSQLiteDatabase) {
             seeds.forEachIndexed { index, seed ->
                 db.execSQL(
-                    "INSERT INTO categories (name, icon_key, color, type) VALUES (?, ?, ?, ?)",
-                    arrayOf<Any?>(seed.name, seed.iconKey, CategoryColors.forIndex(index), seed.type.name),
+                    "INSERT INTO categories (name, icon_key, color, type, default_key) VALUES (?, ?, ?, ?, ?)",
+                    arrayOf<Any?>(seed.name, seed.iconKey, CategoryColors.forIndex(index), seed.type.name, seed.key),
                 )
             }
         }

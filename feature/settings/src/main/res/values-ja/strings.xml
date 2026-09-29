@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="budget_not_set">未設定</string>
+    <string name="settings_appearance">表示</string>
+    <string name="settings_money">お金</string>
+    <string name="settings_reminders">リマインダー</string>
+    <string name="settings_data">データ</string>
+    <string name="settings_about">アプリについて</string>
+    <string name="theme">モード</string>
+    <string name="theme_system">システム</string>
+    <string name="theme_light">ライト</string>
+    <string name="theme_dark">ダーク</string>
+    <string name="daily_reminder">毎日のリマインダー</string>
+    <string name="daily_reminder_summary">その日に何も記録していないときにやさしくお知らせ</string>
+    <string name="reminder_time">リマインダーの時刻</string>
+    <string name="notification_settings">通知設定</string>
+    <string name="notification_settings_summary">Hisab Kitab からの通知方法を管理</string>
+    <string name="export_transactions">記録をエクスポート</string>
+    <string name="export_categories">カテゴリをエクスポート</string>
+    <string name="export_summary">どの表計算アプリでも開ける CSV ファイルとして保存</string>
+    <string name="export_failed">エクスポートに失敗しました。もう一度お試しください。</string>
+    <string name="version">バージョン %1$s</string>
+    <string name="settings_title_big">設定</string>
+    <string name="settings_subtitle">自分好みに</string>
+    <string name="settings_theme_gallery">テーマ</string>
+    <string name="currency_setting">通貨</string>
+    <string name="made_with_love">賢いお金の使い方のために ♥ を込めて</string>
+    <string name="settings_motion">モーションとスタイル</string>
+    <string name="settings_privacy">プライバシーとセキュリティ</string>
+    <string name="nav_style">ナビゲーションバー</string>
+    <string name="nav_style_hint">下のバーで各スタイルを試せます</string>
+    <string name="nav_style_liquid">リキッド</string>
+    <string name="nav_style_bubble">バブル</string>
+    <string name="nav_style_glow">グロー</string>
+    <string name="nav_style_expand">エキスパンド</string>
+    <string name="chart_animation">グラフのアニメーション</string>
+    <string name="chart_animation_hint">分析画面でのグラフの切り替え方</string>
+    <string name="chart_fade">フェード</string>
+    <string name="chart_slide">スライド</string>
+    <string name="chart_flip">3D フリップ</string>
+    <string name="chart_zoom">ズーム</string>
+    <string name="preview_home">ホーム</string>
+    <string name="app_lock">アプリロック</string>
+    <string name="app_lock_summary">起動時に指紋、顔、または画面ロックを要求</string>
+    <string name="app_lock_unavailable">利用するにはスマートフォンで画面ロックを設定してください</string>
+    <string name="app_lock_confirm_title">アプリロックをオン</string>
+    <string name="app_lock_confirm_subtitle">本人であることを確認してください</string>
+    <string name="language_setting">言語</string>
+    <plurals name="exported_transactions">
+        <item quantity="other">%d 件の記録をエクスポートしました</item>
+    </plurals>
+    <plurals name="exported_categories">
+        <item quantity="other">%d 件のカテゴリをエクスポートしました</item>
+    </plurals>
+</resources>

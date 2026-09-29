@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="insights_title">분석</string>
+    <string name="insights_subtitle">내 돈은 어디로 갈까</string>
+    <string name="period_this_month">이번 달</string>
+    <string name="period_last_month">지난달</string>
+    <string name="period_last_3_months">3개월</string>
+    <string name="period_this_year">올해</string>
+    <string name="chart_donut">도넛</string>
+    <string name="chart_bars">순위</string>
+    <string name="chart_trend">추이</string>
+    <string name="chart_calendar">캘린더</string>
+    <string name="chart_cash_flow">현금 흐름</string>
+    <string name="chart_donut_title">카테고리별 비중</string>
+    <string name="chart_bars_title">상위 카테고리</string>
+    <string name="chart_trend_title_daily">일별</string>
+    <string name="chart_trend_title_monthly">월별</string>
+    <string name="chart_calendar_title">지출 캘린더</string>
+    <string name="chart_calendar_title_income">수입 캘린더</string>
+    <string name="chart_cash_flow_title">현금 흐름 · 최근 6개월</string>
+    <string name="chart_hint_donut">조각을 탭하여 강조</string>
+    <string name="chart_hint_trend">길게 눌러 끌면서 살펴보기</string>
+    <string name="chart_hint_calendar">날짜를 탭하여 합계 보기</string>
+    <string name="chart_hint_cash_flow">월을 탭하여 자세히 보기</string>
+    <string name="total_spent">총 지출</string>
+    <string name="total_earned">총 수입</string>
+    <string name="stat_total">합계</string>
+    <string name="stat_daily_average">일평균</string>
+    <string name="stat_entries">건수</string>
+    <string name="stat_vs_previous">이전 대비</string>
+    <string name="stat_no_comparison">신규</string>
+    <string name="percent_of_total">전체의 %1$d%%</string>
+    <string name="heatmap_less">적음</string>
+    <string name="heatmap_more">많음</string>
+    <string name="nothing_on_day">기록 없음</string>
+    <string name="net">순액</string>
+    <string name="stats_empty_title">아직 표시할 내용이 없어요</string>
+    <string name="stats_empty_message">이 기간의 내역이 차트를 채워 줄 거예요.</string>
+    <string name="stat_previous_period">이전 기간</string>
+    <plurals name="transaction_count">
+        <item quantity="other">내역 %d건</item>
+    </plurals>
+</resources>

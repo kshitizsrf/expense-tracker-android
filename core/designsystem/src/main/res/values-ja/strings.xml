@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_transactions">履歴</string>
+    <string name="nav_stats">分析</string>
+    <string name="nav_categories">カテゴリ</string>
+    <string name="action_back">戻る</string>
+    <string name="action_cancel">キャンセル</string>
+    <string name="action_close">閉じる</string>
+    <string name="action_delete">削除</string>
+    <string name="action_ok">OK</string>
+    <string name="income">収入</string>
+    <string name="expense">支出</string>
+    <string name="expenses">支出</string>
+    <string name="select_time">時刻を選択</string>
+    <string name="settings_title">設定</string>
+    <string name="add_transaction">追加</string>
+    <string name="empty_transactions_title">まだ記録がありません</string>
+    <string name="empty_transactions_message">「追加」をタップして最初の収入や支出を記録しましょう。</string>
+    <string name="budget">予算</string>
+    <string name="period_daily">毎日</string>
+    <string name="period_weekly">毎週</string>
+    <string name="period_monthly">毎月</string>
+    <string name="period_custom">カスタム</string>
+    <string name="error_amount_required">0 より大きい金額を入力してください</string>
+    <string name="action_save">保存</string>
+    <string name="action_edit">編集</string>
+    <string name="theme_skyline_tagline">澄んだ青の静けさ</string>
+    <string name="theme_dawn_tagline">真夜中のあとの夜明け</string>
+    <string name="theme_horizon_tagline">深海のティール</string>
+    <string name="theme_pinkwalk_tagline">ラベンダーキャンディの散歩道</string>
+    <string name="theme_rosewood_tagline">藍色の夜、ばら色の輝き</string>
+    <string name="theme_wallpaper_tagline">壁紙の色に合わせて</string>
+    <string name="theme_wallpaper">壁紙</string>
+    <string name="spotlight_dismiss">どこかをタップして閉じる</string>
+    <string name="select_date_range">期間を選択</string>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="category">زمرہ</string>
+    <string name="date">تاریخ</string>
+    <string name="time">وقت</string>
+    <string name="note">نوٹ</string>
+    <string name="no_note">کوئی نوٹ نہیں</string>
+    <string name="search">تلاش کریں</string>
+    <string name="close_search">تلاش بند کریں</string>
+    <string name="clear_search">تلاش صاف کریں</string>
+    <string name="search_hint">نوٹس یا زمرے تلاش کریں</string>
+    <string name="filter_all">سب</string>
+    <string name="empty_filtered_title">کوئی مماثل لین دین نہیں</string>
+    <string name="empty_filtered_message">کوئی اور تلاش یا فلٹر آزمائیں۔</string>
+    <string name="transaction_details">لین دین</string>
+    <string name="transaction_not_found_title">لین دین نہیں ملا</string>
+    <string name="transaction_not_found_message">شاید اسے حذف کر دیا گیا ہے۔</string>
+    <string name="delete_transaction_title">لین دین حذف کریں؟</string>
+    <string name="delete_transaction_message">یہ لین دین ہمیشہ کے لیے حذف ہو جائے گا۔</string>
+    <string name="new_transaction">نیا لین دین</string>
+    <string name="edit_transaction">لین دین میں ترمیم</string>
+    <string name="note_optional">نوٹ (اختیاری)</string>
+    <string name="new_category_short">نیا</string>
+    <string name="save_transaction">لین دین محفوظ کریں</string>
+    <string name="save_changes">تبدیلیاں محفوظ کریں</string>
+    <string name="keypad_backspace">بیک اسپیس۔ سب مٹانے کے لیے دبائے رکھیں</string>
+    <string name="keypad_decimal">اعشاریہ</string>
+    <string name="error_amount_too_large">یہ رقم بہت زیادہ ہے</string>
+    <string name="error_category_required">ایک زمرہ منتخب کریں</string>
+    <string name="activity_title">سرگرمی</string>
+    <string name="activity_subtitle">ہر پیسے کا حساب</string>
+    <string name="deleted_transaction">لین دین حذف ہو گیا</string>
+    <string name="undo">واپس لیں</string>
+    <string name="swipe_hint">حذف کرنے کے لیے اندراج کو بائیں طرف سوائپ کریں</string>
+    <string name="spent_label">خرچ</string>
+    <string name="earned_label">آمدنی</string>
+</resources>

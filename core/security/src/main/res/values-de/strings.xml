@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lock_title">Hisab Kitab ist gesperrt</string>
+    <string name="lock_message">Deine Finanzen bleiben privat. Entsperre mit Fingerabdruck, Gesicht oder Displaysperre.</string>
+    <string name="lock_unlock">Entsperren</string>
+    <string name="lock_prompt_title">Hisab Kitab entsperren</string>
+    <string name="lock_prompt_subtitle">Bestätige, dass du es bist</string>
+</resources>

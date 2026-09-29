@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_change">ಬದಲಿಸಿ</string>
+    <string name="budget_intro">ನಿಮ್ಮ ಹಣಕ್ಕೆ ಒಂದು ಯೋಜನೆ ನೀಡಿ. ಬಜೆಟ್‌ನಲ್ಲಿ ಖರ್ಚುಗಳನ್ನು ಮಾತ್ರ ಎಣಿಸಲಾಗುತ್ತದೆ.</string>
+    <string name="budget_amount">ಬಜೆಟ್ ಮೊತ್ತ</string>
+    <string name="budget_period">ಅವಧಿ</string>
+    <string name="budget_explain_daily">ಪ್ರತಿದಿನ ಹೊಸದಾಗಿ ಆರಂಭವಾಗುತ್ತದೆ.</string>
+    <string name="budget_explain_weekly">ಪ್ರತಿ ವಾರದ ಆರಂಭದಲ್ಲಿ ಹೊಸದಾಗಿ ಆರಂಭವಾಗುತ್ತದೆ.</string>
+    <string name="budget_explain_monthly">ಪ್ರತಿ ತಿಂಗಳ 1ನೇ ತಾರೀಖು ಹೊಸದಾಗಿ ಆರಂಭವಾಗುತ್ತದೆ.</string>
+    <string name="budget_explain_custom">ನೀವು ಆಯ್ಕೆ ಮಾಡಿದ ದಿನಾಂಕಗಳಿಗೆ ಮಾತ್ರ.</string>
+    <string name="budget_current_period">ಪ್ರಸ್ತುತ ಅವಧಿ: %1$s</string>
+    <string name="choose_dates">ದಿನಾಂಕಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="save_budget">ಬಜೆಟ್ ಉಳಿಸಿ</string>
+    <string name="remove_budget">ಬಜೆಟ್ ತೆಗೆದುಹಾಕಿ</string>
+    <string name="error_dates_required">ನಿಮ್ಮ ಬಜೆಟ್‌ನ ದಿನಾಂಕಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ</string>
+</resources>

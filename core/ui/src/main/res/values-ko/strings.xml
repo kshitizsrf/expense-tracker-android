@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="today">오늘</string>
+    <string name="yesterday">어제</string>
+    <string name="greeting_morning">좋은 아침이에요</string>
+    <string name="greeting_afternoon">좋은 오후예요</string>
+    <string name="greeting_evening">좋은 저녁이에요</string>
+    <string name="greeting_night">아직 안 주무세요?</string>
+    <string name="currency">통화</string>
+    <string name="language">언어</string>
+    <string name="language_system">시스템 기본값</string>
+    <string name="language_system_summary">휴대전화 언어 사용</string>
+    <string name="language_search">언어 검색</string>
+    <string name="category_food">식비</string>
+    <string name="category_shopping">쇼핑</string>
+    <string name="category_transportation">교통</string>
+    <string name="category_bills">공과금</string>
+    <string name="category_home">주거</string>
+    <string name="category_health">건강</string>
+    <string name="category_entertainment">여가</string>
+    <string name="category_education">교육</string>
+    <string name="category_travel">여행</string>
+    <string name="category_clothing">의류</string>
+    <string name="category_fruits">과일</string>
+    <string name="category_vegetables">채소</string>
+    <string name="category_car">자동차</string>
+    <string name="category_insurance">보험</string>
+    <string name="category_gift">선물</string>
+    <string name="category_sport">스포츠</string>
+    <string name="category_book">도서</string>
+    <string name="category_pet">반려동물</string>
+    <string name="category_wine">음료</string>
+    <string name="category_salary">급여</string>
+    <string name="category_rental">임대료</string>
+    <string name="category_sale">판매</string>
+    <string name="category_awards">상금</string>
+    <string name="category_investment">투자</string>
+    <string name="category_other">기타</string>
+</resources>

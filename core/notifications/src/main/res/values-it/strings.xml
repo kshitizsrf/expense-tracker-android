@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="reminder_channel_name">Promemoria giornaliero</string>
+    <string name="reminder_channel_description">Ti ricorda di registrare le spese se oggi non hai aggiunto nulla.</string>
+    <string name="reminder_title">Hai segnato le spese di oggi?</string>
+    <string name="reminder_text">Bastano pochi secondi e il tuo budget resta aggiornato.</string>
+</resources>

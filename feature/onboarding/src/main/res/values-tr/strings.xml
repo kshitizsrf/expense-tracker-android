@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_welcome_title">Hisab Kitab</string>
+    <string name="onboarding_welcome_message">Paranız, güzelce düzenlenmiş. Saniyeler içinde kaydedin, nereye gittiğini görün ve güvenle harcayın.</string>
+    <string name="onboarding_theme_title">Tarzınızı seçin</string>
+    <string name="onboarding_theme_message">Her biri açık ve koyu modlu beş özel tema. İstediğiniz zaman değiştirebilirsiniz.</string>
+    <string name="onboarding_setup_title">Son dokunuşlar</string>
+    <string name="onboarding_setup_message">Para biriminizi seçin ve gününüzü kaydetmek için nazik bir hatırlatma isteyip istemediğinizi söyleyin.</string>
+    <string name="onboarding_currency">Para birimi</string>
+    <string name="onboarding_reminder">Günlük hatırlatma</string>
+    <string name="onboarding_reminder_summary">Yalnızca o gün hiçbir şey kaydetmediyseniz</string>
+    <string name="onboarding_next">İleri</string>
+    <string name="onboarding_start">Hadi başlayalım</string>
+    <string name="onboarding_skip">Atla</string>
+    <string name="onboarding_feature_fast">Hızlı giriş için hesap makinesi tuş takımı</string>
+    <string name="onboarding_feature_insights">Harcamanızı görmenin beş yolu</string>
+    <string name="onboarding_feature_private">Tamamen gizli · her şey telefonunuzda kalır</string>
+    <string name="mode_auto">Otomatik</string>
+    <string name="mode_light">☀  Açık</string>
+    <string name="mode_dark">☾  Koyu</string>
+    <string name="onboarding_language_title">Dilinizi seçin</string>
+    <string name="onboarding_language_message">Hisab Kitab sizin dilinizi konuşur. Ayarlar\'dan istediğiniz zaman değiştirebilirsiniz.</string>
+    <string name="onboarding_lock">Uygulama kilidi</string>
+    <string name="onboarding_lock_summary">Verilerinizi parmak izi veya ekran kilidiyle koruyun</string>
+    <string name="onboarding_lock_prompt">Uygulama kilidini aç</string>
+    <string name="onboarding_lock_prompt_subtitle">Siz olduğunuzu doğrulayın</string>
+</resources>

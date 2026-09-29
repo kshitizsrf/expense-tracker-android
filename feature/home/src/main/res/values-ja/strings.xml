@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="balance">今月の収支</string>
+    <string name="previous_month">前月</string>
+    <string name="next_month">翌月</string>
+    <string name="back_to_this_month">タップして今月に戻る</string>
+    <string name="recent_transactions">最近の履歴</string>
+    <string name="see_all">すべて表示</string>
+    <string name="daily_spending">日別の支出</string>
+    <string name="budget_set_title">予算を設定</string>
+    <string name="budget_set_message">1 日にいくら使えるかが正確にわかります。</string>
+    <string name="budget_title_daily">今日の予算</string>
+    <string name="budget_title_weekly">今週の予算</string>
+    <string name="budget_title_monthly">今月の予算</string>
+    <string name="budget_title_custom">予算</string>
+    <string name="budget_spent_of">%2$s のうち %1$s 使用</string>
+    <string name="budget_over_by">%1$s 超過</string>
+    <string name="budget_safe_today">今日使える金額</string>
+    <string name="budget_ended">この予算期間は終了しました。タップして新しく設定します。</string>
+    <string name="budget_not_started">%1$s から開始</string>
+    <string name="insight_top_category">最も多い支出</string>
+    <string name="insight_daily_average">1 日の平均</string>
+    <string name="insight_biggest">最大の支出</string>
+    <string name="insight_count">件数</string>
+    <string name="empty_home_title">新しいスタート</string>
+    <string name="empty_home_message">+ ボタンをタップして最初の収入や支出を記録しましょう。</string>
+    <string name="spotlight_saved">貯蓄</string>
+    <plurals name="budget_days_left">
+        <item quantity="other">残り %d 日</item>
+    </plurals>
+</resources>

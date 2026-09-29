@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="reminder_channel_name">매일 알림</string>
+    <string name="reminder_channel_description">오늘 아직 기록하지 않았다면 알려 드려요.</string>
+    <string name="reminder_title">오늘 지출을 기록하셨나요?</string>
+    <string name="reminder_text">몇 초면 충분하고 예산을 정확하게 유지할 수 있어요.</string>
+</resources>

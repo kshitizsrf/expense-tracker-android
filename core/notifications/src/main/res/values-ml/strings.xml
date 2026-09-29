@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="reminder_channel_name">ദിവസേനയുള്ള ഓർമ്മപ്പെടുത്തൽ</string>
+    <string name="reminder_channel_description">ഇന്ന് ഇടപാടൊന്നും ചേർത്തില്ലെങ്കിൽ ഓർമ്മിപ്പിക്കുന്നു.</string>
+    <string name="reminder_title">ഇന്നത്തെ ചെലവ് എഴുതിയോ?</string>
+    <string name="reminder_text">കുറച്ച് സെക്കൻഡുകൾ മാത്രം മതി, നിങ്ങളുടെ ബജറ്റ് കൃത്യമായിരിക്കും.</string>
+</resources>
