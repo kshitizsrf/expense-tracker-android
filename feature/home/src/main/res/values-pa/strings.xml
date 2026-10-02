@@ -6,7 +6,6 @@
     <string name="back_to_this_month">ਇਸ ਮਹੀਨੇ ’ਤੇ ਵਾਪਸ ਆਉਣ ਲਈ ਟੈਪ ਕਰੋ</string>
     <string name="recent_transactions">ਹਾਲੀਆ ਗਤੀਵਿਧੀ</string>
     <string name="see_all">ਸਭ ਦੇਖੋ</string>
-    <string name="daily_spending">ਰੋਜ਼ਾਨਾ ਖ਼ਰਚਾ</string>
     <string name="budget_set_title">ਬਜਟ ਤੈਅ ਕਰੋ</string>
     <string name="budget_set_message">ਜਾਣੋ ਕਿ ਤੁਸੀਂ ਹਰ ਰੋਜ਼ ਠੀਕ ਕਿੰਨਾ ਖ਼ਰਚ ਸਕਦੇ ਹੋ।</string>
     <string name="budget_title_daily">ਅੱਜ ਦਾ ਬਜਟ</string>
@@ -18,10 +17,6 @@
     <string name="budget_safe_today">ਅੱਜ ਬੇਫ਼ਿਕਰ ਖ਼ਰਚੋ</string>
     <string name="budget_ended">ਇਹ ਬਜਟ ਮਿਆਦ ਖ਼ਤਮ ਹੋ ਗਈ। ਨਵਾਂ ਤੈਅ ਕਰਨ ਲਈ ਟੈਪ ਕਰੋ।</string>
     <string name="budget_not_started">%1$s ਤੋਂ ਸ਼ੁਰੂ</string>
-    <string name="insight_top_category">ਸਭ ਤੋਂ ਵੱਧ ਖ਼ਰਚਾ</string>
-    <string name="insight_daily_average">ਰੋਜ਼ਾਨਾ ਔਸਤ</string>
-    <string name="insight_biggest">ਸਭ ਤੋਂ ਵੱਡਾ ਖ਼ਰਚਾ</string>
-    <string name="insight_count">ਇੰਦਰਾਜ</string>
     <string name="empty_home_title">ਨਵੀਂ ਸ਼ੁਰੂਆਤ</string>
     <string name="empty_home_message">ਆਪਣੀ ਪਹਿਲੀ ਆਮਦਨ ਜਾਂ ਖ਼ਰਚਾ ਦਰਜ ਕਰਨ ਲਈ + ਬਟਨ ’ਤੇ ਟੈਪ ਕਰੋ।</string>
     <string name="spotlight_saved">ਬੱਚਤ</string>
@@ -29,4 +24,12 @@
         <item quantity="one">%d ਦਿਨ ਬਾਕੀ</item>
         <item quantity="other">%d ਦਿਨ ਬਾਕੀ</item>
     </plurals>
+    <string name="scrub_spent">%1$s ਖਰਚ</string>
+    <string name="scrub_earned">+%1$s ਆਮਦਨ</string>
+    <plurals name="scrub_entries">
+        <item quantity="one">%d ਐਂਟਰੀ</item>
+        <item quantity="other">%d ਐਂਟਰੀਆਂ</item>
+    </plurals>
+    <string name="daily_spending">ਰੋਜ਼ਾਨਾ ਖਰਚਾ</string>
+    <string name="daily_average_short">ਔਸਤ %1$s/ਦਿਨ</string>
 </resources>

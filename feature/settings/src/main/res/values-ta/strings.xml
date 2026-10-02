@@ -32,10 +32,8 @@
     <string name="nav_style_liquid">லிக்விட்</string>
     <string name="nav_style_bubble">பபிள்</string>
     <string name="nav_style_glow">க்ளோ</string>
-    <string name="nav_style_expand">எக்ஸ்பாண்ட்</string>
     <string name="chart_animation">விளக்கப்பட அசைவூட்டம்</string>
     <string name="chart_animation_hint">பகுப்பாய்வில் விளக்கப்படங்கள் எப்படி மாறுகின்றன</string>
-    <string name="chart_fade">மங்கல்</string>
     <string name="chart_slide">சறுக்கல்</string>
     <string name="chart_flip">3D புரட்டல்</string>
     <string name="chart_zoom">பெரிதாக்கல்</string>
@@ -53,5 +51,36 @@
     <plurals name="exported_categories">
         <item quantity="one">%d வகை ஏற்றுமதி செய்யப்பட்டது</item>
         <item quantity="other">%d வகைகள் ஏற்றுமதி செய்யப்பட்டன</item>
+    </plurals>
+    <string name="profile_add_name">உங்கள் பெயரைச் சேர்க்கவும்</string>
+    <string name="profile_summary">ஹிசாப் கிதாப் உங்களை இந்தப் பெயரில் வாழ்த்தும்</string>
+    <string name="profile_edit">பெயரைத் திருத்து</string>
+    <string name="profile_name_title">உங்களை எப்படி அழைக்கலாம்?</string>
+    <string name="profile_name_label">உங்கள் பெயர்</string>
+    <string name="about_title">பற்றி</string>
+    <string name="about_tagline">உங்கள் பணம், அழகாக ஒழுங்குபடுத்தப்பட்டது. நொடிகளில் பதிவு செய்து, பணம் எங்கே போகிறது என்று பார்த்து, நம்பிக்கையுடன் செலவிடுங்கள்.</string>
+    <string name="about_offline_title">முழுமையாக ஆஃப்லைன்</string>
+    <string name="about_offline_body">கணக்கோ இணையமோ தேவையில்லை. எல்லாம் இந்த ஃபோனிலேயே சேமிக்கப்படும்.</string>
+    <string name="about_insights_title">பணத்தைப் பார்க்க ஐந்து வழிகள்</string>
+    <string name="about_insights_body">டோனட், தரவரிசை, போக்கு, நாட்காட்டி, பணப்புழக்கம், எவ்வளவு செலவு பாதுகாப்பானது என்று சொல்லும் பட்ஜெட்டுடன்.</string>
+    <string name="about_languages_title">உங்கள் மொழியில்</string>
+    <string name="about_languages_body">இந்தி மற்றும் 11 பிற இந்திய மொழிகள் உட்பட 28 மொழிகள்.</string>
+    <string name="about_lock_title">தேவைப்படும்போது பூட்டு</string>
+    <string name="about_lock_body">கைரேகை, முகம் அல்லது திரைப் பூட்டால் ஆப்பைப் பாதுகாக்கவும்.</string>
+    <string name="about_privacy_title">உங்கள் தனியுரிமைக்கு உத்தரவாதம்</string>
+    <string name="about_privacy_body">விளம்பரம், கண்காணிப்பு, பகுப்பாய்வு எதுவும் இல்லை. ஹிசாப் கிதாப் இணையத்தைக்கூட அணுக முடியாது.</string>
+    <string name="about_credits">நன்றி</string>
+    <string name="about_credits_body">Plus Jakarta Sans — SIL Open Font License 1.1 · Jetpack Compose · Material 3</string>
+    <string name="import_transactions">பரிவர்த்தனைகளை இறக்குமதி செய்</string>
+    <string name="import_summary">ஹிசாப் கிதாப் CSV கோப்பிலிருந்து பரிவர்த்தனைகளைச் சேர்</string>
+    <string name="import_failed">கோப்பைப் படிக்க முடியவில்லை. மீண்டும் முயலவும்.</string>
+    <string name="import_unsupported">இது ஹிசாப் கிதாப் பரிவர்த்தனை ஏற்றுமதிக் கோப்பு அல்ல.</string>
+    <plurals name="imported_transactions">
+        <item quantity="one">%d பரிவர்த்தனை இறக்குமதியானது</item>
+        <item quantity="other">%d பரிவர்த்தனைகள் இறக்குமதியாயின</item>
+    </plurals>
+    <plurals name="import_skipped">
+        <item quantity="one">%d ஏற்கெனவே இருந்தன</item>
+        <item quantity="other">%d ஏற்கெனவே இருந்தன</item>
     </plurals>
 </resources>

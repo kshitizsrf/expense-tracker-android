@@ -20,4 +20,21 @@
         <item quantity="one">এতে এই বিভাগের %dটি লেনদেনও মুছে যাবে। এটি ফেরানো যাবে না।</item>
         <item quantity="other">এতে এই বিভাগের %dটি লেনদেনও মুছে যাবে। এটি ফেরানো যাবে না।</item>
     </plurals>
+    <string name="select_categories">বিভাগ বেছে নিন</string>
+    <string name="select_all">সব বেছে নিন</string>
+    <string name="clear_selection">বাছাই বাতিল</string>
+    <string name="delete_selected">বাছাই করা মুছুন</string>
+    <string name="delete_categories_message_empty">এগুলো স্থায়ীভাবে মুছে যাবে।</string>
+    <plurals name="categories_selected">
+        <item quantity="one">%dটি বাছাই করা</item>
+        <item quantity="other">%dটি বাছাই করা</item>
+    </plurals>
+    <plurals name="delete_categories_title">
+        <item quantity="one">%dটি বিভাগ মুছবেন?</item>
+        <item quantity="other">%dটি বিভাগ মুছবেন?</item>
+    </plurals>
+    <plurals name="delete_categories_message">
+        <item quantity="one">এতে এগুলোর %dটি লেনদেনও মুছে যাবে। এটি আর ফেরানো যাবে না।</item>
+        <item quantity="other">এতে এগুলোর %dটি লেনদেনও মুছে যাবে। এটি আর ফেরানো যাবে না।</item>
+    </plurals>
 </resources>

@@ -36,4 +36,8 @@
     <string name="category_awards">Премии</string>
     <string name="category_investment">Инвестиции</string>
     <string name="category_other">Другое</string>
+    <string name="greeting_morning_name">Доброе утро, %1$s</string>
+    <string name="greeting_afternoon_name">Добрый день, %1$s</string>
+    <string name="greeting_evening_name">Добрый вечер, %1$s</string>
+    <string name="greeting_night_name">Не спится, %1$s?</string>
 </resources>

@@ -3,7 +3,7 @@
     <string name="onboarding_welcome_title">ಹಿಸಾಬ್ ಕಿತಾಬ್</string>
     <string name="onboarding_welcome_message">ನಿಮ್ಮ ಹಣ, ಸುಂದರವಾಗಿ ಜೋಡಿಸಲಾಗಿದೆ. ಸೆಕೆಂಡುಗಳಲ್ಲಿ ದಾಖಲಿಸಿ, ಹಣ ಎಲ್ಲಿ ಹೋಗುತ್ತದೆ ನೋಡಿ, ವಿಶ್ವಾಸದಿಂದ ಖರ್ಚು ಮಾಡಿ.</string>
     <string name="onboarding_theme_title">ನಿಮ್ಮ ಶೈಲಿ ಆಯ್ಕೆಮಾಡಿ</string>
-    <string name="onboarding_theme_message">ಐದು ವಿಶೇಷ ಥೀಮ್‌ಗಳು, ಪ್ರತಿಯೊಂದರಲ್ಲೂ ಲೈಟ್ ಮತ್ತು ಡಾರ್ಕ್ ಮೂಡ್. ಯಾವಾಗ ಬೇಕಾದರೂ ಬದಲಿಸಬಹುದು.</string>
+    <string name="onboarding_theme_message">ಆರು ವಿಶೇಷ ಥೀಮ್‌ಗಳು, ಪ್ರತಿಯೊಂದರಲ್ಲೂ ಲೈಟ್ ಮತ್ತು ಡಾರ್ಕ್ ಮೂಡ್. ಯಾವಾಗ ಬೇಕಾದರೂ ಬದಲಿಸಬಹುದು.</string>
     <string name="onboarding_setup_title">ಕೊನೆಯ ಹಂತ</string>
     <string name="onboarding_setup_message">ನಿಮ್ಮ ಕರೆನ್ಸಿ ಆಯ್ಕೆಮಾಡಿ ಮತ್ತು ದಿನವನ್ನು ದಾಖಲಿಸಲು ಸಣ್ಣ ಜ್ಞಾಪನೆ ಬೇಕೇ ಎಂದು ತಿಳಿಸಿ.</string>
     <string name="onboarding_currency">ಕರೆನ್ಸಿ</string>

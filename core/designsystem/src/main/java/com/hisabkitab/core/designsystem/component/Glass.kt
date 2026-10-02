@@ -1,5 +1,6 @@
 package com.hisabkitab.core.designsystem.component
 
+import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.core.Spring
@@ -10,6 +11,7 @@ import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.combinedClickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.interaction.collectIsPressedAsState
 import androidx.compose.foundation.layout.Arrangement
@@ -84,6 +86,7 @@ fun GlassCard(
     shape: Shape = MaterialTheme.shapes.large,
     strong: Boolean = false,
     onClick: (() -> Unit)? = null,
+    onLongClick: (() -> Unit)? = null,
     contentPadding: PaddingValues = PaddingValues(20.dp),
     content: @Composable ColumnScope.() -> Unit,
 ) {
@@ -100,7 +103,12 @@ fun GlassCard(
             .glass(shape, strong)
             .then(
                 if (onClick != null) {
-                    Modifier.clickable(interactionSource = interaction, indication = ripple(), onClick = onClick)
+                    Modifier.combinedClickable(
+                        interactionSource = interaction,
+                        indication = ripple(),
+                        onLongClick = onLongClick,
+                        onClick = onClick,
+                    )
                 } else {
                     Modifier
                 },
@@ -127,8 +135,8 @@ fun GlassIconButton(
         modifier = modifier
             .size(size)
             .clip(CircleShape)
-            .background(Color.White.copy(alpha = if (HisabKitabTheme.colors.isDark) 0.1f else 0.22f))
-            .border(1.dp, Color.White.copy(alpha = 0.28f), CircleShape)
+            .background(HisabKitabTheme.colors.onBackdrop.copy(alpha = if (HisabKitabTheme.colors.isDark) 0.1f else 0.16f))
+            .border(1.dp, HisabKitabTheme.colors.onBackdrop.copy(alpha = 0.24f), CircleShape)
             .clickable(enabled = enabled, role = Role.Button, onClick = onClick),
         contentAlignment = Alignment.Center,
     ) {
@@ -150,15 +158,15 @@ fun GlassChip(
     val scheme = MaterialTheme.colorScheme
     val container by animateColorAsState(
         when {
-            selected -> if (onBackdrop) Color.White.copy(alpha = if (colors.isDark) 0.9f else 0.95f) else scheme.primary
-            onBackdrop -> Color.White.copy(alpha = if (colors.isDark) 0.1f else 0.2f)
+            selected -> if (onBackdrop) colors.onBackdrop.copy(alpha = if (colors.isDark) 0.9f else 0.95f) else scheme.primary
+            onBackdrop -> colors.onBackdrop.copy(alpha = if (colors.isDark) 0.1f else 0.16f)
             else -> scheme.surfaceContainerHighest
         },
         label = "chipContainer",
     )
     val content by animateColorAsState(
         when {
-            selected -> if (onBackdrop) colors.backdrop.first() else scheme.onPrimary
+            selected -> if (onBackdrop) colors.onBackdropInverse else scheme.onPrimary
             onBackdrop -> colors.onBackdrop
             else -> scheme.onSurfaceVariant
         },
@@ -169,14 +177,14 @@ fun GlassChip(
             .height(38.dp)
             .clip(CircleShape)
             .background(container)
-            .then(if (onBackdrop && !selected) Modifier.border(1.dp, Color.White.copy(alpha = 0.25f), CircleShape) else Modifier)
+            .then(if (onBackdrop && !selected) Modifier.border(1.dp, colors.onBackdrop.copy(alpha = 0.22f), CircleShape) else Modifier)
             .selectable(selected = selected, role = Role.Tab, onClick = onClick)
             .padding(horizontal = 16.dp),
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.spacedBy(6.dp),
     ) {
         if (icon != null) Icon(icon, contentDescription = null, tint = content, modifier = Modifier.size(18.dp))
-        Text(label, color = content, style = MaterialTheme.typography.labelLarge, maxLines = 1)
+        Text(label, color = content, style = MaterialTheme.typography.labelLarge, maxLines = 1, overflow = TextOverflow.Ellipsis)
     }
 }
 
@@ -195,9 +203,9 @@ fun <T> SlidingSegmentedControl(
     val colors = HisabKitabTheme.colors
     val scheme = MaterialTheme.colorScheme
     val selectedIndex = options.indexOfFirst { it.first == selected }.coerceAtLeast(0)
-    val track = if (onBackdrop) Color.White.copy(alpha = if (colors.isDark) 0.1f else 0.2f) else scheme.surfaceContainerHighest
-    val thumb = if (onBackdrop) Color.White else scheme.primary
-    val selectedText = if (onBackdrop) colors.backdrop.first() else scheme.onPrimary
+    val track = if (onBackdrop) colors.onBackdrop.copy(alpha = if (colors.isDark) 0.1f else 0.16f) else scheme.surfaceContainerHighest
+    val thumb = if (onBackdrop) colors.onBackdrop else scheme.primary
+    val selectedText = if (onBackdrop) colors.onBackdropInverse else scheme.onPrimary
     val unselectedText = if (onBackdrop) colors.onBackdrop else scheme.onSurfaceVariant
 
     BoxWithConstraints(
@@ -265,19 +273,20 @@ fun GradientButton(
             .clip(CircleShape)
             .background(
                 if (enabled) Brush.horizontalGradient(colors.accentGradient)
-                else Brush.horizontalGradient(listOf(Color.Gray.copy(alpha = 0.35f), Color.Gray.copy(alpha = 0.35f))),
+                // Material's disabled treatment: readable on light glass and dark glass alike.
+                else SolidColor(MaterialTheme.colorScheme.onSurface.copy(alpha = 0.12f)),
             )
             .clickable(enabled = enabled, role = Role.Button, onClick = onClick)
             .padding(horizontal = 24.dp),
         horizontalArrangement = Arrangement.Center,
         verticalAlignment = Alignment.CenterVertically,
     ) {
-        val content = if (enabled) onAccent else onAccent.copy(alpha = 0.6f)
+        val content = if (enabled) onAccent else MaterialTheme.colorScheme.onSurface.copy(alpha = 0.45f)
         if (icon != null) {
             Icon(icon, contentDescription = null, tint = content)
             Spacer(Modifier.width(8.dp))
         }
-        Text(text, color = content, style = MaterialTheme.typography.titleMedium)
+        Text(text, color = content, style = MaterialTheme.typography.titleMedium, maxLines = 1, overflow = TextOverflow.Ellipsis)
     }
 }
 
@@ -291,9 +300,15 @@ fun CardHeader(
 ) {
     Row(modifier = modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
         Column(Modifier.weight(1f)) {
-            Text(title, style = MaterialTheme.typography.titleMedium)
+            Text(title, style = MaterialTheme.typography.titleMedium, maxLines = 1, overflow = TextOverflow.Ellipsis)
             if (subtitle != null) {
-                Text(subtitle, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                Text(
+                    subtitle,
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    maxLines = 2,
+                    overflow = TextOverflow.Ellipsis,
+                )
             }
         }
         action?.invoke(this)
@@ -320,7 +335,13 @@ fun BackdropHeader(
         navigationIcon?.invoke()
         Column(Modifier.weight(1f)) {
             if (subtitle != null) {
-                Text(subtitle, style = MaterialTheme.typography.labelLarge, color = colors.onBackdropMuted)
+                Text(
+                    subtitle,
+                    style = MaterialTheme.typography.labelLarge,
+                    color = colors.onBackdropMuted,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis,
+                )
             }
             Text(
                 text = title,

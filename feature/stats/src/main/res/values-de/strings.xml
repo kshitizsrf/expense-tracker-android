@@ -17,7 +17,6 @@
     <string name="chart_trend_title_monthly">Monat für Monat</string>
     <string name="chart_calendar_title">Ausgabenkalender</string>
     <string name="chart_calendar_title_income">Einnahmenkalender</string>
-    <string name="chart_cash_flow_title">Cashflow · letzte 6 Monate</string>
     <string name="chart_hint_donut">Tippe auf ein Segment, um es hervorzuheben</string>
     <string name="chart_hint_trend">Gedrückt halten und ziehen zum Erkunden</string>
     <string name="chart_hint_calendar">Tippe auf einen Tag für seine Summe</string>
@@ -29,7 +28,7 @@
     <string name="stat_entries">Einträge</string>
     <string name="stat_vs_previous">ggü. vorher</string>
     <string name="stat_no_comparison">Neu</string>
-    <string name="percent_of_total">%1$d %% der Summe</string>
+    <string name="percent_of_total">%1$s %% der Summe</string>
     <string name="heatmap_less">Weniger</string>
     <string name="heatmap_more">Mehr</string>
     <string name="nothing_on_day">Nichts erfasst</string>
@@ -40,5 +39,9 @@
     <plurals name="transaction_count">
         <item quantity="one">%d Buchung</item>
         <item quantity="other">%d Buchungen</item>
+    </plurals>
+    <plurals name="chart_cash_flow_title_months">
+        <item quantity="one">Cashflow · %d Monat</item>
+        <item quantity="other">Cashflow · %d Monate</item>
     </plurals>
 </resources>

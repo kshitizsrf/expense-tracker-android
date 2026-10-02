@@ -6,7 +6,6 @@
     <string name="back_to_this_month">اضغط للعودة إلى هذا الشهر</string>
     <string name="recent_transactions">النشاط الأخير</string>
     <string name="see_all">عرض الكل</string>
-    <string name="daily_spending">الإنفاق اليومي</string>
     <string name="budget_set_title">حدد ميزانية</string>
     <string name="budget_set_message">اعرف بالضبط كم يمكنك أن تنفق كل يوم.</string>
     <string name="budget_title_daily">ميزانية اليوم</string>
@@ -18,10 +17,6 @@
     <string name="budget_safe_today">يمكنك إنفاقه اليوم</string>
     <string name="budget_ended">انتهت فترة هذه الميزانية. اضغط لتحديد ميزانية جديدة.</string>
     <string name="budget_not_started">تبدأ في %1$s</string>
-    <string name="insight_top_category">الأعلى إنفاقًا</string>
-    <string name="insight_daily_average">المتوسط اليومي</string>
-    <string name="insight_biggest">أكبر مصروف</string>
-    <string name="insight_count">السجلات</string>
     <string name="empty_home_title">بداية جديدة</string>
     <string name="empty_home_message">اضغط زر + لتسجيل أول دخل أو مصروف.</string>
     <string name="spotlight_saved">المُدّخر</string>
@@ -33,4 +28,16 @@
         <item quantity="many">يتبقى %d يومًا</item>
         <item quantity="other">يتبقى %d يوم</item>
     </plurals>
+    <string name="scrub_spent">أُنفق %1$s</string>
+    <string name="scrub_earned">+%1$s دخل</string>
+    <plurals name="scrub_entries">
+        <item quantity="zero">%d سجل</item>
+        <item quantity="one">سجل واحد (%d)</item>
+        <item quantity="two">سجلان (%d)</item>
+        <item quantity="few">%d سجلات</item>
+        <item quantity="many">%d سجلًا</item>
+        <item quantity="other">%d سجل</item>
+    </plurals>
+    <string name="daily_spending">الإنفاق اليومي</string>
+    <string name="daily_average_short">المتوسط %1$s يوميًا</string>
 </resources>

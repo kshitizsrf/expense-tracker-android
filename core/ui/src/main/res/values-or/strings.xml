@@ -36,4 +36,8 @@
     <string name="category_awards">ପୁରସ୍କାର</string>
     <string name="category_investment">ନିବେଶ</string>
     <string name="category_other">ଅନ୍ୟାନ୍ୟ</string>
+    <string name="greeting_morning_name">ସୁପ୍ରଭାତ, %1$s</string>
+    <string name="greeting_afternoon_name">ଶୁଭ ଅପରାହ୍ନ, %1$s</string>
+    <string name="greeting_evening_name">ଶୁଭ ସନ୍ଧ୍ୟା, %1$s</string>
+    <string name="greeting_night_name">ଏବେ ବି ଜାଗିଛନ୍ତି, %1$s?</string>
 </resources>

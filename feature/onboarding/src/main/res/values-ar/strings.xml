@@ -3,7 +3,7 @@
     <string name="onboarding_welcome_title">Hisab Kitab</string>
     <string name="onboarding_welcome_message">أموالك منظمة بشكل جميل. سجّل في ثوانٍ، واعرف أين تذهب، وأنفق بثقة.</string>
     <string name="onboarding_theme_title">اختر أسلوبك</string>
-    <string name="onboarding_theme_message">خمسة سمات مميزة، لكل منها وضع فاتح وداكن. يمكنك التغيير في أي وقت.</string>
+    <string name="onboarding_theme_message">ستة سمات مميزة، لكل منها وضع فاتح وداكن. يمكنك التغيير في أي وقت.</string>
     <string name="onboarding_setup_title">اللمسات الأخيرة</string>
     <string name="onboarding_setup_message">اختر عملتك وأخبرنا إن كنت تريد تذكيرًا لطيفًا لتسجيل يومك.</string>
     <string name="onboarding_currency">العملة</string>

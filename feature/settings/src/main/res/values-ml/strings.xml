@@ -32,10 +32,8 @@
     <string name="nav_style_liquid">ലിക്വിഡ്</string>
     <string name="nav_style_bubble">ബബിൾ</string>
     <string name="nav_style_glow">ഗ്ലോ</string>
-    <string name="nav_style_expand">എക്സ്പാൻഡ്</string>
     <string name="chart_animation">ചാർട്ട് ആനിമേഷൻ</string>
     <string name="chart_animation_hint">വിശകലനത്തിൽ ചാർട്ടുകൾ എങ്ങനെ മാറുന്നു</string>
-    <string name="chart_fade">ഫേഡ്</string>
     <string name="chart_slide">സ്ലൈഡ്</string>
     <string name="chart_flip">3D ഫ്ലിപ്പ്</string>
     <string name="chart_zoom">സൂം</string>
@@ -53,5 +51,36 @@
     <plurals name="exported_categories">
         <item quantity="one">%d വിഭാഗം എക്സ്പോർട്ട് ചെയ്തു</item>
         <item quantity="other">%d വിഭാഗങ്ങൾ എക്സ്പോർട്ട് ചെയ്തു</item>
+    </plurals>
+    <string name="profile_add_name">നിങ്ങളുടെ പേര് ചേർക്കുക</string>
+    <string name="profile_summary">ഹിസാബ് കിതാബ് നിങ്ങളെ ഈ പേരിൽ അഭിവാദ്യം ചെയ്യും</string>
+    <string name="profile_edit">പേര് എഡിറ്റ് ചെയ്യുക</string>
+    <string name="profile_name_title">നിങ്ങളെ എന്ത് വിളിക്കണം?</string>
+    <string name="profile_name_label">നിങ്ങളുടെ പേര്</string>
+    <string name="about_title">കുറിച്ച്</string>
+    <string name="about_tagline">നിങ്ങളുടെ പണം, മനോഹരമായി ക്രമീകരിച്ചത്. നിമിഷങ്ങൾക്കുള്ളിൽ രേഖപ്പെടുത്തുക, പണം എവിടെ പോകുന്നു എന്ന് കാണുക, ആത്മവിശ്വാസത്തോടെ ചെലവഴിക്കുക.</string>
+    <string name="about_offline_title">പൂർണ്ണമായും ഓഫ്‌ലൈൻ</string>
+    <string name="about_offline_body">അക്കൗണ്ടോ ഇന്റർനെറ്റോ വേണ്ട. എല്ലാം ഈ ഫോണിൽ തന്നെ സേവ് ചെയ്യുന്നു.</string>
+    <string name="about_insights_title">പണം കാണാൻ അഞ്ച് വഴികൾ</string>
+    <string name="about_insights_body">ഡോനട്ട്, റാങ്കിംഗ്, ട്രെൻഡ്, കലണ്ടർ, പണമൊഴുക്ക്, എത്ര ചെലവാക്കാം എന്ന് പറയുന്ന ബജറ്റുകളോടൊപ്പം.</string>
+    <string name="about_languages_title">നിങ്ങളുടെ ഭാഷയിൽ</string>
+    <string name="about_languages_body">ഹിന്ദിയും മറ്റ് 11 ഇന്ത്യൻ ഭാഷകളും ഉൾപ്പെടെ 28 ഭാഷകൾ.</string>
+    <string name="about_lock_title">വേണ്ടപ്പോൾ ലോക്ക്</string>
+    <string name="about_lock_body">വിരലടയാളം, മുഖം അല്ലെങ്കിൽ സ്ക്രീൻ ലോക്ക് ഉപയോഗിച്ച് ആപ്പ് സംരക്ഷിക്കുക.</string>
+    <string name="about_privacy_title">നിങ്ങളുടെ സ്വകാര്യതയ്ക്ക് ഉറപ്പ്</string>
+    <string name="about_privacy_body">പരസ്യങ്ങളോ ട്രാക്കിംഗോ അനലിറ്റിക്സോ ഇല്ല. ഹിസാബ് കിതാബിന് ഇന്റർനെറ്റ് പോലും ഉപയോഗിക്കാനാകില്ല.</string>
+    <string name="about_credits">നന്ദി</string>
+    <string name="about_credits_body">Plus Jakarta Sans — SIL Open Font License 1.1 · Jetpack Compose · Material 3</string>
+    <string name="import_transactions">ഇടപാടുകൾ ഇംപോർട്ട് ചെയ്യുക</string>
+    <string name="import_summary">ഹിസാബ് കിതാബ് CSV ഫയലിൽ നിന്ന് ഇടപാടുകൾ ചേർക്കുക</string>
+    <string name="import_failed">ഫയൽ വായിക്കാനായില്ല. വീണ്ടും ശ്രമിക്കുക.</string>
+    <string name="import_unsupported">ഇത് ഹിസാബ് കിതാബ് ഇടപാട് എക്സ്പോർട്ട് ഫയലല്ല.</string>
+    <plurals name="imported_transactions">
+        <item quantity="one">%d ഇടപാട് ഇംപോർട്ട് ചെയ്തു</item>
+        <item quantity="other">%d ഇടപാടുകൾ ഇംപോർട്ട് ചെയ്തു</item>
+    </plurals>
+    <plurals name="import_skipped">
+        <item quantity="one">%d എണ്ണം ഇതിനകം ഉണ്ടായിരുന്നു</item>
+        <item quantity="other">%d എണ്ണം ഇതിനകം ഉണ്ടായിരുന്നു</item>
     </plurals>
 </resources>

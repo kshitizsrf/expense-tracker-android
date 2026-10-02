@@ -17,7 +17,6 @@
     <string name="chart_trend_title_monthly">รายเดือน</string>
     <string name="chart_calendar_title">ปฏิทินรายจ่าย</string>
     <string name="chart_calendar_title_income">ปฏิทินรายรับ</string>
-    <string name="chart_cash_flow_title">กระแสเงินสด · 6 เดือนล่าสุด</string>
     <string name="chart_hint_donut">แตะชิ้นส่วนเพื่อเน้น</string>
     <string name="chart_hint_trend">กดค้างแล้วลากเพื่อสำรวจ</string>
     <string name="chart_hint_calendar">แตะวันเพื่อดูยอดรวม</string>
@@ -29,7 +28,7 @@
     <string name="stat_entries">รายการ</string>
     <string name="stat_vs_previous">เทียบกับก่อนหน้า</string>
     <string name="stat_no_comparison">ใหม่</string>
-    <string name="percent_of_total">%1$d%% ของทั้งหมด</string>
+    <string name="percent_of_total">%1$s%% ของทั้งหมด</string>
     <string name="heatmap_less">น้อย</string>
     <string name="heatmap_more">มาก</string>
     <string name="nothing_on_day">ไม่มีการบันทึก</string>
@@ -39,5 +38,8 @@
     <string name="stat_previous_period">ช่วงก่อนหน้า</string>
     <plurals name="transaction_count">
         <item quantity="other">%d รายการ</item>
+    </plurals>
+    <plurals name="chart_cash_flow_title_months">
+        <item quantity="other">กระแสเงินสด · %d เดือน</item>
     </plurals>
 </resources>

@@ -17,7 +17,6 @@
     <string name="chart_trend_title_monthly">মাসে মাসে</string>
     <string name="chart_calendar_title">খরচের ক্যালেন্ডার</string>
     <string name="chart_calendar_title_income">আয়ের ক্যালেন্ডার</string>
-    <string name="chart_cash_flow_title">ক্যাশ ফ্লো · গত ৬ মাস</string>
     <string name="chart_hint_donut">একটি অংশে মনোযোগ দিতে ট্যাপ করুন</string>
     <string name="chart_hint_trend">ছুঁয়ে টেনে দেখুন</string>
     <string name="chart_hint_calendar">একটি দিনের মোট দেখতে ট্যাপ করুন</string>
@@ -29,7 +28,7 @@
     <string name="stat_entries">এন্ট্রি</string>
     <string name="stat_vs_previous">আগের তুলনায়</string>
     <string name="stat_no_comparison">নতুন</string>
-    <string name="percent_of_total">মোটের %1$d%%</string>
+    <string name="percent_of_total">মোটের %1$s%%</string>
     <string name="heatmap_less">কম</string>
     <string name="heatmap_more">বেশি</string>
     <string name="nothing_on_day">কিছু লেখা নেই</string>
@@ -40,5 +39,9 @@
     <plurals name="transaction_count">
         <item quantity="one">%dটি লেনদেন</item>
         <item quantity="other">%dটি লেনদেন</item>
+    </plurals>
+    <plurals name="chart_cash_flow_title_months">
+        <item quantity="one">নগদ প্রবাহ · %d মাস</item>
+        <item quantity="other">নগদ প্রবাহ · %d মাস</item>
     </plurals>
 </resources>

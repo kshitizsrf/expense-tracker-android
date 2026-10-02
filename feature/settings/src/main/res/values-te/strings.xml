@@ -32,10 +32,8 @@
     <string name="nav_style_liquid">లిక్విడ్</string>
     <string name="nav_style_bubble">బబుల్</string>
     <string name="nav_style_glow">గ్లో</string>
-    <string name="nav_style_expand">ఎక్స్‌పాండ్</string>
     <string name="chart_animation">చార్ట్ యానిమేషన్</string>
     <string name="chart_animation_hint">విశ్లేషణలో చార్ట్‌లు ఎలా మారతాయి</string>
-    <string name="chart_fade">ఫేడ్</string>
     <string name="chart_slide">స్లైడ్</string>
     <string name="chart_flip">3D ఫ్లిప్</string>
     <string name="chart_zoom">జూమ్</string>
@@ -53,5 +51,36 @@
     <plurals name="exported_categories">
         <item quantity="one">%d వర్గం ఎగుమతి అయింది</item>
         <item quantity="other">%d వర్గాలు ఎగుమతి అయ్యాయి</item>
+    </plurals>
+    <string name="profile_add_name">మీ పేరు జోడించండి</string>
+    <string name="profile_summary">హిసాబ్ కితాబ్ మిమ్మల్ని ఈ పేరుతో పలకరిస్తుంది</string>
+    <string name="profile_edit">పేరు సవరించండి</string>
+    <string name="profile_name_title">మిమ్మల్ని ఏమని పిలవాలి?</string>
+    <string name="profile_name_label">మీ పేరు</string>
+    <string name="about_title">గురించి</string>
+    <string name="about_tagline">మీ డబ్బు, అందంగా క్రమబద్ధం. సెకన్లలో నమోదు చేయండి, డబ్బు ఎక్కడికి వెళ్తుందో చూడండి, నమ్మకంగా ఖర్చు చేయండి.</string>
+    <string name="about_offline_title">పూర్తిగా ఆఫ్‌లైన్</string>
+    <string name="about_offline_body">ఖాతా లేదా ఇంటర్నెట్ అవసరం లేదు. అన్నీ ఈ ఫోన్‌లోనే సేవ్ అవుతాయి.</string>
+    <string name="about_insights_title">డబ్బును చూసే ఐదు మార్గాలు</string>
+    <string name="about_insights_body">డోనట్, ర్యాంకింగ్, ట్రెండ్, క్యాలెండర్, నగదు ప్రవాహం, ఎంత ఖర్చు సురక్షితమో చెప్పే బడ్జెట్‌లతో.</string>
+    <string name="about_languages_title">మీ భాషలో</string>
+    <string name="about_languages_body">హిందీ మరియు మరో 11 భారతీయ భాషలతో సహా 28 భాషలు.</string>
+    <string name="about_lock_title">కావాలనుకున్నప్పుడు లాక్</string>
+    <string name="about_lock_body">వేలిముద్ర, ముఖం లేదా స్క్రీన్ లాక్‌తో యాప్‌ను రక్షించండి.</string>
+    <string name="about_privacy_title">మీ గోప్యతకు హామీ</string>
+    <string name="about_privacy_body">ప్రకటనలు, ట్రాకింగ్, అనలిటిక్స్ ఏవీ లేవు. హిసాబ్ కితాబ్ ఇంటర్నెట్‌ను కూడా యాక్సెస్ చేయలేదు.</string>
+    <string name="about_credits">కృతజ్ఞతలు</string>
+    <string name="about_credits_body">Plus Jakarta Sans — SIL Open Font License 1.1 · Jetpack Compose · Material 3</string>
+    <string name="import_transactions">లావాదేవీలను దిగుమతి చేయండి</string>
+    <string name="import_summary">హిసాబ్ కితాబ్ CSV ఫైల్ నుండి లావాదేవీలు జోడించండి</string>
+    <string name="import_failed">ఆ ఫైల్‌ను చదవలేకపోయాం. మళ్లీ ప్రయత్నించండి.</string>
+    <string name="import_unsupported">అది హిసాబ్ కితాబ్ లావాదేవీల ఎగుమతి ఫైల్ కాదు.</string>
+    <plurals name="imported_transactions">
+        <item quantity="one">%d లావాదేవీ దిగుమతి అయింది</item>
+        <item quantity="other">%d లావాదేవీలు దిగుమతి అయ్యాయి</item>
+    </plurals>
+    <plurals name="import_skipped">
+        <item quantity="one">%d ఇప్పటికే ఉన్నాయి</item>
+        <item quantity="other">%d ఇప్పటికే ఉన్నాయి</item>
     </plurals>
 </resources>

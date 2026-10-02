@@ -39,10 +39,8 @@
     <string name="nav_style_liquid">Liquid</string>
     <string name="nav_style_bubble">Bubble</string>
     <string name="nav_style_glow">Glow</string>
-    <string name="nav_style_expand">Expand</string>
     <string name="chart_animation">Chart animation</string>
     <string name="chart_animation_hint">How Insights switches between charts</string>
-    <string name="chart_fade">Fade</string>
     <string name="chart_slide">Slide</string>
     <string name="chart_flip">3D flip</string>
     <string name="chart_zoom">Zoom</string>
@@ -53,4 +51,35 @@
     <string name="app_lock_confirm_title">Turn on app lock</string>
     <string name="app_lock_confirm_subtitle">Confirm it\'s you</string>
     <string name="language_setting">Language</string>
+    <string name="profile_add_name">Add your name</string>
+    <string name="profile_summary">Hisab Kitab greets you by this name</string>
+    <string name="profile_edit">Edit name</string>
+    <string name="profile_name_title">What should we call you?</string>
+    <string name="profile_name_label">Your name</string>
+    <string name="about_title">About</string>
+    <string name="about_tagline">Your money, beautifully organized. Log in seconds, see where it goes and spend with confidence.</string>
+    <string name="about_offline_title">Works fully offline</string>
+    <string name="about_offline_body">No account and no internet needed. Everything is saved on this phone.</string>
+    <string name="about_insights_title">Five ways to see your money</string>
+    <string name="about_insights_body">Donut, ranking, trend, calendar and cash flow, with budgets that tell you what is safe to spend.</string>
+    <string name="about_languages_title">Speaks your language</string>
+    <string name="about_languages_body">28 languages, including Hindi and 11 other Indian languages.</string>
+    <string name="about_lock_title">Locked when you want it</string>
+    <string name="about_lock_body">Protect the app with your fingerprint, face or screen lock.</string>
+    <string name="about_privacy_title">Your privacy, guaranteed</string>
+    <string name="about_privacy_body">No ads, no tracking and no analytics. Hisab Kitab cannot even access the internet.</string>
+    <string name="about_credits">Credits</string>
+    <string name="about_credits_body">Plus Jakarta Sans font, licensed under the SIL Open Font License 1.1. Built with Jetpack Compose and Material 3.</string>
+    <string name="import_transactions">Import transactions</string>
+    <string name="import_summary">Add transactions from a Hisab Kitab CSV export</string>
+    <string name="import_failed">Couldn\'t read that file. Try again.</string>
+    <string name="import_unsupported">That file isn\'t a Hisab Kitab transactions export.</string>
+    <plurals name="imported_transactions">
+        <item quantity="one">%d transaction imported</item>
+        <item quantity="other">%d transactions imported</item>
+    </plurals>
+    <plurals name="import_skipped">
+        <item quantity="one">%d already existed</item>
+        <item quantity="other">%d already existed</item>
+    </plurals>
 </resources>

@@ -32,10 +32,8 @@
     <string name="nav_style_liquid">লিকুইড</string>
     <string name="nav_style_bubble">বাবল</string>
     <string name="nav_style_glow">গ্লো</string>
-    <string name="nav_style_expand">এক্সপ্যান্ড</string>
     <string name="chart_animation">চার্ট অ্যানিমেশন</string>
     <string name="chart_animation_hint">অন্তর্দৃষ্টিতে চার্ট কীভাবে বদলায়</string>
-    <string name="chart_fade">ফেড</string>
     <string name="chart_slide">স্লাইড</string>
     <string name="chart_flip">3D ফ্লিপ</string>
     <string name="chart_zoom">জুম</string>
@@ -53,5 +51,36 @@
     <plurals name="exported_categories">
         <item quantity="one">%dটি বিভাগ এক্সপোর্ট হয়েছে</item>
         <item quantity="other">%dটি বিভাগ এক্সপোর্ট হয়েছে</item>
+    </plurals>
+    <string name="profile_add_name">আপনার নাম যোগ করুন</string>
+    <string name="profile_summary">হিসাব কিতাব আপনাকে এই নামে ডাকবে</string>
+    <string name="profile_edit">নাম সম্পাদনা</string>
+    <string name="profile_name_title">আমরা আপনাকে কী বলে ডাকব?</string>
+    <string name="profile_name_label">আপনার নাম</string>
+    <string name="about_title">সম্পর্কে</string>
+    <string name="about_tagline">আপনার টাকা, সুন্দরভাবে সাজানো। সেকেন্ডে লিখুন, দেখুন টাকা কোথায় যায় এবং আত্মবিশ্বাসের সাথে খরচ করুন।</string>
+    <string name="about_offline_title">পুরোপুরি অফলাইন</string>
+    <string name="about_offline_body">কোনো অ্যাকাউন্ট বা ইন্টারনেট লাগে না। সবকিছু এই ফোনেই সেভ থাকে।</string>
+    <string name="about_insights_title">টাকা দেখার পাঁচটি উপায়</string>
+    <string name="about_insights_body">ডোনাট, র‍্যাঙ্কিং, ট্রেন্ড, ক্যালেন্ডার ও নগদ প্রবাহ, সাথে বাজেট যা জানায় কতটা খরচ নিরাপদ।</string>
+    <string name="about_languages_title">আপনার ভাষায়</string>
+    <string name="about_languages_body">২৮টি ভাষা, যার মধ্যে হিন্দি ও আরও ১১টি ভারতীয় ভাষা আছে।</string>
+    <string name="about_lock_title">যখন চান, লক</string>
+    <string name="about_lock_body">আঙুলের ছাপ, মুখ বা স্ক্রিন লক দিয়ে অ্যাপ সুরক্ষিত রাখুন।</string>
+    <string name="about_privacy_title">আপনার গোপনীয়তার নিশ্চয়তা</string>
+    <string name="about_privacy_body">কোনো বিজ্ঞাপন, ট্র্যাকিং বা অ্যানালিটিক্স নেই। হিসাব কিতাব ইন্টারনেটেও যেতে পারে না।</string>
+    <string name="about_credits">কৃতজ্ঞতা</string>
+    <string name="about_credits_body">Plus Jakarta Sans — SIL Open Font License 1.1 · Jetpack Compose · Material 3</string>
+    <string name="import_transactions">লেনদেন ইমপোর্ট করুন</string>
+    <string name="import_summary">হিসাব কিতাবের CSV ফাইল থেকে লেনদেন যোগ করুন</string>
+    <string name="import_failed">ফাইলটি পড়া গেল না। আবার চেষ্টা করুন।</string>
+    <string name="import_unsupported">এটি হিসাব কিতাবের লেনদেন এক্সপোর্ট ফাইল নয়।</string>
+    <plurals name="imported_transactions">
+        <item quantity="one">%dটি লেনদেন ইমপোর্ট হয়েছে</item>
+        <item quantity="other">%dটি লেনদেন ইমপোর্ট হয়েছে</item>
+    </plurals>
+    <plurals name="import_skipped">
+        <item quantity="one">%dটি আগে থেকেই ছিল</item>
+        <item quantity="other">%dটি আগে থেকেই ছিল</item>
     </plurals>
 </resources>

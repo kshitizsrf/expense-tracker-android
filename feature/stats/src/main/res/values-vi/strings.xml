@@ -17,7 +17,6 @@
     <string name="chart_trend_title_monthly">Từng tháng</string>
     <string name="chart_calendar_title">Lịch chi tiêu</string>
     <string name="chart_calendar_title_income">Lịch thu nhập</string>
-    <string name="chart_cash_flow_title">Dòng tiền · 6 tháng qua</string>
     <string name="chart_hint_donut">Nhấn một phần để làm nổi bật</string>
     <string name="chart_hint_trend">Nhấn giữ và kéo để khám phá</string>
     <string name="chart_hint_calendar">Nhấn một ngày để xem tổng</string>
@@ -29,7 +28,7 @@
     <string name="stat_entries">Mục</string>
     <string name="stat_vs_previous">so với trước</string>
     <string name="stat_no_comparison">Mới</string>
-    <string name="percent_of_total">%1$d%% tổng</string>
+    <string name="percent_of_total">%1$s%% tổng</string>
     <string name="heatmap_less">Ít</string>
     <string name="heatmap_more">Nhiều</string>
     <string name="nothing_on_day">Chưa ghi gì</string>
@@ -39,5 +38,8 @@
     <string name="stat_previous_period">Kỳ trước</string>
     <plurals name="transaction_count">
         <item quantity="other">%d giao dịch</item>
+    </plurals>
+    <plurals name="chart_cash_flow_title_months">
+        <item quantity="other">Dòng tiền · %d tháng</item>
     </plurals>
 </resources>

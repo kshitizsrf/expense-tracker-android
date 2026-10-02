@@ -52,16 +52,22 @@ object DateFormats {
     }
 }
 
-/** Time-of-day greeting for the home header. */
+/** Time-of-day greeting for the home header, addressing the user by [name] when one is set. */
 @Composable
-fun greeting(time: LocalTime = LocalTime.now()): String = stringResource(
-    when (time.hour) {
-        in 5..11 -> R.string.greeting_morning
-        in 12..16 -> R.string.greeting_afternoon
-        in 17..21 -> R.string.greeting_evening
-        else -> R.string.greeting_night
-    },
-)
+fun greeting(name: String = "", time: LocalTime = LocalTime.now()): String {
+    val part = when (time.hour) {
+        in 5..11 -> 0
+        in 12..16 -> 1
+        in 17..21 -> 2
+        else -> 3
+    }
+    return if (name.isBlank()) {
+        stringResource(listOf(R.string.greeting_morning, R.string.greeting_afternoon, R.string.greeting_evening, R.string.greeting_night)[part])
+    } else {
+        val named = listOf(R.string.greeting_morning_name, R.string.greeting_afternoon_name, R.string.greeting_evening_name, R.string.greeting_night_name)
+        stringResource(named[part], name.trim())
+    }
+}
 
 /** "Today", "Yesterday", or a short date (with the year when it differs from this year). */
 @Composable

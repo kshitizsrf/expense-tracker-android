@@ -3,7 +3,7 @@
     <string name="onboarding_welcome_title">Hisab Kitab</string>
     <string name="onboarding_welcome_message">아름답게 정리된 내 돈. 몇 초 만에 기록하고, 돈이 어디로 가는지 보고, 자신 있게 쓰세요.</string>
     <string name="onboarding_theme_title">스타일 선택</string>
-    <string name="onboarding_theme_message">라이트·다크 모드를 갖춘 5가지 시그니처 테마. 언제든 바꿀 수 있어요.</string>
+    <string name="onboarding_theme_message">라이트·다크 모드를 갖춘 6가지 시그니처 테마. 언제든 바꿀 수 있어요.</string>
     <string name="onboarding_setup_title">마무리</string>
     <string name="onboarding_setup_message">통화를 선택하고 하루 기록을 위한 부드러운 알림을 원하는지 알려 주세요.</string>
     <string name="onboarding_currency">통화</string>

@@ -1,5 +1,10 @@
 package com.hisabkitab.feature.stats.charts
 
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.BoxWithConstraints
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.horizontalScroll
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.FastOutSlowInEasing
 import androidx.compose.animation.core.tween
@@ -28,7 +33,8 @@ data class CashFlowBar(val label: String, val incomeMinor: Long, val expenseMino
 
 /**
  * Income vs expense side by side for each month. Tap a month to highlight it; the caller shows
- * the details for the [selectedIndex].
+ * the details for the [selectedIndex]. When the months do not fit, the chart scrolls sideways
+ * and opens on the latest month.
  */
 @Composable
 fun CashFlowChart(
@@ -50,10 +56,16 @@ fun CashFlowChart(
     val labelStyle = MaterialTheme.typography.labelSmall.copy(color = scheme.onSurfaceVariant)
     val selectedLabelStyle = labelStyle.copy(color = scheme.onSurface, fontWeight = FontWeight.Bold)
     val highlight = scheme.primary.copy(alpha = 0.10f)
+    val scroll = rememberScrollState()
+    LaunchedEffect(bars.size, scroll.maxValue) { scroll.scrollTo(scroll.maxValue) }
 
+    BoxWithConstraints(modifier.semantics { this.contentDescription = contentDescription }) {
+    val width = maxOf(maxWidth, MIN_GROUP_WIDTH * bars.size)
     Canvas(
-        modifier = modifier
-            .semantics { this.contentDescription = contentDescription }
+        modifier = Modifier
+            .horizontalScroll(scroll)
+            .width(width)
+            .fillMaxHeight()
             .pointerInput(bars) {
                 detectTapGestures { tap ->
                     if (bars.isNotEmpty()) onSelect((tap.x / (size.width / bars.size)).toInt().coerceIn(0, bars.lastIndex))
@@ -92,4 +104,8 @@ fun CashFlowChart(
             drawText(text, topLeft = Offset(center - text.size.width / 2f, size.height - text.size.height))
         }
     }
+    }
 }
+
+/** Narrowest a month may get before the chart starts scrolling. */
+private val MIN_GROUP_WIDTH = 52.dp

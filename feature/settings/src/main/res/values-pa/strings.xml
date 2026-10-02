@@ -32,10 +32,8 @@
     <string name="nav_style_liquid">ਲਿਕਵਿਡ</string>
     <string name="nav_style_bubble">ਬਬਲ</string>
     <string name="nav_style_glow">ਗਲੋ</string>
-    <string name="nav_style_expand">ਐਕਸਪੈਂਡ</string>
     <string name="chart_animation">ਚਾਰਟ ਐਨੀਮੇਸ਼ਨ</string>
     <string name="chart_animation_hint">ਵਿਸ਼ਲੇਸ਼ਣ ਵਿੱਚ ਚਾਰਟ ਕਿਵੇਂ ਬਦਲਦੇ ਹਨ</string>
-    <string name="chart_fade">ਫੇਡ</string>
     <string name="chart_slide">ਸਲਾਈਡ</string>
     <string name="chart_flip">3D ਫਲਿੱਪ</string>
     <string name="chart_zoom">ਜ਼ੂਮ</string>
@@ -53,5 +51,36 @@
     <plurals name="exported_categories">
         <item quantity="one">%d ਸ਼੍ਰੇਣੀ ਐਕਸਪੋਰਟ ਹੋਈ</item>
         <item quantity="other">%d ਸ਼੍ਰੇਣੀਆਂ ਐਕਸਪੋਰਟ ਹੋਈਆਂ</item>
+    </plurals>
+    <string name="profile_add_name">ਆਪਣਾ ਨਾਮ ਜੋੜੋ</string>
+    <string name="profile_summary">ਹਿਸਾਬ ਕਿਤਾਬ ਤੁਹਾਨੂੰ ਇਸੇ ਨਾਮ ਨਾਲ ਬੁਲਾਏਗਾ</string>
+    <string name="profile_edit">ਨਾਮ ਬਦਲੋ</string>
+    <string name="profile_name_title">ਅਸੀਂ ਤੁਹਾਨੂੰ ਕੀ ਕਹਿ ਕੇ ਬੁਲਾਈਏ?</string>
+    <string name="profile_name_label">ਤੁਹਾਡਾ ਨਾਮ</string>
+    <string name="about_title">ਬਾਰੇ</string>
+    <string name="about_tagline">ਤੁਹਾਡਾ ਪੈਸਾ, ਸੋਹਣੇ ਢੰਗ ਨਾਲ ਸੰਭਾਲਿਆ। ਸਕਿੰਟਾਂ ਵਿੱਚ ਲਿਖੋ, ਵੇਖੋ ਪੈਸਾ ਕਿੱਥੇ ਜਾਂਦਾ ਹੈ ਅਤੇ ਭਰੋਸੇ ਨਾਲ ਖਰਚ ਕਰੋ।</string>
+    <string name="about_offline_title">ਪੂਰੀ ਤਰ੍ਹਾਂ ਆਫ਼ਲਾਈਨ</string>
+    <string name="about_offline_body">ਨਾ ਖਾਤਾ, ਨਾ ਇੰਟਰਨੈੱਟ। ਸਭ ਕੁਝ ਇਸੇ ਫ਼ੋਨ ਵਿੱਚ ਸੇਵ ਰਹਿੰਦਾ ਹੈ।</string>
+    <string name="about_insights_title">ਪੈਸਾ ਵੇਖਣ ਦੇ ਪੰਜ ਤਰੀਕੇ</string>
+    <string name="about_insights_body">ਡੋਨਟ, ਰੈਂਕਿੰਗ, ਰੁਝਾਨ, ਕੈਲੰਡਰ ਅਤੇ ਨਕਦ ਪ੍ਰਵਾਹ, ਨਾਲ ਬਜਟ ਜੋ ਦੱਸੇ ਕਿੰਨਾ ਖਰਚ ਸੁਰੱਖਿਅਤ ਹੈ।</string>
+    <string name="about_languages_title">ਤੁਹਾਡੀ ਭਾਸ਼ਾ ਵਿੱਚ</string>
+    <string name="about_languages_body">ਹਿੰਦੀ ਅਤੇ ਹੋਰ 11 ਭਾਰਤੀ ਭਾਸ਼ਾਵਾਂ ਸਮੇਤ 28 ਭਾਸ਼ਾਵਾਂ।</string>
+    <string name="about_lock_title">ਜਦੋਂ ਚਾਹੋ, ਲਾਕ</string>
+    <string name="about_lock_body">ਫਿੰਗਰਪ੍ਰਿੰਟ, ਚਿਹਰੇ ਜਾਂ ਸਕ੍ਰੀਨ ਲਾਕ ਨਾਲ ਐਪ ਸੁਰੱਖਿਅਤ ਰੱਖੋ।</string>
+    <string name="about_privacy_title">ਤੁਹਾਡੀ ਨਿੱਜਤਾ ਦੀ ਗਰੰਟੀ</string>
+    <string name="about_privacy_body">ਕੋਈ ਇਸ਼ਤਿਹਾਰ, ਟਰੈਕਿੰਗ ਜਾਂ ਐਨਾਲਿਟਿਕਸ ਨਹੀਂ। ਹਿਸਾਬ ਕਿਤਾਬ ਇੰਟਰਨੈੱਟ ਤੱਕ ਵੀ ਨਹੀਂ ਪਹੁੰਚ ਸਕਦਾ।</string>
+    <string name="about_credits">ਧੰਨਵਾਦ</string>
+    <string name="about_credits_body">Plus Jakarta Sans — SIL Open Font License 1.1 · Jetpack Compose · Material 3</string>
+    <string name="import_transactions">ਲੈਣ-ਦੇਣ ਇੰਪੋਰਟ ਕਰੋ</string>
+    <string name="import_summary">ਹਿਸਾਬ ਕਿਤਾਬ ਦੀ CSV ਫ਼ਾਈਲ ਤੋਂ ਲੈਣ-ਦੇਣ ਜੋੜੋ</string>
+    <string name="import_failed">ਫ਼ਾਈਲ ਪੜ੍ਹੀ ਨਹੀਂ ਜਾ ਸਕੀ। ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</string>
+    <string name="import_unsupported">ਇਹ ਹਿਸਾਬ ਕਿਤਾਬ ਦੀ ਲੈਣ-ਦੇਣ ਐਕਸਪੋਰਟ ਫ਼ਾਈਲ ਨਹੀਂ ਹੈ।</string>
+    <plurals name="imported_transactions">
+        <item quantity="one">%d ਲੈਣ-ਦੇਣ ਇੰਪੋਰਟ ਹੋਏ</item>
+        <item quantity="other">%d ਲੈਣ-ਦੇਣ ਇੰਪੋਰਟ ਹੋਏ</item>
+    </plurals>
+    <plurals name="import_skipped">
+        <item quantity="one">%d ਪਹਿਲਾਂ ਤੋਂ ਸਨ</item>
+        <item quantity="other">%d ਪਹਿਲਾਂ ਤੋਂ ਸਨ</item>
     </plurals>
 </resources>

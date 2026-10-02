@@ -23,6 +23,9 @@ interface CategoryRepository {
 
     /** Deletes the category and every transaction in it. */
     suspend fun delete(id: Long)
+
+    /** Deletes all of [ids] and their transactions in one database transaction. */
+    suspend fun deleteAll(ids: Collection<Long>)
     suspend fun transactionCount(categoryId: Long): Int
 }
 
@@ -52,6 +55,15 @@ class RoomCategoryRepository @Inject constructor(
             // The foreign key cascades too; deleting explicitly keeps this correct regardless.
             transactionDao.deleteForCategory(id)
             categoryDao.deleteById(id)
+        }
+    }
+
+    override suspend fun deleteAll(ids: Collection<Long>) {
+        database.withTransaction {
+            ids.forEach { id ->
+                transactionDao.deleteForCategory(id)
+                categoryDao.deleteById(id)
+            }
         }
     }
 

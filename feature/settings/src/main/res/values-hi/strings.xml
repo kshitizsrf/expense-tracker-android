@@ -32,10 +32,8 @@
     <string name="nav_style_liquid">लिक्विड</string>
     <string name="nav_style_bubble">बबल</string>
     <string name="nav_style_glow">ग्लो</string>
-    <string name="nav_style_expand">एक्सपैंड</string>
     <string name="chart_animation">चार्ट एनिमेशन</string>
     <string name="chart_animation_hint">इनसाइट्स में चार्ट कैसे बदलें</string>
-    <string name="chart_fade">फ़ेड</string>
     <string name="chart_slide">स्लाइड</string>
     <string name="chart_flip">3D फ़्लिप</string>
     <string name="chart_zoom">ज़ूम</string>
@@ -53,5 +51,36 @@
     <plurals name="exported_categories">
         <item quantity="one">%d श्रेणी एक्सपोर्ट हुई</item>
         <item quantity="other">%d श्रेणियाँ एक्सपोर्ट हुईं</item>
+    </plurals>
+    <string name="profile_add_name">अपना नाम जोड़ें</string>
+    <string name="profile_summary">हिसाब किताब आपको इसी नाम से बुलाएगा</string>
+    <string name="profile_edit">नाम बदलें</string>
+    <string name="profile_name_title">हम आपको क्या कहकर बुलाएँ?</string>
+    <string name="profile_name_label">आपका नाम</string>
+    <string name="about_title">जानकारी</string>
+    <string name="about_tagline">आपका पैसा, खूबसूरती से व्यवस्थित। सेकंडों में लिखें, देखें पैसा कहाँ जाता है और भरोसे से खर्च करें।</string>
+    <string name="about_offline_title">पूरी तरह ऑफ़लाइन</string>
+    <string name="about_offline_body">न खाता, न इंटरनेट। सब कुछ इसी फ़ोन में सेव रहता है।</string>
+    <string name="about_insights_title">पैसे देखने के पाँच तरीके</string>
+    <string name="about_insights_body">डोनट, रैंकिंग, ट्रेंड, कैलेंडर और कैश फ़्लो, साथ में बजट जो बताए कि कितना खर्च करना सुरक्षित है।</string>
+    <string name="about_languages_title">आपकी भाषा में</string>
+    <string name="about_languages_body">28 भाषाएँ, जिनमें हिन्दी और 11 अन्य भारतीय भाषाएँ शामिल हैं।</string>
+    <string name="about_lock_title">जब चाहें, लॉक</string>
+    <string name="about_lock_body">फ़िंगरप्रिंट, चेहरे या स्क्रीन लॉक से ऐप को सुरक्षित रखें।</string>
+    <string name="about_privacy_title">आपकी निजता की गारंटी</string>
+    <string name="about_privacy_body">कोई विज्ञापन, ट्रैकिंग या एनालिटिक्स नहीं। हिसाब किताब इंटरनेट तक भी नहीं पहुँच सकता।</string>
+    <string name="about_credits">आभार</string>
+    <string name="about_credits_body">Plus Jakarta Sans — SIL Open Font License 1.1 · Jetpack Compose · Material 3</string>
+    <string name="import_transactions">लेन-देन इंपोर्ट करें</string>
+    <string name="import_summary">हिसाब किताब की CSV फ़ाइल से लेन-देन जोड़ें</string>
+    <string name="import_failed">फ़ाइल पढ़ी नहीं जा सकी। फिर कोशिश करें।</string>
+    <string name="import_unsupported">यह हिसाब किताब के लेन-देन की एक्सपोर्ट फ़ाइल नहीं है।</string>
+    <plurals name="imported_transactions">
+        <item quantity="one">%d लेन-देन इंपोर्ट हुए</item>
+        <item quantity="other">%d लेन-देन इंपोर्ट हुए</item>
+    </plurals>
+    <plurals name="import_skipped">
+        <item quantity="one">%d पहले से मौजूद थे</item>
+        <item quantity="other">%d पहले से मौजूद थे</item>
     </plurals>
 </resources>

@@ -3,7 +3,7 @@
     <string name="onboarding_welcome_title">Hisab Kitab</string>
     <string name="onboarding_welcome_message">Votre argent, joliment organisé. Notez en quelques secondes, voyez où il va et dépensez sereinement.</string>
     <string name="onboarding_theme_title">Choisissez votre style</string>
-    <string name="onboarding_theme_message">Cinq thèmes signature, chacun en mode clair et sombre. Modifiable à tout moment.</string>
+    <string name="onboarding_theme_message">Six thèmes signature, chacun en mode clair et sombre. Modifiable à tout moment.</string>
     <string name="onboarding_setup_title">Touches finales</string>
     <string name="onboarding_setup_message">Choisissez votre devise et dites-nous si vous voulez un petit rappel pour noter votre journée.</string>
     <string name="onboarding_currency">Devise</string>

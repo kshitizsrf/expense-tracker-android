@@ -3,7 +3,7 @@
     <string name="onboarding_welcome_title">Hisab Kitab</string>
     <string name="onboarding_welcome_message">เงินของคุณ จัดระเบียบอย่างสวยงาม บันทึกได้ในไม่กี่วินาที รู้ว่าเงินไปไหน และใช้จ่ายอย่างมั่นใจ</string>
     <string name="onboarding_theme_title">เลือกสไตล์ของคุณ</string>
-    <string name="onboarding_theme_message">ห้าธีมเอกลักษณ์ แต่ละธีมมีโหมดสว่างและมืด เปลี่ยนได้ทุกเมื่อ</string>
+    <string name="onboarding_theme_message">หกธีมเอกลักษณ์ แต่ละธีมมีโหมดสว่างและมืด เปลี่ยนได้ทุกเมื่อ</string>
     <string name="onboarding_setup_title">ขั้นตอนสุดท้าย</string>
     <string name="onboarding_setup_message">เลือกสกุลเงินและบอกเราว่าต้องการการเตือนเบา ๆ ให้บันทึกแต่ละวันหรือไม่</string>
     <string name="onboarding_currency">สกุลเงิน</string>

@@ -17,7 +17,6 @@
     <string name="chart_trend_title_monthly">महिन्यागणिक</string>
     <string name="chart_calendar_title">खर्चाचे कॅलेंडर</string>
     <string name="chart_calendar_title_income">कमाईचे कॅलेंडर</string>
-    <string name="chart_cash_flow_title">कॅश फ्लो · मागील ६ महिने</string>
     <string name="chart_hint_donut">एखाद्या भागावर लक्ष देण्यासाठी टॅप करा</string>
     <string name="chart_hint_trend">स्पर्श करून ओढा आणि पहा</string>
     <string name="chart_hint_calendar">दिवसाची एकूण रक्कम पाहण्यासाठी टॅप करा</string>
@@ -29,7 +28,7 @@
     <string name="stat_entries">नोंदी</string>
     <string name="stat_vs_previous">मागीलच्या तुलनेत</string>
     <string name="stat_no_comparison">नवीन</string>
-    <string name="percent_of_total">एकूणच्या %1$d%%</string>
+    <string name="percent_of_total">एकूणच्या %1$s%%</string>
     <string name="heatmap_less">कमी</string>
     <string name="heatmap_more">जास्त</string>
     <string name="nothing_on_day">काहीही नोंद नाही</string>
@@ -40,5 +39,9 @@
     <plurals name="transaction_count">
         <item quantity="one">%d व्यवहार</item>
         <item quantity="other">%d व्यवहार</item>
+    </plurals>
+    <plurals name="chart_cash_flow_title_months">
+        <item quantity="one">रोख प्रवाह · %d महिने</item>
+        <item quantity="other">रोख प्रवाह · %d महिने</item>
     </plurals>
 </resources>

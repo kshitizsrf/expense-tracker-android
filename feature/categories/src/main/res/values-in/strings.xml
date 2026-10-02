@@ -19,4 +19,18 @@
     <plurals name="delete_category_message">
         <item quantity="other">Ini juga akan menghapus %d transaksi di kategori ini. Tidak dapat dibatalkan.</item>
     </plurals>
+    <string name="select_categories">Pilih kategori</string>
+    <string name="select_all">Pilih semua</string>
+    <string name="clear_selection">Batalkan pilihan</string>
+    <string name="delete_selected">Hapus yang dipilih</string>
+    <string name="delete_categories_message_empty">Kategori ini akan dihapus permanen.</string>
+    <plurals name="categories_selected">
+        <item quantity="other">%d dipilih</item>
+    </plurals>
+    <plurals name="delete_categories_title">
+        <item quantity="other">Hapus %d kategori?</item>
+    </plurals>
+    <plurals name="delete_categories_message">
+        <item quantity="other">Ini juga akan menghapus %d transaksi di dalamnya. Tidak dapat dibatalkan.</item>
+    </plurals>
 </resources>

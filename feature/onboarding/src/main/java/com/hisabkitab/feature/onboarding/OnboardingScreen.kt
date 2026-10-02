@@ -143,6 +143,8 @@ fun OnboardingScreen(viewModel: OnboardingViewModel = hiltViewModel()) {
                         pagerState.animateScrollToPage(1)
                         // Switching language recreates the activity; the pager position is saved.
                         val chosen = AppLanguages.all.firstOrNull { it.tag == languageTag } ?: AppLanguages.SYSTEM
+                        // The language's country decides the starting currency; it can be changed later.
+                        viewModel.setCurrency(chosen.defaultCurrencyCode())
                         if (chosen.tag != AppLanguages.current().tag) AppLanguages.apply(chosen)
                     }
                     else -> scope.launch { pagerState.animateScrollToPage(pagerState.currentPage + 1) }
@@ -168,7 +170,7 @@ private fun PageDots(current: Int, count: Int) {
                     .height(8.dp)
                     .width(if (index == current) 28.dp else 8.dp)
                     .clip(CircleShape)
-                    .background(Color.White.copy(alpha = if (index == current) 1f else 0.4f)),
+                    .background(HisabKitabTheme.colors.onBackdrop.copy(alpha = if (index == current) 1f else 0.4f)),
             )
         }
     }
@@ -267,7 +269,7 @@ private fun FeatureLine(icon: ImageVector, text: String) {
         verticalAlignment = Alignment.CenterVertically,
     ) {
         Box(
-            Modifier.size(32.dp).clip(CircleShape).background(Color.White.copy(alpha = 0.2f)),
+            Modifier.size(32.dp).clip(CircleShape).background(HisabKitabTheme.colors.onBackdrop.copy(alpha = 0.16f)),
             contentAlignment = Alignment.Center,
         ) {
             Icon(icon, contentDescription = null, tint = colors.onBackdrop, modifier = Modifier.size(18.dp))

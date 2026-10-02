@@ -5,6 +5,8 @@ import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.hisabkitab.core.data.export.CsvExporter
+import com.hisabkitab.core.data.export.CsvImporter
+import com.hisabkitab.core.data.export.UnsupportedCsvException
 import com.hisabkitab.core.data.repository.UserPreferencesRepository
 import com.hisabkitab.core.model.AppTheme
 import com.hisabkitab.core.model.ChartTransition
@@ -27,6 +29,9 @@ enum class ExportKind { TRANSACTIONS, CATEGORIES }
 sealed interface SettingsMessage {
     data class Exported(val kind: ExportKind, val count: Int) : SettingsMessage
     data object ExportFailed : SettingsMessage
+    data class Imported(val count: Int, val skipped: Int) : SettingsMessage
+    data object ImportFailed : SettingsMessage
+    data object ImportUnsupported : SettingsMessage
 }
 
 data class SettingsUiState(
@@ -39,6 +44,7 @@ data class SettingsUiState(
 class SettingsViewModel @Inject constructor(
     private val userPreferencesRepository: UserPreferencesRepository,
     private val csvExporter: CsvExporter,
+    private val csvImporter: CsvImporter,
 ) : ViewModel() {
 
     private val isExporting = MutableStateFlow(false)
@@ -51,6 +57,8 @@ class SettingsViewModel @Inject constructor(
     ) { preferences, exporting, message ->
         SettingsUiState(preferences = preferences, isExporting = exporting, message = message)
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), SettingsUiState())
+
+    fun setUserName(name: String) = launchUpdate { userPreferencesRepository.setUserName(name) }
 
     fun setThemeMode(mode: ThemeMode) = launchUpdate { userPreferencesRepository.setThemeMode(mode) }
 
@@ -83,6 +91,26 @@ class SettingsViewModel @Inject constructor(
             } catch (e: Exception) {
                 Log.w(TAG, "Export failed", e)
                 SettingsMessage.ExportFailed
+            } finally {
+                isExporting.value = false
+            }
+        }
+    }
+
+    fun importTransactions(source: Uri) {
+        if (isExporting.value) return
+        isExporting.value = true
+        viewModelScope.launch {
+            message.value = try {
+                val result = csvImporter.importTransactions(source)
+                SettingsMessage.Imported(result.imported, result.skipped)
+            } catch (e: CancellationException) {
+                throw e
+            } catch (e: UnsupportedCsvException) {
+                SettingsMessage.ImportUnsupported
+            } catch (e: Exception) {
+                Log.w(TAG, "Import failed", e)
+                SettingsMessage.ImportFailed
             } finally {
                 isExporting.value = false
             }

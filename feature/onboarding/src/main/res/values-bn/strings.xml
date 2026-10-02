@@ -3,7 +3,7 @@
     <string name="onboarding_welcome_title">হিসাব কিতাব</string>
     <string name="onboarding_welcome_message">আপনার টাকা, সুন্দরভাবে সাজানো। সেকেন্ডে লিখুন, দেখুন টাকা কোথায় যায়, আর আত্মবিশ্বাসে খরচ করুন।</string>
     <string name="onboarding_theme_title">আপনার স্টাইল বেছে নিন</string>
-    <string name="onboarding_theme_message">পাঁচটি বিশেষ থিম, প্রতিটিতে লাইট ও ডার্ক মুড। যেকোনো সময় বদলাতে পারবেন।</string>
+    <string name="onboarding_theme_message">ছয়টি বিশেষ থিম, প্রতিটিতে লাইট ও ডার্ক মুড। যেকোনো সময় বদলাতে পারবেন।</string>
     <string name="onboarding_setup_title">শেষ ধাপ</string>
     <string name="onboarding_setup_message">আপনার মুদ্রা বেছে নিন আর দিনের হিসাব লেখার হালকা রিমাইন্ডার চান কি না জানান।</string>
     <string name="onboarding_currency">মুদ্রা</string>

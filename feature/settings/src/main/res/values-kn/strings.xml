@@ -32,10 +32,8 @@
     <string name="nav_style_liquid">ಲಿಕ್ವಿಡ್</string>
     <string name="nav_style_bubble">ಬಬಲ್</string>
     <string name="nav_style_glow">ಗ್ಲೋ</string>
-    <string name="nav_style_expand">ಎಕ್ಸ್‌ಪ್ಯಾಂಡ್</string>
     <string name="chart_animation">ಚಾರ್ಟ್ ಅನಿಮೇಷನ್</string>
     <string name="chart_animation_hint">ವಿಶ್ಲೇಷಣೆಯಲ್ಲಿ ಚಾರ್ಟ್‌ಗಳು ಹೇಗೆ ಬದಲಾಗುತ್ತವೆ</string>
-    <string name="chart_fade">ಫೇಡ್</string>
     <string name="chart_slide">ಸ್ಲೈಡ್</string>
     <string name="chart_flip">3D ಫ್ಲಿಪ್</string>
     <string name="chart_zoom">ಜೂಮ್</string>
@@ -53,5 +51,36 @@
     <plurals name="exported_categories">
         <item quantity="one">%d ವರ್ಗ ರಫ್ತಾಗಿದೆ</item>
         <item quantity="other">%d ವರ್ಗಗಳು ರಫ್ತಾಗಿವೆ</item>
+    </plurals>
+    <string name="profile_add_name">ನಿಮ್ಮ ಹೆಸರು ಸೇರಿಸಿ</string>
+    <string name="profile_summary">ಹಿಸಾಬ್ ಕಿತಾಬ್ ನಿಮ್ಮನ್ನು ಈ ಹೆಸರಿನಿಂದ ಸ್ವಾಗತಿಸುತ್ತದೆ</string>
+    <string name="profile_edit">ಹೆಸರು ಸಂಪಾದಿಸಿ</string>
+    <string name="profile_name_title">ನಿಮ್ಮನ್ನು ಏನೆಂದು ಕರೆಯಲಿ?</string>
+    <string name="profile_name_label">ನಿಮ್ಮ ಹೆಸರು</string>
+    <string name="about_title">ಕುರಿತು</string>
+    <string name="about_tagline">ನಿಮ್ಮ ಹಣ, ಸುಂದರವಾಗಿ ಜೋಡಿಸಲಾಗಿದೆ. ಸೆಕೆಂಡುಗಳಲ್ಲಿ ದಾಖಲಿಸಿ, ಹಣ ಎಲ್ಲಿ ಹೋಗುತ್ತದೆ ನೋಡಿ, ವಿಶ್ವಾಸದಿಂದ ಖರ್ಚು ಮಾಡಿ.</string>
+    <string name="about_offline_title">ಸಂಪೂರ್ಣ ಆಫ್‌ಲೈನ್</string>
+    <string name="about_offline_body">ಖಾತೆ ಅಥವಾ ಇಂಟರ್ನೆಟ್ ಬೇಕಿಲ್ಲ. ಎಲ್ಲವೂ ಈ ಫೋನ್‌ನಲ್ಲೇ ಉಳಿಯುತ್ತದೆ.</string>
+    <string name="about_insights_title">ಹಣ ನೋಡಲು ಐದು ವಿಧಾನಗಳು</string>
+    <string name="about_insights_body">ಡೋನಟ್, ಶ್ರೇಣಿ, ಪ್ರವೃತ್ತಿ, ಕ್ಯಾಲೆಂಡರ್ ಮತ್ತು ನಗದು ಹರಿವು, ಎಷ್ಟು ಖರ್ಚು ಸುರಕ್ಷಿತ ಎಂದು ಹೇಳುವ ಬಜೆಟ್‌ಗಳೊಂದಿಗೆ.</string>
+    <string name="about_languages_title">ನಿಮ್ಮ ಭಾಷೆಯಲ್ಲಿ</string>
+    <string name="about_languages_body">ಹಿಂದಿ ಮತ್ತು ಇತರ 11 ಭಾರತೀಯ ಭಾಷೆಗಳು ಸೇರಿದಂತೆ 28 ಭಾಷೆಗಳು.</string>
+    <string name="about_lock_title">ಬೇಕಾದಾಗ ಲಾಕ್</string>
+    <string name="about_lock_body">ಬೆರಳಚ್ಚು, ಮುಖ ಅಥವಾ ಸ್ಕ್ರೀನ್ ಲಾಕ್‌ನಿಂದ ಆ್ಯಪ್ ರಕ್ಷಿಸಿ.</string>
+    <string name="about_privacy_title">ನಿಮ್ಮ ಗೌಪ್ಯತೆಗೆ ಖಾತರಿ</string>
+    <string name="about_privacy_body">ಜಾಹೀರಾತು, ಟ್ರ್ಯಾಕಿಂಗ್, ಅನಾಲಿಟಿಕ್ಸ್ ಇಲ್ಲ. ಹಿಸಾಬ್ ಕಿತಾಬ್ ಇಂಟರ್ನೆಟ್ ಅನ್ನೂ ಬಳಸಲಾರದು.</string>
+    <string name="about_credits">ಕೃತಜ್ಞತೆ</string>
+    <string name="about_credits_body">Plus Jakarta Sans — SIL Open Font License 1.1 · Jetpack Compose · Material 3</string>
+    <string name="import_transactions">ವಹಿವಾಟುಗಳನ್ನು ಆಮದು ಮಾಡಿ</string>
+    <string name="import_summary">ಹಿಸಾಬ್ ಕಿತಾಬ್ CSV ಫೈಲ್‌ನಿಂದ ವಹಿವಾಟುಗಳನ್ನು ಸೇರಿಸಿ</string>
+    <string name="import_failed">ಫೈಲ್ ಓದಲಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</string>
+    <string name="import_unsupported">ಇದು ಹಿಸಾಬ್ ಕಿತಾಬ್ ವಹಿವಾಟು ರಫ್ತು ಫೈಲ್ ಅಲ್ಲ.</string>
+    <plurals name="imported_transactions">
+        <item quantity="one">%d ವಹಿವಾಟು ಆಮದಾಯಿತು</item>
+        <item quantity="other">%d ವಹಿವಾಟುಗಳು ಆಮದಾದವು</item>
+    </plurals>
+    <plurals name="import_skipped">
+        <item quantity="one">%d ಈಗಾಗಲೇ ಇದ್ದವು</item>
+        <item quantity="other">%d ಈಗಾಗಲೇ ಇದ್ದವು</item>
     </plurals>
 </resources>

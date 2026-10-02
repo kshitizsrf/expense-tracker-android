@@ -24,4 +24,33 @@
         <item quantity="many">سيؤدي هذا أيضًا إلى حذف %d معاملة في هذه الفئة. لا يمكن التراجع.</item>
         <item quantity="other">سيؤدي هذا أيضًا إلى حذف %d معاملة في هذه الفئة. لا يمكن التراجع.</item>
     </plurals>
+    <string name="select_categories">تحديد الفئات</string>
+    <string name="select_all">تحديد الكل</string>
+    <string name="clear_selection">إلغاء التحديد</string>
+    <string name="delete_selected">حذف المحدد</string>
+    <string name="delete_categories_message_empty">سيتم حذفها نهائيًا.</string>
+    <plurals name="categories_selected">
+        <item quantity="zero">تم تحديد %d</item>
+        <item quantity="one">تم تحديد %d</item>
+        <item quantity="two">تم تحديد %d</item>
+        <item quantity="few">تم تحديد %d</item>
+        <item quantity="many">تم تحديد %d</item>
+        <item quantity="other">تم تحديد %d</item>
+    </plurals>
+    <plurals name="delete_categories_title">
+        <item quantity="zero">حذف %d فئة؟</item>
+        <item quantity="one">حذف فئة واحدة (%d)؟</item>
+        <item quantity="two">حذف فئتين (%d)؟</item>
+        <item quantity="few">حذف %d فئات؟</item>
+        <item quantity="many">حذف %d فئة؟</item>
+        <item quantity="other">حذف %d فئة؟</item>
+    </plurals>
+    <plurals name="delete_categories_message">
+        <item quantity="zero">سيؤدي هذا أيضًا إلى حذف %d معاملة فيها. لا يمكن التراجع.</item>
+        <item quantity="one">سيؤدي هذا أيضًا إلى حذف معاملة واحدة (%d) فيها. لا يمكن التراجع.</item>
+        <item quantity="two">سيؤدي هذا أيضًا إلى حذف معاملتين (%d) فيها. لا يمكن التراجع.</item>
+        <item quantity="few">سيؤدي هذا أيضًا إلى حذف %d معاملات فيها. لا يمكن التراجع.</item>
+        <item quantity="many">سيؤدي هذا أيضًا إلى حذف %d معاملة فيها. لا يمكن التراجع.</item>
+        <item quantity="other">سيؤدي هذا أيضًا إلى حذف %d معاملة فيها. لا يمكن التراجع.</item>
+    </plurals>
 </resources>

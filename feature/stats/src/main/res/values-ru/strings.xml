@@ -17,7 +17,6 @@
     <string name="chart_trend_title_monthly">По месяцам</string>
     <string name="chart_calendar_title">Календарь расходов</string>
     <string name="chart_calendar_title_income">Календарь доходов</string>
-    <string name="chart_cash_flow_title">Денежный поток · 6 месяцев</string>
     <string name="chart_hint_donut">Нажмите на сегмент, чтобы выделить его</string>
     <string name="chart_hint_trend">Нажмите и ведите, чтобы изучить</string>
     <string name="chart_hint_calendar">Нажмите на день, чтобы увидеть сумму</string>
@@ -29,7 +28,7 @@
     <string name="stat_entries">Записей</string>
     <string name="stat_vs_previous">к прошлому</string>
     <string name="stat_no_comparison">Новое</string>
-    <string name="percent_of_total">%1$d%% от общего</string>
+    <string name="percent_of_total">%1$s%% от общего</string>
     <string name="heatmap_less">Меньше</string>
     <string name="heatmap_more">Больше</string>
     <string name="nothing_on_day">Ничего не записано</string>
@@ -42,5 +41,11 @@
         <item quantity="few">%d операции</item>
         <item quantity="many">%d операций</item>
         <item quantity="other">%d операции</item>
+    </plurals>
+    <plurals name="chart_cash_flow_title_months">
+        <item quantity="one">Денежный поток · %d месяц</item>
+        <item quantity="few">Денежный поток · %d месяца</item>
+        <item quantity="many">Денежный поток · %d месяцев</item>
+        <item quantity="other">Денежный поток · %d месяца</item>
     </plurals>
 </resources>

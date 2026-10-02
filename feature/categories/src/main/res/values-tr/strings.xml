@@ -20,4 +20,21 @@
         <item quantity="one">Bu, bu kategorideki %d işlemi de silecek. Geri alınamaz.</item>
         <item quantity="other">Bu, bu kategorideki %d işlemi de silecek. Geri alınamaz.</item>
     </plurals>
+    <string name="select_categories">Kategorileri seç</string>
+    <string name="select_all">Tümünü seç</string>
+    <string name="clear_selection">Seçimi iptal et</string>
+    <string name="delete_selected">Seçilenleri sil</string>
+    <string name="delete_categories_message_empty">Kalıcı olarak silinecekler.</string>
+    <plurals name="categories_selected">
+        <item quantity="one">%d seçildi</item>
+        <item quantity="other">%d seçildi</item>
+    </plurals>
+    <plurals name="delete_categories_title">
+        <item quantity="one">%d kategori silinsin mi?</item>
+        <item quantity="other">%d kategori silinsin mi?</item>
+    </plurals>
+    <plurals name="delete_categories_message">
+        <item quantity="one">Bu, içlerindeki %d işlemi de silecek. Geri alınamaz.</item>
+        <item quantity="other">Bu, içlerindeki %d işlemi de silecek. Geri alınamaz.</item>
+    </plurals>
 </resources>

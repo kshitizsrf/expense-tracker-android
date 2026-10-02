@@ -1,5 +1,6 @@
 package com.hisabkitab.feature.home
 
+import java.time.ZoneId
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.SizeTransform
 import androidx.compose.animation.core.Animatable
@@ -80,7 +81,6 @@ import com.hisabkitab.core.designsystem.component.CategoryIconBadge
 import com.hisabkitab.core.designsystem.component.EmptyState
 import com.hisabkitab.core.designsystem.component.GlassCard
 import com.hisabkitab.core.designsystem.component.GlassIconButton
-import com.hisabkitab.core.designsystem.component.Sparkline
 import com.hisabkitab.core.designsystem.component.SpotlightItem
 import com.hisabkitab.core.designsystem.component.spotlightOnClick
 import com.hisabkitab.core.designsystem.component.glass
@@ -95,6 +95,8 @@ import com.hisabkitab.core.ui.DateFormats
 import com.hisabkitab.core.ui.LocalMoneyFormatter
 import com.hisabkitab.core.ui.TransactionListItem
 import com.hisabkitab.core.ui.greeting
+import com.hisabkitab.core.ui.percentOf
+import com.hisabkitab.core.ui.percentText
 import java.time.LocalDate
 import java.time.YearMonth
 import kotlin.math.abs
@@ -109,8 +111,10 @@ fun HomeScreen(
     viewModel: HomeViewModel = hiltViewModel(),
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
+    val userName by viewModel.userName.collectAsStateWithLifecycle()
     HomeScreen(
         uiState = uiState,
+        userName = userName,
         onPreviousMonth = viewModel::showPreviousMonth,
         onNextMonth = viewModel::showNextMonth,
         onCurrentMonth = viewModel::showCurrentMonth,
@@ -125,6 +129,7 @@ fun HomeScreen(
 @Composable
 internal fun HomeScreen(
     uiState: HomeUiState,
+    userName: String = "",
     onPreviousMonth: () -> Unit,
     onNextMonth: () -> Unit,
     onCurrentMonth: () -> Unit,
@@ -143,13 +148,16 @@ internal fun HomeScreen(
         ),
         verticalArrangement = Arrangement.spacedBy(16.dp),
     ) {
-        item(key = "header") { Header(onOpenSettings) }
+        item(key = "header") { Header(userName, onOpenSettings) }
         item(key = "hero") {
             BalanceHero(
                 month = uiState.month,
                 isCurrentMonth = uiState.isCurrentMonth,
                 totals = uiState.totals,
                 dailySpending = uiState.dailySpending,
+                dailyIncome = uiState.dailyIncome,
+                dailyCount = uiState.dailyCount,
+                insights = uiState.insights,
                 onPrevious = onPreviousMonth,
                 onNext = onNextMonth,
                 onCurrent = onCurrentMonth,
@@ -162,7 +170,6 @@ internal fun HomeScreen(
                 modifier = Modifier.padding(horizontal = 16.dp),
             )
         }
-        item(key = "insights") { InsightTiles(uiState.insights) }
         item(key = "recent") {
             GlassCard(
                 modifier = Modifier.padding(horizontal = 16.dp).fillMaxWidth(),
@@ -199,14 +206,20 @@ internal fun HomeScreen(
 }
 
 @Composable
-private fun Header(onOpenSettings: () -> Unit) {
+private fun Header(userName: String, onOpenSettings: () -> Unit) {
     val colors = HisabKitabTheme.colors
     Row(
         modifier = Modifier.fillMaxWidth().padding(horizontal = 20.dp),
         verticalAlignment = Alignment.CenterVertically,
     ) {
         Column(Modifier.weight(1f)) {
-            Text(greeting(), style = MaterialTheme.typography.titleMedium, color = colors.onBackdropMuted)
+            Text(
+                greeting(userName),
+                style = MaterialTheme.typography.titleMedium,
+                color = colors.onBackdropMuted,
+                maxLines = 1,
+                overflow = TextOverflow.Ellipsis,
+            )
             Text(
                 DateFormats.weekdayLong(LocalDate.now()),
                 style = MaterialTheme.typography.headlineSmall,
@@ -224,6 +237,9 @@ private fun BalanceHero(
     isCurrentMonth: Boolean,
     totals: PeriodTotals,
     dailySpending: List<Long>,
+    dailyIncome: List<Long>,
+    dailyCount: List<Int>,
+    insights: MonthInsights,
     onPrevious: () -> Unit,
     onNext: () -> Unit,
     onCurrent: () -> Unit,
@@ -254,6 +270,11 @@ private fun BalanceHero(
         val incomeLabel = stringResource(DesignR.string.income)
         val expenseLabel = stringResource(DesignR.string.expenses)
         val savedLabel = stringResource(R.string.spotlight_saved)
+        val savedPercent = if (totals.incomeMinor > 0) {
+            percentText(percentOf(totals.balanceMinor, totals.incomeMinor).coerceIn(-999.0, 100.0))
+        } else {
+            null
+        }
         AnimatedMoneyText(
             modifier = Modifier.spotlightOnClick {
                 SpotlightItem(
@@ -264,9 +285,7 @@ private fun BalanceHero(
                     details = buildList {
                         add(incomeLabel to formatter.format(totals.incomeMinor))
                         add(expenseLabel to formatter.format(totals.expenseMinor))
-                        if (totals.incomeMinor > 0) {
-                            add(savedLabel to "${(totals.balanceMinor * 100 / totals.incomeMinor).coerceIn(-999, 100)}%")
-                        }
+                        if (savedPercent != null) add(savedLabel to savedPercent)
                     },
                 )
             },
@@ -275,17 +294,19 @@ private fun BalanceHero(
             style = MaterialTheme.typography.displayMedium.copy(
                 color = colors.onBackdrop,
                 fontWeight = FontWeight.Bold,
-                fontSize = 46.sp,
+                fontSize = 40.sp,
             ),
             minFontSize = 24.sp,
         )
-        Spacer(Modifier.height(12.dp))
+        Spacer(Modifier.height(16.dp))
         if (dailySpending.size > 1) {
-            Text(stringResource(R.string.daily_spending), style = MaterialTheme.typography.labelSmall, color = colors.onBackdropMuted)
-            Sparkline(
-                values = dailySpending.map { it.toFloat() },
-                color = colors.onBackdrop,
-                modifier = Modifier.fillMaxWidth().height(56.dp).padding(vertical = 4.dp),
+            DailySpendingChart(
+                month = month,
+                spending = dailySpending,
+                income = dailyIncome,
+                counts = dailyCount,
+                averageMinor = insights.averageDailySpendMinor,
+                entryCount = insights.transactionCount,
             )
         }
         Spacer(Modifier.height(12.dp))
@@ -326,7 +347,7 @@ private fun MonthSwitcher(
     Row(
         modifier = Modifier
             .clip(CircleShape)
-            .background(Color.White.copy(alpha = if (colors.isDark) 0.1f else 0.18f)),
+            .background(colors.onBackdrop.copy(alpha = if (colors.isDark) 0.1f else 0.14f)),
         verticalAlignment = Alignment.CenterVertically,
     ) {
         SwitcherArrow(Icons.AutoMirrored.Filled.KeyboardArrowLeft, stringResource(R.string.previous_month), onPrevious)
@@ -520,95 +541,6 @@ private fun BudgetRing(progress: Float, color: Color, size: Dp, content: @Compos
     }
 }
 
-@Composable
-private fun InsightTiles(insights: MonthInsights) {
-    val formatter = LocalMoneyFormatter.current
-    val none = stringResource(R.string.insight_none)
-    LazyRow(
-        contentPadding = PaddingValues(horizontal = 16.dp),
-        horizontalArrangement = Arrangement.spacedBy(12.dp),
-    ) {
-        item {
-            val top = insights.topCategory
-            InsightTile(
-                label = stringResource(R.string.insight_top_category),
-                value = top?.let { formatter.format(it.totalMinor) } ?: none,
-                caption = top?.category?.displayName(),
-                leading = {
-                    if (top != null) {
-                        CategoryIconBadge(top.category.iconKey, top.category.color, size = 36.dp, filled = true)
-                    } else {
-                        TileIcon(Icons.Outlined.EmojiEvents)
-                    }
-                },
-            )
-        }
-        item {
-            InsightTile(
-                label = stringResource(R.string.insight_daily_average),
-                value = formatter.format(insights.averageDailySpendMinor),
-                leading = { TileIcon(Icons.Outlined.CalendarMonth) },
-                icon = Icons.Outlined.CalendarMonth,
-            )
-        }
-        item {
-            val biggest = insights.biggestExpense
-            InsightTile(
-                label = stringResource(R.string.insight_biggest),
-                value = biggest?.let { formatter.format(it.amountMinor) } ?: none,
-                caption = biggest?.let { it.note.ifBlank { it.category.displayName() } },
-                leading = { TileIcon(Icons.Outlined.LocalFireDepartment) },
-                icon = Icons.Outlined.LocalFireDepartment,
-            )
-        }
-        item {
-            InsightTile(
-                label = stringResource(R.string.insight_count),
-                value = insights.transactionCount.toString(),
-                leading = { TileIcon(Icons.Outlined.Tag) },
-                icon = Icons.Outlined.Tag,
-            )
-        }
-    }
-}
-
-@Composable
-private fun TileIcon(icon: ImageVector) {
-    val colors = HisabKitabTheme.colors
-    Box(
-        modifier = Modifier.size(36.dp).clip(CircleShape).background(Brush.linearGradient(colors.accentGradient)),
-        contentAlignment = Alignment.Center,
-    ) {
-        Icon(icon, contentDescription = null, tint = MaterialTheme.colorScheme.onPrimary, modifier = Modifier.size(20.dp))
-    }
-}
-
-@Composable
-private fun InsightTile(
-    label: String,
-    value: String,
-    leading: @Composable () -> Unit,
-    caption: String? = null,
-    icon: ImageVector = Icons.Outlined.Insights,
-) {
-    GlassCard(
-        modifier = Modifier
-            .width(158.dp)
-            .height(132.dp)
-            .clip(MaterialTheme.shapes.large)
-            .spotlightOnClick { SpotlightItem(title = label, value = value, caption = caption, icon = icon) },
-        contentPadding = PaddingValues(16.dp),
-    ) {
-        leading()
-        Spacer(Modifier.weight(1f))
-        Text(label, style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
-        Text(value, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold, maxLines = 1, overflow = TextOverflow.Ellipsis)
-        if (caption != null) {
-            Text(caption, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant, maxLines = 1, overflow = TextOverflow.Ellipsis)
-        }
-    }
-}
-
 @Preview
 @Composable
 private fun HomeHeroPreview() {
@@ -619,6 +551,9 @@ private fun HomeHeroPreview() {
                 isCurrentMonth = true,
                 totals = PeriodTotals(incomeMinor = 8_500_000, expenseMinor = 3_245_050),
                 dailySpending = listOf(1200, 400, 3000, 800, 0, 2500, 900).map { it * 100L },
+                dailyIncome = listOf(0, 0, 0, 0, 0, 85_000, 0).map { it * 100L },
+                dailyCount = listOf(3, 1, 4, 2, 0, 5, 2),
+                insights = MonthInsights(averageDailySpendMinor = 125_000, transactionCount = 17),
                 onPrevious = {},
                 onNext = {},
                 onCurrent = {},

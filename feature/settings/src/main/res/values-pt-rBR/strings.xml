@@ -32,10 +32,8 @@
     <string name="nav_style_liquid">Líquido</string>
     <string name="nav_style_bubble">Bolha</string>
     <string name="nav_style_glow">Brilho</string>
-    <string name="nav_style_expand">Expandir</string>
     <string name="chart_animation">Animação dos gráficos</string>
     <string name="chart_animation_hint">Como os gráficos mudam em Análises</string>
-    <string name="chart_fade">Esmaecer</string>
     <string name="chart_slide">Deslizar</string>
     <string name="chart_flip">Giro 3D</string>
     <string name="chart_zoom">Zoom</string>
@@ -55,5 +53,38 @@
         <item quantity="one">%d categoria exportada</item>
         <item quantity="many">%d categorias exportadas</item>
         <item quantity="other">%d categorias exportadas</item>
+    </plurals>
+    <string name="profile_add_name">Adicione seu nome</string>
+    <string name="profile_summary">O Hisab Kitab cumprimenta você por este nome</string>
+    <string name="profile_edit">Editar nome</string>
+    <string name="profile_name_title">Como devemos chamar você?</string>
+    <string name="profile_name_label">Seu nome</string>
+    <string name="about_title">Sobre</string>
+    <string name="about_tagline">Seu dinheiro, lindamente organizado. Registre em segundos, veja para onde ele vai e gaste com confiança.</string>
+    <string name="about_offline_title">Funciona offline</string>
+    <string name="about_offline_body">Sem conta e sem internet. Tudo fica salvo neste celular.</string>
+    <string name="about_insights_title">Cinco formas de ver seu dinheiro</string>
+    <string name="about_insights_body">Rosca, ranking, tendência, calendário e fluxo, com orçamentos que mostram quanto você pode gastar.</string>
+    <string name="about_languages_title">Fala a sua língua</string>
+    <string name="about_languages_body">28 idiomas, incluindo hindi e outros 11 idiomas indianos.</string>
+    <string name="about_lock_title">Bloqueado quando quiser</string>
+    <string name="about_lock_body">Proteja o app com digital, rosto ou bloqueio de tela.</string>
+    <string name="about_privacy_title">Sua privacidade, garantida</string>
+    <string name="about_privacy_body">Sem anúncios, rastreamento ou análises. O Hisab Kitab nem consegue acessar a internet.</string>
+    <string name="about_credits">Créditos</string>
+    <string name="about_credits_body">Plus Jakarta Sans — SIL Open Font License 1.1 · Jetpack Compose · Material 3</string>
+    <string name="import_transactions">Importar transações</string>
+    <string name="import_summary">Adicione transações de uma exportação CSV do Hisab Kitab</string>
+    <string name="import_failed">Não foi possível ler o arquivo. Tente novamente.</string>
+    <string name="import_unsupported">Esse arquivo não é uma exportação de transações do Hisab Kitab.</string>
+    <plurals name="imported_transactions">
+        <item quantity="one">%d transação importada</item>
+        <item quantity="many">%d transações importadas</item>
+        <item quantity="other">%d transações importadas</item>
+    </plurals>
+    <plurals name="import_skipped">
+        <item quantity="one">%d já existia</item>
+        <item quantity="many">%d já existiam</item>
+        <item quantity="other">%d já existiam</item>
     </plurals>
 </resources>

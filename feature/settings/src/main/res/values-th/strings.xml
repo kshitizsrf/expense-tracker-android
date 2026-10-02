@@ -32,10 +32,8 @@
     <string name="nav_style_liquid">ลิควิด</string>
     <string name="nav_style_bubble">ฟองอากาศ</string>
     <string name="nav_style_glow">เรืองแสง</string>
-    <string name="nav_style_expand">ขยาย</string>
     <string name="chart_animation">แอนิเมชันกราฟ</string>
     <string name="chart_animation_hint">วิธีที่กราฟเปลี่ยนในหน้าวิเคราะห์</string>
-    <string name="chart_fade">จางหาย</string>
     <string name="chart_slide">เลื่อน</string>
     <string name="chart_flip">พลิก 3D</string>
     <string name="chart_zoom">ซูม</string>
@@ -51,5 +49,34 @@
     </plurals>
     <plurals name="exported_categories">
         <item quantity="other">ส่งออก %d หมวดหมู่แล้ว</item>
+    </plurals>
+    <string name="profile_add_name">เพิ่มชื่อของคุณ</string>
+    <string name="profile_summary">Hisab Kitab จะทักทายคุณด้วยชื่อนี้</string>
+    <string name="profile_edit">แก้ไขชื่อ</string>
+    <string name="profile_name_title">ให้เราเรียกคุณว่าอะไรดี?</string>
+    <string name="profile_name_label">ชื่อของคุณ</string>
+    <string name="about_title">เกี่ยวกับ</string>
+    <string name="about_tagline">เงินของคุณ จัดระเบียบอย่างสวยงาม บันทึกได้ในไม่กี่วินาที รู้ว่าเงินไปไหน และใช้จ่ายอย่างมั่นใจ</string>
+    <string name="about_offline_title">ใช้งานออฟไลน์ได้เต็มที่</string>
+    <string name="about_offline_body">ไม่ต้องมีบัญชีหรืออินเทอร์เน็ต ทุกอย่างบันทึกอยู่ในโทรศัพท์เครื่องนี้</string>
+    <string name="about_insights_title">ห้าวิธีดูเงินของคุณ</string>
+    <string name="about_insights_body">โดนัท อันดับ แนวโน้ม ปฏิทิน และกระแสเงิน พร้อมงบประมาณที่บอกว่าใช้ได้เท่าไร</string>
+    <string name="about_languages_title">พูดภาษาของคุณ</string>
+    <string name="about_languages_body">28 ภาษา รวมถึงภาษาฮินดีและภาษาอินเดียอื่นอีก 11 ภาษา</string>
+    <string name="about_lock_title">ล็อกเมื่อคุณต้องการ</string>
+    <string name="about_lock_body">ปกป้องแอปด้วยลายนิ้วมือ ใบหน้า หรือการล็อกหน้าจอ</string>
+    <string name="about_privacy_title">รับประกันความเป็นส่วนตัว</string>
+    <string name="about_privacy_body">ไม่มีโฆษณา ไม่มีการติดตาม ไม่มีการวิเคราะห์ Hisab Kitab เข้าถึงอินเทอร์เน็ตไม่ได้ด้วยซ้ำ</string>
+    <string name="about_credits">เครดิต</string>
+    <string name="about_credits_body">Plus Jakarta Sans — SIL Open Font License 1.1 · Jetpack Compose · Material 3</string>
+    <string name="import_transactions">นำเข้ารายการ</string>
+    <string name="import_summary">เพิ่มรายการจากไฟล์ CSV ที่ส่งออกจาก Hisab Kitab</string>
+    <string name="import_failed">อ่านไฟล์ไม่ได้ ลองอีกครั้ง</string>
+    <string name="import_unsupported">ไฟล์นี้ไม่ใช่ไฟล์ส่งออกรายการของ Hisab Kitab</string>
+    <plurals name="imported_transactions">
+        <item quantity="other">นำเข้า %d รายการแล้ว</item>
+    </plurals>
+    <plurals name="import_skipped">
+        <item quantity="other">มีอยู่แล้ว %d รายการ</item>
     </plurals>
 </resources>

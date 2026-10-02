@@ -20,4 +20,21 @@
         <item quantity="one">ইয়াৰ ফলত এই শ্ৰেণীৰ %dটা লেনদেনো মচি পেলোৱা হ\'ব। ইয়াক ঘূৰাই অনা নাযাব।</item>
         <item quantity="other">ইয়াৰ ফলত এই শ্ৰেণীৰ %dটা লেনদেনো মচি পেলোৱা হ\'ব। ইয়াক ঘূৰাই অনা নাযাব।</item>
     </plurals>
+    <string name="select_categories">শ্ৰেণী বাছক</string>
+    <string name="select_all">সকলো বাছক</string>
+    <string name="clear_selection">বাছনি বাতিল</string>
+    <string name="delete_selected">বাছনি কৰা মচক</string>
+    <string name="delete_categories_message_empty">এইবোৰ স্থায়ীভাৱে মচি পেলোৱা হ’ব।</string>
+    <plurals name="categories_selected">
+        <item quantity="one">%dটা বাছনি কৰা হ’ল</item>
+        <item quantity="other">%dটা বাছনি কৰা হ’ল</item>
+    </plurals>
+    <plurals name="delete_categories_title">
+        <item quantity="one">%dটা শ্ৰেণী মচিব নেকি?</item>
+        <item quantity="other">%dটা শ্ৰেণী মচিব নেকি?</item>
+    </plurals>
+    <plurals name="delete_categories_message">
+        <item quantity="one">ইয়াৰ ফলত সেইবোৰৰ %dটা লেনদেনো মচি পেলোৱা হ’ব। ইয়াক ঘূৰাই অনা নাযাব।</item>
+        <item quantity="other">ইয়াৰ ফলত সেইবোৰৰ %dটা লেনদেনো মচি পেলোৱা হ’ব। ইয়াক ঘূৰাই অনা নাযাব।</item>
+    </plurals>
 </resources>

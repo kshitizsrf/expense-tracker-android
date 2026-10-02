@@ -32,7 +32,9 @@ import com.hisabkitab.core.designsystem.component.CategoryIconBadge
 import com.hisabkitab.core.model.CategoryTotal
 import com.hisabkitab.core.ui.LocalMoneyFormatter
 import com.hisabkitab.core.ui.displayName
-import kotlin.math.roundToInt
+import androidx.compose.ui.text.style.TextAlign
+import com.hisabkitab.core.ui.percentOf
+import com.hisabkitab.core.ui.percentText
 
 /** Leaderboard of categories: bars grow in one after another, longest first. */
 @Composable
@@ -93,10 +95,12 @@ fun RankedBars(totals: List<CategoryTotal>, modifier: Modifier = Modifier) {
                         }
                         Spacer(Modifier.width(10.dp))
                         Text(
-                            "${(total.totalMinor * 100f / sum).roundToInt()}%",
+                            percentText(percentOf(total.totalMinor, sum)),
                             style = MaterialTheme.typography.labelMedium,
                             color = MaterialTheme.colorScheme.onSurfaceVariant,
-                            modifier = Modifier.width(36.dp),
+                            textAlign = TextAlign.End,
+                            maxLines = 1,
+                            modifier = Modifier.width(56.dp),
                         )
                     }
                 }

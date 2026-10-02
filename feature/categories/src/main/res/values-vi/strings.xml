@@ -19,4 +19,18 @@
     <plurals name="delete_category_message">
         <item quantity="other">Thao tác này cũng xóa %d giao dịch trong danh mục. Không thể hoàn tác.</item>
     </plurals>
+    <string name="select_categories">Chọn danh mục</string>
+    <string name="select_all">Chọn tất cả</string>
+    <string name="clear_selection">Hủy chọn</string>
+    <string name="delete_selected">Xóa mục đã chọn</string>
+    <string name="delete_categories_message_empty">Chúng sẽ bị xóa vĩnh viễn.</string>
+    <plurals name="categories_selected">
+        <item quantity="other">Đã chọn %d</item>
+    </plurals>
+    <plurals name="delete_categories_title">
+        <item quantity="other">Xóa %d danh mục?</item>
+    </plurals>
+    <plurals name="delete_categories_message">
+        <item quantity="other">Thao tác này cũng xóa %d giao dịch trong đó. Không thể hoàn tác.</item>
+    </plurals>
 </resources>

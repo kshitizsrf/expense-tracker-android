@@ -6,7 +6,6 @@
     <string name="back_to_this_month">点按返回本月</string>
     <string name="recent_transactions">最近明细</string>
     <string name="see_all">查看全部</string>
-    <string name="daily_spending">每日支出</string>
     <string name="budget_set_title">设置预算</string>
     <string name="budget_set_message">精确了解每天可以花多少。</string>
     <string name="budget_title_daily">今日预算</string>
@@ -18,14 +17,17 @@
     <string name="budget_safe_today">今日可花</string>
     <string name="budget_ended">本预算周期已结束。点按设置新的预算。</string>
     <string name="budget_not_started">%1$s 开始</string>
-    <string name="insight_top_category">花费最多</string>
-    <string name="insight_daily_average">日均</string>
-    <string name="insight_biggest">最大一笔</string>
-    <string name="insight_count">笔数</string>
     <string name="empty_home_title">全新开始</string>
     <string name="empty_home_message">点按 + 按钮记录你的第一笔收入或支出。</string>
     <string name="spotlight_saved">结余</string>
     <plurals name="budget_days_left">
         <item quantity="other">剩余 %d 天</item>
     </plurals>
+    <string name="scrub_spent">支出 %1$s</string>
+    <string name="scrub_earned">+%1$s 收入</string>
+    <plurals name="scrub_entries">
+        <item quantity="other">%d 笔</item>
+    </plurals>
+    <string name="daily_spending">每日支出</string>
+    <string name="daily_average_short">日均 %1$s</string>
 </resources>

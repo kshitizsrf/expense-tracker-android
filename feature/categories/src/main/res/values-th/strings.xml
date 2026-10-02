@@ -19,4 +19,18 @@
     <plurals name="delete_category_message">
         <item quantity="other">จะลบ %d รายการในหมวดหมู่นี้ด้วย ไม่สามารถย้อนกลับได้</item>
     </plurals>
+    <string name="select_categories">เลือกหมวดหมู่</string>
+    <string name="select_all">เลือกทั้งหมด</string>
+    <string name="clear_selection">ยกเลิกการเลือก</string>
+    <string name="delete_selected">ลบที่เลือก</string>
+    <string name="delete_categories_message_empty">หมวดหมู่เหล่านี้จะถูกลบถาวร</string>
+    <plurals name="categories_selected">
+        <item quantity="other">เลือกแล้ว %d</item>
+    </plurals>
+    <plurals name="delete_categories_title">
+        <item quantity="other">ลบ %d หมวดหมู่หรือไม่?</item>
+    </plurals>
+    <plurals name="delete_categories_message">
+        <item quantity="other">จะลบ %d รายการในหมวดหมู่เหล่านี้ด้วย ไม่สามารถย้อนกลับได้</item>
+    </plurals>
 </resources>

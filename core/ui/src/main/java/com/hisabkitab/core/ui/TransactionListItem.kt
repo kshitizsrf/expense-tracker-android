@@ -1,5 +1,6 @@
 package com.hisabkitab.core.ui
 
+import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -66,6 +67,9 @@ fun TransactionListItem(
             style = MaterialTheme.typography.titleMedium,
             color = transaction.type.amountColor(),
             maxLines = 1,
+            softWrap = false,
+            modifier = Modifier.widthIn(max = 160.dp),
+            overflow = TextOverflow.Ellipsis,
         )
     }
 }

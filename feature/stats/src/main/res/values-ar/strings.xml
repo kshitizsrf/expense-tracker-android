@@ -17,7 +17,6 @@
     <string name="chart_trend_title_monthly">شهرًا بشهر</string>
     <string name="chart_calendar_title">تقويم الإنفاق</string>
     <string name="chart_calendar_title_income">تقويم الدخل</string>
-    <string name="chart_cash_flow_title">التدفق النقدي · آخر 6 أشهر</string>
     <string name="chart_hint_donut">اضغط على جزء للتركيز عليه</string>
     <string name="chart_hint_trend">اضغط مطولًا واسحب للاستكشاف</string>
     <string name="chart_hint_calendar">اضغط على يوم لرؤية إجماليه</string>
@@ -29,7 +28,7 @@
     <string name="stat_entries">السجلات</string>
     <string name="stat_vs_previous">مقارنة بالسابق</string>
     <string name="stat_no_comparison">جديد</string>
-    <string name="percent_of_total">%1$d%% من الإجمالي</string>
+    <string name="percent_of_total">%1$s%% من الإجمالي</string>
     <string name="heatmap_less">أقل</string>
     <string name="heatmap_more">أكثر</string>
     <string name="nothing_on_day">لا شيء مسجّل</string>
@@ -44,5 +43,13 @@
         <item quantity="few">%d معاملات</item>
         <item quantity="many">%d معاملة</item>
         <item quantity="other">%d معاملة</item>
+    </plurals>
+    <plurals name="chart_cash_flow_title_months">
+        <item quantity="zero">التدفق النقدي · %d شهر</item>
+        <item quantity="one">التدفق النقدي · شهر (%d)</item>
+        <item quantity="two">التدفق النقدي · شهران (%d)</item>
+        <item quantity="few">التدفق النقدي · %d أشهر</item>
+        <item quantity="many">التدفق النقدي · %d شهرًا</item>
+        <item quantity="other">التدفق النقدي · %d شهر</item>
     </plurals>
 </resources>

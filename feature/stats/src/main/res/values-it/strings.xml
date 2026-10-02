@@ -17,7 +17,6 @@
     <string name="chart_trend_title_monthly">Mese per mese</string>
     <string name="chart_calendar_title">Calendario delle spese</string>
     <string name="chart_calendar_title_income">Calendario delle entrate</string>
-    <string name="chart_cash_flow_title">Flusso di cassa · ultimi 6 mesi</string>
     <string name="chart_hint_donut">Tocca uno spicchio per metterlo in evidenza</string>
     <string name="chart_hint_trend">Tieni premuto e trascina per esplorare</string>
     <string name="chart_hint_calendar">Tocca un giorno per vedere il totale</string>
@@ -29,7 +28,7 @@
     <string name="stat_entries">Voci</string>
     <string name="stat_vs_previous">vs precedente</string>
     <string name="stat_no_comparison">Nuovo</string>
-    <string name="percent_of_total">%1$d%% del totale</string>
+    <string name="percent_of_total">%1$s%% del totale</string>
     <string name="heatmap_less">Meno</string>
     <string name="heatmap_more">Più</string>
     <string name="nothing_on_day">Niente registrato</string>
@@ -41,5 +40,10 @@
         <item quantity="one">%d movimento</item>
         <item quantity="many">%d movimenti</item>
         <item quantity="other">%d movimenti</item>
+    </plurals>
+    <plurals name="chart_cash_flow_title_months">
+        <item quantity="one">Flusso di cassa · %d mese</item>
+        <item quantity="many">Flusso di cassa · %d mesi</item>
+        <item quantity="other">Flusso di cassa · %d mesi</item>
     </plurals>
 </resources>

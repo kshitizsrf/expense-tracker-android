@@ -36,4 +36,8 @@
     <string name="category_awards">விருதுகள்</string>
     <string name="category_investment">முதலீடு</string>
     <string name="category_other">மற்றவை</string>
+    <string name="greeting_morning_name">காலை வணக்கம், %1$s</string>
+    <string name="greeting_afternoon_name">மதிய வணக்கம், %1$s</string>
+    <string name="greeting_evening_name">மாலை வணக்கம், %1$s</string>
+    <string name="greeting_night_name">இன்னும் விழித்திருக்கிறீர்களா, %1$s?</string>
 </resources>

@@ -32,10 +32,8 @@
     <string name="nav_style_liquid">લિક્વિડ</string>
     <string name="nav_style_bubble">બબલ</string>
     <string name="nav_style_glow">ગ્લો</string>
-    <string name="nav_style_expand">એક્સપેન્ડ</string>
     <string name="chart_animation">ચાર્ટ ઍનિમેશન</string>
     <string name="chart_animation_hint">વિશ્લેષણમાં ચાર્ટ કેવી રીતે બદલાય</string>
-    <string name="chart_fade">ફેડ</string>
     <string name="chart_slide">સ્લાઇડ</string>
     <string name="chart_flip">3D ફ્લિપ</string>
     <string name="chart_zoom">ઝૂમ</string>
@@ -53,5 +51,36 @@
     <plurals name="exported_categories">
         <item quantity="one">%d શ્રેણી એક્સપોર્ટ થઈ</item>
         <item quantity="other">%d શ્રેણીઓ એક્સપોર્ટ થઈ</item>
+    </plurals>
+    <string name="profile_add_name">તમારું નામ ઉમેરો</string>
+    <string name="profile_summary">હિસાબ કિતાબ તમને આ નામથી બોલાવશે</string>
+    <string name="profile_edit">નામ બદલો</string>
+    <string name="profile_name_title">અમે તમને શું કહીને બોલાવીએ?</string>
+    <string name="profile_name_label">તમારું નામ</string>
+    <string name="about_title">વિશે</string>
+    <string name="about_tagline">તમારા પૈસા, સુંદર રીતે ગોઠવાયેલા. સેકન્ડમાં નોંધો, પૈસા ક્યાં જાય છે તે જુઓ અને વિશ્વાસથી ખર્ચ કરો.</string>
+    <string name="about_offline_title">સંપૂર્ણ ઑફલાઇન</string>
+    <string name="about_offline_body">એકાઉન્ટ કે ઇન્ટરનેટની જરૂર નથી. બધું આ ફોનમાં જ સેવ રહે છે.</string>
+    <string name="about_insights_title">પૈસા જોવાની પાંચ રીત</string>
+    <string name="about_insights_body">ડોનટ, રેન્કિંગ, ટ્રેન્ડ, કૅલેન્ડર અને રોકડ પ્રવાહ, સાથે કેટલો ખર્ચ સલામત છે તે કહેતું બજેટ.</string>
+    <string name="about_languages_title">તમારી ભાષામાં</string>
+    <string name="about_languages_body">હિન્દી અને બીજી 11 ભારતીય ભાષાઓ સહિત 28 ભાષાઓ.</string>
+    <string name="about_lock_title">જ્યારે ઇચ્છો ત્યારે લૉક</string>
+    <string name="about_lock_body">ફિંગરપ્રિન્ટ, ચહેરો કે સ્ક્રીન લૉકથી ઍપ સુરક્ષિત રાખો.</string>
+    <string name="about_privacy_title">તમારી ગોપનીયતાની ખાતરી</string>
+    <string name="about_privacy_body">કોઈ જાહેરાત, ટ્રેકિંગ કે ઍનાલિટિક્સ નથી. હિસાબ કિતાબ ઇન્ટરનેટ સુધી પણ પહોંચી શકતું નથી.</string>
+    <string name="about_credits">આભાર</string>
+    <string name="about_credits_body">Plus Jakarta Sans — SIL Open Font License 1.1 · Jetpack Compose · Material 3</string>
+    <string name="import_transactions">વ્યવહારો ઇમ્પોર્ટ કરો</string>
+    <string name="import_summary">હિસાબ કિતાબની CSV ફાઇલમાંથી વ્યવહારો ઉમેરો</string>
+    <string name="import_failed">ફાઇલ વાંચી શકાઈ નહીં. ફરી પ્રયાસ કરો.</string>
+    <string name="import_unsupported">આ હિસાબ કિતાબની વ્યવહાર એક્સપોર્ટ ફાઇલ નથી.</string>
+    <plurals name="imported_transactions">
+        <item quantity="one">%d વ્યવહાર ઇમ્પોર્ટ થયો</item>
+        <item quantity="other">%d વ્યવહારો ઇમ્પોર્ટ થયા</item>
+    </plurals>
+    <plurals name="import_skipped">
+        <item quantity="one">%d પહેલેથી હતા</item>
+        <item quantity="other">%d પહેલેથી હતા</item>
     </plurals>
 </resources>

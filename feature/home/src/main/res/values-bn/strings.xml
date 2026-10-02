@@ -6,7 +6,6 @@
     <string name="back_to_this_month">এই মাসে ফিরতে ট্যাপ করুন</string>
     <string name="recent_transactions">সাম্প্রতিক কার্যকলাপ</string>
     <string name="see_all">সব দেখুন</string>
-    <string name="daily_spending">দৈনিক খরচ</string>
     <string name="budget_set_title">বাজেট ঠিক করুন</string>
     <string name="budget_set_message">জানুন প্রতিদিন ঠিক কত খরচ করতে পারেন।</string>
     <string name="budget_title_daily">আজকের বাজেট</string>
@@ -18,10 +17,6 @@
     <string name="budget_safe_today">আজ নিশ্চিন্তে খরচ করুন</string>
     <string name="budget_ended">এই বাজেটের সময়কাল শেষ। নতুন ঠিক করতে ট্যাপ করুন।</string>
     <string name="budget_not_started">%1$s থেকে শুরু</string>
-    <string name="insight_top_category">সবচেয়ে বেশি খরচ</string>
-    <string name="insight_daily_average">দৈনিক গড়</string>
-    <string name="insight_biggest">সবচেয়ে বড় খরচ</string>
-    <string name="insight_count">এন্ট্রি</string>
     <string name="empty_home_title">নতুন শুরু</string>
     <string name="empty_home_message">আপনার প্রথম আয় বা খরচ লিখতে + বোতামে ট্যাপ করুন।</string>
     <string name="spotlight_saved">সঞ্চয়</string>
@@ -29,4 +24,12 @@
         <item quantity="one">%d দিন বাকি</item>
         <item quantity="other">%d দিন বাকি</item>
     </plurals>
+    <string name="scrub_spent">%1$s খরচ</string>
+    <string name="scrub_earned">+%1$s আয়</string>
+    <plurals name="scrub_entries">
+        <item quantity="one">%dটি এন্ট্রি</item>
+        <item quantity="other">%dটি এন্ট্রি</item>
+    </plurals>
+    <string name="daily_spending">দৈনিক খরচ</string>
+    <string name="daily_average_short">গড় %1$s/দিন</string>
 </resources>

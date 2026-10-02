@@ -1,5 +1,9 @@
 package com.hisabkitab.feature.transactions.editor
 
+import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.graphics.lerp
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.platform.LocalResources
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.animateColorAsState
@@ -12,7 +16,6 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
-import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.WindowInsets
@@ -27,8 +30,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.statusBars
 import androidx.compose.foundation.layout.width
-import androidx.compose.foundation.lazy.LazyRow
-import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -73,11 +74,11 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.hisabkitab.core.common.calculator.AmountInput
 import com.hisabkitab.core.designsystem.R as DesignR
 import com.hisabkitab.core.designsystem.component.BackdropHeader
 import com.hisabkitab.core.designsystem.component.CategoryIconBadge
 import com.hisabkitab.core.designsystem.component.DatePickerModal
-import com.hisabkitab.core.designsystem.component.GlassChip
 import com.hisabkitab.core.designsystem.component.GlassIconButton
 import com.hisabkitab.core.designsystem.component.GradientButton
 import com.hisabkitab.core.designsystem.component.SlidingSegmentedControl
@@ -169,39 +170,15 @@ internal fun TransactionEditorScreen(
                     GlassIconButton(Icons.Filled.Close, stringResource(DesignR.string.action_close), onBack)
                 },
             )
+            // The amount stays put; categories, date and note scroll beneath it.
+            AmountDisplay(uiState.expression, uiState.amountMinor, uiState.showsCalculation, uiState.type)
             Column(
                 modifier = Modifier
                     .weight(1f)
                     .verticalScroll(rememberScrollState()),
             ) {
-                SlidingSegmentedControl(
-                    options = listOf(
-                        TransactionType.EXPENSE to stringResource(DesignR.string.expense),
-                        TransactionType.INCOME to stringResource(DesignR.string.income),
-                    ),
-                    selected = uiState.type,
-                    onSelect = onTypeChange,
-                    modifier = Modifier.padding(horizontal = 16.dp),
-                )
-                AmountDisplay(uiState.expression, uiState.amountMinor, uiState.showsCalculation, uiState.type)
-                CategoryStrip(uiState.categories, uiState.selectedCategoryId, onCategorySelected, onAddCategory)
-                Row(
-                    modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
-                    horizontalArrangement = Arrangement.spacedBy(8.dp),
-                ) {
-                    GlassChip(
-                        label = relativeDayLabel(uiState.date, LocalDate.now()),
-                        selected = false,
-                        onClick = { showDatePicker = true },
-                        icon = Icons.Outlined.CalendarToday,
-                    )
-                    GlassChip(
-                        label = DateFormats.time(uiState.time),
-                        selected = false,
-                        onClick = { showTimePicker = true },
-                        icon = Icons.Outlined.Schedule,
-                    )
-                }
+                CategoryGrid(uiState.categories, uiState.selectedCategoryId, onCategorySelected, onAddCategory)
+                Spacer(Modifier.height(4.dp))
                 NoteField(uiState.note, onNoteChange, Modifier.padding(horizontal = 16.dp, vertical = 4.dp))
                 Spacer(Modifier.height(8.dp))
             }
@@ -211,9 +188,34 @@ internal fun TransactionEditorScreen(
                     modifier = Modifier
                         .fillMaxWidth()
                         .glass(RoundedCornerShape(topStart = 32.dp, topEnd = 32.dp), strong = true)
+                        .background(
+                            Brush.verticalGradient(
+                                listOf(
+                                    MaterialTheme.colorScheme.primary.copy(alpha = if (HisabKitabTheme.colors.isDark) 0.12f else 0.08f),
+                                    MaterialTheme.colorScheme.primary.copy(alpha = 0.02f),
+                                ),
+                            ),
+                        )
                         .padding(bottom = WindowInsets.navigationBars.asPaddingValues().calculateBottomPadding())
                         .padding(top = 8.dp),
                 ) {
+                    Row(
+                        modifier = Modifier.fillMaxWidth().padding(horizontal = 12.dp, vertical = 4.dp),
+                        horizontalArrangement = Arrangement.spacedBy(8.dp),
+                    ) {
+                        WhenChip(
+                            label = relativeDayLabel(uiState.date, LocalDate.now()),
+                            icon = Icons.Outlined.CalendarToday,
+                            onClick = { showDatePicker = true },
+                            modifier = Modifier.weight(1.4f),
+                        )
+                        WhenChip(
+                            label = DateFormats.time(uiState.time),
+                            icon = Icons.Outlined.Schedule,
+                            onClick = { showTimePicker = true },
+                            modifier = Modifier.weight(1f),
+                        )
+                    }
                     CalculatorKeypad(
                         onDigit = onDigit,
                         onDecimalPoint = onDecimalPoint,
@@ -229,7 +231,17 @@ internal fun TransactionEditorScreen(
                         icon = Icons.Filled.Check,
                         modifier = Modifier
                             .fillMaxWidth()
-                            .padding(start = 12.dp, end = 12.dp, bottom = 12.dp, top = 4.dp),
+                            .padding(horizontal = 12.dp, vertical = 4.dp),
+                    )
+                    // Expense/income switch sits last, within thumb reach.
+                    SlidingSegmentedControl(
+                        options = listOf(
+                            TransactionType.EXPENSE to stringResource(DesignR.string.expense),
+                            TransactionType.INCOME to stringResource(DesignR.string.income),
+                        ),
+                        selected = uiState.type,
+                        onSelect = onTypeChange,
+                        modifier = Modifier.padding(start = 12.dp, end = 12.dp, top = 6.dp, bottom = 10.dp),
                     )
                 }
             }
@@ -249,10 +261,9 @@ internal fun TransactionEditorScreen(
 private fun AmountDisplay(expression: String, amountMinor: Long?, showsCalculation: Boolean, type: TransactionType) {
     val formatter = LocalMoneyFormatter.current
     val colors = HisabKitabTheme.colors
-    val sign = if (type == TransactionType.EXPENSE) "−" else "+"
     val signColor by animateColorAsState(if (type == TransactionType.EXPENSE) colors.expense else colors.income, label = "sign")
     Column(
-        modifier = Modifier.fillMaxWidth().padding(horizontal = 24.dp, vertical = 18.dp),
+        modifier = Modifier.fillMaxWidth().padding(horizontal = 24.dp, vertical = 10.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         Row(verticalAlignment = Alignment.CenterVertically) {
@@ -260,7 +271,7 @@ private fun AmountDisplay(expression: String, amountMinor: Long?, showsCalculati
                 Modifier.size(34.dp).clip(CircleShape).background(Color.White.copy(alpha = 0.9f)),
                 contentAlignment = Alignment.Center,
             ) {
-                Text(sign, color = signColor, style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
+                OperatorGlyph(if (type == TransactionType.EXPENSE) AmountInput.MINUS else AmountInput.PLUS, signColor, size = 14.dp)
             }
             Spacer(Modifier.width(12.dp))
             BasicText(
@@ -271,7 +282,7 @@ private fun AmountDisplay(expression: String, amountMinor: Long?, showsCalculati
                     textAlign = TextAlign.Center,
                 ),
                 maxLines = 1,
-                autoSize = TextAutoSize.StepBased(minFontSize = 28.sp, maxFontSize = 60.sp),
+                autoSize = TextAutoSize.StepBased(minFontSize = 26.sp, maxFontSize = 52.sp),
             )
         }
         if (showsCalculation) {
@@ -284,43 +295,30 @@ private fun AmountDisplay(expression: String, amountMinor: Long?, showsCalculati
     }
 }
 
+/** Every category at a glance, three per row with large icons. */
 @Composable
-private fun CategoryStrip(
+private fun CategoryGrid(
     categories: List<Category>,
     selectedId: Long?,
     onSelect: (Long) -> Unit,
     onAddCategory: () -> Unit,
 ) {
-    LazyRow(
-        contentPadding = PaddingValues(horizontal = 12.dp, vertical = 4.dp),
-        horizontalArrangement = Arrangement.spacedBy(4.dp),
-    ) {
-        items(categories, key = { it.id }) { category ->
-            val selected = category.id == selectedId
-            val scale by animateFloatAsState(if (selected) 1.08f else 1f, spring(dampingRatio = 0.5f), label = "catScale")
-            CategoryChoice(label = category.displayName(), selected = selected, onClick = { onSelect(category.id) }) {
-                Box(
-                    Modifier
-                        .scale(scale)
-                        .then(if (selected) Modifier.border(3.dp, Color.White, CircleShape) else Modifier)
-                        .padding(3.dp),
-                ) {
-                    CategoryIconBadge(category.iconKey, category.color, size = 52.dp, filled = true)
-                }
-            }
-        }
-        item(key = "add") {
-            CategoryChoice(label = stringResource(R.string.new_category_short), selected = false, onClick = onAddCategory) {
-                Box(
-                    modifier = Modifier
-                        .padding(3.dp)
-                        .size(52.dp)
-                        .clip(CircleShape)
-                        .background(Color.White.copy(alpha = 0.18f))
-                        .border(1.5.dp, Color.White.copy(alpha = 0.6f), CircleShape),
-                    contentAlignment = Alignment.Center,
-                ) {
-                    Icon(Icons.Filled.Add, contentDescription = null, tint = Color.White)
+    Box(Modifier.fillMaxWidth().padding(horizontal = 12.dp, vertical = 4.dp)) {
+        val columns = CATEGORY_COLUMNS
+        val cells: List<Category?> = categories + null // null is the "new category" cell
+        Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
+            cells.chunked(columns).forEach { row ->
+                Row(Modifier.fillMaxWidth()) {
+                    row.forEach { category ->
+                        Box(Modifier.weight(1f), contentAlignment = Alignment.TopCenter) {
+                            if (category != null) {
+                                CategoryCell(category, category.id == selectedId) { onSelect(category.id) }
+                            } else {
+                                NewCategoryCell(onAddCategory)
+                            }
+                        }
+                    }
+                    repeat(columns - row.size) { Spacer(Modifier.weight(1f)) }
                 }
             }
         }
@@ -328,26 +326,87 @@ private fun CategoryStrip(
 }
 
 @Composable
+private fun CategoryCell(category: Category, selected: Boolean, onClick: () -> Unit) {
+    val scale by animateFloatAsState(if (selected) 1.08f else 1f, spring(dampingRatio = 0.5f), label = "catScale")
+    CategoryChoice(label = category.displayName(), selected = selected, onClick = onClick) {
+        Box(
+            Modifier
+                .scale(scale)
+                .then(if (selected) Modifier.border(2.5.dp, HisabKitabTheme.colors.onBackdrop, CircleShape) else Modifier)
+                .padding(3.dp),
+        ) {
+            CategoryIconBadge(category.iconKey, category.color, size = CATEGORY_ICON_SIZE, filled = true)
+        }
+    }
+}
+
+@Composable
+private fun NewCategoryCell(onClick: () -> Unit) {
+    CategoryChoice(label = stringResource(R.string.new_category_short), selected = false, onClick = onClick) {
+        Box(
+            modifier = Modifier
+                .padding(3.dp)
+                .size(CATEGORY_ICON_SIZE)
+                .clip(CircleShape)
+                .background(HisabKitabTheme.colors.onBackdrop.copy(alpha = 0.14f))
+                .border(1.5.dp, HisabKitabTheme.colors.onBackdrop.copy(alpha = 0.5f), CircleShape),
+            contentAlignment = Alignment.Center,
+        ) {
+            Icon(Icons.Filled.Add, contentDescription = null, tint = HisabKitabTheme.colors.onBackdrop, modifier = Modifier.size(30.dp))
+        }
+    }
+}
+
+private const val CATEGORY_COLUMNS = 3
+private val CATEGORY_ICON_SIZE = 60.dp
+
+@Composable
 private fun CategoryChoice(label: String, selected: Boolean, onClick: () -> Unit, icon: @Composable () -> Unit) {
     val colors = HisabKitabTheme.colors
     Column(
         modifier = Modifier
-            .width(78.dp)
+            .fillMaxWidth()
             .clip(MaterialTheme.shapes.medium)
             .clickable(onClick = onClick)
-            .padding(vertical = 8.dp),
+            .padding(vertical = 8.dp, horizontal = 4.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         icon()
         Spacer(Modifier.height(6.dp))
         Text(
             text = label,
-            style = MaterialTheme.typography.labelMedium,
+            style = MaterialTheme.typography.labelLarge,
             fontWeight = if (selected) FontWeight.Bold else FontWeight.Medium,
             color = if (selected) colors.onBackdrop else colors.onBackdropMuted,
             maxLines = 1,
             overflow = TextOverflow.Ellipsis,
             textAlign = TextAlign.Center,
+        )
+    }
+}
+
+/** Date or time button inside the keypad panel. */
+@Composable
+private fun WhenChip(label: String, icon: ImageVector, onClick: () -> Unit, modifier: Modifier = Modifier) {
+    val scheme = MaterialTheme.colorScheme
+    Row(
+        modifier = modifier
+            .height(42.dp)
+            .clip(CircleShape)
+            .background(lerp(scheme.surface, scheme.primary, 0.1f))
+            .clickable(role = Role.Button, onClick = onClick)
+            .padding(horizontal = 14.dp),
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.Center,
+    ) {
+        Icon(icon, contentDescription = null, tint = scheme.primary, modifier = Modifier.size(18.dp))
+        Spacer(Modifier.width(8.dp))
+        Text(
+            label,
+            style = MaterialTheme.typography.labelLarge,
+            color = scheme.onSurface,
+            maxLines = 1,
+            overflow = TextOverflow.Ellipsis,
         )
     }
 }

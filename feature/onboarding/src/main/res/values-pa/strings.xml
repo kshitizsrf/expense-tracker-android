@@ -3,7 +3,7 @@
     <string name="onboarding_welcome_title">ਹਿਸਾਬ ਕਿਤਾਬ</string>
     <string name="onboarding_welcome_message">ਤੁਹਾਡਾ ਪੈਸਾ, ਸੋਹਣੇ ਢੰਗ ਨਾਲ ਸੰਗਠਿਤ। ਸਕਿੰਟਾਂ ਵਿੱਚ ਲਿਖੋ, ਦੇਖੋ ਪੈਸਾ ਕਿੱਥੇ ਜਾਂਦਾ ਹੈ ਅਤੇ ਭਰੋਸੇ ਨਾਲ ਖ਼ਰਚੋ।</string>
     <string name="onboarding_theme_title">ਆਪਣਾ ਅੰਦਾਜ਼ ਚੁਣੋ</string>
-    <string name="onboarding_theme_message">ਪੰਜ ਖ਼ਾਸ ਥੀਮ, ਹਰੇਕ ਵਿੱਚ ਲਾਈਟ ਅਤੇ ਡਾਰਕ ਮੂਡ। ਤੁਸੀਂ ਇਸਨੂੰ ਕਦੇ ਵੀ ਬਦਲ ਸਕਦੇ ਹੋ।</string>
+    <string name="onboarding_theme_message">ਛੇ ਖ਼ਾਸ ਥੀਮ, ਹਰੇਕ ਵਿੱਚ ਲਾਈਟ ਅਤੇ ਡਾਰਕ ਮੂਡ। ਤੁਸੀਂ ਇਸਨੂੰ ਕਦੇ ਵੀ ਬਦਲ ਸਕਦੇ ਹੋ।</string>
     <string name="onboarding_setup_title">ਆਖ਼ਰੀ ਛੋਹਾਂ</string>
     <string name="onboarding_setup_message">ਆਪਣੀ ਮੁਦਰਾ ਚੁਣੋ ਅਤੇ ਦੱਸੋ ਕਿ ਕੀ ਤੁਸੀਂ ਦਿਨ ਲਿਖਣ ਲਈ ਹਲਕੀ ਯਾਦ-ਦਹਾਨੀ ਚਾਹੁੰਦੇ ਹੋ।</string>
     <string name="onboarding_currency">ਮੁਦਰਾ</string>

@@ -29,6 +29,7 @@ import javax.inject.Inject
 
 interface UserPreferencesRepository {
     val userPreferences: Flow<UserPreferences>
+    suspend fun setUserName(name: String)
     suspend fun setThemeMode(mode: ThemeMode)
     suspend fun setTheme(theme: AppTheme)
     suspend fun setCurrencyCode(code: String)
@@ -49,6 +50,11 @@ class DataStoreUserPreferencesRepository @Inject constructor(
     override val userPreferences: Flow<UserPreferences> = dataStore.data
         .catch { error -> if (error is IOException) emit(emptyPreferences()) else throw error }
         .map { it.toUserPreferences() }
+
+    override suspend fun setUserName(name: String) = edit { prefs ->
+        val trimmed = name.trim()
+        if (trimmed.isEmpty()) prefs.remove(Keys.USER_NAME) else prefs[Keys.USER_NAME] = trimmed
+    }
 
     override suspend fun setThemeMode(mode: ThemeMode) = edit { it[Keys.THEME_MODE] = mode.name }
 
@@ -97,6 +103,7 @@ class DataStoreUserPreferencesRepository @Inject constructor(
     }
 
     private fun Preferences.toUserPreferences(): UserPreferences = UserPreferences(
+        userName = this[Keys.USER_NAME].orEmpty(),
         themeMode = this[Keys.THEME_MODE].toEnumOrNull<ThemeMode>() ?: ThemeMode.SYSTEM,
         theme = this[Keys.THEME].toEnumOrNull<AppTheme>() ?: AppTheme.SKYLINE,
         currencyCode = this[Keys.CURRENCY_CODE] ?: MoneyFormatter.defaultCurrencyCode(),
@@ -110,8 +117,8 @@ class DataStoreUserPreferencesRepository @Inject constructor(
         hasRequestedNotificationPermission = this[Keys.NOTIFICATION_PERMISSION_REQUESTED] ?: false,
         hasCompletedOnboarding = this[Keys.ONBOARDING_COMPLETED] ?: false,
         appLockEnabled = this[Keys.APP_LOCK] ?: false,
-        navBarStyle = this[Keys.NAV_BAR_STYLE].toEnumOrNull<NavBarStyle>() ?: NavBarStyle.LIQUID,
-        chartTransition = this[Keys.CHART_TRANSITION].toEnumOrNull<ChartTransition>() ?: ChartTransition.FADE,
+        navBarStyle = this[Keys.NAV_BAR_STYLE].toEnumOrNull<NavBarStyle>() ?: NavBarStyle.GLOW,
+        chartTransition = this[Keys.CHART_TRANSITION].toEnumOrNull<ChartTransition>() ?: ChartTransition.ZOOM,
     )
 
     private fun Preferences.toBudget(): Budget? {
@@ -131,6 +138,7 @@ class DataStoreUserPreferencesRepository @Inject constructor(
         this?.let { name -> enumValues<T>().firstOrNull { it.name == name } }
 
     private object Keys {
+        val USER_NAME = stringPreferencesKey("user_name")
         val THEME_MODE = stringPreferencesKey("theme_mode")
         val THEME = stringPreferencesKey("app_theme")
         val CURRENCY_CODE = stringPreferencesKey("currency_code")

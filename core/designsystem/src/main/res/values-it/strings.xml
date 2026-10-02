@@ -33,4 +33,5 @@
     <string name="theme_wallpaper">Sfondo</string>
     <string name="spotlight_dismiss">Tocca ovunque per chiudere</string>
     <string name="select_date_range">Scegli un intervallo di date</string>
+    <string name="theme_seashell_tagline">Foschia marina e sabbia</string>
 </resources>

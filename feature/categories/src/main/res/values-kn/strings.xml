@@ -20,4 +20,21 @@
         <item quantity="one">ಇದರಿಂದ ಈ ವರ್ಗದ %d ವಹಿವಾಟು ಕೂಡ ಅಳಿಸಲ್ಪಡುತ್ತದೆ. ಇದನ್ನು ರದ್ದುಗೊಳಿಸಲಾಗುವುದಿಲ್ಲ.</item>
         <item quantity="other">ಇದರಿಂದ ಈ ವರ್ಗದ %d ವಹಿವಾಟುಗಳು ಕೂಡ ಅಳಿಸಲ್ಪಡುತ್ತವೆ. ಇದನ್ನು ರದ್ದುಗೊಳಿಸಲಾಗುವುದಿಲ್ಲ.</item>
     </plurals>
+    <string name="select_categories">ವರ್ಗಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="select_all">ಎಲ್ಲವನ್ನೂ ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="clear_selection">ಆಯ್ಕೆ ರದ್ದುಮಾಡಿ</string>
+    <string name="delete_selected">ಆಯ್ಕೆಮಾಡಿದವನ್ನು ಅಳಿಸಿ</string>
+    <string name="delete_categories_message_empty">ಅವು ಶಾಶ್ವತವಾಗಿ ಅಳಿಸಲ್ಪಡುತ್ತವೆ.</string>
+    <plurals name="categories_selected">
+        <item quantity="one">%d ಆಯ್ಕೆಮಾಡಲಾಗಿದೆ</item>
+        <item quantity="other">%d ಆಯ್ಕೆಮಾಡಲಾಗಿದೆ</item>
+    </plurals>
+    <plurals name="delete_categories_title">
+        <item quantity="one">%d ವರ್ಗ ಅಳಿಸಬೇಕೆ?</item>
+        <item quantity="other">%d ವರ್ಗಗಳನ್ನು ಅಳಿಸಬೇಕೆ?</item>
+    </plurals>
+    <plurals name="delete_categories_message">
+        <item quantity="one">ಇದರಿಂದ ಅವುಗಳಲ್ಲಿನ %d ವಹಿವಾಟು ಕೂಡ ಅಳಿಸಲ್ಪಡುತ್ತದೆ. ಇದನ್ನು ರದ್ದುಮಾಡಲಾಗದು.</item>
+        <item quantity="other">ಇದರಿಂದ ಅವುಗಳಲ್ಲಿನ %d ವಹಿವಾಟುಗಳು ಕೂಡ ಅಳಿಸಲ್ಪಡುತ್ತವೆ. ಇದನ್ನು ರದ್ದುಮಾಡಲಾಗದು.</item>
+    </plurals>
 </resources>

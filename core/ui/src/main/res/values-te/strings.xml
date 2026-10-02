@@ -36,4 +36,8 @@
     <string name="category_awards">పురస్కారాలు</string>
     <string name="category_investment">పెట్టుబడి</string>
     <string name="category_other">ఇతర</string>
+    <string name="greeting_morning_name">శుభోదయం, %1$s</string>
+    <string name="greeting_afternoon_name">శుభ మధ్యాహ్నం, %1$s</string>
+    <string name="greeting_evening_name">శుభ సాయంత్రం, %1$s</string>
+    <string name="greeting_night_name">ఇంకా మేల్కొనే ఉన్నారా, %1$s?</string>
 </resources>

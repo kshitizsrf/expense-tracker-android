@@ -42,6 +42,8 @@ import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
 import androidx.compose.material.icons.outlined.Category
 import androidx.compose.material.icons.outlined.Info
+import androidx.compose.material.icons.outlined.FileUpload
+import androidx.compose.material.icons.outlined.Edit
 import androidx.compose.material.icons.outlined.Language
 import androidx.compose.material.icons.outlined.Lock
 import androidx.compose.material.icons.outlined.Notifications
@@ -77,6 +79,14 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.text.style.TextOverflow
+import androidx.compose.ui.text.input.KeyboardCapitalization
+import androidx.compose.ui.text.input.ImeAction
+import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.foundation.text.KeyboardActions
+import androidx.compose.material3.TextButton
+import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.AlertDialog
 import androidx.core.content.ContextCompat
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -112,6 +122,7 @@ fun SettingsScreen(
     versionName: String,
     onBack: () -> Unit,
     onOpenBudget: () -> Unit,
+    onOpenAbout: () -> Unit,
     viewModel: SettingsViewModel = hiltViewModel(),
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
@@ -120,6 +131,7 @@ fun SettingsScreen(
     var showCurrencyDialog by rememberSaveable { mutableStateOf(false) }
     var showTimePicker by rememberSaveable { mutableStateOf(false) }
     var showLanguageDialog by rememberSaveable { mutableStateOf(false) }
+    var showNameDialog by rememberSaveable { mutableStateOf(false) }
     val lockAvailable = remember { canUseAppLock(context) }
     val lockPromptTitle = stringResource(R.string.app_lock_confirm_title)
     val lockPromptSubtitle = stringResource(R.string.app_lock_confirm_subtitle)
@@ -132,6 +144,9 @@ fun SettingsScreen(
     val exportCategoriesLauncher = rememberLauncherForActivityResult(
         ActivityResultContracts.CreateDocument(CSV_MIME_TYPE),
     ) { uri -> if (uri != null) viewModel.export(ExportKind.CATEGORIES, uri) }
+    val importLauncher = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocument()) { uri ->
+        if (uri != null) viewModel.importTransactions(uri)
+    }
     val notificationPermissionLauncher = rememberLauncherForActivityResult(
         ActivityResultContracts.RequestPermission(),
     ) { granted -> viewModel.setReminderEnabled(granted) }
@@ -143,6 +158,15 @@ fun SettingsScreen(
             ExportKind.CATEGORIES -> pluralStringResource(R.plurals.exported_categories, message.count, message.count)
         }
         SettingsMessage.ExportFailed -> stringResource(R.string.export_failed)
+        is SettingsMessage.Imported -> buildString {
+            append(pluralStringResource(R.plurals.imported_transactions, message.count, message.count))
+            if (message.skipped > 0) {
+                append(" · ")
+                append(pluralStringResource(R.plurals.import_skipped, message.skipped, message.skipped))
+            }
+        }
+        SettingsMessage.ImportFailed -> stringResource(R.string.import_failed)
+        SettingsMessage.ImportUnsupported -> stringResource(R.string.import_unsupported)
         null -> null
     }
     LaunchedEffect(message) {
@@ -167,6 +191,10 @@ fun SettingsScreen(
                 )
             }
             if (preferences == null) return@LazyColumn
+
+            item {
+                ProfileCard(name = preferences.userName, onClick = { showNameDialog = true })
+            }
 
             item {
                 Text(
@@ -313,12 +341,26 @@ fun SettingsScreen(
                         enabled = !uiState.isExporting,
                         onClick = { exportCategoriesLauncher.launch(exportFileName("categories")) },
                     )
+                    GroupDivider()
+                    SettingsRow(
+                        icon = Icons.Outlined.FileUpload,
+                        title = stringResource(R.string.import_transactions),
+                        summary = stringResource(R.string.import_summary),
+                        enabled = !uiState.isExporting,
+                        // Some file managers label CSV as plain text or a generic file.
+                        onClick = { importLauncher.launch(arrayOf(CSV_MIME_TYPE, "text/comma-separated-values", "text/plain", "application/octet-stream")) },
+                    )
                 }
             }
 
             item {
                 SettingsGroup(stringResource(R.string.settings_about)) {
-                    SettingsRow(Icons.Outlined.Info, stringResource(DesignR.string.app_name), stringResource(R.string.version, versionName))
+                    SettingsRow(
+                        icon = Icons.Outlined.Info,
+                        title = stringResource(DesignR.string.app_name),
+                        summary = stringResource(R.string.version, versionName),
+                        onClick = onOpenAbout,
+                    )
                 }
             }
             item {
@@ -334,6 +376,16 @@ fun SettingsScreen(
         SnackbarHost(snackbarHostState, Modifier.align(Alignment.BottomCenter).padding(bottom = systemBars.calculateBottomPadding()))
     }
 
+    if (showNameDialog) {
+        NameDialog(
+            initialName = uiState.preferences?.userName.orEmpty(),
+            onSave = {
+                viewModel.setUserName(it)
+                showNameDialog = false
+            },
+            onDismiss = { showNameDialog = false },
+        )
+    }
     if (showCurrencyDialog) {
         CurrencyDialog(
             selectedCode = uiState.preferences?.currencyCode,
@@ -347,9 +399,14 @@ fun SettingsScreen(
     if (showLanguageDialog) {
         LanguageDialog(
             selectedTag = AppLanguages.current().tag,
-            onSelect = {
+            onSelect = { language ->
                 showLanguageDialog = false
-                AppLanguages.apply(it)
+                // Follow the new language's currency unless the user picked a different one themselves.
+                val previous = AppLanguages.current()
+                if (uiState.preferences?.currencyCode == previous.defaultCurrencyCode()) {
+                    viewModel.setCurrency(language.defaultCurrencyCode())
+                }
+                AppLanguages.apply(language)
             },
             onDismiss = { showLanguageDialog = false },
         )
@@ -464,17 +521,15 @@ private const val CSV_MIME_TYPE = "text/csv"
 private const val DISABLED_ALPHA = 0.38f
 
 private fun NavBarStyle.labelRes() = when (this) {
+    NavBarStyle.GLOW -> R.string.nav_style_glow
     NavBarStyle.LIQUID -> R.string.nav_style_liquid
     NavBarStyle.BUBBLE -> R.string.nav_style_bubble
-    NavBarStyle.GLOW -> R.string.nav_style_glow
-    NavBarStyle.EXPAND -> R.string.nav_style_expand
 }
 
 private fun ChartTransition.labelRes() = when (this) {
-    ChartTransition.FADE -> R.string.chart_fade
+    ChartTransition.ZOOM -> R.string.chart_zoom
     ChartTransition.SLIDE -> R.string.chart_slide
     ChartTransition.FLIP -> R.string.chart_flip
-    ChartTransition.ZOOM -> R.string.chart_zoom
 }
 
 @OptIn(ExperimentalLayoutApi::class)
@@ -510,3 +565,66 @@ private fun NavBarPreview(style: NavBarStyle) {
         )
     }
 }
+
+/** The user's name, shown as an avatar card; tapping edits it. */
+@Composable
+private fun ProfileCard(name: String, onClick: () -> Unit) {
+    val colors = HisabKitabTheme.colors
+    GlassCard(
+        modifier = Modifier.padding(horizontal = 16.dp).fillMaxWidth(),
+        onClick = onClick,
+        contentPadding = PaddingValues(16.dp),
+    ) {
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Box(
+                Modifier.size(52.dp).clip(CircleShape).background(Brush.linearGradient(colors.accentGradient)),
+                contentAlignment = Alignment.Center,
+            ) {
+                Text(
+                    text = name.trim().firstOrNull()?.uppercase() ?: "🙂",
+                    style = MaterialTheme.typography.titleLarge,
+                    color = MaterialTheme.colorScheme.onPrimary,
+                )
+            }
+            Spacer(Modifier.width(16.dp))
+            Column(Modifier.weight(1f)) {
+                Text(
+                    text = name.ifBlank { stringResource(R.string.profile_add_name) },
+                    style = MaterialTheme.typography.titleMedium,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis,
+                )
+                Text(
+                    stringResource(R.string.profile_summary),
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+            }
+            Icon(Icons.Outlined.Edit, contentDescription = stringResource(R.string.profile_edit), tint = MaterialTheme.colorScheme.onSurfaceVariant)
+        }
+    }
+}
+
+@Composable
+private fun NameDialog(initialName: String, onSave: (String) -> Unit, onDismiss: () -> Unit) {
+    var name by rememberSaveable { mutableStateOf(initialName) }
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        title = { Text(stringResource(R.string.profile_name_title)) },
+        text = {
+            OutlinedTextField(
+                value = name,
+                onValueChange = { if (it.length <= MAX_NAME_LENGTH) name = it },
+                label = { Text(stringResource(R.string.profile_name_label)) },
+                singleLine = true,
+                keyboardOptions = KeyboardOptions(capitalization = KeyboardCapitalization.Words, imeAction = ImeAction.Done),
+                keyboardActions = KeyboardActions(onDone = { onSave(name) }),
+                modifier = Modifier.fillMaxWidth(),
+            )
+        },
+        confirmButton = { TextButton(onClick = { onSave(name) }) { Text(stringResource(DesignR.string.action_save)) } },
+        dismissButton = { TextButton(onClick = onDismiss) { Text(stringResource(DesignR.string.action_cancel)) } },
+    )
+}
+
+private const val MAX_NAME_LENGTH = 30

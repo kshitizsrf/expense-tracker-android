@@ -6,7 +6,6 @@
     <string name="back_to_this_month">ఈ నెలకు తిరిగి రావడానికి నొక్కండి</string>
     <string name="recent_transactions">ఇటీవలి కార్యకలాపాలు</string>
     <string name="see_all">అన్నీ చూడండి</string>
-    <string name="daily_spending">రోజువారీ ఖర్చు</string>
     <string name="budget_set_title">బడ్జెట్ సెట్ చేయండి</string>
     <string name="budget_set_message">ప్రతిరోజూ ఎంత ఖర్చు చేయవచ్చో ఖచ్చితంగా తెలుసుకోండి.</string>
     <string name="budget_title_daily">ఈ రోజు బడ్జెట్</string>
@@ -18,10 +17,6 @@
     <string name="budget_safe_today">ఈ రోజు నిశ్చింతగా ఖర్చు చేయండి</string>
     <string name="budget_ended">ఈ బడ్జెట్ కాలవ్యవధి ముగిసింది. కొత్తది సెట్ చేయడానికి నొక్కండి.</string>
     <string name="budget_not_started">%1$s నుండి మొదలవుతుంది</string>
-    <string name="insight_top_category">అత్యధిక ఖర్చు</string>
-    <string name="insight_daily_average">రోజువారీ సగటు</string>
-    <string name="insight_biggest">అతి పెద్ద ఖర్చు</string>
-    <string name="insight_count">నమోదులు</string>
     <string name="empty_home_title">కొత్త ఆరంభం</string>
     <string name="empty_home_message">మీ మొదటి ఆదాయం లేదా ఖర్చు నమోదు చేయడానికి + బటన్ నొక్కండి.</string>
     <string name="spotlight_saved">పొదుపు</string>
@@ -29,4 +24,12 @@
         <item quantity="one">%d రోజు మిగిలింది</item>
         <item quantity="other">%d రోజులు మిగిలాయి</item>
     </plurals>
+    <string name="scrub_spent">%1$s ఖర్చు</string>
+    <string name="scrub_earned">+%1$s ఆదాయం</string>
+    <plurals name="scrub_entries">
+        <item quantity="one">%d నమోదు</item>
+        <item quantity="other">%d నమోదులు</item>
+    </plurals>
+    <string name="daily_spending">రోజువారీ ఖర్చు</string>
+    <string name="daily_average_short">సగటు %1$s/రోజు</string>
 </resources>

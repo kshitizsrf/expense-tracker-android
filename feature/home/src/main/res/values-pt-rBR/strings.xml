@@ -6,7 +6,6 @@
     <string name="back_to_this_month">Toque para voltar a este mês</string>
     <string name="recent_transactions">Atividade recente</string>
     <string name="see_all">Ver tudo</string>
-    <string name="daily_spending">Gastos diários</string>
     <string name="budget_set_title">Defina um orçamento</string>
     <string name="budget_set_message">Saiba exatamente quanto você pode gastar por dia.</string>
     <string name="budget_title_daily">Orçamento de hoje</string>
@@ -18,10 +17,6 @@
     <string name="budget_safe_today">Pode gastar hoje</string>
     <string name="budget_ended">Este orçamento terminou. Toque para definir um novo.</string>
     <string name="budget_not_started">Começa em %1$s</string>
-    <string name="insight_top_category">Maior gasto</string>
-    <string name="insight_daily_average">Média diária</string>
-    <string name="insight_biggest">Maior despesa</string>
-    <string name="insight_count">Registros</string>
     <string name="empty_home_title">Um novo começo</string>
     <string name="empty_home_message">Toque no botão + para registrar sua primeira receita ou despesa.</string>
     <string name="spotlight_saved">Economizado</string>
@@ -30,4 +25,13 @@
         <item quantity="many">Faltam %d dias</item>
         <item quantity="other">Faltam %d dias</item>
     </plurals>
+    <string name="scrub_spent">%1$s gastos</string>
+    <string name="scrub_earned">+%1$s recebidos</string>
+    <plurals name="scrub_entries">
+        <item quantity="one">%d registro</item>
+        <item quantity="many">%d registros</item>
+        <item quantity="other">%d registros</item>
+    </plurals>
+    <string name="daily_spending">Gastos diários</string>
+    <string name="daily_average_short">média %1$s por dia</string>
 </resources>

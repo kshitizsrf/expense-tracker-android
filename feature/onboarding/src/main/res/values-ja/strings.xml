@@ -3,7 +3,7 @@
     <string name="onboarding_welcome_title">Hisab Kitab</string>
     <string name="onboarding_welcome_message">あなたのお金を美しく整理。数秒で記録し、行き先を把握して、安心して使いましょう。</string>
     <string name="onboarding_theme_title">スタイルを選ぶ</string>
-    <string name="onboarding_theme_message">5 つのオリジナルテーマ、それぞれにライトとダークモード。いつでも変更できます。</string>
+    <string name="onboarding_theme_message">6 つのオリジナルテーマ、それぞれにライトとダークモード。いつでも変更できます。</string>
     <string name="onboarding_setup_title">仕上げ</string>
     <string name="onboarding_setup_message">通貨を選び、1 日の記録を促すやさしいリマインダーが必要か教えてください。</string>
     <string name="onboarding_currency">通貨</string>

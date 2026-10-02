@@ -21,4 +21,24 @@
         <item quantity="many">Isso também excluirá %d transações desta categoria. Não é possível desfazer.</item>
         <item quantity="other">Isso também excluirá %d transações desta categoria. Não é possível desfazer.</item>
     </plurals>
+    <string name="select_categories">Selecionar categorias</string>
+    <string name="select_all">Selecionar tudo</string>
+    <string name="clear_selection">Cancelar seleção</string>
+    <string name="delete_selected">Excluir selecionadas</string>
+    <string name="delete_categories_message_empty">Elas serão excluídas permanentemente.</string>
+    <plurals name="categories_selected">
+        <item quantity="one">%d selecionada</item>
+        <item quantity="many">%d selecionadas</item>
+        <item quantity="other">%d selecionadas</item>
+    </plurals>
+    <plurals name="delete_categories_title">
+        <item quantity="one">Excluir %d categoria?</item>
+        <item quantity="many">Excluir %d categorias?</item>
+        <item quantity="other">Excluir %d categorias?</item>
+    </plurals>
+    <plurals name="delete_categories_message">
+        <item quantity="one">Isso também excluirá %d transação delas. Não é possível desfazer.</item>
+        <item quantity="many">Isso também excluirá %d transações delas. Não é possível desfazer.</item>
+        <item quantity="other">Isso também excluirá %d transações delas. Não é possível desfazer.</item>
+    </plurals>
 </resources>

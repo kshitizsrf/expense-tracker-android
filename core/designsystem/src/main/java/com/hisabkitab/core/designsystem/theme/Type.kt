@@ -29,26 +29,36 @@ val PlusJakartaSans = FontFamily(
 
 private val Base = Typography()
 
-/** Material 3 type scale in Plus Jakarta Sans, with tabular figures where amounts are shown. */
+/**
+ * Material 3 type scale in Plus Jakarta Sans, with tabular figures where amounts are shown.
+ * Jakarta's tall x-height reads larger than Roboto at the same size, so the display, headline
+ * and title roles are scaled down to keep headers compact.
+ */
 val AppTypography = Typography(
-    displayLarge = Base.displayLarge.jakarta(FontWeight.Bold, letterSpacing = (-1.5).sp).tabular(),
-    displayMedium = Base.displayMedium.jakarta(FontWeight.Bold, letterSpacing = (-1).sp).tabular(),
-    displaySmall = Base.displaySmall.jakarta(FontWeight.Bold, letterSpacing = (-0.5).sp).tabular(),
-    headlineLarge = Base.headlineLarge.jakarta(FontWeight.Bold).tabular(),
-    headlineMedium = Base.headlineMedium.jakarta(FontWeight.Bold, letterSpacing = (-0.25).sp).tabular(),
-    headlineSmall = Base.headlineSmall.jakarta(FontWeight.SemiBold).tabular(),
-    titleLarge = Base.titleLarge.jakarta(FontWeight.Bold),
-    titleMedium = Base.titleMedium.jakarta(FontWeight.SemiBold).tabular(),
-    titleSmall = Base.titleSmall.jakarta(FontWeight.SemiBold),
-    bodyLarge = Base.bodyLarge.jakarta(FontWeight.Normal),
-    bodyMedium = Base.bodyMedium.jakarta(FontWeight.Normal),
+    displayLarge = Base.displayLarge.jakarta(FontWeight.Bold, scale = 0.84f, letterSpacing = (-1.5).sp).tabular(),
+    displayMedium = Base.displayMedium.jakarta(FontWeight.Bold, scale = 0.84f, letterSpacing = (-1).sp).tabular(),
+    displaySmall = Base.displaySmall.jakarta(FontWeight.Bold, scale = 0.86f, letterSpacing = (-0.5).sp).tabular(),
+    headlineLarge = Base.headlineLarge.jakarta(FontWeight.Bold, scale = 0.86f).tabular(),
+    headlineMedium = Base.headlineMedium.jakarta(FontWeight.Bold, scale = 0.86f, letterSpacing = (-0.25).sp).tabular(),
+    headlineSmall = Base.headlineSmall.jakarta(FontWeight.SemiBold, scale = 0.88f).tabular(),
+    titleLarge = Base.titleLarge.jakarta(FontWeight.Bold, scale = 0.9f),
+    titleMedium = Base.titleMedium.jakarta(FontWeight.SemiBold, scale = 0.94f).tabular(),
+    titleSmall = Base.titleSmall.jakarta(FontWeight.SemiBold, scale = 0.96f),
+    bodyLarge = Base.bodyLarge.jakarta(FontWeight.Normal, scale = 0.94f),
+    bodyMedium = Base.bodyMedium.jakarta(FontWeight.Normal, scale = 0.96f),
     bodySmall = Base.bodySmall.jakarta(FontWeight.Normal),
-    labelLarge = Base.labelLarge.jakarta(FontWeight.SemiBold).tabular(),
+    labelLarge = Base.labelLarge.jakarta(FontWeight.SemiBold, scale = 0.96f).tabular(),
     labelMedium = Base.labelMedium.jakarta(FontWeight.Medium),
     labelSmall = Base.labelSmall.jakarta(FontWeight.Medium),
 )
 
-private fun TextStyle.jakarta(weight: FontWeight, letterSpacing: TextUnit = this.letterSpacing) =
-    copy(fontFamily = PlusJakartaSans, fontWeight = weight, letterSpacing = letterSpacing)
+private fun TextStyle.jakarta(weight: FontWeight, scale: Float = 1f, letterSpacing: TextUnit = this.letterSpacing) =
+    copy(
+        fontFamily = PlusJakartaSans,
+        fontWeight = weight,
+        fontSize = fontSize * scale,
+        lineHeight = lineHeight * scale,
+        letterSpacing = letterSpacing,
+    )
 
 private fun TextStyle.tabular(): TextStyle = copy(fontFeatureSettings = "tnum")

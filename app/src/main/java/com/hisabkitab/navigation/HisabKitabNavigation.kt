@@ -22,6 +22,7 @@ import com.hisabkitab.feature.categories.CategoriesScreen
 import com.hisabkitab.feature.categories.editor.CategoryEditorScreen
 import com.hisabkitab.feature.categories.editor.CategoryEditorViewModel
 import com.hisabkitab.feature.home.HomeScreen
+import com.hisabkitab.feature.settings.AboutScreen
 import com.hisabkitab.feature.settings.SettingsScreen
 import com.hisabkitab.feature.stats.StatsScreen
 import com.hisabkitab.feature.transactions.TransactionsScreen
@@ -89,7 +90,11 @@ fun HisabKitabNavDisplay(
                     versionName = BuildConfig.VERSION_NAME,
                     onBack = goBack,
                     onOpenBudget = { navigate(BudgetKey) },
+                    onOpenAbout = { navigate(AboutKey) },
                 )
+            }
+            entry<AboutKey> {
+                AboutScreen(versionName = BuildConfig.VERSION_NAME, onBack = goBack)
             }
             entry<BudgetKey> {
                 BudgetScreen(onBack = goBack)

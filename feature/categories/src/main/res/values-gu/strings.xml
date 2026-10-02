@@ -20,4 +20,21 @@
         <item quantity="one">આથી આ શ્રેણીનો %d વ્યવહાર પણ કાઢી નખાશે. આ પાછું લાવી શકાશે નહીં.</item>
         <item quantity="other">આથી આ શ્રેણીના %d વ્યવહારો પણ કાઢી નખાશે. આ પાછું લાવી શકાશે નહીં.</item>
     </plurals>
+    <string name="select_categories">શ્રેણીઓ પસંદ કરો</string>
+    <string name="select_all">બધી પસંદ કરો</string>
+    <string name="clear_selection">પસંદગી રદ કરો</string>
+    <string name="delete_selected">પસંદ કરેલી કાઢી નાખો</string>
+    <string name="delete_categories_message_empty">તે કાયમ માટે કાઢી નખાશે.</string>
+    <plurals name="categories_selected">
+        <item quantity="one">%d પસંદ કરી</item>
+        <item quantity="other">%d પસંદ કરી</item>
+    </plurals>
+    <plurals name="delete_categories_title">
+        <item quantity="one">%d શ્રેણી કાઢી નાખીએ?</item>
+        <item quantity="other">%d શ્રેણીઓ કાઢી નાખીએ?</item>
+    </plurals>
+    <plurals name="delete_categories_message">
+        <item quantity="one">આનાથી તેમાંનો %d વ્યવહાર પણ કાઢી નખાશે. આ પાછું લાવી શકાશે નહીં.</item>
+        <item quantity="other">આનાથી તેમાંના %d વ્યવહારો પણ કાઢી નખાશે. આ પાછું લાવી શકાશે નહીં.</item>
+    </plurals>
 </resources>

@@ -17,7 +17,6 @@
     <string name="chart_trend_title_monthly">每月走势</string>
     <string name="chart_calendar_title">支出日历</string>
     <string name="chart_calendar_title_income">收入日历</string>
-    <string name="chart_cash_flow_title">现金流 · 近 6 个月</string>
     <string name="chart_hint_donut">点按扇区以突出显示</string>
     <string name="chart_hint_trend">按住并拖动来查看</string>
     <string name="chart_hint_calendar">点按某天查看合计</string>
@@ -29,7 +28,7 @@
     <string name="stat_entries">笔数</string>
     <string name="stat_vs_previous">较上期</string>
     <string name="stat_no_comparison">新</string>
-    <string name="percent_of_total">占总额 %1$d%%</string>
+    <string name="percent_of_total">占总额 %1$s%%</string>
     <string name="heatmap_less">少</string>
     <string name="heatmap_more">多</string>
     <string name="nothing_on_day">无记录</string>
@@ -39,5 +38,8 @@
     <string name="stat_previous_period">上一周期</string>
     <plurals name="transaction_count">
         <item quantity="other">%d 笔记录</item>
+    </plurals>
+    <plurals name="chart_cash_flow_title_months">
+        <item quantity="other">现金流 · %d 个月</item>
     </plurals>
 </resources>

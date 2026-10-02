@@ -1,5 +1,8 @@
 package com.hisabkitab.feature.categories.editor
 
+import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.unit.coerceIn
+import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.spring
@@ -241,11 +244,7 @@ private fun EditorContent(
             GlassCard(Modifier.fillMaxWidth()) {
                 Text(stringResource(R.string.color), style = MaterialTheme.typography.titleSmall)
                 Spacer(Modifier.height(12.dp))
-                FlowRow(horizontalArrangement = Arrangement.spacedBy(12.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
-                    CategoryColors.all.forEach { color ->
-                        ColorSwatch(color = color, selected = color == uiState.color, onClick = { onColorSelected(color) })
-                    }
-                }
+                ColorPalette(selected = uiState.color, onSelect = onColorSelected)
             }
         }
         item(key = "icon-label", span = { GridItemSpan(maxLineSpan) }) {
@@ -316,13 +315,36 @@ private fun IconCell(resId: Int, selected: Boolean, color: Int, onClick: () -> U
     }
 }
 
+/**
+ * Every color in an even grid: 5 per row on phones (15 colors make 3 full rows), all 15 in a
+ * row on wide screens, so no row ever ends in a gap.
+ */
 @Composable
-private fun ColorSwatch(color: Int, selected: Boolean, onClick: () -> Unit) {
-    val scale by animateFloatAsState(if (selected) 1.15f else 1f, spring(dampingRatio = 0.5f), label = "swatchScale")
+private fun ColorPalette(selected: Int, onSelect: (Int) -> Unit) {
+    BoxWithConstraints(Modifier.fillMaxWidth()) {
+        val perRow = if (maxWidth >= 52.dp * CategoryColors.all.size) CategoryColors.all.size else 5
+        val swatch = (maxWidth / perRow - 10.dp).coerceIn(32.dp, 48.dp)
+        Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
+            CategoryColors.all.chunked(perRow).forEach { row ->
+                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
+                    row.forEach { color ->
+                        Box(Modifier.weight(1f), contentAlignment = Alignment.Center) {
+                            ColorSwatch(color = color, selected = color == selected, size = swatch, onClick = { onSelect(color) })
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@Composable
+private fun ColorSwatch(color: Int, selected: Boolean, size: Dp, onClick: () -> Unit) {
+    val scale by animateFloatAsState(if (selected) 1.12f else 1f, spring(dampingRatio = 0.5f), label = "swatchScale")
     Box(
         modifier = Modifier
             .scale(scale)
-            .size(38.dp)
+            .size(size)
             .clip(CircleShape)
             .background(Color(color))
             .then(if (selected) Modifier.border(3.dp, Color.White, CircleShape) else Modifier)

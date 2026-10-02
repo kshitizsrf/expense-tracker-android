@@ -32,10 +32,8 @@
     <string name="nav_style_liquid">流体</string>
     <string name="nav_style_bubble">气泡</string>
     <string name="nav_style_glow">光晕</string>
-    <string name="nav_style_expand">展开</string>
     <string name="chart_animation">图表动画</string>
     <string name="chart_animation_hint">分析页中图表的切换方式</string>
-    <string name="chart_fade">淡入淡出</string>
     <string name="chart_slide">滑动</string>
     <string name="chart_flip">3D 翻转</string>
     <string name="chart_zoom">缩放</string>
@@ -51,5 +49,34 @@
     </plurals>
     <plurals name="exported_categories">
         <item quantity="other">已导出 %d 个分类</item>
+    </plurals>
+    <string name="profile_add_name">添加你的名字</string>
+    <string name="profile_summary">Hisab Kitab 会用这个名字问候你</string>
+    <string name="profile_edit">编辑名字</string>
+    <string name="profile_name_title">我们该怎么称呼你？</string>
+    <string name="profile_name_label">你的名字</string>
+    <string name="about_title">关于</string>
+    <string name="about_tagline">你的钱，井然有序。几秒完成记账，看清钱的去向，花得安心。</string>
+    <string name="about_offline_title">完全离线使用</string>
+    <string name="about_offline_body">无需账号，无需联网。所有数据都保存在这台手机上。</string>
+    <string name="about_insights_title">五种方式查看你的钱</string>
+    <string name="about_insights_body">环形、排行、趋势、日历和现金流，还有告诉你能花多少的预算。</string>
+    <string name="about_languages_title">说你的语言</string>
+    <string name="about_languages_body">28 种语言，包括印地语和另外 11 种印度语言。</string>
+    <string name="about_lock_title">随时上锁</string>
+    <string name="about_lock_body">用指纹、面容或屏幕锁保护应用。</string>
+    <string name="about_privacy_title">隐私有保障</string>
+    <string name="about_privacy_body">没有广告、跟踪或分析。Hisab Kitab 甚至无法访问互联网。</string>
+    <string name="about_credits">致谢</string>
+    <string name="about_credits_body">Plus Jakarta Sans — SIL Open Font License 1.1 · Jetpack Compose · Material 3</string>
+    <string name="import_transactions">导入记录</string>
+    <string name="import_summary">从 Hisab Kitab 导出的 CSV 文件添加记录</string>
+    <string name="import_failed">无法读取该文件，请重试。</string>
+    <string name="import_unsupported">该文件不是 Hisab Kitab 导出的记录文件。</string>
+    <plurals name="imported_transactions">
+        <item quantity="other">已导入 %d 笔记录</item>
+    </plurals>
+    <plurals name="import_skipped">
+        <item quantity="other">%d 笔已存在</item>
     </plurals>
 </resources>

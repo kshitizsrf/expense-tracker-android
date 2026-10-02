@@ -90,6 +90,9 @@ import com.hisabkitab.core.model.DateRange
 import com.hisabkitab.core.model.TransactionType
 import com.hisabkitab.core.ui.DateFormats
 import com.hisabkitab.core.ui.displayName
+import com.hisabkitab.core.ui.percentNumber
+import com.hisabkitab.core.ui.percentOf
+import com.hisabkitab.core.ui.percentText
 import com.hisabkitab.core.ui.LocalMoneyFormatter
 import com.hisabkitab.feature.stats.charts.CalendarHeatmap
 import com.hisabkitab.feature.stats.charts.CashFlowBar
@@ -101,7 +104,6 @@ import com.hisabkitab.feature.stats.charts.TrendChart
 import java.time.LocalDate
 import java.time.YearMonth
 import kotlin.math.abs
-import kotlin.math.roundToInt
 
 @Composable
 fun StatsScreen(viewModel: StatsViewModel = hiltViewModel()) {
@@ -297,7 +299,7 @@ private fun SummaryRow(uiState: StatsUiState) {
         )
         SummaryTile(
             label = stringResource(R.string.stat_vs_previous),
-            value = change?.let { "${if (it >= 0) "+" else "−"}${abs(it * 100).roundToInt()}%" } ?: stringResource(R.string.stat_no_comparison),
+            value = change?.let { "${if (it >= 0) "+" else "−"}${percentText(abs(it * 100.0))}" } ?: stringResource(R.string.stat_no_comparison),
             modifier = Modifier.weight(1f),
             valueColor = changeColor,
             icon = when {
@@ -373,7 +375,7 @@ private fun ColumnScope.DonutSection(uiState: StatsUiState, accent: Color) {
                     Text(item.category.displayName(), style = MaterialTheme.typography.labelLarge, maxLines = 1, overflow = TextOverflow.Ellipsis, textAlign = TextAlign.Center)
                     Text(formatter.format(item.totalMinor), style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold, maxLines = 1)
                     Text(
-                        stringResource(R.string.percent_of_total, (item.totalMinor * 100f / uiState.totalMinor.coerceAtLeast(1)).roundToInt()),
+                        stringResource(R.string.percent_of_total, percentNumber(percentOf(item.totalMinor, uiState.totalMinor))),
                         style = MaterialTheme.typography.labelSmall,
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
                     )
@@ -412,7 +414,7 @@ private fun LegendRow(total: CategoryTotal, grandTotal: Long, dimmed: Boolean, o
             overflow = TextOverflow.Ellipsis,
         )
         Text(
-            "${(total.totalMinor * 100f / grandTotal.coerceAtLeast(1)).roundToInt()}%",
+            percentText(percentOf(total.totalMinor, grandTotal)),
             style = MaterialTheme.typography.labelMedium,
             color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = alpha),
         )
@@ -480,9 +482,18 @@ private fun CashFlowSection(uiState: StatsUiState) {
     val colors = HisabKitabTheme.colors
     var selected by remember(uiState.cashFlow) { mutableIntStateOf(uiState.cashFlow.lastIndex.coerceAtLeast(0)) }
     val bars = remember(uiState.cashFlow) {
-        uiState.cashFlow.map { CashFlowBar(DateFormats.shortMonth(it.month), it.incomeMinor, it.expenseMinor) }
+        uiState.cashFlow.mapIndexed { index, flow ->
+            // Mark where the year changes so January bars are never ambiguous.
+            val label = DateFormats.shortMonth(flow.month)
+            val withYear = index == 0 || flow.month.monthValue == 1
+            CashFlowBar(if (withYear) "$label '${flow.month.year % 100}" else label, flow.incomeMinor, flow.expenseMinor)
+        }
     }
-    CardHeader(stringResource(R.string.chart_cash_flow_title), subtitle = stringResource(R.string.chart_hint_cash_flow))
+    val months = uiState.cashFlow.size
+    CardHeader(
+        pluralStringResource(R.plurals.chart_cash_flow_title_months, months, months),
+        subtitle = stringResource(R.string.chart_hint_cash_flow),
+    )
     Spacer(Modifier.height(12.dp))
     CashFlowChart(
         bars = bars,
@@ -532,8 +543,6 @@ private fun AnimatedContentTransitionScope<ChartType>.chartTransitionSpec(
 ): ContentTransform {
     val direction = if (forward) 1 else -1
     return when (transition) {
-        ChartTransition.FADE ->
-            (fadeIn(tween(300)) + scaleIn(tween(300), initialScale = 0.96f)).togetherWith(fadeOut(tween(150)))
         ChartTransition.SLIDE ->
             (slideInHorizontally(tween(380)) { it * direction } + fadeIn(tween(380)))
                 .togetherWith(slideOutHorizontally(tween(380)) { -it * direction } + fadeOut(tween(250)))

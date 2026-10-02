@@ -3,7 +3,7 @@
     <string name="onboarding_welcome_title">Hisab Kitab</string>
     <string name="onboarding_welcome_message">Tiền của bạn, sắp xếp đẹp mắt. Ghi chép trong vài giây, biết tiền đi đâu và chi tiêu tự tin.</string>
     <string name="onboarding_theme_title">Chọn phong cách</string>
-    <string name="onboarding_theme_message">Năm chủ đề đặc trưng, mỗi chủ đề có chế độ sáng và tối. Đổi bất cứ lúc nào.</string>
+    <string name="onboarding_theme_message">Sáu chủ đề đặc trưng, mỗi chủ đề có chế độ sáng và tối. Đổi bất cứ lúc nào.</string>
     <string name="onboarding_setup_title">Hoàn thiện</string>
     <string name="onboarding_setup_message">Chọn tiền tệ và cho biết bạn có muốn lời nhắc nhẹ nhàng để ghi lại ngày của mình không.</string>
     <string name="onboarding_currency">Tiền tệ</string>

@@ -3,7 +3,7 @@
     <string name="onboarding_welcome_title">Hisab Kitab</string>
     <string name="onboarding_welcome_message">Ваши деньги — красиво и понятно. Записывайте за секунды, смотрите, куда они уходят, и тратьте уверенно.</string>
     <string name="onboarding_theme_title">Выберите стиль</string>
-    <string name="onboarding_theme_message">Пять фирменных тем со светлым и тёмным режимом. Можно сменить в любой момент.</string>
+    <string name="onboarding_theme_message">Шесть фирменных тем со светлым и тёмным режимом. Можно сменить в любой момент.</string>
     <string name="onboarding_setup_title">Последние штрихи</string>
     <string name="onboarding_setup_message">Выберите валюту и решите, нужно ли мягкое напоминание записать день.</string>
     <string name="onboarding_currency">Валюта</string>

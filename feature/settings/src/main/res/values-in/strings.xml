@@ -32,10 +32,8 @@
     <string name="nav_style_liquid">Cair</string>
     <string name="nav_style_bubble">Gelembung</string>
     <string name="nav_style_glow">Berpendar</string>
-    <string name="nav_style_expand">Melebar</string>
     <string name="chart_animation">Animasi grafik</string>
     <string name="chart_animation_hint">Cara grafik berganti di Analisis</string>
-    <string name="chart_fade">Memudar</string>
     <string name="chart_slide">Geser</string>
     <string name="chart_flip">Putar 3D</string>
     <string name="chart_zoom">Zoom</string>
@@ -51,5 +49,34 @@
     </plurals>
     <plurals name="exported_categories">
         <item quantity="other">%d kategori diekspor</item>
+    </plurals>
+    <string name="profile_add_name">Tambahkan nama Anda</string>
+    <string name="profile_summary">Hisab Kitab menyapa Anda dengan nama ini</string>
+    <string name="profile_edit">Edit nama</string>
+    <string name="profile_name_title">Kami harus memanggil Anda siapa?</string>
+    <string name="profile_name_label">Nama Anda</string>
+    <string name="about_title">Tentang</string>
+    <string name="about_tagline">Uang Anda, tertata dengan indah. Catat dalam hitungan detik, lihat ke mana perginya, dan belanja dengan percaya diri.</string>
+    <string name="about_offline_title">Sepenuhnya offline</string>
+    <string name="about_offline_body">Tanpa akun dan tanpa internet. Semuanya tersimpan di ponsel ini.</string>
+    <string name="about_insights_title">Lima cara melihat uang Anda</string>
+    <string name="about_insights_body">Donat, peringkat, tren, kalender, dan arus kas, dengan anggaran yang memberi tahu batas aman belanja.</string>
+    <string name="about_languages_title">Berbicara dalam bahasa Anda</string>
+    <string name="about_languages_body">28 bahasa, termasuk Hindi dan 11 bahasa India lainnya.</string>
+    <string name="about_lock_title">Terkunci saat Anda mau</string>
+    <string name="about_lock_body">Lindungi aplikasi dengan sidik jari, wajah, atau kunci layar.</string>
+    <string name="about_privacy_title">Privasi Anda terjamin</string>
+    <string name="about_privacy_body">Tanpa iklan, pelacakan, atau analitik. Hisab Kitab bahkan tidak bisa mengakses internet.</string>
+    <string name="about_credits">Kredit</string>
+    <string name="about_credits_body">Plus Jakarta Sans — SIL Open Font License 1.1 · Jetpack Compose · Material 3</string>
+    <string name="import_transactions">Impor transaksi</string>
+    <string name="import_summary">Tambahkan transaksi dari ekspor CSV Hisab Kitab</string>
+    <string name="import_failed">Tidak dapat membaca file. Coba lagi.</string>
+    <string name="import_unsupported">File ini bukan ekspor transaksi Hisab Kitab.</string>
+    <plurals name="imported_transactions">
+        <item quantity="other">%d transaksi diimpor</item>
+    </plurals>
+    <plurals name="import_skipped">
+        <item quantity="other">%d sudah ada</item>
     </plurals>
 </resources>

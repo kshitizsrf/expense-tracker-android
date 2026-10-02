@@ -6,7 +6,6 @@
     <string name="back_to_this_month">या महिन्यात परत येण्यासाठी टॅप करा</string>
     <string name="recent_transactions">अलीकडील व्यवहार</string>
     <string name="see_all">सर्व पहा</string>
-    <string name="daily_spending">रोजचा खर्च</string>
     <string name="budget_set_title">बजेट ठरवा</string>
     <string name="budget_set_message">दररोज नेमका किती खर्च करू शकता ते जाणून घ्या.</string>
     <string name="budget_title_daily">आजचे बजेट</string>
@@ -18,10 +17,6 @@
     <string name="budget_safe_today">आज निर्धास्त खर्च करा</string>
     <string name="budget_ended">हा बजेट कालावधी संपला. नवीन ठरवण्यासाठी टॅप करा.</string>
     <string name="budget_not_started">%1$s पासून सुरू</string>
-    <string name="insight_top_category">सर्वाधिक खर्च</string>
-    <string name="insight_daily_average">रोजची सरासरी</string>
-    <string name="insight_biggest">सर्वात मोठा खर्च</string>
-    <string name="insight_count">नोंदी</string>
     <string name="empty_home_title">नवी सुरुवात</string>
     <string name="empty_home_message">तुमचे पहिले उत्पन्न किंवा खर्च नोंदवण्यासाठी + बटणावर टॅप करा.</string>
     <string name="spotlight_saved">बचत</string>
@@ -29,4 +24,12 @@
         <item quantity="one">%d दिवस बाकी</item>
         <item quantity="other">%d दिवस बाकी</item>
     </plurals>
+    <string name="scrub_spent">%1$s खर्च</string>
+    <string name="scrub_earned">+%1$s उत्पन्न</string>
+    <plurals name="scrub_entries">
+        <item quantity="one">%d नोंदी</item>
+        <item quantity="other">%d नोंदी</item>
+    </plurals>
+    <string name="daily_spending">दैनिक खर्च</string>
+    <string name="daily_average_short">सरासरी %1$s/दिवस</string>
 </resources>

@@ -95,6 +95,52 @@ object Csv {
         }
 
     fun row(values: List<String>): String = values.joinToString(",") { escape(it) }
+
+    /**
+     * Parses RFC 4180 text into rows: quoted fields may contain commas, doubled quotes and
+     * line breaks; both CRLF and LF end a row. A leading byte-order mark is ignored and blank
+     * lines are skipped.
+     */
+    fun parse(text: String): List<List<String>> {
+        val rows = mutableListOf<List<String>>()
+        var row = mutableListOf<String>()
+        val field = StringBuilder()
+        var inQuotes = false
+        var i = if (text.startsWith('\uFEFF')) 1 else 0
+        fun endField() {
+            row.add(field.toString())
+            field.setLength(0)
+        }
+        fun endRow() {
+            endField()
+            if (row.any { it.isNotBlank() }) rows.add(row)
+            row = mutableListOf()
+        }
+        while (i < text.length) {
+            val c = text[i]
+            if (inQuotes) {
+                when {
+                    c == '"' && text.getOrNull(i + 1) == '"' -> {
+                        field.append('"')
+                        i++
+                    }
+                    c == '"' -> inQuotes = false
+                    else -> field.append(c)
+                }
+            } else {
+                when (c) {
+                    '"' -> inQuotes = true
+                    ',' -> endField()
+                    '\r' -> if (text.getOrNull(i + 1) != '\n') endRow()
+                    '\n' -> endRow()
+                    else -> field.append(c)
+                }
+            }
+            i++
+        }
+        if (field.isNotEmpty() || row.isNotEmpty()) endRow()
+        return rows
+    }
 }
 
 private fun Writer.appendCsvRow(values: List<String>) {

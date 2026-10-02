@@ -17,7 +17,6 @@
     <string name="chart_trend_title_monthly">Mês a mês</string>
     <string name="chart_calendar_title">Calendário de gastos</string>
     <string name="chart_calendar_title_income">Calendário de receitas</string>
-    <string name="chart_cash_flow_title">Fluxo de caixa · últimos 6 meses</string>
     <string name="chart_hint_donut">Toque em uma fatia para destacá-la</string>
     <string name="chart_hint_trend">Pressione e arraste para explorar</string>
     <string name="chart_hint_calendar">Toque em um dia para ver o total</string>
@@ -29,7 +28,7 @@
     <string name="stat_entries">Registros</string>
     <string name="stat_vs_previous">vs. anterior</string>
     <string name="stat_no_comparison">Novo</string>
-    <string name="percent_of_total">%1$d%% do total</string>
+    <string name="percent_of_total">%1$s%% do total</string>
     <string name="heatmap_less">Menos</string>
     <string name="heatmap_more">Mais</string>
     <string name="nothing_on_day">Nada registrado</string>
@@ -41,5 +40,10 @@
         <item quantity="one">%d transação</item>
         <item quantity="many">%d transações</item>
         <item quantity="other">%d transações</item>
+    </plurals>
+    <plurals name="chart_cash_flow_title_months">
+        <item quantity="one">Fluxo de caixa · %d mês</item>
+        <item quantity="many">Fluxo de caixa · %d meses</item>
+        <item quantity="other">Fluxo de caixa · %d meses</item>
     </plurals>
 </resources>

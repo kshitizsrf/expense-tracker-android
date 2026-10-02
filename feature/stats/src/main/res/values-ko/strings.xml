@@ -17,7 +17,6 @@
     <string name="chart_trend_title_monthly">월별</string>
     <string name="chart_calendar_title">지출 캘린더</string>
     <string name="chart_calendar_title_income">수입 캘린더</string>
-    <string name="chart_cash_flow_title">현금 흐름 · 최근 6개월</string>
     <string name="chart_hint_donut">조각을 탭하여 강조</string>
     <string name="chart_hint_trend">길게 눌러 끌면서 살펴보기</string>
     <string name="chart_hint_calendar">날짜를 탭하여 합계 보기</string>
@@ -29,7 +28,7 @@
     <string name="stat_entries">건수</string>
     <string name="stat_vs_previous">이전 대비</string>
     <string name="stat_no_comparison">신규</string>
-    <string name="percent_of_total">전체의 %1$d%%</string>
+    <string name="percent_of_total">전체의 %1$s%%</string>
     <string name="heatmap_less">적음</string>
     <string name="heatmap_more">많음</string>
     <string name="nothing_on_day">기록 없음</string>
@@ -39,5 +38,8 @@
     <string name="stat_previous_period">이전 기간</string>
     <plurals name="transaction_count">
         <item quantity="other">내역 %d건</item>
+    </plurals>
+    <plurals name="chart_cash_flow_title_months">
+        <item quantity="other">현금 흐름 · %d개월</item>
     </plurals>
 </resources>

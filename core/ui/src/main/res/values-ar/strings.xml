@@ -36,4 +36,8 @@
     <string name="category_awards">مكافآت</string>
     <string name="category_investment">استثمار</string>
     <string name="category_other">أخرى</string>
+    <string name="greeting_morning_name">صباح الخير يا %1$s</string>
+    <string name="greeting_afternoon_name">طاب يومك يا %1$s</string>
+    <string name="greeting_evening_name">مساء الخير يا %1$s</string>
+    <string name="greeting_night_name">ما زلت مستيقظًا يا %1$s؟</string>
 </resources>

@@ -1,5 +1,11 @@
 package com.hisabkitab.feature.transactions
 
+import androidx.compose.ui.unit.sp
+import androidx.compose.ui.text.style.TextOverflow
+import androidx.compose.foundation.text.TextAutoSize
+import androidx.compose.foundation.text.BasicText
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.horizontalScroll
 import androidx.compose.ui.platform.LocalResources
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.foundation.background
@@ -133,7 +139,10 @@ internal fun TransactionsScreen(
             }
             item(key = "filters") {
                 Row(
-                    modifier = Modifier.padding(horizontal = 16.dp),
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .horizontalScroll(rememberScrollState())
+                        .padding(horizontal = 16.dp),
                     horizontalArrangement = Arrangement.spacedBy(8.dp),
                 ) {
                     GlassChip(stringResource(R.string.filter_all), uiState.typeFilter == null, { onTypeFilterChange(null) })
@@ -197,7 +206,13 @@ private fun SearchBar(query: String, onQueryChange: (String) -> Unit, modifier: 
         Spacer(Modifier.width(12.dp))
         Box(Modifier.weight(1f)) {
             if (query.isEmpty()) {
-                Text(stringResource(R.string.search_hint), style = MaterialTheme.typography.bodyLarge, color = scheme.onSurfaceVariant)
+                Text(
+                    stringResource(R.string.search_hint),
+                    style = MaterialTheme.typography.bodyLarge,
+                    color = scheme.onSurfaceVariant,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis,
+                )
             }
             BasicTextField(
                 value = query,
@@ -223,27 +238,34 @@ private fun TotalsStrip(uiState: TransactionsUiState) {
     val formatter = LocalMoneyFormatter.current
     val colors = HisabKitabTheme.colors
     Row(
-        modifier = Modifier.padding(horizontal = 20.dp),
+        modifier = Modifier.fillMaxWidth().padding(horizontal = 20.dp),
         horizontalArrangement = Arrangement.spacedBy(20.dp),
     ) {
         if (uiState.typeFilter != TransactionType.INCOME) {
-            val spent = stringResource(R.string.spent_label)
-            Column(Modifier.clip(MaterialTheme.shapes.small).spotlightOnClick {
-                SpotlightItem(spent, formatter.format(uiState.totalSpentMinor), valueColor = colors.expense)
-            }) {
-                Text(spent, style = MaterialTheme.typography.labelMedium, color = colors.onBackdropMuted)
-                Text(formatter.format(uiState.totalSpentMinor), style = MaterialTheme.typography.titleLarge, color = colors.onBackdrop, fontWeight = FontWeight.Bold)
-            }
+            TotalFigure(stringResource(R.string.spent_label), formatter.format(uiState.totalSpentMinor), colors.expense, Modifier.weight(1f))
         }
         if (uiState.typeFilter != TransactionType.EXPENSE) {
-            val earned = stringResource(R.string.earned_label)
-            Column(Modifier.clip(MaterialTheme.shapes.small).spotlightOnClick {
-                SpotlightItem(earned, formatter.format(uiState.totalEarnedMinor), valueColor = colors.income)
-            }) {
-                Text(earned, style = MaterialTheme.typography.labelMedium, color = colors.onBackdropMuted)
-                Text(formatter.format(uiState.totalEarnedMinor), style = MaterialTheme.typography.titleLarge, color = colors.onBackdrop, fontWeight = FontWeight.Bold)
-            }
+            TotalFigure(stringResource(R.string.earned_label), formatter.format(uiState.totalEarnedMinor), colors.income, Modifier.weight(1f))
         }
+    }
+}
+
+@Composable
+private fun TotalFigure(label: String, value: String, accent: Color, modifier: Modifier = Modifier) {
+    val colors = HisabKitabTheme.colors
+    Column(
+        modifier
+            .clip(MaterialTheme.shapes.small)
+            .spotlightOnClick { SpotlightItem(label, value, valueColor = accent) }
+            .padding(vertical = 4.dp),
+    ) {
+        Text(label, style = MaterialTheme.typography.labelMedium, color = colors.onBackdropMuted, maxLines = 1, overflow = TextOverflow.Ellipsis)
+        BasicText(
+            text = value,
+            style = MaterialTheme.typography.titleLarge.copy(color = colors.onBackdrop, fontWeight = FontWeight.Bold),
+            maxLines = 1,
+            autoSize = TextAutoSize.StepBased(minFontSize = 14.sp, maxFontSize = MaterialTheme.typography.titleLarge.fontSize),
+        )
     }
 }
 
@@ -266,11 +288,14 @@ private fun DayCard(
                 relativeDayLabel(group.date, today),
                 style = MaterialTheme.typography.titleSmall,
                 fontWeight = FontWeight.Bold,
-                modifier = Modifier.weight(1f),
+                maxLines = 1,
+                overflow = TextOverflow.Ellipsis,
+                modifier = Modifier.weight(1f).padding(end = 8.dp),
             )
             Text(
                 formatter.formatNet(group.netMinor),
                 style = MaterialTheme.typography.labelLarge,
+                maxLines = 1,
                 color = if (group.netMinor >= 0) colors.income else colors.expense,
                 modifier = Modifier
                     .clip(CircleShape)

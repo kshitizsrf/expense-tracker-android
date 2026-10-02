@@ -19,4 +19,21 @@
     <string name="this_month_total">%1$s this month</string>
     <string name="nothing_this_month">Nothing this month</string>
     <string name="preview">Preview</string>
+    <string name="select_categories">Select categories</string>
+    <string name="select_all">Select all</string>
+    <string name="clear_selection">Cancel selection</string>
+    <string name="delete_selected">Delete selected</string>
+    <string name="delete_categories_message_empty">They will be deleted permanently.</string>
+    <plurals name="categories_selected">
+        <item quantity="one">%d selected</item>
+        <item quantity="other">%d selected</item>
+    </plurals>
+    <plurals name="delete_categories_title">
+        <item quantity="one">Delete %d category?</item>
+        <item quantity="other">Delete %d categories?</item>
+    </plurals>
+    <plurals name="delete_categories_message">
+        <item quantity="one">This also deletes %d transaction in them. This can\'t be undone.</item>
+        <item quantity="other">This also deletes %d transactions in them. This can\'t be undone.</item>
+    </plurals>
 </resources>

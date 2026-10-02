@@ -32,10 +32,8 @@
     <string name="nav_style_liquid">Жидкость</string>
     <string name="nav_style_bubble">Пузырь</string>
     <string name="nav_style_glow">Свечение</string>
-    <string name="nav_style_expand">Раскрытие</string>
     <string name="chart_animation">Анимация графиков</string>
     <string name="chart_animation_hint">Как сменяются графики в Аналитике</string>
-    <string name="chart_fade">Затухание</string>
     <string name="chart_slide">Сдвиг</string>
     <string name="chart_flip">3D-поворот</string>
     <string name="chart_zoom">Масштаб</string>
@@ -57,5 +55,40 @@
         <item quantity="few">Экспортировано %d категории</item>
         <item quantity="many">Экспортировано %d категорий</item>
         <item quantity="other">Экспортировано %d категории</item>
+    </plurals>
+    <string name="profile_add_name">Добавьте имя</string>
+    <string name="profile_summary">Hisab Kitab будет приветствовать вас по этому имени</string>
+    <string name="profile_edit">Изменить имя</string>
+    <string name="profile_name_title">Как к вам обращаться?</string>
+    <string name="profile_name_label">Ваше имя</string>
+    <string name="about_title">О приложении</string>
+    <string name="about_tagline">Ваши деньги — красиво и понятно. Записывайте за секунды, смотрите, куда они уходят, и тратьте уверенно.</string>
+    <string name="about_offline_title">Работает без интернета</string>
+    <string name="about_offline_body">Не нужны ни аккаунт, ни интернет. Всё хранится на этом телефоне.</string>
+    <string name="about_insights_title">Пять способов увидеть деньги</string>
+    <string name="about_insights_body">Кольцо, рейтинг, динамика, календарь и потоки, а бюджеты подскажут, сколько можно потратить.</string>
+    <string name="about_languages_title">Говорит на вашем языке</string>
+    <string name="about_languages_body">28 языков, включая хинди и ещё 11 языков Индии.</string>
+    <string name="about_lock_title">Блокировка по желанию</string>
+    <string name="about_lock_body">Защитите приложение отпечатком, лицом или блокировкой экрана.</string>
+    <string name="about_privacy_title">Конфиденциальность гарантирована</string>
+    <string name="about_privacy_body">Никакой рекламы, слежки и аналитики. У Hisab Kitab нет даже доступа к интернету.</string>
+    <string name="about_credits">Благодарности</string>
+    <string name="about_credits_body">Plus Jakarta Sans — SIL Open Font License 1.1 · Jetpack Compose · Material 3</string>
+    <string name="import_transactions">Импорт операций</string>
+    <string name="import_summary">Добавить операции из CSV-экспорта Hisab Kitab</string>
+    <string name="import_failed">Не удалось прочитать файл. Попробуйте ещё раз.</string>
+    <string name="import_unsupported">Этот файл не является экспортом операций Hisab Kitab.</string>
+    <plurals name="imported_transactions">
+        <item quantity="one">Импортирована %d операция</item>
+        <item quantity="few">Импортировано %d операции</item>
+        <item quantity="many">Импортировано %d операций</item>
+        <item quantity="other">Импортировано %d операции</item>
+    </plurals>
+    <plurals name="import_skipped">
+        <item quantity="one">%d уже была</item>
+        <item quantity="few">%d уже были</item>
+        <item quantity="many">%d уже были</item>
+        <item quantity="other">%d уже были</item>
     </plurals>
 </resources>

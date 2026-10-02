@@ -4,10 +4,8 @@ import android.os.Build
 import androidx.compose.ui.unit.IntOffset
 import android.view.HapticFeedbackConstants
 import androidx.compose.animation.AnimatedVisibility
-import androidx.compose.animation.expandHorizontally
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
-import androidx.compose.animation.shrinkHorizontally
 import androidx.compose.animation.slideInVertically
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.ui.draw.drawBehind
@@ -22,7 +20,6 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.interaction.collectIsPressedAsState
-import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Column
@@ -93,7 +90,7 @@ fun LiquidNavigationBar(
     centerContentDescription: String,
     onCenterClick: () -> Unit,
     modifier: Modifier = Modifier,
-    style: NavBarStyle = NavBarStyle.LIQUID,
+    style: NavBarStyle = NavBarStyle.GLOW,
     applySystemInsets: Boolean = true,
 ) {
     val colors = HisabKitabTheme.colors
@@ -156,21 +153,15 @@ fun LiquidNavigationBar(
                     }
                     val itemIndex = if (slot > centerSlot) slot - 1 else slot
                     val item = items[itemIndex]
-                    val selected = itemIndex == selectedIndex
-                    val weight by animateFloatAsState(
-                        targetValue = if (style == NavBarStyle.EXPAND && selected) 1.9f else 1f,
-                        animationSpec = spring(dampingRatio = 0.7f, stiffness = Spring.StiffnessMediumLow),
-                        label = "slotWeight",
-                    )
                     NavBarSlot(
                         item = item,
-                        selected = selected,
+                        selected = itemIndex == selectedIndex,
                         style = style,
                         onClick = {
                             view.performHapticFeedback(HapticFeedbackConstants.CONTEXT_CLICK)
                             onSelect(itemIndex)
                         },
-                        modifier = Modifier.weight(weight),
+                        modifier = Modifier.weight(1f),
                     )
                 }
             }
@@ -208,10 +199,10 @@ private fun NavBarSlot(
     val bounce = spring<Float>(dampingRatio = 0.45f, stiffness = Spring.StiffnessMedium)
     val iconScale by animateFloatAsState(if (selected) 1.12f else 1f, bounce, label = "navIconScale")
 
+    // No clip here: the Bubble style's orb rises above the slot and must not be cut off.
     Box(
         modifier = modifier
             .fillMaxHeight()
-            .clip(CircleShape)
             .clickable(interactionSource = remember { MutableInteractionSource() }, indication = null, onClick = onClick)
             .semantics {
                 this.selected = selected
@@ -284,29 +275,6 @@ private fun NavBarSlot(
                     ) {
                         NavLabel(item.label, true, scheme.primary)
                     }
-                }
-            }
-
-            NavBarStyle.EXPAND -> Row(
-                modifier = Modifier
-                    .padding(horizontal = 4.dp)
-                    .height(46.dp)
-                    .clip(CircleShape)
-                    .background(if (selected) scheme.primary.copy(alpha = if (colors.isDark) 0.24f else 0.14f) else Color.Transparent)
-                    .padding(horizontal = 12.dp),
-                verticalAlignment = Alignment.CenterVertically,
-                horizontalArrangement = Arrangement.Center,
-            ) {
-                NavIcon(item, selected, tint, Modifier)
-                AnimatedVisibility(visible = selected, enter = fadeIn() + expandHorizontally(), exit = fadeOut() + shrinkHorizontally()) {
-                    Text(
-                        text = item.label,
-                        color = tint,
-                        style = MaterialTheme.typography.labelLarge,
-                        fontWeight = FontWeight.Bold,
-                        maxLines = 1,
-                        modifier = Modifier.padding(start = 8.dp),
-                    )
                 }
             }
         }

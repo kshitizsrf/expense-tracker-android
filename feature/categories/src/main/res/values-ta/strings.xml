@@ -20,4 +20,21 @@
         <item quantity="one">இதனால் இந்த வகையின் %d பரிவர்த்தனையும் நீக்கப்படும். இதைச் செயல்தவிர்க்க முடியாது.</item>
         <item quantity="other">இதனால் இந்த வகையின் %d பரிவர்த்தனைகளும் நீக்கப்படும். இதைச் செயல்தவிர்க்க முடியாது.</item>
     </plurals>
+    <string name="select_categories">வகைகளைத் தேர்ந்தெடு</string>
+    <string name="select_all">அனைத்தையும் தேர்ந்தெடு</string>
+    <string name="clear_selection">தேர்வை ரத்துசெய்</string>
+    <string name="delete_selected">தேர்ந்தவற்றை நீக்கு</string>
+    <string name="delete_categories_message_empty">இவை நிரந்தரமாக நீக்கப்படும்.</string>
+    <plurals name="categories_selected">
+        <item quantity="one">%d தேர்ந்தெடுக்கப்பட்டன</item>
+        <item quantity="other">%d தேர்ந்தெடுக்கப்பட்டன</item>
+    </plurals>
+    <plurals name="delete_categories_title">
+        <item quantity="one">%d வகையை நீக்கவா?</item>
+        <item quantity="other">%d வகைகளை நீக்கவா?</item>
+    </plurals>
+    <plurals name="delete_categories_message">
+        <item quantity="one">இதனால் அவற்றிலுள்ள %d பரிவர்த்தனையும் நீக்கப்படும். இதைச் செயல்தவிர்க்க முடியாது.</item>
+        <item quantity="other">இதனால் அவற்றிலுள்ள %d பரிவர்த்தனைகளும் நீக்கப்படும். இதைச் செயல்தவிர்க்க முடியாது.</item>
+    </plurals>
 </resources>

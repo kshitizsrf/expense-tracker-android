@@ -32,10 +32,8 @@
     <string name="nav_style_liquid">ଲିକ୍ୱିଡ୍</string>
     <string name="nav_style_bubble">ବବଲ୍</string>
     <string name="nav_style_glow">ଗ୍ଲୋ</string>
-    <string name="nav_style_expand">ଏକ୍ସପାଣ୍ଡ୍</string>
     <string name="chart_animation">ଚାର୍ଟ ଆନିମେସନ୍</string>
     <string name="chart_animation_hint">ବିଶ୍ଳେଷଣରେ ଚାର୍ଟ କିପରି ବଦଳେ</string>
-    <string name="chart_fade">ଫେଡ୍</string>
     <string name="chart_slide">ସ୍ଲାଇଡ୍</string>
     <string name="chart_flip">3D ଫ୍ଲିପ୍</string>
     <string name="chart_zoom">ଜୁମ୍</string>
@@ -53,5 +51,36 @@
     <plurals name="exported_categories">
         <item quantity="one">%d ବର୍ଗ ଏକ୍ସପୋର୍ଟ ହେଲା</item>
         <item quantity="other">%d ବର୍ଗ ଏକ୍ସପୋର୍ଟ ହେଲା</item>
+    </plurals>
+    <string name="profile_add_name">ଆପଣଙ୍କ ନାମ ଯୋଡ଼ନ୍ତୁ</string>
+    <string name="profile_summary">ହିସାବ କିତାବ ଆପଣଙ୍କୁ ଏହି ନାମରେ ଡାକିବ</string>
+    <string name="profile_edit">ନାମ ବଦଳାନ୍ତୁ</string>
+    <string name="profile_name_title">ଆମେ ଆପଣଙ୍କୁ କ’ଣ ବୋଲି ଡାକିବୁ?</string>
+    <string name="profile_name_label">ଆପଣଙ୍କ ନାମ</string>
+    <string name="about_title">ବିଷୟରେ</string>
+    <string name="about_tagline">ଆପଣଙ୍କ ଟଙ୍କା, ସୁନ୍ଦର ଭାବେ ସଜାଡ଼ା। ସେକେଣ୍ଡରେ ଲେଖନ୍ତୁ, ଟଙ୍କା କେଉଁଠି ଯାଏ ଦେଖନ୍ତୁ, ଆତ୍ମବିଶ୍ୱାସରେ ଖର୍ଚ୍ଚ କରନ୍ତୁ।</string>
+    <string name="about_offline_title">ସମ୍ପୂର୍ଣ୍ଣ ଅଫଲାଇନ୍</string>
+    <string name="about_offline_body">ଆକାଉଣ୍ଟ କିମ୍ବା ଇଣ୍ଟରନେଟ୍ ଦରକାର ନାହିଁ। ସବୁକିଛି ଏହି ଫୋନରେ ସେଭ୍ ରହେ।</string>
+    <string name="about_insights_title">ଟଙ୍କା ଦେଖିବାର ପାଞ୍ଚ ଉପାୟ</string>
+    <string name="about_insights_body">ଡୋନଟ୍, ରାଙ୍କିଙ୍ଗ୍, ଧାରା, କ୍ୟାଲେଣ୍ଡର୍ ଓ ନଗଦ ପ୍ରବାହ, ସହିତ କେତେ ଖର୍ଚ୍ଚ ନିରାପଦ ତାହା କହୁଥିବା ବଜେଟ୍।</string>
+    <string name="about_languages_title">ଆପଣଙ୍କ ଭାଷାରେ</string>
+    <string name="about_languages_body">ହିନ୍ଦୀ ଓ ଅନ୍ୟ ୧୧ଟି ଭାରତୀୟ ଭାଷା ସହିତ ୨୮ଟି ଭାଷା।</string>
+    <string name="about_lock_title">ଯେତେବେଳେ ଚାହିଁବେ, ଲକ୍</string>
+    <string name="about_lock_body">ଆଙ୍ଗୁଠି ଚିହ୍ନ, ମୁହଁ କିମ୍ବା ସ୍କ୍ରିନ୍ ଲକ୍‌ରେ ଆପ୍ ସୁରକ୍ଷିତ ରଖନ୍ତୁ।</string>
+    <string name="about_privacy_title">ଆପଣଙ୍କ ଗୋପନୀୟତାର ନିଶ୍ଚିତତା</string>
+    <string name="about_privacy_body">କୌଣସି ବିଜ୍ଞାପନ, ଟ୍ରାକିଂ କିମ୍ବା ଆନାଲିଟିକ୍ସ ନାହିଁ। ହିସାବ କିତାବ ଇଣ୍ଟରନେଟ୍ ବି ବ୍ୟବହାର କରିପାରେ ନାହିଁ।</string>
+    <string name="about_credits">କୃତଜ୍ଞତା</string>
+    <string name="about_credits_body">Plus Jakarta Sans — SIL Open Font License 1.1 · Jetpack Compose · Material 3</string>
+    <string name="import_transactions">କାରବାର ଇମ୍ପୋର୍ଟ କରନ୍ତୁ</string>
+    <string name="import_summary">ହିସାବ କିତାବ CSV ଫାଇଲରୁ କାରବାର ଯୋଡ଼ନ୍ତୁ</string>
+    <string name="import_failed">ଫାଇଲଟି ପଢ଼ିହେଲା ନାହିଁ। ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।</string>
+    <string name="import_unsupported">ଏହା ହିସାବ କିତାବର କାରବାର ଏକ୍ସପୋର୍ଟ ଫାଇଲ୍ ନୁହେଁ।</string>
+    <plurals name="imported_transactions">
+        <item quantity="one">%d କାରବାର ଇମ୍ପୋର୍ଟ ହେଲା</item>
+        <item quantity="other">%d କାରବାର ଇମ୍ପୋର୍ଟ ହେଲା</item>
+    </plurals>
+    <plurals name="import_skipped">
+        <item quantity="one">%d ପୂର୍ବରୁ ଥିଲା</item>
+        <item quantity="other">%d ପୂର୍ବରୁ ଥିଲା</item>
     </plurals>
 </resources>

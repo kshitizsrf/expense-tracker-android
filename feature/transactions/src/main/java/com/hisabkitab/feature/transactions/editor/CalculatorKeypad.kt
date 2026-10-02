@@ -1,5 +1,6 @@
 package com.hisabkitab.feature.transactions.editor
 
+import androidx.compose.ui.graphics.lerp
 import android.view.HapticFeedbackConstants
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.combinedClickable
@@ -51,11 +52,11 @@ fun CalculatorKeypad(
         listOf(Key.DecimalPoint, Key.Digit('0'), Key.Backspace, Key.Operator(AmountInput.PLUS)),
     )
     Column(
-        modifier = modifier.padding(horizontal = 12.dp, vertical = 8.dp),
-        verticalArrangement = Arrangement.spacedBy(8.dp),
+        modifier = modifier.padding(horizontal = 12.dp, vertical = 4.dp),
+        verticalArrangement = Arrangement.spacedBy(6.dp),
     ) {
         rows.forEach { row ->
-            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            Row(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
                 row.forEach { key ->
                     KeypadButton(
                         key = key,
@@ -91,10 +92,11 @@ private fun RowScope.KeypadButton(
 ) {
     val view = LocalView.current
     val colors = MaterialTheme.colorScheme
+    // Keys carry a faint tint of the theme accent; operators a stronger one.
     val (container, content) = when (key) {
-        is Key.Operator -> colors.primary.copy(alpha = 0.16f) to colors.primary
-        Key.Backspace -> colors.surfaceContainerHighest to colors.onSurface
-        else -> colors.surface.copy(alpha = 0.75f) to colors.onSurface
+        is Key.Operator -> colors.primary.copy(alpha = 0.18f) to colors.primary
+        Key.Backspace -> lerp(colors.surfaceContainerHighest, colors.primary, 0.12f) to colors.onSurface
+        else -> lerp(colors.surface, colors.primary, 0.06f).copy(alpha = 0.85f) to colors.onSurface
     }
     val description = when (key) {
         Key.Backspace -> stringResource(R.string.keypad_backspace)
@@ -109,7 +111,7 @@ private fun RowScope.KeypadButton(
         shape = MaterialTheme.shapes.medium,
         modifier = Modifier
             .weight(1f)
-            .height(54.dp)
+            .height(KEY_HEIGHT)
             .clip(MaterialTheme.shapes.medium)
             .combinedClickable(
                 role = Role.Button,
@@ -127,11 +129,14 @@ private fun RowScope.KeypadButton(
                 Key.Backspace -> Icon(Icons.AutoMirrored.Outlined.Backspace, contentDescription = description)
                 Key.DecimalPoint -> KeyLabel(".", Color.Unspecified)
                 is Key.Digit -> KeyLabel(key.char.toString(), Color.Unspecified)
-                is Key.Operator -> KeyLabel(key.char.toString(), Color.Unspecified)
+                is Key.Operator -> OperatorGlyph(key.char, content, size = 18.dp)
             }
         }
     }
 }
+
+/** Compact enough to leave room for the category grid above the keypad. */
+private val KEY_HEIGHT = 46.dp
 
 @Composable
 private fun KeyLabel(text: String, color: Color) {

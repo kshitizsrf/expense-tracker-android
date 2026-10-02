@@ -33,4 +33,5 @@
     <string name="theme_wallpaper">ওয়ালপেপার</string>
     <string name="spotlight_dismiss">বন্ধ করতে যেকোনো জায়গায় ট্যাপ করুন</string>
     <string name="select_date_range">তারিখের পরিসর বেছে নিন</string>
+    <string name="theme_seashell_tagline">নরম সমুদ্র-কুয়াশা আর বালি</string>
 </resources>

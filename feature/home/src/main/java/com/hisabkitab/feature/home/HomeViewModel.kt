@@ -29,11 +29,9 @@ import java.time.LocalDate
 import java.time.YearMonth
 import javax.inject.Inject
 
-/** Quick facts about the selected month shown as tiles on the dashboard. */
+/** Quick facts shown next to the daily-spending chart. */
 data class MonthInsights(
-    val topCategory: CategoryTotal? = null,
     val averageDailySpendMinor: Long = 0,
-    val biggestExpense: Transaction? = null,
     val transactionCount: Int = 0,
 )
 
@@ -43,6 +41,10 @@ data class HomeUiState(
     val totals: PeriodTotals = PeriodTotals(),
     /** Expense per day of the month (up to today for the current month), for the sparkline. */
     val dailySpending: List<Long> = emptyList(),
+    /** Income per day, aligned with [dailySpending]; shown while scrubbing the chart. */
+    val dailyIncome: List<Long> = emptyList(),
+    /** Number of entries per day, aligned with [dailySpending]. */
+    val dailyCount: List<Int> = emptyList(),
     val insights: MonthInsights = MonthInsights(),
     val budgetStatus: BudgetStatus? = null,
     val recentTransactions: List<Transaction> = emptyList(),
@@ -86,9 +88,13 @@ class HomeViewModel @Inject constructor(
         val expenses = transactions.filter { it.type == TransactionType.EXPENSE }
         val lastDay = if (month == YearMonth.from(today)) today.dayOfMonth else month.lengthOfMonth()
         val perDay = LongArray(lastDay)
-        expenses.forEach { t ->
+        val incomePerDay = LongArray(lastDay)
+        val countPerDay = IntArray(lastDay)
+        transactions.forEach { t ->
             val day = t.occurredAt.toLocalDate(clock.zone).dayOfMonth
-            if (day <= lastDay) perDay[day - 1] += t.amountMinor
+            if (day > lastDay) return@forEach
+            countPerDay[day - 1]++
+            if (t.type == TransactionType.EXPENSE) perDay[day - 1] += t.amountMinor else incomePerDay[day - 1] += t.amountMinor
         }
         val expenseTotal = expenses.sumOf { it.amountMinor }
         HomeUiState(
@@ -99,12 +105,10 @@ class HomeViewModel @Inject constructor(
                 expenseMinor = expenseTotal,
             ),
             dailySpending = perDay.toList(),
+            dailyIncome = incomePerDay.toList(),
+            dailyCount = countPerDay.toList(),
             insights = MonthInsights(
-                topCategory = expenses.groupBy { it.category }
-                    .map { (category, items) -> CategoryTotal(category, items.sumOf { it.amountMinor }, items.size) }
-                    .maxByOrNull { it.totalMinor },
                 averageDailySpendMinor = if (lastDay > 0) expenseTotal / lastDay else 0,
-                biggestExpense = expenses.maxByOrNull { it.amountMinor },
                 transactionCount = transactions.size,
             ),
             budgetStatus = budget,
@@ -116,6 +120,12 @@ class HomeViewModel @Inject constructor(
         started = SharingStarted.WhileSubscribed(5_000),
         initialValue = HomeUiState(month = selectedMonth.value, isCurrentMonth = true),
     )
+
+    /** The name to greet the user with; blank when none is set. */
+    val userName: StateFlow<String> = userPreferencesRepository.userPreferences
+        .map { it.userName }
+        .distinctUntilChanged()
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), "")
 
     fun showPreviousMonth() = selectedMonth.update { it.minusMonths(1) }
 

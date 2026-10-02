@@ -3,7 +3,7 @@
     <string name="onboarding_welcome_title">Hisab Kitab</string>
     <string name="onboarding_welcome_message">你的钱，井然有序。几秒完成记账，看清钱的去向，花得安心。</string>
     <string name="onboarding_theme_title">选择你的风格</string>
-    <string name="onboarding_theme_message">五款特色主题，每款都有浅色和深色模式。随时可以更改。</string>
+    <string name="onboarding_theme_message">六款特色主题，每款都有浅色和深色模式。随时可以更改。</string>
     <string name="onboarding_setup_title">最后一步</string>
     <string name="onboarding_setup_message">选择你的货币，并告诉我们是否需要温和的每日记账提醒。</string>
     <string name="onboarding_currency">货币</string>

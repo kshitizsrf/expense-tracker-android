@@ -1,5 +1,6 @@
 package com.hisabkitab.core.designsystem.theme
 
+import androidx.compose.ui.graphics.luminance
 import androidx.annotation.StringRes
 import androidx.compose.material3.ColorScheme
 import androidx.compose.material3.darkColorScheme
@@ -21,6 +22,8 @@ import com.hisabkitab.core.model.AppTheme
  * @property card pastel tint for glass surfaces.
  * @property ink text/icon color used on pastel surfaces.
  * @property aurora colors of the slowly drifting light blobs on the backdrop.
+ * @property onBackdrop text and icons drawn straight on the backdrop. White for the classic
+ *   deep gradients; a soft dark tone for themes with a light backdrop.
  */
 @Immutable
 data class ThemeSpec(
@@ -32,6 +35,7 @@ data class ThemeSpec(
     val card: Color,
     val ink: Color,
     val aurora: List<Color>,
+    val onBackdrop: Color = Color.White,
 )
 
 @Immutable
@@ -114,13 +118,35 @@ private val Rosewood = ThemeVariants(
     ),
 )
 
+private val Seashell = ThemeVariants(
+    light = ThemeSpec(
+        deep = Color(0xFFDCEBE4), glow = Color(0xFFF7F0E6),
+        accent = Color(0xFF4F7F72), onAccent = Color.White, accentSoft = Color(0xFFCFE4DB),
+        card = Color(0xFFFBF8F3), ink = Color(0xFF2E3F3B),
+        aurora = listOf(Color(0xFFF2D9C9), Color(0xFFC9E6DA), Color(0xFFDCD6EE)),
+        onBackdrop = Color(0xFF2E3F3B),
+    ),
+    dark = ThemeSpec(
+        deep = Color(0xFF1C2826), glow = Color(0xFF2B3633),
+        accent = Color(0xFF9CCBBB), onAccent = Color(0xFF0F2B24), accentSoft = Color(0xFF2F4A43),
+        card = Color(0xFF22302D), ink = Color(0xFFDDEBE6),
+        aurora = listOf(Color(0xFF35524A), Color(0xFF44465C), Color(0xFF52463F)),
+        onBackdrop = Color(0xFFE4EEEA),
+    ),
+)
+
 fun AppTheme.variants(): ThemeVariants = when (this) {
     AppTheme.SKYLINE, AppTheme.WALLPAPER -> Skyline
     AppTheme.DAWN -> Dawn
     AppTheme.HORIZON -> Horizon
     AppTheme.PINKWALK -> Pinkwalk
     AppTheme.ROSEWOOD -> Rosewood
+    AppTheme.SEASHELL -> Seashell
 }
+
+/** Whether the backdrop is light enough to need dark status-bar icons. */
+fun AppTheme.hasLightBackdrop(dark: Boolean): Boolean =
+    this != AppTheme.WALLPAPER && (if (dark) variants().dark else variants().light).onBackdrop.luminance() < 0.5f
 
 @get:StringRes
 val AppTheme.displayName: Int
@@ -130,6 +156,7 @@ val AppTheme.displayName: Int
         AppTheme.HORIZON -> R.string.theme_horizon
         AppTheme.PINKWALK -> R.string.theme_pinkwalk
         AppTheme.ROSEWOOD -> R.string.theme_rosewood
+        AppTheme.SEASHELL -> R.string.theme_seashell
         AppTheme.WALLPAPER -> R.string.theme_wallpaper
     }
 
@@ -141,6 +168,7 @@ val AppTheme.tagline: Int
         AppTheme.HORIZON -> R.string.theme_horizon_tagline
         AppTheme.PINKWALK -> R.string.theme_pinkwalk_tagline
         AppTheme.ROSEWOOD -> R.string.theme_rosewood_tagline
+        AppTheme.SEASHELL -> R.string.theme_seashell_tagline
         AppTheme.WALLPAPER -> R.string.theme_wallpaper_tagline
     }
 

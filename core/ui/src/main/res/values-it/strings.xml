@@ -36,4 +36,8 @@
     <string name="category_awards">Premi</string>
     <string name="category_investment">Investimenti</string>
     <string name="category_other">Altro</string>
+    <string name="greeting_morning_name">Buongiorno, %1$s</string>
+    <string name="greeting_afternoon_name">Buon pomeriggio, %1$s</string>
+    <string name="greeting_evening_name">Buonasera, %1$s</string>
+    <string name="greeting_night_name">Ancora sveglio, %1$s?</string>
 </resources>

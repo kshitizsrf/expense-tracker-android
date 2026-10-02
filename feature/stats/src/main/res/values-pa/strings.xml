@@ -17,7 +17,6 @@
     <string name="chart_trend_title_monthly">ਮਹੀਨਾ-ਦਰ-ਮਹੀਨਾ</string>
     <string name="chart_calendar_title">ਖ਼ਰਚਾ ਕੈਲੰਡਰ</string>
     <string name="chart_calendar_title_income">ਕਮਾਈ ਕੈਲੰਡਰ</string>
-    <string name="chart_cash_flow_title">ਨਕਦ ਪ੍ਰਵਾਹ · ਪਿਛਲੇ 6 ਮਹੀਨੇ</string>
     <string name="chart_hint_donut">ਕਿਸੇ ਹਿੱਸੇ ’ਤੇ ਧਿਆਨ ਦੇਣ ਲਈ ਟੈਪ ਕਰੋ</string>
     <string name="chart_hint_trend">ਛੂਹ ਕੇ ਖਿੱਚੋ ਅਤੇ ਦੇਖੋ</string>
     <string name="chart_hint_calendar">ਕਿਸੇ ਦਿਨ ਦਾ ਕੁੱਲ ਦੇਖਣ ਲਈ ਟੈਪ ਕਰੋ</string>
@@ -29,7 +28,7 @@
     <string name="stat_entries">ਇੰਦਰਾਜ</string>
     <string name="stat_vs_previous">ਪਿਛਲੇ ਨਾਲੋਂ</string>
     <string name="stat_no_comparison">ਨਵਾਂ</string>
-    <string name="percent_of_total">ਕੁੱਲ ਦਾ %1$d%%</string>
+    <string name="percent_of_total">ਕੁੱਲ ਦਾ %1$s%%</string>
     <string name="heatmap_less">ਘੱਟ</string>
     <string name="heatmap_more">ਵੱਧ</string>
     <string name="nothing_on_day">ਕੁਝ ਦਰਜ ਨਹੀਂ</string>
@@ -40,5 +39,9 @@
     <plurals name="transaction_count">
         <item quantity="one">%d ਲੈਣ-ਦੇਣ</item>
         <item quantity="other">%d ਲੈਣ-ਦੇਣ</item>
+    </plurals>
+    <plurals name="chart_cash_flow_title_months">
+        <item quantity="one">ਨਕਦ ਪ੍ਰਵਾਹ · %d ਮਹੀਨੇ</item>
+        <item quantity="other">ਨਕਦ ਪ੍ਰਵਾਹ · %d ਮਹੀਨੇ</item>
     </plurals>
 </resources>

@@ -22,4 +22,27 @@
         <item quantity="many">Также будут удалены %d операций этой категории. Это нельзя отменить.</item>
         <item quantity="other">Также будут удалены %d операции этой категории. Это нельзя отменить.</item>
     </plurals>
+    <string name="select_categories">Выбрать категории</string>
+    <string name="select_all">Выбрать все</string>
+    <string name="clear_selection">Отменить выбор</string>
+    <string name="delete_selected">Удалить выбранные</string>
+    <string name="delete_categories_message_empty">Они будут удалены навсегда.</string>
+    <plurals name="categories_selected">
+        <item quantity="one">Выбрана %d</item>
+        <item quantity="few">Выбрано %d</item>
+        <item quantity="many">Выбрано %d</item>
+        <item quantity="other">Выбрано %d</item>
+    </plurals>
+    <plurals name="delete_categories_title">
+        <item quantity="one">Удалить %d категорию?</item>
+        <item quantity="few">Удалить %d категории?</item>
+        <item quantity="many">Удалить %d категорий?</item>
+        <item quantity="other">Удалить %d категории?</item>
+    </plurals>
+    <plurals name="delete_categories_message">
+        <item quantity="one">Также будет удалена %d операция в них. Это нельзя отменить.</item>
+        <item quantity="few">Также будут удалены %d операции в них. Это нельзя отменить.</item>
+        <item quantity="many">Также будут удалены %d операций в них. Это нельзя отменить.</item>
+        <item quantity="other">Также будут удалены %d операции в них. Это нельзя отменить.</item>
+    </plurals>
 </resources>

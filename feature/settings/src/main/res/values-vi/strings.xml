@@ -32,10 +32,8 @@
     <string name="nav_style_liquid">Chất lỏng</string>
     <string name="nav_style_bubble">Bong bóng</string>
     <string name="nav_style_glow">Phát sáng</string>
-    <string name="nav_style_expand">Mở rộng</string>
     <string name="chart_animation">Hiệu ứng biểu đồ</string>
     <string name="chart_animation_hint">Cách biểu đồ chuyển đổi trong Phân tích</string>
-    <string name="chart_fade">Mờ dần</string>
     <string name="chart_slide">Trượt</string>
     <string name="chart_flip">Lật 3D</string>
     <string name="chart_zoom">Phóng to</string>
@@ -51,5 +49,34 @@
     </plurals>
     <plurals name="exported_categories">
         <item quantity="other">Đã xuất %d danh mục</item>
+    </plurals>
+    <string name="profile_add_name">Thêm tên của bạn</string>
+    <string name="profile_summary">Hisab Kitab sẽ chào bạn bằng tên này</string>
+    <string name="profile_edit">Sửa tên</string>
+    <string name="profile_name_title">Chúng tôi nên gọi bạn là gì?</string>
+    <string name="profile_name_label">Tên của bạn</string>
+    <string name="about_title">Giới thiệu</string>
+    <string name="about_tagline">Tiền của bạn, sắp xếp đẹp mắt. Ghi chép trong vài giây, biết tiền đi đâu và chi tiêu tự tin.</string>
+    <string name="about_offline_title">Hoạt động ngoại tuyến</string>
+    <string name="about_offline_body">Không cần tài khoản hay internet. Mọi thứ được lưu trên điện thoại này.</string>
+    <string name="about_insights_title">Năm cách xem tiền của bạn</string>
+    <string name="about_insights_body">Vòng tròn, xếp hạng, xu hướng, lịch và dòng tiền, cùng ngân sách cho biết bạn có thể chi bao nhiêu.</string>
+    <string name="about_languages_title">Nói ngôn ngữ của bạn</string>
+    <string name="about_languages_body">28 ngôn ngữ, gồm tiếng Hindi và 11 ngôn ngữ Ấn Độ khác.</string>
+    <string name="about_lock_title">Khóa khi bạn muốn</string>
+    <string name="about_lock_body">Bảo vệ ứng dụng bằng vân tay, khuôn mặt hoặc khóa màn hình.</string>
+    <string name="about_privacy_title">Quyền riêng tư được đảm bảo</string>
+    <string name="about_privacy_body">Không quảng cáo, không theo dõi, không phân tích. Hisab Kitab thậm chí không thể truy cập internet.</string>
+    <string name="about_credits">Ghi công</string>
+    <string name="about_credits_body">Plus Jakarta Sans — SIL Open Font License 1.1 · Jetpack Compose · Material 3</string>
+    <string name="import_transactions">Nhập giao dịch</string>
+    <string name="import_summary">Thêm giao dịch từ tệp CSV xuất từ Hisab Kitab</string>
+    <string name="import_failed">Không đọc được tệp. Hãy thử lại.</string>
+    <string name="import_unsupported">Tệp này không phải tệp xuất giao dịch của Hisab Kitab.</string>
+    <plurals name="imported_transactions">
+        <item quantity="other">Đã nhập %d giao dịch</item>
+    </plurals>
+    <plurals name="import_skipped">
+        <item quantity="other">%d đã có sẵn</item>
     </plurals>
 </resources>

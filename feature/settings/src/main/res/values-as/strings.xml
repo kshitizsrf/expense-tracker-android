@@ -32,10 +32,8 @@
     <string name="nav_style_liquid">লিকুইড</string>
     <string name="nav_style_bubble">বাবল</string>
     <string name="nav_style_glow">গ্লো</string>
-    <string name="nav_style_expand">এক্সপেণ্ড</string>
     <string name="chart_animation">চাৰ্ট এনিমেশ্বন</string>
     <string name="chart_animation_hint">বিশ্লেষণত চাৰ্ট কেনেকৈ সলনি হয়</string>
-    <string name="chart_fade">ফেড</string>
     <string name="chart_slide">স্লাইড</string>
     <string name="chart_flip">3D ফ্লিপ</string>
     <string name="chart_zoom">জুম</string>
@@ -53,5 +51,36 @@
     <plurals name="exported_categories">
         <item quantity="one">%dটা শ্ৰেণী এক্সপৰ্ট হ\'ল</item>
         <item quantity="other">%dটা শ্ৰেণী এক্সপৰ্ট হ\'ল</item>
+    </plurals>
+    <string name="profile_add_name">আপোনাৰ নাম যোগ কৰক</string>
+    <string name="profile_summary">হিচাব কিতাবে আপোনাক এই নামেৰে মাতিব</string>
+    <string name="profile_edit">নাম সম্পাদনা</string>
+    <string name="profile_name_title">আমি আপোনাক কি বুলি মাতিম?</string>
+    <string name="profile_name_label">আপোনাৰ নাম</string>
+    <string name="about_title">বিষয়ে</string>
+    <string name="about_tagline">আপোনাৰ টকা, ধুনীয়াকৈ সজোৱা। ছেকেণ্ডতে লিখক, টকা ক’ত যায় চাওক, আৰু আত্মবিশ্বাসেৰে খৰচ কৰক।</string>
+    <string name="about_offline_title">সম্পূৰ্ণ অফলাইন</string>
+    <string name="about_offline_body">একাউণ্ট বা ইণ্টাৰনেট নালাগে। সকলো এই ফোনতে ছেভ থাকে।</string>
+    <string name="about_insights_title">টকা চোৱাৰ পাঁচটা উপায়</string>
+    <string name="about_insights_body">ডোনাট, ৰেংকিং, প্ৰৱণতা, কেলেণ্ডাৰ আৰু নগদ প্ৰবাহ, লগতে কিমান খৰচ সুৰক্ষিত সেয়া কোৱা বাজেট।</string>
+    <string name="about_languages_title">আপোনাৰ ভাষাত</string>
+    <string name="about_languages_body">হিন্দী আৰু আন ১১টা ভাৰতীয় ভাষাকে ধৰি ২৮টা ভাষা।</string>
+    <string name="about_lock_title">যেতিয়া বিচাৰে, লক</string>
+    <string name="about_lock_body">আঙুলিৰ ছাপ, মুখ বা স্ক্ৰীণ লকেৰে এপ সুৰক্ষিত কৰক।</string>
+    <string name="about_privacy_title">আপোনাৰ গোপনীয়তাৰ নিশ্চয়তা</string>
+    <string name="about_privacy_body">কোনো বিজ্ঞাপন, ট্ৰেকিং বা এনালিটিক্স নাই। হিচাব কিতাবে ইণ্টাৰনেটো ব্যৱহাৰ কৰিব নোৱাৰে।</string>
+    <string name="about_credits">কৃতজ্ঞতা</string>
+    <string name="about_credits_body">Plus Jakarta Sans — SIL Open Font License 1.1 · Jetpack Compose · Material 3</string>
+    <string name="import_transactions">লেনদেন ইমপৰ্ট কৰক</string>
+    <string name="import_summary">হিচাব কিতাবৰ CSV ফাইলৰ পৰা লেনদেন যোগ কৰক</string>
+    <string name="import_failed">ফাইলটো পঢ়িব পৰা নগ’ল। পুনৰ চেষ্টা কৰক।</string>
+    <string name="import_unsupported">এইটো হিচাব কিতাবৰ লেনদেন এক্সপৰ্ট ফাইল নহয়।</string>
+    <plurals name="imported_transactions">
+        <item quantity="one">%dটা লেনদেন ইমপৰ্ট হ’ল</item>
+        <item quantity="other">%dটা লেনদেন ইমপৰ্ট হ’ল</item>
+    </plurals>
+    <plurals name="import_skipped">
+        <item quantity="one">%dটা আগৰে পৰা আছিল</item>
+        <item quantity="other">%dটা আগৰে পৰা আছিল</item>
     </plurals>
 </resources>

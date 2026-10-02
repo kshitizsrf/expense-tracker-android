@@ -20,4 +20,21 @@
         <item quantity="one">اس سے اس زمرے کا %d لین دین بھی حذف ہو جائے گا۔ اسے واپس نہیں لایا جا سکتا۔</item>
         <item quantity="other">اس سے اس زمرے کے %d لین دین بھی حذف ہو جائیں گے۔ اسے واپس نہیں لایا جا سکتا۔</item>
     </plurals>
+    <string name="select_categories">زمرے منتخب کریں</string>
+    <string name="select_all">سب منتخب کریں</string>
+    <string name="clear_selection">انتخاب منسوخ کریں</string>
+    <string name="delete_selected">منتخب حذف کریں</string>
+    <string name="delete_categories_message_empty">یہ ہمیشہ کے لیے حذف ہو جائیں گے۔</string>
+    <plurals name="categories_selected">
+        <item quantity="one">%d منتخب</item>
+        <item quantity="other">%d منتخب</item>
+    </plurals>
+    <plurals name="delete_categories_title">
+        <item quantity="one">%d زمرہ حذف کریں؟</item>
+        <item quantity="other">%d زمرے حذف کریں؟</item>
+    </plurals>
+    <plurals name="delete_categories_message">
+        <item quantity="one">اس سے ان کا %d لین دین بھی حذف ہو جائے گا۔ اسے واپس نہیں لایا جا سکتا۔</item>
+        <item quantity="other">اس سے ان کے %d لین دین بھی حذف ہو جائیں گے۔ اسے واپس نہیں لایا جا سکتا۔</item>
+    </plurals>
 </resources>

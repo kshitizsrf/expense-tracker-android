@@ -32,10 +32,8 @@
     <string name="nav_style_liquid">Sıvı</string>
     <string name="nav_style_bubble">Baloncuk</string>
     <string name="nav_style_glow">Işıltı</string>
-    <string name="nav_style_expand">Genişleyen</string>
     <string name="chart_animation">Grafik animasyonu</string>
     <string name="chart_animation_hint">Analiz\'de grafiklerin nasıl değiştiği</string>
-    <string name="chart_fade">Solma</string>
     <string name="chart_slide">Kaydırma</string>
     <string name="chart_flip">3D çevirme</string>
     <string name="chart_zoom">Yakınlaştırma</string>
@@ -53,5 +51,36 @@
     <plurals name="exported_categories">
         <item quantity="one">%d kategori dışa aktarıldı</item>
         <item quantity="other">%d kategori dışa aktarıldı</item>
+    </plurals>
+    <string name="profile_add_name">Adını ekle</string>
+    <string name="profile_summary">Hisab Kitab seni bu adla selamlar</string>
+    <string name="profile_edit">Adı düzenle</string>
+    <string name="profile_name_title">Sana nasıl hitap edelim?</string>
+    <string name="profile_name_label">Adın</string>
+    <string name="about_title">Hakkında</string>
+    <string name="about_tagline">Paranız, güzelce düzenlenmiş. Saniyeler içinde kaydedin, nereye gittiğini görün ve güvenle harcayın.</string>
+    <string name="about_offline_title">Tamamen çevrimdışı</string>
+    <string name="about_offline_body">Hesap da internet de gerekmez. Her şey bu telefonda saklanır.</string>
+    <string name="about_insights_title">Paranızı görmenin beş yolu</string>
+    <string name="about_insights_body">Halka, sıralama, eğilim, takvim ve nakit akışı; ne kadar harcayabileceğinizi söyleyen bütçelerle.</string>
+    <string name="about_languages_title">Sizin dilinizi konuşur</string>
+    <string name="about_languages_body">Hintçe ve 11 başka Hint dili dahil 28 dil.</string>
+    <string name="about_lock_title">İstediğinizde kilitli</string>
+    <string name="about_lock_body">Uygulamayı parmak izi, yüz veya ekran kilidiyle koruyun.</string>
+    <string name="about_privacy_title">Gizliliğiniz garanti</string>
+    <string name="about_privacy_body">Reklam, izleme ve analiz yok. Hisab Kitab internete bile erişemez.</string>
+    <string name="about_credits">Katkıda bulunanlar</string>
+    <string name="about_credits_body">Plus Jakarta Sans — SIL Open Font License 1.1 · Jetpack Compose · Material 3</string>
+    <string name="import_transactions">İşlemleri içe aktar</string>
+    <string name="import_summary">Hisab Kitab CSV dışa aktarımından işlem ekle</string>
+    <string name="import_failed">Dosya okunamadı. Tekrar deneyin.</string>
+    <string name="import_unsupported">Bu dosya bir Hisab Kitab işlem dışa aktarımı değil.</string>
+    <plurals name="imported_transactions">
+        <item quantity="one">%d işlem içe aktarıldı</item>
+        <item quantity="other">%d işlem içe aktarıldı</item>
+    </plurals>
+    <plurals name="import_skipped">
+        <item quantity="one">%d işlem zaten vardı</item>
+        <item quantity="other">%d işlem zaten vardı</item>
     </plurals>
 </resources>

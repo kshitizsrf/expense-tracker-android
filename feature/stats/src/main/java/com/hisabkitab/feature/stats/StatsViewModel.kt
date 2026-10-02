@@ -91,14 +91,17 @@ class StatsViewModel @Inject constructor(
         .flatMapLatest { selection ->
             val range = rangeFor(selection)
             val previousRange = DateRange(range.start.minusDays(range.dayCount), range.start.minusDays(1))
+            // A full year up to the selected period, or the whole period when it is longer.
             val cashFlowEnd = YearMonth.from(range.endInclusive)
-            val cashFlowRange = DateRange(cashFlowEnd.minusMonths(CASH_FLOW_MONTHS - 1L).atDay(1), cashFlowEnd.atEndOfMonth())
+            val periodMonths = ChronoUnit.MONTHS.between(YearMonth.from(range.start), cashFlowEnd) + 1
+            val cashFlowStart = cashFlowEnd.minusMonths(maxOf(periodMonths, CASH_FLOW_MONTHS) - 1)
+            val cashFlowRange = DateRange(cashFlowStart.atDay(1), cashFlowEnd.atEndOfMonth())
             combine(
                 transactionRepository.observeTransactionsIn(range),
                 transactionRepository.observeTransactionsIn(previousRange),
                 transactionRepository.observeTransactionsIn(cashFlowRange),
             ) { current, previous, cashFlow ->
-                buildState(selection, range, current, previous, cashFlowEnd, cashFlow)
+                buildState(selection, range, current, previous, cashFlowStart, cashFlowEnd, cashFlow)
             }
         }
         .stateIn(
@@ -121,6 +124,7 @@ class StatsViewModel @Inject constructor(
         range: DateRange,
         current: List<Transaction>,
         previous: List<Transaction>,
+        cashFlowStart: YearMonth,
         cashFlowEnd: YearMonth,
         cashFlow: List<Transaction>,
     ): StatsUiState {
@@ -153,7 +157,7 @@ class StatsViewModel @Inject constructor(
             trend = if (monthly) monthlyTrend(range, daily) else dailyTrend(range, daily),
             trendIsMonthly = monthly,
             daily = daily,
-            cashFlow = cashFlow(cashFlowEnd, cashFlow, zone),
+            cashFlow = cashFlow(cashFlowStart, cashFlowEnd, cashFlow, zone),
             isLoading = false,
         )
     }
@@ -172,10 +176,9 @@ class StatsViewModel @Inject constructor(
             .toList()
     }
 
-    private fun cashFlow(end: YearMonth, transactions: List<Transaction>, zone: ZoneId): List<MonthFlow> {
+    private fun cashFlow(start: YearMonth, end: YearMonth, transactions: List<Transaction>, zone: ZoneId): List<MonthFlow> {
         val grouped = transactions.groupBy { YearMonth.from(it.occurredAt.toLocalDate(zone)) }
-        return (CASH_FLOW_MONTHS - 1 downTo 0).map { back ->
-            val month = end.minusMonths(back.toLong())
+        return generateSequence(start) { it.plusMonths(1) }.takeWhile { !it.isAfter(end) }.toList().map { month ->
             val items = grouped[month].orEmpty()
             MonthFlow(
                 month = month,
@@ -198,7 +201,8 @@ class StatsViewModel @Inject constructor(
     }
 
     private companion object {
-        const val CASH_FLOW_MONTHS = 6
+        /** Cash flow always shows at least this many months, scrolling sideways. */
+        const val CASH_FLOW_MONTHS = 12L
         const val DAILY_TREND_MAX_DAYS = 62
     }
 }

@@ -17,7 +17,6 @@
     <string name="chart_trend_title_monthly">నెల వారీగా</string>
     <string name="chart_calendar_title">ఖర్చుల క్యాలెండర్</string>
     <string name="chart_calendar_title_income">ఆదాయ క్యాలెండర్</string>
-    <string name="chart_cash_flow_title">నగదు ప్రవాహం · గత 6 నెలలు</string>
     <string name="chart_hint_donut">ఒక భాగంపై దృష్టి పెట్టడానికి నొక్కండి</string>
     <string name="chart_hint_trend">తాకి లాగి చూడండి</string>
     <string name="chart_hint_calendar">ఒక రోజు మొత్తం చూడటానికి నొక్కండి</string>
@@ -29,7 +28,7 @@
     <string name="stat_entries">నమోదులు</string>
     <string name="stat_vs_previous">గతంతో పోలిస్తే</string>
     <string name="stat_no_comparison">కొత్తది</string>
-    <string name="percent_of_total">మొత్తంలో %1$d%%</string>
+    <string name="percent_of_total">మొత్తంలో %1$s%%</string>
     <string name="heatmap_less">తక్కువ</string>
     <string name="heatmap_more">ఎక్కువ</string>
     <string name="nothing_on_day">ఏమీ నమోదు కాలేదు</string>
@@ -40,5 +39,9 @@
     <plurals name="transaction_count">
         <item quantity="one">%d లావాదేవీ</item>
         <item quantity="other">%d లావాదేవీలు</item>
+    </plurals>
+    <plurals name="chart_cash_flow_title_months">
+        <item quantity="one">నగదు ప్రవాహం · %d నెలలు</item>
+        <item quantity="other">నగదు ప్రవాహం · %d నెలలు</item>
     </plurals>
 </resources>

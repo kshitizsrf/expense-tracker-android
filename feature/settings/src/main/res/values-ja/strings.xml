@@ -32,10 +32,8 @@
     <string name="nav_style_liquid">リキッド</string>
     <string name="nav_style_bubble">バブル</string>
     <string name="nav_style_glow">グロー</string>
-    <string name="nav_style_expand">エキスパンド</string>
     <string name="chart_animation">グラフのアニメーション</string>
     <string name="chart_animation_hint">分析画面でのグラフの切り替え方</string>
-    <string name="chart_fade">フェード</string>
     <string name="chart_slide">スライド</string>
     <string name="chart_flip">3D フリップ</string>
     <string name="chart_zoom">ズーム</string>
@@ -51,5 +49,34 @@
     </plurals>
     <plurals name="exported_categories">
         <item quantity="other">%d 件のカテゴリをエクスポートしました</item>
+    </plurals>
+    <string name="profile_add_name">名前を追加</string>
+    <string name="profile_summary">Hisab Kitab がこの名前であいさつします</string>
+    <string name="profile_edit">名前を編集</string>
+    <string name="profile_name_title">何とお呼びしましょう？</string>
+    <string name="profile_name_label">あなたの名前</string>
+    <string name="about_title">アプリについて</string>
+    <string name="about_tagline">あなたのお金を美しく整理。数秒で記録し、行き先を把握して、安心して使いましょう。</string>
+    <string name="about_offline_title">完全オフライン</string>
+    <string name="about_offline_body">アカウントもインターネットも不要。すべてこのスマートフォンに保存されます。</string>
+    <string name="about_insights_title">お金を見る 5 つの方法</string>
+    <string name="about_insights_body">ドーナツ、ランキング、推移、カレンダー、収支。使える金額を教えてくれる予算付き。</string>
+    <string name="about_languages_title">あなたの言語で</string>
+    <string name="about_languages_body">ヒンディー語とほか 11 のインドの言語を含む 28 言語。</string>
+    <string name="about_lock_title">必要なときにロック</string>
+    <string name="about_lock_body">指紋、顔、または画面ロックでアプリを保護します。</string>
+    <string name="about_privacy_title">プライバシーを保証</string>
+    <string name="about_privacy_body">広告、トラッキング、分析は一切なし。Hisab Kitab はインターネットにすらアクセスできません。</string>
+    <string name="about_credits">クレジット</string>
+    <string name="about_credits_body">Plus Jakarta Sans — SIL Open Font License 1.1 · Jetpack Compose · Material 3</string>
+    <string name="import_transactions">記録をインポート</string>
+    <string name="import_summary">Hisab Kitab の CSV エクスポートから記録を追加</string>
+    <string name="import_failed">ファイルを読み込めませんでした。もう一度お試しください。</string>
+    <string name="import_unsupported">このファイルは Hisab Kitab の記録エクスポートではありません。</string>
+    <plurals name="imported_transactions">
+        <item quantity="other">%d 件の記録をインポートしました</item>
+    </plurals>
+    <plurals name="import_skipped">
+        <item quantity="other">%d 件は登録済み</item>
     </plurals>
 </resources>

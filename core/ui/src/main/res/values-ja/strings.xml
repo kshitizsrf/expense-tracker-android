@@ -36,4 +36,8 @@
     <string name="category_awards">賞金</string>
     <string name="category_investment">投資</string>
     <string name="category_other">その他</string>
+    <string name="greeting_morning_name">おはようございます、%1$sさん</string>
+    <string name="greeting_afternoon_name">こんにちは、%1$sさん</string>
+    <string name="greeting_evening_name">こんばんは、%1$sさん</string>
+    <string name="greeting_night_name">夜更かしですか、%1$sさん？</string>
 </resources>

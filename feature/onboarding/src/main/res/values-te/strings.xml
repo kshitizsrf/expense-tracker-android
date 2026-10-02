@@ -3,7 +3,7 @@
     <string name="onboarding_welcome_title">హిసాబ్ కితాబ్</string>
     <string name="onboarding_welcome_message">మీ డబ్బు, అందంగా అమర్చబడింది. సెకన్లలో నమోదు చేయండి, డబ్బు ఎక్కడికి వెళ్తుందో చూడండి, నమ్మకంతో ఖర్చు చేయండి.</string>
     <string name="onboarding_theme_title">మీ శైలిని ఎంచుకోండి</string>
-    <string name="onboarding_theme_message">ఐదు ప్రత్యేక థీమ్‌లు, ఒక్కోదానిలో లైట్ మరియు డార్క్ మూడ్. ఎప్పుడైనా మార్చుకోవచ్చు.</string>
+    <string name="onboarding_theme_message">ఆరు ప్రత్యేక థీమ్‌లు, ఒక్కోదానిలో లైట్ మరియు డార్క్ మూడ్. ఎప్పుడైనా మార్చుకోవచ్చు.</string>
     <string name="onboarding_setup_title">చివరి మెరుగులు</string>
     <string name="onboarding_setup_message">మీ కరెన్సీని ఎంచుకోండి, రోజును నమోదు చేయడానికి చిన్న రిమైండర్ కావాలో చెప్పండి.</string>
     <string name="onboarding_currency">కరెన్సీ</string>

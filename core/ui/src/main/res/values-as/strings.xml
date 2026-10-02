@@ -36,4 +36,8 @@
     <string name="category_awards">বঁটা</string>
     <string name="category_investment">বিনিয়োগ</string>
     <string name="category_other">অন্যান্য</string>
+    <string name="greeting_morning_name">সুপ্ৰভাত, %1$s</string>
+    <string name="greeting_afternoon_name">শুভ আবেলি, %1$s</string>
+    <string name="greeting_evening_name">শুভ সন্ধিয়া, %1$s</string>
+    <string name="greeting_night_name">এতিয়াও সাৰে আছে, %1$s?</string>
 </resources>

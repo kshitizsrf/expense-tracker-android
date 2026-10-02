@@ -21,4 +21,24 @@
         <item quantity="many">También se eliminarán %d movimientos de esta categoría. No se puede deshacer.</item>
         <item quantity="other">También se eliminarán %d movimientos de esta categoría. No se puede deshacer.</item>
     </plurals>
+    <string name="select_categories">Seleccionar categorías</string>
+    <string name="select_all">Seleccionar todo</string>
+    <string name="clear_selection">Cancelar selección</string>
+    <string name="delete_selected">Eliminar seleccionadas</string>
+    <string name="delete_categories_message_empty">Se eliminarán para siempre.</string>
+    <plurals name="categories_selected">
+        <item quantity="one">%d seleccionada</item>
+        <item quantity="many">%d seleccionadas</item>
+        <item quantity="other">%d seleccionadas</item>
+    </plurals>
+    <plurals name="delete_categories_title">
+        <item quantity="one">¿Eliminar %d categoría?</item>
+        <item quantity="many">¿Eliminar %d categorías?</item>
+        <item quantity="other">¿Eliminar %d categorías?</item>
+    </plurals>
+    <plurals name="delete_categories_message">
+        <item quantity="one">También se eliminará %d movimiento de ellas. No se puede deshacer.</item>
+        <item quantity="many">También se eliminarán %d movimientos de ellas. No se puede deshacer.</item>
+        <item quantity="other">También se eliminarán %d movimientos de ellas. No se puede deshacer.</item>
+    </plurals>
 </resources>

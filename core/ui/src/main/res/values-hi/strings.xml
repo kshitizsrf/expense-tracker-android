@@ -36,4 +36,8 @@
     <string name="category_awards">पुरस्कार</string>
     <string name="category_investment">निवेश</string>
     <string name="category_other">अन्य</string>
+    <string name="greeting_morning_name">सुप्रभात, %1$s</string>
+    <string name="greeting_afternoon_name">शुभ दोपहर, %1$s</string>
+    <string name="greeting_evening_name">शुभ संध्या, %1$s</string>
+    <string name="greeting_night_name">अभी तक जाग रहे हैं, %1$s?</string>
 </resources>

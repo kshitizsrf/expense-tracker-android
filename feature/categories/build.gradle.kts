@@ -5,3 +5,7 @@ plugins {
 android {
     namespace = "com.hisabkitab.feature.categories"
 }
+
+dependencies {
+    implementation(libs.androidx.activity.compose)
+}

@@ -32,10 +32,8 @@
     <string name="nav_style_liquid">سائل</string>
     <string name="nav_style_bubble">فقاعة</string>
     <string name="nav_style_glow">توهج</string>
-    <string name="nav_style_expand">توسّع</string>
     <string name="chart_animation">حركة الرسوم البيانية</string>
     <string name="chart_animation_hint">كيف تتبدل الرسوم في التحليلات</string>
-    <string name="chart_fade">تلاشٍ</string>
     <string name="chart_slide">انزلاق</string>
     <string name="chart_flip">قلب ثلاثي الأبعاد</string>
     <string name="chart_zoom">تكبير</string>
@@ -61,5 +59,44 @@
         <item quantity="few">تم تصدير %d فئات</item>
         <item quantity="many">تم تصدير %d فئة</item>
         <item quantity="other">تم تصدير %d فئة</item>
+    </plurals>
+    <string name="profile_add_name">أضف اسمك</string>
+    <string name="profile_summary">سيحيّيك Hisab Kitab بهذا الاسم</string>
+    <string name="profile_edit">تعديل الاسم</string>
+    <string name="profile_name_title">بماذا نناديك؟</string>
+    <string name="profile_name_label">اسمك</string>
+    <string name="about_title">حول</string>
+    <string name="about_tagline">أموالك منظمة بشكل جميل. سجّل في ثوانٍ، واعرف أين تذهب، وأنفق بثقة.</string>
+    <string name="about_offline_title">يعمل دون إنترنت</string>
+    <string name="about_offline_body">لا حساب ولا إنترنت. كل شيء محفوظ على هذا الهاتف.</string>
+    <string name="about_insights_title">خمس طرق لرؤية أموالك</string>
+    <string name="about_insights_body">حلقة وترتيب واتجاه وتقويم وتدفق نقدي، مع ميزانيات تخبرك بما يمكنك إنفاقه بأمان.</string>
+    <string name="about_languages_title">يتحدث لغتك</string>
+    <string name="about_languages_body">28 لغة، منها الهندية و11 لغة هندية أخرى.</string>
+    <string name="about_lock_title">مقفل حين تريد</string>
+    <string name="about_lock_body">احمِ التطبيق ببصمتك أو وجهك أو قفل الشاشة.</string>
+    <string name="about_privacy_title">خصوصيتك مضمونة</string>
+    <string name="about_privacy_body">لا إعلانات ولا تتبع ولا تحليلات. لا يستطيع Hisab Kitab حتى الوصول إلى الإنترنت.</string>
+    <string name="about_credits">شكر وتقدير</string>
+    <string name="about_credits_body">Plus Jakarta Sans — SIL Open Font License 1.1 · Jetpack Compose · Material 3</string>
+    <string name="import_transactions">استيراد المعاملات</string>
+    <string name="import_summary">أضف معاملات من ملف CSV صدّره Hisab Kitab</string>
+    <string name="import_failed">تعذّرت قراءة الملف. حاول مرة أخرى.</string>
+    <string name="import_unsupported">هذا الملف ليس تصديرًا لمعاملات Hisab Kitab.</string>
+    <plurals name="imported_transactions">
+        <item quantity="zero">تم استيراد %d معاملة</item>
+        <item quantity="one">تم استيراد معاملة واحدة (%d)</item>
+        <item quantity="two">تم استيراد معاملتين (%d)</item>
+        <item quantity="few">تم استيراد %d معاملات</item>
+        <item quantity="many">تم استيراد %d معاملة</item>
+        <item quantity="other">تم استيراد %d معاملة</item>
+    </plurals>
+    <plurals name="import_skipped">
+        <item quantity="zero">%d موجودة مسبقًا</item>
+        <item quantity="one">%d موجودة مسبقًا</item>
+        <item quantity="two">%d موجودتان مسبقًا</item>
+        <item quantity="few">%d موجودة مسبقًا</item>
+        <item quantity="many">%d موجودة مسبقًا</item>
+        <item quantity="other">%d موجودة مسبقًا</item>
     </plurals>
 </resources>

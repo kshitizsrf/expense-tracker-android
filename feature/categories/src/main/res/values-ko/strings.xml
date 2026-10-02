@@ -19,4 +19,18 @@
     <plurals name="delete_category_message">
         <item quantity="other">이 카테고리의 내역 %d건도 함께 삭제돼요. 되돌릴 수 없어요.</item>
     </plurals>
+    <string name="select_categories">카테고리 선택</string>
+    <string name="select_all">전체 선택</string>
+    <string name="clear_selection">선택 취소</string>
+    <string name="delete_selected">선택 항목 삭제</string>
+    <string name="delete_categories_message_empty">영구적으로 삭제돼요.</string>
+    <plurals name="categories_selected">
+        <item quantity="other">%d개 선택됨</item>
+    </plurals>
+    <plurals name="delete_categories_title">
+        <item quantity="other">카테고리 %d개를 삭제할까요?</item>
+    </plurals>
+    <plurals name="delete_categories_message">
+        <item quantity="other">포함된 내역 %d건도 함께 삭제돼요. 되돌릴 수 없어요.</item>
+    </plurals>
 </resources>

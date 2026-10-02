@@ -1,5 +1,6 @@
 package com.hisabkitab.core.designsystem.theme
 
+import androidx.compose.ui.graphics.luminance
 import androidx.annotation.ChecksSdkIntAtLeast
 import android.os.Build
 import android.provider.Settings
@@ -31,6 +32,8 @@ data class HisabColors(
     /** Text and icons drawn directly on the backdrop (headers, hero numbers). */
     val onBackdrop: Color,
     val onBackdropMuted: Color,
+    /** Readable color for content placed on a solid [onBackdrop] fill (selected chips, thumbs). */
+    val onBackdropInverse: Color,
     /** Translucent glass surfaces and their light-catching edge. */
     val glass: Color,
     val glassStrong: Color,
@@ -49,6 +52,7 @@ val LocalHisabColors = staticCompositionLocalOf {
         aurora = emptyList(),
         onBackdrop = Color.White,
         onBackdropMuted = Color.White.copy(alpha = 0.75f),
+        onBackdropInverse = Color(0xFF003F77),
         glass = Color.White.copy(alpha = 0.8f),
         glassStrong = Color.White.copy(alpha = 0.92f),
         glassEdge = Color.White.copy(alpha = 0.7f),
@@ -64,7 +68,7 @@ val LocalHisabColors = staticCompositionLocalOf {
 val LocalNavBarClearance = staticCompositionLocalOf<Dp> { 0.dp }
 
 /** How Insights animates between chart types (chosen in Settings). */
-val LocalChartTransition = staticCompositionLocalOf { ChartTransition.FADE }
+val LocalChartTransition = staticCompositionLocalOf { ChartTransition.ZOOM }
 
 /** True when the user turned animations off in system settings. */
 val LocalReducedMotion = staticCompositionLocalOf { false }
@@ -118,14 +122,23 @@ fun HisabKitabTheme(
     }
 }
 
+private val ThemeSpec.lightBackdrop: Boolean get() = onBackdrop.luminance() < 0.5f
+
 private fun ThemeSpec.toHisabColors(dark: Boolean) = HisabColors(
     backdrop = listOf(deep, lerp(deep, glow, 0.55f), glow),
     aurora = aurora,
-    onBackdrop = Color.White,
-    onBackdropMuted = Color.White.copy(alpha = 0.74f),
+    onBackdrop = onBackdrop,
+    onBackdropMuted = onBackdrop.copy(alpha = if (lightBackdrop) 0.68f else 0.74f),
+    // Deep tones darkened a touch so text on white chips always clears 4.5:1.
+    onBackdropInverse = if (lightBackdrop) lerp(deep, Color.White, 0.55f) else lerp(deep, Color.Black, 0.25f),
     glass = if (dark) lerp(card, Color.Black, 0.25f).copy(alpha = 0.62f) else lerp(card, Color.White, 0.5f).copy(alpha = 0.82f),
     glassStrong = if (dark) lerp(card, Color.Black, 0.1f).copy(alpha = 0.86f) else lerp(card, Color.White, 0.65f).copy(alpha = 0.94f),
-    glassEdge = if (dark) Color.White.copy(alpha = 0.12f) else Color.White.copy(alpha = 0.75f),
+    // On a light backdrop a white edge disappears, so use a faint ink line instead.
+    glassEdge = when {
+        dark -> Color.White.copy(alpha = 0.12f)
+        lightBackdrop -> ink.copy(alpha = 0.1f)
+        else -> Color.White.copy(alpha = 0.75f)
+    },
     accentGradient = if (dark) listOf(accent, lerp(accent, glow, 0.5f)) else listOf(accent, lerp(accent, glow, 0.6f)),
     income = if (dark) Color(0xFF6EE7A0) else Color(0xFF138A4B),
     expense = if (dark) Color(0xFFFF8A9B) else Color(0xFFD6344A),

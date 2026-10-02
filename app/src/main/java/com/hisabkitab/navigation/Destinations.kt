@@ -35,6 +35,9 @@ data object CategoriesKey : NavKey
 data object SettingsKey : NavKey
 
 @Serializable
+data object AboutKey : NavKey
+
+@Serializable
 data object BudgetKey : NavKey
 
 @Serializable

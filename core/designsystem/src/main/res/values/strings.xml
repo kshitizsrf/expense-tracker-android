@@ -31,6 +31,7 @@
     <string name="theme_horizon" translatable="false">Horizon</string>
     <string name="theme_pinkwalk" translatable="false">Pinkwalk</string>
     <string name="theme_rosewood" translatable="false">Rosewood</string>
+    <string name="theme_seashell" translatable="false">Seashell</string>
     <string name="theme_wallpaper">Wallpaper</string>
     <string name="theme_skyline_tagline">Clear blue calm</string>
     <string name="theme_dawn_tagline">Sunrise over midnight</string>
@@ -40,4 +41,5 @@
     <string name="theme_wallpaper_tagline">Painted from your wallpaper</string>
     <string name="spotlight_dismiss">Tap anywhere to close</string>
     <string name="select_date_range">Select a date range</string>
+    <string name="theme_seashell_tagline">Soft sea mist and sand</string>
 </resources>

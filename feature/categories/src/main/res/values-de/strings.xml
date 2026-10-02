@@ -20,4 +20,21 @@
         <item quantity="one">Dabei wird auch %d Buchung dieser Kategorie gelöscht. Das kann nicht rückgängig gemacht werden.</item>
         <item quantity="other">Dabei werden auch %d Buchungen dieser Kategorie gelöscht. Das kann nicht rückgängig gemacht werden.</item>
     </plurals>
+    <string name="select_categories">Kategorien auswählen</string>
+    <string name="select_all">Alle auswählen</string>
+    <string name="clear_selection">Auswahl aufheben</string>
+    <string name="delete_selected">Auswahl löschen</string>
+    <string name="delete_categories_message_empty">Sie werden dauerhaft gelöscht.</string>
+    <plurals name="categories_selected">
+        <item quantity="one">%d ausgewählt</item>
+        <item quantity="other">%d ausgewählt</item>
+    </plurals>
+    <plurals name="delete_categories_title">
+        <item quantity="one">%d Kategorie löschen?</item>
+        <item quantity="other">%d Kategorien löschen?</item>
+    </plurals>
+    <plurals name="delete_categories_message">
+        <item quantity="one">Dabei wird auch %d Buchung darin gelöscht. Das kann nicht rückgängig gemacht werden.</item>
+        <item quantity="other">Dabei werden auch %d Buchungen darin gelöscht. Das kann nicht rückgängig gemacht werden.</item>
+    </plurals>
 </resources>

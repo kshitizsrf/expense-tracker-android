@@ -19,4 +19,18 @@
     <plurals name="delete_category_message">
         <item quantity="other">このカテゴリの %d 件の記録も削除されます。元に戻せません。</item>
     </plurals>
+    <string name="select_categories">カテゴリを選択</string>
+    <string name="select_all">すべて選択</string>
+    <string name="clear_selection">選択をキャンセル</string>
+    <string name="delete_selected">選択したものを削除</string>
+    <string name="delete_categories_message_empty">完全に削除されます。</string>
+    <plurals name="categories_selected">
+        <item quantity="other">%d 件選択中</item>
+    </plurals>
+    <plurals name="delete_categories_title">
+        <item quantity="other">%d 件のカテゴリを削除しますか？</item>
+    </plurals>
+    <plurals name="delete_categories_message">
+        <item quantity="other">含まれる %d 件の記録も削除されます。元に戻せません。</item>
+    </plurals>
 </resources>

@@ -97,13 +97,13 @@ fun ThemePreviewCard(theme: AppTheme, selected: Boolean, onClick: () -> Unit) {
                 .clip(shape)
                 .background(Brush.linearGradient(listOf(spec.deep, lerp(spec.deep, spec.glow, 0.55f), spec.glow), start = Offset(200f, 0f), end = Offset(0f, 500f)))
                 .background(Brush.radialGradient(listOf(spec.aurora.first().copy(alpha = 0.55f), Color.Transparent), center = Offset(60f, 120f), radius = 260f))
-                .border(if (selected) 3.dp else 1.dp, Color.White.copy(alpha = if (selected) 1f else 0.3f), shape),
+                .border(if (selected) 3.dp else 1.dp, HisabKitabTheme.colors.onBackdrop.copy(alpha = if (selected) 1f else 0.3f), shape),
         ) {
             // Fake balance + glass card, so the theme is judged in context.
             Column(Modifier.padding(14.dp)) {
-                Box(Modifier.size(width = 36.dp, height = 6.dp).clip(CircleShape).background(Color.White.copy(alpha = 0.6f)))
+                Box(Modifier.size(width = 36.dp, height = 6.dp).clip(CircleShape).background(spec.onBackdrop.copy(alpha = 0.6f)))
                 Spacer(Modifier.height(8.dp))
-                Box(Modifier.size(width = 72.dp, height = 12.dp).clip(CircleShape).background(Color.White))
+                Box(Modifier.size(width = 72.dp, height = 12.dp).clip(CircleShape).background(spec.onBackdrop))
                 Spacer(Modifier.weight(1f))
                 Column(
                     Modifier

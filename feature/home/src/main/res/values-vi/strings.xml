@@ -6,7 +6,6 @@
     <string name="back_to_this_month">Nhấn để về tháng này</string>
     <string name="recent_transactions">Hoạt động gần đây</string>
     <string name="see_all">Xem tất cả</string>
-    <string name="daily_spending">Chi tiêu hằng ngày</string>
     <string name="budget_set_title">Đặt ngân sách</string>
     <string name="budget_set_message">Biết chính xác mỗi ngày bạn có thể chi bao nhiêu.</string>
     <string name="budget_title_daily">Ngân sách hôm nay</string>
@@ -18,14 +17,17 @@
     <string name="budget_safe_today">Có thể chi hôm nay</string>
     <string name="budget_ended">Chu kỳ ngân sách đã kết thúc. Nhấn để đặt mới.</string>
     <string name="budget_not_started">Bắt đầu %1$s</string>
-    <string name="insight_top_category">Chi nhiều nhất</string>
-    <string name="insight_daily_average">Trung bình ngày</string>
-    <string name="insight_biggest">Khoản chi lớn nhất</string>
-    <string name="insight_count">Mục</string>
     <string name="empty_home_title">Khởi đầu mới</string>
     <string name="empty_home_message">Nhấn nút + để ghi khoản thu hoặc chi đầu tiên.</string>
     <string name="spotlight_saved">Tiết kiệm</string>
     <plurals name="budget_days_left">
         <item quantity="other">Còn %d ngày</item>
     </plurals>
+    <string name="scrub_spent">Đã chi %1$s</string>
+    <string name="scrub_earned">+%1$s đã thu</string>
+    <plurals name="scrub_entries">
+        <item quantity="other">%d mục</item>
+    </plurals>
+    <string name="daily_spending">Chi tiêu hằng ngày</string>
+    <string name="daily_average_short">TB %1$s/ngày</string>
 </resources>

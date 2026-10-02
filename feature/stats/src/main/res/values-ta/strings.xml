@@ -17,7 +17,6 @@
     <string name="chart_trend_title_monthly">மாதந்தோறும்</string>
     <string name="chart_calendar_title">செலவு நாட்காட்டி</string>
     <string name="chart_calendar_title_income">வருமான நாட்காட்டி</string>
-    <string name="chart_cash_flow_title">பணப்புழக்கம் · கடந்த 6 மாதங்கள்</string>
     <string name="chart_hint_donut">ஒரு பகுதியில் கவனம் செலுத்தத் தட்டவும்</string>
     <string name="chart_hint_trend">தொட்டு இழுத்துப் பாருங்கள்</string>
     <string name="chart_hint_calendar">ஒரு நாளின் மொத்தத்தைக் காணத் தட்டவும்</string>
@@ -29,7 +28,7 @@
     <string name="stat_entries">பதிவுகள்</string>
     <string name="stat_vs_previous">முந்தையதுடன் ஒப்பிட</string>
     <string name="stat_no_comparison">புதியது</string>
-    <string name="percent_of_total">மொத்தத்தில் %1$d%%</string>
+    <string name="percent_of_total">மொத்தத்தில் %1$s%%</string>
     <string name="heatmap_less">குறைவு</string>
     <string name="heatmap_more">அதிகம்</string>
     <string name="nothing_on_day">எதுவும் பதிவாகவில்லை</string>
@@ -40,5 +39,9 @@
     <plurals name="transaction_count">
         <item quantity="one">%d பரிவர்த்தனை</item>
         <item quantity="other">%d பரிவர்த்தனைகள்</item>
+    </plurals>
+    <plurals name="chart_cash_flow_title_months">
+        <item quantity="one">பணப்புழக்கம் · %d மாதங்கள்</item>
+        <item quantity="other">பணப்புழக்கம் · %d மாதங்கள்</item>
     </plurals>
 </resources>

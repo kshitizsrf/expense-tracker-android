@@ -3,7 +3,7 @@
     <string name="onboarding_welcome_title">ഹിസാബ് കിതാബ്</string>
     <string name="onboarding_welcome_message">നിങ്ങളുടെ പണം, മനോഹരമായി ക്രമീകരിച്ചത്. സെക്കൻഡുകളിൽ രേഖപ്പെടുത്തുക, പണം എവിടെ പോകുന്നുവെന്ന് കാണുക, ആത്മവിശ്വാസത്തോടെ ചെലവാക്കുക.</string>
     <string name="onboarding_theme_title">നിങ്ങളുടെ ശൈലി തിരഞ്ഞെടുക്കുക</string>
-    <string name="onboarding_theme_message">അഞ്ച് പ്രത്യേക തീമുകൾ, ഓരോന്നിലും ലൈറ്റ്, ഡാർക്ക് മൂഡുകൾ. എപ്പോൾ വേണമെങ്കിലും മാറ്റാം.</string>
+    <string name="onboarding_theme_message">ആറ് പ്രത്യേക തീമുകൾ, ഓരോന്നിലും ലൈറ്റ്, ഡാർക്ക് മൂഡുകൾ. എപ്പോൾ വേണമെങ്കിലും മാറ്റാം.</string>
     <string name="onboarding_setup_title">അവസാന മിനുക്കുപണികൾ</string>
     <string name="onboarding_setup_message">നിങ്ങളുടെ കറൻസി തിരഞ്ഞെടുക്കുക, ദിവസം രേഖപ്പെടുത്താൻ ഒരു ചെറിയ ഓർമ്മപ്പെടുത്തൽ വേണോ എന്ന് പറയുക.</string>
     <string name="onboarding_currency">കറൻസി</string>

@@ -38,6 +38,8 @@ class FakeCategoryRepository(initial: List<Category> = emptyList()) : CategoryRe
 
     override suspend fun delete(id: Long) = categories.update { list -> list.filterNot { it.id == id } }
 
+    override suspend fun deleteAll(ids: Collection<Long>) = categories.update { list -> list.filterNot { it.id in ids } }
+
     override suspend fun transactionCount(categoryId: Long) = 0
 }
 

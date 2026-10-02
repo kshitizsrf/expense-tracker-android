@@ -6,7 +6,6 @@
     <string name="back_to_this_month">Tocca per tornare a questo mese</string>
     <string name="recent_transactions">Attività recente</string>
     <string name="see_all">Vedi tutto</string>
-    <string name="daily_spending">Spesa giornaliera</string>
     <string name="budget_set_title">Imposta un budget</string>
     <string name="budget_set_message">Scopri esattamente quanto puoi spendere ogni giorno.</string>
     <string name="budget_title_daily">Budget di oggi</string>
@@ -18,10 +17,6 @@
     <string name="budget_safe_today">Spendibile oggi</string>
     <string name="budget_ended">Questo budget è terminato. Tocca per impostarne uno nuovo.</string>
     <string name="budget_not_started">Inizia il %1$s</string>
-    <string name="insight_top_category">Spesa principale</string>
-    <string name="insight_daily_average">Media giornaliera</string>
-    <string name="insight_biggest">Spesa più grande</string>
-    <string name="insight_count">Voci</string>
     <string name="empty_home_title">Un nuovo inizio</string>
     <string name="empty_home_message">Tocca il pulsante + per registrare la tua prima entrata o uscita.</string>
     <string name="spotlight_saved">Risparmiato</string>
@@ -30,4 +25,13 @@
         <item quantity="many">Mancano %d giorni</item>
         <item quantity="other">Mancano %d giorni</item>
     </plurals>
+    <string name="scrub_spent">%1$s spesi</string>
+    <string name="scrub_earned">+%1$s guadagnati</string>
+    <plurals name="scrub_entries">
+        <item quantity="one">%d voce</item>
+        <item quantity="many">%d voci</item>
+        <item quantity="other">%d voci</item>
+    </plurals>
+    <string name="daily_spending">Spesa giornaliera</string>
+    <string name="daily_average_short">media %1$s al giorno</string>
 </resources>

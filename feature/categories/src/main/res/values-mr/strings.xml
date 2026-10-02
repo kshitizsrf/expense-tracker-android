@@ -20,4 +20,21 @@
         <item quantity="one">यामुळे या श्रेणीतील %d व्यवहारही हटवला जाईल. हे पूर्ववत करता येणार नाही.</item>
         <item quantity="other">यामुळे या श्रेणीतील %d व्यवहारही हटवले जातील. हे पूर्ववत करता येणार नाही.</item>
     </plurals>
+    <string name="select_categories">श्रेणी निवडा</string>
+    <string name="select_all">सर्व निवडा</string>
+    <string name="clear_selection">निवड रद्द करा</string>
+    <string name="delete_selected">निवडलेल्या हटवा</string>
+    <string name="delete_categories_message_empty">त्या कायमच्या हटवल्या जातील.</string>
+    <plurals name="categories_selected">
+        <item quantity="one">%d निवडल्या</item>
+        <item quantity="other">%d निवडल्या</item>
+    </plurals>
+    <plurals name="delete_categories_title">
+        <item quantity="one">%d श्रेणी हटवायच्या?</item>
+        <item quantity="other">%d श्रेणी हटवायच्या?</item>
+    </plurals>
+    <plurals name="delete_categories_message">
+        <item quantity="one">यामुळे त्यांतील %d व्यवहारही हटवले जातील. हे पूर्ववत करता येणार नाही.</item>
+        <item quantity="other">यामुळे त्यांतील %d व्यवहारही हटवले जातील. हे पूर्ववत करता येणार नाही.</item>
+    </plurals>
 </resources>

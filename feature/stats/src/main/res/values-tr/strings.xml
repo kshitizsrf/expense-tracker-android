@@ -17,7 +17,6 @@
     <string name="chart_trend_title_monthly">Aydan aya</string>
     <string name="chart_calendar_title">Harcama takvimi</string>
     <string name="chart_calendar_title_income">Gelir takvimi</string>
-    <string name="chart_cash_flow_title">Nakit akışı · son 6 ay</string>
     <string name="chart_hint_donut">Öne çıkarmak için bir dilime dokunun</string>
     <string name="chart_hint_trend">Keşfetmek için basılı tutup sürükleyin</string>
     <string name="chart_hint_calendar">Toplamı görmek için bir güne dokunun</string>
@@ -29,7 +28,7 @@
     <string name="stat_entries">Kayıt</string>
     <string name="stat_vs_previous">öncekine göre</string>
     <string name="stat_no_comparison">Yeni</string>
-    <string name="percent_of_total">Toplamın %%%1$d kadarı</string>
+    <string name="percent_of_total">Toplamın %%%1$s kadarı</string>
     <string name="heatmap_less">Az</string>
     <string name="heatmap_more">Çok</string>
     <string name="nothing_on_day">Kayıt yok</string>
@@ -40,5 +39,9 @@
     <plurals name="transaction_count">
         <item quantity="one">%d işlem</item>
         <item quantity="other">%d işlem</item>
+    </plurals>
+    <plurals name="chart_cash_flow_title_months">
+        <item quantity="one">Nakit akışı · %d ay</item>
+        <item quantity="other">Nakit akışı · %d ay</item>
     </plurals>
 </resources>

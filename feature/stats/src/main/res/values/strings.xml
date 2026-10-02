@@ -19,7 +19,6 @@
     <string name="chart_trend_title_monthly">Month by month</string>
     <string name="chart_calendar_title">Spending calendar</string>
     <string name="chart_calendar_title_income">Earning calendar</string>
-    <string name="chart_cash_flow_title">Cash flow · last 6 months</string>
     <string name="chart_hint_donut">Tap a slice to focus on it</string>
     <string name="chart_hint_trend">Touch and drag to explore</string>
     <string name="chart_hint_calendar">Tap a day to see its total</string>
@@ -32,7 +31,7 @@
     <string name="stat_entries">Entries</string>
     <string name="stat_vs_previous">vs previous</string>
     <string name="stat_no_comparison">New</string>
-    <string name="percent_of_total">%1$d%% of total</string>
+    <string name="percent_of_total">%1$s%% of total</string>
     <plurals name="transaction_count">
         <item quantity="one">%d transaction</item>
         <item quantity="other">%d transactions</item>
@@ -47,4 +46,8 @@
     <string name="stats_empty_title">Nothing to show yet</string>
     <string name="stats_empty_message">Transactions in this period will light up these charts.</string>
     <string name="stat_previous_period">Previous period</string>
+    <plurals name="chart_cash_flow_title_months">
+        <item quantity="one">Cash flow · %d month</item>
+        <item quantity="other">Cash flow · %d months</item>
+    </plurals>
 </resources>

@@ -21,4 +21,24 @@
         <item quantity="many">Cela supprimera aussi %d opérations de cette catégorie. Action irréversible.</item>
         <item quantity="other">Cela supprimera aussi %d opérations de cette catégorie. Action irréversible.</item>
     </plurals>
+    <string name="select_categories">Sélectionner des catégories</string>
+    <string name="select_all">Tout sélectionner</string>
+    <string name="clear_selection">Annuler la sélection</string>
+    <string name="delete_selected">Supprimer la sélection</string>
+    <string name="delete_categories_message_empty">Elles seront définitivement supprimées.</string>
+    <plurals name="categories_selected">
+        <item quantity="one">%d sélectionnée</item>
+        <item quantity="many">%d sélectionnées</item>
+        <item quantity="other">%d sélectionnées</item>
+    </plurals>
+    <plurals name="delete_categories_title">
+        <item quantity="one">Supprimer %d catégorie ?</item>
+        <item quantity="many">Supprimer %d catégories ?</item>
+        <item quantity="other">Supprimer %d catégories ?</item>
+    </plurals>
+    <plurals name="delete_categories_message">
+        <item quantity="one">Cela supprimera aussi %d opération qu\'elles contiennent. Action irréversible.</item>
+        <item quantity="many">Cela supprimera aussi %d opérations qu\'elles contiennent. Action irréversible.</item>
+        <item quantity="other">Cela supprimera aussi %d opérations qu\'elles contiennent. Action irréversible.</item>
+    </plurals>
 </resources>

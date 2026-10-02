@@ -19,4 +19,18 @@
     <plurals name="delete_category_message">
         <item quantity="other">这也会删除该分类下的 %d 笔记录，且无法撤销。</item>
     </plurals>
+    <string name="select_categories">选择分类</string>
+    <string name="select_all">全选</string>
+    <string name="clear_selection">取消选择</string>
+    <string name="delete_selected">删除所选</string>
+    <string name="delete_categories_message_empty">它们将被永久删除。</string>
+    <plurals name="categories_selected">
+        <item quantity="other">已选择 %d 个</item>
+    </plurals>
+    <plurals name="delete_categories_title">
+        <item quantity="other">删除 %d 个分类？</item>
+    </plurals>
+    <plurals name="delete_categories_message">
+        <item quantity="other">这也会删除其中的 %d 笔记录，且无法撤销。</item>
+    </plurals>
 </resources>

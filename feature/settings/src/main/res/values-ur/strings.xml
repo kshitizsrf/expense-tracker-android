@@ -32,10 +32,8 @@
     <string name="nav_style_liquid">لیکوئڈ</string>
     <string name="nav_style_bubble">ببل</string>
     <string name="nav_style_glow">گلو</string>
-    <string name="nav_style_expand">ایکسپینڈ</string>
     <string name="chart_animation">چارٹ اینیمیشن</string>
     <string name="chart_animation_hint">تجزیے میں چارٹ کیسے بدلتے ہیں</string>
-    <string name="chart_fade">فیڈ</string>
     <string name="chart_slide">سلائیڈ</string>
     <string name="chart_flip">3D فلپ</string>
     <string name="chart_zoom">زوم</string>
@@ -53,5 +51,36 @@
     <plurals name="exported_categories">
         <item quantity="one">%d زمرہ ایکسپورٹ ہوا</item>
         <item quantity="other">%d زمرے ایکسپورٹ ہوئے</item>
+    </plurals>
+    <string name="profile_add_name">اپنا نام شامل کریں</string>
+    <string name="profile_summary">حساب کتاب آپ کو اسی نام سے پکارے گا</string>
+    <string name="profile_edit">نام میں ترمیم</string>
+    <string name="profile_name_title">ہم آپ کو کیا کہہ کر پکاریں؟</string>
+    <string name="profile_name_label">آپ کا نام</string>
+    <string name="about_title">متعلق</string>
+    <string name="about_tagline">آپ کا پیسہ، خوبصورتی سے منظم۔ سیکنڈوں میں لکھیں، دیکھیں پیسہ کہاں جاتا ہے، اور اعتماد سے خرچ کریں۔</string>
+    <string name="about_offline_title">مکمل طور پر آف لائن</string>
+    <string name="about_offline_body">نہ اکاؤنٹ، نہ انٹرنیٹ۔ سب کچھ اسی فون میں محفوظ رہتا ہے۔</string>
+    <string name="about_insights_title">پیسہ دیکھنے کے پانچ طریقے</string>
+    <string name="about_insights_body">ڈونٹ، درجہ بندی، رجحان، کیلنڈر اور نقد بہاؤ، ساتھ میں بجٹ جو بتائے کتنا خرچ محفوظ ہے۔</string>
+    <string name="about_languages_title">آپ کی زبان میں</string>
+    <string name="about_languages_body">ہندی اور 11 دیگر بھارتی زبانوں سمیت 28 زبانیں۔</string>
+    <string name="about_lock_title">جب چاہیں، لاک</string>
+    <string name="about_lock_body">فنگر پرنٹ، چہرے یا اسکرین لاک سے ایپ کو محفوظ رکھیں۔</string>
+    <string name="about_privacy_title">آپ کی رازداری کی ضمانت</string>
+    <string name="about_privacy_body">نہ اشتہارات، نہ ٹریکنگ، نہ اینالیٹکس۔ حساب کتاب انٹرنیٹ تک بھی رسائی نہیں رکھتا۔</string>
+    <string name="about_credits">اعتراف</string>
+    <string name="about_credits_body">Plus Jakarta Sans — SIL Open Font License 1.1 · Jetpack Compose · Material 3</string>
+    <string name="import_transactions">لین دین درآمد کریں</string>
+    <string name="import_summary">حساب کتاب کی CSV فائل سے لین دین شامل کریں</string>
+    <string name="import_failed">فائل پڑھی نہیں جا سکی۔ دوبارہ کوشش کریں۔</string>
+    <string name="import_unsupported">یہ حساب کتاب کی لین دین ایکسپورٹ فائل نہیں ہے۔</string>
+    <plurals name="imported_transactions">
+        <item quantity="one">%d لین دین درآمد ہوا</item>
+        <item quantity="other">%d لین دین درآمد ہوئے</item>
+    </plurals>
+    <plurals name="import_skipped">
+        <item quantity="one">%d پہلے سے موجود تھے</item>
+        <item quantity="other">%d پہلے سے موجود تھے</item>
     </plurals>
 </resources>

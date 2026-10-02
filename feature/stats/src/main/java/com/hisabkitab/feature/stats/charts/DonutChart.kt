@@ -1,5 +1,7 @@
 package com.hisabkitab.feature.stats.charts
 
+import androidx.compose.runtime.key
+import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.FastOutSlowInEasing
 import androidx.compose.animation.core.animateFloatAsState
@@ -54,7 +56,12 @@ fun DonutChart(
         sweep.snapTo(0f)
         sweep.animateTo(1f, tween(durationMillis = 1_000, easing = FastOutSlowInEasing))
     }
-    val emphasis by animateFloatAsState(if (selectedIndex != null) 1f else 0f, spring(), label = "emphasis")
+    val smooth = spring<Float>(dampingRatio = Spring.DampingRatioLowBouncy, stiffness = Spring.StiffnessMediumLow)
+    val emphasis by animateFloatAsState(if (selectedIndex != null) 1f else 0f, smooth, label = "emphasis")
+    // One animation per slice: the old selection eases back while the new one grows.
+    val grow = slices.indices.map { index ->
+        key(index) { animateFloatAsState(if (index == selectedIndex) 1f else 0f, smooth, label = "slice$index") }
+    }
     val track = MaterialTheme.colorScheme.surfaceContainerHighest
     val total = slices.sumOf { it.value.toDouble() }.toFloat()
 
@@ -96,7 +103,8 @@ fun DonutChart(
                 val full = 360f * slice.value / total * sweep.value
                 val visible = (full - gap).coerceAtLeast(0.6f)
                 val isSelected = index == selectedIndex
-                val alpha = if (selectedIndex == null || isSelected) 1f else 1f - 0.6f * emphasis
+                val sliceGrowth = grow[index].value
+                val alpha = if (isSelected) 1f else 1f - 0.6f * emphasis * (1f - sliceGrowth)
                 drawArc(
                     color = slice.color.copy(alpha = alpha),
                     startAngle = start + gap / 2f,
@@ -105,7 +113,7 @@ fun DonutChart(
                     topLeft = topLeft,
                     size = arcSize,
                     style = Stroke(
-                        width = if (isSelected) baseStroke + growth * emphasis else baseStroke,
+                        width = baseStroke + growth * sliceGrowth,
                         cap = if (slices.size == 1) StrokeCap.Butt else StrokeCap.Round,
                     ),
                 )

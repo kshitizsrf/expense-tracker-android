@@ -20,4 +20,21 @@
         <item quantity="one">దీనితో ఈ వర్గంలోని %d లావాదేవీ కూడా తొలగించబడుతుంది. దీన్ని రద్దు చేయలేరు.</item>
         <item quantity="other">దీనితో ఈ వర్గంలోని %d లావాదేవీలు కూడా తొలగించబడతాయి. దీన్ని రద్దు చేయలేరు.</item>
     </plurals>
+    <string name="select_categories">వర్గాలను ఎంచుకోండి</string>
+    <string name="select_all">అన్నీ ఎంచుకోండి</string>
+    <string name="clear_selection">ఎంపిక రద్దు</string>
+    <string name="delete_selected">ఎంచుకున్నవి తొలగించండి</string>
+    <string name="delete_categories_message_empty">అవి శాశ్వతంగా తొలగించబడతాయి.</string>
+    <plurals name="categories_selected">
+        <item quantity="one">%d ఎంచుకున్నారు</item>
+        <item quantity="other">%d ఎంచుకున్నారు</item>
+    </plurals>
+    <plurals name="delete_categories_title">
+        <item quantity="one">%d వర్గాన్ని తొలగించాలా?</item>
+        <item quantity="other">%d వర్గాలను తొలగించాలా?</item>
+    </plurals>
+    <plurals name="delete_categories_message">
+        <item quantity="one">దీనితో వాటిలోని %d లావాదేవీ కూడా తొలగించబడుతుంది. దీన్ని రద్దు చేయలేరు.</item>
+        <item quantity="other">దీనితో వాటిలోని %d లావాదేవీలు కూడా తొలగించబడతాయి. దీన్ని రద్దు చేయలేరు.</item>
+    </plurals>
 </resources>

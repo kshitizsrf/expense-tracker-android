@@ -20,4 +20,21 @@
         <item quantity="one">ഇതോടെ ഈ വിഭാഗത്തിലെ %d ഇടപാടും ഇല്ലാതാകും. ഇത് പഴയപടിയാക്കാനാകില്ല.</item>
         <item quantity="other">ഇതോടെ ഈ വിഭാഗത്തിലെ %d ഇടപാടുകളും ഇല്ലാതാകും. ഇത് പഴയപടിയാക്കാനാകില്ല.</item>
     </plurals>
+    <string name="select_categories">വിഭാഗങ്ങൾ തിരഞ്ഞെടുക്കുക</string>
+    <string name="select_all">എല്ലാം തിരഞ്ഞെടുക്കുക</string>
+    <string name="clear_selection">തിരഞ്ഞെടുപ്പ് റദ്ദാക്കുക</string>
+    <string name="delete_selected">തിരഞ്ഞെടുത്തവ ഇല്ലാതാക്കുക</string>
+    <string name="delete_categories_message_empty">അവ ശാശ്വതമായി ഇല്ലാതാക്കും.</string>
+    <plurals name="categories_selected">
+        <item quantity="one">%d തിരഞ്ഞെടുത്തു</item>
+        <item quantity="other">%d തിരഞ്ഞെടുത്തു</item>
+    </plurals>
+    <plurals name="delete_categories_title">
+        <item quantity="one">%d വിഭാഗം ഇല്ലാതാക്കണോ?</item>
+        <item quantity="other">%d വിഭാഗങ്ങൾ ഇല്ലാതാക്കണോ?</item>
+    </plurals>
+    <plurals name="delete_categories_message">
+        <item quantity="one">ഇതോടെ അവയിലെ %d ഇടപാടും ഇല്ലാതാകും. ഇത് പഴയപടിയാക്കാനാകില്ല.</item>
+        <item quantity="other">ഇതോടെ അവയിലെ %d ഇടപാടുകളും ഇല്ലാതാകും. ഇത് പഴയപടിയാക്കാനാകില്ല.</item>
+    </plurals>
 </resources>

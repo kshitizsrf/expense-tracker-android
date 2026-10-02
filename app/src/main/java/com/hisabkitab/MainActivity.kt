@@ -1,5 +1,6 @@
 package com.hisabkitab
 
+import com.hisabkitab.core.designsystem.theme.hasLightBackdrop
 import android.Manifest
 import android.content.pm.PackageManager
 import android.graphics.Color
@@ -73,9 +74,14 @@ class MainActivity : AppCompatActivity() {
 
                 // The top of every theme's backdrop is deep, so status bar icons are always light;
                 // navigation bar icons follow the app's light/dark mode.
-                DisposableEffect(darkTheme) {
+                val lightBackdrop = preferences.theme.hasLightBackdrop(darkTheme)
+                DisposableEffect(darkTheme, lightBackdrop) {
                     enableEdgeToEdge(
-                        statusBarStyle = SystemBarStyle.dark(Color.TRANSPARENT),
+                        statusBarStyle = if (lightBackdrop) {
+                            SystemBarStyle.light(Color.TRANSPARENT, Color.TRANSPARENT)
+                        } else {
+                            SystemBarStyle.dark(Color.TRANSPARENT)
+                        },
                         navigationBarStyle = SystemBarStyle.auto(Color.TRANSPARENT, Color.TRANSPARENT) { darkTheme },
                     )
                     onDispose {}
